@@ -3,11 +3,11 @@
 
 @font-face {
     font-family: 'adelle';
-    src: url('https://dl.dropboxusercontent.com/s/f5d4sjv3ql7ifqx/adelle_reg-webfont.eot');
-    src: url('https://dl.dropboxusercontent.com/s/f5d4sjv3ql7ifqx/adelle_reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('https://dl.dropboxusercontent.com/s/zfbklqbkwkhdgym/adelle_reg-webfont.woff') format('woff'),
-         url('https://dl.dropboxusercontent.com/s/q9iqkog76m85g5f/adelle_reg-webfont.ttf') format('truetype'),
-         url('https://dl.dropboxusercontent.com/s/q9iqkog76m85g5f/adelle_reg-webfont.svg#adelle') format('svg');
+    src: url('adelle_reg-webfont.eot');
+    src: url('adelle_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('adelle_reg-webfont.woff') format('woff'),
+         url('adelle_reg-webfont.ttf') format('truetype'),
+         url('adelle_reg-webfont.svg#adelle') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -15,11 +15,11 @@
 
 @font-face {
 	font-family: whitney;
-	src: url(https://dl.dropboxusercontent.com/s/acvu09e450fcjpg/Whitney-Medium.otf);
+	src: url(Whitney-Medium.otf);
 }
 
 html {
-	background-image: url(https://dl.dropboxusercontent.com/s/ijkltgfptyzv47q/zebra.png);
+	background-image: url(zebra.png);
 	font-weight: normal;
 }
 
@@ -161,7 +161,7 @@ overflow: auto;
 	display: block;
 	height: 200px;
 	width: 200px;
-	background-image: url(https://dl.dropboxusercontent.com/s/ly9k98llngkwc59/gglogo.png);
+	background-image: url(logo/gglogo.png);
 	background-repeat: no-repeat;
 	margin-left: 0px;
 }
@@ -217,7 +217,7 @@ overflow: auto;
 }
 
 #userinfo #userinfo_username .donateico  {
-	background-image:url('https://dl.dropboxusercontent.com/s/c5oqfjx82vjr3b6/NavUserIcons.png');
+	background-image:url('icon/NavUserIcons.png');
 	background-repeat:no-repeat;
 	background-position:0px -158px;
 	padding-left:20px;
@@ -437,7 +437,7 @@ overflow: auto;
 
 #center_poll {
 	height: 11px;
-	background: url('https://dl.dropboxusercontent.com/s/qd9fp8t3rwrdvie/PollBar.png') repeat;
+	background: url('icon/PollBar.png') repeat;
 	float: left;
 	margin: 0px;
 	padding: 0px;
@@ -1196,7 +1196,7 @@ div.linkbox {
 
 .show_torrents a {
 	display: block;
-	background: url('https://dl.dropboxusercontent.com/s/ue2hufwo5go4wx4/arrow.png');
+	background: url(arrow.png);
 	background-repeat: no-repeat;
 	width: 20px !important;
 	height: 20px !important;
@@ -1209,13 +1209,13 @@ div.linkbox {
 	text-align: center;
 }
 #torrents #content .checked {
-	background:url('https://dl.dropboxusercontent.com/s/mysoikpmla8akx5/checkmark.png') no-repeat;
+	background:url('icon/checkmark.png') no-repeat;
 	width: 20px;
 	height: 20px;
 	float: center;
 }
 #torrents #content .notchecked {
-	background:url('https://dl.dropboxusercontent.com/s/iihxei28bicy8me/crossn.png') no-repeat;
+	background:url('icon/crossn.png') no-repeat;
 	width: 20px;
 	height: 20px;
 	float: center;
@@ -1228,7 +1228,7 @@ div.linkbox {
 .ex-bgfullsets, .psonpsp, .ex-bgcollections, .bandaiwonderswancolor, .generalcomputervectrex {
 	height:28px;
 	width: 28px;
-	background: url('https://dl.dropboxusercontent.com/s/0c1dxythuxsrmsp/caticons_sprite.png') no-repeat scroll top left transparent;
+	background: url('icon/caticons_sprite.png') no-repeat scroll top left transparent;
 	position: absolute;
 	margin-top: -12px;
 }
@@ -1249,7 +1249,7 @@ div.linkbox {
 .dsiware{ background-position: 0 -377px;  }
 .dvd{ background-position: 0 -406px;  }
 .interactivedvd{
-	background-image: url('https://dl.dropboxusercontent.com/s/cn3pd8knrfv81x8/idvd.png?dl=0');
+	background-image: url(icon/idvd.png);
 	background-repeat: no-repeat;
 }
 .ebook{ background-position: 0 -435px;  }
@@ -1318,7 +1318,7 @@ td.cats_col {
 }
 
 .cats_guides, .cats_ebooks {
-background-image:url('https://dl.dropboxusercontent.com/s/qd0xt8mei1bejkq/ebook.png');
+background-image:url('icon/ebook.png');
 width:28px;
 height:28px;
 position: absolute;
@@ -1327,12 +1327,12 @@ margin-top: -12px;
 .cats_applications {
 height:28px;
 width:28px;
-background-image:url('https://dl.dropboxusercontent.com/s/8pkqviiz1y2cu1p/apps.png');
+background-image:url('icon/apps.png');
 position: absolute;
 margin-top: -12px;
 }
 .cats_ost {
-background-image:url('https://dl.dropboxusercontent.com/s/g1ozndvycpqeye3/music.png');
+background-image:url('icon/music.png');
 width:28px;
 height:28px;
 position: absolute;
@@ -1599,7 +1599,7 @@ color: rgba(50, 50, 50, 1)
 }
 
 .torrent_table a.addbookmark {
-    background-image: url('https://dl.dropboxusercontent.com/s/u3i3guwam5ee07f/bookmarks-16.png');
+    background-image: url("icon/bookmarks-16.png");
     background-repeat: no-repeat;
     color: rgba(0,0,0,0) !important;
     padding-bottom: 3px;
@@ -1958,15 +1958,15 @@ color: rgba(50, 50, 50, 1)
 }
 
 .ign {
-	background: url('https://dl.dropboxusercontent.com/s/cgo8t1733nsa96j/ign.png');
+	background: url(icon/ign.png);
 }
 
 .meta {
-	background: url('https://dl.dropboxusercontent.com/s/rb23hej54z0o1xu/metacritic.png');
+	background: url(icon/metacritic.png);
 }
 
 .gamespot {
-	background: url('https://dl.dropboxusercontent.com/s/r1dxljx5qsttl32/gamespot.png');
+	background: url(icon/gamespot.png);
 }
 
 /*user page*/
@@ -2025,7 +2025,7 @@ color: rgba(50, 50, 50, 1)
 }
 
 #forums #content .thin td.unread{
-	background-image: url('https://dl.dropboxusercontent.com/s/5oz58a95sfv3efj/balloon-unread.png');
+	background-image: url(icon/balloon-unread.png);
 	background-repeat: no-repeat;
 	background-position: 50%;
 	width:18px;
@@ -2033,21 +2033,21 @@ color: rgba(50, 50, 50, 1)
 }
 
 #forums #content .thin td.read {
-	background-image:url('https://dl.dropboxusercontent.com/s/q57hry8d92763px/balloon.png');
+	background-image:url("icon/balloon.png");
 	background-position:50%;
 	background-repeat:no-repeat;
 	height:18px;
 	width:18px;
 }
 
-#forums #content .thin td.read_sticky{background-image: url('https://dl.dropboxusercontent.com/s/agae743c005ecg6/sticky.png');background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.unread_sticky{background-image:url('https://dl.dropboxusercontent.com/s/cqf6sbbqovhc1no/sticky-unread.png');background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.read_locked{background-image:url('https://dl.dropboxusercontent.com/s/v1qj7po8trmol4p/lock.png');background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.unread_locked{background-image:url('https://dl.dropboxusercontent.com/s/e9yq883nz6a1b75/lock-unread.png');background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.read_locked_sticky{background-image:url('https://dl.dropboxusercontent.com/s/hd80rgsxy0r665k/lock-sticky.png');background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.unread_locked_sticky{background-image: url('https://dl.dropboxusercontent.com/s/afj6goem46zpx7l/lock-sticky-unread.png');background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
+#forums #content .thin td.read_sticky{background-image: url(icon/sticky.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
+#forums #content .thin td.unread_sticky{background-image:url(icon/sticky-unread.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
+#forums #content .thin td.read_locked{background-image:url(icon/lock.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
+#forums #content .thin td.unread_locked{background-image:url(icon/lock-unread.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
+#forums #content .thin td.read_locked_sticky{background-image:url(icon/lock-sticky.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
+#forums #content .thin td.unread_locked_sticky{background-image: url(icon/lock-sticky-unread.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
 
-.last_read { width: 15px; height: 15px; background: url('https://dl.dropboxusercontent.com/s/wyjz1l5qh08cabq/go_last_read.png') no-repeat center center; margin-left: 5px; margin-left: 5px;}
+.last_read { width: 15px; height: 15px; background: url(icon/go_last_read.png) no-repeat center center; margin-left: 5px; margin-left: 5px;}
 .last_read a { border: none; width: 100%; height: 100%; display: block; }
 .last_read a:hover { border: none; }
 
@@ -2361,7 +2361,7 @@ color: rgba(50, 50, 50, 1)
 #achievements td .levelcont .bubble {
 	display: inline-block;
     vertical-align: top;
-	background-image: URL('https://dl.dropboxusercontent.com/s/cn9zlr6vufl72mp/userbubble.png');
+	background-image: URL('icon/userbubble.png');
 	background-repeat: none;
 	height: 15px;
 	width: 15px;
@@ -2383,7 +2383,7 @@ color: rgba(50, 50, 50, 1)
 #achievements td .levelcont .complete {
 	display: inline-block;
     vertical-align: top;
-	background-image: URL('https://dl.dropboxusercontent.com/s/84oawtbyu9aa3m2/usercheck.png');
+	background-image: URL('icon/usercheck.png');
 	background-repeat: none;
 	height: 15px;
 	width: 15px;
@@ -2426,31 +2426,31 @@ color: rgba(50, 50, 50, 1)
 	width:16px;
 }
 #bb_bold {
-	background-image: URL('https://dl.dropboxusercontent.com/s/yv275f2p53d0f2j/text_bold.png');
+	background-image: URL('icon/text_bold.png');
 }
 #bb_und {
-	background-image: URL('https://dl.dropboxusercontent.com/s/7xj2b2z3q18fqci/text_underline.png');
+	background-image: URL('icon/text_underline.png');
 }
 #bb_ita {
-	background-image: URL('https://dl.dropboxusercontent.com/s/298swihfw0rgujf/text_italic.png');
+	background-image: URL('icon/text_italic.png');
 }
 #bb_img {
-	background-image: URL('https://dl.dropboxusercontent.com/s/sud8vfmnxfm0b1g/images.png');
+	background-image: URL('icon/images.png');
 }
 #bb_link {
-	background-image: URL('https://dl.dropboxusercontent.com/s/0trobv09ymqavnq/link.png');
+	background-image: URL('icon/link.png');
 }
 #bb_strk {
-	background-image: URL('https://dl.dropboxusercontent.com/s/kz3l1lusxuuyzec/text_strikethrough.png');
+	background-image: URL('icon/text_strikethrough.png');
 }
 #bb_h1 {
-	background-image: URL('https://dl.dropboxusercontent.com/s/u0ddj9lr5ciam4f/text_heading_1.png');
+	background-image: URL('icon/text_heading_1.png');
 }
 #bb_h2 {
-	background-image: URL('https://dl.dropboxusercontent.com/s/t6zx1jzug1wod96/text_heading_2.png');
+	background-image: URL('icon/text_heading_2.png');
 }
 #bb_h3 {
-	background-image: URL('https://dl.dropboxusercontent.com/s/u1dx9w7ncjq43c3/text_heading_3.png');
+	background-image: URL('icon/text_heading_3.png');
 }
 #bb_h4 {
 	background-image: URL('icon/text_heading_4.png');
@@ -2462,34 +2462,34 @@ color: rgba(50, 50, 50, 1)
 	background-image: URL('icon/text_heading_6.png');
 }
 #bb_color {
-	background-image: URL('https://dl.dropboxusercontent.com/s/lk9hls034rjqip0/color_wheel.png');
+	background-image: URL('icon/color_wheel.png');
 }
 #bb_tex {
-	background-image: URL('https://dl.dropboxusercontent.com/s/ltfygh33mfccksu/font.png');
+	background-image: URL('icon/font.png');
 }
 #bb_quote {
-	background-image: URL('https://dl.dropboxusercontent.com/s/9lcrws6emrdcd29/user_comment.png');
+	background-image: URL('icon/user_comment.png');
 }
 #bb_list {
-	background-image: URL('https://dl.dropboxusercontent.com/s/t49wkqrjwaf7c8u/text_list_bullets.png');
+	background-image: URL('icon/text_list_bullets.png');
 }
 #bb_spoil {
-	background-image: URL('https://dl.dropboxusercontent.com/s/can5lqxjvxc1gc0/eye.png');
+	background-image: URL('icon/eye.png');
 }
 #bb_cent {
-	background-image: URL('https://dl.dropboxusercontent.com/s/ekbouq9orns876e/text_align_center.png');
+	background-image: URL('icon/text_align_center.png');
 }
 #bb_lef {
-	background-image: URL('https://dl.dropboxusercontent.com/s/lfzfodeuu06it3w/text_align_left.png');
+	background-image: URL('icon/text_align_left.png');
 }
 #bb_righ {
-	background-image: URL('https://dl.dropboxusercontent.com/s/hp4bppntg93wdzl/text_align_right.png');
+	background-image: URL('icon/text_align_right.png');
 }
 #bb_pre {
-	background-image: URL('https://dl.dropboxusercontent.com/s/oxgdkfw9404nl53/page_white_text.png');
+	background-image: URL('icon/page_white_text.png');
 }
 #bb_youtube {
-	background-image: URL('https://dl.dropboxusercontent.com/s/0nqkdlq44pdz6mq/monitor.png');
+	background-image: URL('icon/monitor.png');
 }
 .bbbutt {
 	background-color:#EEEEEE;
@@ -2527,14 +2527,14 @@ span.size5 img {float: right;}
     width: 25px;
     height: 25px;
     float: left;
-    background: URL('https://dl.dropboxusercontent.com/s/fieou0ov0dyzb6n/arrow_left.png') no-repeat;}
+    background: URL('icon/arrow_left.png') no-repeat;}
 .next {
     margin-right: 1em;
     margin-bottom: 1em;
     width: 25px;
     height: 25px;
     float: right;
-    background: URL('https://dl.dropboxusercontent.com/s/ey4e2tbazwusmee/arrow_right.png') no-repeat;
+    background: URL('icon/arrow_right.png') no-repeat;
     border-bottom: none;}
 
 /*Cleans up daily gazelle box*/
@@ -2609,30 +2609,30 @@ span.size5 img {float: right;}
      transform:rotate(-10deg);}
     .Amazon,.BoardGameGeek,.Desura,.DriveThruRPG,.GameFAQs,.GamesWebsite,.Giantbomb,.GOG,.GooglePlay,.HumbleBundle,.Itch,.iTunes,.MobyGames,.NexusMods,.Origin,.Ouya,.PSN,.RPGGeek,.RPGnet,.Steam,.VNDB,.Wikipedia,.XboxStore,.PCGamingWiki{background-size:contain;}
 
-.Amazon{background-image:url('https://dl.dropboxusercontent.com/s/n6u6e33tw6tvqb4/Amazon.png');}
-.BoardGameGeek{background-image:url('https://dl.dropboxusercontent.com/s/hsup1we67qunw4m/BoardGameGeek.png');}
-.Desura{background-image:url('https://dl.dropboxusercontent.com/s/2qflc4p7hobdwy9/Desura.png');}
-.DriveThruRPG{background-image:url('https://dl.dropboxusercontent.com/s/aow2q1cp3mfb64b/DriveThruRPG.png');}
-.GameFAQs{background-image:url('https://dl.dropboxusercontent.com/s/m17yvk1a4z1b0zw/GameFAQs.png');}
-.GamesWebsite{background-image:url('https://dl.dropboxusercontent.com/s/mbwjfvrj6bwjnj6/GamesWebsite.png');}
-.Giantbomb{background-image:url('https://dl.dropboxusercontent.com/s/5dd5j1jqrniq0xg/Giantbomb.png');}
-.GOG{background-image:url('https://dl.dropboxusercontent.com/s/ccso7xzi7w7lgpw/GOG.png');}
-.GooglePlay{background-image:url('https://dl.dropboxusercontent.com/s/kbig55nxqglxxah/GooglePlay.png');}
-.HumbleBundle{background-image:url('https://dl.dropboxusercontent.com/s/v8pelzl3sg93e8c/HumbleBundle.png');}
-.Itch{background-image:url('https://dl.dropboxusercontent.com/s/b4olltnpuommt74/Itch.png');}
-.iTunes{background-image:url('https://dl.dropboxusercontent.com/s/qtqelt8sgorlf96/iTunes.png');}
-.MobyGames{background-image:url('https://dl.dropboxusercontent.com/s/vok71d3tsbnvvtd/MobyGames.png');}
-.NexusMods{background-image:url('https://dl.dropboxusercontent.com/s/kryhvb0ops5q7hr/NexusMods.png');}
-.Origin{background-image:url('https://dl.dropboxusercontent.com/s/qztottuye46fblk/Origin.png');}
-.Ouya{background-image:url('https://dl.dropboxusercontent.com/s/ejqdlfxmfz9g1ts/Ouya.png');}
-.PCGamingWiki{background-image:url('https://dl.dropboxusercontent.com/s/7681fbmv57uana0/PCGamingWiki.png');}
-.PSN{background-image:url('https://dl.dropboxusercontent.com/s/6i9q9isg8bolngq/PSN.png');}
-.RPGGeek{background-image:url('https://dl.dropboxusercontent.com/s/hmzuiqkfou7ox7q/RPGGeek.png');}
-.RPGnet{background-image:url('https://dl.dropboxusercontent.com/s/yy036322lu46da5/RPGnet.png');}
-.Steam{background-image:url('https://dl.dropboxusercontent.com/s/avsg9cfbfwp4yoi/Steam.png');}
-.VNDB{background-image:url('https://dl.dropboxusercontent.com/s/770jegwcduf6zr0/VNDB.png');}
-.Wikipedia{background-image:url('https://dl.dropboxusercontent.com/s/d4xj3ctpvnka59m/Wikipedia.png');}
-.XboxStore{background-image:url('https://dl.dropboxusercontent.com/s/fidh8m3srsjtonb/XboxStore.png');}
+.Amazon{background-image:url('weblinks/Amazon.png');}
+.BoardGameGeek{background-image:url('weblinks/BoardGameGeek.png');}
+.Desura{background-image:url('weblinks/Desura.png');}
+.DriveThruRPG{background-image:url('weblinks/DriveThruRPG.png');}
+.GameFAQs{background-image:url('weblinks/GameFAQs.png');}
+.GamesWebsite{background-image:url('weblinks/GamesWebsite.png');}
+.Giantbomb{background-image:url('weblinks/Giantbomb.png');}
+.GOG{background-image:url('weblinks/GOG.png');}
+.GooglePlay{background-image:url('weblinks/GooglePlay.png');}
+.HumbleBundle{background-image:url('weblinks/HumbleBundle.png');}
+.Itch{background-image:url('weblinks/Itch.png');}
+.iTunes{background-image:url('weblinks/iTunes.png');}
+.MobyGames{background-image:url('weblinks/MobyGames.png');}
+.NexusMods{background-image:url('weblinks/NexusMods.png');}
+.Origin{background-image:url('weblinks/Origin.png');}
+.Ouya{background-image:url('weblinks/Ouya.png');}
+.PCGamingWiki{background-image:url('weblinks/PCGamingWiki.png');}
+.PSN{background-image:url('weblinks/PSN.png');}
+.RPGGeek{background-image:url('weblinks/RPGGeek.png');}
+.RPGnet{background-image:url('weblinks/RPGnet.png');}
+.Steam{background-image:url('weblinks/Steam.png');}
+.VNDB{background-image:url('weblinks/VNDB.png');}
+.Wikipedia{background-image:url('weblinks/Wikipedia.png');}
+.XboxStore{background-image:url('weblinks/XboxStore.png');}
 
 /*I wasn't sure if the bullets were meant to be to the left of the rest of the text or a bug.  This aligns it with the rest of the content*/
 ul {padding-left: 10px;} /*was 12px*/
