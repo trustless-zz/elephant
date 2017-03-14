@@ -2689,3 +2689,7 @@ span#achievement_info {
 .text-align:right {
 	
 }
+
+img.avatar {
+	max-width: 300px;
+}
