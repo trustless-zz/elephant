@@ -417,9 +417,9 @@ overflow: auto;
     height: 1px;
     overflow: visible;
     position: relative;
-    top: 17px;
+    top: 18px;
     visibility: hidden;
-    width: 61%;
+    /* width: 61%; */
 	z-index: 99;
     font-size: 10pt;
 }
