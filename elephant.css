@@ -2746,3 +2746,15 @@ div#items_navigation {
 #user h3 {
     text-align: left;
 }
+
+li.item_li.item_type_2.available {
+    list-style: none;
+    background: white;
+    margin: 5px;
+    width: 47%;
+    min-height: 200px;
+    padding: 5px;
+    float: left;
+    display: block;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+}
