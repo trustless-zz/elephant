@@ -2313,7 +2313,7 @@ color: rgba(50, 50, 50, 1)
 }
 
 #user h3 {
-	padding-left: 40px;
+    /* padding-left: 40px; */
 }
 
 #user .notice {
@@ -2728,7 +2728,7 @@ li.item_li.item_type_5.available {
 }
 
 ul#items_list {
-    width: calc(100% - 150px);
+    width: calc(100% - 210px);
     float: right;
     display: flex;
     flex-wrap: wrap;
@@ -2736,7 +2736,7 @@ ul#items_list {
 }
 
 ul#shop_links {
-    margin-left: 10px;
+    /* margin-left: 10px; */
     text-align: left;
 }
 
@@ -2765,6 +2765,8 @@ ul#account_links {
     text-align: left;
 }
 
-h3 {
-    margin-left: -45px;
+
+div#items_navigation {
+    margin-left: 10px;
 }
+
