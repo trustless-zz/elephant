@@ -391,7 +391,7 @@ overflow: auto;
 
 #stats_ratio {
 	position: absolute;
-	top: 58px;
+	top: 57px;
 	float: left;
 	display: block;
 	width: 170px;
@@ -457,18 +457,18 @@ overflow: auto;
 
 #connectable {
 	position: absolute;
-	top: 93px;
+	top: 95px;
 	float: left;
 	display: block;
-	width: 110px;
+	width: 170px;
 }
 
 #online_irc {
 	position: absolute;
-	top: 110px;
+	top: 114px;
 	float: left;
 	display: block;
-	width: 110px;
+	width: 170px;
 }
 
 
@@ -2770,3 +2770,10 @@ div#items_navigation {
     margin-left: 10px;
 }
 
+li#stats_hnr {
+    position: absolute;
+    top: 76px;
+    float: left;
+    display: block;
+    width: 170px;
+}
