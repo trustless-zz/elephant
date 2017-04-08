@@ -2777,3 +2777,15 @@ li#stats_hnr {
     display: block;
     width: 170px;
 }
+
+li.item_li.item_type_0.no_access.featured {
+    list-style: none;
+    background: white;
+    margin: 14px;
+    width: 45%;
+    min-height: 200px;
+    padding: 5px;
+    float: left;
+    display: block;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+}
