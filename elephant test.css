@@ -930,6 +930,7 @@ h2 {
 	padding-left: 0px;
 	padding-right: 10px;
 	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 .forum_post tbody .colhead_dark {
@@ -2806,7 +2807,7 @@ li.item_li.item_type_0.no_access.featured {
 
 .similar ul {
     list-style: none;
-    max-height: 247px;
+    max-height: 238px;
     margin: 0px;
     padding: 0px;
     overflow-y: auto;
@@ -2825,4 +2826,11 @@ li.item_li.item_type_0.no_access.featured {
     margin: 0px .5% 5px;
     padding: 0px!important;
     float: left;
+}
+
+.similar li#suggested_header {
+    clear: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 25px;
 }
