@@ -2856,3 +2856,7 @@ li.item_li.item_type_0.no_access.featured {
 .userreviews {
     overflow: hidden;
 }
+
+span.user_title {
+    white-space: nowrap;
+}
