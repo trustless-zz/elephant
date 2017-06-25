@@ -766,7 +766,7 @@ width:100%;
 
 .nobullet { /*This adjusts the position of the titles of the staff pick; the width of the sidebar on profiles*/
 	list-style: none;
-	width: 280px;
+	/* width: 280px; */
 }
 
 .statistics_head {
@@ -2816,4 +2816,13 @@ li.item_li.item_type_0.no_access.featured {
     width: 100%;
     height: 186.093px;
     padding: 0 1px;
+}
+
+.similar li.similar_group {
+    display: block;
+    width: 19%;
+    min-width: 130px;
+    margin: 0px .5% 5px;
+    padding: 0px!important;
+    float: left;
 }
