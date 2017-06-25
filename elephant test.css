@@ -2834,3 +2834,8 @@ li.item_li.item_type_0.no_access.featured {
     font-weight: bold;
     height: 25px;
 }
+
+#color_seeding, #color_seeding .torrent_info_tags, #color_seeding aa#color_seeding {
+    color: #418b00!important;
+    text-shadow: 0 0 7px rgba(217, 228, 115, 0.7);
+}
