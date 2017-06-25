@@ -594,7 +594,7 @@ overflow: auto;
 	font-family: adelle, sans-serif;
 	font-size: 16pt;
 	font-weight: normal !important;
-	width: 540px;
+	/* width: 540px; */
 	display: block;
 }
 
@@ -707,7 +707,7 @@ width:100%;
 	width: 140px;
 	margin: 10px auto;
 	display: block;
-
+	margin-left: 70px;
 }
 
 #index #wrapper #content .thin .sidebar .box .colhead_dark {
@@ -758,6 +758,7 @@ width:100%;
 	font-weight: bold;
 	margin-top: 5px;
 	font-size: 11pt;
+	margin-left: 70px;
 }
 
 .slides_control {
