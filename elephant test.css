@@ -1536,6 +1536,9 @@ color: rgba(50, 50, 50, 1)
 .torrent_table tr.group_torrent{background-color:white;}
 #torrents #content .thin .main_column .torrent_table {
 	margin-top: 10px;
+	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+	z-index: 1;
+	position: relative;
 }
 #torrents #content .thin .main_column .torrent_table .group_torrent span{
 	margin: 0;
@@ -1635,6 +1638,8 @@ color: rgba(50, 50, 50, 1)
 	padding: 10px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7)
+	z-index: 1;
+	position: relative;
 }
 
 
@@ -2407,6 +2412,10 @@ color: rgba(50, 50, 50, 1)
 
 #wiki .main_column .box, .main_column table {
 	padding: 10px;
+	z-index: 1;
+	position: relative;
+	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+	margin: 16px auto;
 }
 
 /* IRC */
@@ -2547,7 +2556,10 @@ span.size5 img {float: right;}
 /*Platform linking cleanup*/
 #grouplinks {
     margin-top: 10px;
-    margin-bottom: -10px;}
+    margin-bottom: -10px;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+    z-index: 2;
+    position: relative;}
 
 #grouplinks td {
     float: left;
@@ -2838,4 +2850,8 @@ li.item_li.item_type_0.no_access.featured {
 #color_seeding, #color_seeding .torrent_info_tags, #color_seeding aa#color_seeding {
     color: #418b00!important;
     text-shadow: 0 0 7px rgba(217, 228, 115, 0.7);
+}
+
+.userreviews {
+    overflow: hidden;
 }
