@@ -428,8 +428,9 @@ overflow: auto;
 	margin: 5px auto;
 	padding: 5px;
 	width: 950px;
-	height: 11px;
-	background-color: #314F6D;
+	/*height: 11px;*/
+	color: white;
+	background-color: rgb(37, 92, 124);
 	border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
