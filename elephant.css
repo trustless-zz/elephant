@@ -183,7 +183,7 @@ overflow: auto;
 #extra1 span {
 	position: absolute;
 	top: 31px;
-	height: 163px;
+	height: 188px;
 	width: 1px;
 	border-right: 1px solid #aaaaaa;
 	margin-left: -1px;
@@ -457,7 +457,7 @@ overflow: auto;
 
 #connectable {
 	position: absolute;
-	top: 95px;
+	top: 114px;
 	float: left;
 	display: block;
 	width: 170px;
@@ -465,7 +465,7 @@ overflow: auto;
 
 #online_irc {
 	position: absolute;
-	top: 114px;
+	top: 133px;
 	float: left;
 	display: block;
 	width: 170px;
@@ -475,7 +475,7 @@ overflow: auto;
 #searchbars {
 	display: block;
 	width: 75%;
-	margin-top: 110px;
+	margin-top: 135px;
 	margin-left: 424px;
 }
 
@@ -2786,7 +2786,7 @@ div#items_navigation {
 
 li#stats_hnr {
     position: absolute;
-    top: 76px;
+    top: 95px;
     float: left;
     display: block;
     width: 170px;
@@ -2865,3 +2865,24 @@ strong.freeleech_label {
     color: rgb(100, 65, 165);
     text-shadow: 0 0 7px rgba(218, 120, 252, 0.7);
 }
+
+.global_buffs {
+    position: absolute;
+    top: 243px;
+    left: 243px;
+    filter: opacity(0.7);
+    width: 1px;
+}
+
+li#stats_share_score {
+    width: 170px;
+    position: absolute;
+    top: 76px;
+    float: left;
+    display: block;
+}
+
+.global_buffs>div {
+    min-width: 80px;
+}
+
