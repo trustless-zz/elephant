@@ -1639,7 +1639,7 @@ color: rgba(50, 50, 50, 1)
 #torrents .main_column .box {
 	padding: 10px;
 	margin-bottom: 20px;
-	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7)
+	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
 	z-index: 1;
 	position: relative;
 }
