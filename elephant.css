@@ -425,15 +425,16 @@ overflow: auto;
 }
 
 #progress_bar {
-	margin: 5px auto;
-	padding: 5px;
-	width: 950px;
-	/*height: 11px;*/
-	color: white;
-	background-color: rgb(37, 92, 124);
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+    position: relative;
+    margin: 5px auto;
+    padding: 5px;
+    width: 950px;
+    height: 11px;
+    color: white;
+    background-color: rgb(46, 82, 102);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 
 #center_poll {
@@ -2887,3 +2888,63 @@ li#stats_share_score {
     min-width: 80px;
 }
 
+#share_score #progress_bar .points {
+    font-weight: bold;
+    margin-left: 48.5%;
+    padding-top: 3px;
+    text-align: center;
+    z-index: 10;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+}
+
+#share_score #progress_bar > span {
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#share_score #progress_bar .main_bar {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(237, 81, 102);
+    background-image: linear-gradient(to bottom, rgb(161, 87, 102), rgb(237, 81, 102), rgb(106, 84, 102));
+    box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);
+    position: relative;
+    z-index: 1;
+}
+
+#share_score #progress_bar .main_bar {
+    animation: expandWidth 2s;
+}
+
+#share_score #progress_bar .fifteen_marker {
+    top: 21px;
+    right: 0;
+    color: black;
+}
+
+#share_score #progress_bar .five_marker {
+    top: -16px;
+    right: 0;
+    color: black;
+    font-size: 10pt;
+}
+
+span.five_marker {
+    font-family: whitney, sans-serif;
+}
+
+.span.bold {
+    font-weight: bold;
+}
+
+span.italic {
+    font-style: italic;
+}
+
+#share_score .colhead {
+    text-align: center;
+}
