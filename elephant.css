@@ -654,7 +654,7 @@ overflow: auto;
 
 #index .main_column {
 	width: 873px;
-	margin-top: -12px;
+	/*margin-top: -12px;*/
 }
 
 .size4 {
@@ -699,7 +699,7 @@ width:100%;
 #index .sidebar {
 	float: right;
 	width: 300px;
-	margin-top: -5px;
+	/*margin-top: -5px;*/
 	/*background: white;
 	border: 1px solid #e5e5e5;
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);*/
