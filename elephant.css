@@ -820,8 +820,9 @@ width:100%;
 }
 
 .poll {
-	padding: 15px 0px;
-	width: auto;
+    padding: 15px 20px;
+    width: auto;
+    list-style: outside;
 }
 
 .poll li img {
@@ -3019,6 +3020,6 @@ span.italic {
 }
 
 ul, ol {
-    margin-bottom: 0px;
-    list-style: inside;
+	margin-bottom: 0px;
+	list-style: inside;
 }
