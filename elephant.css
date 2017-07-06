@@ -914,7 +914,7 @@ h2 {
 }
 
 #forums .colhead_dark, #forums .colhead_dark a {
-	color: black;
+	/*color: black;*/
 }
 
 #forums .colhead_dark {
@@ -3011,4 +3011,9 @@ span.italic {
     margin-left: 798px;
     position: absolute;
     margin-top: -28px;
+}
+
+#forums .forum_post .colhead_dark marquee {
+    max-width: 30%;
+    width: 696px;
 }
