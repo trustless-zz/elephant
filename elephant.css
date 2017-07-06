@@ -2874,10 +2874,10 @@ strong.freeleech_label {
 
 .global_buffs {
     position: absolute;
-    top: 243px;
-    left: 243px;
+    top: 104px;
+    left: 50%;
     filter: opacity(0.7);
-    width: 1px;
+    /*width: 1px;*/
 }
 
 li#stats_share_score {
