@@ -3017,3 +3017,8 @@ span.italic {
     max-width: 30%;
     width: 696px;
 }
+
+ul, ol {
+    margin-bottom: 0px;
+    list-style: inside;
+}
