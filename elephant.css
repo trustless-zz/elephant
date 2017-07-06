@@ -640,12 +640,13 @@ overflow: auto;
 }
 
 .newsdate {
-	font-family: neuzite, sans-serif;
-	font-style: italic;
-	position: absolute;
-	margin-left: 770px;
-	margin-top: -22px;
-	font-size: 10pt;
+    font-family: neuzite, sans-serif;
+    font-style: italic;
+    margin-left: 770px;
+    margin-top: -22px;
+    font-size: 10pt;
+    position: inherit;
+    text-align: right;
 }
 
 .main_column_bg {
@@ -3004,4 +3005,10 @@ span.italic {
     position: relative;
     animation: expandWidth 2s;
     height: 11px;
+}
+
+.main_column .head a {
+    margin-left: 798px;
+    position: absolute;
+    margin-top: -28px;
 }
