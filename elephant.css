@@ -597,7 +597,7 @@ overflow: auto;
 	font-size: 16pt;
 	font-weight: normal !important;
 	/* width: 540px; */
-	display: block;
+	/*display: block; */
 }
 
 .head {
