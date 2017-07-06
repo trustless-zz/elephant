@@ -597,7 +597,7 @@ overflow: auto;
 	font-size: 16pt;
 	font-weight: normal !important;
 	/* width: 540px; */
-	/*display: block; */
+	display: block;
 }
 
 .head {
@@ -3022,4 +3022,9 @@ span.italic {
 ul, ol {
 	margin-bottom: 0px;
 	list-style: inside;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-right: 4px;
 }
