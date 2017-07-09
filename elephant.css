@@ -2685,7 +2685,7 @@ ul {padding-left: 10px;} /*was 12px*/
     .collections_art_display td{border:none;padding:2px;width:25%;}
     .collections_art_display .collection_art{height:100px;background-size:246px 100px;}
     #collections #content .center table tr,td{background:none;}
-    .hovereffect{width:83.367%;height:100%;float:left;overflow:hidden;position:relative;text-align:center;cursor:default;}
+    .hovereffect{width:83.108%;height:100%;float:left;overflow:hidden;position:relative;text-align:center;cursor:default;left: 8.6666%;}
     .hovereffect .overlay{width:101%;height:100%;position:absolute;overflow:hidden;top:5%;left:0;}
     .hovereffect .img_responsive{display:block;position:relative;width:100%;}
     .hovereffect h2{text-align:left;position:relative;font-size:15px;line-height:18px!important;height:80%;padding:5px;border-bottom:none;background:rgba(0,0,0,0.7);font-family:arial;-webkit-transform:scale(0.7);-ms-transform:scale(0.7);transform:scale(0.7);-webkit-transition:all 0.2s ease-in;transition:all 0.2s ease-in;opacity:0;filter:alpha(opacity=0);color:#fff;}
@@ -3028,3 +3028,16 @@ ul, ol {
     list-style: none;
     margin-right: 4px;
 }
+
+.gazelles_art_display td {
+    border: none;
+    padding: 2px;
+    width: 25%;
+}
+
+.gazelles_art_display .gazelle_art {
+    height: 180px;
+    background-size: 245px 180px;
+    background-color: white;
+}
+
