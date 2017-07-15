@@ -2749,7 +2749,7 @@ li.item_li.item_type_5.available {
 }
 
 ul#items_list {
-    width: calc(100% - 210px);
+    width: calc(100% - 220px);
     float: right;
     display: flex;
     flex-wrap: wrap;
