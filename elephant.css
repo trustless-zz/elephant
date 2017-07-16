@@ -800,7 +800,7 @@ width:100%;
 }
 
 #user .pad {
-	padding: 10px;
+	padding-top: 10px;
 }
 
 #user .box .head {
@@ -881,7 +881,7 @@ table {
 	/*border: 1px solid #e5e5e5;*/
 	margin: 10px auto;
 	background-color: white;
-	/*box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);*/
+	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
 }
 
 #user table {
@@ -3059,7 +3059,7 @@ ul, ol {
 }
 
 #items_navigation {
-    width: 200px;
+    /* width: 200px; */
     float: left;
     padding-bottom: 25px;
     text-align: left;
