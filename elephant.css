@@ -3070,3 +3070,6 @@ ul#categories {
     list-style: outside;
 }
 
+.userratingdiv table {
+    box-shadow: none;
+}
