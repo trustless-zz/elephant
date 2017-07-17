@@ -3073,3 +3073,15 @@ ul#categories {
 .userratingdiv table {
     box-shadow: none;
 }
+
+li.item_li.item_type_3.available.featured {
+    list-style: none;
+    background: white;
+    margin: 14px;
+    width: 45%;
+    min-height: 200px;
+    padding: 5px!important;
+    float: left;
+    display: block;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+}
