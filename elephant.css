@@ -157,22 +157,46 @@ overflow: auto;
 
 #logo {
 	position: absolute;
-	top: 10px;
+	top: 25px;
+	left: 158px;
 	display: block;
-	height: 200px;
-	width: 200px;
-	background-image: url(logo/gglogo.png);
+	height: 170px;
+	width: 170px;
+	background-image: url(logo/logobgsmall.png);
 	background-repeat: no-repeat;
 	margin-left: 0px;
+	z-index:3;
+    border-radius:50%;    
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out
+}
+
+#logo:hover {
+    transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
 }
 
 #logo a {
-	width: 200px;
-	height: 200px;
 	display: block;
+	height: 170px;
+	width: 170px;
+	display: block;
+	background-image: url(logo/logotextsmall.png);
 	margin: 0 auto;
-	position: relative;
+	z-index:2;
+	position:absolute;
 	border-style: hidden;
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+	-ms-transition: -ms-transform .8s ease-in-out;
+	transition: transform .8s ease-in-out;
+}
+
+#logo a:hover {
+    transform:rotate(-360deg);
+    -ms-transform:rotate(-360deg);
+    -webkit-transform:rotate(-360deg);
 }
 
 #extra1 {
