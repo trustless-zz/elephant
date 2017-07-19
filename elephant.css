@@ -3115,4 +3115,55 @@ li.item_li.item_type_3.available.featured {
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
 }
 
+#logo {
+	position: absolute;
+	top: 25px;
+	left: 158px;
+	display: block;
+	height: 164px;
+	width: 164px;
+	background-image: url(https://i.imgur.com/A8IMmgt.png);
+	background-repeat: no-repeat;
+	margin-left: 0px;
 
+}
+
+#logo:hover {
+  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+      }
+
+@keyframes shake {
+  9% {
+     transform: rotateY(45deg);
+        box-shadow: -30px 0 30px rgba(153, 153, 153, 0.7);
+      	border-radius:100px;}
+  
+  18%, 36%, 54%, 72%, 90% {
+     transform: rotateY(0deg);
+        box-shadow: none;
+      	border-radius:100px;}
+
+  27% {
+     transform: rotateY(35deg);
+        box-shadow: 20px 0 20px rgba(153, 153, 153, 0.7);
+      	border-radius:100px;}
+
+  45% {
+     transform: rotateY(25deg);
+        box-shadow: -12px 0 12px rgba(153, 153, 153, 0.7);
+      	border-radius:100px;}
+
+  63% {
+     transform: rotateY(15deg);
+        box-shadow: 8px 0 8px rgba(153, 153, 153, 0.7);
+      	border-radius:100px;}
+
+  81% {
+     transform: rotateY(10deg);
+        box-shadow: -4px 0 4px rgba(153, 153, 153, 0.7);
+      	border-radius:100px;}
+
+}
