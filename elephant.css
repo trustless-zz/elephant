@@ -2951,6 +2951,11 @@ li#stats_share_score {
     animation: expandWidth 2s;
 }
 
+@keyframes expandWidth {
+        0% { width: 0; }
+
+}
+
 #share_score #progress_bar .fifteen_marker {
     top: 21px;
     right: 0;
@@ -3109,3 +3114,5 @@ li.item_li.item_type_3.available.featured {
     display: block;
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
 }
+
+
