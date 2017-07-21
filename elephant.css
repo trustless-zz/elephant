@@ -61,13 +61,17 @@ a {
 input[type=text] {
 	height: 20px;
 	font-size: 10pt;
-	box-shadow: 0;
 	-webkit-box-shadow: 0;
 	-moz-box-shadow: 0;
+	-ms-box-shadow: 0;
+	-o-box-shadow: 0;
+	box-shadow: 0;
 	background-color: white;
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	border-radius: 3px;
 	color: black;
 	font-style: italic;
@@ -171,7 +175,7 @@ overflow: auto;
 	-moz-transition: transform 0s ease-in-out;
 	-ms-transition: transform 0s ease-in-out;
 	-o-transition: transform 0s ease-in-out;
-	transition: transform 0s ease-in-out
+	transition: transform 0s ease-in-out;
 }
 
 #logo:hover {
@@ -180,11 +184,11 @@ overflow: auto;
 	-ms-transform:rotate(360deg);
 	-o-transform:rotate(360deg);
 	transform:rotate(360deg);
-	-webkit-transition: transform .8s ease-in-out
-	-moz-transition: transform .8s ease-in-out
-	-ms-transition: transform .8s ease-in-out
-	-o-transition: transform .8s ease-in-out
-	transition: transform .8s ease-in-out
+	-webkit-transition: transform .8s ease-in-out;
+	-moz-transition: transform .8s ease-in-out;
+	-ms-transition: transform .8s ease-in-out;
+	-o-transition: transform .8s ease-in-out;
+	transition: transform .8s ease-in-out;
 }
 
 #logo a {
@@ -210,11 +214,11 @@ overflow: auto;
 	-ms-transform:rotate(-360deg);
 	-o-transform:rotate(-360deg);
 	transform:rotate(-360deg);
-	-webkit-transition: transform .8s ease-in-out
-	-moz-transition: transform .8s ease-in-out
-	-ms-transition: transform .8s ease-in-out
-	-o-transition: transform .8s ease-in-out
-	transition: transform .8s ease-in-out
+	-webkit-transition: transform .8s ease-in-out;
+	-moz-transition: transform .8s ease-in-out;
+	-ms-transition: transform .8s ease-in-out;
+	-o-transition: transform .8s ease-in-out;
+	transition: transform .8s ease-in-out;
 }
 
 #extra1 {
