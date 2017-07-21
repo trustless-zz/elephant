@@ -166,19 +166,25 @@ overflow: auto;
 	background-repeat: no-repeat;
 	margin-left: 0px;
 	z-index:3;
-    border-radius:50%;    
-    -webkit-transition: -webkit-transform 0s ease-in-out;
-    -ms-transition: -ms-transform 0s ease-in-out;
-    transition: transform 0s ease-in-out
+	border-radius:50%;    
+	-webkit-transition: transform 0s ease-in-out;
+	-moz-transition: transform 0s ease-in-out;
+	-ms-transition: transform 0s ease-in-out;
+	-o-transition: transform 0s ease-in-out;
+	transition: transform 0s ease-in-out
 }
 
 #logo:hover {
-    transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    -ms-transition: -ms-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	transform:rotate(360deg);
+	-webkit-transition: transform .8s ease-in-out
+	-moz-transition: transform .8s ease-in-out
+	-ms-transition: transform .8s ease-in-out
+	-o-transition: transform .8s ease-in-out
+	transition: transform .8s ease-in-out
 }
 
 #logo a {
@@ -191,18 +197,24 @@ overflow: auto;
 	z-index:2;
 	position:absolute;
 	border-style: hidden;
-	-webkit-transition: -webkit-transform .0s ease-in-out;
-	-ms-transition: -ms-transform 0s ease-in-out;
+	-webkit-transition: transform 0s ease-in-out;
+	-moz-transition: transform 0s ease-in-out;
+	-ms-transition: transform 0s ease-in-out;
+	-o-transition: transform 0s ease-in-out;
 	transition: transform 0s ease-in-out;
 }
 
 #logo a:hover {
-    transform:rotate(-360deg);
-    -ms-transform:rotate(-360deg);
-    -webkit-transform:rotate(-360deg);
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    -ms-transition: -ms-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out
+	-webkit-transform:rotate(-360deg);
+	-moz-transform:rotate(-360deg);
+	-ms-transform:rotate(-360deg);
+	-o-transform:rotate(-360deg);
+	transform:rotate(-360deg);
+	-webkit-transition: transform .8s ease-in-out
+	-moz-transition: transform .8s ease-in-out
+	-ms-transition: transform .8s ease-in-out
+	-o-transition: transform .8s ease-in-out
+	transition: transform .8s ease-in-out
 }
 
 #extra1 {
@@ -533,14 +545,18 @@ overflow: auto;
 	outline: none;
 	font-size: 10pt;
 	font-style: italic;
-	box-shadow: 0;
 	-webkit-box-shadow: 0;
 	-moz-box-shadow: 0;
+	-ms-box-shadow: 0;
+	-o-box-shadow: 0;
+	box-shadow: 0;
 	color: #8a8a8a;
 	background-color: white;
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -563,6 +579,8 @@ overflow: auto;
 	z-index: 999999999999999;
 	-webkit-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
+	-ms-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
+	-o-box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
 	box-shadow: 0px 3px 5px rgba(50, 50, 50, 0.75);
 }
 
@@ -617,6 +635,8 @@ overflow: auto;
 #searchbars ul li form input:focus {
 	-webkit-box-shadow: 0px 0px 5px #007eff;
 	-moz-box-shadow: 0px 0px 5px #007eff;
+	-ms-box-shadow: 0px 0px 5px #007eff;
+	-o-box-shadow: 0px 0px 5px #007eff;
 	box-shadow: 0px 0px 5px #007eff;
 }
 
@@ -980,6 +1000,8 @@ h2 {
 	width: 1200px !important;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -1802,6 +1824,8 @@ color: rgba(50, 50, 50, 1)
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	border-radius: 3px;
 	padding: 10px;
 	background-color: white;
@@ -1849,6 +1873,8 @@ color: rgba(50, 50, 50, 1)
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -1877,6 +1903,8 @@ color: rgba(50, 50, 50, 1)
 	border: 1px solid #e5e5e5;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -2607,16 +2635,28 @@ span.size5 img {float: right;}
 
 #linkedgroup:hover {
     opacity: 1;
-    filter: grayscale(0%);
     -webkit-filter: grayscale(0);
-    filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -webkit-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);}
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0%);
+    -webkit-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    -moz-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    -ms-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    -o-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
+    filter: drop-shadow(0.5px 0.5px 5px #80bf6d);}
 #linkedgroup {
     opacity: 0.4;
+    -webkit-filter: grayscale(50%);
+    -moz-filter: grayscale(50%);
+    -ms-filter: grayscale(50%);
+    -o-filter: grayscale(50%);
     filter: grayscale(50%);
-    -webkit-filter: grayscale(0.5);
-    filter: drop-shadow(2px 2px 15px black);
-    -webkit-filter: drop-shadow(2px 2px 15px black);}
+    -webkit-filter: drop-shadow(2px 2px 15px black);
+    -moz-filter: drop-shadow(2px 2px 15px black);
+    -ms-filter: drop-shadow(2px 2px 15px black);
+    -o-filter: drop-shadow(2px 2px 15px black);
+    filter: drop-shadow(2px 2px 15px black);}
 #torrents .sidebar {margin-top: 10px;}
 
 /*User Rating cleanup*/
@@ -2649,15 +2689,20 @@ span.size5 img {float: right;}
 /*Web Links - adds images and formatting*/
 #weblinksdiv {padding-bottom: 25px;}
 .weblinks{width:40px;height:40px;float:left;margin:5px;}
-.tilt{-webkit-transition:all 0.5s ease;
-     -moz-transition:all 0.5s ease;
-     -o-transition:all 0.5s ease;
-     -ms-transition:all 0.5s ease;
-     transition:all 0.5s ease;}
-.tilt:hover{-webkit-transform:rotate(-10deg);
-     -moz-transform:rotate(-10deg);-o-transform:rotate(-10deg);
-     -ms-transform:rotate(-10deg);
-     transform:rotate(-10deg);}
+.tilt{
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-ms-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.tilt:hover{
+	-webkit-transform:rotate(-10deg);
+	-moz-transform:rotate(-10deg);
+	-ms-transform:rotate(-10deg);
+	-o-transform:rotate(-10deg);
+	transform:rotate(-10deg);
+}
     .Amazon,.BoardGameGeek,.Desura,.DriveThruRPG,.GameFAQs,.GamesWebsite,.Giantbomb,.GOG,.GooglePlay,.HumbleBundle,.Itch,.iTunes,.MobyGames,.NexusMods,.Origin,.Ouya,.PSN,.RPGGeek,.RPGnet,.Steam,.VNDB,.Wikipedia,.XboxStore,.PCGamingWiki{background-size:contain;}
 
 .Amazon{background-image:url('weblinks/Amazon.png');}
@@ -2718,9 +2763,40 @@ ul {padding-left: 10px;} /*was 12px*/
     .hovereffect{width:83.108%;height:100%;float:left;overflow:hidden;position:relative;text-align:center;cursor:default;left: 8.6666%;}
     .hovereffect .overlay{width:101%;height:100%;position:absolute;overflow:hidden;top:5%;left:0;}
     .hovereffect .img_responsive{display:block;position:relative;width:100%;}
-    .hovereffect h2{text-align:left;position:relative;font-size:15px;line-height:18px!important;height:80%;padding:5px;border-bottom:none;background:rgba(0,0,0,0.7);font-family:arial;-webkit-transform:scale(0.7);-ms-transform:scale(0.7);transform:scale(0.7);-webkit-transition:all 0.2s ease-in;transition:all 0.2s ease-in;opacity:0;filter:alpha(opacity=0);color:#fff;}
+    .hovereffect h2{
+	text-align:left;
+	position:relative;
+	font-size:15px;
+	line-height:18px!important;
+	height:80%;
+	padding:5px;
+	border-bottom:none;
+	background:rgba(0,0,0,0.7);
+	font-family:arial;
+	-webkit-transform:scale(0.7);
+	-moz-transform:scale(0.7);
+	-ms-transform:scale(0.7);
+	-o-transform:scale(0.7);
+	transform:scale(0.7);
+	-webkit-transition:all 0.2s ease-in;
+	-moz-transition:all 0.2s ease-in;
+	-ms-transition:all 0.2s ease-in;
+	-o-transition:all 0.2s ease-in;
+	transition:all 0.2s ease-in;
+	opacity:0;
+	filter:alpha(opacity=0);
+	color:#fff;
+}
     .hovereffect h2 div{font-size:11px;font-style:italic;}
-    .hovereffect:hover h2{opacity:1;filter:alpha(opacity=100);-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}
+    .hovereffect:hover h2{
+	opacity:1;
+	filter:alpha(opacity=100);
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);
+	transform:scale(1);
+}
     .overlay h2 a {color:white;}
     .overlay h2 a:hover{color:white;text-decoration:none;top:0px;left:0px;}
     .overlay div{padding-top:5px;}
