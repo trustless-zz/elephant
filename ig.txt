@@ -1,0 +1,2066 @@
+/*******************************************************************
+*****************INDIVIDUAL GAME/SERIES STYLES**********************
+*******************************************************************/
+@media screen and (min-width: 1100px) {
+
+/*****************************************
+**************CRYSIS SERIES***************
+*****************************************/
+@font-face {
+    font-family: "Crysis";
+    src: url(fonts/crysis.ttf);}
+
+body.series_196 {
+	background-image:url(images/gameseries/crysisbkg.jpg);
+	background-size: cover;	position: absolute; background-position: top;}
+
+.series_196 #content {background: linear-gradient(to bottom, 
+	rgba(43,78,102,0.5) 0%, 
+	rgba(28,49,69,0.5) 23%, 
+	rgba(43,78,102,0.5) 51%, 
+	rgba(28,49,69,0.5) 73%, 
+	rgba(43,78,102,0.5) 100%)}
+.series_196 #logo {background-image:url(images/gameseries/crysislogo.png);}
+.series_196 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_196 #menu {
+	font-family:Crysis;
+	font-weight:bold;
+	font-size: 1.2em;}
+.series_196 #menu ul a {padding: 6px 11px;}
+.series_196 #menu ul {max-width: 1130px;}
+.series_196 #menu ul li a:hover {color: #bd2b36;}
+
+.series_196 .alertbar a {color: white;}
+
+/*.series_196 #userinfo #userinfo_username .donateico {width: 235px;}*/
+.series_196 #userinfo #userinfo_username .donateico a {
+	font-family: Crysis;
+	font-size: 1.2em;
+	margin-top: 1px;
+	margin-left: -25px;
+	display: inline-block;}	
+.series_196 #userinfo #userinfo_username .donateico a:hover {color: #bd2b36;}
+.series_196 #userinfo #userinfo_username .donateico span {font-size: .8em; margin-top: 1px;}
+
+/*****************************************
+*********ELDER SCROLLS SERIES*************
+*****************************************/
+@font-face {
+    font-family: "ElderScrolls";
+    src: url(fonts/skyrim.ttf);}
+
+body.series_169 {
+	background-image:url('images/gameseries/elderscrollsbkg.jpg');
+	background-size: cover;	position: absolute;	background-position: top;}
+.series_169 #logo {background-image:url('images/gameseries/elderscrollslogo.png');}
+.series_169 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_169 #menu {
+	font-family:ElderScrolls;
+	font-size: 2.0em;}
+.series_169 #menu ul {max-width: 1090px; margin-top: -3px;}
+.series_169 #menu ul li a:hover {color: #fff;}
+
+.series_169 .alertbar a {color: white;}
+
+/*.series_169 #content {background: rgba(126,134,137,0.5)}
+.series_169 .colhead, 
+.series_169 .colhead_dark, 
+.series_169 .head {
+	background-color:#1c3145;
+	margin: 0px 10px 10px -10px;
+	padding:5px 5px 5px 15px;
+	background: linear-gradient(#627f5b, #5A7155);
+	box-shadow: -3px 3px 5px #000;
+	border-radius:5px;
+	width:98%;}
+.series_169 .main_column .torrent_table tr.group_torrent td.edition_info {background-color: #4f634a;}
+.series_169 .box, .series_169 table {background: url(images/smokeybackground-grey1.png);}
+.series_169 blockquote {background-color: #4f634a;}
+.series_169 input, .series_169 select, .series_169 textarea {background-color: #4f634a;}
+.series_169 .forum_post tr {background-color: transparent;}*/
+
+/*.series_169  #userinfo #userinfo_username .donateico {left: 875px;}	*/
+.series_169 #userinfo #userinfo_username .donateico a {
+	font-family: ElderScrolls;
+	font-size: 1.8em;
+	margin-left: -20px;}
+
+/*****************************************
+***********MASS EFFECT SERIES*************
+*****************************************/
+@font-face {
+    font-family: "MassEffect";
+    src: url(fonts/masseffect.ttf);}
+
+body.series_58 {
+	background-image:url(images/gameseries/masseffectbkg.jpg);
+	background-size: cover;	position: absolute;	background-position: top;}
+.series_58 #logo {background-image:url(images/gameseries/masseffectlogo.png);}
+.series_58 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_58 #menu {
+	font-family: MassEffect;
+	font-size: 1.1em;}
+.series_58 #menu ul {max-width: 1100px;}
+.series_58 #menu ul li a:hover {color: rgb(238,197,193);}
+
+.series_58 .alertbar a {color: white;}
+
+.series_58  #userinfo #userinfo_username .donateico {width: 160px}	
+.series_58  #userinfo #userinfo_username .donateico a {
+	font-family: MassEffect;
+	font-size: 1.1em;
+	margin-top: 1px;
+	margin-left: 0px;
+	display: inline-block;}	
+.series_58  #userinfo #userinfo_username .donateico a:hover {color: rgb(238,197,193);}
+
+/*****************************************
+***************ZELDA SERIES***************
+*****************************************/
+@font-face {
+    font-family: "Zelda";
+    src: url(fonts/triforce.ttf);}
+
+body.series_52 {
+	background-image:url(images/gameseries/zeldabkg.jpg);
+	background-size: cover;	position: absolute;	background-position: top;}
+.series_52 #logo {background-image:url(images/gameseries/zeldalogo.png);}
+.series_52 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_52 #menu {
+	font-family: Zelda;
+	font-size: 2em;}
+.series_52 #menu ul {max-width: 1040px; margin-top: -2px;}
+.series_52 #menu ul li a:hover {color: rgb(238,197,193);}
+
+.series_52 .alertbar a {color: #fff; text-shadow: 2px 2px 2px #000;}
+
+.series_52  #userinfo #userinfo_username .donateico a {
+	font-family: Zelda;
+	font-size: 2em;
+	margin-top: -2px;
+	margin-left: -10px;
+	display: inline-block;}	
+.series_52  #userinfo #userinfo_username .donateico a:hover {color: rgb(238,197,193);}
+
+/*****************************************
+*************WITCHER SERIES***************
+*****************************************/
+@font-face {
+    font-family: "Witcher";
+    src: url(fonts/witcher.ttf);}
+
+body.series_179 {
+	background-image:url(images/gameseries/witcherbkg.jpg);
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_179 #logo {background-image:url(images/gameseries/witcherlogo.png); position: relative; top: -50px; left: -150px; border-bottom: none;}
+.series_179 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_179 .global_buffs {left:auto; right: -15px;}
+
+.series_179 #menu {
+	font-family: Witcher;
+	font-size: 1.8em;}
+.series_179 #menu ul {max-width: 1050px; margin-top: -9px;}
+.series_179 #menu ul li a:hover {color: #888;}
+
+.series_179 .alertbar a {color: #fff;}
+
+.series_179  #userinfo #userinfo_username .donateico {margin-top: 23px;}	
+.series_179  #userinfo #userinfo_username .donateico a {
+	font-family: Witcher;
+	font-size: 1.8em;
+	margin-top: 1px;
+	margin-left: -20px;
+	display: inline-block;}	
+.series_179  #userinfo #userinfo_username .donateico a:hover {color: #888;}
+
+/*****************************************
+*************PORTAL SERIES****************
+*****************************************/
+@font-face {
+    font-family: "Portal";
+    src: url(fonts/portal.ttf);}
+
+body.series_211 {
+	background-image:url('images/gameseries/portalbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_211 #logo {background-image:url('images/gameseries/portallogo.png'); position: relative; top: 25px; left: 45px; border-bottom: none; width: 100%}
+.series_211 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_211 #menu {font-family: Portal; font-size: 1.9em;}
+.series_211 #menu ul {max-width: 1080px; margin-top: -3px;}
+.series_211 #menu ul li a:hover {color: #c6e6f6;}
+
+.series_211 .alertbar a {color: #fff;}
+
+.series_211 #userinfo #userinfo_username .donateico {
+    margin-top: 25px;}	
+.series_211 #userinfo #userinfo_username .donateico a {
+	font-family: Portal;
+	font-size: 1.9em;
+	margin-top: 6px;
+	margin-left: 1px;
+	display: inline-block;}	
+.series_211 #userinfo #userinfo_username .donateico a:hover {color: #c6e6f6;}
+
+/*****************************************
+************FALLOUT SERIES****************
+*****************************************/
+@font-face {
+    font-family: "Fallout";
+    src: url(fonts/fallout.ttf);}
+
+body.series_22 {
+	background-image:url(images/gameseries/falloutbkg.jpg);
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_22 #logo {background-image:url(images/gameseries/falloutlogo.png); position: relative; top: 25px; left: 45px; border-bottom: none; width: 100%;}
+.series_22 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_22 .global_buffs {left:auto; right: -15px;}
+
+.series_22 #menu {font-family: Fallout; font-size: 2.5em;}
+.series_22 #menu ul {max-width: 1100px; margin-top: -10px;}
+.series_22 #menu ul li a:hover {color: #d78f4d;}
+
+.series_22 .alertbar a {color: #fff;}
+
+.series_22  #userinfo #userinfo_username .donateico {
+    margin-top: 23px;
+	margin-left: -2px;}	
+.series_22  #userinfo #userinfo_username .donateico a {
+	font-family: Fallout;
+	font-size: 2.4em;
+	margin-top: 2px;
+	margin-left: 5px;
+	display: inline-block;}	
+.series_22  #userinfo #userinfo_username .donateico a:hover {color: #d78f4d;}
+
+/*****************************************
+*******ASSASSINS CREED SERIES*************
+*****************************************/
+@font-face {
+    font-family: "AssassinsCreed";
+    src: url(fonts/assassin.ttf);}
+
+body.series_15 {
+	background-image:url('images/gameseries/assassinscreedbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_15 #logo {background-image:url('images/gameseries/asssassinscreedlogo.png'); position: relative; top: 25px; left: 45px; border-bottom: none; max-width:100%;}
+.series_15 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_15 .global_buffs {left:auto; right: -15px;}
+
+.series_15 #menu {font-family: AssassinsCreed; font-size: 2.2em;}
+.series_15 #menu ul {max-width: 1120px; margin-top: -5px;}
+.series_15 #menu ul li a:hover {color: #2b4e66;}
+
+.series_15 .alertbar a {color: #fff;}
+
+.series_15  #userinfo #userinfo_username .donateico {
+	width: 160px;
+    margin-top: 25px;
+	margin-left: 15px;}	
+.series_15  #userinfo #userinfo_username .donateico a {
+	font-family: AssassinsCreed;
+	font-size: 2.2em;
+	margin-top: 2px;
+	margin-left: 2px;
+	display: inline-block;}	
+.series_15  #userinfo #userinfo_username .donateico a:hover {color: #2b4e66;}
+
+/*****************************************
+*********BATMAN ARKHAM SERIES*************
+*****************************************/
+@font-face {
+    font-family: "BatmanArkham";
+    src: url(fonts/batmarkham.ttf);}
+
+body.series_208 {
+	background-image:url('images/gameseries/batmanarkhambkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_208 #logo {background-image:url('images/gameseries/batmanarkhamlogo.png'); position: relative; top: 25px; left: 45px; border-bottom: none; width: 100%;}
+.series_208 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_208 #menu {font-family: BatmanArkham; font-size: 1.5em;}
+.series_208 #menu ul {max-width: 1110px; margin-top: -2px;}
+.series_208 #menu ul li a:hover {color: #fff;}
+
+.series_208 .alertbar a {color: #fff;}
+
+.series_208  #userinfo #userinfo_username .donateico {
+	width: 175px;
+    margin-top: 25px;}	
+.series_208  #userinfo #userinfo_username .donateico a {
+	font-family: BatmanArkham;
+	font-size: 1.5em;
+	margin-top: 6px;
+	margin-left: 0px;
+	display: inline-block;}	
+.series_208  #userinfo #userinfo_username .donateico a:hover {color: #fff;}
+
+/*****************************************
+************BIOSHOCK SERIES***************
+*****************************************/
+@font-face {
+    font-family: "BioShock";
+    src: url(fonts/bioshock.ttf);}
+
+body.series_178 {
+	background-image:url('images/gameseries/bioshockbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_178 #logo {background-image:url('images/gameseries/bioshocklogo.png'); top: 25px; left: 45px; border-bottom: none;}
+.series_178 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_178 .global_buffs {left:auto; right: -15px;}
+
+.series_178 #menu {font-family: BioShock; font-size: 2.1em;}
+.series_178 #menu ul {max-width: 1100px; margin-top: -5px;}
+.series_178 #menu ul li a:hover {color: #000;}
+
+.series_178 .alertbar a {color: #2b4e66;}
+
+.series_178  #userinfo #userinfo_username .donateico {
+	width: 235px;
+    margin-top: 23px;
+	margin-left: -20px;}
+.series_178  #userinfo #userinfo_username .donateico a {
+	font-family: BioShock;
+	font-size: 2em;
+	margin-top: 5px;
+	margin-left: -25px;
+	display: inline-block;}	
+.series_178  #userinfo #userinfo_username .donateico a:hover {color: #000;}
+
+/*****************************************
+**************NO MANS SKY*****************
+*****************************************/
+@font-face {
+    font-family: "NoMansSky";
+    src: url(fonts/nomanssky.ttf);}
+
+body.tgroup_24482, 
+body.tgroup_24230 {
+	background-image:url('images/gameseries/nomansskybkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.tgroup_24482 #logo, 
+.tgroup_24230 #logo 
+	{background-image:url('images/gameseries/nomansskylogo.png'); top: 25px; left: 45px; border-bottom: none;}
+.tgroup_24482 #content,
+.tgroup_24230 #content 
+	{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.tgroup_24482 .global_buffs,
+.tgroup_24230 .global_buffs
+	{left:auto; right: -15px;}
+
+.tgroup_24482 #menu, 
+.tgroup_24230 #menu 
+	{font-family: NoMansSky; font-size: 2.1em;}
+.tgroup_24482 #menu ul, 
+.tgroup_24230 #menu ul 
+	{max-width: 1100px; margin-top: -5px;}
+.tgroup_24482 #menu ul li a:hover, 
+.tgroup_24230 ul li a:hover 
+	{color: #000;}
+
+.tgroup_24230 .alertbar a  
+	{color: #fff;}
+
+.tgroup_24482 #userinfo #userinfo_username .donateico,
+.tgroup_24230 #userinfo #userinfo_username .donateico{
+    margin-top: 23px;
+	margin-left: 10px;}	
+.tgroup_24482 #userinfo #userinfo_username .donateico a,
+.tgroup_24230 #userinfo #userinfo_username .donateico a{
+	font-family: NoMansSky;
+	font-size: 2.1em;
+	margin-top: 5px;
+	margin-left: -30px;
+	display: inline-block;
+	color: #fff;}	
+.tgroup_24482 #userinfo #userinfo_username .donateico a:hover,
+.tgroup_24230 #userinfo #userinfo_username .donateico a:hover {
+	 color: #000;}
+
+/*****************************************
+************WE HAPPY FEW GAME*************
+*****************************************/
+@font-face {
+    font-family: "BioShock";
+    src: url(fonts/bioshock.ttf);}
+
+body.tgroup_23617 {
+	background-image:url(images/gameseries/wehappyfewbkg.jpg);
+	background-size: cover; position: absolute; background-position: top;}
+.tgroup_23617 #logo {background-image:url(images/gameseries/wehappyfewlogo.png); top: 25px; left: 45px; border-bottom: none;}
+.tgroup_23617 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.tgroup_23617 #menu {font-family: BioShock; font-size: 2.1em;}
+.tgroup_23617 #menu ul {max-width: 1075px; margin-top: -5px;}
+.tgroup_23617 #menu ul li a:hover {color: #c6e6f6;}
+
+.tgroup_23617 .alertbar a {color: #fff;}
+
+.tgroup_23617 #userinfo #userinfo_username .donateico {
+	width: 235px;
+    margin-top: 23px;
+	margin-left: -20px;}
+.tgroup_23617 #userinfo #userinfo_username .donateico a {
+	font-family: BioShock;
+	font-size: 2em;
+	margin-top: 5px;
+	margin-left: -20px;
+	display: inline-block;}	
+.tgroup_23617 #userinfo #userinfo_username .donateico a:hover {color: #c6e6f6;}
+
+/*****************************************
+***********BATTLEFIELD SERIES*************
+*****************************************/
+@font-face {
+    font-family: "Battlefield";
+    src: url(fonts/battlefield.ttf);}
+
+body.series_31 {
+	background-image:url(images/gameseries/battlefieldbkg.jpg);
+	background-size: cover; position: absolute; background-position: top;}
+.series_31 #logo {background-image:url(images/gameseries/battlefieldlogo.png); top: 25px; left: 45px; border-bottom: none;}
+.series_31 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_31 #menu {font-family: Battlefield; font-size: 1.7em; opacity: 0.8;}
+.series_31 #menu ul {max-width: 1050px; margin-top: -6px;}
+.series_31 #menu ul li a:hover {color: #c6e6f6;}
+
+.series_31 .alertbar a {color: #fff;}
+
+.series_31 #userinfo #userinfo_username .donateico {
+	width: 235px;
+    margin-top: 23px;
+	margin-left: -5px;}	
+.series_31 #userinfo #userinfo_username .donateico a {
+	font-family: Battlefield;
+	font-size: 1.6em;
+	margin-top: 5px;
+	margin-left: -20px;
+	display: inline-block;
+	opacity: 0.8;}	
+.series_31 #userinfo #userinfo_username .donateico a:hover {color: #c6e6f6;}
+
+/*****************************************
+*********WING COMMANDER SERIES************
+*****************************************/
+@font-face {
+    font-family: "WingCommander";
+    src: url(fonts/wingommander.ttf);}
+
+body.series_191 {
+	background-image:url('images/gameseries/wingcommanderbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_191 #logo {background-image:url('images/gameseries/wingcommanderlogo.png'); top: 25px; left: 45px; border-bottom: none;}
+.series_191 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_191 #menu {font-family: WingCommander; font-size: 1.7em; opacity: 0.8;}
+.series_191 #menu ul {max-width: 1050px; margin-top: -2px;}
+.series_191 #menu ul li a:hover {color: #fffeae;}
+
+.series_191 .alertbar a {color: #fff;} 
+
+.series_191 #userinfo #userinfo_username .donateico {
+	width: 235px;
+    margin-top: 23px;}	
+.series_191 #userinfo #userinfo_username .donateico a {
+	font-family: WingCommander;
+	font-size: 1.7em;
+	margin-top: 8px;
+	margin-left: 0px;
+	display: inline-block;
+	opacity: 0.8;}	
+.series_191 #userinfo #userinfo_username .donateico a:hover {color: #fffeae;}
+
+/*****************************************
+******************BULLY*******************
+*****************************************/
+@font-face {
+    font-family: "Bully";
+    src: url(fonts/bully.ttf);}
+
+body.master_465,
+body.tgroup_5993,
+body.tgroup_8046 {
+	background-image:url('images/gameseries/bullybkg2.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+
+.master_465 #logo,
+.tgroup_5993 #logo,
+.tgroup_8046 #logo
+	{background-image:url('images/gameseries/bullylogo.png'); top: 25px; left: 45px; border-bottom: none;}
+
+.master_465 #content,
+.tgroup_5993 #content,
+.tgroup_8046 #content 
+	{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.master_465 .global_buffs,
+.tgroup_5993 .global_buffs,
+.tgroup_8046 .global_buffs 
+	{left:auto; right: -15px;}
+
+	
+.master_465 #menu,
+.tgroup_5993 #menu,
+.tgroup_8046 #menu
+	{font-family: Bully; font-size: 1.9em; opacity: 0.8;}
+
+.master_465 #menu ul,
+.tgroup_5993 #menu ul,
+.tgroup_8046 #menu ul 
+	{max-width: 1100px; margin-top: -5	px;}
+
+.master_465 #menu ul li a:hover,
+.tgroup_5993 #menu ul li a:hover,
+.tgroup_8046 #menu ul li a:hover 
+	{color: #c59608;}
+
+.master_465 #userinfo #userinfo_username .donateico,
+.tgroup_5993 #userinfo #userinfo_username .donateico,
+.tgroup_8046 #userinfo #userinfo_username .donateico {
+	width: 235px;
+    margin-top: 23px;
+	margin-left: 20px;}	
+.master_465 #userinfo #userinfo_username .donateico a,
+.tgroup_5993 #userinfo #userinfo_username .donateico a,
+.tgroup_8046 #userinfo #userinfo_username .donateico a {
+	font-family: Bully;
+	font-size: 1.9em;
+	margin-top: 6px;
+	margin-left: -10px;
+	display: inline-block;
+	opacity: 0.8;}	
+.master_465 #userinfo #userinfo_username .donateico a:hover,
+.tgroup_5993 #userinfo #userinfo_username .donateico a:hover,
+.tgroup_8046 #userinfo #userinfo_username .donateico a:hover {color: #c59608;}
+
+/*****************************************
+*********GRAND THEFT AUTO SERIES**********
+*****************************************/
+@font-face {
+    font-family: "gta";
+    src: url(fonts/gta.ttf);}
+
+body.series_70 {
+	background-image:url('images/gameseries/gtabkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_70 #logo {background-image:url('images/gameseries/gtalogo.png'); top: 25px; left: 45px; border-bottom: none;}
+.series_70 #content {background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_70 .global_buffs {left:auto; right: -15px;}
+	
+.series_70 #menu {
+	font-family: gta; 
+	font-size: 2em;}
+.series_70 #menu ul {
+	max-width: 1110px; 
+	margin-top: -7px;}
+.series_70 #menu ul li a:hover {color: #b0cfad;}
+.series_70 .alertbar a {color: #c6e6f6;}
+
+.series_70 #userinfo #userinfo_username .donateico {
+	width: 160px;
+    margin-top: 23px;}	
+.series_70 #userinfo #userinfo_username .donateico a {
+	font-family: gta;
+	font-size: 2em;
+	margin-top: 2px;
+	margin-left: 20px;
+	display: inline-block;}	
+.series_70 #userinfo #userinfo_username .donateico a:hover {color: #b0cfad;}
+
+/*****************************************
+**********FINAL FANTASY SERIES************
+*****************************************/
+@font-face {
+    font-family: "FinalFantasy";
+    src: url(fonts/finalfantasy.ttf);}
+
+body.franchise_53 {
+	background-image:url('images/gameseries/finalfantasybkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.franchise_53 #logo {background-image:url('images/gameseries/finalfantasylogo.png'); top: 25px; left: 45px; border-bottom: none;}
+.franchise_53 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.franchise_53 .global_buffs {left:auto; right: -15px;}
+	
+.franchise_53 #menu {font-family: FinalFantasy; font-size: 2.7em; text-transform:uppercase; letter-spacing: 1.5px;}
+.franchise_53 #menu ul {max-width: 1000px; margin-top: -11px;}
+.franchise_53 #menu ul li a {color: rgb(233,247,248);}
+.franchise_53 #menu ul li a:hover {color: #fffeae;}
+.franchise_53 .alertbar a {color: #2b4e66;} 
+
+.franchise_53 #userinfo #userinfo_username .donateico {
+	width: 160px;
+    margin-top: 23px;
+	margin-left: -10px;}	
+.franchise_53 #userinfo #userinfo_username .donateico a {
+	font-family: FinalFantasy;
+	font-size: 2.7em;
+	margin-top: 0px;
+	margin-left: -40px;
+	display: inline-block;
+	text-transform:uppercase; letter-spacing: 1.5px;}	
+.franchise_53 #userinfo #userinfo_username .donateico a:hover {color: #fffeae;}
+
+/*****************************************
+**********RESIDENT EVIL SERIES************
+*****************************************/
+@font-face {
+    font-family: "ResidentEvil";
+    src: url(fonts/residentevil.ttf);}
+
+body.series_19 {
+	background-image:url('images/gameseries/residentevilbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_19 #logo {background-image:url('images/gameseries/residentevillogo.png'); top: 25px; left: 45px; border-bottom: none;}
+.series_19 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_19 #menu {font-family: ResidentEvil; font-size: 2em;}
+.series_19 #menu ul {max-width: 1100px; margin-top: -3px;}
+.series_19 #menu ul li a {color: rgb(233,247,248);}
+.series_19 #menu ul li a:hover {color: #f17700;}
+.series_19 .alertbar a {color: #fff;} 
+
+.series_19 #userinfo #userinfo_username .donateico {
+	width: 160px;
+    margin-top: 27px;
+	margin-left: -10px;}	
+.series_19 #userinfo #userinfo_username .donateico a {
+	font-family: ResidentEvil;
+	font-size: 2em;
+	margin-top: 5px;
+	margin-left: 0px;
+	display: inline-block;}	
+.series_19 #userinfo #userinfo_username .donateico a:hover {color: #f17700;}
+
+/*****************************************
+***********CALL OF DUTY SERIES************
+*****************************************/
+@font-face {
+    font-family: "CallofDuty";
+    src: url(fonts/callofduty.otf);}
+
+body.series_65 {
+	background-image:url('images/gameseries/callofdutybkg.jpeg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_65 #logo {
+	background-image:url('images/gameseries/callofdutylogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.series_65 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_65 .global_buffs {left:auto; right: -15px;}
+	
+.series_65 #menu {font-family: CallofDuty; font-size: 1.9em;}
+.series_65 #menu ul {max-width: 1080px; margin-top: -3px;}
+.series_65 #menu ul li a {color: rgb(233,247,248);}
+.series_65 #menu ul li a:hover {color: #FFF900;}
+.series_65 .alertbar a {color: #fff;} 
+
+.series_65 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 25px;}	
+.series_65 #userinfo #userinfo_username .donateico a {
+	font-family: CallofDuty;
+	font-size: 1.9em;
+	margin-top: 5px;
+	margin-left: 15px;
+	display: inline-block;}	
+.series_65 #userinfo #userinfo_username .donateico a:hover {color: #FFF900;}
+
+/*****************************************
+***************MAFIA SERIES***************
+*****************************************/
+body.series_827 {
+	background-image:url('images/gameseries/mafiabkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_827 #logo {
+	background-image:url('images/gameseries/mafialogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.series_827 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_827 .global_buffs {left:auto; right: -15px;}
+	
+.series_827 #menu {font-family: "Arial"; font-size: 1.7em; font-weight:bold;}
+.series_827 #menu ul {max-width: 1080px; margin-top: -3px;}
+.series_827 #menu ul li a {color: #FFF;}
+.series_827 #menu ul li a:hover {color: #BF1E2E;}
+.series_827 .alertbar a {color: #fff;} 
+
+.series_827 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 23px;}	
+.series_827 #userinfo #userinfo_username .donateico a {
+	font-family: "Arial Black", "Arial"; 
+	font-size: 1.7em; 
+	font-weight:bold;
+	margin-top: 8px;
+	margin-left: 20px;
+	display: inline-block;}	
+.series_827 #userinfo #userinfo_username .donateico a:hover {color: #BF1E2E;}
+
+/*****************************************
+***************CIV SERIES*****************
+*****************************************/
+@font-face {
+    font-family: "Civilization";
+    src: url(fonts/civilization.ttf);}
+	
+body.series_183  {
+	background-image:url('images/gameseries/civilizationbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_183 #logo {
+	background-image:url('images/gameseries/civilizationlogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.series_183 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_183 .global_buffs {left:auto; right: -15px;}
+	
+.series_183 #menu {font-family: Civilization; font-size: 1.7em; font-weight: bold;}
+.series_183 #menu ul {max-width: 1080px; margin-top: -3px;}
+.series_183 #menu ul li a {color: #FFF;}
+.series_183 #menu ul li a:hover {color: #635c4d;}
+.series_183 .alertbar a {color: #fff;} 
+
+.series_183 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 25px;}	
+.series_183 #userinfo #userinfo_username .donateico a {
+	font-family: Civilization; 
+	font-size: 1.7em; 
+	font-weight: bold;
+	margin-top: 5px;
+	margin-left: 15px;
+	display: inline-block;}	
+.series_183 #userinfo #userinfo_username .donateico a:hover {color: #635c4d;}
+
+/*****************************************
+***********METROID SERIES*****************
+*****************************************/
+@font-face {
+    font-family: "Metroid";
+    src: url(fonts/metroid.ttf);}
+	
+body.series_26  {
+	background-image:url('images/gameseries/metroidbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_26 #logo {
+	background-image:url('images/gameseries/metroidlogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.series_26 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+	
+.series_26 #menu {font-family: Metroid; font-size: 1.4em; font-weight: bold;}
+.series_26 #menu ul {max-width: 1118px; margin-top: -3px;}
+.series_26 #menu ul li a {color: #FFF;}
+.series_26 #menu ul li a:hover {color: #BD5B55;}
+.series_26 .alertbar a {color: #fff;} 
+
+.series_26 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 26px;}	
+.series_26 #userinfo #userinfo_username .donateico a {
+	font-family: Metroid; 
+	font-size: 1.4em; 
+	font-weight: bold;
+	margin-top: 5px;
+	margin-left: 15px;
+	display: inline-block;}	
+.series_26 #userinfo #userinfo_username .donateico a:hover {color: #BD5B55;}
+
+/*****************************************
+********GUITAR HERO SERIES****************
+*****************************************/
+@font-face {
+    font-family: "GuitarHero";
+    src: url(fonts/guitarhero.ttf);}
+	
+body.series_327 {
+	background-image:url('images/gameseries/guitarherobkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_327 #logo {
+	background-image:url('images/gameseries/guitarherologo.png'); 
+	top: 25px; left: 45px; border-bottom: none;
+	margin-left: -200px;}
+.series_327 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_327 .global_buffs {left:auto; right: -15px;}
+	
+.series_327 #menu {font-family: GuitarHero; font-size: 2.4em; font-weight: bold;}
+.series_327 #menu ul {max-width: 1050px; margin-top: -12px;}
+.series_327 #menu ul li a {color: #FFF;}
+.series_327 #menu ul li a:hover {color: #F7AA04;}
+.series_327 .alertbar a {color: #fff;} 
+
+.series_327 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 23px;}	
+.series_327 #userinfo #userinfo_username .donateico a {
+	font-family: GuitarHero; 
+	font-size: 2.4em; 
+	font-weight: bold;
+	margin-top: 0px;
+	margin-left: -20px;
+	display: inline-block;}	
+.series_327 #userinfo #userinfo_username .donateico a:hover {color: #F7AA04;}
+
+/*****************************************
+************FAR CRY SERIES****************
+*****************************************/
+@font-face {
+    font-family: "FarCry";
+    src: url(fonts/farcryblooddragon.ttf);}
+	
+body.series_291  {
+	background-image:url(images/gameseries/farcrybkg.jpg);
+	background-size: cover; position: absolute; background-position: top;}
+.series_291 #logo {
+	background-image:url(images/gameseries/farcrylogo.png); 
+	top: 25px; left: 45px; border-bottom: none;}
+.series_291 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+	
+.series_291 #menu {font-family: FarCry; font-size: 1.5em; font-weight: bold; 	text-transform: uppercase;}
+.series_291 #menu ul {max-width: 1100px; margin-top: -3px;}
+.series_291 #menu ul li a {color: #FFF;}
+.series_291 #menu ul li a:hover {color: #A91F1E;}
+.series_291 .alertbar a {color: #fff;} 
+
+.series_291 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 25px;}	
+.series_291 #userinfo #userinfo_username .donateico a {
+	font-family: FarCry; 
+	font-size: 1.5em; 
+	font-weight: bold;
+	margin-top: 6px;
+	margin-left: 0px;
+	display: inline-block;
+	text-transform: uppercase;}	
+.series_291 #userinfo #userinfo_username .donateico a:hover {color: #A91F1E;}
+
+/*****************************************
+**************MARIO SERIES****************
+*****************************************/
+body.franchise_55  {
+	background-image:url('images/gameseries/mariobkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.franchise_55 #logo {
+	background-image:url('images/gameseries/mariologo.png'); 
+	top: 25px; left: 45px; border-bottom: none;
+	margin-left: -200px;}
+.franchise_55 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+	
+.franchise_55  #userinfo #userinfo_username .donateico {width: 160px; margin-top: 33px;}	
+
+/*****************************************
+************PAC MAN SERIES****************
+*****************************************/
+@font-face {
+    font-family: "PacMan";
+    src: url(fonts/pacman.ttf);}
+	
+body.series_896  {
+	background-image:url('images/gameseries/pacmanbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_896 #logo {
+	background-image:url('images/gameseries/pacmanlogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;
+	margin-left: -200px;}
+.series_896 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+	
+.series_896  #menu {font-family: PacMan; font-size: 1.15em; font-weight: normal; text-transform: lowercase;}
+.series_896  #menu ul {max-width: 1140px; margin-top: 3px;}
+.series_896  #menu ul li a {color: #FFFF00;}
+.series_896  #menu ul li a:hover {color: #FFF;}
+.series_896  .alertbar a {color: #fff;} 
+
+.series_896  #userinfo #userinfo_username .donateico {width: 160px; margin-top: 24px;}	
+.series_896  #userinfo #userinfo_username .donateico a {
+	font-family: PacMan; 
+	font-size: 1.15em; 
+	font-weight: normal;
+	margin-top: 13px;
+	margin-left: 10px;
+	display: inline-block;
+	text-transform: lowercase}	
+.series_896  #userinfo #userinfo_username .donateico a:hover {color: #FFFF00;}
+
+/*****************************************
+********STARDEW VALLEY SERIES*************
+*****************************************/
+@font-face {
+    font-family: "StarDew";
+    src: url(fonts/stardew.ttf);}
+	
+body.master_2940 {
+	background-image:url(images/gameseries/stardewbkg.png);
+	background-size: cover; position: absolute; background-position: top;}
+.master_2940 #logo {
+	background-image:url(images/gameseries/stardewlogo.png); 
+	top: 25px; left: 45px; border-bottom: none;}
+.master_2940 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+	
+.master_2940  #menu {font-family: StarDew; font-size: 2.2em; font-weight: normal; text-transform: uppercase;}
+.master_2940  #menu ul {max-width: 1140px; margin-top: -4px;}
+.master_2940  #menu ul li a {color: #E2A500;}
+.master_2940  #menu ul li a:hover {color: #FFF;}
+.master_2940  .alertbar a {color: #fff;} 
+
+.master_2940  #userinfo #userinfo_username .donateico {width: 160px; margin-top: 23px;}	
+.master_2940  #userinfo #userinfo_username .donateico a {
+	font-family: StarDew; 
+	font-size: 2.2em; 
+	font-weight: normal;
+	margin-top: 6px;
+	margin-left: 15px;
+	display: inline-block; text-transform:uppercase;}	
+.master_2940  #userinfo #userinfo_username .donateico a:hover {color: #E2A500;}
+
+/*****************************************
+***********MEGA MAN SERIES****************
+*****************************************/
+@font-face {
+    font-family: "MegaMan";
+    src: url(fonts/megaman2.ttf);}
+
+body.franchise_360 {
+	background-image:url('images/gameseries/megamanbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.franchise_360 #logo {
+	background-image:url('images/gameseries/megamanlogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.franchise_360 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+	
+.franchise_360 #menu {font-family: MegaMan; font-size: 1em; font-weight: normal;}
+.franchise_360 #menu ul {max-width: 1140px; margin-top: 0px;}
+.franchise_360 #menu ul li a {color: #FFF;}
+.franchise_360 #menu ul li a:hover {color: #ED7943;}
+.franchise_360 .alertbar a {color: #fff;} 
+
+.franchise_360 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 23px;}	
+.franchise_360 #userinfo #userinfo_username .donateico a {
+	font-family: MegaMan; 
+	font-size: 1em; 
+	font-weight: normal;
+	margin-top: 11px;
+	margin-left: 0px;
+	display: inline-block;}	
+.franchise_360 #userinfo #userinfo_username .donateico a:hover {color: #ED7943;}
+
+/*****************************************
+************AMNESIA SERIES****************
+*****************************************/
+@font-face {
+    font-family: "Amnesia";
+    src: url(fonts/amnesia.ttf);}
+
+body.series_857 {
+	background-image:url('images/gameseries/amnesiabkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_857 #logo {
+	background-image:url('images/gameseries/amnesialogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.series_857 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_857  #menu {font-family: Amnesia; font-size: 1.5em; font-weight: normal; }
+.series_857  #menu ul {max-width: 1000px; margin-top: 2px;}
+.series_857  #menu ul li a {color: #FFF;}
+.series_857  #menu ul li a:hover {color: #ED7943;}
+.series_857  .alertbar a {color: #fff;} 
+
+.series_857  #userinfo #userinfo_username .donateico {width: 160px; margin-top: 25px; margin-left: -25px;}	
+.series_857  #userinfo #userinfo_username .donateico a {
+	font-family: Amnesia; 
+	font-size: 1.5em; 
+	font-weight: normal;
+	margin-top: 9px;
+	margin-left: 15px;
+	display: inline-block;}	
+.series_857  #userinfo #userinfo_username .donateico a:hover {color: #ED7943;}
+
+/*****************************************
+**********TOMB RAIDER SERIES**************
+*****************************************/
+@font-face {
+    font-family: "TombRaider";
+    src: url(fonts/tombraider.ttf);
+	overflow-x: hidden;}
+
+body.series_198  {
+	background-image:url('images/gameseries/tombraiderbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_198 #logo {
+	background-image:url('images/gameseries/tombraiderlogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.series_198 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_198 .global_buffs {left:auto; right: -15px;}
+
+.series_198 #menu {font-family: TombRaider; font-size: 1.8em; font-weight: normal; }
+.series_198 #menu ul {max-width: 1100px; margin-top: 0px;}
+.series_198 #menu ul li a {color: #FFF;}
+.series_198 #menu ul li a:hover {color: #710c17;}
+.series_198 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_198 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 28px; margin-left: -30px;}	
+.series_198 #userinfo #userinfo_username .donateico a {
+	font-family: TombRaider; 
+	color: #fff;
+	font-size: 1.7em; 
+	font-weight: normal;
+	margin-top: 8px;
+	margin-left: 10px;
+	display: inline-block;}	
+.series_198 #userinfo #userinfo_username .donateico a:hover {color: #710c17;}
+
+/*****************************************
+************ALPACAS! THEME****************
+*****************************************/
+@font-face {
+    font-family: "Alpacas";
+    src: url(fonts/alpaca.ttf);}
+
+body.alpacas  {
+	background-image:url('images/gameseries/alpacas.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.alpacas #logo {
+	background-image:url('images/gameseries/alpacaslogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.alpacas #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.alpacas .global_buffs {left: auto; right: -15px;}
+
+.alpacas #menu {font-family: Alpacas; font-size: 2em; font-weight: normal; }
+.alpacas #menu ul {max-width: 1100px; margin-top: -5px;}
+.alpacas #menu ul li a {color: #FFF;}
+.alpacas #menu ul li a:hover {color: #c6e6f6;}
+.alpacas .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.alpacas #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.alpacas #userinfo #userinfo_username .donateico a {
+	font-family: Alpacas; 
+	color: #fff;
+	font-size: 2em; 
+	font-weight: normal;
+	margin-top: 8px;
+	margin-left: 10px;
+	display: inline-block;}	
+.alpacas #userinfo #userinfo_username .donateico a:hover {color: #c6e6f6;}
+
+/*****************************************
+************DAFT PUNK THEME***************
+*****************************************/
+@font-face {
+    font-family: "DaftPunk";
+    src: url(fonts/daftpunk.ttf);}
+
+body.daftpunk  {
+	background-image:url('images/gameseries/daftpunk.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.daftpunk #logo {
+	background-image:url('images/gameseries/daftpunklogo.png'); 
+	top: 25px; left: 45px; border-bottom: none;}
+.daftpunk #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.daftpunk #menu {font-family: DaftPunk; font-size: 2em; font-weight: normal; }
+.daftpunk #menu ul {max-width: 1100px; margin-top: -8px;}
+.daftpunk #menu ul li a {color: #FFF;}
+.daftpunk #menu ul li a:hover {color: #CB2C04;}
+.daftpunk .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.daftpunk #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.daftpunk #userinfo #userinfo_username .donateico a {
+	font-family: DaftPunk; 
+	color: #fff;
+	font-size: 2em; 
+	font-weight: normal;
+	margin-top: 8px;
+	margin-left: 10px;
+	display: inline-block;}	
+.daftpunk #userinfo #userinfo_username .donateico a:hover {color: #CB2C04;}
+.daftpunk #userinfo #userinfo_username .donateico span {top: -5px;}
+
+/*****************************************
+*******DAY OF THE TENTACLE THEME**********
+*****************************************/
+@font-face {
+    font-family: "Tentacle"; src: url(fonts/tentacle.ttf);}
+
+body.series_555   {
+	background-image:url('images/gameseries/dayofthetentacle.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_555 #logo {background-image:url('images/gameseries/dayofthetentaclelogo.png');}
+.series_555 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_555 #menu {font-family: Tentacle; font-size: 2.7em; font-weight: normal; }
+.series_555 #menu ul {max-width: 1000px; margin-top: -5px;}
+.series_555 #menu ul li a {color: #FFF;}
+.series_555 #menu ul li a:hover {color: #AF37B3;}
+.series_555 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_555 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.series_555 #userinfo #userinfo_username .donateico a {
+	font-family: Tentacle; 
+	color: #fff;
+	font-size: 2.7em; 
+	margin-top: 8px;
+	margin-left: 0px;
+	display: inline-block;}	
+.series_555 #userinfo #userinfo_username .donateico a:hover {color: #AF37B3;}
+
+/*****************************************
+************DARK SOULS THEME**************
+*****************************************/
+@font-face {
+    font-family: "DarkSouls"; src: url(fonts/darksouls.ttf);}
+
+body.series_279 {
+	background-image:url('images/gameseries/darksouls.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_279 #logo {background-image:url('images/gameseries/darksoulslogo.png');}
+.series_279 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_279 #menu {font-family: DarkSouls; font-size: 1.7em; font-weight: normal; }
+.series_279 #menu ul {max-width: 1100px; margin-top: -2px;}
+.series_279 #menu ul li a {color: #FFF;}
+.series_279 #menu ul li a:hover {color: #E2D785;}
+.series_279 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_279 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.series_279 #userinfo #userinfo_username .donateico a {
+	font-family: DarkSouls; 
+	color: #fff;
+	font-size: 1.6em; 
+	margin-top: 12px;
+	margin-left: 20px;
+	display: inline-block;}	
+.series_279 #userinfo #userinfo_username .donateico a:hover {color: #E2D785;}
+
+/*****************************************
+************METAL GEAR THEME**************
+*****************************************/
+@font-face {font-family: "MetalGear"; src: url(fonts/metalgear.ttf);}
+
+body.series_188 {
+	background-image:url('images/gameseries/metalgearbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_188 #logo {background-image:url('images/gameseries/metalgearlogo.png');}
+.series_188 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_188 #menu {font-family: MetalGear; font-size: 1.4em; font-weight: normal; }
+.series_188 #menu ul {max-width: 1110px; margin-top: 0px;}
+.series_188 #menu ul li a {color: #FFF;}
+.series_188 #menu ul li a:hover {color: #FA0400;}
+.series_188 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_188 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 21px; margin-left: -10px;}	
+.series_188 #userinfo #userinfo_username .donateico a {
+	font-family: MetalGear; 
+	color: #fff;
+	font-size: 1.4em; 
+	margin-top: 12px;
+	margin-left: 25px;
+	display: inline-block;}	
+.series_188 #userinfo #userinfo_username .donateico a:hover {color: #FA0400;}
+
+/*****************************************
+************DEAD SPACE THEME**************
+*****************************************/
+@font-face {font-family: "DeadSpace"; src: url(fonts/deadspace.ttf);}
+
+body.series_177 {
+	background-image:url('images/gameseries/deadspacebkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_177 #logo {background-image:url('images/gameseries/deadspacelogo.png');}
+.series_177 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_177 .global_buffs {left:auto; right: -15px;}
+
+.series_177 #menu {font-family: DeadSpace; font-size: 1.3em; font-weight: normal; }
+.series_177 #menu ul {max-width: 1100px; margin-top: -1px;}
+.series_177 #menu ul li a {color: #FFF;}
+.series_177 #menu ul li a:hover {color: #36BBBA;}
+.series_177 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_177 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.series_177 #userinfo #userinfo_username .donateico a {
+	font-family: DeadSpace; 
+	color: #fff;
+	font-size: 1.3em; 
+	margin-top: 12px;
+	margin-left: 25px;
+	display: inline-block;}	
+.series_177 #userinfo #userinfo_username .donateico a:hover {color: #36BBBA;}
+
+/*****************************************
+************DRAGON AGE THEME**************
+*****************************************/
+@font-face {font-family: "DragonAge"; src: url(fonts/dragonage.otf);}
+
+body.series_184 {
+	background-image:url('images/gameseries/dragonagebkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_184 #logo {background-image:url('images/gameseries/dragonagelogo.png');}
+.series_184 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_184 .global_buffs {left:auto; right: -15px;}
+
+.series_184 #menu {font-family: DragonAge; font-size: 1.8em; font-weight: normal; }
+.series_184 #menu ul {max-width: 1100px; margin-top: -1px;}
+.series_184 #menu ul li a {color: #FFF;}
+.series_184 #menu ul li a:hover {color: #86A298;}
+.series_184 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_184 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.series_184 #userinfo #userinfo_username .donateico a {
+	font-family: DragonAge; 
+	color: #fff;
+	font-size: 1.8em; 
+	margin-top: 12px;
+	margin-left: 20px;
+	display: inline-block;}	
+.series_184 #userinfo #userinfo_username .donateico a:hover {color: #86A298;}
+
+/*****************************************
+**********MONKEY ISLAND THEME*************
+*****************************************/
+@font-face {font-family: "MonkeyIsland"; src: url(fonts/monkeyisland.ttf);}
+
+body.series_630 {
+	background-image:url('images/gameseries/monkeyislandbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_630 #logo {background-image:url('images/gameseries/monkeyislandlogo.png');}
+.series_630 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_630 .global_buffs {left:auto; right: -15px;}
+
+.series_630 #menu {font-family: MonkeyIsland; font-size: 2em; font-weight: normal; }
+.series_630 #menu ul {max-width: 1025px; margin-top: -6px;}
+.series_630 #menu ul li a {color: #FFF;}
+.series_630 #menu ul li a:hover {color: #C1B0C0;}
+.series_630 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_630 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 17px; margin-left: -15px;}	
+.series_630 #userinfo #userinfo_username .donateico a {
+	font-family: MonkeyIsland; 
+	color: #fff; 
+	font-size: 2em; 
+	margin-top: 10px;
+	margin-left: 0px;
+	display: inline-block;}	
+.series_630 #userinfo #userinfo_username .donateico a:hover {color: #C1B0C0;}
+	
+/*****************************************
+************STAR WARS THEME***************
+*****************************************/
+@font-face {font-family: "StarWars"; src: url(fonts/starwars.ttf);}
+
+body.franchise_135 {
+	background-image:url('images/gameseries/starwarsbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.franchise_135 #logo {background-image:url('images/gameseries/starwarslogo.png');}
+.franchise_135 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.franchise_135 .global_buffs {left:auto; right: -15px;}
+
+.franchise_135 #menu {font-family: StarWars; font-size: 1.5em; font-weight: normal; }
+.franchise_135 #menu ul {max-width: 1125px; margin-top: -6px;}
+.franchise_135 #menu ul li a {color: #FFF;}
+.franchise_135 #menu ul li a:hover {color: #FFDB2E;}
+.franchise_135 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.franchise_135 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.franchise_135 #userinfo #userinfo_username .donateico a {
+	font-family: StarWars; 
+	color: #fff; 
+	font-size: 1.5em; 
+	margin-top: 7px;
+	margin-left: 30px;
+	display: inline-block;}	
+.franchise_135 #userinfo #userinfo_username .donateico a:hover {color: #FFDB2E;}
+
+/*****************************************
+***********DONKEY KONG THEME**************
+*****************************************/
+@font-face {font-family: "DonkeyKong"; src: url(fonts/donkeykong.ttf);}
+
+body.franchise_595 {
+	background-image:url('images/gameseries/donkeykongbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.franchise_595 #logo {background-image:url('images/gameseries/donkeykonglogo.png');}
+.franchise_595 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.franchise_595 .global_buffs {left:auto; right: -15px;}
+
+.franchise_595 #menu {font-family: DonkeyKong; font-size: 2.2em; font-weight: normal; }
+.franchise_595 #menu ul {max-width: 1100px; margin-top: -7px;}
+.franchise_595 #menu ul li a {color: #FFF;}
+.franchise_595 #menu ul li a:hover {color: #CD6983;}
+.franchise_595 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.franchise_595 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.franchise_595 #userinfo #userinfo_username .donateico a {
+	font-family: DonkeyKong; 
+	color: #fff; 
+	font-size: 2.2em; 
+	margin-top: 8px;
+	margin-left: 25px;
+	display: inline-block;}	
+.franchise_595 #userinfo #userinfo_username .donateico a:hover {color: #CD6983;}
+
+/*****************************************
+**************FEAR THEME******************
+*****************************************/
+@font-face {font-family: "Fear"; src: url(fonts/fear.ttf);}
+
+body.series_302 {
+	background-image:url('images/gameseries/fearbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_302 #logo {background-image:url('images/gameseries/fearlogo.png');}
+.series_302 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_302 .global_buffs {left:auto; right: -15px;}
+
+.series_302 #menu {font-family: Fear; font-size: 1.1em; font-weight: normal; }
+.series_302 #menu ul {max-width: 1100px; margin-top: 0px;}
+.series_302 #menu ul li a {color: #FFF;}
+.series_302 #menu ul li a:hover {color: #F7CB46;}
+.series_302 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_302 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 21px; margin-left: -18px;}	
+	
+.series_302 #userinfo #userinfo_username .donateico a {
+	font-family: Fear; 
+	color: #fff; 
+	font-size: 1.1em; 
+	margin-top: 13px;
+	margin-left: 20px;
+	display: inline-block;}	
+.series_302 #userinfo #userinfo_username .donateico a:hover {color: #F7CB46;}
+	
+/*****************************************
+**************FIFA THEME******************
+*****************************************/
+@font-face {font-family: "FIFA"; src: url(fonts/FIFA.ttf);}
+
+body.series_237 {
+	background-image:url('images/gameseries/fifabkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_237 #logo {background-image:url('images/gameseries/fifalogo.png');}
+.series_237 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_237 #menu {font-family: FIFA; font-size: 1.7em; font-weight: normal; }
+.series_237 #menu ul {max-width: 1100px; margin-top: -2px;}
+.series_237 #menu ul li a {color: #FFF;}
+.series_237 #menu ul li a:hover {color: #AFBB74;}
+.series_237 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_237 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+	
+.series_237 #userinfo #userinfo_username .donateico a {
+	font-family: FIFA; 
+	color: #fff; 
+	font-size: 1.7em; 
+	margin-top: 12px;
+	margin-left: 20px;
+	display: inline-block;}	
+.series_237 #userinfo #userinfo_username .donateico a:hover {color: #AFBB74;}
+
+/*****************************************
+************PERSONA 5 THEME***************
+*****************************************/
+@font-face {font-family: "Persona5"; src: url(fonts/persona5.ttf);}
+
+body.master_3805 {
+	background-image:url('images/gameseries/persona5bkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.master_3805 #logo {background-image:url('images/gameseries/persona5logo.png');}
+.master_3805 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.master_3805 .global_buffs {left:auto; right: -15px;}
+
+.master_3805 #menu {font-family: Persona5; font-size: 1.8em; font-weight: normal; }
+.master_3805 #menu ul {max-width: 1100px; margin-top: -5px;}
+.master_3805 #menu ul li a {color: #FFF;}
+.master_3805 #menu ul li a:hover {color: #000;}
+.master_3805 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.master_3805 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.master_3805 #userinfo #userinfo_username .donateico a {
+	font-family: Persona5; 
+	color: #fff;
+	font-size: 1.8em; 
+	margin-top: 9px;
+	margin-left: 20px;
+	display: inline-block;}	
+.master_3805 #userinfo #userinfo_username .donateico a:hover {color: #000;}
+
+/*****************************************
+************World of Warcraft*************
+*****************************************/
+@font-face {font-family: "WOW"; src: url(fonts/wow.ttf);}
+
+body.master_3787 {
+	background-image:url('images/gameseries/wowbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.master_3787 #logo {background-image:url('images/gameseries/wowlogo.png');}
+.master_3787 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.master_3787 #menu {font-family: WOW; font-size: 2em; font-weight: normal; }
+.master_3787 #menu ul {max-width: 1100px; margin-top: -4px;}
+.master_3787 #menu ul li a {color: #FFF;}
+.master_3787 #menu ul li a:hover {color: #518494;}
+.master_3787 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.master_3787 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.master_3787 #userinfo #userinfo_username .donateico a {
+	font-family: WOW; 
+	color: #fff;
+	font-size: 2em; 
+	margin-top: 10px;
+	margin-left: 25px;
+	display: inline-block;}	
+.master_3787 #userinfo #userinfo_username .donateico a:hover {color: #518494;}
+
+/*****************************************
+*****************STALKER******************
+*****************************************/
+@font-face {font-family: "stalker"; src: url(fonts/stalker.ttf);}
+
+body.series_27 {
+	background-image:url('images/gameseries/stalkerbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.series_27 #logo {background-image:url('images/gameseries/stalkerlogo.png');}
+.series_27 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.series_27 .global_buffs {left:auto; right: -15px;}
+
+.series_27 #menu {font-family: stalker; font-size: 3em; font-weight: normal; }
+.series_27 #menu ul {max-width: 1000px; margin-top: -13px;}
+.series_27 #menu ul li a {color: #FFF;}
+.series_27 #menu ul li a:hover {color: #518494;}
+.series_27 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_27 #userinfo #userinfo_username .donateico {width: 160px; margin-top: 20px; margin-left: -15px;}	
+.series_27 #userinfo #userinfo_username .donateico a {
+	font-family: stalker; 
+	color: #fff;
+	font-size: 3em; 
+	margin-top: 1px;
+	margin-left: -55px;
+	display: inline-block;}	
+.series_27 #userinfo #userinfo_username .donateico a:hover {color: #518494;}
+
+/*****************************************
+**************Hatsune Miku****************
+*****************************************/
+@font-face {font-family: "hatsune"; src: url(fonts/hatsune.otf);}
+
+body.franchise_986 {
+	background-image:url('images/gameseries/hatsunebkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.franchise_986 #logo {background-image:url('images/gameseries/hatsunelogo.png');}
+.franchise_986 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.franchise_986 #menu {font-family: hatsune; font-size: 2.1em; font-weight: normal;}
+.franchise_986 #menu ul {max-width: 1150px; margin-top: -8px;}
+.franchise_986 #menu ul li a {color: #FFF;}
+.franchise_986 #menu ul li a:hover {color: #0096B3;}
+.franchise_986 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.franchise_986 #userinfo #userinfo_username .donateico {margin-top: 27px; margin-left: 50px;}	
+.franchise_986 #userinfo #userinfo_username .donateico a {
+	font-family: hatsune; 
+	color: #fff;
+	font-size: 2.1em; 
+	margin-top: -2px;
+	margin-left: -55px;
+	display: inline-block;}	
+.franchise_986 #userinfo #userinfo_username .donateico a:hover {color: #0096B3;}
+
+/*****************************************
+**************South Park******************
+*****************************************/
+@font-face {font-family: "southpark"; src: url(fonts/southpark.ttf);}
+
+body.franchise_1519 {
+	background-image:url('images/gameseries/southparkbkg.png');
+	background-size: cover; position: absolute; background-position: top;
+	overflow-x: hidden;}
+.franchise_1519 #logo {background-image:url('images/gameseries/southparklogo.png');}
+.franchise_1519 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.franchise_1519 .global_buffs {left:auto; right: -15px;}
+
+.franchise_1519 #menu {font-family: southpark; font-size: 1.5em; font-weight: normal;}
+.franchise_1519 #menu ul {max-width: 1100px; margin-top: 0px;}
+.franchise_1519 #menu ul li a {color: #FFF;}
+.franchise_1519 #menu ul li a:hover {color: #ffc428;}
+.franchise_1519 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.franchise_1519 #userinfo #userinfo_username .donateico {margin-top: 35px; margin-left: 55px;}	
+.franchise_1519 #userinfo #userinfo_username .donateico a {
+	font-family: southpark; 
+	color: #fff;
+	font-size: 1.5em; 
+	margin-top: -2px;
+	margin-left: -55px;
+	display: inline-block;}	
+.franchise_1519 #userinfo #userinfo_username .donateico a:hover {color: #ffc428;}
+
+/*****************************************
+**************EVIL WITHIN*****************
+*****************************************/
+@font-face {font-family: "evilwithin"; src: url(fonts/evilwithin.ttf);}
+
+body.series_1503 {
+	background-image:url('images/gameseries/evilwithinbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_1503 #logo {background-image:url('images/gameseries/evilwithinlogo.png');}
+.series_1503 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_1503 #menu {font-family: evilwithin; font-size: 2.3em; font-weight: normal;}
+.series_1503 #menu ul {max-width: 950px; margin-top: -8px;}
+.series_1503 #menu ul li a {color: #B7080E; text-shadow: none;}
+.series_1503 #menu ul li a:hover {color: #BCBCBC;}
+.series_1503 .alertbar a {color: #fff; text-shadow: 1px 1px 2px #000;}  
+
+.series_1503 #userinfo #userinfo_username .donateico {margin-top: 29px; margin-left: -8px;}	
+.series_1503 #userinfo #userinfo_username .donateico a {
+	font-family: evilwithin; 
+	color: #B7080E;
+	font-size: 2.3em; 
+	margin-top: -2px;
+	margin-left: -55px;
+	display: inline-block;
+	text-shadow: none;}	
+.series_1503 #userinfo #userinfo_username .donateico a:hover {color: #BCBCBC;}
+
+/*****************************************
+**************SILENT HILL*****************
+*****************************************/
+@font-face {font-family: "silenthill"; src: url(fonts/silenthill.ttf);}
+
+body.series_298 {
+	background-image:url('images/gameseries/silenthillbkg.png');
+	background-size: cover; position: absolute; background-position: top;}
+.series_298 #logo {background-image:url('images/gameseries/silenthilllogo.png');}
+.series_298 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_298 #menu {font-family: silenthill; font-size: 2em; font-weight: normal;}
+.series_298 #menu ul {max-width: 1100px; margin-top: -8px;}
+.series_298 #menu ul li a {color: #F4F6F3; text-transform: uppercase;}
+.series_298 #menu ul li a:hover {color: #7e6006;}
+.series_298 .alertbar a {color: #fff;}  
+
+.series_298 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_298 #userinfo #userinfo_username .donateico a {
+	font-family: silenthill; 
+	color: #F4F6F3;
+	font-size: 2em; 
+	margin-top: -2px;
+	margin-left: -55px;
+	display: inline-block;
+	text-transform: uppercase;}	
+.series_298 #userinfo #userinfo_username .donateico a:hover {color: #7e6006;}
+
+/*****************************************
+****************CHTULHU*******************
+*****************************************/
+body.franchise_91 {
+	background-image:url('images/gameseries/cthulhubkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.franchise_91 #logo {background-image:url('images/gameseries/cthulhulogo.png');}
+.franchise_91 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.franchise_91 #menu {font-family: AssassinsCreed; font-size: 2em; font-weight: normal;}
+.franchise_91 #menu ul {max-width: 1100px; margin-top: -4px;}
+.franchise_91 #menu ul li a {color: #F4F6F3;}
+.franchise_91 #menu ul li a:hover {color: #D09A42;}
+.franchise_91 .alertbar a {color: #fff;}  
+
+.franchise_91 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.franchise_91 #userinfo #userinfo_username .donateico a {
+	font-family: AssassinsCreed; 
+	color: #F4F6F3;
+	font-size: 2em; 
+	margin-top: -2px;
+	margin-left: -60px;
+	display: inline-block;}	
+.franchise_91 #userinfo #userinfo_username .donateico a:hover {color: #D09A42;}
+
+/*****************************************
+*******Grisaia Phantom Trigger ***********
+*****************************************/
+@font-face {font-family: "grisaia"; src: url(fonts/grisaia.ttf);}
+body.series_1434 {
+	background-image:url('images/gameseries/grisaiabkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_1434 #logo {background-image:url('images/gameseries/grisaialogo.png');}
+.series_1434 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_1434 #menu {font-family: grisaia; font-size: 1.9em; font-weight: normal;}
+.series_1434 #menu ul {max-width: 1100px; margin-top: -4px;}
+.series_1434 #menu ul li a {color: #F4F6F3;}
+.series_1434 #menu ul li a:hover {color: #D09A42;}
+.series_1434 .alertbar a {color: #fff;}  
+
+.series_1434 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_1434 #userinfo #userinfo_username .donateico a {
+	font-family: grisaia; 
+	color: #F4F6F3;
+	font-size: 1.9em; 
+	margin-top: -2px;
+	margin-left: -40px;
+	display: inline-block;}	
+.series_1434 #userinfo #userinfo_username .donateico a:hover {color: #D09A42;}
+
+/*****************************************
+*******Hyperdimension Neptunia ***********
+*****************************************/
+@font-face {font-family: "hyper"; src: url(fonts/hyperdimension.ttf);}
+body.series_587 {
+	background-image:url('images/gameseries/hyperdimensionbkg.png');
+	background-size: cover; position: absolute; background-position: top;}
+.series_587 #logo {background-image:url('images/gameseries/hyperdimensionlogo.png');}
+.series_587 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_587 #menu {font-family: hyper; font-size: 1.7em; font-weight: normal;}
+.series_587 #menu ul {max-width: 1100px; margin-top: -4px;}
+.series_587 #menu ul li a {color: #D9A7ED;}
+.series_587 #menu ul li a:hover {color: #fff;}
+.series_587 .alertbar a {color: #fff;}  
+
+.series_587 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_587 #userinfo #userinfo_username .donateico a {
+	font-family: hyper; 
+	color: #D9A7ED;
+	font-size: 1.7em; 
+	margin-top: -2px;
+	margin-left: -40px;
+	display: inline-block;}	
+.series_587 #userinfo #userinfo_username .donateico a:hover {color: #fff;}
+
+/*****************************************
+****************Halo**********************
+*****************************************/
+@font-face {font-family: "halo"; src: url(fonts/halo.ttf);}
+body.series_57 {
+	background-image:url('images/gameseries/halobkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_57 #logo {background-image:url('images/gameseries/halologo.png'); background-size: contain;}
+.series_57 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_57 #menu {font-family: halo; font-size: 2em; font-weight: normal;}
+.series_57 #menu ul {max-width: 1025px; margin-top: -4px;}
+.series_57 #menu ul li a {color: #fcfdfe;}
+.series_57 #menu ul li a:hover {color: #5b5fd4;}
+.series_57 .alertbar a {color: #fff;}  
+
+.series_57 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_57 #userinfo #userinfo_username .donateico a {
+	font-family: halo; 
+	color: #fcfdfe;
+	font-size: 2em; 
+	margin-top: -2px;
+	margin-left: -40px;
+	display: inline-block;}	
+.series_57 #userinfo #userinfo_username .donateico a:hover {color: #5b5fd4;}
+
+/*****************************************
+*************Half Life********************
+*****************************************/
+@font-face {font-family: "halflife"; src: url(fonts/halflife.ttf);}
+body.series_35 {
+	background-image:url('images/gameseries/halflifebkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_35 #logo {
+	background-image:url('images/gameseries/halflifelogo.png'); background-size: contain;}
+.series_35 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_35 #menu {font-family: halflife; font-size: 1.7em; font-weight: normal;}
+.series_35 #menu ul {max-width: 1050px; margin-top: -4px;}
+.series_35 #menu ul li a {color: #ff9000; text-shadow: 1px 1px 0px #000}
+.series_35 #menu ul li a:hover {color: #fff;}
+.series_35 .alertbar a {color: #fff;}  
+
+.series_35 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_35 #userinfo #userinfo_username .donateico a {
+	font-family: halflife; 
+	color: #ff9000;
+	font-size: 1.7em; 
+	margin-top: 0px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 0px #000}
+.series_35 #userinfo #userinfo_username .donateico a:hover {color: #fff;}
+
+/*****************************************
+***********Rick & Morty*******************
+*****************************************/
+@font-face {font-family: "rickmorty"; src: url(fonts/rickandmorty.ttf);}
+body.tgroup_30661 {
+	background-image:url('images/gameseries/rickmortybkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.tgroup_30661 #logo {
+	background-image:url('images/gameseries/rickandmortylogo.png'); background-size: contain;}
+.tgroup_30661 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.tgroup_30661 #menu {font-family: rickmorty; font-size: 1.9em; font-weight: normal;}
+.tgroup_30661 #menu ul {max-width: 1100px; margin-top: -7px;}
+.tgroup_30661 #menu ul li a {color: #02c1d9; text-shadow: 1px 1px 2px #000}
+.tgroup_30661 #menu ul li a:hover {color: #fff;}
+.tgroup_30661 .alertbar a {color: #02c1d9;}  
+
+.tgroup_30661 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.tgroup_30661 #userinfo #userinfo_username .donateico a {
+	font-family: rickmorty; 
+	color: #02c1d9;
+	font-size: 1.9em; 
+	margin-top: -2px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.tgroup_30661 #userinfo #userinfo_username .donateico a:hover {color: #fff;}
+
+/*****************************************
+*************Momodora*********************
+*****************************************/
+@font-face {font-family: "momodora"; src: url(fonts/momodora.ttf);}
+body.series_548 {
+	background-image:url('images/gameseries/momodorabkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_548 #logo {
+	background-image:url('images/gameseries/momodoralogo.png'); background-size: contain;}
+.series_548 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_548 #menu {font-family: momodora; font-size: 2.3em; font-weight: normal;}
+.series_548 #menu ul {max-width: 1040px; margin-top: -7px;}
+.series_548 #menu ul li a {color: #DBDBD6; text-shadow: 1px 1px 2px #000}
+.series_548 #menu ul li a:hover {color: #D9C9C9;}
+.series_548 #userinfo {background-color: rgba(14,23,32,.5)}
+.series_548 .alertbar a {color: #DBDBD6;}  
+
+.series_548 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_548 #userinfo #userinfo_username .donateico a {
+	font-family: momodora; 
+	color: #DBDBD6;
+	font-size: 2.3em; 
+	margin-top: -2px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.series_548 #userinfo #userinfo_username .donateico a:hover {color: #D9C9C9;}
+
+/*****************************************
+*************Hollow Knight****************
+*****************************************/
+@font-face {font-family: "hollowknight"; src: url(fonts/hollowknight.ttf);}
+body.master_3944 {
+	background-image:url('images/gameseries/hollowknightbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.master_3944 #logo {
+	background-image:url('images/gameseries/hollowknightlogo.png'); background-size: contain;}
+.master_3944 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.master_3944 #menu {font-family: hollowknight; font-size: 1.4em; font-weight: normal;}
+.master_3944 #menu ul {max-width: 1100px; margin-top: 0px;}
+.master_3944 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000}
+.master_3944 #menu ul li a:hover {color: #FFE2E2;}
+.master_3944 #userinfo {background-color: rgba(14,23,32,.5)}
+.master_3944 .alertbar a {color: #FFFFFF;}  
+
+.master_3944 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.master_3944 #userinfo #userinfo_username .donateico a {
+	font-family: hollowknight; 
+	color: #FFFFFF;
+	font-size: 1.4em; 
+	margin-top: 4px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.master_3944 #userinfo #userinfo_username .donateico a:hover {color: #FFE2E2;}
+
+/*****************************************
+*************Superhot*********************
+*****************************************/
+@font-face {font-family: "superhot"; src: url(fonts/superhot.ttf);}
+body.series_987 {
+	background-image:url('images/gameseries/superhotbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_987 #logo {
+	background-image:url('images/gameseries/superhotlogo.png'); background-size: contain;}
+.series_987 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_987 #menu {font-family: superhot; font-size: 1.7em; font-weight: normal;}
+.series_987 #menu ul {max-width: 1075px; margin-top: -5px;}
+.series_987 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000}
+.series_987 #menu ul li a:hover {color: #FFD8D8;}
+.series_987 #userinfo {background-color: rgba(14,23,32,.5)}
+.series_987 .alertbar a {color: #FFFFFF;}  
+
+.series_987 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_987 #userinfo #userinfo_username .donateico a {
+	font-family: superhot; 
+	color: #FFFFFF;
+	font-size: 1.7em; 
+	margin-top: -2px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.series_987 #userinfo #userinfo_username .donateico a:hover {color: #FFD8D8;}
+
+/*****************************************
+*************Nekopara*********************
+*****************************************/
+@font-face {font-family: "nekopara"; src: url(fonts/nekopara.ttf);}
+body.series_575 {
+	background-image:url('images/gameseries/nekoparabkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.series_575 #logo {
+	background-image:url('images/gameseries/nekoparalogo.png'); }
+.series_575 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.series_575 #menu {font-family: nekopara; font-size: 1.7em; font-weight: normal;}
+.series_575 #menu ul {max-width: 1025px; margin-top: 0px;}
+.series_575 #menu ul li a {color: #F7AD00; text-shadow: 1px 1px 2px #000}
+.series_575 #menu ul li a:hover {color: #EE6E47;}
+.series_575 #userinfo {background-color: rgba(14,23,32,.5)}
+.series_575 .alertbar a {color: #fff;}  
+
+.series_575 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.series_575 #userinfo #userinfo_username .donateico a {
+	font-family: nekopara; 
+	color: #F7AD00;
+	font-size: 1.7em; 
+	margin-top: 2px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.series_575 #userinfo #userinfo_username .donateico a:hover {color: #EE6E47;}
+
+/*****************************************
+*********Monster Girl Quest***************
+*****************************************/
+@font-face {font-family: "monstergq"; src: url(fonts/monstergirlquest.ttf);}
+body.franchise_2521 {
+	background-image:url('images/gameseries/monstergirlquestbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.franchise_2521 #logo {
+	background-image:url('images/gameseries/monstergirlquestlogo.png'); }
+.franchise_2521 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.franchise_2521 #menu {font-family: monstergq; font-size: 3em; font-weight: normal;}
+.franchise_2521 #menu ul {max-width: 900px; margin-top: -16px;}
+.franchise_2521 #menu ul li a {color: #F29CA7; text-shadow: 1px 1px 2px #000}
+.franchise_2521 #menu ul li a:hover {color: #DC4E87;}
+.franchise_2521 #userinfo {background-color: rgba(14,23,32,.5)}
+.franchise_2521 .alertbar a {color: #fff;}  
+
+.franchise_2521 #userinfo #userinfo_username .donateico {margin-top: 1px; margin-left: 30px;}	
+.franchise_2521 #userinfo #userinfo_username .donateico a {
+	font-family: monstergq; 
+	color: #F29CA7;
+	font-size: 3em; 
+	margin-top: 18px;
+	margin-left: -115px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.franchise_2521 #userinfo #userinfo_username .donateico a:hover {color: #DC4E87;}
+.franchise_2521 #userinfo #userinfo_username .donateico span {left: -45px;}
+
+/*****************************************
+*******Far Cry: Blood Dragon**************
+*****************************************/
+@font-face {font-family: "farcryblooddragon"; src: url(fonts/farcryblooddragon.ttf);}
+body.master_680 {
+	background-image:url('images/gameseries/farcryblooddragonbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.master_680 #logo {
+	background-image:url('images/gameseries/farcryblooddragonlogo.png'); }
+.master_680 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.master_680 #menu {font-family: farcryblooddragon; font-size: 1.5em; font-weight: normal; text-transform: uppercase;}
+.master_680 #menu ul {max-width: 1075px; margin-top: -1px;}
+.master_680 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000}
+.master_680 #menu ul li a:hover {color: #9AABCD;}
+.master_680 #userinfo {background-color: rgba(14,23,32,.5)}
+.master_680 .alertbar a {color: #fff;}  
+
+.master_680 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.master_680 #userinfo #userinfo_username .donateico a {
+	font-family: farcryblooddragon; 
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 1.5em; 
+	margin-top: 2px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.master_680 #userinfo #userinfo_username .donateico a:hover {color: #9AABCD;}
+
+/*****************************************
+***********Space Engineers****************
+*****************************************/
+@font-face {font-family: "spaceengineers"; src: url(fonts/spacenegineers.ttf);}
+body.tgroup_11495 {
+	background-image:url('images/gameseries/spaceengineersbkg.jpg');
+	background-size: cover; position: absolute; background-position: top;}
+.tgroup_11495 #logo {
+	background-image:url('images/gameseries/spaceengineerslogo.png'); 
+	background-position: center;}
+.tgroup_11495 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+
+.tgroup_11495 #menu {font-family: spaceengineers; font-size: 2.2em; font-weight: normal; text-transform: uppercase;}
+.tgroup_11495 #menu ul {max-width: 1150px; margin-top: -12px;}
+.tgroup_11495 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000}
+.tgroup_11495 #menu ul li a:hover {color: #DDDDDD;}
+.tgroup_11495 #userinfo {background-color: rgba(14,23,32,.5)}
+.tgroup_11495 .alertbar a {color: #fff;}  
+
+.tgroup_11495 #userinfo #userinfo_username .donateico {margin-top: 31px; margin-left: 30px;}	
+.tgroup_11495 #userinfo #userinfo_username .donateico a {
+	font-family: spaceengineers; 
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-size: 2.2em; 
+	margin-top: 20px;
+	margin-left: -40px;
+	display: inline-block;
+	text-shadow: 1px 1px 2px #000}
+.tgroup_11495 #userinfo #userinfo_username .donateico a:hover {color: #DDDDDD;}
+
+/*****************************************
+**********Medieval Engineers**************
+*****************************************/
+@font-face {font-family: "medievalengineers"; src: url(fonts/medievalengineers.ttf);}
+body.tgroup_18505 {background-image:url('images/gameseries/medievalengineersbkg.jpg');}
+.tgroup_18505 #logo {background-image:url('images/gameseries/medievalengineerslogo.png'); background-position: center;}
+
+.tgroup_18505 #menu {font-family: medievalengineers; font-size: 1.6em; font-weight: normal;}
+.tgroup_18505 #userinfo #userinfo_username .donateico a {font-family: medievalengineers; font-size: 1.6em;}
+.tgroup_18505 #menu ul {max-width: 1050px; margin-top: -6px;}
+.tgroup_18505 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000}
+.tgroup_18505 #userinfo #userinfo_username .donateico {margin-top: 8px; margin-left: 5px;}	
+.tgroup_18505 #userinfo #userinfo_username .donateico a {margin-top: 20px;margin-left: -40px; color: #FFFFFF;}
+.tgroup_18505 #menu ul li a:hover {color: #FBF3E4;}
+.tgroup_18505 #userinfo #userinfo_username .donateico a:hover {color: #FBF3E4;}
+
+body.tgroup_18505 {background-size: cover; position: absolute; background-position: top;}
+.tgroup_18505 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.tgroup_18505 #userinfo {background-color: rgba(14,23,32,.5)}
+.tgroup_18505 .alertbar a {color: #fff;}  
+.tgroup_18505 #userinfo #userinfo_username .donateico a {display: inline-block;text-shadow: 1px 1px 2px #000}
+
+/*****************************************
+********FTL: Faster then light************
+*****************************************/
+@font-face {font-family: "ftl"; src: url(fonts/ftl.ttf);}
+body.master_691 {background-image:url('images/gameseries/ftlbkg.jpg');}
+.master_691 #logo {background-image:url('images/gameseries/ftllogo.png'); background-position: center;}
+
+.master_691 #menu {font-family: ftl; font-size: 2em; font-weight: normal;}
+.master_691 #userinfo #userinfo_username .donateico a {font-family: ftl; font-size: 2em;}
+.master_691 #menu ul {max-width: 1050px; margin-top: -6px;}
+.master_691 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000}
+.master_691 #userinfo #userinfo_username .donateico {margin-top: 8px; margin-left: -5px;}	
+.master_691 #userinfo #userinfo_username .donateico a {margin-top: 20px;margin-left: -40px; color: #FFFFFF;}
+.master_691 #menu ul li a:hover {color: #DDDDDD;}
+.master_691 #userinfo #userinfo_username .donateico a:hover {color: #DDDDDD;}
+
+body.master_691 {background-size: cover; position: absolute; background-position: top;}
+.master_691 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.master_691 #userinfo {background-color: rgba(14,23,32,.5)}
+.master_691 .alertbar a {color: #fff;}  
+.master_691 #userinfo #userinfo_username .donateico a {display: inline-block;text-shadow: 1px 1px 2px #000}
+
+/*****************************************
+**************Subnautica******************
+*****************************************/
+@font-face {font-family: "subnautica"; src: url(fonts/subnautica.ttf);}
+body.master_2719 {background-image:url('images/gameseries/subnauticabkg.jpg');}
+.master_2719 #logo {background-image:url('images/gameseries/subnauticalogo.png'); background-position: center; background-size: 800px;}
+
+.master_2719 #menu {font-family: subnautica; font-size: 1.4em; font-weight: normal;}
+.master_2719 #menu ul {max-width: 1050px; margin-top: -3px;}
+.master_2719 #menu ul li a {color: #E1FFFB; text-shadow: 1px 1px 2px #000;}
+.master_2719 #menu ul li a:hover {color: #89D8ED;}
+	
+.master_2719 #userinfo #userinfo_username .donateico a {font-family: subnautica; font-size: 1.4em;}
+.master_2719 #userinfo #userinfo_username .donateico {margin-top: 12px; margin-left: 30px;}	
+.master_2719 #userinfo #userinfo_username .donateico a {margin-top: 20px; margin-left: -40px; color: #E1FFFB;}
+.master_2719 #userinfo #userinfo_username .donateico a:hover {color: #89D8ED;}
+
+body.master_2719 {background-size: cover; position: absolute; background-position: top;}
+.master_2719 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.master_2719 #userinfo {background-color: rgba(14,23,32,.5)}
+.master_2719 .alertbar a {color: #fff;}  
+.master_2719 #userinfo #userinfo_username .donateico a {display: inline-block;text-shadow: 1px 1px 2px #000}
+
+/*****************************************
+***********Into the Breach****************
+*****************************************/
+@font-face {font-family: "intothebreach"; src: url(fonts/intothebreach.ttf);}
+body.master_7884 {background-image:url('images/gameseries/intothebreachbkg.jpg');}
+.master_7884 #logo {background-image:url('images/gameseries/intothebreachlogo.png'); background-position: center;}
+
+.master_7884 #menu {font-family: intothebreach; font-size: 2em; font-weight: normal;}
+.master_7884 #menu ul {max-width: 1050px; margin-top: -3px;}
+.master_7884 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000;}
+.master_7884 #menu ul li a:hover {color: #63467C;}
+	
+.master_7884 #userinfo #userinfo_username .donateico a {font-family: intothebreach; font-size: 2em;}
+.master_7884 #userinfo #userinfo_username .donateico {margin-top: 11px; margin-left: 0px;}	
+.master_7884 #userinfo #userinfo_username .donateico a {margin-top: 20px; margin-left: -40px; color: #FFFFFF;}
+.master_7884 #userinfo #userinfo_username .donateico a:hover {color: #63467C;}
+
+body.master_7884 {background-size: cover; position: absolute; background-position: top;}
+.master_7884 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.master_7884 #userinfo {background-color: rgba(14,23,32,.5)}
+.master_7884 .alertbar a {color: #fff;}  
+.master_7884 #userinfo #userinfo_username .donateico a {display: inline-block;text-shadow: 1px 1px 2px #000}
+
+/*****************************************
+****************Limbo*********************
+*****************************************/
+@font-face {font-family: "limbo"; src: url(fonts/limbo.ttf);}
+body.master_117 {background-image:url('images/gameseries/limbobkg.jpg');}
+.master_117 #logo {background-image:url('images/gameseries/limbologo.png'); background-position: center;}
+
+.master_117 #menu {font-family: limbo; font-size: 2em; font-weight: normal;}
+.master_117 #menu ul {max-width: 1050px; margin-top: -3px;}
+.master_117 #menu ul li a {color: #FFFFFF; text-shadow: 1px 1px 2px #000;}
+.master_117 #menu ul li a:hover {color: #DDDDDD;}
+	
+.master_117 #userinfo #userinfo_username .donateico a {font-family: limbo; font-size: 2em;}
+.master_117 #userinfo #userinfo_username .donateico {margin-top: 11px; margin-left: 30px;}	
+.master_117 #userinfo #userinfo_username .donateico a {margin-top: 20px; margin-left: -40px; color: #FFFFFF;}
+.master_117 #userinfo #userinfo_username .donateico a:hover {color: #DDDDDD;}
+
+body.master_117 {background-size: cover; position: absolute; background-position: top;}
+.master_117 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.master_117 #userinfo {background-color: rgba(14,23,32,.5)}
+.master_117 .alertbar a {color: #fff;}  
+.master_117 #userinfo #userinfo_username .donateico a {display: inline-block;text-shadow: 1px 1px 2px #000}
+
+/*****************************************
+***********Sword Art Online***************
+*****************************************/
+@font-face {font-family: "swordart"; src: url(fonts/swordartonline.otf);}
+body.franchise_2773 {background-image:url('images/gameseries/swordartonlinebkg.jpg');}
+.franchise_2773 #logo {background-image:url('images/gameseries/swordartonlinelogo.png'); background-position: center;}
+
+.franchise_2773 #menu {font-family: swordart; font-size: 2.2em; font-weight: normal;}
+.franchise_2773 #menu ul {max-width: 1000px; margin-top: -9px;}
+.franchise_2773 #menu ul li a {color: #BEEEFC; text-shadow: 1px 1px 2px #000;}
+.franchise_2773 #menu ul li a:hover {color: #5BD0F3;}
+	
+.franchise_2773 #userinfo #userinfo_username .donateico a {font-family: swordart; font-size: 2.2em;}
+.franchise_2773 #userinfo #userinfo_username .donateico {margin-top: 5px; margin-left: -18px;}	
+.franchise_2773 #userinfo #userinfo_username .donateico a {margin-top: 20px; margin-left: -40px; color: #BEEEFC;}
+.franchise_2773 #userinfo #userinfo_username .donateico a:hover {color: #5BD0F3;}
+
+body.franchise_2773 {background-size: cover; position: absolute; background-position: top;}
+.franchise_2773 #content{background: linear-gradient(to bottom, rgba(43,78,102,0.5) 0%,rgba(28,49,69,0.5) 23%,rgba(43,78,102,0.5) 51%,rgba(28,49,69,0.5) 73%,rgba(43,78,102,0.5) 100%);}
+.franchise_2773 #userinfo {background-color: rgba(14,23,32,.5)}
+.franchise_2773 .alertbar a {color: #fff;}  
+.franchise_2773 #userinfo #userinfo_username .donateico a {display: inline-block;text-shadow: 1px 1px 2px #000}
+
+
+	
+}
