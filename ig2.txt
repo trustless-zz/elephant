@@ -113,6 +113,9 @@
 .master_117 #logo {background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/limbologo.png'), url(logo/alt-logo-30p.png);}
 .franchise_2773 #logo {background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/swordartonlinelogo.png'), url(logo/alt-logo-30p.png);}
 
+
+
+
 .series_196 #logo, .series_169 #logo, .series_58 #logo, .series_52 #logo, .series_179 #logo, .series_211 #logo, .series_22 #logo, .series_15 #logo, .series_208 #logo, .series_178 #logo, 
 .tgroup_24482 #logo, .tgroup_24230 #logo, .tgroup_23617 #logo, .series_31 #logo, .series_191 #logo, .master_465 #logo, .tgroup_5993 #logo, .tgroup_8046 #logo, .series_70 #logo, .franchise_53 #logo, 
 .series_19 #logo, .series_65 #logo, .series_827 #logo, .series_183 #logo, .series_26 #logo, .series_327 #logo, .series_291 #logo, .franchise_55 #logo, .series_896 #logo, .master_2940 #logo, 
