@@ -6514,3 +6514,26 @@ div#searchbars {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/limbologo.png'), url(logo/alt-logo-30p.png);}
 .franchise_2773 #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/swordartonlinelogo.png'), url(logo/alt-logo-30p.png);}
+
+
+
+/*temp*/
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td {
+	transition: 0.05s;
+	overflow: hidden;
+	position: relative;
+	background-color: rgba(192, 154, 154, 0);
+    outline: 3px solid rgba(192, 154, 154, 0);
+    outline-offset: -3px;}
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td:hover {
+    background: black;
+    outline: 3px solid rgba(192, 154, 154, 1);
+    outline-offset: -3px;
+    transition: 0.05s;}
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td >a:after {
+	content: "";
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top:0px;
+	left:0px;}
