@@ -6133,7 +6133,7 @@ a:hover {
     opacity: 1;}
 
 #user .inventory .save_message {
-    width: 1036px;
+    width: 974px;
     float: right;
     top: 14px;}
 
@@ -6189,7 +6189,7 @@ ul#items_list:before {
 #crafting_panel #items {
     width: 466px;
     padding: 3px 0px 3px 0px;}
-.freeleech_shop_main .box, .global_buffs_shop_main .box {max-width: 1036px;}
+.freeleech_shop_main .box, .global_buffs_shop_main .box, #user .inventory .save_message {max-width: 1036px;}
 #shop .box.pad.box_buffs_info {
     max-width: 1016px;}
 #shop #content .thin.freeleech_shop .freeleech_shop_main .box.pad.box_freeleech_info {
@@ -6337,6 +6337,18 @@ div#searchbars {
 .global_buffs>div {
     padding: 0px;
     margin: 0 -5px 0 -5px;}
+}
+@media screen and (max-width: 1367px) and (min-width: 1320px) {
+#markread {
+    left: 0px;
+    -webkit-border-radius: 0px 100px 100px 0px;
+    -moz-border-radius: 0px 100px 100px 0px;
+    -ms-border-radius: 0px 100px 100px 0px;
+    -o-border-radius: 0px 100px 100px 0px;
+    border-radius: 0px 100px 100px 0px;
+    z-index: 999;}
+#markread:after {
+    margin-left: -5px;}
 }
 
 
