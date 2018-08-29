@@ -6132,6 +6132,11 @@ a:hover {
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
     opacity: 1;}
 
+#user .inventory .save_message {
+    width: 1036px;
+    float: right;
+    top: 14px;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
