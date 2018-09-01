@@ -6082,7 +6082,7 @@ a:hover {
 #index .thin {
 	position: relative;}
 #index .main_column {
-	width: inherit;}
+	width: inherit !important}
 #index .sidebar {
 	display: block;
 	position: absolute;
@@ -6120,6 +6120,8 @@ a:hover {
     transition: 0.1s;}
 #markread:hover{
     background: radial-gradient(at center, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
+#index #wrapper #content .thin .main_column_bg .main_column .box {
+	overflow: hidden;}
 
 
 /* widescreen */
