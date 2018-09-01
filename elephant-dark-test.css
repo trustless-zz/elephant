@@ -2,7 +2,8 @@
     display: none;
 }
 
-#torrents span[style="float: right; margin-right: 10px;"] {opacity: 0;}
+#torrents #vote_matches .head strong span[style="float: right; margin-right: 10px;"] {
+    display: none;}
 #torrents div#vote_matches .head {cursor: pointer;}
 
 /*~~~~~~FONTS~~~~~~*/
@@ -4968,9 +4969,6 @@ button.submit {
 #torrents .sidebar .box_pack .head {padding: 9px 0 8px 0 !important; min-height: 0px;}
 #torrents .sidebar .box_pack .head strong {font-size: 12pt !important;}
 
-#torrents #vote_matches .head strong {left: 9%; position: relative;}
-#torrents .box.similar_div .head strong {left: 12%; position: relative;}
-
 #forums .thin .box.thin.clear {margin-top: 32px !important;}
 #forums .thin .box.thin.clear #threadpoll #poll_results #polls input[type="button"] {margin-bottom: 5px;}
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {padding-top: 9px !important;}
@@ -6131,7 +6129,7 @@ a:hover {
 
 /* flexible #index */
 #index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"] .head strong, #index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong {
-    width: 98.9%;}
+    width: 98.89%;}
 #index div[id^="news"] div[id^="newsbody"] img {
     max-width: 98% !important;}
 #index .thin {
@@ -6178,6 +6176,12 @@ a:hover {
     background: radial-gradient(at center, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
 #index #wrapper #content .thin .main_column_bg .main_column .box {
     overflow: hidden;}
+
+#torrents .box.similar_div .head strong:before {
+    content: '';
+    width: 203.27px;
+    float: left;
+    height: 5px;}
 
 
 /* widescreen */
