@@ -6169,14 +6169,15 @@ a:hover {
     -o-border-radius: 0 100px 100px 0;
     border-radius: 0 100px 100px 0;
     z-index: 99;
-    transition: 0.1s;}
+    transition: 0.1s;
+    width: 45px;}
 .error_message:hover {
     background: radial-gradient(at center, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);
     transition: 0.1s;}
 #markread:hover{
     background: radial-gradient(at center, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
 #index #wrapper #content .thin .main_column_bg .main_column .box {
-	overflow: hidden;}
+    overflow: hidden;}
 
 
 /* widescreen */
