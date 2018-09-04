@@ -3482,33 +3482,53 @@ ul#categories {
 
 #torrents .save_message {
     display: block;
-    width: 99.334%;
+    width: 1192px;
     top: -15px;
     position: relative;
 }
 
 #markread {
-    background: radial-gradient(at right, #223f51, #343f52, #5b4254, #914154, #e03854);
+    background: linear-gradient(to right, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);
     height: 45px;
     margin-top: -9px;
-    width: 34px;
+    width: 45px;
     color: white;
     font-size: 31px;
     font-family: adelle, sans-serif;
     text-align: center;
     vertical-align: unset;
-    left: -34px;
-    float: left;
-    -webkit-border-radius: 100px 0 0 100px;
-    -moz-border-radius: 100px 0 0 100px;
-    -ms-border-radius: 100px 0 0 100px;
-    -o-border-radius: 100px 0 0 100px;
-    border-radius: 100px 0 0 100px;
-    position: absolute;}
-#markread:hover{
-	    background: radial-gradient(at right, #e03854, #914154, #5b4254, #343f52, #223f51);}
-#markread:after {
-    content: '✓';}
+    left: 0px;
+    -webkit-border-radius: 0 100px 100px 0;
+    -moz-border-radius: 0 100px 100px 0;
+    -ms-border-radius: 0 100px 100px 0;
+    -o-border-radius: 0 100px 100px 0;
+    border-radius: 0 100px 100px 0;
+    position: absolute;
+    z-index: 99;}
+#markread:after{
+	content:'';
+	position: absolute;
+	left: 0px; top: 0px;
+	width: 100%;
+	height: 100%;
+    z-index: -99;
+    opacity: 0;
+    transition: opacity 0.1s;
+    background: radial-gradient(at center, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);
+	-webkit-border-radius: 0px 100px 100px 0px;
+    -moz-border-radius: 0px 100px 100px 0px;
+    -ms-border-radius: 0px 100px 100px 0px;
+    -o-border-radius: 0px 100px 100px 0px;
+    border-radius: 0px 100px 100px 0px;}
+#markread:hover:after {
+    opacity: 1;
+    transition: opacity 0.1s;}
+#markread:before {
+    content: '✓';
+    position: absolute;
+    left: 8.5px;
+    top: 0px;
+    z-index: 99;}
 
 textarea#quickpost {
     max-width: 1140px;
@@ -6101,24 +6121,19 @@ a:hover {
 .error_message {
     z-index: 99;
     background: radial-gradient(at center, rgba(45,81,99,1) 0%,rgba(111,85,103,1) 50%,rgba(232,80,102,1) 100%);}
-#markread:after {
-    margin-left: -5px;}
-#markread {
-    background: linear-gradient(to right, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);
-    left: 0px;
-    -webkit-border-radius: 0 100px 100px 0;
-    -moz-border-radius: 0 100px 100px 0;
-    -ms-border-radius: 0 100px 100px 0;
-    -o-border-radius: 0 100px 100px 0;
-    border-radius: 0 100px 100px 0;
-    z-index: 99;
-    transition: 0.1s;
-    width: 45px;}
-.error_message:hover {
+.error_message:after {
+	content:'';
+	position: absolute;
+	left: 0px; top: 0px;
+	width: 100%; height: 100%;
+    z-index: -99;
     background: radial-gradient(at center, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);
-    transition: 0.1s;}
-#markread:hover{
-    background: radial-gradient(at center, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
+    opacity: 0;
+    transition:  opacity 0.15s;}
+.error_message:hover:after {
+    opacity: 1;
+    transition:  opacity 0.15s;}
+
 #index #wrapper #content .thin .main_column_bg .main_column .box {
     overflow: hidden;}
 
@@ -6216,6 +6231,8 @@ ul#items_list:before {
     max-height: 285px;}
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
     max-width: 1100px !important;}
+#torrents .save_message {
+    width: 1292px;}
 }
 
 @media screen and (min-width: 1700px) and (max-width: 9001px) {
@@ -6324,20 +6341,6 @@ div#searchbars {
 .global_buffs>div {
     padding: 0px;
     margin: 0 -5px 0 -5px;}
-}
-@media screen and (max-width: 1367px) and (min-width: 1320px) {
-#markread {
-    left: 0px;
-    -webkit-border-radius: 0px 100px 100px 0px;
-    -moz-border-radius: 0px 100px 100px 0px;
-    -ms-border-radius: 0px 100px 100px 0px;
-    -o-border-radius: 0px 100px 100px 0px;
-    border-radius: 0px 100px 100px 0px;
-    z-index: 999;}
-#markread:after {
-    margin-left: -5px;}
-#markread:hover{
-    background: radial-gradient(at center, #e03854, #914154, #5b4254, #343f52, #223f51);}
 }
 
 
