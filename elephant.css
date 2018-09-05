@@ -6023,10 +6023,12 @@ a:hover {
     vertical-align: top;}
 #torrents .filter_torrents #platcheckbox td[colspan="5"] {
     background-color: #e7e7e7;}
+#torrentbrowse form .filter_torrents.advanced .box.pad table tbody tr td #platcheckbox a.flright[onclick="toggle_myplatforms('hide'); return false;"] {
+    position: relative;}
 #torrentbrowse form .filter_torrents.advanced .box.pad table tbody tr td #platcheckbox a.flright[onclick="toggle_myplatforms('hide'); return false;"]:before {
     content: '(View Less)';
     position: absolute;
-    top: 280px;}
+    bottom: 1080px;}
 #torrentbrowse form .filter_torrents.advanced .box.pad table tbody > tr > td.label:nth-child(1) {
     max-width: 130px;}
 
