@@ -5234,73 +5234,70 @@ button.submit {
 .profile .box_art_gallery .gallery_small_slot.selected {border: 0px solid white; margin: 0;}
 
 
-/* attempting to make 'click to expand/collapse' more intuitive */
-.head[title="Click to expand/collapse"], #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head, #index #recommended .head, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
-    background: rgba(213,176,154,0.5);
-    outline: 3px solid rgba(213,176,154,0.0);
-    outline-offset: -3px;
-    transition: 0.1s;}
-.head[title="Click to expand/collapse"]:hover, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover, #index #recommended .head:hover, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover {
-    background: rgba(213,176,154,0.0);
-    outline: 3px solid rgba(213,176,154,0.5);
-    outline-offset: -3px;
-    transition: 0.1s;
-    color: rgba(213,176,154,0.5);}
-.head[title="Click to expand/collapse"]:hover strong, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover strong, #index #recommended .head:hover strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover strong {
-    font-weight: 600 !important;}
+/* buttons & hovers */
+.edition_info:before {
+    background: radial-gradient(rgba(51, 51, 51, 1), rgb(32, 32, 32, 1));
+    transition: opacity 0.1s;}
+.head[title="Click to expand/collapse"]:before, #index #recommended .head:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before {
+    background: linear-gradient(to top, rgba(232,80,102,1) 0%,rgba(42, 79, 101, 0) 100%);
+    transition: opacity 0.15s;}
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1):before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:before {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(42,79,101,0.0));
+    transition: opacity 0.1s;}
+.head[title="Click to expand/collapse"]:before, #index #recommended .head:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1):before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:before, .edition_info:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;}
+.head[title="Click to expand/collapse"]:hover:before, #index #recommended .head:hover:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover:before {
+    opacity: 1;
+    transition: opacity 0.15s;}
+.edition_info:hover:before, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1):hover:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:hover:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:hover:before{
+    opacity: 1;
+    transition: opacity 0.1s;}
+.head[title="Click to expand/collapse"] {
+    z-index: -1;}
+#forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
+    z-index: 0;}
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a {
+    z-index: 99;}
+.edition_info {
+	height: 12px;}
+.head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"], #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1), #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"], #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"], .edition_info {
+    position: relative;}
+#index .newsdate, #index #wrapper #content .thin .main_column_bg .main_column .box .head span.time, .head[title="Click to expand/collapse"] strong, #index #recommended .head strong, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] strong, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong, .edition_info strong {
+    z-index: 2;}
+.head[title="Click to expand/collapse"] strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] strong {
+	position: absolute;
+    width: 100%;
+    left: 0px;}
+.head[title="Click to expand/collapse"], #index #recommended .head, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head {
+    min-height: 28px;}
+#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong {
+	position: absolute;
+	top: 5px;
+	left: 5px;}
+.edition_info strong {
+    position: absolute;
+    top:3px;
+    left:1px;}
+
+input[type="submit"], input[type="button"], button[type="button"] {
+    border: none;
+    padding: 3px 8px 3px 8px;
+    /* transition: 0.05s; */ }
+input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover {
+    background: radial-gradient(circle, rgba(232,80,102,1) 0%,rgba(192, 154, 154, 1) 100%);
+    /* transition: 0.05s; */ }
+
 
 #linkedgroup {transition: 0.1s;}
 
-/* transition is flashing at the end, no idea how to fix it, animation will have to do */
-.edition_info {	-webkit-animation-name: torrent_group_out;
-    -webkit-animation-duration: 0.1s;}
-.edition_info:hover {
-	-webkit-animation-name: torrent_group_in;
-    -webkit-animation-duration: 0.1s;
-    -webkit-animation-fill-mode: forwards;}
-@-webkit-keyframes torrent_group_in {
-	0% {background: radial-gradient(rgba(32, 32, 32, 0.875), rgba(32, 32, 32, 1));}
-	14,28% {background: radial-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 1));}
-	28.57% {background: radial-gradient(rgba(32, 32, 32, 0.625), rgba(32, 32, 32, 1));}
-	42.85% {background: radial-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 1));}
-	57.14% {background: radial-gradient(rgba(32, 32, 32, 0.375), rgba(32, 32, 32, 1));}
-	71.42% {background: radial-gradient(rgba(32, 32, 32, 0.25), rgba(32, 32, 32, 1));}
-	85.71% {background: radial-gradient(rgba(32, 32, 32, 0.125), rgba(32, 32, 32, 1));}
-	100% {background: radial-gradient(rgba(32, 32, 32, 0.1), rgb(32, 32, 32, 1));}}
-@-webkit-keyframes torrent_group_out {
-	0% {background: radial-gradient(rgba(32, 32, 32, 0.1), rgba(32, 32, 32, 1));}
-	14,28% {background: radial-gradient(rgba(32, 32, 32, 0.125), rgba(32, 32, 32, 1));}
-	28.57% {background: radial-gradient(rgba(32, 32, 32, 0.25), rgba(32, 32, 32, 1));}
-	42.85% {background: radial-gradient(rgba(32, 32, 32, 0.375), rgba(32, 32, 32, 1));}
-	57.14% {background: radial-gradient(rgba(32, 32, 32, 0.5), rgba(32, 32, 32, 1));}
-	71.42% {background: radial-gradient(rgba(32, 32, 32, 0.625), rgba(32, 32, 32, 1));}
-	85.71% {background: radial-gradient(rgba(32, 32, 32, 0.75), rgba(32, 32, 32, 1));}
-	100% {background: radial-gradient(rgba(32, 32, 32, 0.875), rgba(32, 32, 32, 1));}}
-#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"], #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] {
-    -webkit-animation-name: torrent_table_out;
-    -webkit-animation-duration: 0.1s;}
-#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:hover, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:hover {
-    -webkit-animation-name: torrent_table_in;
-    -webkit-animation-duration: 0.1s;
-    -webkit-animation-fill-mode: forwards;}
-@-webkit-keyframes torrent_table_in {
-	0% {background: radial-gradient(circle, rgba(29, 30, 33, 0.025), rgba(42,79,101,0.0));}
-	14,28% {background: radial-gradient(circle, rgba(29, 30, 33, 0.05), rgba(42,79,101,0.0));}
-	28.57% {background: radial-gradient(circle, rgba(29, 30, 33, 0.075), rgba(42,79,101,0.0));}
-	42.85% {background: radial-gradient(circle, rgba(29, 30, 33, 0.1), rgba(42,79,101,0.0));}
-	57.14% {background: radial-gradient(circle, rgba(29, 30, 33, 0.125), rgba(42,79,101,0.0));}
-	71.42% {background: radial-gradient(circle, rgba(29, 30, 33, 0.150), rgba(42,79,101,0.0));}
-	85.71% {background: radial-gradient(circle, rgba(29, 30, 33, 0.175), rgba(42,79,101,0.0)) ;}
-	100% {background: radial-gradient(circle, rgba(29, 30, 33, 0.2), rgba(42,79,101,0.0));}}
-@-webkit-keyframes torrent_table_out {
-	0% {background: radial-gradient(circle, rgba(29, 30, 33, 0.2), rgba(42,79,101,0.0));}
-	14,28% {background: radial-gradient(circle, rgba(29, 30, 33, 0.175), rgba(42,79,101,0.0));}
-	28.57% {background: radial-gradient(circle, rgba(29, 30, 33, 0.15), rgba(42,79,101,0.0));}
-	42.85% {background: radial-gradient(circle, rgba(29, 30, 33, 0.125), rgba(42,79,101,0.0));}
-	57.14% {background: radial-gradient(circle, rgba(29, 30, 33, 0.1), rgba(42,79,101,0.0));}
-	71.42% {background: radial-gradient(circle, rgba(29, 30, 33, 0.075), rgba(42,79,101,0.0));}
-	85.71% {background: radial-gradient(circle, rgba(29, 30, 33, 0.05), rgba(42,79,101,0.0));}
-	100% {background: radial-gradient(circle, rgba(29, 30, 33, 0.025), rgba(42,79,101,0.0));}}
 
 #torrents #content .box .vote:{transition:0.1s;}
 #torrents #content .box .vote:hover{
@@ -5370,7 +5367,8 @@ button.submit {
     font-size: 8pt;
     font-weight: bold;
     display: inline-block;
-    margin-top: 2px;}
+    margin-top: 2px;
+    z-index: 1;}
 
 #inbox .box.vertical_space {margin-bottom: 25px; margin-top: 11px;}
 #inbox .thin .box.vertical_space [id^="message"] {padding: 5px 10px 5px 10px;}
@@ -5862,12 +5860,12 @@ span.user_title span[style="font-family: cursive;"] {
 #forums .forum_post .colhead_dark span.user_title strong span[style=" text-shadow: 3px 3px 1px black;"] marquee {
     margin-top: -4px;}
 
-#torrents .main_column tbody[id^="edition_"] tr.group_torrent, #top10 tr[class^="group_torrent"], #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"], #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"] {
+#torrents .main_column tbody[id^="edition_"] tr.group_torrent, #top10 tr[class^="group_torrent"], #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"], #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"], #requests .thin >table.border >tbody >tr[class^="row"] {
     transition: 0.05s;}
 #torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover {
     box-shadow: inset 0.5px 0.5px 0px 1px rgba(105, 105, 105, 1);
     transition: 0.05s;}
-#top10 tr[class^="group_torrent"]:hover, #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover {
+#top10 tr[class^="group_torrent"]:hover, #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover, #requests .thin >table.border >tbody >tr[class^="row"]:hover {
     box-shadow: inset 0.5px 0.5px 0px 1.5px rgba(105, 105, 105, 1);
     transition: 0.05s;}
 
@@ -6006,13 +6004,7 @@ ul#items_list li.no_items {
 
 input[type="submit"], input[type="button"], button[type="button"], .body.similar ul.nobullet li span.similar_votes, .body.similar ul.nobullet li span.similar_votes a, .body.similar ul.nobullet li span.similar_votes:hover, .body.similar ul.nobullet li span.similar_votes:hover a {
     transition: 0.05s;}
-input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover {
-    color: rgb(192, 154, 154) !important;
-    background: black !important;
-    border: solid 2px rgb(192, 154, 154) !important;
-    transition: 0.05s !important;
-    cursor: pointer;}
-input[type="checkbox"] {
+input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover, input[type="checkbox"] {
     cursor: pointer;}
 
 #requests .thin > table tr td a {
@@ -6084,6 +6076,8 @@ a:hover {
     content: '(View Less)';
     position: absolute;
     bottom: 1080px;}
+#torrents td[colspan="7"] #platdropdown .flright {
+    margin-top: -8px;}
 #torrentbrowse form .filter_torrents.advanced .box.pad table tbody > tr > td.label:nth-child(1) {
     max-width: 130px;}
 
