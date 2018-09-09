@@ -2197,7 +2197,7 @@ margin-top: -12px;
 }
 
 #requests .thin > table tr td:nth-child(1) {
-	width: 350px !important;
+	/* width: 350px !important; */
 	display: block;
 	border-top: 1px;
 	height: 100%;
@@ -5865,7 +5865,7 @@ span.user_title span[style="font-family: cursive;"] {
 #torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover {
     box-shadow: inset 0.5px 0.5px 0px 1px rgba(105, 105, 105, 1);
     transition: 0.05s;}
-#top10 tr[class^="group_torrent"]:hover, #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover, #requests .thin >table.border >tbody >tr[class^="row"]:hover {
+#top10 tr[class^="group_torrent"]:hover, #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover {
     box-shadow: inset 0.5px 0.5px 0px 1.5px rgba(105, 105, 105, 1);
     transition: 0.05s;}
 
@@ -5998,11 +5998,15 @@ ul#items_list li.no_items {
     outline: 2px solid rgba(105, 105, 105, 1);
     outline-offset: -2px;
     transition: 0.05s;}
+#requests .thin >table.border >tbody >tr[class^="row"]:hover{
+    outline: 1px solid rgba(105, 105, 105, 1);
+    outline-offset: -1px;
+    transition: 0.05s;}
 
 .sidebar #freeleech > .head.colhead_dark > span[title^="Your picks will be recycled in"] {
     cursor: help;}
 
-input[type="submit"], input[type="button"], button[type="button"], .body.similar ul.nobullet li span.similar_votes, .body.similar ul.nobullet li span.similar_votes a, .body.similar ul.nobullet li span.similar_votes:hover, .body.similar ul.nobullet li span.similar_votes:hover a {
+.body.similar ul.nobullet li span.similar_votes, .body.similar ul.nobullet li span.similar_votes a, .body.similar ul.nobullet li span.similar_votes:hover, .body.similar ul.nobullet li span.similar_votes:hover a {
     transition: 0.05s;}
 input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover, input[type="checkbox"] {
     cursor: pointer;}
