@@ -5207,9 +5207,7 @@ button.submit {
 .edition_info:hover:before, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1):hover:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:hover:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:hover:before{
     opacity: 1;
     transition: opacity 0.1s;}
-.head[title="Click to expand/collapse"] {
-    z-index: -1;}
-#forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
+.head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
     z-index: 0;}
 #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a {
     z-index: 99;}
@@ -5225,6 +5223,8 @@ button.submit {
     left: 0px;}
 .head[title="Click to expand/collapse"], #index #recommended .head, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head {
     min-height: 28px;}
+#user .head[title="Click to expand/collapse"] {
+	min-height: 25px;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong {
 	position: absolute;
@@ -6142,6 +6142,14 @@ a:hover {
     width: 203.27px;
     float: left;
     height: 5px;}
+
+#user .box.box_likes.box_torrents .head span.likes_icon.flright {
+    position: absolute;
+    width: 100%;
+    left: 90px;
+    z-index: 1;}
+#user .box.box_likes.box_torrents .head span.likes_icon.flright img {
+    height: 28px;}
 
 
 /* widescreen */
