@@ -3086,21 +3086,16 @@ ul {padding-left: 10px;} /*was 12px*/
 	position:relative;
 	font-size:15px;
 	line-height:18px!important;
-	height:80%;
+	height:calc(100% - 10px);
 	padding:5px;
 	border-bottom:none;
 	background:rgba(0,0,0,0.7);
 	font-family:arial;
-	-webkit-transform:scale(0.7);
-	-moz-transform:scale(0.7);
-	-ms-transform:scale(0.7);
-	-o-transform:scale(0.7);
-	transform:scale(0.7);
-	-webkit-transition:all 0.2s ease-in;
-	-moz-transition:all 0.2s ease-in;
-	-ms-transition:all 0.2s ease-in;
-	-o-transition:all 0.2s ease-in;
-	transition:all 0.2s ease-in;
+	-webkit-transition:all 0.15s ease-in;
+	-moz-transition:all 0.15s ease-in;
+	-ms-transition:all 0.15s ease-in;
+	-o-transition:all 0.15s ease-in;
+	transition:all 0.15s ease-in;
 	opacity:0;
 	filter:alpha(opacity=0);
 	color:#fff;
@@ -3109,11 +3104,6 @@ ul {padding-left: 10px;} /*was 12px*/
     .hovereffect:hover h2{
 	opacity:1;
 	filter:alpha(opacity=100);
-	-webkit-transform:scale(1);
-	-moz-transform:scale(1);
-	-ms-transform:scale(1);
-	-o-transform:scale(1);
-	transform:scale(1);
 }
     .overlay h2 a {color:white;}
     .overlay h2 a:hover{color:white;text-decoration:none;top:0px;left:0px;}
@@ -5826,7 +5816,6 @@ span.user_title span[style="font-family: cursive;"] {
     top: 0%;
     width: 100%;}
 #gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"] h2, #collections #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] h2 {
-    height: 100%;
     background: rgba(0,0,0,0.7);
     color: white;
     top: 0px;}
@@ -6008,7 +5997,7 @@ ul#items_list li.no_items {
 
 .body.similar ul.nobullet li span.similar_votes, .body.similar ul.nobullet li span.similar_votes a, .body.similar ul.nobullet li span.similar_votes:hover, .body.similar ul.nobullet li span.similar_votes:hover a {
     transition: 0.05s;}
-input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover, input[type="checkbox"] {
+input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover, input[type="checkbox"], input[type="radio"] {
     cursor: pointer;}
 
 #requests .thin > table tr td a {
@@ -6209,6 +6198,39 @@ a:hover {
     background: none;
     box-shadow: none;
     margin-bottom: 50px;}
+
+#collections .thin .center >form[method="get"] {
+    background: rgba(31, 32, 35, 1);
+    margin: 30px 0px 0px 0px !important;
+    box-shadow: 0 0 30px #000;}
+#collections #content .thin .center >form[method="get"] >table.border {
+    box-shadow: none;}
+#collections .thin table.collections_art_display[width="100%"] >tbody {
+    background: rgba(31, 32, 35, 1);
+    box-shadow: 0 0 30px #000;}
+#collections .thin table.collections_art_display[width="100%"] >tbody tr td {
+    border: none;
+    padding: 0px;
+    width: 25%;}
+#collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    left: 0px;
+    margin: 0px;
+    box-shadow: none;}
+#collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
+    height: 150px;
+    background-size: 100% 150px;}
+.collections_art_display {
+    border-collapse: initial;}
+#collections .thin table.collections_art_display[width="100%"] {
+    padding: 0px;
+    margin-top: 10px;}
+.hovereffect .overlay:hover h2 {
+	outline: 2px solid rgba(232,80,102,1);
+	outline-offset: -2px;}
 
 
 /* widescreen */
