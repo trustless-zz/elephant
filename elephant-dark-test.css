@@ -6205,6 +6205,11 @@ a:hover {
 #user .box.box_likes.box_torrents .head span.likes_icon.flright img {
     height: 28px;}
 
+#torrents #torrentbrowse .box.pad[align="center"] {
+    background: none;
+    box-shadow: none;
+    margin-bottom: 50px;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
