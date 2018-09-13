@@ -3067,7 +3067,7 @@ ul {padding-left: 10px;} /*was 12px*/
     .collections_art_display .collection_art{height:100px;background-size:246px 100px;}
     #collections #content .center table tr,td{background:none;}
     .hovereffect{width:83.108%;height:100%;float:left;overflow:hidden;position:relative;text-align:center;cursor:default;left: 8.6666%;box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
-    .hovereffect .overlay{width:101%;height:100%;position:absolute;overflow:hidden;top:5%;left:0;}
+    .hovereffect .overlay{width:100%;height:100%;position:absolute;overflow:hidden;top:0;left:0;}
     .hovereffect .img_responsive{display:block;position:relative;width:100%;}
     .hovereffect h2{
 	text-align:left;
@@ -5499,12 +5499,10 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
     left: unset;
     margin-top: -10px;}
 #torrents .sidebar .box.box_pack .body.center .hovereffect .img_responsive {
-    display: block;
-    position: relative;
     width: 280px;
     max-width: 280px !important;
-    height: 100%;
-    background-size: cover;}
+    height: 131px;
+    background-size: 100% 131px;}
 
 
 #forums .thin table[id^="post"] tbody tr.colhead_dark td div[id^="bar"][style="float: right;"] a {vertical-align: middle;}
@@ -6159,8 +6157,8 @@ a:hover {
     margin: 0px;
     box-shadow: none;}
 #collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
-    height: 150px;
-    background-size: 100% 150px;}
+    height: 139px;
+    background-size: 100% 139px;}
 .collections_art_display {
     border-collapse: initial;}
 #collections .thin table.collections_art_display[width="100%"] {
@@ -6281,6 +6279,9 @@ ul#items_list:before {
     width: 1292px;}
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody tr td.body blockquote {
     max-width: 731px;}
+#collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
+    height: 151px;
+    background-size: 100% 151px;}
 }
 
 @media screen and (min-width: 1700px) and (max-width: 9001px) {
