@@ -1787,7 +1787,7 @@ margin-top: -12px;
     border-top: 1px solid #555555;
 }
 
-#torrents .group {
+#torrents .group, #collections #torrent_table >tbody >tr[class="group discog"] {
     background-color: rgba(213,176,154,0.25);
 	color: rgb(196, 196, 196);
 }
@@ -3068,11 +3068,31 @@ ul {padding-left: 10px;} /*was 12px*/
     #collections .sidebar .box_albumart img{width:300px;border:0px;margin:0px;max-width: 300px !important;}
     #collections .sidebar .subhead{padding-top:1px;text-align:center;}
     #collections .box_description div{word-wrap:break-word;}
-    #collections ul.collage_images{padding:0px;width:auto;margin: 30px 0 30px 31.5px;;border-collapse:collapse;display: inline-block;text-align: center;}
-    #collections ul.collage_images li{padding: 10px;border:none;float:left;margin:0px;width:142px;height:162px;list-style:none;list-style-type:none;}
-    #collections ul.collage_images li a{display:block;height:162px;overflow:hidden;}
-    #collections ul.collage_images img{width:142px;height:162px;}
-    .collections .linkbox .selected .pageslink{color:#e1ecf1;}
+#collections ul.collage_images {
+    padding: 9px 10px 9px 10px;
+    width: auto;
+    margin: 30px 0 30px 0px;
+    border-collapse: collapse;
+    display: inline-block;
+    text-align: center;
+    width: 853px;}
+#collections ul.collage_images li {
+    padding: 1px;
+    border: none;
+    float: left;
+    margin: 0px;
+    display: inline-block;
+    height: 200.238px;
+    list-style: none;
+    list-style-type: none;}
+#collections ul.collage_images li a {
+    display: block;
+    height: 200.238px;
+    overflow: hidden;}
+#collections ul.collage_images img {
+    width: 140.166px;
+    height: 200.238px;}
+    .collections .linkbox .selected .pageslink{color: rgba(196, 196, 196, 1);}
     #collections .box_comment .pad img{height:initial;width:initial;border:0px;padding:1px;margin:0px;}
     .collections_art_display{background:url('images/companioncube-blue.png')!important;}
     .collections_art_display td{border:none;padding:2px;width:25%;}
@@ -5549,12 +5569,15 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
     box-shadow: none;
     cursor: pointer;
     left: unset;
-    margin-top: -10px;}
+    height: 140.217px !important;}
 #torrents .sidebar .box.box_pack .body.center .hovereffect .img_responsive {
-    width: 280px;
-    max-width: 280px !important;
-    height: 131px;
-    background-size: 100% 131px;}
+    width: 300px;
+    max-width: 300px !important;
+    height: 100%;
+    background-size: 300px 100%;}
+#torrents .sidebar .box.box_pack .body.center {
+    margin: 0px;
+    padding: 0px;}
 
 
 #forums .thin table[id^="post"] tbody tr.colhead_dark td div[id^="bar"][style="float: right;"] a {vertical-align: middle;}
@@ -6240,8 +6263,57 @@ a:hover {
 #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1) {
     padding: 10px 10px 30px 6px;
     margin: -10px -10px -30px -6px !important;
-    z-index:99;
+    z-index: 99;
     position: relative;}
+
+#collections #torrent_table >tbody >tr[class="group discog"] >td[colspan="5"] >strong {
+    font-weight: normal;}
+#collections #torrent_table >tbody >tr[class="group discog"] >td[colspan="5"] >strong span, #collections #torrent_table >tbody >tr[class="group discog"] >td[colspan="5"] >strong a {
+    font-weight: bold;}
+#collections #torrent_table  a {
+    color: rgb(192, 154, 154);}
+#collections #torrent_table  a:hover {
+    color: rgb(152, 114, 114);}
+#collections #torrent_table >tbody >tr.colhead td strong, #top10 #wrapper #content .thin.top10_games table.border >tbody >tr.colhead td strong {
+    font-weight: normal;}
+
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td, .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
+	transition: 0.05s;
+	overflow: hidden;
+	position: relative;}
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before {
+    transition: 0.05s;
+    z-index: -1;}
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before, .box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
+	content: "";
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top:0px;
+	left:0px;}
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover:before, .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover:before {
+	background: rgba(232,80,102,1);
+    transition: 0.05s;}
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, .box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
+	z-index: 1;}
+
+.box.box_image.box_image_coverart div[align="center"]{
+	position: relative;}
+.box.box_image.box_image_coverart div a {
+	display: inline-block;}
+.box.box_image.box_image_coverart div[align="center"] a:after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+    outline: 3px solid rgba(232,80,102,0);
+    outline-offset: -3px;
+    transition: 0.05s;}
+.box.box_image.box_image_coverart div[align="center"] a:hover:after{
+    outline: 3px solid rgba(232,80,102,1);
+    transition: 0.05s;}
 
 
 /* widescreen */
@@ -6277,7 +6349,7 @@ ul#items_list:before {
     width: 973px;}
 .profile .box_art_gallery .gallery_main_slot, .profile .box_art_gallery .gallery_main_slot {
     max-width: 953px}
-#requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]), .profile .box_art_gallery .gallery_row, #grouplinks {
+#collections ul.collage_images, #requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]), .profile .box_art_gallery .gallery_row, #grouplinks {
     width: 953px;}
 #quickreplytext textarea, #requests #quickreplytext textarea#quickpost {
     width: 911px;
@@ -6313,14 +6385,11 @@ ul#items_list:before {
     left: 0px;}
 #gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect .gazelle_art.img_responsive {
     background-size: 306px 180px;}
-#collections ul.collage_images li {
-    width: 162px;
-    height: 185px;}
+#collections ul.collage_images li, #collections ul.collage_images img {
+    width: 156.833px;
+    height: 224px;}
 #collections ul.collage_images li a {
-    height: 185px;}
-#collections ul.collage_images img {
-    width: 162px;
-    height: 185px;}
+    height: 224px;}
 /* .torrent_table tr.group_torrent td, #torrent_table tr.group_torrent td {
     font-size: 12px;} */
 .inventory #content li.item_li {
@@ -6628,26 +6697,3 @@ div#searchbars {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/limbologo.png'), url(logo/alt-logo-30p.png);}
 .franchise_2773 #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/swordartonlinelogo.png'), url(logo/alt-logo-30p.png);}
-
-
-
-/*temp*/
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td {
-	transition: 0.05s;
-	overflow: hidden;
-	position: relative;
-	background-color: rgba(192, 154, 154, 0);
-    outline: 3px solid rgba(192, 154, 154, 0);
-    outline-offset: -3px;}
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td:hover {
-    background: black;
-    outline: 3px solid rgba(192, 154, 154, 1);
-    outline-offset: -3px;
-    transition: 0.05s;}
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td >a:after {
-	content: "";
-	width: 300px;
-	height: 300px;
-	position: absolute;
-	top:0px;
-	left:0px;}
