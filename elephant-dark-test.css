@@ -6237,7 +6237,7 @@ a:hover {
     height: 100%;
     width: 100%;
     z-index:98;}
-#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1) {
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1) {
     padding: 10px 10px 30px 6px;
     margin: -10px -10px -30px -6px !important;
     z-index:99;
