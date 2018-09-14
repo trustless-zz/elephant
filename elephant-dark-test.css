@@ -5990,16 +5990,23 @@ ul#items_list li.no_items {
     left: 0;
     position: absolute;}
 .screenshots a img {
-    min-width: 24.5% !important;
-    transition: 0.05s;}
-.screenshots img:hover {
+    min-width: 24.5% !important;}
+#torrents .sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, .screenshots img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover {
     outline: 2px solid rgba(105, 105, 105, 1);
     transition: 0.05s;}
+#torrents .sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, .screenshots img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img {
+    outline: 2px solid rgba(105, 105, 105, 0);
+    transition: 0.05s;
+    cursor: pointer;}
+#torrents .sidebar .box.box_albumart img {
+    outline-offset: -2px;}
 
-.similar_group>a img{
-    transition: 0.05s;}
+.similar_group>a img {
+    transition: 0.05s;
+    outline: 2px solid rgba(232,80,102,0);
+    outline-offset: -2px;}
 .similar_group>a img:hover {
-    outline: 2px solid rgba(105, 105, 105, 1);
+    outline: 2px solid rgba(232,80,102,1);
     outline-offset: -2px;
     transition: 0.05s;}
 #requests .thin >table.border >tbody >tr[class^="row"]:hover{
@@ -6010,8 +6017,6 @@ ul#items_list li.no_items {
 .sidebar #freeleech > .head.colhead_dark > span[title^="Your picks will be recycled in"] {
     cursor: help;}
 
-.body.similar ul.nobullet li span.similar_votes, .body.similar ul.nobullet li span.similar_votes a, .body.similar ul.nobullet li span.similar_votes:hover, .body.similar ul.nobullet li span.similar_votes:hover a {
-    transition: 0.05s;}
 input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover, input[type="checkbox"], input[type="radio"] {
     cursor: pointer;}
 
@@ -6109,17 +6114,11 @@ a:hover {
     vertical-align: middle;}
 
 .body.similar ul.nobullet li span.similar_votes {
-    background-color: rgb(192, 154, 154);
-    outline: 3px solid rgba(192, 154, 154, 0);
-    outline-offset: -3px;}
+    background-color: rgb(192, 154, 154);}
 .body.similar ul.nobullet li span.similar_votes a {
-    color: white;}
-.body.similar ul.nobullet li span.similar_votes:hover {
-    background: black;
-    outline: 3px solid rgba(192, 154, 154, 1);
-    outline-offset: -3px;}
-.body.similar ul.nobullet li span.similar_votes:hover a {
-    color: rgb(192, 154, 154);}
+    color: rgb(50,50,50);}
+.body.similar ul.nobullet li span.similar_votes:hover{
+	background: radial-gradient(circle, rgba(232,80,102,1) 0%,rgb(192, 154, 154) 100%);}
 
 .body.similar ul.nobullet li span.similar_votes {
     position:relative;}
@@ -6314,6 +6313,46 @@ a:hover {
 .box.box_image.box_image_coverart div[align="center"] a:hover:after{
     outline: 3px solid rgba(232,80,102,1);
     transition: 0.05s;}
+#collections ul.collage_images li a {
+	outline: 2px solid rgba(232,80,102,0);
+	transition: 0.05s;}
+#collections ul.collage_images li a:hover {
+	outline: 2px solid rgba(232,80,102,1);
+	transition: 0.05s;}
+
+#collections ul.collage_images img[src^="https://gazellegames.net/image.php?c=1&i=http"] {
+    width: 240px;
+    height: 67.5px;
+    margin-left: -48.917px;
+    margin-right: -50.917px;
+    margin-top: 70px;}
+
+.body.similar ul.nobullet li span.similar_votes span {
+    color: rgb(50, 50, 50);}
+.body.similar ul.nobullet li span.similar_votes a:not([title="Mark as similar"]):hover {
+    filter: drop-shadow(0px 0px 2px black);}
+
+#recommended #vanityhouse tbody tr td {
+    position: relative;
+    overflow: hidden;
+    z-index: -2;}
+#recommended #vanityhouse tbody tr td a:nth-child(1) {
+	padding: 500px;
+	margin: -500px;}
+#recommended #vanityhouse tbody tr td a:nth-child(1):before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background: rgba(232,80,102,1);
+	z-index:-1;
+	opacity:0;
+	transition: 0.05s;}
+#recommended #vanityhouse tbody tr td a:nth-child(1):hover:before{
+	opacity:1;
+	transition: 0.05s;}
 
 
 /* widescreen */
@@ -6407,6 +6446,12 @@ ul#items_list:before {
 #collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
     height: 151px;
     background-size: 100% 151px;}
+#collections ul.collage_images img[src^="https://gazellegames.net/image.php?c=1&i=http"] {
+    width: 270px;
+    height: 67.5px;
+    margin-left: -55.583px;
+    margin-right: -57.583px;
+    margin-top: 75px;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 9001px) {
