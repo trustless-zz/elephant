@@ -3061,7 +3061,6 @@ ul {padding-left: 10px;} /*was 12px*/
     width: auto;
     margin: 30px 0 30px 0px;
     border-collapse: collapse;
-    display: inline-block;
     text-align: center;
     width: 853px;}
 #collections ul.collage_images li {
@@ -3080,6 +3079,8 @@ ul {padding-left: 10px;} /*was 12px*/
 #collections ul.collage_images img {
     width: 140.166px;
     height: 200.238px;}
+#collections .main_column >#coverart {
+    padding-bottom: 30px;}
     .collections .linkbox .selected .pageslink{color: rgba(50, 50, 50, 1);}
     #collections .box_comment .pad img{height:initial;width:initial;border:0px;padding:1px;margin:0px;}
     .collections_art_display{background:url('images/companioncube-blue.png')!important;}
@@ -3580,9 +3581,8 @@ div#coverart {
     margin-top: 10px;
 }
 
-#collections .box.box_albumart img {
-    padding: 40px 0 40px 0;
-}
+#collections .sidebar .box.box_albumart {
+    padding: 40px 0 40px 0;}
 
 #collections form textarea {
     max-width: 80%;
@@ -5934,14 +5934,14 @@ ul#items_list li.no_items {
     position: absolute;}
 .screenshots a img {
     min-width: 24.5% !important;}
-#torrents .sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, .screenshots img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover {
+#torrents .sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, .screenshots img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover, #collections .sidebar .box.box_albumart img:hover {
     outline: 2px solid rgba(150, 150, 150, 1);
     transition: 0.05s;}
-#torrents .sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, .screenshots img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img {
+#torrents .sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, .screenshots img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img, #collections .sidebar .box.box_albumart img {
     outline: 2px solid rgba(150, 150, 150, 0);
     transition: 0.05s;
     cursor: pointer;}
-#torrents .sidebar .box.box_albumart img {
+#torrents .sidebar .box.box_albumart img, #collections .sidebar .box.box_albumart img {
     outline-offset: -2px;}
 
 .similar_group>a img {
