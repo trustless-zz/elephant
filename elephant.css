@@ -4705,10 +4705,10 @@ button.submit {
 .profile .box_stats ul#online_stats {order: 2;}
 .profile .box_stats .status {font-size: 1.8em;}
 .profile .box_stats .online {color: #43bc56;}
-.profile .box_stats .offline {color: #b5b4c2; opacity: 0.5;}
+.profile .box_stats .offline {/* color: #b5b4c2; */ opacity: 0.5;}
 .profile .box_stats li#last_seen {flex: 0 0 100%;}
 .profile .box_stats #last_seen {
-	color: #b5b4c2;
+	/* color: #b5b4c2; */
 	font-size: 0.8em;
 	opacity: 0.5;
 	margin-top: -10px;}
@@ -5189,7 +5189,7 @@ button.submit {
     height: auto;}
 .profile .box_art_gallery .small_row .gallery_small_slot {width: 24%; margin: 2px;}
 .profile .gallery_small_slot img {display: block;}
-.profile .box_art_gallery .gallery_small_slot.selected {border: 0px solid white; margin: 0;}
+.profile .box_art_gallery .gallery_small_slot.selected {border: 2px solid rgba(150, 150, 150, 1); margin: 0;}
 
 
 /* buttons & hovers */
@@ -6220,24 +6220,37 @@ a:hover {
 #collections #torrent_table >tbody >tr.colhead td strong, #top10 #wrapper #content .thin.top10_games table.border >tbody >tr.colhead td strong {
     font-weight: normal;}
 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td, .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td {
 	transition: 0.05s;
 	overflow: hidden;
 	position: relative;}
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before {
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:before, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before {
     transition: 0.05s;
     z-index: -1;}
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before, .box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:before, 
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:after, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
 	content: "";
 	width: 300px;
 	height: 300px;
 	position: absolute;
 	top:0px;
 	left:0px;}
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover:before, .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover:before {
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover:before, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover:before, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover:before {
 	background: rgba(232,80,102,1);
     transition: 0.05s;}
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, .box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:after, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
 	z-index: 1;}
 
 .box.box_image.box_image_coverart div[align="center"]{
@@ -6290,6 +6303,9 @@ a:hover {
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover:before{
 	opacity:1;
 	transition: 0.05s;}
+
+#user .box.box_items #itemsdiv table tbody tr td a >img:hover {
+    filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));}
 
 
 /* widescreen */
