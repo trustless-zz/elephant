@@ -6320,13 +6320,6 @@ a:hover {
 	outline: 2px solid rgba(232,80,102,1);
 	transition: 0.05s;}
 
-#collections ul.collage_images img[src^="https://gazellegames.net/image.php?c=1&i=http"] {
-    width: 240px;
-    height: 67.5px;
-    margin-left: -48.917px;
-    margin-right: -50.917px;
-    margin-top: 70px;}
-
 .body.similar ul.nobullet li span.similar_votes span {
     color: rgb(50, 50, 50);}
 .body.similar ul.nobullet li span.similar_votes a:not([title="Mark as similar"]):hover {
@@ -6446,12 +6439,6 @@ ul#items_list:before {
 #collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
     height: 151px;
     background-size: 100% 151px;}
-#collections ul.collage_images img[src^="https://gazellegames.net/image.php?c=1&i=http"] {
-    width: 270px;
-    height: 67.5px;
-    margin-left: -55.583px;
-    margin-right: -57.583px;
-    margin-top: 75px;
 }
 
 @media screen and (min-width: 1700px) and (max-width: 9001px) {
