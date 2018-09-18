@@ -2995,11 +2995,11 @@ span.size5 img {float: right;}
 #weblinksdiv {padding-bottom: 25px;}
 .weblinks{width:40px;height:40px;float:left;margin:5px;}
 .tilt{
-	-webkit-transition:all 0.5s ease;
-	-moz-transition:all 0.5s ease;
-	-ms-transition:all 0.5s ease;
-	-o-transition:all 0.5s ease;
-	transition:all 0.5s ease;
+	-webkit-transition:all 0.25s ease;
+	-moz-transition:all 0.25s ease;
+	-ms-transition:all 0.25s ease;
+	-o-transition:all 0.25s ease;
+	transition:all 0.25s ease;
 }
 .tilt:hover{
 	-webkit-transform:rotate(-10deg);
@@ -3007,6 +3007,7 @@ span.size5 img {float: right;}
 	-ms-transform:rotate(-10deg);
 	-o-transform:rotate(-10deg);
 	transform:rotate(-10deg);
+    filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
 }
     .Amazon,.BoardGameGeek,.Desura,.DriveThruRPG,.GameFAQs,.GamesWebsite,.Giantbomb,.GOG,.GooglePlay,.HowLongToBeat,.HumbleBundle,.Itch,.iTunes,.MobyGames,.NexusMods,.Origin,.Ouya,.PSN,.RPGGeek,.RPGnet,.Steam,.VNDB,.Wikipedia,.XboxStore,.PCGamingWiki{background-size:contain;}
 
@@ -5092,10 +5093,8 @@ button.submit {
 #collections .sidebar .box.pad a {color: #2a4f65;}
 #collections .sidebar .box.pad a::before {content: "[";}
 #collections .sidebar .box.pad a::after {content: "]";}
-#collections .box.box_contributors .pad {position: relative; left: 30%;}
-#collections .box.box_contributors .pad ol {list-style: decimal;}
-#collections .box.box_tags .pad {position: relative; left: 30%;}
-#collections .box.box_tags .pad ol {list-style: decimal;}
+#collections .box.box_contributors .pad, #collections .box.box_tags .pad {position: relative; left: 15px;}
+#collections .box.box_contributors .pad ol, #collections .box.box_tags .pad ol {list-style: decimal;}
 
 #collections .thin .sub {visibility: hidden;}
 #collections #wrapper #content .thin table[class="forum_post wrap_overflow box vertical_margin forum_unread"] {
@@ -5117,7 +5116,7 @@ button.submit {
     margin-left: 20px;
     margin-bottom: 10px;
     text-align: left;}
-#collections #quickreplytext textarea#quickpost {
+#collections #quickreplytext textarea#quickpost, #collections .box.box_addtorrent .pad.hidden.add_torrents form.add_form .field_div textarea {
     height: 200px;
     background-color: #f5f5f5;
     border: solid #aaaaaa 2px;
@@ -5934,14 +5933,14 @@ ul#items_list li.no_items {
     position: absolute;}
 .screenshots a img {
     min-width: 24.5% !important;}
-#torrents .sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, .screenshots img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover, #collections .sidebar .box.box_albumart img:hover {
+.sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, .screenshots img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover {
     outline: 2px solid rgba(150, 150, 150, 1);
     transition: 0.05s;}
-#torrents .sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, .screenshots img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img, #collections .sidebar .box.box_albumart img {
+.sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, .screenshots img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img {
     outline: 2px solid rgba(150, 150, 150, 0);
     transition: 0.05s;
     cursor: pointer;}
-#torrents .sidebar .box.box_albumart img, #collections .sidebar .box.box_albumart img {
+#torrents .sidebar .box.box_albumart img, #collections .sidebar .box.box_albumart img, #requests .sidebar .box.box_albumart img {
     outline-offset: -2px;}
 
 .similar_group>a img {
@@ -6306,6 +6305,13 @@ a:hover {
 
 #user .box.box_items #itemsdiv table tbody tr td a >img:hover {
     filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));}
+
+#collections .sidebar .box.box_comment .head a[href^="reports.php?action=report"] {
+    font-size: 10pt;
+    float: right;
+    padding-right: 5px;
+    margin-left: -5px;
+    margin-top: 2px;}
 
 
 /* widescreen */
