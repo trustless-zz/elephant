@@ -3213,15 +3213,15 @@ li#stats_hnr {
 
 #color_leeching, #color_leeching .torrent_info_tags, #color_leeching a {color: #e03854 !important;}
 #color_seeding, #color_seeding .torrent_info_tags, #color_seeding a {
-    color: rgb(65, 139, 0) !important;
+    color: rgb(65, 139, 0);
     /* text-shadow: 0 0 7px rgba(217, 228, 115, 0.7); */}
-#color_uploaded, #color_uploaded .torrent_info_tags, #color_uploaded a {color: rgb(100, 174, 0) !important;
+#color_uploaded, #color_uploaded .torrent_info_tags, #color_uploaded a {color: rgb(100, 174, 0);
     text-shadow: 0 0 7px rgba(217, 228, 115, 0.7);}
 #color_snatched, #color_snatched .torrent_info_tags, #color_snatched a {
-    color: #914154 !important;
+    color: #914154;
     /* text-shadow: 0 0 7px #e03854; */}
 #color_downloaded, #color_downloaded .torrent_info_tags, #color_downloaded a {
-    color: #914154 !important;
+    color: #914154;
     /* text-shadow: 0 0 7px #e03854; */}
 #color_freeleech, strong.freeleech_label {
     color: #b585d3;
@@ -6009,7 +6009,7 @@ a:hover, #userinfo_minor li a:hover {
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span {
     color: #de7b41;}
 
-#color_leeching:hover , #color_leeching .torrent_info_tags:hover , #color_leeching a:hover {
+/* #color_leeching:hover , #color_leeching .torrent_info_tags:hover , #color_leeching a:hover {
 	color: rgb(254, 86, 114) !important;}
 #color_seeding:hover , #color_seeding .torrent_info_tags:hover , #color_seeding a:hover {
     color: rgb(95, 179, 30) !important;}
@@ -6018,7 +6018,7 @@ a:hover, #userinfo_minor li a:hover {
 #color_snatched:hover , #color_snatched .torrent_info_tags:hover , #color_snatched a:hover {
     color: rgb(175, 95, 114) !important;}
 #color_downloaded:hover , #color_downloaded .torrent_info_tags:hover , #color_downloaded a:hover {
-    color: rgb(175, 95, 114) !important;}
+    color: rgb(175, 95, 114) !important;} */
 
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching .torrent_info_tags,
