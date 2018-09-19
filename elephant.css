@@ -1359,16 +1359,18 @@ div.linkbox {
 	float: center;
 }
 
+
+tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >td.center.cats_col >div {
+    margin: 1px 0px -1px 0px;}
 .\33 do, .amstradcpc, .android, .applebandaipippin, .apps, .atari2600, .atari5200, .atari7800, .atarijaguar, .atarilynx, .atarist, .boardgame, .cardgame, .colecovision, .commodore128, .commodore64, .commodoreamiga, .commodoreplus-4, .commodorevic-20, .creativision, .dos, .dreamcast, .dsiware, .dvd, .interactivedvd, .ebook, .fairchildchannelf, .game.com,
 .gameboy, .gameboyadvance, .gameboycolor, .gamegear, .gizmondo, .intellivision, .ios, .linux, .mac, .mastersystem, .megadrive, .memotechmtx, .miniaturewargames, .msx, .msx2, .music, .necturbografx-16, .neogeopocket, .nes, .newnintendo3ds, .nintendo3ds, .nintendo64,
 .nintendods, .nintendogamecube, .windows, .pc95, .pcxp, .penandpaperrpg, .phonepda, .pico, .playstation1, .playstation2, .playstation3, .playstation4, .playstationonpsp, .playstationportable, .playstationvita, .pokemonmini, .retro-other, .samcoupe, .saturn, .sg-1000, .snes, .supernes, .switch,  
 .taitotypex, .tandycolor, .tangerineoric, .thomsonm05, .turbografx, .v.smile, .vectrex, .virtualboy, .watarasupervision, .wii, .wiiu, .wiivc, .wiiware, .wonderswan, .xbla, .xbox, .xbox360, .xboxon360, .zxspectrum,
-.ex-bgfullsets, .psonpsp, .ex-bgcollections, .bandaiwonderswancolor, .generalcomputervectrex {
+.ex-bgfullsets, .psonpsp, .ex-bgcollections, .bandaiwonderswancolor, .generalcomputervectrex, .cats_guides, .cats_ebooks, .cats_applications, .cats_ost {
 	height:28px;
 	width: 28px;
 	background: url('icon/caticons_sprite.png') no-repeat scroll top left transparent;
-	position: absolute;
-	margin-top: -12px;}
+    background-size: 28px;}
 
 .amstradcpc{
 	background: url(icon/cpc56.png);
@@ -1605,7 +1607,12 @@ div[class="v.smile"]{
     width: 28px;
     position: absolute;
     margin-top: -12px;}
-
+.cats_guides, .cats_ebooks {
+    background-image:url('icon/ebook56.png');}
+.cats_applications {
+    background-image:url('icon/app56.png');}
+.cats_ost {
+    background-image:url('icon/music56.png');}
 
 td.cats_col {
 	min-width: 28px;
@@ -1614,30 +1621,6 @@ td.cats_col {
 	/* padding-right: 31px; */
 }
 
-.cats_guides, .cats_ebooks {
-background-image:url('icon/ebook56.png');
-    background-size: 28px;
-width:28px;
-height:28px;
-position: absolute;
-margin-top: -12px;
-}
-.cats_applications {
-height:28px;
-width:28px;
-background-image:url('icon/app56.png');
-position: absolute;
-margin-top: -12px;
-    background-size: 28px;
-}
-.cats_ost {
-background-image:url('icon/music56.png');
-background-size: 28px;
-width:28px;
-height:28px;
-position: absolute;
-margin-top: -12px;
-}
 
 .Bandcamp {
     background-image: url("icon/svg/Bandcamp.svg");}
@@ -2728,12 +2711,11 @@ color: rgba(50, 50, 50, 1)
 /*WIKI*/
 
 #wiki .main_column .box, .main_column table:not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]):not([id*="requests"]):not([class="bbcode_table"]) {
-	padding: 10px;
-	z-index: 1;
-	position: relative;
-	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
-	margin: 17px auto;
-}
+	padding: 0px 10px 0px 10px;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+    margin: 17px auto;}
 
 /* IRC */
 #qwebcontainer {
@@ -2887,9 +2869,7 @@ span.size5 img {float: right;}
 
 #grouplinks td {
     float: left;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-top: 8px;}
+    padding: 5px 15px 5px 0px;}
 
 #linkedgroup:hover {
     opacity: 1;
@@ -2898,12 +2878,11 @@ span.size5 img {float: right;}
     -ms-filter: grayscale(0);
     -o-filter: grayscale(0);
     filter: grayscale(0%);
-    -webkit-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -moz-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -ms-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    -o-filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-    filter: drop-shadow(0.5px 0.5px 5px #80bf6d);
-}
+    -webkit-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
+    -moz-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
+    -ms-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
+    -o-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
+    filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));}
 
 #linkedgroup {
     opacity: 0.4;
@@ -5375,8 +5354,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent {border-bottom: 1px solid #aaaaaa;}
 #grouplinks {
     display: block;
-    width: 853px;
-    height: 18px;}
+    width: 853px;}
 
 
 /* hiding empty (System) torrent groups  */
