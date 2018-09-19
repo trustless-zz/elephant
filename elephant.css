@@ -321,13 +321,8 @@ overflow: auto;
 	color: #7a7a7a;
 }
 
-#menu ul li a:hover {
-	border-bottom: 2px solid black;
-}
-
-#userinfo_minor li a:hover {
-	border-bottom: 2px solid #8a8a8a;
-}
+#menu ul li a:hover, #userinfo_minor li a:hover {
+    border-bottom: 2px solid rgba(232,80,102,1);}
 
 .username {
 	font-style: italic;
@@ -927,10 +922,11 @@ width:100%;
 }
 
 .poll {
-    padding: 15px 20px;
+    padding: 10px 5px;
     width: auto;
-    list-style: outside;
-}
+    list-style: outside;}
+#index .sidebar .poll {
+    margin-right: 0px !important;}
 
 .poll li img {
 	width: auto;
@@ -5956,31 +5952,26 @@ ul#items_list li.no_items {
     outline-offset: -1px;
     transition: 0.05s;}
 
-.sidebar #freeleech > .head.colhead_dark > span[title^="Your picks will be recycled in"] {
+.sidebar #freeleech >.head.colhead_dark {
+    position: relative;}
+.sidebar #freeleech >.head.colhead_dark >span[title^="Your picks will be recycled in"] {
     cursor: help;}
+.sidebar #freeleech >.head.colhead_dark >span[title^="Your picks will be recycled in"]:after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 38px;
+    left: 0;
+    top: 0;}
 
 input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover, input[type="checkbox"], input[type="radio"] {
     cursor: pointer;}
 
 #requests .thin > table tr td a {
     color: rgba(50, 50, 50, 1)}
-a:hover {
+a:hover, #userinfo_minor li a:hover {
     /* text-decoration:underline; */
-    color: rgb(77, 132, 164);}
-#userinfo_minor li a:hover {
-    text-decoration: none;
-    color: rgb(98, 98, 98) !important;
-    border-bottom: 2px solid rgb(138, 138, 138);}
-#menu ul li a:hover {
-    text-decoration: none;
-    border-bottom: 2px solid black;
-    color: rgba(77, 132, 164, 1) !important;}
-#torrents #torrent_table .group span a:hover, #requests .thin > table tr td a:hover {
-    color: rgba(10, 10, 10, 1) !important;}
-.torrent_table a:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover span {
-    color: rgb(53, 152, 210);}
-.group_torrent td span a:hover, h2 a:hover, #taglist tbody tr td a:hover, .linkbox a:hover, #collections .sidebar .box.pad a:hover {
-    color: rgb(72, 109, 131);}
+    color: rgba(232,80,102,1) !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span {
     color: #2184BE;}
 
@@ -6113,7 +6104,7 @@ a:hover {
 	/* background-color: rgba(89, 39, 140, 0.4); */
 	content: "";
 	display: inline-block;
-	height: 2200px;
+	height: 2600px;
 	float: right;
 	position: relative;
 	width: 327px;
@@ -6214,8 +6205,6 @@ a:hover {
     font-weight: bold;}
 #collections #torrent_table  a {
 	color: rgb(37, 92, 124);}
-#collections #torrent_table  a:hover {
-    color: rgb(77, 132, 164);}
 #collections #torrent_table >tbody >tr.colhead td strong, #top10 #wrapper #content .thin.top10_games table.border >tbody >tr.colhead td strong {
     font-weight: normal;}
 
@@ -6302,6 +6291,10 @@ a:hover {
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover:before{
 	opacity:1;
 	transition: 0.05s;}
+#recommended #vanityhouse tbody tr td a:nth-child(1):hover {
+    color: black;}
+#recommended #vanityhouse tbody tr td a:nth-child(2):hover {
+    text-decoration: underline;}
 
 #user .box.box_items #itemsdiv table tbody tr td a >img:hover {
     filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));}
