@@ -6106,7 +6106,7 @@ a:hover, #userinfo_minor li a:hover {
 .body.similar ul.nobullet li span.similar_votes {
     background-color: rgb(192, 154, 154);}
 .body.similar ul.nobullet li span.similar_votes a {
-    color: rgb(50,50,50);}
+    color: rgb(50,50,50) !important;}
 .body.similar ul.nobullet li span.similar_votes:hover{
 	background: radial-gradient(circle, rgba(232,80,102,1) 0%,rgb(192, 154, 154) 100%);}
 

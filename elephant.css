@@ -6049,7 +6049,7 @@ a:hover, #userinfo_minor li a:hover {
 .body.similar ul.nobullet li span.similar_votes {
     background-color: rgb(37, 92, 124);}
 .body.similar ul.nobullet li span.similar_votes a {
-    color: white;}
+    color: white !important;}
 .body.similar ul.nobullet li span.similar_votes:hover{
 	background: radial-gradient(circle, rgba(232,80,102,1) 0%,rgba(37, 92, 124, 1) 100%);}
 
