@@ -3248,8 +3248,11 @@ span.user_title {
     top: 25px;
     left: 94%;
     filter: opacity(0.7);
-    width: 1px;
-}
+    width: 1px;}
+.global_buffs a .buff_text {
+    transition: 0.1s;}
+.global_buffs a:hover .buff_text {
+    color: rgb(232,80,102) !important;}
 
 li#stats_share_score {
     width: 170px;
