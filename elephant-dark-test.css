@@ -2883,32 +2883,8 @@ span.size5 img {float: right;}
     float: left;
     padding: 5px 15px 5px 0px;}
 
-#linkedgroup:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0);
-    -moz-filter: grayscale(0);
-    -ms-filter: grayscale(0);
-    -o-filter: grayscale(0);
-    filter: grayscale(0%);
-    -webkit-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
-    -moz-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
-    -ms-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
-    -o-filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));
-    filter: drop-shadow(0.5px 0.5px 5px rgba(232,80,102,1));}
-
 #linkedgroup {
-    opacity: 0.4;
-    -webkit-filter: grayscale(50%);
-    -moz-filter: grayscale(50%);
-    -ms-filter: grayscale(50%);
-    -o-filter: grayscale(50%);
-    filter: grayscale(50%);
-    /*-webkit-filter: drop-shadow(2px 2px 15px black);
-    -moz-filter: drop-shadow(2px 2px 15px black);
-    -ms-filter: drop-shadow(2px 2px 15px black);
-    -o-filter: drop-shadow(2px 2px 15px black);
-    filter: drop-shadow(2px 2px 15px black);*/
-}
+    opacity: 0.4;}
 
 #torrents .sidebar {margin-top: 10px;}
 
@@ -2969,18 +2945,36 @@ span.size5 img {float: right;}
 
 /*Web Links - adds images and formatting*/
 #weblinksdiv {padding-bottom: 25px;}
-.tilt, #torrents .body.center.userratingdiv .vote {
+.tilt, #torrents .body.center.userratingdiv .vote, #linkedgroup {
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
     -ms-transition: 0.1s;
     -o-transition: 0.1s;
     transition: 0.1s;}
-.tilt:hover, #torrents .body.center.userratingdiv .vote:hover {
+.tilt:hover, #torrents .body.center.userratingdiv .vote:hover, #linkedgroup:hover {
 	-webkit-transform:scale(1.1);
 	-moz-transform:scale(1.1);
 	-ms-transform:scale(1.1);
 	-o-transform:scale(1.1);
-	transform:scale(1.1);}
+	transform:scale(1.1);
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -moz-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -ms-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -o-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    opacity: 1;}
+.tilt.VGMdb:hover {
+    -webkit-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -moz-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -ms-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -o-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));}
+.tilt.Discogs:hover {
+    -webkit-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -moz-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -ms-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -o-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));}
     .Amazon,.BoardGameGeek,.Desura,.DriveThruRPG,.GameFAQs,.GamesWebsite,.Giantbomb,.GOG,.GooglePlay,.HowLongToBeat,.HumbleBundle,.Itch,.iTunes,.MobyGames,.NexusMods,.Origin,.Ouya,.PSN,.RPGGeek,.RPGnet,.Steam,.VNDB,.Wikipedia,.XboxStore,.PCGamingWiki{background-size:contain;}
 
 .Amazon{background-image:url('weblinks/Amazon.png');}
@@ -3515,7 +3509,8 @@ ul#categories {
     position: absolute;
     left: 8.5px;
     top: 0px;
-    z-index: 99;}
+    z-index: 99;
+    color: rgb(196,196,196);}
 
 textarea#quickpost {
     max-width: 1140px;
@@ -4584,10 +4579,6 @@ button.submit {
 .inventory #one_time_inputs input {width: 200px; margin-left: 120px; margin-bottom: 10px;}
 
 .inventory .submit_section {width: auto; margin: 0 0 0 120px;}
-.inventory .submit_section input, .inventory .submit_section button {
-	margin: 5px;
-	padding: 2px;
-	height: auto;} 
 	
 .inventory #one_time_inputs .title_preview  {
     width: 60px;
@@ -5266,9 +5257,6 @@ input[type="submit"], input[type="button"], button[type="button"] {
 input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover {
     background: radial-gradient(circle, rgba(232,80,102,1) 0%,rgba(192, 154, 154, 1) 100%);
     /* transition: 0.05s; */ }
-
-
-#linkedgroup {transition: 0.1s;}
 
 
 #artist .group_torrent .edition_info {-webkit-animation: none;}
@@ -6240,8 +6228,8 @@ a:hover, #userinfo_minor li a:hover {
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before, 
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
 	content: "";
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 350px;
 	position: absolute;
 	top:0px;
 	left:0px;}
