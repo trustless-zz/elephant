@@ -1370,7 +1370,7 @@ div.linkbox {
 }
 
 
-tr[class^="group group_"] >td.center.cats_col >div {
+tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >td.center.cats_col >div {
     margin: 1px 0px -1px 0px;}
 .\33 do, .amstradcpc, .android, .applebandaipippin, .apps, .atari2600, .atari5200, .atari7800, .atarijaguar, .atarilynx, .atarist, .boardgame, .cardgame, .colecovision, .commodore128, .commodore64, .commodoreamiga, .commodoreplus-4, .commodorevic-20, .creativision, .dos, .dreamcast, .dsiware, .dvd, .interactivedvd, .ebook, .fairchildchannelf, .game.com,
 .gameboy, .gameboyadvance, .gameboycolor, .gamegear, .gizmondo, .intellivision, .ios, .linux, .mac, .mastersystem, .megadrive, .memotechmtx, .miniaturewargames, .msx, .msx2, .music, .necturbografx-16, .neogeopocket, .nes, .newnintendo3ds, .nintendo3ds, .nintendo64,
@@ -1782,8 +1782,34 @@ td.cats_col {
 
 #torrent_table tbody .group td:nth-child(1) {
 	padding: 5px;
-	width: 20px;
-}
+	width: 20px;}
+
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] {
+    border-bottom: 1px solid #555555;
+    border-top: 1px solid #555555}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(1) {
+    width: 16px;
+    min-width: 16px;
+    border: 1px solid #555555;}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2) {
+    min-width: 28px;
+    width: 28px;
+    height: 27px;
+    position: relative;
+    border: 1px solid #555555;}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2) >div{
+    position: absolute;
+    top: 5px;
+    left: 2px;}
+#collections .thin.collections #torrent_table >tbody >tr.colhead >td[width="70%"] {
+    width: auto;}
+#collections .thin.collections #torrent_table >tbody >tr.colhead >td:nth-child(n+4) {
+    width: 1px;}
+#collections .thin.collections #torrent_table >tbody >tr[class^="group_torrent"] >td:not([colspan="3"]):not([colspan="7"]) {
+    white-space: nowrap;
+    padding: 0 5px 0 5px;}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] td[colspan="5"] {
+    padding-left: 5px;}
 
 .hide_torrents a {
 	background-position: center bottom;
@@ -5972,7 +5998,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 
 #requests .thin > table tr td a {
     color: rgb(196, 196, 196);}
-a:hover, #userinfo_minor li a:hover {
+a:hover, #userinfo_minor li a:hover, a:hover span {
     /* text-decoration:underline; */
     color: rgba(232,80,102,1) !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span {
@@ -6294,7 +6320,7 @@ a:hover, #userinfo_minor li a:hover {
 	opacity:1;
 	transition: 0.05s;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
-    color: black;}
+    color: rgb(196,196,196) !important;}
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
     text-decoration: underline;}
 

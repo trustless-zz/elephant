@@ -1772,8 +1772,34 @@ color: rgba(50, 50, 50, 1)
 
 #torrent_table tbody .group td:nth-child(1) {
 	padding: 5px;
-	width: 20px;
-}
+    width: 20px;}
+
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] {
+    border-bottom: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(1) {
+    width: 16px;
+    min-width: 16px;
+    border: 1px solid #aaaaaa;}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2) {
+    min-width: 28px;
+    width: 28px;
+    height: 27px;
+    position: relative;
+    border: 1px solid #aaaaaa;}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2) >div{
+    position: absolute;
+    top: 5px;
+    left: 2px;}
+#collections .thin.collections #torrent_table >tbody >tr.colhead >td[width="70%"] {
+    width: auto;}
+#collections .thin.collections #torrent_table >tbody >tr.colhead >td:nth-child(n+4) {
+    width: 1px;}
+#collections .thin.collections #torrent_table >tbody >tr[class^="group_torrent"] >td:not([colspan="3"]):not([colspan="7"]) {
+    white-space: nowrap;
+    padding: 0 5px 0 5px;}
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] td[colspan="5"] {
+    padding-left: 5px;}
 
 .hide_torrents a {
 	background-position: center bottom;
@@ -5915,7 +5941,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 
 #requests .thin > table tr td a {
     color: rgba(50, 50, 50, 1)}
-a:hover, #userinfo_minor li a:hover {
+a:hover, #userinfo_minor li a:hover, a:hover span {
     /* text-decoration:underline; */
     color: rgba(232,80,102,1) !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span {
@@ -6238,7 +6264,7 @@ a:hover, #userinfo_minor li a:hover {
 	opacity:1;
 	transition: 0.05s;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
-    color: black;}
+    color: black !important;}
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
     text-decoration: underline;}
 
