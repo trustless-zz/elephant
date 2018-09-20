@@ -929,10 +929,13 @@ width:100%;
 	font-family: adelle, sans-serif;
 }
 
+#forums .poll li.graph {
+    color: rgba(31, 32, 35, 1.0);
+    margin-top: -2px;}
 .poll {
     padding: 10px 5px;
     width: auto;
-    list-style: outside;}
+    list-style: inside;}
 #index .sidebar .poll {
     margin-right: 0px !important;}
 
@@ -1317,8 +1320,7 @@ div.linkbox {
 }
 
 .group_torrent td span a {
-	color: rgb(192, 154, 154);
-}
+	/* color: rgb(192, 154, 154);  */}
 
 .tags {
 	font-style: italic;
@@ -1622,7 +1624,7 @@ div[class="v.smile"]{
 .cats_applications {
     background-image:url('icon/app56.png');}
 .cats_ost {
-    background-image:url('icon/music56.png');}
+    background-image:url('icon/musicinvert56.png');}
 
 td.cats_col {
 	min-width: 28px;
@@ -1800,7 +1802,7 @@ td.cats_col {
 #collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2) >div{
     position: absolute;
     top: 5px;
-    left: 2px;}
+    left: 3px;}
 #collections .thin.collections #torrent_table >tbody >tr.colhead >td[width="70%"] {
     width: auto;}
 #collections .thin.collections #torrent_table >tbody >tr.colhead >td:nth-child(n+4) {
@@ -6324,7 +6326,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span {
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
     text-decoration: underline;}
 
-#user .box.box_items #itemsdiv table tbody tr td a >img:hover {
+#user .box.box_items #itemsdiv table tbody tr td a >img:hover, #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover {
     filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));}
 
 #collections .sidebar .box.box_comment .head a[href^="reports.php?action=report"] {
@@ -6333,6 +6335,17 @@ a:hover, #userinfo_minor li a:hover, a:hover span {
     padding-right: 5px;
     margin-left: -5px;
     margin-top: 2px;}
+
+#requests .colhead_dark >td strong {
+    font-weight: normal;
+    white-space: nowrap;
+    font-size: 12pt;}
+#requests .colhead_dark >td {
+    border: none !important;}
+#requests .colhead_dark >td >a >strong, #torrents .colhead >td >a {
+    color: rgb(192, 154, 154);}
+#requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a, #torrents #torrentbrowse #torrent_table.grouping >tbody >tr:nth-child(n+2) a, .group_torrent td span a {
+    color: #d5b09a;}
 
 
 /* widescreen */
