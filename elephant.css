@@ -1273,8 +1273,7 @@ h2 a {
 }
 
 .linkbox a {
-	color: #2a4f65;
-}
+	/* color: #2a4f65; */ }
 
 .linkbox {text-align:center; padding:0 0 8px; margin: 8px 0 8px 8;}
 
@@ -1829,7 +1828,6 @@ color: rgba(50, 50, 50, 1)
 	margin: 0 auto;
 }
 
-.torrent_table tr.group_torrent td span, #torrent_table tr.group_torrent td span{/*margin-left:18px;*/ color:#444;}
 /*.torrent_table tr.group_torrent a, #torrent_table tr.group_torrent a{color:black; font-weight:normal}*/
 .torrent_table tr.group_torrent{background-color:white;}
 #torrents #content .thin .main_column .torrent_table {
@@ -5946,7 +5944,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 a:hover, #userinfo_minor li a:hover, a:hover span {
     /* text-decoration:underline; */
     color: rgba(232,80,102,1) !important;}
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span {
+#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span, #collections #torrent_table tr.group_torrent td a span {
     color: #2184BE;}
 
 /* #color_leeching:hover , #color_leeching .torrent_info_tags:hover , #color_leeching a:hover {
@@ -6177,8 +6175,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span {
     font-weight: normal;}
 #collections #torrent_table >tbody >tr[class="group discog"] >td[colspan="5"] >strong span, #collections #torrent_table >tbody >tr[class="group discog"] >td[colspan="5"] >strong a {
     font-weight: bold;}
-#collections #torrent_table  a {
-	color: rgb(37, 92, 124);}
+#collections #torrent_table a {
+	/* color: rgb(37, 92, 124); */}
 #collections #torrent_table >tbody >tr.colhead td strong, #top10 #wrapper #content .thin.top10_games table.border >tbody >tr.colhead td strong {
     font-weight: normal;}
 
@@ -6288,8 +6286,10 @@ a:hover, #userinfo_minor li a:hover, a:hover span {
     border: none !important;}
 #requests .colhead_dark >td >a >strong, #torrents .colhead >td >a {
     color: #2a4f65;}
-#requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a, #torrents #torrentbrowse #torrent_table.grouping >tbody >tr:nth-child(n+2) a, .group_torrent td span a {
+#requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a{
     color: rgb(37, 92, 124);}
+#collections #torrent_table a, #torrents #torrentbrowse #torrent_table.grouping >tbody >tr:nth-child(n+2) a, .group_torrent td span a {
+    color: #275774;}
 
 
 /* widescreen */
