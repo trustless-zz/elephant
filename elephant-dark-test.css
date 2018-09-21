@@ -3069,8 +3069,8 @@ ul {padding-left: 10px;} /*was 12px*/
     height: 200.238px;
     overflow: hidden;}
 #collections ul.collage_images img {
-    width: 140.166px;
-    height: 200.238px;}
+    width: 168.604px;
+    height: 240.812px;}
 #collections .main_column >#coverart {
     padding-bottom: 30px;}
     .collections .linkbox .selected .pageslink{color: rgba(196, 196, 196, 1);}
@@ -6380,7 +6380,9 @@ ul#items_list:before {
     width: 973px;}
 .profile .box_art_gallery .gallery_main_slot, .profile .box_art_gallery .gallery_main_slot {
     max-width: 953px}
-#collections ul.collage_images, #requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]), .profile .box_art_gallery .gallery_row, #grouplinks {
+#collections ul.collage_images {
+    width: 954px;}
+#requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]), .profile .box_art_gallery .gallery_row, #grouplinks {
     width: 953px;}
 #quickreplytext textarea, #requests #quickreplytext textarea#quickpost {
     width: 911px;
@@ -6412,10 +6414,10 @@ ul#items_list:before {
 #gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect {
     left: 0px;}
 #collections ul.collage_images li, #collections ul.collage_images img {
-    width: 156.833px;
-    height: 224px;}
+    width: 188.812px;
+    height: 269.674px;}
 #collections ul.collage_images li a {
-    height: 224px;}
+    height: 269.674px;}
 /* .torrent_table tr.group_torrent td, #torrent_table tr.group_torrent td {
     font-size: 12px;} */
 .inventory #content li.item_li {
