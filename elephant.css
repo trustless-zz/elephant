@@ -4634,7 +4634,9 @@ button.submit {
 	margin-bottom: 15px;}
 
 #user .thin.profile .main_column_bg .main_column .main_column_sortable .box.box_items div#itemsdiv table {box-shadow: none;}
-.thin.profile .main_column_bg .main_column .main_column_sortable .box.box_items div#itemsdiv table tbody tr td {border: none;}
+.thin.profile .main_column_bg .main_column .main_column_sortable .box.box_items div#itemsdiv table tbody tr td {
+    border: none;
+    padding: 5px 0px 5px 0px;}
 
 #user #itemsdiv img {max-width: 150px; float: unset; padding: 5px;}
 #user #itemsdiv p {display: none;}
@@ -5282,7 +5284,8 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     display: inline-block;
     width: 19px;
     height: 19px;
-    margin: -6px 0px -6px 0px !important;}
+    margin: -6px 0px -6px 0px !important;
+    padding-top: 3px;}
 #torrents #content .new_status:after {
     content: "NEW";
     padding: 1px 3px 1px 2px;
@@ -6290,6 +6293,15 @@ a:hover, #userinfo_minor li a:hover, a:hover span {
     color: rgb(37, 92, 124);}
 #collections #torrent_table a, #torrents #torrentbrowse #torrent_table.grouping >tbody >tr:nth-child(n+2) a, .group_torrent td span a {
     color: #275774;}
+
+.avatar.pixelart {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    -ms-interpolation-mode: nearest-neighbor;}
+#user img.avatar[class="avatar pixelart"] {
+    width: 300px;}
 
 
 /* widescreen */
