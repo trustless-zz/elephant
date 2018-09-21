@@ -6343,8 +6343,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span {
     font-size: 12pt;}
 #requests .colhead_dark >td {
     border: none !important;}
-#requests .colhead_dark >td >a >strong, #torrents .colhead >td >a {
-    color: rgb(192, 154, 154);}
+#requests .colhead_dark >td >a >strong, #torrents .colhead >td >a, .sidebar >.box >.head >a {
+    color: #CBA69A;}
 #requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a, #torrents #torrentbrowse #torrent_table.grouping >tbody >tr:nth-child(n+2) a, .group_torrent td span a, #collections #torrent_table a {
     color: #d5b09a;}
 

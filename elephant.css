@@ -6287,7 +6287,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span {
     font-size: 12pt;}
 #requests .colhead_dark >td {
     border: none !important;}
-#requests .colhead_dark >td >a >strong, #torrents .colhead >td >a {
+#requests .colhead_dark >td >a >strong, #torrents .colhead >td >a, .sidebar >.box >.head >a {
     color: #2a4f65;}
 #requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a{
     color: rgb(37, 92, 124);}
