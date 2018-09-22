@@ -2958,7 +2958,7 @@ span.size5 img {float: right;}
 
 /*Web Links - adds images and formatting*/
 #weblinksdiv {padding-bottom: 25px;}
-.tilt, #torrents .body.center.userratingdiv .vote, #linkedgroup {
+.tilt, #torrents .body.center.userratingdiv .vote, #linkedgroup, .box.wiki_article a >img {
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
     -ms-transition: 0.1s;
@@ -2976,6 +2976,12 @@ span.size5 img {float: right;}
     -o-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     opacity: 1;}
+#torrents .body.center.userratingdiv .vote:hover {
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(150, 150, 150,1));
+    -moz-filter: drop-shadow(0px 0px 3px rgba(150, 150, 150,1));
+    -ms-filter: drop-shadow(0px 0px 3px rgba(150, 150, 150,1));
+    -o-filter: drop-shadow(0px 0px 3px rgba(150, 150, 150,1));
+    filter: drop-shadow(0px 0px 3px rgba(150, 150, 150,1));}
 .tilt.VGMdb:hover {
     -webkit-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -6258,7 +6264,11 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
     text-decoration: underline;}
 
-#user .box.box_items #itemsdiv table tbody tr td a >img:hover, #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover {
+#user .box.box_items #itemsdiv table tbody tr td a >img:hover, #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, .box.wiki_article a >img:hover {
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -moz-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -ms-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -o-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));}
 
 #collections .sidebar .box.box_comment .head a[href^="reports.php?action=report"] {
@@ -6291,6 +6301,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
     width: 300px;}
 .tags >a {
     color: #2a4f65 !important;}
+marquee {
+    max-width: 60%;}
 
 
 /* widescreen */
