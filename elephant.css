@@ -6303,6 +6303,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
     color: #2a4f65 !important;}
 marquee {
     max-width: 60%;}
+#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover {
+    color: rgb(105,105,105) !important;}
 
 
 /* widescreen */
