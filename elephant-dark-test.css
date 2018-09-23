@@ -1158,7 +1158,7 @@ h2 {
 }
 
 .torrent_table .pad blockquote:nth-of-type(2) {
-	background-color: rgba(213,176,154,0.5);
+	background-color: rgba(213,176,154,0.25);
 }
 
 blockquote {
@@ -5303,7 +5303,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 #comments [class="forum_post wrap_overflow box vertical_margin"] tbody .colhead_dark td div[style="float: left;"] {margin-left: 5px;}
 
 #torrents table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody .colhead_dark td div[style="float: left;"] strong span.user_title marquee {max-width: 35%; vertical-align: middle;}
-#torrents table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody .colhead_dark td div[style="float: left;"] {margin-left: 5px; margin-top: 1px;}
+#torrents table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody .colhead_dark td div[style="float: left;"] {margin-left: 5px; margin-top: 1px; width: 92.5%;}
 
 #user .qtip-content [id^="review_"] .head {min-height: 100%; max-height: 300%;}
 #user .qtip-content [id^="review_"] .head strong {font-family: adelle, sans-serif;
@@ -6353,7 +6353,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
 	color: rgb(192, 154, 154) !important;}
 marquee {
     max-width: 60%;}
-#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover {
+#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover, #torrents tbody[id^="edition_"] tr[class="pad hidden"] >td >.linkbox >a:hover, #torrents .sidebar .box.box_tags ul.stats.nobullet >li >div >a:hover {
     color: rgb(150,150,150) !important;}
 
 
