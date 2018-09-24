@@ -3116,7 +3116,7 @@ ul {padding-left: 10px;} /*was 12px*/
     .overlay div{padding-top:5px;}
     .overlay div a:hover{color:#C7D6F1;text-decoration:underline;top:1px;left:1px;}
     .overlay span{line-height:14px;font-style:normal;}
-    #collections table td {padding: 2px}
+    #collections table td {padding: 5px}
     #collections table {width:100%;}
 
 .rating_container {
@@ -5229,10 +5229,10 @@ button.submit {
 .head[title="Click to expand/collapse"]:before, #index #recommended .head:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before {
     background: linear-gradient(to top, rgba(232,80,102,1) 0%,rgba(42, 79, 101, 0) 100%);
     transition: opacity 0.15s;}
-#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1):before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:before {
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before {
     background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(42,79,101,0.0));
     transition: opacity 0.1s;}
-.head[title="Click to expand/collapse"]:before, #index #recommended .head:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1):before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:before, .edition_info:not([colspan="7"]):before {
+.head[title="Click to expand/collapse"]:before, #index #recommended .head:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, .edition_info:not([colspan="7"]):not([colspan="9"]):before {
     content: '';
     position: absolute;
     left: 0px;
@@ -5244,7 +5244,7 @@ button.submit {
 .head[title="Click to expand/collapse"]:hover:before, #index #recommended .head:hover:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover:before {
     opacity: 1;
     transition: opacity 0.15s;}
-.edition_info:hover:before, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1):hover:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:hover:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]:hover:before{
+.edition_info:hover:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:hover:before {
     opacity: 1;
     transition: opacity 0.1s;}
 .head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
@@ -5253,7 +5253,7 @@ button.submit {
     z-index: 99;}
 .edition_info {
 	height: 12px;}
-.head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"], #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1), #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"], #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"], .edition_info {
+.head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"], #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1), #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"], #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"], .edition_info, #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"], #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] {
     position: relative;}
 #index .newsdate, #index #wrapper #content .thin .main_column_bg .main_column .box .head span.time, .head[title="Click to expand/collapse"] strong, #index #recommended .head strong, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] strong, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong, .edition_info strong {
     z-index: 2;}
@@ -5274,6 +5274,8 @@ button.submit {
     position: absolute;
     top:3px;
     left:1px;}
+#torrents tbody[id^="edition_"] tr.group_torrent:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover, #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"]:hover {
+    background: radial-gradient(circle, rgb(42, 42, 42), rgb(18, 18, 18));}
 
 input[type="submit"], input[type="button"], button[type="button"] {
     border: none;
@@ -5476,10 +5478,8 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #artist .main_column_bg .main_column .box table#requests {margin: 0;}
 #artist .main_column_bg .main_column .box .body {padding: 5px !important;}
 
-#artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead {background-color: rgba(213,176,154,0.3);}
+#artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead, #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, #artist .main_column_bg .main_column .box table#requests tbody .colhead_dark {background-color: rgba(213,176,154,0.35);}
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead {background-color: transparent !important;}
-#user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td {background-color: rgba(213,176,154,0.3);}
-#artist .main_column_bg .main_column .box table#requests tbody .colhead_dark {background-color: rgba(213,176,154,0.3);}
 
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] {margin-top: 16px;}
 #rules .thin #actual_rules .before_rules .box.pad {padding: 5px !important;}
@@ -5833,11 +5833,10 @@ span.user_title span[style="font-family: cursive;"] {
 #forums .forum_post .colhead_dark span.user_title strong span[style=" text-shadow: 3px 3px 1px black;"] marquee {
     margin-top: -4px;}
 
-#torrents .main_column tbody[id^="edition_"] tr.group_torrent, #top10 tr[class^="group_torrent"], #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"], #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"], #requests .thin >table.border >tbody >tr[class^="row"], #collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child) {
+#top10 tr[class^="group_torrent"], #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"] {
     transition: 0.05s;}
-#torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover, #collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover {
-    box-shadow: inset 0.5px 0.5px 0px 1px rgba(105, 105, 105, 1);
-    transition: 0.05s;}
+#torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover, #collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover, #artist #torrent_table >tbody >tr:nth-child(n+2):hover{
+    box-shadow: inset 0.5px 0.5px 0px 1px rgba(105, 105, 105, 1);}
 #top10 tr[class^="group_torrent"]:hover, #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover {
     box-shadow: inset 0.5px 0.5px 0px 1.5px rgba(105, 105, 105, 1);
     transition: 0.05s;}
@@ -5972,10 +5971,9 @@ ul#items_list li.no_items {
     outline: 2px solid rgba(232,80,102,1);
     outline-offset: -2px;
     transition: 0.05s;}
-#requests .thin >table.border >tbody >tr[class^="row"]:hover{
+#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover {
     outline: 1px solid rgba(105, 105, 105, 1);
-    outline-offset: -1px;
-    transition: 0.05s;}
+    outline-offset: -1px;}
 
 .sidebar #freeleech >.head.colhead_dark {
     position: relative;}
@@ -5994,7 +5992,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 
 #requests .thin > table tr td a {
     color: rgb(196, 196, 196);}
-a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
+a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .thin > table >tbody >tr.colhead_dark >td >a >strong:hover {
     /* text-decoration:underline; */
     color: rgba(232,80,102,1) !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span, #collections #torrent_table tr.group_torrent td a span {
@@ -6209,7 +6207,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
     word-wrap: break-word;
     max-width: 631px;}
 
-#torrents .main_column_bg .main_column .torrent_table tbody .group_torrent td a[onclick^="jQuery('#torrent_"]:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:before {
+#torrents .main_column_bg .main_column .torrent_table tbody .group_torrent td a[onclick^="jQuery('#torrent_"]:before, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:before, #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a:before, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a:before {
     content: '';
     position: absolute;
     right: 0px;
@@ -6217,7 +6215,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
     height: 100%;
     width: 100%;
     z-index:98;}
-#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1) {
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1), #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >span:nth-child(1), #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >span {
     padding: 10px 10px 30px 6px;
     margin: -10px -10px -30px -6px !important;
     z-index: 99;
@@ -6353,8 +6351,10 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover {
 	color: rgb(192, 154, 154) !important;}
 marquee {
     max-width: 60%;}
-#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover, #torrents tbody[id^="edition_"] tr[class="pad hidden"] >td >.linkbox >a:hover, #torrents .sidebar .box.box_tags ul.stats.nobullet >li >div >a:hover {
+#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover, #torrents tbody[id^="edition_"] tr[class="pad hidden"] >td >.linkbox >a:hover, #torrents .sidebar .box.box_tags ul.stats.nobullet >li >div >a:hover, #artist #requests >tbody >tr[class^="row"] >td >a[href^="javascript"]:hover strong, #artist #requests >tbody >tr.colhead_dark >td >a:hover, a[id="tag_show/hide"]:hover {
     color: rgb(150,150,150) !important;}
+#artist #torrent_table >tbody >tr.group {
+    background-color: rgba(213,176,154,0.25);}
 
 
 /* widescreen */
