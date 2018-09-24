@@ -5245,7 +5245,7 @@ button.submit {
     opacity: 1;
     transition: opacity 0.15s;}
 .edition_info:hover:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:hover:before {
-    opacity: 1;
+    opacity: 1 !important;
     transition: opacity 0.1s;}
 .head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
     z-index: 0;}
