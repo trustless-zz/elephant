@@ -1632,14 +1632,14 @@ td.cats_col {
 }
 
 .Bandcamp {
-    background-image: url("icon/svg/Bandcamp.svg");}
+    background-image: url("weblinks/svg/Bandcamp.svg");}
 .Discogs {
-    background-image: url("icon/svg/Discogs.svg");
+    background-image: url("weblinks/svg/Discogs.svg");
     filter: brightness(77%);}
 .MusicBrainz {
-    background-image: url("icon/svg/MusicBrainz.svg");}
+    background-image: url("weblinks/svg/MusicBrainz.svg");}
 .VGMdb {
-    background-image: url("icon/svg/VGMdb.svg");
+    background-image: url("weblinks/svg/VGMdb.svg");
     filter: drop-shadow(0px 0px 1px black);}
 .Bandcamp, .Discogs, .MusicBrainz, .VGMdb {
     background-repeat: no-repeat;
@@ -2988,12 +2988,6 @@ span.size5 img {float: right;}
     -o-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     opacity: 1;}
-#torrents .body.center.userratingdiv .vote:hover {
-    -webkit-filter: drop-shadow(0px 0px 3px rgba(105, 105, 105,1));
-    -moz-filter: drop-shadow(0px 0px 3px rgba(105, 105, 105,1));
-    -ms-filter: drop-shadow(0px 0px 3px rgba(105, 105, 105,1));
-    -o-filter: drop-shadow(0px 0px 3px rgba(105, 105, 105,1));
-    filter: drop-shadow(0px 0px 3px rgba(105, 105, 105,1));}
 .tilt.VGMdb:hover {
     -webkit-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -6351,10 +6345,10 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 	color: rgb(192, 154, 154) !important;}
 marquee {
     max-width: 60%;}
-#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover, #torrents tbody[id^="edition_"] tr[class="pad hidden"] >td >.linkbox >a:hover, #torrents .sidebar .box.box_tags ul.stats.nobullet >li >div >a:hover, #artist #requests >tbody >tr[class^="row"] >td >a[href^="javascript"]:hover strong, #artist #requests >tbody >tr.colhead_dark >td >a:hover, a[id="tag_show/hide"]:hover {
-    color: rgb(150,150,150) !important;}
 #artist #torrent_table >tbody >tr.group {
     background-color: rgba(213,176,154,0.25);}
+.user_title img {
+    max-height: 22px;}
 
 
 /* widescreen */
