@@ -1,8 +1,4 @@
-﻿.sidebar #freeleech span.platform, .sidebar #freeleech span.tor_info {
-    display: none;
-}
-
-#torrents #vote_matches .head strong span[style="float: right; margin-right: 10px;"] {
+﻿#torrents #vote_matches .head strong span[style="float: right; margin-right: 10px;"] {
     display: none;}
 #torrents div#vote_matches .head {cursor: pointer;}
 
@@ -6349,6 +6345,12 @@ marquee {
     background-color: rgba(213,176,154,0.25);}
 .user_title img {
     max-height: 22px;}
+
+.sidebar #freeleech span.platform, .sidebar #freeleech span.tor_info {
+    font-size: 8pt;
+    color: rgb(150,150,150);}
+.sidebar #freeleech span.tor_info {
+    float: left;}
 
 
 /* widescreen */
