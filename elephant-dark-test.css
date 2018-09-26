@@ -6199,14 +6199,6 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     word-wrap: break-word;
     max-width: 631px;}
 
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:before, #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a:before, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a:before {
-    content: '';
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    z-index:98;}
 #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1), #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >span:nth-child(1), #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >span {
     padding: 10px 10px 30px 6px;
     margin: -10px -10px -30px -6px !important;
@@ -6380,13 +6372,15 @@ marquee {
     border-left: 1px solid #555555;}
 #torrents #requests #requests_list tr[class^="requestrows row"] td:first-child {
     overflow: hidden;}
-#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a {
+#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a {
     padding: 10px 1000px 50px 20px;
     margin: -10px -1000px -50px -20px;}
 #torrents #requests {
     margin-top: 25px;
     margin-bottom: 25px;
     box-shadow: 0 0 30px #000 !important;}
+#torrents #collages {
+    margin-top: 25px;}
 
 
 /* widescreen */
