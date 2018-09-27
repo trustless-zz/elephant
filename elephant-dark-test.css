@@ -5625,7 +5625,6 @@ ul#items_list:before {
     left: 234px;
     width: 383px;}
 #equipment #items div[id="items_inner"] input#search_query {margin: 38px 5px 5px 5px;}
-#equipment #avatar_preview div {margin-left: 37px;}
 
 #crafting_panel #items {
     left: 234px;
@@ -6332,6 +6331,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     -ms-interpolation-mode: nearest-neighbor;}
 #user img.avatar[class="avatar pixelart"] {
     width: 300px;}
+#equipment img.avatar[class="avatar pixelart"] {
+    width: 224px;}
 .tags >a {
 	color: rgb(192, 154, 154) !important;}
 marquee {
@@ -6424,7 +6425,7 @@ ul#items_list:before {
     width: 264px;}
 #equipment #items, #crafting_panel #items {
     left: 254px;}
-#shop li.item_li.nostock #clickable .item_description, #shop li.item_li.featured.nostock #clickable .item_description, #items_navigation {
+#shop li.item_li.nostock #clickable .item_description, #shop li.item_li.featured.nostock #clickable .item_description, #items_navigation, #equipment img.avatar[class="avatar pixelart"] {
     width: 244px;}
 #shop li[class*="item_type_"] {
     width: 234px;}
