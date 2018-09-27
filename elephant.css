@@ -6356,6 +6356,8 @@ img[src="static/common/symbols/disabled.png"] {
     left: 0;}
 #user .box.box_info img[src^="static/common/symbols"] {
     height: 28px;}
+#user marquee {
+    vertical-align: bottom;}
 
 
 /* widescreen */
