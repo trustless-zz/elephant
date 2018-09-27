@@ -3614,9 +3614,8 @@ div#threadpoll {
     box-sizing: border-box;
 }
 
-#requests img {
-    max-width: 300px !important;
-}
+#requests img, #artist .sidebar .box >div >img {
+    max-width: 300px !important;}
 
 .sticky #displayname:before {
     content: "";
@@ -4766,7 +4765,7 @@ button.submit {
 	overflow-x: hidden;
 	box-shadow:none !important;}
 #user .thin .box_gold table td {display: table-cell !important;}
-#user .box_gold td.label {text-align:center; box-shadow: none; max-width: 100%; width: 100%; background-color: rgba(42,79,101,0.3);}
+#user .box_gold td.label {text-align:center; box-shadow: none; max-width: 100%; width: 100%;}
 
 /*Recent Liks, Snatches, Uploads*/
 #snatchesrow td, #uploadsrow td, #likesrow td {	
@@ -5416,7 +5415,13 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #artist .main_column_bg .main_column .box table#requests {margin: 0;}
 #artist .main_column_bg .main_column .box .body {padding: 5px !important;}
 
-#artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead, #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, #artist .main_column_bg .main_column .box table#requests tbody .colhead_dark {background-color: rgba(42,79,101,0.35);}
+#artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead, 
+#user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
+#artist .main_column_bg .main_column .box table#requests tbody .colhead_dark, 
+#user .box_gold td.label, 
+#user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody tr.colhead_dark, 
+#torrents #requests #requests_list >tbody >tr:first-child >td {
+    background-color: rgba(42,79,101,0.35);}
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead {background-color: transparent !important;}
 
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] {margin-top: 16px;}
@@ -5749,8 +5754,6 @@ span.user_title span[style="font-family: cursive;"] {
     margin-bottom: 30px;}
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border, #user .main_column_bg .main_column .main_column_sortable .box.box_uploads.box_torrents div table#uploadsrow, #user .profile .main_column .main_column_sortable .box.box_info div#profilediv table.bbcode_table {
     box-shadow: none;}
-#user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody tr.colhead_dark {
-    background-color: rgba(42,79,101,0.3);}
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] .bbcode_table_div {
     width: 1100px;}
 .bbcode_table_div table.bbcode_table {
@@ -5906,7 +5909,7 @@ ul#items_list li.no_items {
     outline: 2px solid rgba(232,80,102,1);
     outline-offset: -2px;
     transition: 0.05s;}
-#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover {
+#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover {
     outline: 1px solid rgba(150, 150, 150, 1);
     outline-offset: -1px;}
 
@@ -6316,9 +6319,8 @@ marquee {
     margin: 0px;}
 #torrents #requests #requests_list >tbody >tr:first-child >td {
     font-size: 12pt;
-    background-color: rgba(42,79,101,0.3);
     text-align: unset;}
-#torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2) {
+#artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), #torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2) {
     border-left: 1px solid #aaaaaa;}
 #torrents #requests #requests_list tr[class^="requestrows row"] td:first-child {
     overflow: hidden;}
@@ -6331,6 +6333,11 @@ marquee {
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7) !important;}
 #torrents #collages {
     margin-top: 25px;}
+#user #requests tr.colhead_dark >td {
+    text-align: left;
+    width: 0px !important;}
+#requests tr.colhead_dark >td:first-child {
+    width: 60% !important;}
 
 
 /* widescreen */
