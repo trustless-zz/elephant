@@ -948,12 +948,10 @@ width:100%;
 
 
 .rowa {
-	background: #ffffff;
-}
+	background: #ffffff;}
 
-.rowb {
-	background: #e7e7e7;
-}
+.rowb, #torrents #collages >tbody >tr:nth-child(even) {
+	background: #e7e7e7;}
 
 .forum_index tbody {
 	/*border: 1px solid #1a1a1a;*/
@@ -5909,7 +5907,7 @@ ul#items_list li.no_items {
     outline: 2px solid rgba(232,80,102,1);
     outline-offset: -2px;
     transition: 0.05s;}
-#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover {
+#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover, #torrents #collages >tbody >tr:nth-child(n+2):hover {
     outline: 1px solid rgba(150, 150, 150, 1);
     outline-offset: -1px;}
 
@@ -6320,11 +6318,11 @@ marquee {
 #torrents #requests #requests_list >tbody >tr:first-child >td {
     font-size: 12pt;
     text-align: unset;}
-#artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), #torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2) {
+#artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), #torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), #torrents #collages >tbody >tr:nth-child(n+2) >td:nth-child(2) {
     border-left: 1px solid #aaaaaa;}
-#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child {
+#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) {
     overflow: hidden;}
-#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a {
+#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) >a {
     padding: 10px 1000px 50px 20px;
     margin: -10px -1000px -50px -20px;}
 #torrents #requests {
