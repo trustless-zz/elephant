@@ -1625,78 +1625,6 @@ td.cats_col {
 	/* padding-right: 31px; */
 }
 
-.Bandcamp {
-    background-image: url("weblinks/svg/Bandcamp.svg");}
-.Discogs {
-    background-image: url("weblinks/svg/Discogs.svg");
-    filter: brightness(77%);}
-.MusicBrainz {
-    background-image: url("weblinks/svg/MusicBrainz.svg");}
-.VGMdb {
-    background-image: url("weblinks/svg/VGMdb.svg");
-    filter: drop-shadow(0px 0px 1px black);}
-.Bandcamp, .Discogs, .MusicBrainz, .VGMdb {
-    background-repeat: no-repeat;
-    background-position: center;}
-
-.GamesWebsite {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/GamesWebsite.png");}
-.Amazon {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Amazon.png");}
-.BoardGameGeek {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/BoardGameGeek.png");}
-.Desura {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Desura.png");}
-.DriveThruRPG {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/DriveThruRPG.png");}
-.GameFAQs {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/GameFAQs.png");}
-.Giantbomb {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Giantbomb.png");}
-.GOG {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/GOG.png");}
-.GooglePlay {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/GooglePlay.png");}
-.HumbleBundle {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/HumbleBundle.png");}
-.Itch {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Itch.png");}
-.iTunes {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/iTunes.png");}
-.MobyGames {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/MobyGames.png");}
-.NexusMods {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/NexusMods.png");}
-.Origin {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Origin.png");}
-.Ouya {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Ouya.png");}
-.PSN {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/PSN.png");}
-.RPGGeek {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/RPGGeek.png");}
-.RPGnet {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/RPGnet.png");}
-.Steam {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Steam.png");}
-.Wikipedia {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/Wikipedia.png");}
-.XboxStore {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/XboxStore.png");}
-.PCGamingWiki {
-    background-image: url("https://gazellegames.net/static/styles/gghorror/images/weblinks/PCGamingWiki.png");}
-
-.Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .GamesWebsite, .Giantbomb, .GOG, .GooglePlay,
-.HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam,
-.Wikipedia, .XboxStore, .PCGamingWiki {
-    background-size: contain;}
-
-.weblinks {
-    width: 50px;
-    height: 50px;
-    float: left;
-    margin: 10px;}
-
 #clickable.vote {
 	cursor: pointer;
 }
@@ -2963,7 +2891,76 @@ span.size5 img {float: right;}
 }
 
 /*Web Links - adds images and formatting*/
+.Bandcamp, .Discogs, .MusicBrainz, .VGMdb, .GamesWebsite, .Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .Giantbomb, .GOG, .GooglePlay, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .Wikipedia, .XboxStore, .PCGamingWiki {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;}
+.Discogs, .GamesWebsite, .GOG, .Steam {
+    filter: brightness(77%);}
+
+.Bandcamp {
+    background-image: url("weblinks/svg/Bandcamp.svg");}
+.Discogs {
+    background-image: url("weblinks/svg/Discogs.svg");}
+.MusicBrainz {
+    background-image: url("weblinks/svg/MusicBrainz.svg");}
+.VGMdb {
+    background-image: url("weblinks/svg/VGMdb.svg");
+    filter: drop-shadow(0px 0px 1px black);}
+.GamesWebsite {
+    background-image: url("weblinks/svg/GamesWebsite.svg");}
+.Amazon {
+    background-image: url("weblinks/svg/Amazon_light.svg");}
+.BoardGameGeek {
+    background-image: url("weblinks/png/BoardGameGeek.png");}
+.Desura {
+    background-image: url("weblinks/svg/Desura.svg");}
+.DriveThruRPG {
+    background-image: url("weblinks/DriveThruRPG.png");}
+.GameFAQs {
+    background-image: url("weblinks/svg/GameFAQs.svg");}
+.Giantbomb {
+    background-image: url("weblinks/svg/Giantbomb.svg");}
+.GOG {
+    background-image: url("weblinks/svg/GOG.svg");}
+.GooglePlay {
+    background-image: url("weblinks/svg/GooglePlay.svg");}
+.HumbleBundle {
+    background-image: url("weblinks/svg/HumbleBundle.svg");}
+.Itch {
+    background-image: url("weblinks/svg/Itch.svg");}
+.iTunes {
+    background-image: url("weblinks/svg/iTunes.svg");}
+.MobyGames {
+    background-image: url("weblinks/svg/MobyGames.svg");}
+.NexusMods {
+    background-image: url("weblinks/svg/NexusMods.svg");}
+.Origin {
+    background-image: url("weblinks/svg/Origin.svg");}
+.Ouya {
+    background-image: url("weblinks/svg/Ouya.svg");}
+.PSN {
+    background-image: url("weblinks/svg/PSN.svg");}
+.RPGGeek {
+    background-image: url("weblinks/png/RPGGeek.png");}
+.RPGnet {
+    background-image: url("weblinks/svg/RPGnet.svg");}
+.Steam {
+    background-image: url("weblinks/svg/Steam.svg");}
+.Wikipedia {
+    background-image: url("weblinks/png/Wikipedia.png");}
+.XboxStore {
+    background-image: url("weblinks/svg/XboxStore.svg");}
+.PCGamingWiki {
+    background-image: url("weblinks/svg/PCGamingWiki.svg");}
+
+.weblinks {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px;}
 #weblinksdiv {padding-bottom: 25px;}
+
 .tilt, #torrents .body.center.userratingdiv .vote, #linkedgroup, .box.wiki_article a >img {
     -webkit-transition: 0.1s;
     -moz-transition: 0.1s;
@@ -2988,39 +2985,12 @@ span.size5 img {float: right;}
     -ms-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -o-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));}
-.tilt.Discogs:hover {
+.tilt.Discogs:hover, .tilt.GamesWebsite:hover, .tilt.GOG:hover, .tilt.Steam:hover {
     -webkit-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -o-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));}
-    .Amazon,.BoardGameGeek,.Desura,.DriveThruRPG,.GameFAQs,.GamesWebsite,.Giantbomb,.GOG,.GooglePlay,.HowLongToBeat,.HumbleBundle,.Itch,.iTunes,.MobyGames,.NexusMods,.Origin,.Ouya,.PSN,.RPGGeek,.RPGnet,.Steam,.VNDB,.Wikipedia,.XboxStore,.PCGamingWiki{background-size:contain;}
-
-.Amazon{background-image:url('weblinks/Amazon.png');}
-.BoardGameGeek{background-image:url('weblinks/BoardGameGeek.png');}
-.Desura{background-image:url('weblinks/Desura.png');}
-.DriveThruRPG{background-image:url('weblinks/DriveThruRPG.png');}
-.GameFAQs{background-image:url('weblinks/GameFAQs.png');}
-.GamesWebsite{background-image:url('weblinks/GamesWebsite.png');}
-.Giantbomb{background-image:url('weblinks/Giantbomb.png');}
-.GOG{background-image:url('weblinks/GOG.png');}
-.GooglePlay{background-image:url('weblinks/GooglePlay.png');}
-.HowLongToBeat{background-image:url(weblinks/HowLongToBeat.png);}
-.HumbleBundle{background-image:url('weblinks/HumbleBundle.png');}
-.Itch{background-image:url('weblinks/Itch.png');}
-.iTunes{background-image:url('weblinks/iTunes.png');}
-.MobyGames{background-image:url('weblinks/MobyGames.png');}
-.NexusMods{background-image:url('weblinks/NexusMods.png');}
-.Origin{background-image:url('weblinks/Origin.png');}
-.Ouya{background-image:url('weblinks/Ouya.png');}
-.PCGamingWiki{background-image:url('weblinks/PCGamingWiki.png');}
-.PSN{background-image:url('weblinks/PSN.png');}
-.RPGGeek{background-image:url('weblinks/RPGGeek.png');}
-.RPGnet{background-image:url('weblinks/RPGnet.png');}
-.Steam{background-image:url('weblinks/Steam.png');}
-.VNDB{background-image:url('weblinks/VNDB.png');}
-.Wikipedia{background-image:url('weblinks/Wikipedia.png');}
-.XboxStore{background-image:url('weblinks/XboxStore.png');}
 
 /*I wasn't sure if the bullets were meant to be to the left of the rest of the text or a bug.  This aligns it with the rest of the content*/
 ul {padding-left: 10px;} /*was 12px*/
