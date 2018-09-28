@@ -6321,6 +6321,10 @@ img[src="static/common/symbols/disabled.png"] {
     height: 13px;
     background-repeat: no-repeat;
     content: url('icon/svg/disabled.svg');}
+img[src="static/common/symbols/warned.png"] {
+    height: 13px;
+    background-repeat: no-repeat;
+    content: url('icon/svg/warned.svg');}
 
 #user .box.box_info span[style="float:right;"] {
     position: absolute;
