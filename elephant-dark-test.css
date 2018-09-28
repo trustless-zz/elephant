@@ -2891,7 +2891,7 @@ span.size5 img {float: right;}
 }
 
 /*Web Links - adds images and formatting*/
-.Bandcamp, .Discogs, .MusicBrainz, .VGMdb, .GamesWebsite, .Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .Giantbomb, .GOG, .GooglePlay, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .VNDB, .Wikipedia, .XboxStore, .PCGamingWiki {
+.Bandcamp, .Discogs, .MusicBrainz, .VGMdb, .GamesWebsite, .Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .Giantbomb, .GOG, .GooglePlay, .HowLongToBeat, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .VNDB, .Wikipedia, .XboxStore, .PCGamingWiki {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;}
@@ -2925,6 +2925,8 @@ span.size5 img {float: right;}
     background-image: url("weblinks/svg/GOG.svg");}
 .GooglePlay {
     background-image: url("weblinks/svg/GooglePlay.svg");}
+.HowLongToBeat {
+    background-image: url("weblinks/svg/HowLongToBeat.svg");}
 .HumbleBundle {
     background-image: url("weblinks/svg/HumbleBundle.svg");}
 .Itch {
