@@ -6296,7 +6296,9 @@ marquee {
     overflow: hidden;}
 #torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) >a {
     padding: 10px 1000px 50px 20px;
-    margin: -10px -1000px -50px -20px;}
+    margin: -10px -1000px -50px -20px;
+    z-index: 98;
+    position: relative;}
 #torrents #requests {
     margin-top: 25px;
     margin-bottom: 25px;
