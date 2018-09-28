@@ -6602,12 +6602,18 @@ div#searchbars {
 }
 @media screen and (max-width: 1450px) and (min-width: 1280px) {
 .global_buffs {
-    left: 57%;
+    left: 34%;
     width: 100%;
     top: 105px;}
 .global_buffs>div {
     padding: 0px;
-    margin: 0 -5px 0 -5px;}
+    max-width: 70px;
+    min-width: 70px;
+    line-height: 1.1;}
+.individual_buff:first-child:nth-last-child(9) .fa, .individual_buff .fa {
+    font-size: 22px;}
+.global_buffs .buff_text .buff_multiplier {
+    font-size: 15px;}
 }
 
 
