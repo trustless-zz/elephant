@@ -6374,6 +6374,12 @@ img[src="static/common/symbols/warned.png"] {
     height: 13px;
     background-repeat: no-repeat;
     content: url('icon/svg/warned.svg');}
+img[src="static/common/thumbsup.png"] {
+    background-repeat: no-repeat;
+    content: url('icon/svg/thumbsup.svg');}
+img[src="static/common/thumbsdown.png"] {
+    background-repeat: no-repeat;
+    content: url('icon/svg/thumbsdown.svg');}
 
 #user .box.box_info span[style="float:right;"] {
     position: absolute;
