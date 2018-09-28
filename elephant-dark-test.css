@@ -2891,7 +2891,7 @@ span.size5 img {float: right;}
 }
 
 /*Web Links - adds images and formatting*/
-.Bandcamp, .Discogs, .MusicBrainz, .VGMdb, .GamesWebsite, .Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .Giantbomb, .GOG, .GooglePlay, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .Wikipedia, .XboxStore, .PCGamingWiki {
+.Bandcamp, .Discogs, .MusicBrainz, .VGMdb, .GamesWebsite, .Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .Giantbomb, .GOG, .GooglePlay, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .VNDB, .Wikipedia, .XboxStore, .PCGamingWiki {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;}
@@ -2947,6 +2947,8 @@ span.size5 img {float: right;}
     background-image: url("weblinks/svg/RPGnet.svg");}
 .Steam {
     background-image: url("weblinks/svg/Steam.svg");}
+.VNDB {
+    background-image: url("weblinks/VNDB.png");}
 .Wikipedia {
     background-image: url("weblinks/png/Wikipedia.png");}
 .XboxStore {
