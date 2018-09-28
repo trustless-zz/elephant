@@ -2213,16 +2213,17 @@ td.cats_col {
 }
 
 .ign {
-	background: url(icon/ign.png);
-}
-
+	background: url(icon/svg/ign.svg);
+    background-repeat: no-repeat;
+    background-position: center;}
 .meta {
-	background: url(icon/metacritic.png);
-}
-
+	background: url(icon/svg/metacritic.svg);
+    background-repeat: no-repeat;
+    background-position: center;}
 .gamespot {
-	background: url(icon/gamespot.png);
-}
+	background: url(icon/svg/gamespot.svg);
+    background-repeat: no-repeat;
+    background-position: center;}
 
 /*user page*/
 

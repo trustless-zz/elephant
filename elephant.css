@@ -2202,16 +2202,17 @@ color: rgba(50, 50, 50, 1)
 }
 
 .ign {
-	background: url(icon/ign.png);
-}
-
+	background: url(icon/svg/ign.svg);
+    background-repeat: no-repeat;
+    background-position: center;}
 .meta {
-	background: url(icon/metacritic.png);
-}
-
+	background: url(icon/svg/metacritic.svg);
+    background-repeat: no-repeat;
+    background-position: center;}
 .gamespot {
-	background: url(icon/gamespot.png);
-}
+	background: url(icon/svg/gamespot.svg);
+    background-repeat: no-repeat;
+    background-position: center;}
 
 /*user page*/
 
@@ -6316,20 +6317,25 @@ marquee {
 img[src="static/common/symbols/donor.png"] {
     height: 13px;
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/donor.svg');}
 img[src="static/common/symbols/disabled.png"] {
     height: 13px;
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/disabled.svg');}
 img[src="static/common/symbols/warned.png"] {
     height: 13px;
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/warned.svg');}
 img[src="static/common/thumbsup.png"] {
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/thumbsup.svg');}
 img[src="static/common/thumbsdown.png"] {
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/thumbsdown.svg');}
 
 #user .box.box_info span[style="float:right;"] {
