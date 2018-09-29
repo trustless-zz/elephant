@@ -1196,11 +1196,11 @@ h2 a {
 	max-width: 80px;
 }
 
+#torrents .colhead td:nth-child(4),
 #torrents .colhead td:nth-child(5),
 #torrents .colhead td:nth-child(6),
 #torrents .colhead td:nth-child(7) {
-	 text-align: center;
-}
+	 text-align: center;}
 
 #torrents .main_column_bg .main_column .box:nth-of-type(3):not([class="box trailer_div"]) iframe {
 	width: 590px !important;
@@ -3184,7 +3184,7 @@ li#stats_hnr {
 
 #color_leeching, #color_leeching .torrent_info_tags, #color_leeching a {color: #e03854 !important;}
 #color_seeding, #color_seeding .torrent_info_tags, #color_seeding a {
-    color: rgb(65, 139, 0);
+    color: rgba(80, 154, 0, 1);
     /* text-shadow: 0 0 7px rgba(217, 228, 115, 0.7); */}
 #color_uploaded, #color_uploaded .torrent_info_tags, #color_uploaded a {color: rgb(100, 174, 0);
     text-shadow: 0 0 7px rgba(217, 228, 115, 0.7);}
@@ -4910,7 +4910,7 @@ button.submit {
 #torrents .box.pad table#th_search {margin: 0 !important;}
 #torrents h2 [href^="user.php?id"] {font-style: italic; font-weight: normal;}
 #torrents form#torrent_history_search {margin: 11px 0 5px 0;}
-#torrents .torrent_history table tbody tr td {border: 1px solid #DBDBDB;}
+#torrents .torrent_history table tbody tr td {border: 1px solid #555555;}
 #torrents table#th_search tbody tr td {border: none !important;}
 #torrents tr.colhead.nobr td {border: none !important;}
 #torrents .nobr {white-space: nowrap;}
@@ -6430,6 +6430,10 @@ img[src="static/common/thumbsdown.png"] {
 .rating_container:hover {
     background-color: rgba(0,0,0,0.2);
     color: rgb(196,196,196);}
+
+i.fa.fa-fl-pots {
+    color: #b585d3 !important;
+    filter: drop-shadow(2px 2px 2px rgba(218, 120, 252, 1));}
 
 
 /* widescreen */
