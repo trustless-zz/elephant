@@ -6371,20 +6371,25 @@ marquee {
 img[src="static/common/symbols/donor.png"] {
     height: 13px;
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/donor.svg');}
 img[src="static/common/symbols/disabled.png"] {
     height: 13px;
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/disabled.svg');}
 img[src="static/common/symbols/warned.png"] {
     height: 13px;
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/warned.svg');}
-img[src="static/common/thumbsup.png"] {
+img[src="static/common/thumbsup.png"], img[src="static//common/thumbsup.png"] {
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/thumbsup.svg');}
 img[src="static/common/thumbsdown.png"] {
     background-repeat: no-repeat;
+    background-position: center;
     content: url('icon/svg/thumbsdown.svg');}
 
 #user .box.box_info span[style="float:right;"] {
@@ -6405,8 +6410,11 @@ img[src="static/common/thumbsdown.png"] {
 #upvote:before {
     content:"+";}
 #downvote {
-    color:#FF0000;}
-
+    color:#e10000;}
+#upvote, #downvote {
+    font-weight: bold;
+    font-size: 11pt;}
+    
 .ratings .red {
     color: #cc0000;}
 .ratings .yellow {
@@ -6417,12 +6425,6 @@ img[src="static/common/thumbsdown.png"] {
     display: inline-block;
     margin: 1px 5px -3px 1px;
     color: rgb(150,150,150);
-    float: left;
-    font-size: 9pt;}
-.rating_container {
-    display: inline-block;
-    margin: 1px 5px -3px 1px;
-    color: rgb(50,50,50);
     float: left;
     font-size: 9pt;}
 .rating_container:hover {

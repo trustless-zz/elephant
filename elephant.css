@@ -6334,7 +6334,7 @@ img[src="static/common/symbols/warned.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/warned.svg');}
-img[src="static/common/thumbsup.png"] {
+img[src="static/common/thumbsup.png"], img[src="static//common/thumbsup.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/thumbsup.svg');}
@@ -6361,7 +6361,10 @@ img[src="static/common/thumbsdown.png"] {
 #upvote:before {
     content:"+";}
 #downvote {
-    color:#FF0000;}
+    color:#e10000;}
+#upvote, #downvote {
+    font-weight: bold;
+    font-size: 11pt;}
 
 .ratings .red {
     color: #cc0000;}
