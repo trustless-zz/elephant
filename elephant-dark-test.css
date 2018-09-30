@@ -1368,15 +1368,15 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     margin: 1px 0px -1px 0px;}
 .\33 do, .amstradcpc, .android, .applebandaipippin, .apps, .atari2600, .atari5200, .atari7800, .atarijaguar, .atarilynx, .atarist, .boardgame, .cardgame, .colecovision, .commodore128, .commodore64, .commodoreamiga, .commodoreplus-4, .commodorevic-20, .creativision, .dos, .dreamcast, .dsiware, .dvd, .interactivedvd, .ebook, .fairchildchannelf, .game.com,
 .gameboy, .gameboyadvance, .gameboycolor, .gamegear, .gizmondo, .intellivision, .ios, .linux, .mac, .mastersystem, .megadrive, .memotechmtx, .miniaturewargames, .msx, .msx2, .music, .necturbografx-16, .neogeopocket, .nes, .newnintendo3ds, .nintendo3ds, .nintendo64,
-.nintendods, .nintendogamecube, .windows, .pc95, .pcxp, .penandpaperrpg, .phonepda, .pico, .playstation1, .playstation2, .playstation3, .playstation4, .playstationonpsp, .playstationportable, .playstationvita, .pokemonmini, .retro-other, .samcoupe, .saturn, .sg-1000, .snes, .supernes, .switch, 
+.nintendods, .nintendogamecube, .windows, .pc95, .pcxp, .penandpaperrpg, .phonepda, .pico, .playstation1, .playstation2, .playstation3, .playstation4, .playstationonpsp, .playstationportable, .playstationvita, .pokemonmini, .retro-other, .samcoupe, .saturn, .sg-1000, .snes, .snkneogeopocket, .supernes, .switch, 
 .taitotypex, .tandycolor, .tangerineoric, .thomsonm05, .turbografx, .v.smile, .vectrex, .virtualboy, .watarasupervision, .wii, .wiiu, .wiivc, .wiiware, .wonderswan, .xbla, .xbox, .xbox360, .xboxon360, .zxspectrum,
 .ex-bgfullsets, .psonpsp, .ex-bgcollections, .bandaiwonderswancolor, .generalcomputervectrex, .cats_guides, .cats_ebooks, .cats_applications, .cats_ost {
-    background-repeat: no-repeat;
-    background-position: center;
+	background: url('icon/caticons_sprite.png') no-repeat scroll top left transparent;
+    background-size: 28px;
     height:28px;
 	width: 28px;
-	background: url('icon/caticons_sprite.png') no-repeat scroll top left transparent;
-    background-size: 28px;}
+    background-repeat: no-repeat !important;
+    background-position: center !important;}
 
 .amstradcpc{
 	background: url(icon/cpcinvert56.png);
