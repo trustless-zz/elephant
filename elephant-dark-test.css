@@ -3558,14 +3558,13 @@ table#torrent_table {
 }
 
 #announcement {
-    position: relative;
-    left: 30.6%;
-    top: -123px;
+    position: absolute;
+    left: 0;
+    top: 0;
     background-color: rgba(121,103,93,1);
     padding: 4px;
     text-align: center;
-    width: 69.6%;
-}
+    width: 100%;}
 
 div#threadpoll {
     margin: 8px 8px 0px 8px;
