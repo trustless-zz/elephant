@@ -6211,7 +6211,9 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
     text-decoration: underline;}
 
-#user .box.box_items #itemsdiv table tbody tr td a >img:hover, #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, .box.wiki_article a >img:hover, #clickable:not([class="overlay"]):hover {
+#user .box.box_items #itemsdiv table tbody tr td a >img:hover, 
+#torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, 
+.box.wiki_article a >img:hover, #clickable:not([class="overlay"]):hover >h3 {
     -webkit-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
