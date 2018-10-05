@@ -3522,7 +3522,7 @@ div#coverart {
 }
 
 #collections .sidebar .box.box_albumart {
-    padding: 40px 0 40px 0;}
+    padding: 38px 0 38px 0;}
 
 #collections form textarea {
     max-width: 80%;
@@ -6187,10 +6187,11 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     position: relative;
     overflow: hidden;
     z-index: -2;}
-#recommended #vanityhouse tbody tr td a:nth-child(1) {
+#recommended #vanityhouse tbody tr td a:nth-child(1), #collections ul.collage_images li >a {
 	padding: 500px;
 	margin: -500px;}
-#recommended #vanityhouse tbody tr td a:nth-child(1):before {
+#recommended #vanityhouse tbody tr td a:nth-child(1):before, 
+#collections ul.collage_images li >a:before {
 	content: "";
 	width: 100%;
 	height: 100%;
@@ -6201,7 +6202,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 	z-index:-1;
 	opacity:0;
 	transition: 0.05s;}
-#recommended #vanityhouse tbody tr td a:nth-child(1):hover:before{
+#recommended #vanityhouse tbody tr td a:nth-child(1):hover:before, 
+#collections ul.collage_images li >a:hover:before {
 	opacity:1;
 	transition: 0.05s;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
@@ -6209,7 +6211,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
     text-decoration: underline;}
 
-#user .box.box_items #itemsdiv table tbody tr td a >img:hover, #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, .box.wiki_article a >img:hover, #clickable:hover {
+#user .box.box_items #itemsdiv table tbody tr td a >img:hover, #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, .box.wiki_article a >img:hover, #clickable:not([class="overlay"]):hover {
     -webkit-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -6376,7 +6378,7 @@ i.fa.fa-fl-pots {
 #collections ul.collage_images {
     width: 873px;
     padding: 0px 0px 0px 1px !important;
-    margin: 39px 0 39px 0px;
+    margin: 39px 0 38px 0px;
     border-collapse: collapse;
     text-align: center;}
 ul[class="collage_images"] {
@@ -6386,11 +6388,14 @@ ul[class="collage_images"] {
     width: 163.6px;
     display: flex;
     flex-direction: column;
-    justify-content: center;}
+    justify-content: center;
+    overflow: hidden;
+    position: relative;}
 #collections ul li[class^="image"] {
     border: 1px solid #DBDBDB;
     padding: 5px;
-    margin: -1px 0px 0px -1px;}
+    margin: -1px 0px 0px -1px;
+    z-index: 1;}
 #collections ul.collage_images img {
     width: 100%;
     height: auto;}
