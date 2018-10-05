@@ -1045,7 +1045,7 @@ h2 {
 	height: 25px;
 }
 
-#forums #wrapper #content .thin table {
+#forums #wrapper #content .thin table:not([id="newthreadtext"]) {
 	/*border: 1px solid #1a1a1a;*/
 	font-family: neuzite, sans-serif;
 	font-size: 10pt;
@@ -1056,7 +1056,18 @@ h2 {
 	-ms-border-radius: 0px;
 	-o-border-radius: 0px;
 	border-radius: 0px;
-}
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
+#forums .thin.forum_latest >.search.box.pad {
+    overflow: visible;}
+#forums .thin.forum_latest >.search.box.pad >form[method="post"] {
+    background: white;
+    padding: 9px 5px 5px 5px;
+    margin-top: 16px;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
+#forums .thin.forum_latest >.search.box.pad >form[method="post"] > * {
+    box-shadow: none !important;}
+#forums .thin.forum_latest >.search.box.pad >form[method="post"] >.submit {
+    padding-bottom: 10px;}
 
 #forums #wrapper #content .thin table tbody .colhead {
 	height: 25px;
@@ -3012,29 +3023,6 @@ ul {padding-left: 10px;} /*was 12px*/
     #collections .sidebar .box_albumart img{width:300px;border:0px;margin:0px;max-width: 300px !important;}
     #collections .sidebar .subhead{padding-top:1px;text-align:center;}
     #collections .box_description div{word-wrap:break-word;}
-#collections ul.collage_images {
-    padding: 9px 10px 9px 10px;
-    width: auto;
-    margin: 30px 0 30px 0px;
-    border-collapse: collapse;
-    text-align: center;
-    width: 853px;}
-#collections ul.collage_images li {
-    padding: 1px;
-    border: none;
-    float: left;
-    margin: 0px;
-    display: inline-block;
-    height: 240.812px;
-    list-style: none;
-    list-style-type: none;}
-#collections ul.collage_images li a {
-    display: block;
-    height: 240.812px;
-    overflow: hidden;}
-#collections ul.collage_images img {
-    width: 168.604px;
-    height: 240.812px;}
 #collections .main_column >#coverart {
     padding-bottom: 30px;}
     .collections .linkbox .selected .pageslink{color: rgba(50, 50, 50, 1);}
@@ -5887,7 +5875,7 @@ ul#items_list li.no_items {
     outline: 2px solid rgba(232,80,102,1);
     outline-offset: -2px;
     transition: 0.05s;}
-#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover, #torrents #collages >tbody >tr:nth-child(n+2):hover {
+#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover, #torrents #collages >tbody >tr:nth-child(n+2):hover, #forums tr[class^="row"]:hover {
     outline: 1px solid rgba(150, 150, 150, 1);
     outline-offset: -1px;}
 
@@ -6189,12 +6177,6 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_image.box_image_coverart div[align="center"] a:hover:after{
     outline: 3px solid rgba(232,80,102,1);
     transition: 0.05s;}
-#collections ul.collage_images li a {
-	outline: 2px solid rgba(232,80,102,0);
-	transition: 0.05s;}
-#collections ul.collage_images li a:hover {
-	outline: 2px solid rgba(232,80,102,1);
-	transition: 0.05s;}
 
 .body.similar ul.nobullet li span.similar_votes span {
     color: white;}
@@ -6389,9 +6371,35 @@ i.fa.fa-fl-pots {
     filter: drop-shadow(2px 2px 2px rgba(218, 120, 252, 1));
     font-family: whitney, sans-serif;}
 
+#collections .main_column >#coverart {
+    padding: 0px;}
+#collections ul.collage_images {
+    width: 873px;
+    padding: 0px 0px 0px 1px !important;
+    margin: 39px 0 39px 0px;
+    border-collapse: collapse;
+    text-align: center;}
+ul[class="collage_images"] {
+    display: flex;
+    flex-wrap: wrap;}
+#collections ul.collage_images li {
+    width: 163.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+#collections ul li[class^="image"] {
+    border: 1px solid #DBDBDB;
+    padding: 5px;
+    margin: -1px 0px 0px -1px;}
+#collections ul.collage_images img {
+    width: 100%;
+    height: auto;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#collections ul.collage_images li {
+    width: 183.6px;}
 #recommended #vanityhouse tbody tr td a img {
     max-width: 232px !important;}
 #extra1, #wrapper, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #user .thin, #collections .thin #reply_box .box.pad, #artist .thin, #gazelles #wrapper #content .thin table.gazelles_art_display {
@@ -6419,12 +6427,10 @@ ul#items_list:before {
     left: -24px;}
 #shop li.item_li.nostock .submit_section:before {
     left: 32px;}
-#index .main_column, .main_column  .torrent_table, .torrent_table:not(#torrent_table), .main_column, #user .main_column, #torrents #requests tbody tr.colhead td span {
+#index .main_column, .main_column  .torrent_table, .torrent_table:not(#torrent_table), .main_column, #user .main_column, #torrents #requests tbody tr.colhead td span, #collections ul.collage_images {
     width: 973px;}
 .profile .box_art_gallery .gallery_main_slot, .profile .box_art_gallery .gallery_main_slot {
     max-width: 953px}
-#collections ul.collage_images {
-    width: 954px;}
 #requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]), .profile .box_art_gallery .gallery_row, #grouplinks {
     width: 953px;}
 #quickreplytext textarea, #requests #quickreplytext textarea#quickpost {
@@ -6456,13 +6462,6 @@ ul#items_list:before {
     width: 340px;}
 #gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect {
     left: 0px;}
-#collections ul.collage_images li, #collections ul.collage_images img {
-    width: 188.812px;
-    height: 269.674px;}
-#collections ul.collage_images li a {
-    height: 269.674px;}
-/* .torrent_table tr.group_torrent td, #torrent_table tr.group_torrent td {
-    font-size: 12px;} */
 .inventory #content li.item_li {
     width: 410px;}
 .similar .similar_group > a img {
