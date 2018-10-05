@@ -1065,6 +1065,8 @@ h2 {
 	-o-border-radius: 0px;
 	border-radius: 0px;
     box-shadow: 0 0 30px #000;}
+#forums #wrapper #content .thin table[class^="forum_post"] {
+    margin: 0px;}
 #forums .thin.forum_latest >.search.box.pad {
     overflow: visible;}
 #forums .thin.forum_latest >.search.box.pad >form[method="post"] {
@@ -3516,7 +3518,8 @@ textarea#quickpost {
     width: 94.6%;
     float: left;
     margin-left: 5px;
-    margin-top: 2px;}
+    margin-top: 2px;
+    height: 16px; /* own posts have a 15px height instead of 16px for some reason */}
 
 div#coverart {
     margin: 10px 0 10px 0;
@@ -4944,7 +4947,7 @@ button.submit {
 #forums .linkbox {margin-bottom: -11px;}
 #forums .thin .linkbox.pager {margin-top: 0px !important;}
 #forums #wrapper #content .thin .forum_list h3 {margin-bottom: -15px !important;}
-#forums .linkbox.linkbox_top {margin-bottom: -5px !important;}
+#forums .linkbox.linkbox_top {margin-bottom: 11px;}
 #requests .thin {top: -16px; position: relative;}
 #allreviews {top: -16px; position: relative;}
 #allreviews h2 {margin-bottom: 16px;}
@@ -5954,7 +5957,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 
 #requests .thin > table tr td a {
     color: rgb(196, 196, 196);}
-a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .thin > table >tbody >tr.colhead_dark >td >a >strong:hover {
+a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .thin > table >tbody >tr.colhead_dark >td >a >strong:hover, #clickable:not([class="overlay"]):hover >h3 {
     /* text-decoration:underline; */
     color: rgba(232,80,102,1) !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span, #collections #torrent_table tr.group_torrent td a span {
@@ -6194,13 +6197,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, 
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before {
     transition: 0.05s;
-    z-index: -1;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:before, 
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:after, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
+    z-index: -1;
 	content: "";
 	width: 350px;
 	height: 350px;
@@ -6212,9 +6209,9 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover:before {
 	background: rgba(232,80,102,1);
     transition: 0.05s;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:after, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td a {
 	z-index: 1;}
 
 .box.box_image.box_image_coverart div[align="center"]{
@@ -6244,7 +6241,11 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     position: relative;
     overflow: hidden;
     z-index: -2;}
-#recommended #vanityhouse tbody tr td a:nth-child(1), #collections ul.collage_images li >a {
+#recommended #vanityhouse tbody tr td a:nth-child(1), 
+#collections ul.collage_images li >a, 
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td a {
 	padding: 500px;
 	margin: -500px;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):before, 
@@ -6270,7 +6271,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 
 #user .box.box_items #itemsdiv table tbody tr td a >img:hover, 
 #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, 
-.box.wiki_article a >img:hover, #clickable:not([class="overlay"]):hover >h3 {
+.box.wiki_article a >img:hover {
     -webkit-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -6454,6 +6455,9 @@ ul[class="collage_images"] {
 #collections ul.collage_images img {
     width: 100%;
     height: auto;}
+
+.sub >span {
+    padding-right: 3px;}
 
 
 /* widescreen */
