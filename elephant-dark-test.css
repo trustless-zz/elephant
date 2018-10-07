@@ -6194,7 +6194,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 	position: relative;}
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover, 
 .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover {
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover,
+#collections ul.collage_images li >a:hover {
 	background: rgba(232,80,102,1);}
 
 .box.box_image.box_image_coverart div[align="center"]{
@@ -6231,22 +6232,18 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td a {
 	padding: 500px;
 	margin: -500px;}
-#recommended #vanityhouse tbody tr td a:nth-child(1):before, 
-#collections ul.collage_images li >a:before {
+#recommended #vanityhouse tbody tr td a:nth-child(1):before {
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	top:0px;
-	left:0px;
+	top: 0px;
+	left: 0px;
 	background: rgba(232,80,102,1);
-	z-index:-1;
-	opacity:0;
-	transition: 0.05s;}
-#recommended #vanityhouse tbody tr td a:nth-child(1):hover:before, 
-#collections ul.collage_images li >a:hover:before {
-	opacity:1;
-	transition: 0.05s;}
+	z-index: -1;
+	opacity: 0;}
+#recommended #vanityhouse tbody tr td a:nth-child(1):hover:before {
+	opacity: 1;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
     color: rgb(196,196,196) !important;}
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
