@@ -6190,29 +6190,12 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td, 
 .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td, 
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
-	transition: 0.05s;
 	overflow: hidden;
 	position: relative;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:before, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before {
-    transition: 0.05s;
-    z-index: -1;
-	content: "";
-	width: 350px;
-	height: 350px;
-	position: absolute;
-	top:0px;
-	left:0px;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover:before, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover:before, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover:before {
-	background: rgba(232,80,102,1);
-    transition: 0.05s;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td a {
-	z-index: 1;}
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover {
+	background: rgba(232,80,102,1);}
 
 .box.box_image.box_image_coverart div[align="center"]{
 	position: relative;}
