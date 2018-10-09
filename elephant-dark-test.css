@@ -5285,8 +5285,8 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 #user .qtip-dark {
     background-color: #00000000;
     border-color: #00000000;
-    color: rgb(196, 196, 196);}
-
+    color: rgb(196, 196, 196);
+    border: none;}
 
 
 #torrents #content .new_status {
@@ -6209,9 +6209,6 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
 	overflow: hidden;
 	position: relative;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover,
 #collections ul.collage_images li >a:hover {
 	background: rgba(232,80,102,1);}
 
