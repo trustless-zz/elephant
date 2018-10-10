@@ -3064,7 +3064,7 @@ ul {padding-left: 10px;} /*was 12px*/
 	height:calc(100% - 10px);
 	padding:5px;
 	border-bottom:none;
-	background:rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.7);
 	font-family:arial;
 	-webkit-transition:all 0.15s ease-in;
 	-moz-transition:all 0.15s ease-in;
@@ -3073,7 +3073,7 @@ ul {padding-left: 10px;} /*was 12px*/
 	transition:all 0.15s ease-in;
 	opacity:0;
 	filter:alpha(opacity=0);
-	color:#fff;
+	color: rgb(196,196,196);
 }
     .hovereffect h2 div{font-size:11px;font-style:italic;}
     .hovereffect:hover h2{
@@ -5190,16 +5190,17 @@ button.submit {
 
 
 /* buttons & hovers */
-.edition_info:before {
-    background: radial-gradient(rgba(51, 51, 51, 1), rgb(32, 32, 32, 1));
-    transition: opacity 0.1s;}
 .head[title="Click to expand/collapse"]:before, #index #recommended .head:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, #torrents #requests tbody tr.colhead >td:before {
     background: linear-gradient(to top, rgba(232,80,102,1) 0%,rgba(42, 79, 101, 0) 100%);
     transition: opacity 0.15s;}
-#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before {
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(42,79,101,0.0));
-    transition: opacity 0.1s;}
-.head[title="Click to expand/collapse"]:before, #index #recommended .head:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, .edition_info:not([colspan="7"]):not([colspan="9"]):before, #torrents #requests tbody tr.colhead >td:before {
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after, 
+.head[title="Click to expand/collapse"]:before, 
+#index #recommended .head:before, 
+#index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, 
+#forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, 
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, 
+.edition_info:not([colspan="7"]):not([colspan="9"]):before, 
+#torrents #requests tbody tr.colhead >td:before {
     content: '';
     position: absolute;
     left: 0px;
@@ -5208,6 +5209,24 @@ button.submit {
     height: 100%;
     opacity: 0;
     z-index: 1;}
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
+	z-index: 3;}
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark {
+	height:26px;}
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td strong, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td img{
+	position: absolute;
+	top: 6px;
+	z-index: 2;}
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td:last-child img {
+	right: 3px;}
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before {
+    background: linear-gradient(to top, rgba(232,80,102,0.75) 0%,rgba(42, 79, 101, 0) 100%);
+    transition: opacity 0.1s;}
+.edition_info:before {
+    background: linear-gradient(to top, rgba(232,80,102,0.3) 0%,rgba(42, 79, 101, 0) 100%);
+    transition: opacity 0.1s;}
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
+	width: 872px;}
 .head[title="Click to expand/collapse"]:hover:before, #index #recommended .head:hover:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover:before, #torrents #requests tbody tr.colhead >td:hover:before {
     opacity: 1;
     transition: opacity 0.15s;}
@@ -5502,7 +5521,7 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #rules .thin .box.pad p {padding: 5px;}
 
 
-#torrents .sidebar .box.box_pack .body.center .hovereffect {
+#torrents .sidebar .hovereffect {
     width: 100%;
     float: unset;
     display: inline-block;
@@ -5510,12 +5529,13 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
     cursor: pointer;
     left: unset;
     height: 140.217px !important;}
-#torrents .sidebar .box.box_pack .body.center .hovereffect .img_responsive {
+#torrents .sidebar .hovereffect .img_responsive {
     width: 300px;
     max-width: 300px !important;
     height: 100%;
     background-size: 300px 100%;}
-#torrents .sidebar .box.box_pack .body.center {
+#torrents .sidebar .box.box_pack .body.center, 
+#torrents .sidebar .box.box_main_pack .body.center {
     margin: 0px;
     padding: 0px;}
 
@@ -5779,8 +5799,6 @@ span.user_title span[style="font-family: cursive;"] {
     background: rgba(0,0,0,0.7);
     color: rgb(196,196,196);
     top: 0px;}
-#collections #wrapper #content .thin table.collections_art_display tbody tr td div[class="hovereffect"] {
-    margin-bottom: 20px;}
 #shop[class="items_style fl_shop"] .box.pad.box_add_buff {
     margin-top: 0px;
     margin-bottom: 30px;}
@@ -6459,10 +6477,14 @@ ul[class="collage_images"] {
 
 #forums #wrapper #content .thin table[class^="forum_post"] .body a {
     word-break: break-all;}
+.new_status {
+    width: 30px !important;}
 
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
+	width: 972px;}
 #collections ul.collage_images li {
     width: 183.6px;}
 #recommended #vanityhouse tbody tr td a img {
@@ -6663,7 +6685,7 @@ div#searchbars {
 
 
 /* individual game styles wip */
-#logo[style^="background: url('https://ptpimg.me/t475s2.png')"], .series_196 #logo, .series_169 #logo, .series_58 #logo, .series_52 #logo, .series_179 #logo, .series_211 #logo, .series_22 #logo, .series_15 #logo, .series_208 #logo, .series_178 #logo, 
+.series_885 #logo, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"], .series_196 #logo, .series_169 #logo, .series_58 #logo, .series_52 #logo, .series_179 #logo, .series_211 #logo, .series_22 #logo, .series_15 #logo, .series_208 #logo, .series_178 #logo, 
 .tgroup_24482 #logo, .tgroup_24230 #logo, .tgroup_23617 #logo, .series_31 #logo, .series_191 #logo, .master_465 #logo, .tgroup_5993 #logo, .tgroup_8046 #logo, .series_70 #logo, .franchise_53 #logo, 
 .series_19 #logo, .series_65 #logo, .series_827 #logo, .series_183 #logo, .series_26 #logo, .series_327 #logo, .series_291 #logo, .franchise_55 #logo, .series_896 #logo, .master_2940 #logo, 
 .franchise_360 #logo, .series_857 #logo, .series_198 #logo, .alpacas #logo, .daftpunk #logo, .series_555 #logo, .series_279 #logo, .series_188 #logo, .series_177 #logo, .series_184 #logo, 
@@ -6678,7 +6700,7 @@ div#searchbars {
 	transition:none;
 	box-shadow: inset 0 0 30px #000;
 	transition: box-shadow 0.15s;}
-#logo[style^="background: url('https://ptpimg.me/t475s2.png')"]:hover, .series_196 #logo:hover, .series_169 #logo:hover, .series_58 #logo:hover, .series_52 #logo:hover, .series_179 #logo:hover, .series_211 #logo:hover, .series_22 #logo:hover, .series_15 #logo:hover, .series_208 #logo:hover, .series_178 #logo:hover, 
+.series_885 #logo:hover, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"]:hover, .series_196 #logo:hover, .series_169 #logo:hover, .series_58 #logo:hover, .series_52 #logo:hover, .series_179 #logo:hover, .series_211 #logo:hover, .series_22 #logo:hover, .series_15 #logo:hover, .series_208 #logo:hover, .series_178 #logo:hover, 
 .tgroup_24482 #logo:hover, .tgroup_24230 #logo:hover, .tgroup_23617 #logo:hover, .series_31 #logo:hover, .series_191 #logo:hover, .master_465 #logo:hover, .tgroup_5993 #logo:hover, .tgroup_8046 #logo:hover, .series_70 #logo:hover, .franchise_53 #logo:hover, 
 .series_19 #logo:hover, .series_65 #logo:hover, .series_827 #logo:hover, .series_183 #logo:hover, .series_26 #logo:hover, .series_327 #logo:hover, .series_291 #logo:hover, .franchise_55 #logo:hover, .series_896 #logo:hover, .master_2940 #logo:hover, 
 .franchise_360 #logo:hover, .series_857 #logo:hover, .series_198 #logo:hover, .alpacas #logo:hover, .daftpunk #logo:hover, .series_555 #logo:hover, .series_279 #logo:hover, .series_188 #logo:hover, .series_177 #logo:hover, .series_184 #logo:hover, 
@@ -6689,7 +6711,7 @@ div#searchbars {
 	transform: rotate(0deg);
 	box-shadow: inset 0 0 45px #000;
 	transition: box-shadow 0.15s;}
-#logo[style^="background: url('https://ptpimg.me/t475s2.png')"] a, .series_196 #logo a, .series_169 #logo a, .series_58 #logo a, .series_52 #logo a, .series_179 #logo a, .series_211 #logo a, .series_22 #logo a, .series_15 #logo a, .series_208 #logo a, .series_178 #logo a, 
+.series_885 #logo a, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"] a, .series_196 #logo a, .series_169 #logo a, .series_58 #logo a, .series_52 #logo a, .series_179 #logo a, .series_211 #logo a, .series_22 #logo a, .series_15 #logo a, .series_208 #logo a, .series_178 #logo a, 
 .tgroup_24482 #logo a, .tgroup_24230 #logo a, .tgroup_23617 #logo a, .series_31 #logo a, .series_191 #logo a, .master_465 #logo a, .tgroup_5993 #logo a, .tgroup_8046 #logo a, .series_70 #logo a, .franchise_53 #logo a, 
 .series_19 #logo a, .series_65 #logo a, .series_827 #logo a, .series_183 #logo a, .series_26 #logo a, .series_327 #logo a, .series_291 #logo a, .franchise_55 #logo a, .series_896 #logo a, .master_2940 #logo a, 
 .franchise_360 #logo a, .series_857 #logo a, .series_198 #logo a, .alpacas #logo a, .daftpunk #logo a, .series_555 #logo a, .series_279 #logo a, .series_188 #logo a, .series_177 #logo a, .series_184 #logo a, 
@@ -6700,6 +6722,8 @@ div#searchbars {
 	opacity: 0;
 	transition:none;}
 @-webkit-keyframes logoslide {from {background-position: 0 0;} to {background-position: calc(100% - 164px) 0;}}
+.series_885 #logo {
+	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/mirrorsedgelogo.png'), url(logo/alt-logo-30p.png);}
 #logo[style^="background: url('https://ptpimg.me/t475s2.png')"] {
 	background-image:url(https://ptpimg.me/t475s2.png), url(logo/alt-logo-30p.png) !important;}
 .series_196 #logo {
