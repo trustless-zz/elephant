@@ -6430,6 +6430,8 @@ ul[class="collage_images"] {
     width: 30px !important;}
 .filter_torrents.advanced .cat_list[width="100%"] {
     margin-top: -13px;}
+#forums input[value="Editor"] {
+    margin-right: 3px;}
 
 
 /* widescreen */
