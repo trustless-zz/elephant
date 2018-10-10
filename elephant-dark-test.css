@@ -3212,7 +3212,7 @@ li#stats_hnr {
 
 span.user_title {
     white-space: nowrap;
-}
+    vertical-align: top; /* fighting japanese characters */}
 
 .global_buffs {
     position: absolute;
@@ -6479,6 +6479,8 @@ ul[class="collage_images"] {
     word-break: break-all;}
 .new_status {
     width: 30px !important;}
+.filter_torrents.advanced .cat_list[width="100%"] {
+    margin-top: -13px;}
 
 
 /* widescreen */
