@@ -3001,11 +3001,11 @@ span.size5 img {float: right;}
 	-o-transform:scale(1.12);
 	transform:scale(1.12);}
 .ratings:hover {
-	-webkit-transform:scale(1.05555);
-	-moz-transform:scale(1.05555);
-	-ms-transform:scale(1.05555);
-	-o-transform:scale(1.05555);
-	transform:scale(1.05555);}
+	-webkit-transform:scale(1.075);
+	-moz-transform:scale(1.075);
+	-ms-transform:scale(1.075);
+	-o-transform:scale(1.075);
+	transform:scale(1.075);}
 #linkedgroup:hover {
 	-webkit-transform:scale(1.07142);
 	-moz-transform:scale(1.07142);
