@@ -3212,9 +3212,9 @@ li#stats_hnr {
 
 span.user_title {
     white-space: nowrap;
-    vertical-align: top; /* fighting japanese characters */}
+    /* vertical-align: top; */} /* fighting japanese characters */
 span.user_title * {
-    vertical-align: middle;}
+    /* vertical-align: middle; */}
 
 .global_buffs {
     position: absolute;
