@@ -5038,8 +5038,20 @@ button.submit {
     text-decoration: none;
     font-weight: normal;}
 #collections .sidebar .box.pad a {color: #2a4f65;}
-#collections .sidebar .box.pad a::before {content: "[";}
-#collections .sidebar .box.pad a::after {content: "]";}
+#collections .sidebar .box.pad a:before, 
+#userhistory .linkbox a[href$="&showunread=1"]:before, 
+#userhistory .linkbox a[href$="&showunread=1&group=1"]:before,  
+#userhistory .linkbox a[href$="&liked=1"]:before, 
+#userhistory .linkbox a[href$="&disliked=1"]:before, 
+#userhistory .linkbox a[href^="userhistory.php?action=posts&userid="]:before {
+    content: "[";}
+#collections .sidebar .box.pad a:after, 
+#userhistory .linkbox a[href$="&showunread=1"]:after, 
+#userhistory .linkbox a[href$="&showunread=1&group=1"]:after,  
+#userhistory .linkbox a[href$="&liked=1"]:after, 
+#userhistory .linkbox a[href$="&disliked=1"]:after, 
+#userhistory .linkbox a[href^="userhistory.php?action=posts&userid="]:after {
+    content: "]";}
 #collections .box.box_contributors .pad, #collections .box.box_tags .pad {position: relative; left: 15px;}
 #collections .box.box_contributors .pad ol, #collections .box.box_tags .pad ol {list-style: decimal;}
 
@@ -6434,6 +6446,13 @@ ul[class="collage_images"] {
     margin-top: -13px;}
 #forums input[value="Editor"] {
     margin-right: 3px;}
+
+#userhistory .linkbox {
+    margin: -16px 0 12px 0;}
+#userhistory .linkbox >br:nth-of-type(2) {
+    display: none;}
+#userhistory table[id^="post"] {
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
 
 
 /* widescreen */
