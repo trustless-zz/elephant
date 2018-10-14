@@ -6290,7 +6290,7 @@ marquee {
 #artist #torrent_table >tbody >tr.group {
     background-color: rgba(42,79,101,0.25);}
 .user_title img {
-    max-height: 22px;}
+    max-height: 18px;}
 
 .sidebar #freeleech span.platform, .sidebar #freeleech span.tor_info {
     font-size: 8pt;
