@@ -1371,6 +1371,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     margin: 1px 0px -1px 0px;}
 
 .\33 do,
+.amigacd32,
 .amstradcpc,
 .android,
 .applebandaipippin,
@@ -1503,6 +1504,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 
 .\33 do {
     background: url(icon/svg/3do.svg);}
+.amigacd32 {
+    background: url(icon/svg/amigacd32_dark.svg);}
 .amstradcpc {
     background: url(icon/svg/amstradcpc_dark.svg);}
 .android {
@@ -1520,7 +1523,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .atarijaguar {
     background: url(icon/svg/atarijaguar.svg);}
 .atarilynx {
-    background: url(icon/lynx56.png);}
+    background-image: url(icon/lynx56.png);}
 .atarist {
     background: url(icon/svg/atarist_dark.svg);}
 .bandaiwonderswan,
@@ -1545,7 +1548,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .commodoreplus-4 {
     background: url(icon/svg/commodoreplus-4.svg);}
 .commodorevic-20 {
-    background: url(icon/vic20_56.png);}
+    background-image: url(icon/vic20_56.png);}
 .creativision {
     background: url(icon/svg/creativision.svg);}
 .dos {
@@ -1577,7 +1580,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .game\.com,
 .game.com,
 .gamecom {
-    background: url(icon/gamecom56_2.png);}
+    background-image: url(icon/gamecom56.png);}
 .gameboy {
     background: url(icon/svg/gameboy.svg);}
 .gameboyadvance {
@@ -1609,7 +1612,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .mattelintellivision {
     background: url(icon/svg/mattelintellivision.svg);}
 .megadrive {
-    background: url(icon/md56.png);}
+    background-image: url(icon/md56.png);}
 .memotechmtx {
     background: url(icon/svg/memotechmtx.svg);}
 .milesgordonsamcoupe {
@@ -1622,7 +1625,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url(icon/svg/msx2.svg);}
 .music,
 .cats_ost {
-    background: url(icon/music56.png);}
+    background-image: url(icon/music56.png);}
 .necpc-fx {
     background: url(icon/svg/necpc-fx.svg);}
 .necsupergrafx {
@@ -1733,9 +1736,9 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .xbla {
     background: url();}
 .xbox {
-    background: url(icon/xbox56.png);}
+    background-image: url(icon/xbox56.png);}
 .xbox360 {
-    background: url(icon/xbox360_56.png);}
+    background-image: url(icon/xbox360_56.png);}
 .xboxon360 {
     background: url();}
 .zxspectrum {
