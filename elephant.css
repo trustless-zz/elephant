@@ -1369,260 +1369,409 @@ div.linkbox {
 
 tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >td.center.cats_col >div {
     margin: 1px 0px -1px 0px;}
-.\33 do, .amstradcpc, .android, .applebandaipippin, .apps, .atari2600, .atari5200, .atari7800, .atarijaguar, .atarilynx, .atarist, .boardgame, .cardgame, .colecovision, .commodore128, .commodore64, .commodoreamiga, .commodoreplus-4, .commodorevic-20, .creativision, .dos, .dreamcast, .dsiware, .dvd, .interactivedvd, .ebook, .fairchildchannelf, .game.com,
-.gameboy, .gameboyadvance, .gameboycolor, .gamegear, .gizmondo, .intellivision, .ios, .linux, .mac, .mastersystem, .megadrive, .memotechmtx, .miniaturewargames, .msx, .msx2, .music, .necturbografx-16, .neogeopocket, .nes, .newnintendo3ds, .nintendo3ds, .nintendo64,
-.nintendods, .nintendogamecube, .windows, .pc95, .pcxp, .penandpaperrpg, .phonepda, .pico, .playstation1, .playstation2, .playstation3, .playstation4, .playstationonpsp, .playstationportable, .playstationvita, .pokemonmini, .retro-other, .samcoupe, .saturn, .sg-1000, .snes, .snkneogeopocket, .supernes, .switch,  
-.taitotypex, .tandycolor, .tangerineoric, .thomsonm05, .turbografx, .v.smile, .vectrex, .virtualboy, .watarasupervision, .wii, .wiiu, .wiivc, .wiiware, .wonderswan, .xbla, .xbox, .xbox360, .xboxon360, .zxspectrum,
-.ex-bgfullsets, .psonpsp, .ex-bgcollections, .bandaiwonderswancolor, .generalcomputervectrex, .cats_guides, .cats_ebooks, .cats_applications, .cats_ost {
-	background: url('icon/caticons_sprite.png') no-repeat scroll top left transparent;
+
+.\33 do,
+.amstradcpc,
+.android,
+.applebandaipippin,
+.apps,
+.atari2600,
+.atari5200,
+.atari7800,
+.atarijaguar,
+.atarilynx,
+.atarist,
+.bandaiwonderswan,
+.bandaiwonderswancolor,
+.boardgame,
+.cardgame,
+.casioloopy,
+.casiopv-1000,
+.colecovision,
+.commodore64,
+.commodoreamiga,
+.commodoreplus-4,
+.commodorevic-20,
+.creativision,
+.dos,
+.dreamcast,
+.dsiware,
+.dvd,
+.ebook,
+.emersonarcadia2001,
+.entexadventurevision,
+.epochsupercasettevision,
+.ex-bgcollections,
+.ex-bgfullsets,
+.ex-bggoldens,
+.fairchildchannelf,
+.funtechsuperacan,
+.game\.com,
+.game.com,
+.gameboy,
+.gameboyadvance,
+.gameboycolor,
+.gamecom,
+.gamegear,
+.gameparkgp32,
+.generalcomputervectrex,
+.hartungamemaster,
+.intellivision,
+.interactivedvd,
+.ios,
+.linux,
+.mac,
+.magnavox-phillipsodyssey,
+.mastersystem,
+.mattelintellivision,
+.megadrive,
+.memotechmtx,
+.milesgordonsamcoupe,
+.miniaturewargames,
+.msx,
+.msx2,
+.music,
+.necpc-fx,
+.necsupergrafx,
+.necturbografx-16,
+.nes,
+.newnintendo3ds,
+.newnintendo3dsvc,
+.nintendo3ds,
+.nintendo3dsvc,
+.nintendo64,
+.nintendods,
+.nintendogamecube,
+.nokian-gage,
+.penandpaperrpg,
+.philipsvideopac,
+.philipsvideopac\+,
+.phonepda,
+.pico,
+.playstation1,
+.playstation2,
+.playstation3,
+.playstation4,
+.playstationportable,
+.playstationvita,
+.pokemonmini,
+.psonpsp,
+.psponps3,
+.rcastudioii,
+.retro-other,
+.saturn,
+.sg-1000,
+.sharpx1,
+.sharpx68000,
+.snkneogeo,
+.snkneogeopocket,
+.snes,
+.supernes,
+.switch,
+.taitotypex,
+.tandycolorcomputer,
+.tangerineoric,
+.thomsonmo5,
+.turbografx,
+.vectrex,
+.virtualboy,
+.v\.smile,
+.watarasupervision,
+.wii,
+.wiiu,
+.wiiuvc,
+.wiivc,
+.wiiware,
+.windows,
+.windows95,
+.windowsxp,
+.wonderswan,
+.xbla,
+.xbox,
+.xbox360,
+.xboxon360,
+.zxspectrum,
+.cats_guides,
+.cats_ebooks,
+.cats_applications,
+.cats_ost {
     background-size: 28px;
     height:28px;
 	width: 28px;
     background-repeat: no-repeat !important;
     background-position: center !important;}
 
-.amstradcpc{
-	background: url(icon/cpc56.png);
-	background-size: 28px;}
-.android{
-	background: url(icon/android56.png);
-	background-size: 28px;}
-.applebandaipippin{
-	background: url(icon/PIPPIN56.png);
-	background-size: 28px;}
-.apps{ background-position: 0 -58px;  }
-.atari2600{
-	background: url(icon/atari2600_56.png);
-	background-size: 28px;}
-.atari5200{
-	background: url(icon/atari5200_56.png);
-	background-size: 28px;}
-.atari7800{
-	background: url(icon/atari7800_56.png);
-	background-size: 28px;}
-.atarijaguar{
-	background: url(icon/jaguar56.png);
-	background-size: 28px;}
-.atarilynx{
-	background: url(icon/lynx56.png);
-	background-size: 28px;}
-.atarist{
-	background: url(icon/atarist56.png);
-	background-size: 28px;}
-.boardgame{
-	background: url(icon/board56.png);
-	background-size: 28px;}
-.cardgame{
-	background: url(icon/card56.png);
-	background-size: 28px;}
-.colecovision{ background-position: 0 -290px;  }
-.commodore128{
-	background: url(icon/c128_56.png);
-	background-size: 28px;}
-.commodore64{
-	background: url(icon/c64_56.png);
-	background-size: 28px;}
-.commodoreamiga{
-	background: url(icon/amiga56.png);
-	background-size: 28px;}
-.commodoreplus-4{
-	background: url(icon/cplus4_56.png);
-	background-size: 28px;}
-.commodorevic-20{
-	background: url(icon/vic20_56.png);
-	background-size: 28px;}
-.creativision{
-	background: url(icon/creativision56.png);
-	background-size: 28px;}
-.dos{
-	background: url(icon/msdos56.png);
-	background-size: 28px;}
-.dreamcast{
-	background: url(icon/dreamcast56.png);
-	background-size: 28px;}
-.dsiware{ background-position: 0 -377px;  }
-.dvd{ background-position: 0 -406px;  }
-.interactivedvd{
-	background: url(icon/interactivedvd56.png);
-	background-size: 28px;}
-.ebook{ background-position: 0 -435px;  }
-.fairchildchannelf{ background-position: 0 -464px;  }
-div[class="game.com"]{
-	background: url(icon/gamecom56.png);
-	background-size: 28px;
-	height: 28px;
-	width: 28px;
-	position: absolute;
-	margin-top: -12px;}
-.gameboy{
-	background: url(icon/gameboy56.png);
-	background-size: 28px;}
-.gameboyadvance{
-	background: url(icon/gba56.png);
-	background-size: 28px;}
-.gameboycolor{
-	background: url(icon/gameboycolor56.png);
-	background-size: 28px;}
-.gamegear{
-	background: url(icon/gamegear56.png);
-	background-size: 28px;}
-.gizmondo{
-	background: url(icon/gizmondo56.png);
-	background-size: 28px;}
-.intellivision{ background-position: 0 -609px;  }
-.ios{
-	background: url(icon/ios56.png);
-	background-size: 28px;}
-.linux{
-	background: url(icon/linux56.png);
-	background-size: 28px;}
-.mac{
-	background: url(icon/macos56.png);
-	background-size: 28px;}
-.mastersystem{
-	background: url(icon/segams56.png);
-	background-size: 28px;}
-.megadrive{
-	background: url(icon/md56.png);
-	background-size: 28px;}
-.memotechmtx{ background-position: 0 -783px;  }
-.msx{
-	background: url(icon/msx56.png);
-	background-size: 28px;}
-.msx2{
-	background: url(icon/msx2_56.png);
-	background-size: 28px;}
-.music{
-	background: url(icon/music56.png);
-	background-size: 28px;}
-.neogeopocket{ background-position: 0 -899px;  }
-.nes{
-	background: url(icon/nes56.png);
-	background-size: 28px;}
-.nintendo3ds{
-	background: url(icon/3ds56.png);
-	background-size: 28px;}
-.nintendo64{
-	background: url(icon/n64_56.png);
-	background-size: 28px;}
-.nintendods{
-	background: url(icon/ds56.png);
-	background-size: 28px;}
-.nintendogamecube{
-	background: url(icon/gamecube56.png);
-	background-size: 28px;}
-.windows{
-	background: url(icon/windows56.png);
-	background-size: 28px;}
-.pc95{ background-position: 0 -1102px;  }
-.pcxp{ background-position: 0 -1131px;  }
-.phonepda{ background-position: 0 -1160px;  }
-.pico{
-	background: url(icon/pico56.png);
-	background-size: 28px;}
-.playstation1{
-	background: url(icon/ps1_56.png);
-	background-size: 28px;}
-.playstation2{
-	background: url(icon/ps2_56.png);
-	background-size: 28px;}
-.playstation3{
-	background: url(icon/ps3_56.png);
-	background-size: 28px;}
-.playstationonpsp{ background-position: 0 -1276px;  }
-.playstationportable{
-	background: url(icon/psp56.png);
-	background-size: 28px;}
-.playstationvita{
-	background: url(icon/vita56.png);
-	background-size: 28px;}
-.pokemonmini{
-	background: url(icon/mini56.png);
-	background-size: 28px;}
-.samcoupe{ background-position: 0 -1363px;  }
-.saturn{
-	background: url(icon/saturn56.png);
-	background-size: 28px;}
-.sg-1000{
-	background: url(icon/svg/sg-1000.svg);}
-.snkneogeopocket{
-    background: url(icon/svg/snkneogeopocket.svg)}
-.supernes{ background-position: 0 -1421px;  }
-.taitotypex{ background-position: 0 -1450px;  }
-.tandycolor{ background-position: 0 -1479px;  }
-.tangerineoric{ background-position: 0 -1508px;  }
-.thomsonm05{ background-position: 0 -1537px;  }
-.turbografx{ background-position: 0 -1566px;  }
-.vectrex{ background-position: 0 -1595px;  }
-.virtualboy{
-	background: url(icon/virtualboy56.png);
-	background-size: 28px;}
-.watarasupervision{ background-position: 0 -1653px;  }
-.wii{
-	background: url(icon/wii56.png);
-	background-size: 28px;}
-.wiivc{ background-position: 0 -1711px;  }
-.wiiware{ background-position: 0 -1740px;  }
-.wonderswan{ background-position: 0 -1769px;  }
-.xbla{ background-position: 0 -1798px;  }
-.xbox{
-	background: url(icon/xbox56.png);
-	background-size: 28px;}
-.xbox360{
-	background: url(icon/xbox360_56.png);
-	background-size: 28px;}
-.xboxon360{ background-position: 0 -1885px;  }#
-.ex-bgfullsets{ background-position: 0 -1968px; }
-.psonpsp{ background-position: 0 -1912px; }
-.ex-bgcollections{ background-position: 0 -1941px; }
-.bandaiwonderswancolor{ background-position: 0 -2055px; }
-.generalcomputervectrex{ background-position: 0 -1996px; }
-.psponps3{ background-position: 0 -2081px; }
-.wiiu{
-	background: url(icon/wiiu56.png);
-	background-size: 28px;}
-.snes{
-	background: url(icon/snes56.png);
-	background-size: 28px;}
-.playstation4 {
-	background: url(icon/ps4_56.png);
-	background-size: 28px;}
-.penandpaperrpg {
-	background: url(icon/d20_56.png);
-	background-size: 28px;}
-.newnintendo3ds {
-	background: url(icon/new3ds56.png);
-	background-size: 28px;}
-.retro-other {
-    background: url(icon/retroother56.png);
-    background-size: 28px;}
-.necturbografx-16 {
-	background: url(icon/turbografx16.png);  }
 .\33 do {
-	background: url(icon/3do56.png);
-	background-size: 28px;}
-.switch {
-    background: url(icon/switch56.png);
-    background-size: 28px;}
-.zxspectrum {
-    background: url(icon/zxspectrum56.png);
-    background-size: 28px;}
+    background: url(icon/svg/3do.svg);}
+.amstradcpc {
+    background: url(icon/svg/amstradcpc_dark.svg);}
+.android {
+    background: url(icon/svg/android.svg);}
+.applebandaipippin {
+    background: url(icon/svg/applebandaipippin.svg);}
+.apps {
+    background: url();}
+.atari2600 {
+    background: url(icon/svg/atari2600.svg);}
+.atari5200 {
+    background: url(icon/svg/atari5200.svg);}
+.atari7800 {
+    background: url(icon/svg/atari7800.svg);}
+.atarijaguar {
+    background: url(icon/svg/atarijaguar.svg);}
+.atarilynx {
+    background: url(icon/lynx56.png);}
+.atarist {
+    background: url(icon/svg/atarist_dark.svg);}
+.bandaiwonderswan,
+.wonderswan {
+    background: url(icon/svg/bandaiwonderswan.svg);}
+.bandaiwonderswancolor {
+    background: url(icon/svg/bandaiwonderswancolor.svg);}
+.boardgame {
+    background: url(icon/svg/boardgame.svg);}
+.cardgame {
+    background: url(icon/svg/cardgame.svg);}
+.casioloopy {
+    background: url(icon/svg/casioloopy.svg);}
+.casiopv-1000 {
+    background: url(icon/svg/casiopv-1000.svg);}
+.colecovision {
+    background: url(icon/svg/colecovision.svg);}
+.commodore64 {
+    background: url(icon/svg/commodore64.svg);}
+.commodoreamiga {
+    background: url(icon/svg/commodoreamiga.svg);}
+.commodoreplus-4 {
+    background: url(icon/svg/commodoreplus-4.svg);}
+.commodorevic-20 {
+    background: url(icon/vic20_56.png);}
+.creativision {
+    background: url(icon/svg/creativision.svg);}
+.dos {
+    background: url(icon/svg/dos.svg);}
+.dreamcast {
+    background: url(icon/svg/dreamcast.svg);}
+.dsiware {
+    background: url();}
+.dvd {
+    background: url();}
+.ebook {
+    background: url(icon/svg/ebook.svg);}
+.emersonarcadia2001 {
+    background: url(icon/svg/emersonarcadia2001.svg);}
+.entexadventurevision {
+    background: url(icon/svg/entexadventurevision.svg);}
+.epochsupercasettevision {
+    background: url(icon/svg/epochsupercasettevision.svg);}
+.ex-bgcollections {
+    background: url();}
+.ex-bgfullsets {
+    background: url();}
+.ex-bggoldens {
+    background: url();}
+.fairchildchannelf {
+    background: url(icon/svg/fairchildchannelf_dark.svg);}
+.funtechsuperacan {
+    background: url(icon/svg/funtechsuperacan.svg);}
+.game\.com,
+.game.com,
+.gamecom {
+    background: url(icon/gamecom56_2.png);}
+.gameboy {
+    background: url(icon/svg/gameboy.svg);}
+.gameboyadvance {
+    background: url(icon/svg/gameboyadvance.svg);}
+.gameboycolor {
+    background: url(icon/svg/gameboycolor_dark.svg);}
+.gamegear {
+    background: url(icon/svg/gamegear_dark.svg);}
+.gameparkgp32 {
+    background: url(icon/svg/gameparkgp32.svg);}
+.generalcomputervectrex {
+    background: url(icon/svg/generalcomputervectrex.svg);}
+.hartungamemaster {
+    background: url(icon/svg/hartunggamemaster.svg);}
+.intellivision {
+    background: url(icon/svg/interactivedvd.svg);}
+.interactivedvd {
+    background: url(icon/svg/interactivedvd.svg);}
+.ios {
+    background: url(icon/svg/ios.svg);}
+.linux {
+    background: url(icon/svg/linux.svg);}
+.mac {
+    background: url(icon/svg/mac.svg);}
+.magnavox-phillipsodyssey {
+    background: url(icon/svg/magnavox-phillipsodyssey.svg);}
+.mastersystem {
+    background: url(icon/svg/mastersystem.svg);}
+.mattelintellivision {
+    background: url(icon/svg/mattelintellivision.svg);}
+.megadrive {
+    background: url(icon/md56.png);}
+.memotechmtx {
+    background: url(icon/svg/memotechmtx.svg);}
+.milesgordonsamcoupe {
+    background: url(icon/svg/milesgordonsamcoupe.svg);}
 .miniaturewargames {
-    background: url(icon/miniwargames56.png);
-    background-size: 28px;}
-div[class="v.smile"]{
-    background: url(icon/vsmile56.png);
-    background-size: 28px;
-    height: 28px;
-    width: 28px;
-    position: absolute;
-    margin-top: -12px;}
-.cats_guides, .cats_ebooks {
-    background-image:url('icon/ebook56.png');}
-.cats_applications {
-    background-image:url('icon/app56.png');}
+    background: url(icon/svg/miniaturewargames.svg);}
+.msx {
+    background: url(icon/svg/msx.svg);}
+.msx2 {
+    background: url(icon/svg/msx2.svg);}
+.music,
 .cats_ost {
-    background-image:url('icon/music56.png');}
+    background: url(icon/music56.png);}
+.necpc-fx {
+    background: url(icon/svg/necpc-fx.svg);}
+.necsupergrafx {
+    background: url(icon/svg/necsupergrafx.svg);}
+.necturbografx-16 {
+    background: url(icon/svg/necturbografx-16.svg);}
+.nes {
+    background: url(icon/svg/nes_dark.svg);}
+.newnintendo3ds {
+    background: url(icon/svg/newnintendo3ds_dark.svg);}
+.newnintendo3dsvc {
+    background: url();}
+.nintendo3ds {
+    background: url(icon/svg/nintendo3ds_dark.svg);}
+.nintendo3dsvc {
+    background: url();}
+.nintendo64 {
+    background: url(icon/svg/nintendo64.svg);}
+.nintendods {
+    background: url(icon/svg/nintendods.svg);}
+.nintendogamecube {
+    background: url(icon/svg/nintendogamecube.svg);}
+.nokian-gage {
+    background: url(icon/svg/nokian-gage_dark.svg);}
+.penandpaperrpg {
+    background: url(icon/svg/penandpaperrpg.svg);}
+.philipsvideopac {
+    background: url();}
+.philipsvideopac\+ {
+    background: url(icon/svg/philipsvideopac+.svg);}
+.phonepda {
+    background: url(icon/svg/phonepda.svg);}
+.pico {
+    background: url(icon/svg/pico.svg);}
+.playstation1 {
+    background: url(icon/svg/playstation.svg);}
+.playstation2 {
+    background: url(icon/svg/playstation2.svg);}
+.playstation3 {
+    background: url(icon/svg/playstation3.svg);}
+.playstation4 {
+    background: url(icon/svg/playstation4.svg);}
+.playstationportable {
+    background: url(icon/svg/playstationportable.svg);}
+.playstationvita {
+    background: url(icon/svg/playstationvita.svg);}
+.pokemonmini {
+    background: url(icon/svg/pokemonmini.svg);}
+.psonpsp {
+    background: url();}
+.psponps3 {
+    background: url();}
+.rcastudioii {
+    background: url(icon/svg/rcastudioii_dark.svg);}
+.retro-other {
+    background: url(icon/svg/retro-other.svg);}
+.saturn {
+    background: url(icon/svg/saturn.svg);}
+.sg-1000 {
+    background: url(icon/svg/sg-1000.svg);}
+.sharpx1 {
+    background: url(icon/svg/sharpx1.svg);}
+.sharpx68000 {
+    background: url(icon/svg/sharpx68000.svg);}
+.snkneogeo {
+    background: url(icon/svg/snkneogeo.svg);}
+.snkneogeopocket {
+    background: url(icon/svg/snkneogeopocket.svg);}
+.snes,
+.supernes {
+    background: url(icon/svg/snes.svg);}
+.switch {
+    background: url(icon/svg/switch.svg);}
+.taitotypex {
+    background: url(icon/svg/taitotypex.svg);}
+.tandycolorcomputer {
+    background: url(icon/svg/tandycolorcomputer.svg);}
+.tangerineoric {
+    background: url(icon/svg/tangerineoric_dark.svg);}
+.thomsonmo5 {
+    background: url(icon/svg/thomsonmo5.svg);}
+.turbografx {
+    background: url();}
+.vectrex {
+    background: url(icon/svg/vec);}
+.virtualboy {
+    background: url(icon/svg/virtualboy.svg);}
+.v\.smile {
+    background: url(icon/svg/v.smile_dark.svg);}
+.watarasupervision {
+    background: url(icon/svg/watarasupervision_dark.svg);}
+.wii {
+    background: url(icon/svg/wii.svg);}
+.wiiu {
+    background: url(icon/svg/wiiu_dark.svg);}
+.wiiuvc {
+    background: url();}
+.wiivc {
+    background: url();}
+.wiiware {
+    background: url();}
+.windows {
+    background: url(icon/svg/windows.svg);}
+.windows95 {
+    background: url();}
+.windowsxp {
+    background: url();}
+.xbla {
+    background: url();}
+.xbox {
+    background: url(icon/xbox56.png);}
+.xbox360 {
+    background: url(icon/xbox360_56.png);}
+.xboxon360 {
+    background: url();}
+.zxspectrum {
+    background: url(icon/svg/zxspectrum.svg);}
+.cats_guides,
+.cats_ebooks {
+    background: url(icon/svg/ebook.svg);}
+.cats_applications {
+    background: url(icon/svg/applications.svg);}
+
+.boardgame,
+.cardgame,
+.gameboy,
+.gameboyadvance,
+.generalcomputervectrex,
+.interactivedvd,
+.ios,
+.mac,
+.mattelintellivision,
+.memotechmtx,
+.miniaturewargames,
+.necturbografx-16,
+.nintendods,
+.penandpaperrpg,
+.playstation2,
+.playstation3,
+.playstation4,
+.playstationportable,
+.playstationvita,
+.sharpx1,
+.sharpx68000,
+.snkneogeo,
+.thomsonmo5,
+.wii {
+    filter: brightness(20%);}
+/* don't forget :hover */
 
 td.cats_col {
 	min-width: 28px;
