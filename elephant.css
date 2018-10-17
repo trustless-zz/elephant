@@ -1389,6 +1389,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .casioloopy,
 .casiopv-1000,
 .colecovision,
+.commodore128,
 .commodore64,
 .commodoreamiga,
 .commodoreplus-4,
@@ -1416,7 +1417,9 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .gamegear,
 .gameparkgp32,
 .generalcomputervectrex,
+.gizmondo,
 .hartungamemaster,
+.hartunggamemaster,
 .intellivision,
 .interactivedvd,
 .ios,
@@ -1433,6 +1436,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .msx2,
 .music,
 .necpc-fx,
+.necpc-98,
 .necsupergrafx,
 .necturbografx-16,
 .nes,
@@ -1541,6 +1545,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url(icon/svg/casiopv-1000.svg);}
 .colecovision {
     background: url(icon/svg/colecovision.svg);}
+.commodore128 {
+    background: url(icon/svg/commodore128.svg);}
 .commodore64 {
     background: url(icon/svg/commodore64.svg);}
 .commodoreamiga {
@@ -1593,7 +1599,10 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url(icon/svg/gameparkgp32.svg);}
 .generalcomputervectrex {
     background: url(icon/svg/generalcomputervectrex.svg);}
-.hartungamemaster {
+.gizmondo {
+    background-image: url(icon/gizmondo56.png);}
+.hartungamemaster,
+.hartunggamemaster {
     background: url(icon/svg/hartunggamemaster.svg);}
 .intellivision {
     background: url(icon/svg/interactivedvd.svg);}
@@ -1628,6 +1637,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background-image: url(icon/music56.png);}
 .necpc-fx {
     background: url(icon/svg/necpc-fx.svg);}
+.necpc-98 {
+    background: url(icon/svg/necpc-98.svg);}
 .necsupergrafx {
     background: url(icon/svg/necsupergrafx.svg);}
 .necturbografx-16 {
@@ -1760,6 +1771,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .mattelintellivision,
 .memotechmtx,
 .miniaturewargames,
+.necpc-98,
 .necturbografx-16,
 .nintendods,
 .penandpaperrpg,
