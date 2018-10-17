@@ -1565,8 +1565,6 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url();}
 .dvd {
     background: url();}
-.ebook {
-    background: url(icon/svg/ebook.svg);}
 .emersonarcadia2001 {
     background: url(icon/svg/emersonarcadia2001.svg);}
 .entexadventurevision {
@@ -1634,7 +1632,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url(icon/svg/msx2.svg);}
 .music,
 .cats_ost {
-    background-image: url(icon/music56.png);}
+    background: url(icon/svg/music.svg);}
 .necpc-fx {
     background: url(icon/svg/necpc-fx.svg);}
 .necpc-98 {
@@ -1755,13 +1753,17 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .zxspectrum {
     background: url(icon/svg/zxspectrum.svg);}
 .cats_guides,
-.cats_ebooks {
+.cats_ebooks,
+.ebook {
     background: url(icon/svg/ebook.svg);}
 .cats_applications {
     background: url(icon/svg/applications.svg);}
 
 .boardgame,
 .cardgame,
+.cats_guides,
+.cats_ebooks,
+.ebook,
 .gameboy,
 .gameboyadvance,
 .generalcomputervectrex,
@@ -1771,6 +1773,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .mattelintellivision,
 .memotechmtx,
 .miniaturewargames,
+.music,
+.cats_ost,
 .necpc-98,
 .necturbografx-16,
 .nintendods,
@@ -3169,7 +3173,40 @@ span.size5 img {float: right;}
     -ms-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -o-filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 3px rgba(232,80,102,1));}
-.tilt.Discogs:hover, .tilt.GamesWebsite:hover, .tilt.GOG:hover, .tilt.Steam:hover {
+.tilt.Discogs:hover,
+.tilt.GamesWebsite:hover,
+.tilt.GOG:hover,
+.tilt.Steam:hover,
+#linkedgroup.boardgame:hover,
+#linkedgroup.cardgame:hover,
+#linkedgroup.cats_guides:hover,
+#linkedgroup.cats_ebooks:hover,
+#linkedgroup.ebook:hover,
+#linkedgroup.gameboy:hover,
+#linkedgroup.gameboyadvance:hover,
+#linkedgroup.generalcomputervectrex:hover,
+#linkedgroup.interactivedvd:hover,
+#linkedgroup.ios:hover,
+#linkedgroup.mac:hover,
+#linkedgroup.mattelintellivision:hover,
+#linkedgroup.memotechmtx:hover,
+#linkedgroup.miniaturewargames:hover,
+#linkedgroup.music:hover,
+#linkedgroup.cats_ost:hover,
+#linkedgroup.necpc-98:hover,
+#linkedgroup.necturbografx-16:hover,
+#linkedgroup.nintendods:hover,
+#linkedgroup.penandpaperrpg:hover,
+#linkedgroup.playstation2:hover,
+#linkedgroup.playstation3:hover,
+#linkedgroup.playstation4:hover,
+#linkedgroup.playstationportable:hover,
+#linkedgroup.playstationvita:hover,
+#linkedgroup.sharpx1:hover,
+#linkedgroup.sharpx68000:hover,
+#linkedgroup.snkneogeo:hover,
+#linkedgroup.thomsonmo5:hover,
+#linkedgroup.wii:hover {
     -webkit-filter: brightness(20%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: brightness(20%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: brightness(20%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -3679,7 +3716,7 @@ textarea#quickpost {
     float: left;
     margin-left: 5px;
     margin-top: 2px;
-    height: 16px; /* own posts have a 15px height instead of 16px for some reason */}
+    min-height: 16px; /* own posts have a 15px height instead of 16px for some reason */}
 
 form textarea, form input {
     max-width: 100%;

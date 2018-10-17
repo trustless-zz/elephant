@@ -3528,7 +3528,7 @@ textarea#quickpost {
     float: left;
     margin-left: 5px;
     margin-top: 2px;
-    height: 16px; /* own posts have a 15px height instead of 16px for some reason */}
+    min-height: 16px; /* own posts have a 15px height instead of 16px for some reason */}
 
 div#coverart {
     margin: 10px 0 10px 0;
