@@ -1745,9 +1745,9 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .xbla {
     background: url();}
 .xbox {
-    background-image: url(icon/xbox56.png);}
+    background: url(icon/svg/xbox.svg);}
 .xbox360 {
-    background-image: url(icon/xbox360_56.png);}
+    background: url(icon/svg/xbox360.svg);}
 .xboxon360 {
     background: url();}
 .zxspectrum {
@@ -6564,6 +6564,11 @@ img[src="static/common/thumbsdown.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/thumbsdown.svg');}
+img[src="static/styles/game_room/images/upvote.png"] {
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/upvote.svg');}
 
 #user .box.box_info span[style="float:right;"] {
     position: absolute;

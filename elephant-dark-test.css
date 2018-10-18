@@ -6414,6 +6414,11 @@ img[src="static/common/thumbsdown.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/thumbsdown.svg');}
+img[src="static/styles/game_room/images/upvote.png"] {
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/upvote.svg');}
 
 #user .box.box_info span[style="float:right;"] {
     position: absolute;
