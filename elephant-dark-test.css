@@ -3462,6 +3462,7 @@ ul#categories {
     padding: 4px;
     text-align: center;
     width: auto;
+    margin: -10px 0 20px 0; /* may cause overlapping */
 }
 
 #torrents .save_message {
@@ -6517,6 +6518,8 @@ ul[class="collage_images"] {
     display: none;}
 #userhistory table[id^="post"] {
     box-shadow: 0 0 30px #000;}
+#forum_search_cat_list[class="cat_list layout"] {
+    box-shadow: none !important;}
 
 
 /* widescreen */
