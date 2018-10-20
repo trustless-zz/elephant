@@ -6090,7 +6090,8 @@ ul#items_list li.no_items {
 .inventory table#item_search td {
     border: none !important;}
 
-/* forum 403 error message */
+/* error message */
+#torrents #wrapper #content > .thin > .box.pad:nth-child(2),
 #forums #wrapper #content > .thin > .box.pad:nth-child(2) {
     background: none;
     box-shadow: none;
