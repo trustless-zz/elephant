@@ -3339,12 +3339,22 @@ span.italic {
 }
 
 .sidebar #freeleech li.group_torrent {
-    width: auto;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     font-size: 9pt;
-}
+    width: max-content;
+    padding: 2px 0 4px 0;}
+#index .sidebar ul.stats.nobullet {
+    overflow: hidden;}
+#index .sidebar ul.stats.nobullet .platform {
+    float: left;
+    padding: 0 3px;}
+#index .sidebar #freeleech li.group_torrent >a {
+    display: block;}
+#index .sidebar #freeleech span.tor_size {
+    float: left;
+    padding-right: 3px;}
+#index .sidebar #freeleech li.group_torrent >span:first-child {
+    float: left;}
 
 .box.box_freeleech .body {
     text-align: center;
@@ -6348,8 +6358,6 @@ marquee {
 .sidebar #freeleech span.platform, .sidebar #freeleech span.tor_info {
     font-size: 8pt;
     color: rgb(150,150,150);}
-.sidebar #freeleech span.tor_info {
-    float: left;}
 
 #torrents #requests tbody tr.colhead td {
     position: relative;}
