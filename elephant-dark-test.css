@@ -6158,15 +6158,6 @@ ul#items_list li.no_items {
     top: 0;
     left: 0;
     position: absolute;}
-.sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover {
-    outline: 2px solid rgba(105, 105, 105, 1);
-    transition: 0.05s;}
-.sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img {
-    outline: 2px solid rgba(105, 105, 105, 0);
-    transition: 0.05s;
-    cursor: pointer;}
-#torrents .sidebar .box.box_albumart img, #collections .sidebar .box.box_albumart img, #requests .sidebar .box.box_albumart img {
-    outline-offset: -2px;}
 
 #requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover, #torrents #collages >tbody >tr:nth-child(n+2):hover, #forums tr[class^="row"]:hover {
     outline: 1px solid rgba(105, 105, 105, 1);
@@ -6698,7 +6689,7 @@ ul[class="collage_images"] {
 #forums input[value="Editor"] {
     margin-right: 3px;}
 
-#userhistory .linkbox {
+#userhistory .linkbox:nth-of-type(1) {
     margin: -16px 0 12px 0;}
 #userhistory .linkbox >br:nth-of-type(2) {
     display: none;}
@@ -6764,6 +6755,25 @@ ul[class="collage_images"] {
     margin-left: -172.4px;
     border-left: 1px solid #303030;
     border-bottom: 1px solid #303030;}
+#torrents .screenshots >a:hover img {
+    transform: scale(1.03);
+    transition: 0.2s;}
+#torrents .screenshots >a:hover img,
+.sidebar .box.box_albumart:hover img {
+	-webkit-transform:scale(1.03);
+	-moz-transform:scale(1.03);
+	-ms-transform:scale(1.03);
+	-o-transform:scale(1.03);
+	transform:scale(1.03);
+    transition: 0.2s;}
+.sidebar .box.box_albumart:hover {
+    background: rgba(232,80,102,1) !important;
+    cursor: pointer;}
+#torrents .box_albumart p {
+    margin-bottom: 38px;}
+.sidebar .box.box_albumart img {
+    padding: 150px !important;
+    margin: -150px !important;}
 
 
 /* widescreen */
