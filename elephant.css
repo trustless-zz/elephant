@@ -6116,10 +6116,10 @@ ul#items_list li.no_items {
     position: absolute;}
 .screenshots a img {
     min-width: 24.5% !important;}
-.sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, .screenshots img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover {
+.sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover {
     outline: 2px solid rgba(150, 150, 150, 1);
     transition: 0.05s;}
-.sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, .screenshots img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img {
+.sidebar .box.box_albumart img, #index .sidebar #dailygazelle img, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img {
     outline: 2px solid rgba(150, 150, 150, 0);
     transition: 0.05s;
     cursor: pointer;}
@@ -6408,6 +6408,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
 	overflow: hidden;
 	position: relative;}
+#torrents .screenshots >a:hover,
 #collections ul.collage_images li >a:hover {
 	background: rgba(232,80,102,1);}
 
@@ -6644,6 +6645,7 @@ ul[class="collage_images"] {
     justify-content: center;
     overflow: hidden;
     position: relative;}
+#torrents .screenshots >a,
 #collections ul li[class^="image"] {
     border: 1px solid #DBDBDB;
     padding: 5px;
@@ -6673,6 +6675,19 @@ ul[class="collage_images"] {
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
 #forum_search_cat_list[class="cat_list layout"] {
     box-shadow: none !important;}
+
+#torrents .box.screenshots_div >.body {
+    padding: 0px !important;}
+#torrents .screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 1px !important;}
+#torrents .screenshots >a {
+    width: 232px;
+    height: auto;}
+#torrents  .screenshots a img {
+    max-width: 100% !important;
+    height: auto;}
 
 
 /* widescreen */
