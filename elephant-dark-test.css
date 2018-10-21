@@ -3653,7 +3653,7 @@ ul#categories {
     padding: 4px;
     text-align: center;
     width: auto;
-    margin: -10px 0 20px 0; /* may cause overlapping */
+    /* margin: -10px 0 20px 0; may cause overlapping */
 }
 
 #torrents .save_message {
