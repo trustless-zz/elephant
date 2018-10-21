@@ -6114,8 +6114,6 @@ ul#items_list li.no_items {
     top: 0;
     left: 0;
     position: absolute;}
-.screenshots a img {
-    min-width: 24.5% !important;}
 .sidebar .box.box_albumart img:hover, #index .sidebar #dailygazelle img:hover, #index .sidebar #slides .slides_container.staff_pick .slides_control ul.nobullet img:hover {
     outline: 2px solid rgba(150, 150, 150, 1);
     transition: 0.05s;}
@@ -6683,7 +6681,7 @@ ul[class="collage_images"] {
     flex-wrap: wrap;
     padding: 0px 0px 0px 1px !important;}
 #torrents .screenshots >a {
-    width: 232px;
+    width: 207px;
     height: auto;}
 #torrents  .screenshots a img {
     max-width: 100% !important;
@@ -6692,6 +6690,8 @@ ul[class="collage_images"] {
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#torrents .screenshots >a {
+    width: 232px;}
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 972px;}
 #collections ul.collage_images li {
