@@ -3354,27 +3354,14 @@ li#stats_hnr {
 
 .similar ul {
     list-style: none;
-    max-height: 238px;
     margin: 0px;
     padding: 0px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-.similar .similar_group>a img {
-    width: 100%;
-    height: 186.093px;
-    padding: 0 1px;
-}
-
 .similar li.similar_group {
-    display: block;
-    width: 19%;
-    min-width: 130px;
-    margin: 0px .5% 5px;
-    padding: 0px!important;
-    float: left;
-}
+    padding: 0px!important;}
 
 .similar li#suggested_header {
     clear: left;
@@ -3383,7 +3370,8 @@ li#stats_hnr {
     height: 25px;
     left: 0.9%;
     position: relative;
-}
+    width: 100%;
+    padding-top: 10px;}
 
 #color_leeching, #color_leeching .torrent_info_tags, #color_leeching a {color: #e03854 !important;}
 #color_seeding, #color_seeding .torrent_info_tags, #color_seeding a {
@@ -6180,14 +6168,6 @@ ul#items_list li.no_items {
 #torrents .sidebar .box.box_albumart img, #collections .sidebar .box.box_albumart img, #requests .sidebar .box.box_albumart img {
     outline-offset: -2px;}
 
-.similar_group>a img {
-    transition: 0.05s;
-    outline: 2px solid rgba(232,80,102,0);
-    outline-offset: -2px;}
-.similar_group>a img:hover {
-    outline: 2px solid rgba(232,80,102,1);
-    outline-offset: -2px;
-    transition: 0.05s;}
 #requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover, #torrents #collages >tbody >tr:nth-child(n+2):hover, #forums tr[class^="row"]:hover {
     outline: 1px solid rgba(105, 105, 105, 1);
     outline-offset: -1px;}
@@ -6461,6 +6441,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
 	overflow: hidden;
 	position: relative;}
+#torrents li.similar_group >a:hover,
 #torrents .screenshots >a:hover,
 #collections ul.collage_images li >a:hover {
 	background: rgba(232,80,102,1);}
@@ -6694,6 +6675,7 @@ ul[class="collage_images"] {
     justify-content: center;
     overflow: hidden;
     position: relative;}
+#torrents li.similar_group >a,
 #torrents .screenshots >a,
 #collections ul li[class^="image"] {
     border: 1px solid #303030;
@@ -6738,12 +6720,68 @@ ul[class="collage_images"] {
     max-width: 100% !important;
     height: auto;}
 
+#torrents .box.screenshots_div >.body {
+    padding: 0px !important;}
+#torrents .box.similar_div ul.nobullet,
+#torrents #vote_matches ul.nobullet,
+#torrents .screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 1px !important;}
+#torrents .screenshots >a {
+    width: 207px;
+    height: auto;}
+#torrents  .screenshots a img {
+    max-width: 100% !important;
+    height: auto;}
+
+#torrents .body.similar {
+    padding: 0px !important;}
+#torrents .box.similar_div ul.nobullet, 
+#torrents #vote_matches ul.nobullet{
+    width: 872px;
+    max-height: 355px;}
+#torrents li.similar_group {
+    display: flex;}
+#torrents .box.similar_div li.similar_group {
+    padding-bottom: 38px !important;}
+#torrents li.similar_group >a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 160.4px;}
+#torrents li.similar_group >a img {
+    width: 100%;
+    height: auto;}
+#torrents .similar_votes {
+    position: relative;
+    max-height: 18px;
+    width: 171.4px;
+    padding: 3px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    bottom: -100%;
+    margin-left: -172.4px;
+    border-left: 1px solid #303030;
+    border-bottom: 1px solid #303030;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#torrents li.similar_group >a {
+    width: 180.4px;}
+#torrents .similar_votes {
+    width: 191.4px;
+    margin-left: -192.4px;}
 #torrents .screenshots >a {
     width: 232px;}
-#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
+#torrents .box.similar_div ul.nobullet, 
+#torrents #vote_matches ul.nobullet{
+    max-height: 385px;}
+#torrents .box.similar_div ul.nobullet, 
+#torrents #vote_matches ul.nobullet,
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before,
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 972px;}
 #collections ul.collage_images li {
     width: 183.6px;}
@@ -6811,10 +6849,6 @@ ul#items_list:before {
     left: 0px;}
 .inventory #content li.item_li {
     width: 410px;}
-.similar .similar_group > a img {
-    height: 230px;}
-.similar ul {
-    max-height: 285px;}
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
     max-width: 1100px !important;}
 #torrents .save_message {
