@@ -1,0 +1,6 @@
+	1.
+#index .staff_pick img
+&
+#index #dailygazelle img
+
+to have their own containers

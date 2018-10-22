@@ -786,10 +786,16 @@ width:100%;
 	background: none;
 }
 
+#index #dailygazelle .head.colhead_dark {
+    z-index: 99;
+    position: relative;
+    background-color: #94a6b1 !important;}
 #index .sidebar div#dailygazelle img {
     width: 280px;
     display: block !important;
-    height: auto;}
+    height: auto;
+    z-index: 1;
+    position: relative;}
 
 .staff_pick_head {
 	font-family: adelle, sans-serif;
@@ -838,7 +844,9 @@ width:100%;
     font-style: italic;
     font-weight: bold;
     margin-top: 5px;
-    font-size: 11pt;}
+    font-size: 11pt;
+    position: relative;
+    background: white;}
 .sidebar #slides ul a {
     /* width: 285px;; */
     /* white-space: nowrap; */
@@ -2989,7 +2997,10 @@ span.size5 img {float: right;}
 #dailygazelle #gazelletitle {
     display: block;
     text-align: center;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 99;
+    background: white;}
 
 /*Platform linking cleanup*/
 #grouplinks {
@@ -6662,7 +6673,8 @@ ul[class="collage_images"] {
     padding: 0px 0px 0px 1px !important;}
 #torrents .screenshots >a {
     width: 207px;
-    height: auto;}
+    height: auto;
+    overflow: hidden;}
 #torrents  .screenshots a img {
     max-width: 100% !important;
     height: auto;}
