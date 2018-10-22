@@ -7006,7 +7006,7 @@ div#searchbars {
 
 
 /* individual game styles wip */
-.series_885 #logo, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"], .series_196 #logo, .series_169 #logo, .series_58 #logo, .series_52 #logo, .series_179 #logo, .series_211 #logo, .series_22 #logo, .series_15 #logo, .series_208 #logo, .series_178 #logo, 
+.master_2639 #logo, .tgroup_6526 #logo, .series_885 #logo, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"], .series_196 #logo, .series_169 #logo, .series_58 #logo, .series_52 #logo, .series_179 #logo, .series_211 #logo, .series_22 #logo, .series_15 #logo, .series_208 #logo, .series_178 #logo, 
 .tgroup_24482 #logo, .tgroup_24230 #logo, .tgroup_23617 #logo, .series_31 #logo, .series_191 #logo, .master_465 #logo, .tgroup_5993 #logo, .tgroup_8046 #logo, .series_70 #logo, .franchise_53 #logo, 
 .series_19 #logo, .series_65 #logo, .series_827 #logo, .series_183 #logo, .series_26 #logo, .series_327 #logo, .series_291 #logo, .franchise_55 #logo, .series_896 #logo, .master_2940 #logo, 
 .franchise_360 #logo, .series_857 #logo, .series_198 #logo, .alpacas #logo, .daftpunk #logo, .series_555 #logo, .series_279 #logo, .series_188 #logo, .series_177 #logo, .series_184 #logo, 
@@ -7021,7 +7021,7 @@ div#searchbars {
 	transition:none;
 	box-shadow: inset 0 0 30px #000;
 	transition: box-shadow 0.15s;}
-.series_885 #logo:hover, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"]:hover, .series_196 #logo:hover, .series_169 #logo:hover, .series_58 #logo:hover, .series_52 #logo:hover, .series_179 #logo:hover, .series_211 #logo:hover, .series_22 #logo:hover, .series_15 #logo:hover, .series_208 #logo:hover, .series_178 #logo:hover, 
+.master_2639 #logo:hover, .tgroup_6526 #logo:hover, .series_885 #logo:hover, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"]:hover, .series_196 #logo:hover, .series_169 #logo:hover, .series_58 #logo:hover, .series_52 #logo:hover, .series_179 #logo:hover, .series_211 #logo:hover, .series_22 #logo:hover, .series_15 #logo:hover, .series_208 #logo:hover, .series_178 #logo:hover, 
 .tgroup_24482 #logo:hover, .tgroup_24230 #logo:hover, .tgroup_23617 #logo:hover, .series_31 #logo:hover, .series_191 #logo:hover, .master_465 #logo:hover, .tgroup_5993 #logo:hover, .tgroup_8046 #logo:hover, .series_70 #logo:hover, .franchise_53 #logo:hover, 
 .series_19 #logo:hover, .series_65 #logo:hover, .series_827 #logo:hover, .series_183 #logo:hover, .series_26 #logo:hover, .series_327 #logo:hover, .series_291 #logo:hover, .franchise_55 #logo:hover, .series_896 #logo:hover, .master_2940 #logo:hover, 
 .franchise_360 #logo:hover, .series_857 #logo:hover, .series_198 #logo:hover, .alpacas #logo:hover, .daftpunk #logo:hover, .series_555 #logo:hover, .series_279 #logo:hover, .series_188 #logo:hover, .series_177 #logo:hover, .series_184 #logo:hover, 
@@ -7032,7 +7032,7 @@ div#searchbars {
 	transform: rotate(0deg);
 	box-shadow: inset 0 0 45px #000;
 	transition: box-shadow 0.15s;}
-.series_885 #logo a, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"] a, .series_196 #logo a, .series_169 #logo a, .series_58 #logo a, .series_52 #logo a, .series_179 #logo a, .series_211 #logo a, .series_22 #logo a, .series_15 #logo a, .series_208 #logo a, .series_178 #logo a, 
+.master_2639 #logo a, .tgroup_6526 #logo a, .series_885 #logo a, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"] a, .series_196 #logo a, .series_169 #logo a, .series_58 #logo a, .series_52 #logo a, .series_179 #logo a, .series_211 #logo a, .series_22 #logo a, .series_15 #logo a, .series_208 #logo a, .series_178 #logo a, 
 .tgroup_24482 #logo a, .tgroup_24230 #logo a, .tgroup_23617 #logo a, .series_31 #logo a, .series_191 #logo a, .master_465 #logo a, .tgroup_5993 #logo a, .tgroup_8046 #logo a, .series_70 #logo a, .franchise_53 #logo a, 
 .series_19 #logo a, .series_65 #logo a, .series_827 #logo a, .series_183 #logo a, .series_26 #logo a, .series_327 #logo a, .series_291 #logo a, .franchise_55 #logo a, .series_896 #logo a, .master_2940 #logo a, 
 .franchise_360 #logo a, .series_857 #logo a, .series_198 #logo a, .alpacas #logo a, .daftpunk #logo a, .series_555 #logo a, .series_279 #logo a, .series_188 #logo a, .series_177 #logo a, .series_184 #logo a, 
@@ -7043,6 +7043,10 @@ div#searchbars {
 	opacity: 0;
 	transition:none;}
 @-webkit-keyframes logoslide {from {background-position: 0 0;} to {background-position: calc(100% - 164px) 0;}}
+.master_2639 #logo {
+	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/stellarislogo.png'), url(logo/alt-logo-30p.png);}
+.tgroup_6526 #logo {
+	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/androidlogo.png'), url(logo/alt-logo-30p.png);}
 .series_885 #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/mirrorsedgelogo.png'), url(logo/alt-logo-30p.png);}
 #logo[style^="background: url('https://ptpimg.me/t475s2.png')"] {
