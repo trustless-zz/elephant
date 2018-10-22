@@ -3598,14 +3598,18 @@ ul, ol {
     max-width: 100%;
 }
 
+#gazelleview #titlerow {
+    height: 45px;
+    background-color: rgba(42,79,101,0.5);}
 #gazelleview #titlerow p {
-    font-size: 1.8em;
-    font-weight: bold;
     text-align: center;
-    border-bottom: 1px solid white;
-    margin-bottom: 5px;
-    padding: 0px;
-}
+    font-family: adelle, sans-serif;
+    font-size: 16pt;
+    font-weight: normal !important;
+    margin-top: 1px;}
+#gazelleview .gazellepic #imgrow >td {
+    margin: 0px;
+    padding: 0px 0px 45px 0px;}
 
 #items_navigation {
     width: 200px;
