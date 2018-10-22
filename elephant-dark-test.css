@@ -6770,6 +6770,7 @@ ul[class="collage_images"] {
 #torrents .screenshots >a:hover img {
     transform: scale(1.03);
     transition: 0.2s;}
+.sidebar div#dailygazelle img:hover,
 .sidebar .staff_pick ul.nobullet img:hover,
 #torrents .screenshots >a:hover img,
 .sidebar .box.box_albumart:hover img {
@@ -6778,6 +6779,7 @@ ul[class="collage_images"] {
 	-ms-transform:scale(1.03);
 	-o-transform:scale(1.03);
 	transform:scale(1.03);}
+.sidebar div#dailygazelle img,
 .sidebar .staff_pick ul.nobullet img,
 #torrents .screenshots >a img,
 .sidebar .box.box_albumart img {
