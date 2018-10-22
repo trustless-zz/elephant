@@ -787,15 +787,24 @@ width:100%;
 #slides img {
     width: auto;
     height: 250px;
-    max-width: 270px !important;
+    max-width: 280px !important;
 }
 
+/* there's no separate container for img, will have to use background-image for :hover instead */
 #index .sidebar div#dailygazelle img {
-    width: 270px;
-    margin: 10px auto;
+    width: 280px;
+    padding: 10px;
+    margin: auto;
     display: block !important;
-    height: auto;
-}
+    height: auto;}
+#index .slides_control ul.nobullet img {
+    padding: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;}
+#index .sidebar div#dailygazelle img:hover,
+#index .slides_control ul.nobullet img:hover {
+    background-image: url(hover_background.svg);
+    cursor: pointer;}
 
 #index #wrapper #content .thin .sidebar .box .colhead_dark {
 	background: none;
