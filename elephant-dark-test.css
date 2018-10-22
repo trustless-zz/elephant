@@ -855,6 +855,9 @@ width:100%;
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     margin-top: 2px;}
 .sidebar #slides ul.nobullet li.center[style="display: block;"] a {
     width: 285px;
@@ -6758,13 +6761,17 @@ ul[class="collage_images"] {
 #torrents .screenshots >a:hover img {
     transform: scale(1.03);
     transition: 0.2s;}
+.sidebar .staff_pick ul.nobullet img:hover,
 #torrents .screenshots >a:hover img,
 .sidebar .box.box_albumart:hover img {
 	-webkit-transform:scale(1.03);
 	-moz-transform:scale(1.03);
 	-ms-transform:scale(1.03);
 	-o-transform:scale(1.03);
-	transform:scale(1.03);
+	transform:scale(1.03);}
+.sidebar .staff_pick ul.nobullet img,
+#torrents .screenshots >a img,
+.sidebar .box.box_albumart img {
     transition: 0.2s;}
 .sidebar .box.box_albumart:hover {
     background: rgba(232,80,102,1) !important;
@@ -6774,6 +6781,10 @@ ul[class="collage_images"] {
 .sidebar .box.box_albumart img {
     padding: 150px !important;
     margin: -150px !important;}
+
+.lightbox img {
+    max-height: 100%;
+	max-width: 100%;}
 
 
 /* widescreen */
