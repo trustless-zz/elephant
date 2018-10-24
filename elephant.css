@@ -959,7 +959,10 @@ width:100%;
 .rowa {
 	background: #ffffff;}
 
-.rowb, #torrents #collages >tbody >tr:nth-child(even) {
+.rowb, 
+#torrents #collages >tbody >tr:nth-child(even),
+#torrents div[id^="peers_"] tbody >tr:nth-child(even),
+#torrents .filelist_table tbody >tr:nth-child(even) {
 	background: #e7e7e7;}
 
 .forum_index tbody {
@@ -6119,7 +6122,15 @@ ul#items_list li.no_items {
     left: 0;
     position: absolute;}
 
-#requests .thin >table.border >tbody >tr[class^="row"]:hover, #artist #requests >tbody >tr[class^="row"]:hover, #torrents #requests #requests_list tr[class^="requestrows row"]:hover, #user #requests tr[class^="row"]:hover, #torrents #collages >tbody >tr:nth-child(n+2):hover, #forums tr[class^="row"]:hover {
+#requests .thin >table.border >tbody >tr[class^="row"]:hover, 
+#artist #requests >tbody >tr[class^="row"]:hover, 
+#torrents #requests #requests_list tr[class^="requestrows row"]:hover, 
+#user #requests tr[class^="row"]:hover, 
+#torrents #collages >tbody >tr:nth-child(n+2):hover, 
+#forums tr[class^="row"]:hover, 
+#torrents div[id^="peers_"] tbody >tr:nth-child(n+2):hover,
+#torrents .filelist_table tbody >tr:nth-child(n+2):hover,
+#torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover {
     outline: 1px solid rgba(150, 150, 150, 1);
     outline-offset: -1px;}
 
@@ -6519,7 +6530,12 @@ marquee {
 #torrents #requests #requests_list >tbody >tr:first-child >td {
     font-size: 12pt;
     text-align: unset;}
-#artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), #torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), #torrents #collages >tbody >tr:nth-child(n+2) >td:nth-child(2) {
+#artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), 
+#torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), 
+#torrents #collages >tbody >tr:nth-child(n+2) >td:nth-child(2),
+#torrents div[id^="peers_"] tbody >tr:nth-child(n+2) >td:nth-child(n+2),
+#torrents .filelist_table >tbody >tr:nth-child(n+2) >td:nth-child(n+2),
+#torrents div[id^="history"] form table.border tbody tr[class^="row"] {
     border-left: 1px solid #aaaaaa;}
 #torrents #requests #requests_list tr[class^="requestrows row"] td:first-child, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) {
     overflow: hidden;}
@@ -6765,6 +6781,15 @@ ul[class="collage_images"] {
     display: none;}
 .profile .box_art_gallery .gallery_row {
     overflow-x: scroll !important;}
+
+a[onclick^="show_reported"] {
+    text-shadow: #ff0000 0 0 7px;}
+.reportinfo_table {
+    border: 1px solid #ff0000;}
+#torrents div[id^="peers_"] >table,
+#torrents .filelist_table,
+#torrents div[id^="history"] >form >table.border {
+    border: 1px solid #aaaaaa;}
 
 
 /* widescreen */
