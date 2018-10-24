@@ -6737,6 +6737,30 @@ ul[class="collage_images"] {
     max-height: 100%;
 	max-width: 100%;}
 
+#forums .thin .sub:nth-child(3) {
+    position: absolute;
+    margin-top: -18px;}
+.user_offline {
+    display: block;
+    color: #bf6a6a;}
+.user_online {
+	display: block;
+    color: #69c077;}
+#user .thin >form[action="user.php"][method="get"] ~br ~.box.pad.center {
+    box-shadow: none;
+    background: none;
+    overflow: visible;
+    margin-top: 7px;}
+#user .thin >h3:nth-child(1) {
+    font-family: whitney, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;}
+#user .thin >h3:nth-child(1) ~.linkbox {
+    padding: 3px;}
+#user .thin >h3:nth-child(1) ~.linkbox ~form[action="user.php"][method="get"] >table tbody tr td {
+    border: none;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {

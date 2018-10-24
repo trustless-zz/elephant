@@ -1,6 +1,17 @@
-	1.
-#index .staff_pick img
-&
-#index #dailygazelle img
+1.
+	#index .staff_pick
+	&
+	#index #dailygazelle
 
-to have their own containers
+	imgs to have their own containers
+
+
+2.
+	#collections .hovereffect .collection_art
+
+	to have images being applied through HTML 'img' instead of CSS 'background-image'
+
+3.
+	#index #markread
+
+	to be beside .head instead of being inside
