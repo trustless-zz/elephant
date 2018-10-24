@@ -6857,6 +6857,8 @@ a[onclick^="show_reported"] {
 #torrents .filelist_table,
 #torrents div[id^="history"] >form >table.border {
 	border: 1px solid #555555;}
+#low_seed_fl_more {
+    text-align: center;}
 
 
 /* widescreen */
