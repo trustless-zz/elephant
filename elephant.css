@@ -6761,6 +6761,11 @@ ul[class="collage_images"] {
 #user .thin >h3:nth-child(1) ~.linkbox ~form[action="user.php"][method="get"] >table tbody tr td {
     border: none;}
 
+#user .ps-scrollbar-x-rail {
+    display: none;}
+.profile .box_art_gallery .gallery_row {
+    overflow-x: scroll !important;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
