@@ -5020,13 +5020,12 @@ button.submit {
 #user .box_gold td.label {text-align:center; box-shadow: none; max-width: 100%; width: 100%;}
 
 /*Recent Liks, Snatches, Uploads*/
-#snatchesrow td, #uploadsrow td, #likesrow td {	
-	width: 19.5%;}
-#snatchesrow img, #uploadsrow img, #likesrow img {	
-    min-width: 97%;
+#snatchesrow img, #uploadsrow img, #likesrow img {
+    width: 163.6px;
     height: auto;
-	margin: 1px 0px;
-	padding: 0 1px;}
+    padding: 5px;
+    align-self: center;
+    margin-right: -1px;}
 
 
 /****Reviews****/
@@ -5109,7 +5108,7 @@ button.submit {
 /* #torrents .linkbox {margin: 10px;} */
 #user #crafting_panel h2 {font-family: whitney, sans-serif; font-size: 16pt; font-weight: bold;}
 #user #equipment h2 {font-family: whitney, sans-serif; font-size: 16pt; font-weight: bold;}
-#user h2 {font-family: whitney, sans-serif; font-size: 16pt; font-weight: bold;}
+#user h2 {font-family: whitney, sans-serif; font-size: 16pt; font-weight: bold;width: 100%;}
 
 #user .save_message {bottom: 16px; position: relative;}
 #wiki .sidebar .box {margin-bottom: 15px;}
@@ -5786,9 +5785,9 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #inbox .linkbox a {cursor: pointer;}
 #user .thin.profile div h2#username span.username_badges {margin-left: 5px;}
 #user .thin.profile div h2#username span.user_title span span marquee {
-    max-width: max-content;
-    vertical-align: middle;
-    margin-top: -2px;}
+    max-width: 60%;
+    /* vertical-align: middle;
+    margin-top: -2px; */}
 
 
 #forums .thin .box.pad form#newthreadform table#newthreadtext tbody tr td textarea#posttext {
@@ -6293,30 +6292,6 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 
 .body.similar ul.nobullet li span.similar_votes {
     position:relative;}
-/* #uploadsrow #snatchesrow #likesrow has to have pseudo elements instead of +padding/-margin because of user review pop-up positioning */
-.body.similar ul.nobullet li span.similar_votes a[title="Mark as similar"]:after,
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:before, 
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:after, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
-    content: "";
-    position: absolute;
-    width:100%;
-    height:100%;
-    left: 0px;
-    top: 0px;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:before, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:before, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:before {
-    z-index: -1;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:after, 
-.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:after, 
-.box.box_likes.box_torrents div #likesrow >tbody >tr >td a:after {
-    z-index: 1;}
-.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover:before, .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover:before, .box.box_likes.box_torrents div #likesrow >tbody >tr >td> a:hover:before {
-    background: rgba(232,80,102,1);}
 
 .box.similar_div .head span.flright {
     margin-top: 2px;}
@@ -6458,7 +6433,11 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td, 
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
 	overflow: hidden;
-	position: relative;}
+	position: relative;
+    padding: 0px;}
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover,
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover,
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td a:hover,
 #torrents li.similar_group >a:hover,
 #torrents .screenshots >a:hover,
 #collections ul.collage_images li >a:hover {
@@ -6491,10 +6470,16 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     position: relative;
     overflow: hidden;
     z-index: -2;}
-#recommended #vanityhouse tbody tr td a:nth-child(1), 
+#recommended #vanityhouse tbody tr td a:nth-child(1),
 #collections ul.collage_images li >a {
 	padding: 500px;
 	margin: -500px;}
+.box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a, 
+.box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a, 
+.box.box_likes.box_torrents div #likesrow >tbody >tr >td a {
+    display: grid;
+    width: 100%;
+    height: 100%;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):before {
 	content: "";
 	width: 100%;
@@ -6865,6 +6850,7 @@ a[onclick^="show_reported"] {
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before,
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 972px;}
+#snatchesrow img, #uploadsrow img, #likesrow img,
 #collections ul.collage_images li {
     width: 183.6px;}
 #recommended #vanityhouse tbody tr td a img {
