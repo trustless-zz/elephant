@@ -6690,10 +6690,12 @@ ul[class="collage_images"] {
 #torrents .screenshots >a {
     width: 207px;
     height: auto;
-    overflow: hidden;}
-#torrents  .screenshots a img {
+    overflow: hidden;
+    display: grid;}
+#torrents .screenshots a img {
     max-width: 100% !important;
-    height: auto;}
+    height: auto;
+    align-self: center;}
 
 #torrents .body.similar {
     padding: 0px !important;}
@@ -6706,13 +6708,12 @@ ul[class="collage_images"] {
 #torrents .box.similar_div li.similar_group {
     padding-bottom: 38px !important;}
 #torrents li.similar_group >a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     width: 160.4px;}
 #torrents li.similar_group >a img {
     width: 100%;
-    height: auto;}
+    height: auto;
+    align-self: center;}
 #torrents .similar_votes {
     position: relative;
     max-height: 18px;

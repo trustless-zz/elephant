@@ -15,3 +15,8 @@
 	#index #markread
 
 	to be beside .head instead of being inside
+
+4.
+	#forums .forum_index .forum_index tr[class^="row"] >td:nth-child(3) .last_topic a
+
+	text legth limit to be managed with 'text-overflow' instead of being predetermined
