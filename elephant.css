@@ -6235,6 +6235,14 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     background-color: rgb(37, 92, 124);}
 .body.similar ul.nobullet li span.similar_votes a {
     color: white !important;}
+.body.similar ul.nobullet li span.similar_votes a[href*="?action=add"] {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 3px);
+    padding-top: 3px;}
 .body.similar ul.nobullet li span.similar_votes:hover{
 	background: radial-gradient(circle, rgba(232,80,102,1) 0%,rgba(37, 92, 124, 1) 100%);}
 
