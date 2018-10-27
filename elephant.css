@@ -148,10 +148,9 @@ overflow: auto;
 }
 
 #header {
-	width: 1400px;
-	margin-left: -210px;
-	height: 193px;
-}
+	width: calc(100% + 250px) !important;
+    margin-left: -210px !important;
+    height: 193px !important;}
 
 #header #alerts {
 	position:absolute;
@@ -6794,6 +6793,8 @@ a[onclick^="show_reported"] {
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#user .inventory .save_message {
+    width: 100%;}
 #torrents li.similar_group >a {
     width: 180.4px;}
 #torrents .similar_votes {
@@ -7194,3 +7195,5 @@ div#searchbars {
 /* disabling custom user backgrounds for now */
 #user[style^="background: url('http"] {
     background: inherit !important;}
+
+@import url(https://gazellegames.net/static/styles/game_room/holidayeffects.css);
