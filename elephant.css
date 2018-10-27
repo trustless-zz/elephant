@@ -3851,19 +3851,19 @@ td.label {
 }
 
 .alertable-cancel {
-    border: solid 1px #ddd;
     background: white;
     font-family: inherit;
     font-size: inherit;
     color: #000;
     border-radius: 0px;
-    padding: 6px 12px;
+    padding: 6px 12px !important;
     margin-left: 4px;
     cursor: pointer;
-}
-.alertable-cancel:hover, .alertable-cancel:focus, .alertable-cancel:active {
-    background-color: white;
-}
+    border: solid 1px rgb(196, 196, 196) !important;}
+.alertable-cancel:hover {
+    background: white !important;
+    border: solid 1px rgb(51, 51, 51) !important;
+    padding: 6px 12px !important;}
 
 .alertable-ok {
     background-color: rgb(37, 92, 124);
@@ -3872,10 +3872,10 @@ td.label {
     font-family: inherit;
     font-size: inherit;
     border-radius: 0px;
-    padding: 6px 12px;
+    padding: 7px 13px;
     margin-left: 4px;
     cursor: pointer;
-}
+    border: none;}
 
 .ui-dialog .ui-dialog-content {
     background-color: white;
@@ -4544,7 +4544,8 @@ button.submit {
 	margin: 0;
 	padding: 0;
 	font-size: 35px;
-	font-family: "Comic Sans MS",helvetica,sans-serif;
+	/* font-family: "Comic Sans MS",helvetica,sans-serif; */
+    font-family: whitney, sans-serif;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
 	color: #19ea19;
@@ -5448,7 +5449,10 @@ input[type="submit"], input[type="button"], button[type="button"] {
     border: none;
     padding: 3px 8px 3px 8px;
     /* transition: 0.05s; */ }
-input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover {
+.alertable-ok:hover,
+input[type="submit"]:hover, 
+input[type="button"]:hover, 
+button[type="button"]:not([title="Close"]):hover {
     background: radial-gradient(circle, rgba(232,80,102,1) 0%,rgba(37, 92, 124, 1) 100%);
     /* transition: 0.05s; */ }
 
@@ -6573,7 +6577,7 @@ img[src="static/styles/game_room/images/upvote.png"] {
 #user .box.box_info span[style="float:right;"] {
     position: absolute;
     width: 100%;
-    left: 55px;
+    left: 65px;
     z-index: 1;}
 #user .box.box_info span[style="float:right;"] >a {
     margin: 0px !important;
