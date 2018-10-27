@@ -4804,7 +4804,7 @@ button.submit {
 .inventory .top_linkbox {display: none;}
 .inventory .bottom_linkbox {
 	clear: both;
-	color: #fff; 
+	color: rgb(196,196,196); 
 	margin-left: 220px;}
 
 .inventory .trash_icon {padding: 3px;}

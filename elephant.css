@@ -4752,7 +4752,7 @@ button.submit {
 .inventory .top_linkbox {display: none;}
 .inventory .bottom_linkbox {
 	clear: both;
-	color: #fff; 
+	color: black; 
 	margin-left: 220px;}
 
 .inventory .trash_icon {padding: 3px;}
