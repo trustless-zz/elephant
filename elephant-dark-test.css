@@ -6896,7 +6896,10 @@ a[onclick^="show_reported"] {
 
 #forums td {
     text-align: center;}
-#forums #content table tr.colhead td {
+#forums #content table tr.colhead td,
+#forums h4,
+#forums .forum_post .colhead_dark td,
+#forums td.body {
     text-align: left;}
 #forums td[style="width:14%;"] {
     text-align: center !important;}
@@ -6904,10 +6907,6 @@ a[onclick^="show_reported"] {
     text-align: center !important;}
 #forums td[style="width:7%;"] {
     text-align: center !important;}
-#forums h4 {
-    text-align: left;}
-#forums .forum_post .colhead_dark td {
-    text-align: left;}
 
 
 /* widescreen */
