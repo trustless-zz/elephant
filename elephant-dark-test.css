@@ -6904,6 +6904,8 @@ a[onclick^="show_reported"] {
     text-align: center !important;}
 #forums td[style="width:7%;"] {
     text-align: center !important;}
+#forums h4 {
+    text-align: left;}
 
 
 /* widescreen */
