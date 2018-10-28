@@ -6859,6 +6859,8 @@ a[onclick^="show_reported"] {
     text-align: center !important;}
 #forums h4 {
     text-align: left;}
+#forums .forum_post .colhead_dark td {
+    text-align: left;}
 
 
 /* widescreen */
