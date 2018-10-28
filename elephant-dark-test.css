@@ -2029,8 +2029,8 @@ td.cats_col {
 .torrent_table a.addbookmark {
     background: url("icon/svg/addbookmark.svg");
     height: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     padding-bottom: 3px;
     display: block;
     padding-left: 16px;
@@ -2043,8 +2043,8 @@ td.cats_col {
 .torrent_table a.removebookmark {
     background: url("icon/svg/bookmarked_light.svg");
     height: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     padding-bottom: 3px;
     display: block;
     padding-left: 16px;
@@ -3847,19 +3847,13 @@ div#threadpoll {
 
 .sticky #displayname:before {
     content: "";
-    background-size: cover;
-    height: 12px;
-    width: 12px;
+    height: 16px;
+    width: 13.255px;
+    background: url("icon/svg/sticky.svg");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     display: inline-block;
-    margin-right: 2px;
-    filter: drop-shadow(1px 1px 1px #000);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    background-image: radial-gradient(rgb(106, 84, 102) 20%, rgb(237, 81, 102) 40%);
-}
+    margin: -2px 2px -2px 0px;}
 
 td.label {
     text-align: right;
