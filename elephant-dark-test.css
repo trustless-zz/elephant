@@ -6899,7 +6899,8 @@ a[onclick^="show_reported"] {
 #forums #content table tr.colhead td,
 #forums h4,
 #forums .forum_post .colhead_dark td,
-#forums td.body {
+#forums td.body,
+.forumstat {
     text-align: left;}
 #forums td[style="width:14%;"] {
     text-align: center !important;}
@@ -6907,6 +6908,9 @@ a[onclick^="show_reported"] {
     text-align: center !important;}
 #forums td[style="width:7%;"] {
     text-align: center !important;}
+.forum_post tr,
+tr.likes td {
+    text-align: left !important;}
 
 
 /* widescreen */
