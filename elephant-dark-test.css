@@ -969,7 +969,9 @@ width:100%;
 .rowb, 
 #torrents #collages >tbody >tr:nth-child(even),
 #torrents div[id^="peers_"] tbody >tr:nth-child(even),
-#torrents .filelist_table tbody >tr:nth-child(even) {
+#torrents .filelist_table tbody >tr:nth-child(even),
+#existing_freeleech_pots .row_b,
+#running_freeleech .group_torrent.row_b {
 	background: #181818;}
 
 .forum_index tbody {
@@ -1045,13 +1047,11 @@ h2 {
 
 }
 
-#forums > #wrapper > #content > .thin table tr td:nth-child(3) {
-	text-align: left;
-}
+/* #forums > #wrapper > #content > .thin table tr td:nth-child(3) {
+	text-align: left;} */
 
 #forum_index .colhead td:nth-child(3) {
-	text-align: left;
-}
+	text-align: left;}
 
 .forum_post tbody tr td {
 	padding-left: 0px;
@@ -2027,14 +2027,26 @@ td.cats_col {
 }
 
 .torrent_table a.addbookmark {
-    background-image: url("icon/bookmarks-16.png");
+    background: url("icon/svg/bookmark.svg");
+    height: 16px;
     background-repeat: no-repeat;
-    color: rgba(0,0,0,0) !important;
+    background-position: center;
     padding-bottom: 3px;
     display: block;
-    text-indent: -1200px;
     padding-left: 16px;
-}
+    text-indent: -1200px;
+    -webkit-filter: brightness(77%);
+    -moz-filter: brightness(77%);
+    -ms-filter: brightness(77%);
+    -o-filter: brightness(77%);
+    filter: brightness(77%);}
+.torrent_table a.addbookmark:hover {
+    -webkit-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -moz-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -ms-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    -o-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
+    filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));}
+
 .torrent_info_tags strong {
 	/* color: #4a7a2c; */
 }
@@ -6060,20 +6072,29 @@ span.user_title span[style="font-family: cursive;"] {
 #forums .forum_post .colhead_dark span.user_title strong span[style=" text-shadow: 3px 3px 1px black;"] marquee {
     margin-top: -4px;}
 
-#top10 tr[class^="group_torrent"], #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"] {
-    transition: 0.05s;}
-#torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover, #collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover, #artist #torrent_table >tbody >tr:nth-child(n+2):hover{
+#torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover,
+#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
+#collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover,
+#artist #torrent_table >tbody >tr:nth-child(n+2):hover{
     box-shadow: inset 0.5px 0.5px 0px 1px rgba(105, 105, 105, 1);}
-#top10 tr[class^="group_torrent"]:hover, #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover {
-    box-shadow: inset 0.5px 0.5px 0px 1.5px rgba(105, 105, 105, 1);
-    transition: 0.05s;}
+#running_freeleech >tbody tr[class^="group_torrent row_"]:hover,
+#top10 tr[class^="group_torrent"]:hover,
+#torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover,
+#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover {
+    box-shadow: inset 0.5px 0.5px 0px 1.5px rgba(105, 105, 105, 1);}
 
-#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td strong, #top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td[style="text-align:right"] {
+#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td strong,
+#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td[style="text-align:right"],
+#running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong {
     font-family: neuzite, sans-serif;
     font-size: 10pt;
     font-weight: normal;}
-#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td strong span#groupplatform, #top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td strong a {
-    font-weight: bold;}
+#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td strong a,
+#running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a {
+    font-family: neuzite, sans-serif;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #d5b09a;}
 #top10 #wrapper #content .thin.top10_games table.border {
     box-shadow: 0 0 30px #000;}
 #top10 #wrapper #content .thin.top10_games table.border tbody .colhead td:nth-child(3) {
@@ -6169,10 +6190,9 @@ ul#items_list li.no_items {
     padding: 9px 10px 8px 10px;}
 .trailer {
     position: relative;
-    padding-bottom: 52.525% !important;
+    padding-bottom: 466.06249px !important;
     padding-top: 25px !important;
-    height: 0;
-    margin: 10px 10px 15px 10px;}
+    height: 0;}
 .trailer iframe {
     width: 100%;
     height: 100%;
@@ -6188,7 +6208,8 @@ ul#items_list li.no_items {
 #forums tr[class^="row"]:hover, 
 #torrents div[id^="peers_"] tbody >tr:nth-child(n+2):hover,
 #torrents .filelist_table tbody >tr:nth-child(n+2):hover,
-#torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover {
+#torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
+#existing_freeleech_pots >tbody >tr[class^="row_"]:hover {
     outline: 1px solid rgba(105, 105, 105, 1);
     outline-offset: -1px;}
 
@@ -6618,7 +6639,8 @@ img[src="static/common/symbols/warned.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/warned.svg');}
-img[src="static/common/thumbsup.png"], img[src="static//common/thumbsup.png"] {
+img[src="static/common/thumbsup.png"],
+img[src="static//common/thumbsup.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/thumbsup.svg');}
@@ -6626,11 +6648,32 @@ img[src="static/common/thumbsdown.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/thumbsdown.svg');}
-img[src="static/styles/game_room/images/upvote.png"] {
+img[alt="Up Votes"][title="Up Votes"],
+img[alt="User Ratings"][title="User Ratings"] {
     height: 16px;
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/upvote.svg');}
+img[alt="Down Votes"][title="Down Votes"] {
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/downvote.svg');}
+img[alt="Leechers"][title="Leechers"] {
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/leechers.svg');}
+img[alt="Seeders"][title="Seeders"] {
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/seeders.svg');}
+img[alt="Snatches"][title="Snatches"]
+    height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/snatched.svg');}
 
 #user .box.box_info span[style="float:right;"] {
     position: absolute;
@@ -6843,9 +6886,30 @@ a[onclick^="show_reported"] {
 #low_seed_fl_more {
     text-align: center;}
 
+#collections ul.collage_images li >a >div {
+    width: calc(100% - 10px) !important;}
+#collections ul.collage_images li >a:hover >div {
+    color: rgb(196,196,196);}
+
+#user .box_publickey #keydiv {
+    text-align: center;}
+
+#forums td {
+    text-align: center;}
+#forums #content table tr.colhead td {
+    text-align: left;}
+#forums td[style="width:14%;"] {
+    text-align: center !important;}
+#forums td[style="width:9%;"] {
+    text-align: center !important;}
+#forums td[style="width:7%;"] {
+    text-align: center !important;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+.trailer {
+    padding-bottom: 522.31249px !important;}
 #user .inventory .save_message {
     width: 100%;}
 #torrents li.similar_group >a {
