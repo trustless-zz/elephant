@@ -6669,7 +6669,7 @@ img[alt="Seeders"][title="Seeders"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/seeders.svg');}
-img[alt="Snatches"][title="Snatches"]
+img[alt="Snatches"][title="Snatches"] {
     height: 15px;
     background-repeat: no-repeat;
     background-position: center;
