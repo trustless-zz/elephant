@@ -2027,7 +2027,7 @@ td.cats_col {
 }
 
 .torrent_table a.addbookmark {
-    background: url("icon/svg/bookmark.svg");
+    background: url("icon/svg/addbookmark.svg");
     height: 16px;
     background-repeat: no-repeat;
     background-position: center;
@@ -2040,12 +2040,17 @@ td.cats_col {
     -ms-filter: brightness(77%);
     -o-filter: brightness(77%);
     filter: brightness(77%);}
-.torrent_table a.addbookmark:hover {
-    -webkit-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
-    -moz-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
-    -ms-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
-    -o-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
-    filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));}
+.torrent_table a.removebookmark {
+    background: url("icon/svg/bookmarked_light.svg");
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 3px;
+    display: block;
+    padding-left: 16px;
+    text-indent: -1200px;}
+.torrent_table a.removebookmark:hover {
+    background: url("icon/svg/removebookmark_light.svg");}
 
 .torrent_info_tags strong {
 	/* color: #4a7a2c; */
@@ -3182,7 +3187,7 @@ span.size5 img {float: right;}
     -ms-transition: 0.1s;
     -o-transition: 0.1s;
     transition: 0.1s;}
-.ratings:hover, .tilt:hover, #torrents .body.center.userratingdiv .vote:hover, #linkedgroup:hover {
+.ratings:hover, .tilt:hover, #torrents .body.center.userratingdiv .vote:hover, #linkedgroup:hover, .torrent_table a.removebookmark:hover {
     -webkit-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -3247,7 +3252,8 @@ span.size5 img {float: right;}
 #linkedgroup.sharpx68000:hover,
 #linkedgroup.snkneogeo:hover,
 #linkedgroup.thomsonmo5:hover,
-#linkedgroup.wii:hover {
+#linkedgroup.wii:hover,
+.torrent_table a.addbookmark:hover {
     -webkit-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: brightness(77%) drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -6943,6 +6949,7 @@ tr.likes td {
     width: 1300px;}
 #upload .thin div {
 	width: 1300px !important;}
+.torrent_table a.removebookmark,
 .torrent_table a.addbookmark {
     text-indent: -1300px;}
 ul#items_list, .inventory #items_list {
