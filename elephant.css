@@ -6461,7 +6461,6 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     position: relative;
     overflow: hidden;
     z-index: -2;}
-.collage tbody tr td a,
 #recommended #vanityhouse tbody tr td a:nth-child(1),
 #collections ul.collage_images li >a {
 	padding: 500px;
@@ -6896,20 +6895,28 @@ tr.likes td {
     padding: 38px 0 !important;
     height: 100%;
     display: block;}
-.collage tbody tr td:not([colspan="5"]) {
+#bookmarks .collage >tbody >tr {
+    margin-right: -1px;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;}
+#collage_table >tbody >tr:nth-child(n+2) {
+    margin-top: -1px;}
+#bookmarks .collage tbody tr td:first-child {
+    padding-left: 1px;}
+#bookmarks .collage tbody tr td {
+    text-align: center;
+    overflow: hidden;
+    display: grid;}
+#bookmarks .collage tbody tr td a {
     padding: 5px !important;
     border: 1px solid #DBDBDB !important;
-    text-align: center;
-    width: 163.6px;
-    overflow: hidden;}
-.collage tbody tr td a {
-    width: 100%;
-    left: 0px;
-    float: right;}
-.collage tbody tr td a img {
-    width: 100%;
+    display: grid;
+    margin: 0px 0px 0px -1px;}
+#bookmarks .collage tbody tr td a img {
     height: auto;
-    text-align: center;}
+    width: 163.6px;
+    align-self: center;}
 #bookmarks .sidebar {
     margin-top: 17px;}
 #bookmarks .sidebar >.box {
@@ -6957,7 +6964,6 @@ tr.likes td {
 #bookmarks #torrent_table {
     margin-top: 25px;}
 
-
 /* widescreen */
 @media screen and (min-width: 1320px) {
 .trailer {
@@ -6979,7 +6985,7 @@ tr.likes td {
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before,
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 972px;}
-.collage tbody tr td:not([colspan="5"]),
+#bookmarks .collage tbody tr td a img,
 #snatchesrow img, #uploadsrow img, #likesrow img,
 #collections ul.collage_images li {
     width: 183.6px;}
