@@ -20,3 +20,7 @@
 	#forums .forum_index .forum_index tr[class^="row"] >td:nth-child(3) .last_topic a
 
 	text legth limit to be managed with 'text-overflow' instead of being predetermined
+
+5.
+	#torrents .ratings
+	score to be combined with " / 10 "(alternatively " / 10 " to be contained in a separate span as well) and be apart from the reviewer icon (instead of being contained inside it)
