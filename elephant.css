@@ -6072,18 +6072,9 @@ ul#items_list li:hover, .inventory #content li.item_li:hover, #equipment .item:h
 
 #shop li.item_li {
     position: relative;}
-div#requirements {
-    position: absolute;
-    top: 325px;
-    width: 100%;}
-#shop #requirements p {
-    margin-top: 0px;
-    text-align: center;}
-#shop li.item_li span.denied_req {
-    width: 100%;
-    text-align: center;}
-#shop li.item_li span.denied_req:after {
-    visibility: visible;
+#requirements {
+    display: none;}
+.no_access:before {
     content: 'Requirements not met';
     color: white;
     font-family: whitney, sans-serif;
@@ -6093,14 +6084,9 @@ div#requirements {
     text-align: center;
     float: left;
     position: absolute;
-    top: 26px;
-    left: -5px;
-    background: red;
-    transition: 0.1s;
-    /* padding: 3px 0; */}
-/* ul#items_list li:hover span.denied_req:after {
-    visibility: visible;
-    color: red;} */
+    bottom: 0px;
+    left: 0px;
+    background: red;}
 
 
 .inventory ul#items_list:before {
