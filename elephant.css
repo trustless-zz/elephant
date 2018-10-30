@@ -6083,7 +6083,7 @@ div#requirements {
     width: 100%;
     text-align: center;}
 #shop li.item_li span.denied_req:after {
-    visibility: hidden;
+    visibility: visible;
     content: 'Requirements not met';
     color: white;
     font-family: whitney, sans-serif;
@@ -6095,12 +6095,12 @@ div#requirements {
     position: absolute;
     top: 20px;
     left: -5px;
-    background: white;
-    transition: 0.1s;}
-ul#items_list li:hover span.denied_req:after {
+    background: red;
+    transition: 0.1s;
+    padding: 3px 0;}
+/* ul#items_list li:hover span.denied_req:after {
     visibility: visible;
-    color: red;
-    transition: 0.1s;}
+    color: red;} */
 
 
 .inventory ul#items_list:before {
