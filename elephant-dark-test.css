@@ -6465,7 +6465,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
 	overflow: hidden;
 	position: relative;
-    padding: 0px;}
+    padding: 0px;
+	max-width: 0px;}
 .collage tbody tr td a:hover,
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover,
 .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover,
