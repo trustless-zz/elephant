@@ -6093,11 +6093,11 @@ div#requirements {
     text-align: center;
     float: left;
     position: absolute;
-    top: 20px;
+    top: 26px;
     left: -5px;
     background: red;
     transition: 0.1s;
-    padding: 3px 0;}
+    /* padding: 3px 0; */}
 /* ul#items_list li:hover span.denied_req:after {
     visibility: visible;
     color: red;} */
