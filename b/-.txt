@@ -1,8 +1,0 @@
-#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover, #torrents tbody[id^="edition_"] tr[class="pad hidden"] >td >.linkbox >a:hover, #torrents .sidebar .box.box_tags ul.stats.nobullet >li >div >a:hover {
-    color: rgb(105,105,105) !important;}
-#artist #requests >tbody >tr[class^="row"] >td >a[href^="javascript"]:hover strong, #artist #requests >tbody >tr.colhead_dark >td >a:hover, a[id="tag_show/hide"]:hover {
-    color: rgb(150,150,150) !important;}
-
-
-#torrents .thin.torrent_details tbody[id^="edition_"] tr.group_torrent >td >a:hover, #torrents tbody[id^="edition_"] tr[class="pad hidden"] >td >.linkbox >a:hover, #torrents .sidebar .box.box_tags ul.stats.nobullet >li >div >a:hover, #artist #requests >tbody >tr[class^="row"] >td >a[href^="javascript"]:hover strong, #artist #requests >tbody >tr.colhead_dark >td >a:hover, a[id="tag_show/hide"]:hover {
-    color: rgb(150,150,150) !important;}
