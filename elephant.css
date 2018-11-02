@@ -7046,7 +7046,7 @@ span.size10 {font-size: 3em;line-height: 1em}
 #clan_stats .clan_stat_totals h3,
 #clan_stats .clan_stat_totals >table.border,
 #clan_stats .clan_stat_totals .center{
-    width: 637px;}
+    width: 587px;}
 #clan_stats .clan_stat_totals .center {
     position: absolute;}
 #clan_stats .clan_stat_totals h3 {
@@ -7117,6 +7117,10 @@ span.size10 {font-size: 3em;line-height: 1em}
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#clan_stats .clan_stat_totals h3,
+#clan_stats .clan_stat_totals >table.border,
+#clan_stats .clan_stat_totals .center{
+    width: 637px;}
 .trailer {
     padding-bottom: 522.31249px !important;}
 #user .inventory .save_message {
