@@ -24,3 +24,7 @@
 5.
 	#torrents .ratings
 	score to be combined with " / 10 "(alternatively " / 10 " to be contained in a separate span as well) and be apart from the reviewer icon (instead of being contained inside it)
+
+6.
+	#torrents  .box_tags
+	"There are no tags to display." message to have a container

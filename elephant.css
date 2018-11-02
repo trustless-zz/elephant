@@ -465,7 +465,7 @@ overflow: auto;
     position: relative;
     margin: 5px auto;
     padding: 5px;
-    width: 950px;
+    width: calc(100% - 20px);
     height: 11px;
     color: white;
     background-color: rgb(69, 85, 95);
@@ -955,7 +955,11 @@ width:100%;
 #torrents div[id^="peers_"] tbody >tr:nth-child(even),
 #torrents .filelist_table tbody >tr:nth-child(even),
 #existing_freeleech_pots .row_b,
-#running_freeleech .group_torrent.row_b {
+#running_freeleech .group_torrent.row_b,
+#clan_users >table.border >tbody >tr:nth-child(even),
+#clan_stats .clan_past_stats table tbody tr:not([class="colhead"]):nth-child(even),
+#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(even) td:nth-child(-n+2),
+#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(odd) td:not([colspan="2"]):nth-child(n+3) {
 	background: #e7e7e7;}
 
 .forum_index tbody {
@@ -3468,13 +3472,13 @@ li#stats_share_score {
     z-index: 1;
 }
 
-#share_score .large_progress_bar .main_bar {
+.large_progress_bar .main_bar {
     animation: expandWidth 2s;
-}
+    transform-origin: left;}
 
 @keyframes expandWidth {
-        0% { width: 0; }
-
+	0% {transform: scaleX(0);}
+	100% {transform: scaleY(1);}
 }
 
 #share_score .large_progress_bar .fifteen_marker {
@@ -6110,6 +6114,7 @@ ul#items_list li.no_items {
     border: none !important;}
 
 /* error message */
+#wiki .thin >h2 + .box.pad:nth-child(2),
 #bookmarks #wrapper #content > .thin > .box.pad:nth-child(2),
 #torrents #wrapper #content > .thin > .box.pad:nth-child(2),
 #forums #wrapper #content > .thin > .box.pad:nth-child(2) {
@@ -6134,6 +6139,9 @@ ul#items_list li.no_items {
     left: 0;
     position: absolute;}
 
+#clan_stats .clan_stat_totals >table.border tbody tr:nth-child(n+2):hover,
+#clan_stats .clan_past_stats table tbody tr:nth-child(n+2):hover,
+#clan_users >table.border >tbody >tr:nth-child(n+2):hover,
 #requests .thin >table.border >tbody >tr[class^="row"]:hover, 
 #artist #requests >tbody >tr[class^="row"]:hover, 
 #torrents #requests #requests_list tr[class^="requestrows row"]:hover, 
@@ -6540,12 +6548,13 @@ marquee {
 #torrents #requests #requests_list >tbody >tr:first-child >td {
     font-size: 12pt;
     text-align: unset;}
+#clan_users >table.border >tbody >tr:nth-child(n+2) >td:nth-child(n+2),
 #artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), 
 #torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), 
 #torrents #collages >tbody >tr:nth-child(n+2) >td:nth-child(2),
 #torrents div[id^="peers_"] tbody >tr:nth-child(n+2) >td:nth-child(n+2),
 #torrents .filelist_table >tbody >tr:nth-child(n+2) >td:nth-child(n+2),
-#torrents div[id^="history"] form table.border tbody tr[class^="row"] {
+#torrents div[id^="history"] form table.border tbody tr[class^="row"],#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]) td:nth-child(3) {
     border-left: 1px solid #aaaaaa;}
 #torrents #requests #requests_list tr[class^="requestrows row"] td:first-child, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) {
     overflow: hidden;}
@@ -6954,6 +6963,154 @@ span.size10 {font-size: 3em;line-height: 1em}
     font-weight: normal;}
 #bookmarks #torrent_table {
     margin-top: 25px;}
+
+/* 'There are no tags to display.' message styling */
+#torrents .sidebar .box.box_tags {
+    text-align: center;
+    line-height: 3;}
+#torrents .sidebar .box.box_tags * {
+    line-height: normal;}
+
+#clan_users >table.border,
+#clan_stats .clan_stat_totals >table.border,
+#clan_stats .clan_past_stats >table {
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
+.username_badges img {
+    max-width: 16px;
+    vertical-align: middle;}
+.badge_icon,
+.username_badges >a >img[src^="static/common/clans/"],
+username_badges >a >[src^="static/common/symbols/"] {
+    margin-left: 2px;}
+
+#clan_stats .large_progress_bar .main_bar.clan_1_bar {
+    background-color: rgb(106, 64, 40);
+    background-image: linear-gradient(to top, #5c3823, #aa897d);
+    animation: expandWidth 0.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;}
+#clan_stats .large_progress_bar .main_bar.clan_2_bar {
+    background-color: rgb(107, 107, 107);
+    background-image: linear-gradient(to top, rgb(107, 107, 107), rgb(232, 232, 232));
+    animation: expandWidth 0.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;}
+#clan_stats .large_progress_bar .main_bar.clan_3_bar {
+    background-color: #ff0000;
+    background-image: linear-gradient(to top, #ff0000 0%, #ff5a00 40%, #ff9a00 65%, #ffce00 90%, #ffe70a 100%);
+    animation: expandWidth 0.5s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;}
+#clan_stats .large_progress_bar .main_bar.clan_4_bar {
+    background-color: #000d6b;
+    background-image: linear-gradient(to top, #000d6b 0%, #0038ff 15%, #0078ff 40%, #009fff 65%, #00dfff 100%);
+    animation: expandWidth 0.7s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;}
+#clan_stats .large_progress_bar .main_bar {
+    display: inline-block;
+    border-radius: 0px;
+    animation-fill-mode: forwards;
+    transform: scaleX(0);    }
+#clan_stats .large_progress_bar > span {
+    height: 11px;
+    vertical-align: top;}
+#clan_stats .center img {
+    margin-top: 10px;
+    margin-left:-120px;
+    height: 30px; }
+#clan_stats .clan_stat_totals h3 {
+    font-family: whitney, sans-serif;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: center;}
+#clan_stats .clan_stat_totals >table.border tbody tr td.label:nth-child(1) {
+    width: 65px;
+    text-align: left;}
+#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]) td:nth-child(2) {
+    width: 40px;}
+#clan_stats .clan_stat_totals >table.border tbody tr td.label:nth-child(3) {
+    width: 160px;
+    text-align: left;}
+#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]) td:nth-child(4) {
+    width: 40px;
+    white-space: nowrap;}
+#clan_stats .clan_stat_totals {
+    position: relative;
+    height: 600px;}
+#clan_stats .clan_stat_totals h3,
+#clan_stats .clan_stat_totals >table.border,
+#clan_stats .clan_stat_totals .center{
+    width: 637px;}
+#clan_stats .clan_stat_totals .center {
+    position: absolute;}
+#clan_stats .clan_stat_totals h3 {
+    margin: 0px !important;}
+#clan_stats {
+    position: relative;}
+#clan_stats >span[style="float: right;"] a {
+    top: 10px;
+    z-index: 99;
+    position: absolute;
+    white-space: nowrap;
+    right: 5px;}
+#clan_stats .clan_stat_totals >h2 {
+    margin: -33px 0 16px 0;}
+#clan_stats .clan_stat_totals >.center:nth-child(3) {
+    top: 70px;
+    left: 0px;}
+#clan_stats .clan_stat_totals >.center:nth-child(6) {
+    top: 70px;
+    right: 0px;}
+#clan_stats .clan_stat_totals >.center:nth-child(9) {
+    top: 330px;
+    left: 0px;}
+#clan_stats .clan_stat_totals >.center:nth-child(12) {
+    top: 330px;
+    right: 0px;}
+#clan_stats .clan_stat_totals h3:nth-of-type(1) {
+    position: absolute;
+    left: 5px;
+    top: 85px;}
+#clan_stats .clan_stat_totals h3:nth-of-type(2) {
+    position: absolute;
+    right: -10px;
+    top: 85px;}
+#clan_stats .clan_stat_totals h3:nth-of-type(3) {
+    position: absolute;
+    left: 5px;
+    top: 345px;}
+#clan_stats .clan_stat_totals h3:nth-of-type(4) {
+    position: absolute;
+    right: 0px;
+    top: 345px;}
+#clan_stats .clan_stat_totals >table.border:nth-of-type(1) {
+    position: absolute;
+    left: 0;
+    top: 110px;}
+#clan_stats .clan_stat_totals >table.border:nth-of-type(2) {
+    position: absolute;
+    right: 0;
+    top: 110px;}
+#clan_stats .clan_stat_totals >table.border:nth-of-type(3) {
+    position: absolute;
+    left: 0px;
+    top: 373px;}
+#clan_stats .clan_stat_totals >table.border:nth-of-type(4) {
+    position: absolute;
+    right: 0px;
+    top: 373px;}
+#clan_stats .clan_past_stats {
+    margin-top: -16px;}
+#clan_stats .clan_past_stats >h3 {
+    margin-bottom: -2px !important;}
+#clan_stats .clan_past_stats >h2 {
+    margin-bottom: -15px !important;}
+#clan_stats .clan_past_stats table tbody tr td {
+    text-align: left;}
 
 
 /* widescreen */
