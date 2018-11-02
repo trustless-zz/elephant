@@ -7027,8 +7027,10 @@ span.size10 {font-size: 3em;line-height: 1em}
     vertical-align: middle;}
 .badge_icon,
 .username_badges >a >img[src^="static/common/clans/"],
-username_badges >a >[src^="static/common/symbols/"] {
+.username_badges >a >[src^="static/common/symbols/"] {
     margin-left: 2px;}
+#forums blockquote {
+    margin-top: 5px;}
 
 #clan_stats .large_progress_bar .main_bar.clan_1_bar {
     background-color: rgb(106, 64, 40);
