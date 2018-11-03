@@ -1378,6 +1378,7 @@ div.linkbox {
 tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >td.center.cats_col >div {
     margin: 1px 0px -1px 0px;}
 
+#torrents #torrentbrowse #torrent_table td.center.cats_col >div[title=""][class=""],
 .\33 do,
 .amigacd32,
 .amstradcpc,
@@ -1514,6 +1515,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background-repeat: no-repeat !important;
     background-position: center !important;}
 
+#torrents #torrentbrowse #torrent_table td.center.cats_col >div[title=""][class=""] {
+    background: url(icon/svg/missing.svg):}
 .\33 do {
     background: url(icon/svg/3do.svg);}
 .amigacd32 {
