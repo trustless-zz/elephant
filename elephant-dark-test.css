@@ -7174,6 +7174,9 @@ span.size10 {font-size: 3em;line-height: 1em}
 #clan_stats .ongoing_clan_war >table.border {
     margin-top: 25px;}
 
+#user #share_score #share_score_breakdown #seed_snatch_breakdown >td.label {
+    width: 135px;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
