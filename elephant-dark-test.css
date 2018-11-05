@@ -3408,8 +3408,9 @@ li#stats_hnr {
 #color_seeding, #color_seeding .torrent_info_tags, #color_seeding a {
     color: rgba(80, 154, 0, 1);
     /* text-shadow: 0 0 7px rgba(217, 228, 115, 0.7); */}
-#color_uploaded, #color_uploaded .torrent_info_tags, #color_uploaded a {color: rgb(100, 174, 0);
-    text-shadow: 0 0 7px rgba(217, 228, 115, 0.7);}
+#color_uploaded, #color_uploaded .torrent_info_tags, #color_uploaded a {
+    color: #FFB404 !important;
+    text-shadow: 0 0 2px #FCC201;}
 #color_snatched, #color_snatched .torrent_info_tags, #color_snatched a {
     color: #914154;
     /* text-shadow: 0 0 7px #e03854; */}
@@ -3423,7 +3424,9 @@ li#stats_hnr {
 #color_reported, strong.reported_label {
     color: #ff0000;
     text-shadow: 0 0 7px rgba(255, 50, 50, 0.7);}
-#color_trumpable, strong#trumpable_tag, strong.trumpable_label {text-shadow: 0px 0px 7px;}
+#color_trumpable, strong#trumpable_tag, strong.trumpable_label {
+    text-shadow: 0px 0px 7px;
+    color: #ED4A35;}
 #color_neutralleech, strong.neutralleech_label {text-shadow: 0px 0px 7px;}
 #torrents #wrapper #content .thin.torrent_history table tbody tr.owner td a[title="View Torrent"] {
     color: rgb(100, 174, 0);}
