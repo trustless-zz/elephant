@@ -6250,7 +6250,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     text-align: center;}
 #user .box.box_gold >#box_gold_scrollbar {
     position: relative;
-    overflow-x: scroll;
+    overflow-x: scroll !important;
     display: block;
     padding: 0;
     height: 100%;}
