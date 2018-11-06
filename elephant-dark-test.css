@@ -7236,6 +7236,8 @@ span.size10 {font-size: 3em;line-height: 1em}
     display: none;}
 #index #clans .large_progress_bar:hover {
     background-color: rgb(232,80,102);}
+.large_progress_bar {
+    box-shadow: 0 0 30px #000;}
 
 
 /* widescreen */
