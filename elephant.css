@@ -6995,39 +6995,41 @@ span.size10 {font-size: 3em;line-height: 1em}
 #forums blockquote {
     margin-top: 5px;}
 
-#clan_stats .large_progress_bar .main_bar.clan_1_bar {
+#index .thin #clans {
+    margin-bottom: 16px;}
+#clans .large_progress_bar .main_bar.clan_1_bar {
     background-color: rgb(106, 64, 40);
     background-image: linear-gradient(to top, #5c3823, #aa897d);
     animation: expandWidth 0.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;}
-#clan_stats .large_progress_bar .main_bar.clan_2_bar {
+#clans .large_progress_bar .main_bar.clan_2_bar {
     background-color: rgb(107, 107, 107);
     background-image: linear-gradient(to top, rgb(107, 107, 107), rgb(232, 232, 232));
     animation: expandWidth 0.5s;
     animation-delay: 0.7s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;}
-#clan_stats .large_progress_bar .main_bar.clan_3_bar {
+#clans .large_progress_bar .main_bar.clan_3_bar {
     background-color: #ff0000;
     background-image: linear-gradient(to top, #ff0000 0%, #ff5a00 40%, #ff9a00 65%, #ffce00 90%, #ffe70a 100%);
     animation: expandWidth 0.5s;
     animation-delay: 1.2s;
     animation-fill-mode: forwards;
     animation-timing-function: linear;}
-#clan_stats .large_progress_bar .main_bar.clan_4_bar {
+#clans .large_progress_bar .main_bar.clan_4_bar {
     background-color: #000d6b;
     background-image: linear-gradient(to top, #000d6b 0%, #0038ff 15%, #0078ff 40%, #009fff 65%, #00dfff 100%);
     animation: expandWidth 0.7s;
     animation-delay: 1.7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;}
-#clan_stats .large_progress_bar .main_bar {
+#clans .large_progress_bar .main_bar {
     display: inline-block;
     border-radius: 0px;
     animation-fill-mode: forwards;
-    transform: scaleX(0);    }
-#clan_stats .large_progress_bar > span {
+    transform: scaleX(0);}
+#clans .large_progress_bar > span {
     height: 11px;
     vertical-align: top;}
 #clan_stats .center img {
