@@ -468,7 +468,7 @@ overflow: auto;
     width: calc(100% - 20px);
     height: 11px;
     color: white;
-    background-color: rgb(69, 85, 95);
+    background-color: #6D7E88;
     /*border-radius: 10px;*/
     /*-webkit-border-radius: 10px;*/
     /*-moz-border-radius: 10px;*/
@@ -6996,7 +6996,7 @@ span.size10 {font-size: 3em;line-height: 1em}
     margin-top: 5px;}
 
 #index .thin #clans {
-    margin-bottom: 16px;}
+    margin-bottom: 25px;}
 #clans .large_progress_bar .main_bar.clan_1_bar {
     background-color: rgb(106, 64, 40);
     background-image: linear-gradient(to top, #5c3823, #aa897d);
