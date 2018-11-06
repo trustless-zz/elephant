@@ -361,10 +361,10 @@ overflow: auto;
 .r07 {color: #ff7100;}
 .r08 {color: #ff9700;}
 .r09 {color: #fa0;}
-.r10 {color: #74c42e;}
+.r10 {color: #418b00;}
 .r20,
 .r50,
-.r99 {color: #418b00;}
+.r99 {color: #418b00; text-shadow: 0 0 2px #7eff2e80;}
 
 #header .r00,
 #header .r01,
