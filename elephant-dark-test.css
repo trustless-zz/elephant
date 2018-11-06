@@ -359,55 +359,36 @@ overflow: auto;
 
 /*RATIO COLORS*/
 
-#header .r00 {
-	color: red;
-	float: right;
-}
+.r00 {color: red;}
+.r01,
+.r02 {color: #ff1300;}
+.r03 {color: #ff2600;}
+.r04 {color: #ff4c00;}
+.r05,
+.r06 {color: #ff5e00;}
+.r07 {color: #ff7100;}
+.r08 {color: #ff9700;}
+.r09 {color: #fa0;}
+.r10 {color: #74c42e;}
+.r20,
+.r50,
+.r99 {color: #418b00;}
 
-#header .r01,#header .r02 {
-	color: #ff1300;
-	float: right;
-}
-
-#header .r03 {
-	color: #ff2600;
-	float: right;
-}
-
-#header .r04 {
-	color: #ff4c00;
-	float: right;
-}
-
-#header .r05,#header .r06 {
-	color: #ff5e00;
-	float: right;
-}
-
-#header .r07 {
-	color: #ff7100;
-	float: right;
-}
-
-#header .r08 {
-	color: #ff9700;
-	float: right;
-}
-
-#header .r09 {
-	color: #fa0;
-	float: right;
-}
-
-#header .r10 {
-	color: #74c42e;
-	float: right;
-}
-
-#header .r20,#header .r50,#header .r99 {
-	color: #418b00;
-	float: right;
-}
+#header .r00,
+#header .r01,
+#header .r02,
+#header .r03,
+#header .r04,
+#header .r05,
+#header .r06,
+#header .r07,
+#header .r08,
+#header .r09,
+#header .r10,
+#header .r20,
+#header .r50,
+#header .r99 {
+    float: right;}
 
 /*finish ratio colors*/
 
@@ -968,7 +949,8 @@ width:100%;
 #clan_stats .clan_past_stats table tbody tr:not([class="colhead"]):nth-child(even),
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(even) td:nth-child(-n+2),
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(odd) td:not([colspan="2"]):nth-child(n+3),
-#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even) {
+#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even),
+#torrents #seeding_table >tbody >tr:not([class="colhead"]):nth-child(even) {
 	background: #181818;}
 
 .forum_index tbody {
@@ -6095,29 +6077,30 @@ span.user_title span[style="font-family: cursive;"] {
 #running_freeleech >tbody tr[class^="group_torrent row_"]:hover,
 #top10 tr[class^="group_torrent"]:hover,
 #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover {
+#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover,
+#torrents #seeding_table >tbody >tr:not([class="colhead"]):nth-child(n+2):hover {
     box-shadow: inset 0.5px 0.5px 0px 1.5px rgba(105, 105, 105, 1);}
 
-#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td strong,
-#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td[style="text-align:right"],
+#top10 #wrapper #content .thin table.border tbody tr[class^="group_torrent"] td strong,
+#top10 #wrapper #content .thin table.border tbody tr[class^="group_torrent"] td[style="text-align:right"],
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong {
     font-family: neuzite, sans-serif;
     font-size: 10pt;
     font-weight: normal;}
-#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td strong a,
+#top10 #wrapper #content .thin table.border tbody tr[class^="group_torrent"] td strong a,
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a {
     font-family: neuzite, sans-serif;
     font-size: 10pt;
     font-weight: bold;
     color: #d5b09a;}
-#top10 #wrapper #content .thin.top10_games table.border {
+#top10 #wrapper #content .thin table.border {
     box-shadow: 0 0 30px #000;}
-#top10 #wrapper #content .thin.top10_games table.border tbody .colhead td:nth-child(3) {
+#top10 #wrapper #content .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) table.border tbody .colhead td:nth-child(3) {
     width: 100%;}
-#top10 #wrapper #content .thin.top10_games table.border tbody tr[class^="group_torrent"] td[style="text-align:right"] {
+#top10 #wrapper #content .thin table.border tbody tr[class^="group_torrent"] td[style="text-align:right"] {
     white-space: nowrap;
     text-align: center !important;}
-#top10 #wrapper #content .thin.top10_games table.border tbody tr.colhead td[style="text-align:right"] {
+#top10 #wrapper #content .thin table.border tbody tr.colhead td[style="text-align:right"] {
     padding: 5px 10px 5px 10px;}
 
 ul#items_list li, .inventory #content li.item_li, #equipment .item, #crafting_panel .item {
@@ -6216,7 +6199,8 @@ ul#items_list li.no_items {
 #torrents div[id^="peers_"] tbody >tr:nth-child(n+2):hover,
 #torrents .filelist_table tbody >tr:nth-child(n+2):hover,
 #torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
-#existing_freeleech_pots >tbody >tr[class^="row_"]:hover {
+#existing_freeleech_pots >tbody >tr[class^="row_"]:hover,
+#top10 tr[class^="row"]:hover {
     outline: 1px solid rgba(105, 105, 105, 1);
     outline-offset: -1px;}
 
@@ -6466,7 +6450,7 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
     font-weight: bold;}
 #collections #torrent_table a {
     /* color: rgb(192, 154, 154); */}
-#collections #torrent_table >tbody >tr.colhead td strong, #top10 #wrapper #content .thin.top10_games table.border >tbody >tr.colhead td strong {
+#collections #torrent_table >tbody >tr.colhead td strong, #top10 #wrapper #content .thin table.border >tbody >tr.colhead td strong {
     font-weight: normal;}
 
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td, 
@@ -7182,9 +7166,86 @@ span.size10 {font-size: 3em;line-height: 1em}
 #user #share_score #share_score_breakdown #seed_snatch_breakdown >td.label {
     width: 135px;}
 
+#user .thin .box.pad:nth-child(3):nth-of-type(3) >form[action="user.php"][method="post"]:nth-child(1) {
+    margin: 0px;}
+#user .thin .box.pad:nth-child(2):nth-of-type(2) {
+    padding: 38px 10px 10px 10px !important;
+    margin-top: 11px;}
+
+#top10 .thin tbody >tr.colhead >td,
+#torrents #seeding_table >tbody >tr.colhead >td {
+    border: none;}
+#top10 .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) tbody >tr.colhead,
+#torrents #seeding_table >tbody >tr.colhead,
+#torrents #seeding_table >tbody >tr >td {
+    border: 1px solid #555555;}
+#torrents .thin #seeding_table {
+    box-shadow: inset 0 0 30px #000 !important;}
+#top10 .thin .center:nth-child(3):nth-of-type(2) {
+    margin: 14px 0 27px 0;}
+#top10 .content_basiccontainer {
+    font-family: whitney, sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 0px;}
+#top10 .thin.top10_torrents .group_torrent >td.center.cats_col + td:nth-child(3) {
+    font-family: neuzite, sans-serif;
+    font-size: 10pt;}
+#top10 .thin.top10_torrents .group_torrent >td.center.cats_col + td:nth-child(3) >span a {
+    font-weight: bold;}
+#top10 .linkbox a strong {
+    color: rgb(196,196,196);}
+
+#top10 .thin.top10_tags {
+    margin: 0 auto;
+    width: max-content;}
+#top10 .thin.top10_tags #ut,
+#top10 .thin.top10_tags #ur,
+#top10 .thin.top10_tags #v {
+    width: 384px;
+    margin-top: 7px;
+    float: left;}
+#top10 .thin.top10_tags #ut,
+#top10 .thin.top10_tags #ur {
+    margin-right: 24px;}
+#top10 .thin.top10_tags #ut h3,
+#top10 .thin.top10_tags #ur h3,
+#top10 .thin.top10_tags #v h3 {
+    text-align: center;
+    margin: 0;}
+#top10 .thin.top10_tags table.border tbody tr td.center,
+#top10 .thin.top10_tags tbody >tr >td:nth-child(n+3) {
+    width: 1px;}
+#top10 .thin.top10_tags tbody >tr.colhead >td {
+    white-space: nowrap;}
+#top10 .thin.top10_tags tbody >tr.colhead >td:nth-child(4) {
+    font-size: 0;
+    background-image: url(icon/svg/upvote.svg);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;}
+#top10 .thin.top10_tags tbody >tr.colhead >td:nth-child(5) {
+    font-size: 0;
+    background-image: url(icon/svg/downvote.svg);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;}
+#top10 .thin.top10_tags #ut + br,
+#top10 .thin.top10_tags #ur + br {
+    display: none;}
+
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#top10 .thin.top10_tags #ut,
+#top10 .thin.top10_tags #ur,
+#top10 .thin.top10_tags #v {
+    width: 416px;}
+#top10 .thin.top10_tags #ut,
+#top10 .thin.top10_tags #ur {
+    margin-right: 26px;}
 #clan_stats .clan_stat_totals h3,
 #clan_stats .clan_stat_totals >table.border,
 #clan_stats .clan_stat_totals .center{
