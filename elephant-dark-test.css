@@ -7195,7 +7195,6 @@ span.size10 {font-size: 3em;line-height: 1em}
     font-weight: bold;}
 #top10 .linkbox a strong {
     color: rgb(196,196,196);}
-
 #top10 .thin.top10_tags {
     margin: 0 auto;
     width: max-content;}
@@ -7235,6 +7234,8 @@ span.size10 {font-size: 3em;line-height: 1em}
 #top10 .thin.top10_tags #ut + br,
 #top10 .thin.top10_tags #ur + br {
     display: none;}
+#index #clans .large_progress_bar:hover {
+    background-color: rgb(232,80,102);}
 
 
 /* widescreen */
