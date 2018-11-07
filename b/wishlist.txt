@@ -28,3 +28,7 @@
 6.
 	#torrents  .box_tags
 	"There are no tags to display." message to have a container
+
+7.
+	#inbox
+	"Sticky" to be in a container

@@ -3729,7 +3729,7 @@ ul#categories {
     color: rgb(196,196,196);}
 
 textarea#quickpost {
-    max-width: 1140px;
+    /* max-width: 1140px; */
     background-color:rgb(196, 196, 196);
     border: solid rgba(213,176,154,0.5) 2px;
 }
@@ -5594,7 +5594,7 @@ button[type="button"]:not([title="Close"]):hover {
     font-family: Arial;
     margin: 12px;}
 #inbox .thin form[action="inbox.php"][method="post"][id="messageform"] {margin-top: 15px !important; margin-bottom: 15px;}
-#inbox .thin form[action="inbox.php"][method="post"][id="messageform"] .box.pad {padding: 10px 10px 0px 10px !important; text-align: center;}
+#inbox .thin form[action="inbox.php"][method="post"][id="messageform"] .box.pad {padding: 10px 10px 0px 10px !important;}
 #inbox .thin form[action="inbox.php"][method="post"][id="messageform"] .box.pad span[style="width: 80%; text-align: left; float: left;"] {padding-bottom: 10px;}
 #inbox .thin .box.pad form[action="inbox.php"][method="get"][id="searchbox"] {margin-bottom: -10px;}
 #inbox .thin .box.pad div#quickpost table.comp {margin-bottom: 0px;}
@@ -6200,7 +6200,8 @@ ul#items_list li.no_items {
 #torrents .filelist_table tbody >tr:nth-child(n+2):hover,
 #torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
 #existing_freeleech_pots >tbody >tr[class^="row_"]:hover,
-#top10 tr[class^="row"]:hover {
+#top10 tr[class^="row"]:hover,
+#inbox #messageform >table >tbody >tr:nth-child(n+2):hover {
     outline: 1px solid rgba(105, 105, 105, 1);
     outline-offset: -1px;}
 
@@ -7240,6 +7241,20 @@ span.size10 {font-size: 3em;line-height: 1em}
     box-shadow: 0 0 30px #000;}
 #share_score_breakdown .large_progress_bar {
     box-shadow: none;}
+#inbox tr.unreadpm {
+    background: rgb(50,50,50);}
+#inbox .linkbox a strong {
+    color: rgb(196,196,196);}
+.bbbutt.hidden {
+    display: none !important}
+#inbox .thin .box.pad div#preview {
+    box-shadow: none;}
+
+#inbox .thin form[action="inbox.php"][method="post"][id="messageform"] ul.bbbutt {
+    display: block;
+    width: 480px;
+    padding: 5px;
+    margin: 5px auto;}
 
 
 /* widescreen */
