@@ -7190,6 +7190,8 @@ span.size10 {font-size: 3em;line-height: 1em}
     background-color: rgb(232,80,102);}
 .large_progress_bar {
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
+#share_score_breakdown .large_progress_bar {
+    box-shadow: none;}
 
 
 /* widescreen */
