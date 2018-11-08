@@ -5758,6 +5758,7 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #forums .thin .box.pad form#newthreadform table#newthreadtext tr td.label {width: 54px;}
 #forums .thin .box.pad form#newthreadform div#buttons {margin: 10px;}
 #forums .thin div#newthreadpreview {margin-bottom: -10px;}
+#forums #contentpreview img,
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {max-width: 1000px !important;}
 #forums #wrapper #content .thin #reply_box .box.pad form#quickpostform #quickreplytext textarea#quickpost {min-width: 1140px;}
 
@@ -7207,6 +7208,8 @@ span.size10 {font-size: 3em;line-height: 1em}
     width: 480px;
     padding: 5px;
     margin: 5px auto;}
+.bbcode_table {
+    box-shadow: none !important;}
 
 
 /* widescreen */
@@ -7310,6 +7313,7 @@ ul#items_list:before {
     left: 0px;}
 .inventory #content li.item_li {
     width: 410px;}
+#forums #contentpreview img,
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
     max-width: 1100px !important;}
 #torrents .save_message {

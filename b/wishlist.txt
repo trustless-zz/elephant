@@ -31,4 +31,5 @@
 
 7.
 	#inbox
-	"Sticky" to be in a container
+	"Sticky" to be in a container,
+	tricky tr to have its own class, like unread PM with .unreadpm
