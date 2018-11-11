@@ -977,7 +977,6 @@ h2 {
 }
 
 .sidebar .pad {
-	padding: 10px;
 	margin-bottom: 20px;}
 
 #quickreplychecks {
@@ -1075,8 +1074,7 @@ h2 a {
 .filter_torrents h3 {
     font-family: Whitney, sans-serif;
     font-size: 16pt;
-    text-align: center;
-    margin: -16px 0 16px 0;}
+    text-align: center;}
 
 
 
@@ -2266,14 +2264,9 @@ color: rgba(50, 50, 50, 1)
 	width: 1200px;
 	position: relative;}
 
-#user .main_column_bg {
-    margin-top: 11px;
-}
 #user .profile .sidebar {
     display: flex;
-    flex-direction: column;
-    margin-top: 11px;
-}
+    flex-direction: column;}
 
 #user h2 {
 	margin: 0px;
@@ -4476,7 +4469,8 @@ button.submit {
 ************INVENTORY**************
 **********************************/
 
-.inventory div.center form {margin:10px auto}
+.inventory div.center form {
+    margin: 10px auto 11px auto;}
 #user .inventory .center {padding: 0;}
 .inventory #items_navigation {margin-top: 14px;}
  
@@ -4874,7 +4868,7 @@ button.submit {
 #wiki ol.navigation_list {padding: 10px; list-style: none;}
 #wiki .box.box_info.pad {padding: 10px !important;}
 #wiki h3 {margin-bottom: -10px !important;}
-#wiki .main_column .box {padding: 38px 10px 10px 10px !important;}
+#wiki .main_column .box {padding: 28px 0 0 0 !important;}
 #torrents .center form {position: relative; margin-top: 16px; box-shadow: 0 0 30px rgba(153, 153, 153, 0.7); background-color: white;}
 #torrents table#uploaded_table {box-shadow: 0 0 30px rgba(153, 153, 153, 0.7) !important;}
 #user .main_column_sortable .box .head {cursor: pointer;}
@@ -4921,13 +4915,13 @@ button.submit {
 #user .head.colhead_dark {padding: 9px 0 8px 0 !important; min-height: 0px;}
 
 
-#allreviews {top: -16px; position: relative;}
+#allreviews {position: relative;}
 #allreviews h2 {margin-bottom: 16px;}
 #torrents .linkbox.groupoptions {margin-bottom: 1px;}
 #shop #shop_search {margin-top: 16px;}
-#user #crafting_panel {top: -16px; position: relative;}
+#user #crafting_panel {position: relative;}
 #user #crafting_panel h2 {margin-bottom: -8px;}
-#user #equipment {top: -16px; position: relative;}
+#user #equipment {position: relative;}
 #user form#userform {margin-top: 16px;}
 #user .center {margin-top: 16px;}
 #user .box.pad {margin-top: 16px;}
@@ -5013,7 +5007,7 @@ button.submit {
     opacity: 0.85;}
 #collections .sidebar .box.box_comment .pad {padding: 3px 5px 0px 5px !important;}
 #collections .sidebar .box.box_comment {margin-top: 20px;}
-#collections .field_div input[type="text"] {width: 89%;}
+#collections .field_div input[type="text"] {width: 88%;}
 #collections .thin.collections .sidebar .box.box_addtorrent .pad.add_torrent form.add_form p[style="color: red;"] {
     display: block;
     position: relative;
@@ -6867,8 +6861,32 @@ textarea {
     display: inherit;
     content: "";}
 
-
-
+#torrents .filter_torrents h3 {
+    margin-bottom: 16px;}
+#collections .linkbox,
+#torrents .linkbox,
+#user .thin >h2 + .center + .linkbox,
+#user .thin >table.border[cellpadding="6"] + .linkbox {
+    margin-top: 11px;}
+#torrents .linkbox.groupoptions,
+#collections .thin.collections .header >h2 + .linkbox {
+    margin-top: inherit;}
+#collections #pageslinksdiv {
+    margin-bottom: 20px;}
+#collections .thin.collections .main_column script + .linkbox {
+    margin-bottom: 11px;}
+#collections .sidebar #quickpostform {
+    margin: 0px;}
+#collections .sidebar .pad.add_torrent {
+    margin: 0;
+    padding: 0 10px;}
+#shop .freeleech_shop_main .box.pad.box_add_freeleech,
+#items_navigation {
+    padding: 0 !important;}
+#equipment >h2 {
+    margin-bottom: -8px;}
+#upload #content >script + div[style="margin:0px auto;width:700px"] {
+    margin-top: 16px !important;}
 
 
 /** #inbox **/
@@ -6898,6 +6916,8 @@ textarea {
     color: black;}
 #inbox .linkbox:nth-child(4) {
     margin: 11px 0 0 0;}
+#inbox #messageform input + table {
+    border-bottom: 1px solid #e5e5e5;}
 #inbox #messageform #quickpost textarea {
     width: 98% !important;
     float: left;}
@@ -7061,7 +7081,6 @@ textarea {
 	padding-top: 40px;}
 .forum_latest h2 {z-index:2;}
 .forum_latest form br {line-height:0px;}
-.submit input {box-shadow: #000 2px 2px 2px;}
 #user .main_column td.label {vertical-align:middle;}
 
 /****Avatar****/
@@ -7168,8 +7187,10 @@ tr.likes {/* border-top: #000 solid 2px; */}
 
 /*Puts border around unread posts*/
 #forums table.forum_unread {
-    border-top: rgba(105,192,119,.6) solid 5px;
-    border-collapse: collapse;}
+    outline: rgba(104, 192, 119, 1) solid 2px;
+    outline-offset: -1px;}
+#forums table.forum_unread tr.colhead_dark {
+    background: linear-gradient(rgba(104, 192, 119, 1), rgba(42,79,101,0.5));}
 
 /****Other Misc. Items****/
 #forums .rowa, #forums .rowb {/* height: 40px; */}
@@ -7247,8 +7268,8 @@ span[style="color: #ff0000;"] {color: #bf6a6a !important;}
 #forums #reply_box >.box.pad {
     padding: 20px 0 10px 0;}
 #forums #reply_box #quickreplytext #quickpost {
-    min-width: 1260px;
-    max-width: 1260px;}
+    min-width: 1129px;
+    max-width: 1129px;}
 .badge_icon {
     margin: -3px 2px 0 2px;}
 /** /#forums **/
@@ -7345,8 +7366,8 @@ ul#items_list:before {
 #shop #content .thin.freeleech_shop .freeleech_shop_main .box.pad.box_freeleech_info {
     max-width: 1016px !important;}
 #collections form textarea {
-    max-width: 80%;
-    min-width: 80%;}
+    max-width: 88%;
+    min-width: 808%;}
 #collections div#reply_box .box.pad form#quickpostform #quickreplytext textarea#quickpost, #gazelles #wrapper #content div #gazelleview #torrent_comments #reply_box .box.pad #quickpostform #quickreplytext textarea#quickpost {
     min-width: 1250px;
     max-width: 1250px;}
