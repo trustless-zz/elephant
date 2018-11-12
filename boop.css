@@ -979,17 +979,6 @@ h2 {
 .sidebar .pad {
 	margin-bottom: 20px;}
 
-#quickreplychecks {
-	float: center;
-	padding-top: 10px;
-	padding-left: 20px;}
-
-#quickreplybuttons {
-	float: center;
-	padding: 10px;
-	padding-right: 18px;
-}
-
 #quickreplytext textarea {
 	width: 811px;
 	max-width: 811px;
@@ -3466,9 +3455,7 @@ ul#categories {
 #torrents .save_message {
     display: block;
     width: 1192px;
-    top: -15px;
-    position: relative;
-}
+    position: relative;}
 
 #markread {
     background: linear-gradient(to right, rgba(232,80,102,1) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);
@@ -6887,6 +6874,23 @@ textarea {
     margin-bottom: -8px;}
 #upload #content >script + div[style="margin:0px auto;width:700px"] {
     margin-top: 16px !important;}
+#quickreplybuttons >* {
+    margin-left: 5px;}
+#reports .thin >h2.center + h3 + .box.pad + p {
+    margin: 20px 0 10px 20px;
+    font-family: whitney, sans-serif;
+    font-size: 1.17em;
+    font-weight: bold;}
+#reports .thin >h2.center + h3 + .box.pad + p +table,
+#reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center {
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
+#reports .thin >h2.center + h3 + .box.pad + p +table + h3 {
+    margin-top: 20px;}
+#reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center {
+    padding-top: 20px;}
+#reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center form textarea {
+    min-width: 1250px;
+    max-width: 1250px;}
 
 
 /** #inbox **/
@@ -6962,7 +6966,7 @@ textarea {
 #forums #content .thin .sub {
     position: absolute;
     left: 0;
-    margin-top: -15px;}
+    margin-top: -17px;}
 #forums .rowa td a, #forums .rowb td a {/* color: #fff; *//* font-weight:bold; */} 
 #forums .thin >h2 + .linkbox + .linkbox {
     margin-top: -15px;}
@@ -6971,7 +6975,10 @@ textarea {
 #forums .linkbox.pager + .linkbox {
     margin-top: -20px;}
 #forums .linkbox label {color: #fff; vertical-align: bottom;}
-
+#forums #reply_box .box.pad #quickpostform #quickreplypreview {
+    margin: -20px 0 10px 0;}
+#forums #reply_box .box.pad #quickpostform #quickreplypreview tr.colhead_dark td[colspan="2"] span[style="float:left;"] {
+    margin-top: 2px;}
 #forums table.border td {text-align:left;}
 #forums td {text-align:center;}
 #forums td.body {
@@ -7367,7 +7374,7 @@ ul#items_list:before {
     max-width: 1016px !important;}
 #collections form textarea {
     max-width: 88%;
-    min-width: 808%;}
+    min-width: 88%;}
 #collections div#reply_box .box.pad form#quickpostform #quickreplytext textarea#quickpost, #gazelles #wrapper #content div #gazelleview #torrent_comments #reply_box .box.pad #quickpostform #quickreplytext textarea#quickpost {
     min-width: 1250px;
     max-width: 1250px;}
