@@ -3209,14 +3209,24 @@ span.user_title * {
 
 .global_buffs {
     position: absolute;
-    top: 25px;
-    left: 94%;
+    top: 145px;
+    right: 110px;
+    left: unset;
     filter: opacity(0.7);
     width: 1px;}
 .global_buffs a .buff_text {
     transition: 0.1s;}
 .global_buffs a:hover .buff_text {
     color: rgb(232,80,102) !important;}
+.global_buffs a:hover {
+    filter: opacity(1);}
+.clan_trophy {
+    position: absolute;
+    top: 25px;
+    right: 30px;}
+.clan_trophy img {
+    height: 100px;
+    filter: none;}
 
 li#stats_share_score {
     width: 170px;
@@ -6892,6 +6902,16 @@ textarea {
     min-width: 1250px;
     max-width: 1250px;}
 
+/* 'You haven't joined a clan yet!'  message */
+#clans #clan_stats >span[style="float: right;"]:first-child + .box.pad {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    font-size: 16pt;
+    text-align: center;
+    font-weight: bold;
+    font-family: whitney, sans-serif;}
+
 
 /** #inbox **/
 #inbox table {
@@ -6954,79 +6974,84 @@ textarea {
 
 
 /** #forums **/
+.last_read a {
+    border: none;
+    width: 100%;
+    height: 100%;
+    display: block;}
+
 #forums .forum_post {
     margin-bottom: 25px !important;}
-#forums .forum_post .colhead_dark div[style="float:left;"] {width: 90%;}
-#forums .forum_post .colhead_dark td {text-align: left;}
-#forums .thin >.linkbox.linkbox_top + .box.thin.clear {
-    margin-bottom: 25px;}
-#forums #content .thin table {width: 100%;box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);margin: 10px auto 15px auto;}	
-#forums .thin {/* display:flex; *//* flex-direction:column; *//* line-height: 1.4em; */}
-#forums .thin .forum_index {/* line-height: 1em; */}
+#forums .forum_post .colhead_dark td {
+	text-align: left;}
+#forums .forum_post .colhead_dark div[style="float:left;"] {
+	width: 90%;}
+
 #forums #content .thin .sub {
     position: absolute;
     left: 0;
     margin-top: -17px;}
-#forums .rowa td a, #forums .rowb td a {/* color: #fff; *//* font-weight:bold; */} 
+#forums #content .thin table {
+	width: 100%;
+	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
+	margin: 10px auto 15px auto;}
+
+#forums .thin >.linkbox.linkbox_top + .box.thin.clear {
+    margin-bottom: 25px;}
+
 #forums .thin >h2 + .linkbox + .linkbox {
     margin-top: -15px;}
-#forums .linkbox {/* color: transparent; */}
+
 #forums .linkbox + .linkbox.pager,
 #forums .linkbox.pager + .linkbox {
     margin-top: -20px;}
-#forums .linkbox label {color: #fff; vertical-align: bottom;}
+#forums .linkbox label {
+	color: black;
+	vertical-align: bottom;}
+#forums .linkbox_bottom {
+	margin: 5px 0px;}
+
 #forums #reply_box .box.pad #quickpostform #quickreplypreview {
     margin: -20px 0 10px 0;}
 #forums #reply_box .box.pad #quickpostform #quickreplypreview tr.colhead_dark td[colspan="2"] span[style="float:left;"] {
     margin-top: 2px;}
-#forums table.border td {text-align:left;}
-#forums td {text-align:center;}
+
+#forums table.border td {
+	text-align:left;}
+
+#forums td {
+	text-align:center;}
 #forums td.body {
 	text-align:left;
 	width: 100%;
-	padding:10px 10px 25px 10px;
-	}
+	padding:10px 10px 25px 10px;}
+
 .forum_post tr {
 	width:100%;
-	/* background-color:rgba(38, 63, 88, .35); */
-	text-align:left !important;
-	}
-#forums #content table tr.colhead td {text-align:left;}
-
-#forums .colhead {/* font-size: 1.1em; *//* height: 30px; */}
+	text-align:left !important;}
+#forums #content table tr.colhead td {
+	text-align:left;}
 
 #forums .breadcrumbs {
     text-align: left;
     margin-top: -15px;}
-#forums .linkbox_bottom {margin: 5px 0px;}
 
-/*Makes username and time on forums.php smaller*/
-#forums span[style="float:right;"] {/* font-size: 0.8em; *//* margin-top: 3px; */}
+#forums td[style="width:7%;"] {
+	text-align: center !important;}
+#forums td[style="width:9%;"] {
+	text-align: center !important;}
+#forums td[style="width:14%;"] {
+	text-align: center !important;}
 
-/****Overrides hard coded styles of Topics, Posts and Author headers****/
-#forums td[style="width:7%;"] {text-align: center !important;}
-#forums td[style="width:9%;"] {text-align: center !important;}
-#forums td[style="width:14%;"] {text-align: center !important;}
-
-/****h3 is the Subsection names (Site, Community, Gaming, etc.)****/
 #forums .linkbox + h3 {
 	margin-top:-20px;}
 #forums h3 {
     padding: 0px;
-    /* border-bottom: 1px rgba(198,230,246,.3) solid; */
-    /* margin-left: 5px; */
-    /* color: #c6e6f6; */
     margin-left: 35px;
-    /* margin-top: -20px; */
-    margin-bottom: 0px;
-    }
-/*#forums h3:first-child {margin:0 0 15px 0;}*/
-
+    margin-bottom: 0px;}
 #forums .forum_post h3 {margin: 0;}
 
-/****h4 is the name of each forum section (Announcements, Blog, Staff Picks, etc.)****/
 #forums h4 {text-align:left;}
-#forums h4 a {/* color:#fff; */}
 
 #forums #content .thin td.unread{
 	background-image: url(icon/balloon-unread.png);
@@ -7054,86 +7079,88 @@ textarea {
     background-repeat: no-repeat;
     margin-left: 5px;}
 
-/****Category List on Latest Posts Page***/
 #forums table.border .cat_list td {
 	width:20%;  
 	padding:0 !important;  
 	border:0 !important}
 #forums table.border .cat_list td[colspan="5"] {
-	background-color: #2b4e66; 
-	height: 25px;}
-#forums table.border .cat_list td[colspan="5"] strong {padding: 3px;}
+    height: 25px;
+    background-color: #e7e7e7;}
+#forums table.border .cat_list td[colspan="5"] strong {
+	padding: 3px;}
 #forums #content #otherop td, #forums #content #forumlist td {
-	text-align:left;
-	background-color: rgba(27, 47, 63, 0.75);}
-#forums #content .search table {
-	border: 2px solid #003;
-	margin-bottom: 6px;}
-#forums #content .search table td {
-	border:solid #003 1px;}
+	text-align:left;}
+#forums #content .search table {}
+#forums #content .search table td {}
 #forums #content .search .submit {
 	text-align:right;
 	margin-right: 5px;}
-#forums #content .search table tr {
-	background-color:#426d93;}
+#forums #content .search table tr {}
 #forums #content tbody #cat_list td a {margin:5px;}
 
 /*Last 25 posts default forums box */
 .forum_latest .search {
-	margin-top: -36px;
-	width: 102%;
-	margin-left: -10px;
-	z-index: 1;
-	margin-bottom: 10px;
-	padding-top: 40px;}
-.forum_latest h2 {z-index:2;}
-.forum_latest form br {line-height:0px;}
-#user .main_column td.label {vertical-align:middle;}
+    z-index: 1;
+    margin: 0;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7) !important;
+    background: white !important;
+    width: 100%;
+    padding: 0 0 10px 0;}
+.forum_latest h2 {
+	z-index:2;
+    margin-bottom: 16px;}
+.forum_latest form br {
+	line-height:0px;}
+.forum_latest .search #otherop,
+.forum_latest .search #forumlist {
+    box-shadow: none !important;}
+#user .main_column td.label {
+	vertical-align:middle;}
+.forum_latest .search #otherop #cat_list td[colspan="5"] {
+    padding: 5px 5px 5px 15px;}
+.forum_latest .search #otherop #cat_list td[colspan="5"] a {
+    padding: 0 !important;
+    margin: 0 10px 0 0 !important;
+    font-weight: normal;}
+.forum_latest .search #forumlist {
+    margin: 0 !important;}
+.forum_latest .search #forumlist + br {
+    display: none;}
+.forum_latest .search #forumlist tr td:not([colspan="2"]) {
+    overflow: hidden;
+    border: 1px solid #DBDBDB;}
+.forum_latest .search #forumlist tr td input {
+    position: relative;}
+.forum_latest .search #forumlist tr td label {
+    font-weight: normal;
+    padding: 300px;
+    margin: -300px;
+    cursor: pointer;}
+.forum_latest .search #forumlist tr td input[checked="checked"] + label {
+    background: #e7e7e7;}
+#forums .forums_search .search_form table.layout.border #forum_search_cat_list tbody >tr td {
+    padding: 5px !important;
+    height: inherit;}
 
 /****Avatar****/
-td.avatar {
-	/* background-color:#1c3145; */
-	/* box-shadow: 0px 0px 10px black; */
-	}
-#forums td.avatar img {/* margin-top: 5px; */}
-
-.forum_post td.avatar {/* width: 150px; */background-color: white;border-right: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;width: 150px;padding: 0px;/* margin: 0; */}
+.forum_post td.avatar {
+	background-color: white;
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+	width: 150px;padding: 0px;}
 .forum_post .body {
     margin: 0 10px;
     padding: 10px 15px;
-    width: 100%;
-    }
+    width: 100%;}
 
 .forumstat {
-	/* font-size:11px; */
 	text-align:left;
 	margin:2px 0px;
-	/* padding:2px; */
 	padding: 5px;
-	font-size: 9pt;
-	/* background-color:rgba(26, 42, 59, 1); */
-	/* color: rgba(255,255,255,.3); */
-	}
-.forumstat:hover {/* color:#fff; */}
+	font-size: 9pt;}
 
 .forumstat strong {
     font-size: 11pt;}
-.avatar .forumstat {
-    /* max-height: 16px; */
-    /* -webkit-transition: max-height 0.1s ease-out; */
-    -moz-transition: max-height 0.1s ease-out;
-    -o-transition: max-height 0.1s ease-out;
-    /* transition: max-height 0.1s ease-out; */
-    /* overflow: hidden; */
-    }
-.avatar:hover .forumstat {
-    /* max-height: 500px; */
-    /* -webkit-transition: max-height 0.3s ease-in 0.25s; */
-    -moz-transition: max-height 0.3s ease-in 0.25s;
-    -o-transition: max-height 0.3s ease-in 0.25s;
-    /* transition: max-height 0.3s ease-in 0.25s; */
-    /* color:#fff; */
-    }
 
 .user_online {
 	display: block;
@@ -7145,27 +7172,17 @@ td.avatar {
 /****Likes, Dislikes****/
 tr.likes td {
 	text-align: left !important;
-	/* background-color:#1c3145; */
-	padding-left: 5px;
-	}
+	padding-left: 5px;}
 .forum_post tbody tr td[id^="likers_"] {
     border-top: 1px solid #e5e5e5;
-    padding: 5px;
-}
-tr.likes {/* border-top: #000 solid 2px; */}
+    padding: 5px;}
 
 /****Forum Posts****/
-#forums .colhead_dark .time, #forums .colhead_dark a[href*="#quickpost"], #forums .colhead_dark a[href*="#post"] {/* font-size:.8em; */}
-#forums .colhead_dark div[id*="bar"] {/* font-size:.8em; */margin-top: 1px;padding-right: 5px;}
+#forums .colhead_dark div[id*="bar"] {
+	margin-top: 1px;
+	padding-right: 5px;}
 
-#forums #content .thin .sub {/* top:40px; */}
 #forums .sub {visibility: hidden;}
-#forums #content .thin .sub span {
-	/* border-bottom: 1px solid #003; */
-	/* display:block; */
-	/* padding: 10px; */
-	}
-#forums #content .thin .sub a {/* color: #fff; */}
  
 #forums blockquote {
 	margin-top:5px;}
@@ -7174,10 +7191,7 @@ tr.likes {/* border-top: #000 solid 2px; */}
 #forums .forum_post td.body img, 
 #forums .forum_post td.body iframe {
     margin: 5px;
-    /* filter: drop-shadow(0px 0px 10px black); */
-    /* -webkit-filter: drop-shadow(0px 0px 10px black); */
-    padding: 5px;
-    }
+    padding: 5px;}
 #forums .forum_post td.body img[src*="static/common/smileys/"] {
 	margin:0px; 
 	box-shadow: 0px 0px 0px;
@@ -7199,11 +7213,9 @@ tr.likes {/* border-top: #000 solid 2px; */}
 #forums table.forum_unread tr.colhead_dark {
     background: linear-gradient(rgba(104, 192, 119, 1), rgba(42,79,101,0.5));}
 
-/****Other Misc. Items****/
-#forums .rowa, #forums .rowb {/* height: 40px; */}
-
 /*For spoiler BB Code*/
-#forums a[onclick*="#thread_notes_tabl"] {margin: 5px;}
+#forums a[onclick*="#thread_notes_tabl"] {
+	margin: 5px;}
 #forums td.body a[onclick="BBCode.spoiler(this);"] {
 	background-color: #2b4e66 !important;
 	padding: 1px 3px;
@@ -7230,36 +7242,16 @@ tr.likes {/* border-top: #000 solid 2px; */}
 	overflow-x: hidden;}
 
 /* Stick Posts */
-#forums #content .thin table.sticky_post {
-	width: 85%;
-    margin: 30px auto;}
+#forums #content .thin table.sticky_post {}
 
 .sticky_post_label::before {
-    background: url('images/pin.png');
+    background: url('svg/sticky.svg');
     height: 15px;
     width: 15px;
     content: "";
     float: left;
     margin: 1px 5px 0px 2px;}
 
-/* Fixes red throughout the site */
-span[style="color:red;font-weight:700;"],
-span[style="color: red;"] {color: #dd3434 !important; } 
-span[style="color: #ff0000;"] {color: #bf6a6a !important;}
-
-/*  This is for share score around forum avatars.  Don't like it so not implementing anytime soon
-.ss_10.avatar {box-shadow: 0px 5px 10px -5px #fff !important;}
-.ss_12.avatar {box-shadow: 0px 5px 10px -5px #faffb5 !important;}
-.ss_15.avatar {box-shadow: 0px 5px 10px -5px #f6fe79 !important;}
-.ss_18.avatar {box-shadow: 0px 5px 10px -5px #f3ff3e !important;}
-.ss_20.avatar {box-shadow: 0px 5px 10px -5px #efff00 !important;}
-
-.ss_10.avatar {border-left: 1px solid #fff !important;}
-.ss_12.avatar {border-left: 2px solid #faffb5 !important;}
-.ss_15.avatar {border-left: 3px solid #f6fe79 !important;}
-.ss_18.avatar {border-left: 4px solid #f3ff3e !important;}
-.ss_20.avatar {border-left: 5px solid #efff00 !important;}
-*/
 #forums #threadpoll #polls input[type="button"] {
     margin-bottom: 10px;}
 #forums .poll li.graph {
