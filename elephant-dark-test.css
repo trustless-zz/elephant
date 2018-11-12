@@ -3425,14 +3425,24 @@ span.user_title * {
 
 .global_buffs {
     position: absolute;
-    top: 25px;
-    left: 94%;
+    top: 145px;
+    right: 110px;
+    left: unset;
     filter: opacity(0.7);
     width: 1px;}
 .global_buffs a .buff_text {
     transition: 0.1s;}
 .global_buffs a:hover .buff_text {
     color: rgb(232,80,102) !important;}
+.global_buffs a:hover {
+    filter: opacity(1);}
+.clan_trophy {
+    position: absolute;
+    top: 25px;
+    right: 30px;}
+.clan_trophy img {
+    height: 100px;
+    filter: none;}
 
 li#stats_share_score {
     width: 170px;
@@ -7475,6 +7485,11 @@ div#searchbars {
     margin-left: 450px;}
 }
 @media screen and (max-width: 1450px) and (min-width: 1280px) {
+.clan_trophy {
+    top: 105px;
+    right: 10px;}
+.clan_trophy img {
+    height: 70px;}
 .global_buffs {
     left: 34%;
     width: 100%;
