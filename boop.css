@@ -7508,6 +7508,11 @@ div#searchbars {
     font-size: 22px;}
 .global_buffs .buff_text .buff_multiplier {
     font-size: 15px;}
+.clan_trophy {
+    right: 20px;
+    top: 105px;}
+.clan_trophy img {
+    height: 70px;}
 }
 
 
