@@ -6985,7 +6985,10 @@ textarea {
 #forums .forum_post .colhead_dark td {
 	text-align: left;}
 #forums .forum_post .colhead_dark div[style="float:left;"] {
-	width: 90%;}
+	width: 90%;
+	margin: 0;
+	height: 18px;
+	line-height: 19px;}
 
 #forums #content .thin .sub {
     position: absolute;
