@@ -7213,8 +7213,11 @@ tr.likes td {
 #forums table.forum_unread {
     outline: rgba(104, 192, 119, 1) solid 2px;
     outline-offset: -1px;}
+#forums table.sticky_post {
+    outline: rgb(148, 166, 177) solid 2px;
+    outline-offset: -1px;}
 #forums table.forum_unread tr.colhead_dark {
-    background: linear-gradient(rgba(104, 192, 119, 1), rgba(42,79,101,0.5));}
+    /* background: linear-gradient(rgba(104, 192, 119, 1), rgba(42,79,101,0.5)); */}
 
 /*For spoiler BB Code*/
 #forums a[onclick*="#thread_notes_tabl"] {
@@ -7248,9 +7251,11 @@ tr.likes td {
 #forums #content .thin table.sticky_post {}
 
 .sticky_post_label::before {
-    background: url('svg/sticky.svg');
+    background: url(icon/svg/sticky.svg);
     height: 15px;
-    width: 15px;
+    width: 13.255px;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     content: "";
     float: left;
     margin: 1px 5px 0px 2px;}
