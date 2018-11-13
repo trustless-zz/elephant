@@ -4629,6 +4629,85 @@ button.submit {
 	> .small_stats (profile views and hnrs)
 	> .user_stats (ratio, gold, upload, download)*/
 
+/* Ability icons */
+#crafting_panel ul#abilities { padding-left: 5px;}
+#crafting_panel ul#abilities li {
+	float: left;
+	width: 64px;
+	height: 64px;
+	padding: 0;
+	margin: 0;}
+#crafting_panel li#campfire {background: url('https://gazellegames.net/static/styles/game_room/images/icons/campfire.png') no-repeat left;}
+#crafting_panel li#campfire.active {background: url('https://gazellegames.net/static/styles/game_room/images/icons/campfire_activated.png') no-repeat left;}
+#crafting_panel li#forge {background: url('https://gazellegames.net/static/styles/game_room/images/icons/forge.png') no-repeat left;}
+#crafting_panel li#forge.active {background: url('https://gazellegames.net/static/styles/game_room/images/icons/forge_activated.png') no-repeat left;}
+#crafting_panel li#enchanting {background: url('https://gazellegames.net/static/styles/game_room/images/icons/enchant.png') no-repeat left;}
+#crafting_panel li#enchanting.active {background-image: url('https://gazellegames.net/static/styles/game_room/images/icons/enchant_activated.png');}
+
+
+/* Crafting books */
+.crafting #crafting_recipes #items_list {
+	left:0px;}
+.crafting #crafting_recipes #items_list:before {
+	display:none;}
+#crafting_recipes {
+	height: 400px;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	background-color: white;
+	overflow: hidden;
+    box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
+#crafting_recipes #items_list {
+	margin-top: 0;
+	text-align: center;
+	width: 100%;
+	position: relative;}
+#crafting_recipes li.item_li {
+	list-style: none;
+	float: left;
+	height: 230px;
+	width: 184px;
+	margin: 0 17px 10px 0;
+	cursor: pointer;}
+.crafting #crafting_recipes #items_list li.item_li:nth-child(6n) {
+	margin-right: 0;}
+#crafting_panel #items {
+    margin-bottom: 49px;}
+#crafting_recipes li.item_li > div {
+	position: relative;
+	width: 160px; 
+	padding-left: 20px; }
+#crafting_recipes h3 { 
+	position: absolute;
+	top: 10px;
+	width: 160px;
+	z-index: 10;}
+#crafting_recipes .item_image_div {
+	height: 150px;
+	width: 160px;
+	position: absolute;
+	top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;}
+#crafting_recipes .item_center.item_image {
+	max-width: 134px;
+	max-height: 134px;
+	vertical-align: middle;
+	display: block;}
+
+.crafting div[class^="ps-scrollbar-"] {
+    display: none !important;}
+.crafting #crafting_panel #items #items-wrapper,
+.crafting #crafting_recipes #items_list {
+    overflow: auto !important;}
+.crafting #crafting_panel #items #items-wrapper {
+    height: calc(100% - 64px);}
+
+
 .profile .box_stats .label {display: none;}
 
 .profile .box_stats {
@@ -7287,6 +7366,16 @@ tr.likes td {
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#crafting_recipes li.item_li {
+	height: 250px;
+    width: 200px;}
+#crafting_recipes .item_center.item_image {
+	max-width: 150px;
+    max-height: 150px;}
+#crafting_panel .itemslot#CraftingResult {
+    margin: 131px 0 0 416px;}
+#crafting_panel #slots_panel {
+    width: 535px;}
 #top10 .thin.top10_tags #ut,
 #top10 .thin.top10_tags #ur,
 #top10 .thin.top10_tags #v {
@@ -7365,7 +7454,7 @@ ul#items_list:before {
 #equipment #items {
     width: 463px;}
 #crafting_panel #items {
-    width: 466px;
+    width: 481px;
     padding: 3px 0px 3px 0px;}
 .freeleech_shop_main .box, .global_buffs_shop_main .box, #user .inventory .save_message {max-width: 1036px;}
 #shop .box.pad.box_buffs_info {
