@@ -61,7 +61,8 @@ a, .hovereffect h2 a {
 	text-decoration: none;
 	color: rgb(37, 92, 124);}
 
-input[type=text] {
+input[type=text],
+input[type=search] {
 	height: 20px;
 	font-size: 10pt;
 	background-color: white;
@@ -74,7 +75,8 @@ input[type=text] {
 	color: black;
 	font-style: italic;}
 
-input[type=text]:focus {
+input[type=text]:focus,
+input[type=search]:focus {
 	text-align: left;
 	color: black;
 	font-style: normal;
@@ -6742,7 +6744,7 @@ span.size10 {font-size: 3em;line-height: 1em}
     vertical-align: top;}
 #clan_stats .center img {
     margin-top: 10px;
-    margin-left:-120px;
+    margin-left: -130px;
     height: 30px; }
 #clan_stats .clan_stat_totals h3 {
     font-family: whitney, sans-serif;
@@ -6995,7 +6997,7 @@ textarea {
     font-family: whitney, sans-serif;}
 
 
-/** #inbox **/
+/** inbox **/
 #inbox table {
 	border-collapse:collapse;}
 #inbox .head {
@@ -7049,19 +7051,15 @@ textarea {
     box-shadow: none;}
 #inbox #preview + #buttons >* {
     margin-left: 5px;}
-/** /#inbox **/
+/** /inbox **/
 
 
-
-
-
-/** #forums **/
+/** forums **/
 .last_read a {
     border: none;
     width: 100%;
     height: 100%;
     display: block;}
-
 #forums .forum_post {
     margin-bottom: 25px !important;}
 #forums .forum_post .colhead_dark td {
@@ -7071,7 +7069,6 @@ textarea {
 	margin: 0;
 	height: 18px;
 	line-height: 19px;}
-
 #forums #content .thin .sub {
     position: absolute;
     left: 0;
@@ -7080,13 +7077,10 @@ textarea {
 	width: 100%;
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);
 	margin: 10px auto 15px auto;}
-
 #forums .thin >.linkbox.linkbox_top + .box.thin.clear {
     margin-bottom: 25px;}
-
 #forums .thin >h2 + .linkbox + .linkbox {
     margin-top: -15px;}
-
 #forums .linkbox + .linkbox.pager,
 #forums .linkbox.pager + .linkbox {
     margin-top: -20px;}
@@ -7095,39 +7089,32 @@ textarea {
 	vertical-align: bottom;}
 #forums .linkbox_bottom {
 	margin: 5px 0px;}
-
 #forums #reply_box .box.pad #quickpostform #quickreplypreview {
     margin: -20px 0 10px 0;}
 #forums #reply_box .box.pad #quickpostform #quickreplypreview tr.colhead_dark td[colspan="2"] span[style="float:left;"] {
     margin-top: 2px;}
-
 #forums table.border td {
 	text-align:left;}
-
 #forums td {
 	text-align:center;}
 #forums td.body {
 	text-align:left;
 	width: 100%;
 	padding:10px 10px 25px 10px;}
-
 .forum_post tr {
 	width:100%;
 	text-align:left !important;}
 #forums #content table tr.colhead td {
 	text-align:left;}
-
 #forums .breadcrumbs {
     text-align: left;
     margin-top: -15px;}
-
 #forums td[style="width:7%;"] {
 	text-align: center !important;}
 #forums td[style="width:9%;"] {
 	text-align: center !important;}
 #forums td[style="width:14%;"] {
 	text-align: center !important;}
-
 #forums .linkbox + h3 {
 	margin-top:-20px;}
 #forums h3 {
@@ -7135,9 +7122,7 @@ textarea {
     margin-left: 35px;
     margin-bottom: 0px;}
 #forums .forum_post h3 {margin: 0;}
-
 #forums h4 {text-align:left;}
-
 #forums #content .thin td.unread{
 	background-image: url(icon/balloon-unread.png);
 	background-repeat: no-repeat;
@@ -7163,7 +7148,6 @@ textarea {
     background-size: 15px;
     background-repeat: no-repeat;
     margin-left: 5px;}
-
 #forums table.border .cat_list td {
 	width:20%;  
 	padding:0 !important;  
@@ -7182,8 +7166,6 @@ textarea {
 	margin-right: 5px;}
 #forums #content .search table tr {}
 #forums #content tbody #cat_list td a {margin:5px;}
-
-/*Last 25 posts default forums box */
 .forum_latest .search {
     z-index: 1;
     margin: 0;
@@ -7223,11 +7205,11 @@ textarea {
     cursor: pointer;}
 .forum_latest .search #forumlist tr td input[checked="checked"] + label {
     background: #e7e7e7;}
+#forums .forums_search .search_form table.layout.border input[type="search"] {
+    height: 24px;}
 #forums .forums_search .search_form table.layout.border #forum_search_cat_list tbody >tr td {
     padding: 5px !important;
     height: inherit;}
-
-/****Avatar****/
 .forum_post td.avatar {
 	background-color: white;
 	border-right: 1px solid #e5e5e5;
@@ -7237,101 +7219,64 @@ textarea {
     margin: 0 10px;
     padding: 10px 15px;
     width: 100%;}
-
 .forumstat {
 	text-align:left;
 	margin:2px 0px;
 	padding: 5px;
 	font-size: 9pt;}
-
 .forumstat strong {
     font-size: 11pt;}
-
 .user_online {
 	display: block;
     color: #69c077;}
 .user_offline {
 	display: block;
     color: #bf6a6a;}
-
-/****Likes, Dislikes****/
 tr.likes td {
 	text-align: left !important;
 	padding-left: 5px;}
 .forum_post tbody tr td[id^="likers_"] {
     border-top: 1px solid #e5e5e5;
     padding: 5px;}
-
-/****Forum Posts****/
 #forums .colhead_dark div[id*="bar"] {
 	margin-top: 1px;
 	padding-right: 5px;}
-
 #forums .sub {visibility: hidden;}
- 
 #forums blockquote {
 	margin-top:5px;}
-
-/****Drop shadows on images and videos in the forums.  Different for smileys and weekly recap****/
 #forums .forum_post td.body img, 
 #forums .forum_post td.body iframe {
     margin: 5px;
     padding: 5px;}
-#forums .forum_post td.body img[src*="static/common/smileys/"] {
-	margin:0px; 
-	box-shadow: 0px 0px 0px;
-	filter: none;
-	-webkit-filter: none;
-	padding: 0px;}
-#forums .forum_post td.body img[src="https://ptpimg.me/5u4e3c.png"] {
-    filter: drop-shadow(0px -10px 10px black);
-    -webkit-filter: drop-shadow(0px -10px 10px black);
-	margin:0px; 
-	box-shadow: 0px 0px 0px;
-	padding: 0px;}
-
-
-/*Puts border around unread posts*/
 #forums table.forum_unread {
     outline: rgba(104, 192, 119, 1) solid 2px;
     outline-offset: -1px;}
-#forums table.sticky_post {
-    outline: rgb(148, 166, 177) solid 2px;
-    outline-offset: -1px;}
 #forums table.forum_unread tr.colhead_dark {
     /* background: linear-gradient(rgba(104, 192, 119, 1), rgba(42,79,101,0.5)); */}
-
-/*For spoiler BB Code*/
 #forums a[onclick*="#thread_notes_tabl"] {
 	margin: 5px;}
 #forums td.body a[onclick="BBCode.spoiler(this);"] {
 	background-color: #2b4e66 !important;
 	padding: 1px 3px;
 	color: #fff;}
-
-/*Aligns images in custom titles*/
 .user_title img {
     display: inline-block;
     vertical-align: bottom;}
-
-/* Signatures */
 #forums .forum_signature td {
 	text-align: left;
 	padding: 10px 4px 4px 10px;
 	height: auto;
 	vertical-align: bottom;
 	opacity: .7;}
- 
 #forums .forum_signature td div {
 	border-top: 1px solid #e5e5e5;
 	padding: 5px 0px 2px 3px;
 	max-height: 75px;
 	overflow-y: auto;
 	overflow-x: hidden;}
-
-/* Stick Posts */
-#forums #content .thin table.sticky_post {}
-
+#forums table.sticky_post {
+    outline: rgb(148, 166, 177) solid 2px;
+    outline-offset: -1px;}
 .sticky_post_label::before {
     background: url(icon/svg/sticky.svg);
     height: 15px;
@@ -7341,7 +7286,6 @@ tr.likes td {
     content: "";
     float: left;
     margin: 1px 5px 0px 2px;}
-
 #forums #threadpoll #polls input[type="button"] {
     margin-bottom: 10px;}
 #forums .poll li.graph {
@@ -7361,10 +7305,7 @@ tr.likes td {
     max-width: 1129px;}
 .badge_icon {
     margin: -3px 2px 0 2px;}
-/** /#forums **/
-
-
-
+/** /forums **/
 
 
 /* widescreen */
