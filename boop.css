@@ -6981,6 +6981,9 @@ textarea {
     min-width: 1250px;
     max-width: 1250px;}
 
+#torrents .torrent_history >h2 + .linkbox {
+    margin-top: 0;}
+
 /* 'You haven't joined a clan yet!'  message */
 #clans #clan_stats >span[style="float: right;"]:first-child + .box.pad {
     padding: 0;
