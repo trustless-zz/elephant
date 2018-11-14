@@ -3214,19 +3214,19 @@ span.user_title * {
     top: 145px;
     right: 110px;
     left: unset;
-    opacity: 0.7;;
+    opacity: 0.7;
+    filter: none;
     width: 1px;}
 .global_buffs a .buff_text {
     transition: 0.1s;}
 .global_buffs a:hover .buff_text {
     color: rgb(232,80,102) !important;}
-.global_buffs:hover {
-    opacity: 1;}
 .clan_trophy {
     position: absolute;
     top: 25px;
     right: 30px;
     opacity: 0.7;}
+.global_buffs:hover,
 .clan_trophy:hover {
     opacity: 1;}
 .clan_trophy img {
@@ -7241,6 +7241,8 @@ textarea {
     cursor: pointer;}
 .forum_latest .search #forumlist tr td input[checked="checked"] + label {
     background: #e7e7e7;}
+#forums #content .forum_latest .forum_index.forum_latest {
+    margin-top: 25px;}
 #forums .forums_search .search_form table.layout.border input[type="search"] {
     height: 24px;}
 #forums .forums_search .search_form table.layout.border #forum_search_cat_list tbody >tr td {
