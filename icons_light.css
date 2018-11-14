@@ -1,0 +1,122 @@
+﻿/** CATICONS 'n OBJECTS **/
+.amigacd32 {
+    background: url(icon/svg/amigacd32_dark.svg);}
+.amstradcpc {
+    background: url(icon/svg/amstradcpc_dark.svg);}
+.atarist {
+    background: url(icon/svg/atarist_dark.svg);}
+.fairchildchannelf {
+    background: url(icon/svg/fairchildchannelf_dark.svg);}
+.gameboycolor {
+    background: url(icon/svg/gameboycolor_dark.svg);}
+.gamegear {
+    background: url(icon/svg/gamegear_dark.svg);}
+.nes {
+    background: url(icon/svg/nes_dark.svg);}
+.newnintendo3ds {
+    background: url(icon/svg/newnintendo3ds_dark.svg);}
+.nintendo3ds {
+    background: url(icon/svg/nintendo3ds_dark.svg);}
+.nokian-gage {
+    background: url(icon/svg/nokian-gage_dark.svg);}
+.rcastudioii {
+    background: url(icon/svg/rcastudioii_dark.svg);}
+.tangerineoric {
+    background: url(icon/svg/tangerineoric_dark.svg);}
+.v\.smile {
+    background: url(icon/svg/v.smile_dark.svg);}
+.watarasupervision {
+    background: url(icon/svg/watarasupervision_dark.svg);}
+.wiiu {
+    background: url(icon/svg/wiiu_dark.svg);}
+.torrent_table a.removebookmark {
+    background: url("icon/svg/bookmarked_dark.svg");}
+.torrent_table a.removebookmark:hover {
+    background: url("icon/svg/removebookmark_dark.svg");}
+.Amazon {
+    background-image: url("weblinks/svg/Amazon_dark.svg");}
+
+.boardgame,
+.cardgame,
+.cats_guides,
+.cats_ebooks,
+.ebook,
+.gameboy,
+.gameboyadvance,
+.generalcomputervectrex,
+.interactivedvd,
+.ios,
+.mac,
+.mattelintellivision,
+.memotechmtx,
+.miniaturewargames,
+.music,
+.cats_ost,
+.necpc-98,
+.necturbografx-16,
+.nintendods,
+.penandpaperrpg,
+.phonepda,
+.playstation2,
+.playstation3,
+.playstation4,
+.playstationportable,
+.playstationvita,
+.sharpx1,
+.sharpx68000,
+.snkneogeo,
+.thomsonmo5,
+.wii,
+.torrent_table a.addbookmark,
+.Discogs,
+.GamesWebsite,
+.GOG,
+.Steam {
+    -webkit-filter: brightness(20%);
+    -moz-filter: brightness(20%);
+    -ms-filter: brightness(20%);
+    -o-filter: brightness(20%);
+    filter: brightness(20%);}
+
+.tilt.Discogs:hover,
+.tilt.GamesWebsite:hover,
+.tilt.GOG:hover,
+.tilt.Steam:hover,
+#linkedgroup.boardgame:hover,
+#linkedgroup.cardgame:hover,
+#linkedgroup.cats_guides:hover,
+#linkedgroup.cats_ebooks:hover,
+#linkedgroup.ebook:hover,
+#linkedgroup.gameboy:hover,
+#linkedgroup.gameboyadvance:hover,
+#linkedgroup.generalcomputervectrex:hover,
+#linkedgroup.interactivedvd:hover,
+#linkedgroup.ios:hover,
+#linkedgroup.mac:hover,
+#linkedgroup.mattelintellivision:hover,
+#linkedgroup.memotechmtx:hover,
+#linkedgroup.miniaturewargames:hover,
+#linkedgroup.music:hover,
+#linkedgroup.cats_ost:hover,
+#linkedgroup.necpc-98:hover,
+#linkedgroup.necturbografx-16:hover,
+#linkedgroup.nintendods:hover,
+#linkedgroup.penandpaperrpg:hover,
+#linkedgroup.phonepda:hover,
+#linkedgroup.playstation2:hover,
+#linkedgroup.playstation3:hover,
+#linkedgroup.playstation4:hover,
+#linkedgroup.playstationportable:hover,
+#linkedgroup.playstationvita:hover,
+#linkedgroup.sharpx1:hover,
+#linkedgroup.sharpx68000:hover,
+#linkedgroup.snkneogeo:hover,
+#linkedgroup.thomsonmo5:hover,
+#linkedgroup.wii:hover,
+.torrent_table a.addbookmark:hover {
+    -webkit-filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));
+    -moz-filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));
+    -ms-filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));
+    -o-filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));
+    filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));}
+/** /CATICONS 'n OBJECTS **/
