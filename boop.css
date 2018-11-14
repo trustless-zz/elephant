@@ -3214,18 +3214,21 @@ span.user_title * {
     top: 145px;
     right: 110px;
     left: unset;
-    filter: opacity(0.7);
+    opacity: 0.7;;
     width: 1px;}
 .global_buffs a .buff_text {
     transition: 0.1s;}
 .global_buffs a:hover .buff_text {
     color: rgb(232,80,102) !important;}
-.global_buffs a:hover {
-    filter: opacity(1);}
+.global_buffs:hover {
+    opacity: 1;}
 .clan_trophy {
     position: absolute;
     top: 25px;
-    right: 30px;}
+    right: 30px;
+    opacity: 0.7;}
+.clan_trophy:hover {
+    opacity: 1;}
 .clan_trophy img {
     height: 100px;
     filter: none;}
@@ -6219,7 +6222,8 @@ a:hover, #userinfo_minor li a:hover, a:hover span, .tags >a:hover, #requests .th
 
 #user .box.box_items #itemsdiv table tbody tr td a >img:hover, 
 #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, 
-.box.wiki_article a >img:hover {
+.box.wiki_article a >img:hover,
+.clan_trophy:hover {
     -webkit-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -moz-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
     -ms-filter: drop-shadow(0px 0px 3px rgba(232,80,102,1));
@@ -7123,6 +7127,9 @@ textarea {
     margin-bottom: 0px;}
 #forums .forum_post h3 {margin: 0;}
 #forums h4 {text-align:left;}
+#forums .forum_post td.body img[src*="static/common/smileys/"] {
+    margin: 0px;
+    padding: 0px;}
 #forums #content .thin td.unread{
 	background-image: url(icon/balloon-unread.png);
 	background-repeat: no-repeat;
@@ -7135,12 +7142,41 @@ textarea {
 	background-repeat:no-repeat;
 	height:18px;
 	width:18px;}
-#forums #content .thin td.read_sticky{background-image: url(icon/sticky.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.unread_sticky{background-image:url(icon/sticky-unread.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.read_locked{background-image:url(icon/lock.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.unread_locked{background-image:url(icon/lock-unread.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.read_locked_sticky{background-image:url(icon/lock-sticky.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
-#forums #content .thin td.unread_locked_sticky{background-image: url(icon/lock-sticky-unread.png);background-repeat: no-repeat;background-position: 50%; width:18px; height:18px}
+#forums #content .thin td.read_sticky {
+    background-image: url(icon/sticky.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width:18px; height:18px}
+#forums #content .thin td.unread_sticky {
+    background-image:url(icon/sticky-unread.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width:18px;
+    height:18px;}
+#forums #content .thin td.read_locked {
+    background-image:url(icon/lock.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width:18px;
+    height:18px;}
+#forums #content .thin td.unread_locked {
+    background-image:url(icon/lock-unread.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width:18px;
+    height:18px;}
+#forums #content .thin td.read_locked_sticky {
+    background-image:url(icon/lock-sticky.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width:18px;
+    height:18px;}
+#forums #content .thin td.unread_locked_sticky {
+    background-image: url(icon/lock-sticky-unread.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width:18px;
+    height:18px;}
 .last_read {
     background-image: url(arrow30x26.png);
     width: 15px !important;
