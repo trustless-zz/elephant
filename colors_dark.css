@@ -35,7 +35,7 @@ a,
 #share_score .large_progress_bar .main_section {
     border-right: 2px solid #fff;}
 .more_info .info_box span.label {
-	border-bottom: 1px solid #c4c4c4;}
+    border-bottom: 1px solid #c09a9a;}
 
 #taglist tbody {
     background-color: rgba(68,58,70,0.12);}
@@ -107,7 +107,6 @@ table,
 #rules .thin form.search_form {
     background-color: #1f2023;}
 
-/*----------------------*/
 #collections .thin table.collections_art_display[width="100%"] >tbody,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
 #collections .thin .center >form[method="get"],
@@ -818,6 +817,16 @@ button[type="button"]:not([title="Close"]):hover,
 	background: radial-gradient(circle, #e85066 0%,#c09a9a 100%);}
 .body.similar ul.nobullet li span.similar_votes:hover:before {
     background: linear-gradient(to top, rgba(232,80,102,0.5) 0%,rgba(232,80,102, 0) 100%);}
+
+input[type="button" i],
+input[type="submit" i],
+input[type="reset" i],
+input[type="file" i]::-webkit-file-upload-button,
+button {
+    color: buttontext;}
+select#order_by,
+select#order_way {
+    background-color: rgb(196, 196, 196);}
 
 .collage tbody tr td a:hover,
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover,
