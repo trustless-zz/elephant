@@ -1,0 +1,144 @@
+﻿html {
+    background-image: url(zebraInv.png);}
+.last_read,
+.show_torrents a,
+.hide_torrents a {
+    background-image: url(dark-arrow30x26.png);}
+.prev,
+    background-image: url(icon/arrow_right_dark46x42.png);}
+#equipment #equip_panel {
+    background: url(equipment_panel_test-dark.png);}
+#shop li.item_li.nostock #clickable .item_description,
+#shop li.item_li.featured.nostock #clickable .item_description {
+    background: url(soldoutblack.png);}
+
+#forums #content .thin td.unread{
+    background-image: url(icon/balloon-unread-dark.png);}
+#forums #content .thin td.unread_sticky {
+    background-image:url(icon/sticky-unread-dark.png);}
+#forums #content .thin td.unread_locked {
+    background-image:url(icon/lock-unread-dark.png);}
+#forums #content .thin td.unread_locked_sticky {
+    background-image: url(icon/lock-sticky-unread-dark.png);}
+
+
+.amigacd32 {
+    background: url(icon/svg/amigacd32_light.svg);}
+.amstradcpc {
+    background: url(icon/svg/amstradcpc_light.svg);}
+.atarist {
+    background: url(icon/svg/atarist_light.svg);}
+.fairchildchannelf {
+    background: url(icon/svg/fairchildchannelf_light.svg);}
+.gameboycolor {
+    background: url(icon/svg/gameboycolor_light.svg);}
+.gamegear {
+    background: url(icon/svg/gamegear_light.svg);}
+.nes {
+    background: url(icon/svg/nes_light.svg);}
+.newnintendo3ds {
+    background: url(icon/svg/newnintendo3ds_light.svg);}
+.nintendo3ds {
+    background: url(icon/svg/nintendo3ds_light.svg);}
+.nokian-gage {
+    background: url(icon/svg/nokian-gage_light.svg);}
+.rcastudioii {
+    background: url(icon/svg/rcastudioii_light.svg);}
+.tangerineoric {
+    background: url(icon/svg/tangerineoric_light.svg);}
+.v\.smile {
+    background: url(icon/svg/v.smile_light.svg);}
+.watarasupervision {
+    background: url(icon/svg/watarasupervision_light.svg);}
+.wiiu {
+    background: url(icon/svg/wiiu_light.svg);}
+.torrent_table a.removebookmark {
+    background: url("icon/svg/bookmarked_light.svg");}
+.torrent_table a.removebookmark:hover {
+    background: url("icon/svg/removebookmark_light.svg");}
+.Amazon {
+    background-image: url("weblinks/svg/Amazon_light.svg");}
+
+.boardgame,
+.cardgame,
+.cats_guides,
+.cats_ebooks,
+.ebook,
+.gameboy,
+.gameboyadvance,
+.generalcomputervectrex,
+.interactivedvd,
+.ios,
+.mac,
+.mattelintellivision,
+.memotechmtx,
+.miniaturewargames,
+.music,
+.cats_ost,
+.necpc-98,
+.necturbografx-16,
+.nintendods,
+.penandpaperrpg,
+.phonepda,
+.playstation2,
+.playstation3,
+.playstation4,
+.playstationportable,
+.playstationvita,
+.sharpx1,
+.sharpx68000,
+.snkneogeo,
+.thomsonmo5,
+.wii,
+.torrent_table a.addbookmark,
+.Discogs,
+.GamesWebsite,
+.GOG,
+.Steam {
+    -webkit-filter: brightness(77%);
+    -moz-filter: brightness(77%);
+    -ms-filter: brightness(77%);
+    -o-filter: brightness(77%);
+    filter: brightness(77%);}
+
+.tilt.Discogs:hover,
+.tilt.GamesWebsite:hover,
+.tilt.GOG:hover,
+.tilt.Steam:hover,
+#linkedgroup.boardgame:hover,
+#linkedgroup.cardgame:hover,
+#linkedgroup.cats_guides:hover,
+#linkedgroup.cats_ebooks:hover,
+#linkedgroup.ebook:hover,
+#linkedgroup.gameboy:hover,
+#linkedgroup.gameboyadvance:hover,
+#linkedgroup.generalcomputervectrex:hover,
+#linkedgroup.interactivedvd:hover,
+#linkedgroup.ios:hover,
+#linkedgroup.mac:hover,
+#linkedgroup.mattelintellivision:hover,
+#linkedgroup.memotechmtx:hover,
+#linkedgroup.miniaturewargames:hover,
+#linkedgroup.music:hover,
+#linkedgroup.cats_ost:hover,
+#linkedgroup.necpc-98:hover,
+#linkedgroup.necturbografx-16:hover,
+#linkedgroup.nintendods:hover,
+#linkedgroup.penandpaperrpg:hover,
+#linkedgroup.phonepda:hover,
+#linkedgroup.playstation2:hover,
+#linkedgroup.playstation3:hover,
+#linkedgroup.playstation4:hover,
+#linkedgroup.playstationportable:hover,
+#linkedgroup.playstationvita:hover,
+#linkedgroup.sharpx1:hover,
+#linkedgroup.sharpx68000:hover,
+#linkedgroup.snkneogeo:hover,
+#linkedgroup.thomsonmo5:hover,
+#linkedgroup.wii:hover,
+.torrent_table a.addbookmark:hover {
+    -webkit-filter: brightness(77%) drop-shadow(0px 0 3px rgb(232,80,102));
+    -moz-filter: brightness(77%) drop-shadow(0px 0 3px rgb(232,80,102));
+    -ms-filter: brightness(77%) drop-shadow(0px 0 3px rgb(232,80,102));
+    -o-filter: brightness(77%) drop-shadow(0px 0 3px rgb(232,80,102));
+    filter: brightness(77%) drop-shadow(0px 0 3px rgb(232,80,102));}
