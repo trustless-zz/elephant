@@ -1,97 +1,142 @@
-﻿/** COLORS **/
+/** COLORS **/
 a,
 .hovereffect h2 a,
 #content li.item_li a,
 .ui-widget-content a,
 #requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a {
 	text-decoration: none;
-	color: rgb(37, 92, 124);}
+	color: #255c7c;}
 
-input[type=text],
-input[type=search],
-#searchbars ul li form input,
-#torrentscomplete,
-#torrentscomplete li:nth-child(even),
-#index .pad,
-.box,
-table,
-#user .main_column .box .pad,
-#collections #content .center table tr td,
-#collections #content .center table tr td.label,
-.gazelles_art_display .gazelle_art,
-#items_navigation,
-.ui-dialog .ui-dialog-content,
-#crafting_panel #items,
-#crafting_panel .item,
-#equipment #items,
-#equipment .item,
-#crafting_recipes,
-#torrents .center form,
-#requests form[id="quickpostform"][class="send_form"][name="reply"][action="comments.php?page=requests"][method="post"][style="display: block; text-align: center;"],
-#rules .thin form.search_form,
-.forum_post td.avatar,
-#user table,
-.filter_torrents .box table:nth-child(4),
-#collections table,
-.donate_box_header_plat,
-.torrent_table tr.group_torrent {
-    background-color: white;}
+#requests form #otherop tr td:nth-child(1) {
+    border-right: 1px dotted #829ce7;}
 
-.staff_pick .slides_control .nobullet .center,
-#dailygazelle #gazelletitle,
-.alertable,
-.alertable-cancel,
-#shop li.item_li,
-#collections .thin .center >form[method="get"],
-#collections .thin table.collections_art_display[width="100%"] >tbody,
-#gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
-.inventory #content li.item_li,
-.inventory .save_message,
-.rowa,
-#crafting_panel #slots_panel {
-    background: white;}
-
-.donate-button-platinum {
-    background: white repeat-x;}
-
-.forum_latest .search,
-.alertable-cancel:hover {
-    background: white !important;}
-
-.large_progress_bar,
-#progress_bar,
-.error_message,
-#user .notice,
-#markread,
-#markread:before,
-button.submit,
-.alertable-ok,
-input#PlainTitlePreview,
-input[type="submit"],
-button#AvatarPreview,
-input[type="button"],
-#shop li.item_li.nostock .submit_section:before,
-.no_access:before,
-.body.similar ul.nobullet li span.similar_votes span,
-#forums .poll li.graph,
-.donate-button-nature
-,.donate-button-silver,
-.book_dialog,
-#forums td.body a[onclick="BBCode.spoiler(this);"],
-.overlay h2 a:hover {
-    color: white;}
-
-.body.similar ul.nobullet li span.similar_votes a {
-    color: white !important;}
-
-.no_access:before {
-    background: red;}
+#achievements tr,
+#achievements tr.colhead {
+	border-bottom: #000 1px solid;}
+#achievements tr.colhead {
+	border-top: #000 1px solid;}
+.book span.size7 {
+    border-bottom: 2px solid #000;}
+.body.similar ul.nobullet li span.similar_votes a:not([title="Mark as similar"]):hover {
+    filter: drop-shadow(0px 0 2px #000);}
+#share_score .large_progress_bar .points {
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;}
+#share_score .large_progress_bar .main_section {
+    border-right: 2px solid #fff;}
+.more_info .info_box span.label {
+	border-bottom: 1px solid #255c7c;}
 
 #taglist tbody {
     background-color: #cfcfcf;}
 #torrents .group,
 .torrent {
-	background: #CFCFCF;}
+	background: #cfcfcf;}
+
+#artist #requests >tbody >tr[class^="row"]:hover, 
+#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(n+2):hover,
+#clan_stats .clan_stat_totals >table.border tbody tr:nth-child(n+2):hover,
+#clan_stats .clan_past_stats table tbody tr:nth-child(n+2):hover,
+#clan_users >table.border >tbody >tr:nth-child(n+2):hover,
+#existing_freeleech_pots >tbody >tr[class^="row_"]:hover,
+#forums tr[class^="row"]:hover, 
+#inbox #messageform >table >tbody >tr:nth-child(n+2):hover,
+#requests .thin >table.border >tbody >tr[class^="row"]:hover, 
+#top10 tr[class^="row"]:hover,
+#torrents #requests #requests_list tr[class^="requestrows row"]:hover, 
+#torrents #collages >tbody >tr:nth-child(n+2):hover, 
+#torrents div[id^="peers_"] tbody >tr:nth-child(n+2):hover,
+#torrents .filelist_table tbody >tr:nth-child(n+2):hover,
+#torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
+#user #requests tr[class^="row"]:hover {
+    outline: 1px solid #969696;}
+
+.error_message {
+    background: radial-gradient(at center, #2d5163 0%,#6f5567 50%,#e85066 100%);}
+
+.hovereffect .overlay:hover h2 {
+    outline: 2px solid #e85066;}
+.box.box_image.box_image_coverart div[align="center"] a:hover:after{
+    outline: 3px solid #e85066;}
+
+input[type=text],
+input[type=search],
+table,
+#searchbars ul li form input,
+#torrentscomplete,
+#torrentscomplete li:nth-child(even),
+#index .pad,
+#user .main_column .box .pad,
+#collections table,
+#collections #content .center table tr td,
+#collections #content .center table tr td.label,
+#items_navigation,
+#crafting_panel #items,
+#crafting_panel .item,
+#crafting_recipes,
+#equipment #items,
+#equipment .item,
+#torrents .center form,
+#requests form[id="quickpostform"][class="send_form"][name="reply"][action="comments.php?page=requests"][method="post"][style="display: block; text-align: center;"],
+#rules .thin form.search_form,
+#user table,
+.box,
+.forum_post td.avatar,
+.gazelles_art_display .gazelle_art,
+.ui-dialog .ui-dialog-content,
+.filter_torrents .box table:nth-child(4),
+.donate_box_header_plat,
+.torrent_table tr.group_torrent {
+    background-color: #fff;}
+
+#shop li.item_li,
+#dailygazelle #gazelletitle,
+#collections .thin .center >form[method="get"],
+#collections .thin table.collections_art_display[width="100%"] >tbody,
+#gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
+#crafting_panel #slots_panel,
+.staff_pick .slides_control .nobullet .center,
+.alertable,
+.alertable-cancel,
+.inventory #content li.item_li,
+.inventory .save_message,
+.rowa {
+    background: #fff;}
+
+.donate-button-platinum {
+    background: #fff repeat-x;}
+
+.forum_latest .search,
+.alertable-cancel:hover {
+    background: #fff !important;}
+
+button#AvatarPreview,
+button.submit,
+input#PlainTitlePreview,
+input[type="submit"],
+input[type="button"],
+#forums .poll li.graph,
+#forums td.body a[onclick="BBCode.spoiler(this);"],
+#user .notice,
+#markread,
+#markread:before,
+#progress_bar,
+#shop li.item_li.nostock .submit_section:before,
+.alertable-ok,
+.book_dialog,
+.body.similar ul.nobullet li span.similar_votes span,
+.donate-button-nature,
+.donate-button-silver,
+.error_message,
+.large_progress_bar,
+.no_access:before,
+.overlay h2 a:hover {
+    color: #fff;}
+
+.body.similar ul.nobullet li span.similar_votes a {
+    color: #fff !important;}
+
+.no_access:before {
+    background: #ff0000;}
 
 .overlay div a:hover{
     color:#C7D6F1;}
@@ -101,7 +146,7 @@ input[type="button"],
     border-color: rgba(255, 255, 255, 0);}
 
 .page_break {
-    border-top: white solid 1px;}
+    border-top: #fff solid 1px;}
 
 .rating_container:hover {
     background-color: rgba(255,255,255,0.2);}
@@ -162,11 +207,11 @@ input[type=search]:focus,
 #achievements tr,
 #achievements tr.colhead,
 .alertable-cancel {
-    color: black;}
+    color: #000;}
 
 .spoilerbox span,
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
-    color: black !important;}
+    color: #000 !important;}
 
 input[type=text],
 input[type=search],
@@ -196,7 +241,7 @@ input#FLTorrent {
 
 #header #alerts,
 #userinfo_minor li a {
-	color: rgb(122, 122, 122);}
+	color: #7a7a7a;}
 
 #extra1 span,
 #torrents .group td {
@@ -207,7 +252,7 @@ input#FLTorrent {
     background-color: #6D7E88;}
 
 .error_message {
-    background: radial-gradient(at center, #223f51, #343f52, #5b4254, #914154, #e03854);}
+    background: radial-gradient(at center, #2d5163, #445165, #6f5567, #a55667, #e85066);}
 
 #searchbars ul li form input{
     color: #8a8a8a;}
@@ -218,18 +263,18 @@ input#FLTorrent {
 	background-color: #e7e7e7;}
 
 .rowb, 
+.forum_latest .search #forumlist tr td input[checked="checked"] + label,
 #torrents #collages >tbody >tr:nth-child(even),
 #torrents div[id^="peers_"] tbody >tr:nth-child(even),
 #torrents .filelist_table tbody >tr:nth-child(even),
+#torrents #seeding_table >tbody >tr:not([class="colhead"]):nth-child(even),
 #existing_freeleech_pots .row_b,
 #running_freeleech .group_torrent.row_b,
 #clan_users >table.border >tbody >tr:nth-child(even),
 #clan_stats .clan_past_stats table tbody tr:not([class="colhead"]):nth-child(even),
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(even) td:nth-child(-n+2),
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(odd) td:not([colspan="2"]):nth-child(n+3),
-#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even),
-#torrents #seeding_table >tbody >tr:not([class="colhead"]):nth-child(even),
-.forum_latest .search #forumlist tr td input[checked="checked"] + label {
+#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even) {
     background: #e7e7e7;}
 
 #torrentscomplete .highlight {
@@ -243,46 +288,46 @@ input#FLTorrent {
 	box-shadow: 0 0 5px #007eff;}
 
 .box,
-#user table,
-#upload #content div[style="margin:0px auto;width:700px"] table,
-#requests .thin > table,
-#wiki .main_column .box, .main_column table:not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]):not([id*="requests"]):not([class="bbcode_table"]),
-#collections #content .center table,
 .hovereffect,
-#items_navigation,
-table#torrent_table,
 .ui-dialog.ui-widget.ui-widget-content.ui-corner-all.ui-front.ui-draggable.ui-resizable,
-#shop #shop_search,
 .freeleech_shop_main .box, .freeleech_shop_main table, .global_buffs_shop_main .box, .global_buffs_shop_main table,
+.inventory #content li.item_li,
+.inventory .save_message,
+.large_progress_bar,
+#user table,
+#wiki .main_column .box, .main_column table:not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]):not([id*="requests"]):not([class="bbcode_table"]),
+#items_navigation,
+#shop li.item_li,
+#shop #shop_search,
 #crafting_panel #items,
 #crafting_panel #slots_panel,
 #equipment #items,
 #equipment #equip_panel,
-#requests .center.box.pad,
-#shop li.item_li,
-.inventory #content li.item_li,
-.inventory .save_message,
 #crafting_recipes,
-#torrents .center form,
+#upload #content div[style="margin:0px auto;width:700px"] table,
 #upload_table table:not([id="reviews_table"]):not([id="weblinks"]),
-#collections #wrapper #content .thin table[class="forum_post wrap_overflow box vertical_margin forum_unread"],
+#requests .center.box.pad,
+#requests .thin > table,
 #requests form[id="quickpostform"][class="send_form"][name="reply"][action="comments.php?page=requests"][method="post"][style="display: block; text-align: center;"],
 #grouplinks:after,
+#torrent_table,
+#torrents .center form,
 #torrents #content .thin .main_column .torrent_table:after,
 #rules .thin form.search_form,
 #gazelles #wrapper #content div #gazelleview table.gazelleinfo,
 #gazelles #wrapper #content div,
 #gazelleview table.gazellepic,
+#gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
 #top10 #wrapper #content .thin table.border,
+#collections #content .center table,
 #collections .thin .center >form[method="get"],
 #collections .thin table.collections_art_display[width="100%"] >tbody,
-#gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
+#collections #wrapper #content .thin table[class="forum_post wrap_overflow box vertical_margin forum_unread"],
 #userhistory table[id^="post"],
 #clan_stats .ongoing_clan_war >table.border,
 #clan_users >table.border,
 #clan_stats .clan_stat_totals >table.border,
 #clan_stats .clan_past_stats >table,
-.large_progress_bar,
 #progress_bar,
 #reports .thin >h2.center + h3 + .box.pad + p +table,
 #reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center,
@@ -300,7 +345,7 @@ table#torrent_table,
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7) !important;}
 
 #menu ul li a:hover, #userinfo_minor li a:hover {
-    border-bottom: 2px solid rgb(232,80,102);}
+    border-bottom: 2px solid #e85066;}
 
 #torrentscomplete {
 	-webkit-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
@@ -309,8 +354,8 @@ table#torrent_table,
 #torrents .group,
 #bookmarks #torrent_table tbody tr.discog,
 #collections #torrent_table >tbody >tr[class="group discog"],
-.torrent_table .pad blockquote:nth-of-type(2),
-#artist #torrent_table >tbody >tr.group {
+#artist #torrent_table >tbody >tr.group,
+.torrent_table .pad blockquote:nth-of-type(2) {
 	background-color: rgba(42,79,101,0.25);}
 
 #torrents #torrent_table .group span a,
@@ -332,43 +377,43 @@ table#torrent_table,
 #share_score .large_progress_bar .main_bar,
 #center_poll,
 .sidebar #progress_bar .main_bar {
-    background-color: rgb(237, 81, 102);}
+    background-color: #ed5166;}
 
 #share_score .large_progress_bar .bonus_section {
     background-color: rgba(177,232,0,0.2);}
 
 #share_score .large_progress_bar .main_bar {
-    background-image: linear-gradient(to bottom, rgb(161, 87, 102), rgb(237, 81, 102), rgb(106, 84, 102));}
+    background-image: linear-gradient(to bottom, #a15766, #ed5166, #6a5466);}
 
 #center_poll,
 .sidebar #progress_bar .main_bar {
-    background-image: linear-gradient(to bottom, rgb(237, 81, 102), rgb(106, 84, 102));}
+    background-image: linear-gradient(to bottom, #ed5166, #6a5466);}
 
 .global_buffs .color_green .fa,
 .global_buffs .color_purple .fa,
 .global_buffs .color_yellow .fa {
-    color: rgb(237, 81, 102);}
+    color: #ed5166;}
 
 .global_buffs .color_green .buff_text,
 .global_buffs .color_purple .buff_text,
 .global_buffs .color_yellow .buff_text {
-    color: rgb(46, 82, 102);}
+    color: #2e5266;}
 
 .save_message,
-#announcement,
 .inventory .save_message span,
+#announcement,
 #index .sidebar #progress_bar {
-    background-color: rgb(148,166,177);}
+    background-color: #94a6b1;}
 
 .ui-widget-header {
-    background: rgb(148,166,177);}
+    background: #94a6b1;}
 
 #markread {
-    background: linear-gradient(to right, rgb(232,80,102) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
+    background: linear-gradient(to right, #e85066 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
 
 #markread:after,
 .error_message:after {
-    background: radial-gradient(at center, rgb(232,80,102) 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
+    background: radial-gradient(at center, #e85066 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
 
 .sticky #displayname:before {
     -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
@@ -378,27 +423,27 @@ table#torrent_table,
     filter: drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));}
 
 .alertable-cancel {
-    border: solid 1px rgb(196, 196, 196) !important;}
+    border: solid 1px #c4c4c4 !important;}
 
 .alertable-cancel:hover {
-    border: solid 1px rgb(51, 51, 51) !important;}
+    border: solid 1px #333333 !important;}
 
-button.submit,
 .alertable-ok,
+button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 button#AvatarPreview,
 input[type="button"] {
     border-color: rgba(31, 32, 35, 0);}
 
-button.submit,
 .alertable-ok,
+.body.similar ul.nobullet li span.similar_votes,
+button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 button#AvatarPreview,
-input[type="button"],
-.body.similar ul.nobullet li span.similar_votes {
-    background-color: rgb(37, 92, 124);}
+input[type="button"] {
+    background-color:#255c7c;}
 
 #crafting_panel .ui-widget-content,
 #equipment .item {
@@ -412,7 +457,7 @@ input[type="button"],
 
 #crafting_panel .item h3,
 #equipment .item h3 {
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 0 6px white;}
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 6px #fff;}
 
 #equipment div.itemslot.highlight {
 	-moz-box-shadow: 0 0 15px rgba(0, 126, 255, 0.8);
@@ -448,18 +493,18 @@ a[onclick^="show_reported"] {
 .reportinfo_table {
     border: 1px solid #ff0000;}
 
+blockquote,
+.group_torrent td,
+.torrent_table,
+.torrent td, .torrent .center,
+#bookmarks #torrent_table tbody tr.discog td.center.cats_col,
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(1),
+#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2),
+#upload_table table tbody tr td,
+#top10 .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) tbody >tr.colhead,
 #torrents div[id^="peers_"] >table,
 #torrents .filelist_table,
 #torrents div[id^="history"] >form >table.border,
-#bookmarks #torrent_table tbody tr.discog td.center.cats_col,
-blockquote,
-.group_torrent td,
-#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(1),
-#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2),
-.torrent_table,
-.torrent td, .torrent .center,
-#upload_table table tbody tr td,
-#top10 .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) tbody >tr.colhead,
 #torrents #seeding_table >tbody >tr.colhead,
 #torrents #seeding_table >tbody >tr >td {
     border: 1px solid #aaaaaa;}
@@ -486,32 +531,32 @@ blockquote,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching .torrent_info_tags,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching a {
-	color: rgb(254, 86, 114) !important;}
+	color: #fe5672 !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding .torrent_info_tags,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding a {
-    color: rgb(95, 179, 30) !important;}
+    color: #5fb31e !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded .torrent_info_tags,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded a {
-	color: rgb(130, 204, 30) !important;}
+	color: #82cc1e !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched .torrent_info_tags,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched a {
-    color: rgb(175, 95, 114) !important;}
+    color: #af5f72 !important;}
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded .torrent_info_tags,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded a {
-    color: rgb(175, 95, 114) !important;}
+    color: #af5f72 !important;}
 
 .profile .box_art_gallery .gallery_small_slot.selected {
-    border: 2px solid rgb(150, 150, 150);}
+    border: 2px solid #969696;}
 
 #bookmarks .group_torrent:hover,
 #torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
 #artist #torrent_table >tbody >tr:nth-child(n+2):hover {
-    box-shadow: inset 0.5px 0.5px 0 1px rgba(150, 150, 150, 1);}
+    box-shadow: inset 0.5px 0.5px 0 1px #969696;}
 
 #bookmarks #torrent_table tbody tr.discog:hover,
 #collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover,
@@ -520,13 +565,13 @@ blockquote,
 #torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover,
 #torrents #seeding_table >tbody >tr:not([class="colhead"]):nth-child(n+2):hover {
-    box-shadow: inset 0.5px 0.5px 0 1.5px rgba(150, 150, 150, 1);}
+    box-shadow: inset 0.5px 0.5px 0 1.5px #969696;}
 
-#user td,
-#torrents .torrent_history table tbody tr td,
-#recommended #vanityhouse tbody tr td,
 .bbcode_table_div table.bbcode_table,
 .bbcode_table_div table.bbcode_table tbody tr td,
+#user td,
+#recommended #vanityhouse tbody tr td,
+#torrents .torrent_history table tbody tr td,
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
 #collections ul li[class^="image"],
@@ -563,9 +608,9 @@ textarea {
     border:solid #aaaaaa 2px;}
 
 #forums table.forum_unread {
-    outline: rgb(104, 192, 119) solid 2px;}
+    outline: #68c077 solid 2px;}
 #forums table.sticky_post {
-    outline: rgb(148, 166, 177) solid 2px;}
+    outline: #94a6b1 solid 2px;}
 
 .forum_post tbody tr td[id^="likers_"],
 #forums .forum_signature td div {
@@ -576,8 +621,8 @@ textarea {
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a,
 #collections #torrent_table a,
 #torrents #torrentbrowse #torrent_table.grouping >tbody >tr:nth-child(n+2) a,
-.group_torrent td span a,
-#running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a {
+#running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a,
+.group_torrent td span a {
     color: #275774;}
 
 i.fa.fa-fl-pots {
@@ -585,11 +630,11 @@ i.fa.fa-fl-pots {
     filter: drop-shadow(2px 2px 2px rgba(218, 120, 252, 1));}
 
 #clans .large_progress_bar .main_bar.clan_1_bar {
-    background-color: rgb(106, 64, 40);
+    background-color: #6a4028;
     background-image: linear-gradient(to top, #5c3823, #aa897d);}
 #clans .large_progress_bar .main_bar.clan_2_bar {
-    background-color: rgb(107, 107, 107);
-    background-image: linear-gradient(to top, rgb(107, 107, 107), rgb(232, 232, 232));}
+    background-color: #6b6b6b;
+    background-image: linear-gradient(to top, #6b6b6b, #e8e8e8);}
 #clans .large_progress_bar .main_bar.clan_3_bar {
     background-color: #ff0000;
     background-image: linear-gradient(to top, #ff0000 0%, #ff5a00 40%, #ff9a00 65%, #ffce00 90%, #ffe70a 100%);}
@@ -600,7 +645,7 @@ i.fa.fa-fl-pots {
 .sidebar #freeleech span.platform,
 .sidebar #freeleech span.tor_info,
 .rating_container {
-    color: rgb(50,50,50);}
+    color: #323232;}
 
 .ratings .red,
 #torrents #content .box #thumbsdown {
@@ -627,17 +672,18 @@ h2 a,
     color: #2a4f65 !important;}
 
 #artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead, 
-#user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
 #artist .main_column_bg .main_column .box table#requests tbody .colhead_dark, 
 #user .box_gold td.label, 
-#user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody tr.colhead_dark, 
-#torrents #requests #requests_list >tbody >tr:first-child >td {
+#user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
+#user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody 
+#torrents #requests #requests_list >tbody >tr:first-child >td,
+tr.colhead_dark {
     background-color: rgba(42, 79, 101 ,0.35);}
 
-#torrents .group td,
 #requests .thin > table tr td,
 #clan_users >table.border >tbody >tr:nth-child(n+2) >td:nth-child(n+2),
 #artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), 
+#torrents .group td,
 #torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), 
 #torrents #collages >tbody >tr:nth-child(n+2) >td:nth-child(2),
 #torrents div[id^="peers_"] tbody >tr:nth-child(n+2) >td:nth-child(n+2),
@@ -645,10 +691,10 @@ h2 a,
 #torrents div[id^="history"] form table.border tbody tr[class^="row"],#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]) td:nth-child(3) {
     border-left: 1px solid #aaaaaa;}
 
-#torrents .group td,
-#torrents .group, .torrent,
 #bookmarks #torrent_table tbody tr.discog,
 #collections .thin.collections #torrent_table >tbody >tr[class="group discog"],
+#torrents .group td,
+#torrents .group, .torrent,
 #torrents tbody[id^="edition_"],
 #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent {
     border-bottom: 1px solid #aaaaaa;}
@@ -664,11 +710,11 @@ h2 a,
     color: #19ea19;}
 
 #shop li.item_li.nostock .submit_section:before {
-    background-color: red;}
+    background-color: #ff0000;}
 
 #torrents #content .new_status:after {
-    background: linear-gradient(to top left, #223f51, #343f52, #5b4254, #914154, #e03854);
-    color: rgb(240,240,240);}
+    background: linear-gradient(to top left, #2d5163, #445165, #6f5567, #a55667, #e85066);
+    color: #f0f0f0;}
 
 .book blockquote {
     background-color: #1c3145;}
@@ -678,14 +724,11 @@ h2 a,
 .profile .box_stats .online {
     color: #43bc56;}
 
-.inventory h4,
-.profile .box_links .profile_link:after {content: ":";}
-.profile .box_links #torrent_history .profile_link:after {content: none;}
 .profile .box_links .profile_link_count {
     color: rgba(37, 92, 124, 0.8);}
 
 #achievements {
-	border: medium solid white;
+	border: medium solid #fff;
 	background-color: #e3e3e3;}
 
 #user .notice {
@@ -699,7 +742,7 @@ h2 a,
 	background-color: #e5e5e5;}
 
 #user .content .r00 {
-	color: red;}
+	color: #ff0000;}
 #user .content .r01,
 #user .content .r02 {
 	color: #ff1300;}
@@ -729,7 +772,7 @@ h2 a,
 #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before,
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before,
 #torrents #requests tbody tr.colhead >td:before {
-    background: linear-gradient(to top, rgb(232,80,102) 0%,rgba(42, 79, 101, 0) 100%);}
+    background: linear-gradient(to top, #e85066 0%,rgba(42, 79, 101, 0) 100%);}
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before {
     background: linear-gradient(to top, rgba(232,80,102,0.75) 0%,rgba(42, 79, 101, 0) 100%);}
 .edition_info:before {
@@ -738,13 +781,13 @@ h2 a,
 #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
 #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"]:hover,
 #bookmarks .group_torrent:hover {
-    background: radial-gradient(circle, rgb(242, 242, 242), rgb(237, 237, 237));}
+    background: radial-gradient(circle, #f2f2f2, #ededed);}
 .alertable-ok:hover,
 input[type="submit"]:hover, 
 input[type="button"]:hover, 
 button[type="button"]:not([title="Close"]):hover,
 .body.similar ul.nobullet li span.similar_votes:hover {
-    background: radial-gradient(circle, rgb(232,80,102) 0%,rgba(37, 92, 124, 1) 100%);}
+    background: radial-gradient(circle, #e85066 0%,#255c7c 100%);}
 .body.similar ul.nobullet li span.similar_votes:hover:before {
     background: linear-gradient(to top, rgba(232,80,102,0.5) 0%,rgba(232,80,102, 0) 100%);}
 
@@ -756,17 +799,20 @@ button[type="button"]:not([title="Close"]):hover,
 #torrents .screenshots >a:hover,
 #collections ul.collage_images li >a:hover,
 #recommended #vanityhouse tbody tr td a:nth-child(1):before {
-	background: rgb(232,80,102);}
+	background: #e85066;}
 
 #index #clans .large_progress_bar:hover {
-    background-color: rgb(232,80,102);}
+    background-color: #e85066;}
 a:hover, #userinfo_minor li a:hover,
 a:hover span,
 .tags >a:hover,
 #requests .thin > table >tbody >tr.colhead_dark >td >a >strong:hover,
 #clickable:not([class="overlay"]):hover >h3,
 .global_buffs a:hover .buff_text {
-    color: rgb(232,80,102) !important;}
+    color: #e85066 !important;}
+
+
+
 /** /COLORS **/
 
 /** TORRENT STATUS COLORS **/
@@ -777,7 +823,7 @@ a:hover span,
 #color_seeding,
 #color_seeding .torrent_info_tags,
 #color_seeding a {
-    color: rgb(65, 139, 0);}
+    color: #418b00;}
 #color_uploaded,
 #color_uploaded .torrent_info_tags,
 #color_uploaded a {
@@ -793,7 +839,7 @@ a:hover span,
     color: #914154;}
 #color_freeleech,
 strong.freeleech_label {
-    color: rgb(100, 65, 165);
+    color: #6441a5;
     text-shadow: 0 0 7px rgba(218, 120, 252, 0.7);}
 #color_personal_freeleech,
 strong.personal_freeleech_label {text-shadow: 0 0 7px;}
@@ -808,7 +854,7 @@ strong.trumpable_label {
 #color_neutralleech,
 strong.neutralleech_label {text-shadow: 0 0 7px;}
 #torrents #wrapper #content .thin.torrent_history table tbody tr.owner td a[title="View Torrent"] {
-    color: rgb(100, 174, 0);}
+    color: #64ae00;}
 /** /TORRENT STATUS COLORS **/
 
 /** DONATION COLORS **/
@@ -867,7 +913,7 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
 /** /DONATION COLORS **/
 
 /** RATIO COLORS **/
-.r00 {color: red;}
+.r00 {color: #ff0000;}
 .r01,
 .r02 {color: #ff1300;}
 .r03 {color: #ff2600;}
