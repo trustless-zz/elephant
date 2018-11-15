@@ -1,10 +1,11 @@
-﻿html {
+html {
     background-image: url(zebraInv.png);}
 .last_read,
 .show_torrents a,
 .hide_torrents a {
     background-image: url(dark-arrow30x26.png);}
-.prev,
+.next,
+.prev {
     background-image: url(icon/arrow_right_dark46x42.png);}
 #equipment #equip_panel {
     background: url(equipment_panel_test-dark.png);}
