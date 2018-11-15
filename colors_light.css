@@ -1,3 +1,11 @@
+#shop .featured {
+    background: white url('icon/temp_featured.png') top left no-repeat !important;}
+#shop .owned {
+    background: white url('icon/temp_owned.png') top left no-repeat !important;}
+#shop li.new {
+    background: white url('icon/temp_new.png') top left no-repeat !important;}
+
+
 /** COLORS **/
 a,
 .hovereffect h2 a,
