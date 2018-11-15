@@ -1,4 +1,15 @@
-﻿/** COLORS **/
+#shop .featured {
+    background: #1f2023 url('icon/temp_featured.png') top left no-repeat !important;}
+#shop .owned {
+    background: #1f2023 url('icon/temp_owned.png') top left no-repeat !important;}
+#shop li.new {
+    background: #1f2023 url('icon/temp_new.png') top left no-repeat !important;}
+
+
+/** COLORS **/
+body {
+    color: #c4c4c4;}
+
 a,
 .hovereffect h2 a,
 #content li.item_li a,
@@ -60,53 +71,68 @@ a,
 
 input[type=text],
 input[type=search],
-table,
 #searchbars ul li form input,
 #torrentscomplete,
-#torrentscomplete li:nth-child(even),
-#index .pad,
-#user .main_column .box .pad,
-#collections table,
-#collections #content .center table tr td,
-#collections #content .center table tr td.label,
-#items_navigation,
-#crafting_panel #items,
-#crafting_panel .item,
 #crafting_recipes,
-#equipment #items,
-#equipment .item,
-#torrents .center form,
-#requests form[id="quickpostform"][class="send_form"][name="reply"][action="comments.php?page=requests"][method="post"][style="display: block; text-align: center;"],
-#rules .thin form.search_form,
-#user table,
-.box,
 .forum_post td.avatar,
-.gazelles_art_display .gazelle_art,
-.ui-dialog .ui-dialog-content,
 .filter_torrents .box table:nth-child(4),
 .donate_box_header_plat,
 .torrent_table tr.group_torrent {
     background-color: #000;}
 
-#shop li.item_li,
-#dailygazelle #gazelletitle,
-#collections .thin .center >form[method="get"],
+#torrentscomplete li:nth-child(even),
+#index .pad,
+.box,
+#reportsv2 .box,
+.staff_pick .slides_control .nobullet .center,
+table,
+#user table,
+.forum_post,
+.forum_post tbody tr .avatar,
+.forum_post tbody tr .body,
+#collections table,
+#torrents .sidebar .box,
+#user .main_column .box .pad,
+#collections #content .center table tr td.label,
+#collections #content .center table tr td,
+.gazelles_art_display .gazelle_art,
+#items_navigation,
+.ui-dialog .ui-dialog-content,
+#crafting_panel #items,
+#crafting_panel .item,
+#equipment #items,
+#equipment .item,
+#torrents .center form,
+#requests form[id="quickpostform"][class="send_form"][name="reply"][action="comments.php?page=requests"][method="post"][style="display: block; text-align: center;"],
+#rules .thin form.search_form {
+    background-color: #1f2023;}
+
+/*----------------------*/
 #collections .thin table.collections_art_display[width="100%"] >tbody,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
-#crafting_panel #slots_panel,
-.staff_pick .slides_control .nobullet .center,
-.alertable,
-.alertable-cancel,
-.inventory #content li.item_li,
+#collections .thin .center >form[method="get"],
 .inventory .save_message,
-.rowa {
+.inventory #content li.item_li,
+#shop li.item_li,
+#crafting_panel #slots_panel,
+.alertable-cancel,
+.alertable,
+#dailygazelle #gazelletitle,
+#forums .thin.forum_latest >.search.box.pad >form[method="post"] {
+    background: #1f2023;}
+.alertable-cancel:hover {
+    background: #1f2023 !important;}
+
+#forums .poll li.graph {
+    color: #1f2023;}
+
+.staff_pick .slides_control .nobullet .center {
     background: #1f2023;}
 
 .donate-button-platinum {
     background: #fff repeat-x;}
 
-.forum_latest .search,
-.alertable-cancel:hover {
+.forum_latest .search {
     background: #1f2023 !important;}
 
 button#AvatarPreview,
@@ -114,7 +140,6 @@ button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 input[type="button"],
-#forums .poll li.graph,
 #forums td.body a[onclick="BBCode.spoiler(this);"],
 #user .notice,
 #markread,
@@ -263,6 +288,8 @@ input#FLTorrent {
 #forums table.border .cat_list td[colspan="5"] {
 	background-color: #181818;}
 
+.rowa {
+	background: #000;}
 .rowb, 
 .forum_latest .search #forumlist tr td input[checked="checked"] + label,
 #torrents #collages >tbody >tr:nth-child(even),
