@@ -1,4 +1,28 @@
-﻿/** CATICONS 'n OBJECTS **/
+html {
+    background-image: url(zebra.png);}
+.last_read,
+.show_torrents a,
+.hide_torrents a {
+    background-image: url(arrow30x26.png);}
+.prev,
+.next {
+    background-image: url(icon/arrow_right46x42.png);}
+#equipment #equip_panel {
+    background: url(equipment_panel_test.png);}
+#shop li.item_li.nostock #clickable .item_description,
+#shop li.item_li.featured.nostock #clickable .item_description {
+    background: url(soldoutwhite.png);}
+
+#forums #content .thin td.unread{
+    background-image: url(icon/balloon-unread.png);}
+#forums #content .thin td.unread_sticky {
+    background-image:url(icon/sticky-unread.png);}
+#forums #content .thin td.unread_locked {
+    background-image:url(icon/lock-unread.png);}
+#forums #content .thin td.unread_locked_sticky {
+    background-image: url(icon/lock-sticky-unread.png);}
+
+
 .amigacd32 {
     background: url(icon/svg/amigacd32_dark.svg);}
 .amstradcpc {
@@ -119,4 +143,3 @@
     -ms-filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));
     -o-filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));
     filter: brightness(20%) drop-shadow(0px 0 3px rgb(232,80,102));}
-/** /CATICONS 'n OBJECTS **/
