@@ -1,4 +1,4 @@
-﻿/*~~~~~~FONTS~~~~~~*/
+/*~~~~~~FONTS~~~~~~*/
 
 
 @font-face {
@@ -19,7 +19,6 @@
 /*~~~~~~STYLESHEET~~~~~~*/
 
 html {
-	background-image: url(zebra.png);
 	font-weight: normal;}
 
 body {
@@ -220,13 +219,6 @@ overflow: auto;}
 	height:20px;
 	margin-top: 30px;}
 
-/*#userinfo #userinfo_username .donateico a:link  {
-	color:#7FB7D3;
-	line-height:16px;
-	border-bottom: none;
-	text-decoration: none;
-}*/
-
 #menu {
 	margin-top: -136px;
 	margin-left: 544px;
@@ -315,8 +307,7 @@ overflow: auto;}
 }
 
 .stat {
-	font-weight: normal;
-	content:'';}
+	font-weight: normal;}
 
 /*
 .sub {
@@ -703,14 +694,8 @@ width:100%;
 /*FORUMS*/
 
 .forum_index {
-	/* margin: 5px auto; */
 	font-family: neuzite, sans-serif;
-	/* width: 860px; */
 	font-size: 10pt;}
-
-.forum_index tbody {
-	/*border: 1px solid #1a1a1a;*/
-}
 
 .forum_index tbody tr {
 	height: 25px;
@@ -896,7 +881,6 @@ div.linkbox {
 
 .show_torrents a {
     display: block;
-    background-image: url(arrow30x26.png);
     width: 15px !important;
     height: 13px !important;
     margin: 0 !important;
@@ -905,7 +889,6 @@ div.linkbox {
 
 .hide_torrents a {
     display: block;
-    background-image: url(arrow30x26.png);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -1397,7 +1380,6 @@ td.cats_col {
 	width: 873px;
 	margin: 0 auto;}
 
-/*.torrent_table tr.group_torrent a, #torrent_table tr.group_torrent a{color:black; font-weight:normal}*/
 #torrents #content .thin .main_column .torrent_table {
 	margin-top: 10px;
 	box-shadow: none;
@@ -1638,9 +1620,7 @@ td.cats_col {
 }
 
 #requests form #otherop tr td:nth-child(1) {
-	border-right: 1px dotted #829ce7;
-	padding: 5px;
-}
+	padding: 5px;}
 
 #requests form #otherop tr td:nth-child(2) {
 	width: 700px;
@@ -1826,6 +1806,10 @@ td.cats_col {
 #user .sidebar li {
 	padding-bottom: 5px;}
 
+.inventory h4,
+.profile .box_links .profile_link:after {content: ":";}
+.profile .box_links #torrent_history .profile_link:after {content: none;}
+
 #user .content .r00,
 #user .content .r01,
 #user .content .r02.
@@ -2006,25 +1990,22 @@ td.cats_col {
 
 /* Leveling Areas */
 #achievements tr {
-	background: none;
-	border-bottom: black 1px solid;}
+	background: none;}
 #achievements tr.colhead {
-	background: none;
-	border-bottom: black 1px solid;
-	border-top: black 1px solid;
-}
+	background: none;}
+
 #achievements td {
 	border: none;
 	vertical-align: middle;
-	text-align: center;
-}
+	text-align: center;}
+
 #achievements td.achlabel {
-	text-align: right;
-}
+	text-align: right;}
+
 #achievements td .levelcont {
 	margin: 0pt auto;
-	width: 78px;
-}
+	width: 78px;}
+
 #achievements td .levelcont .bubble {
 	display: inline-block;
     vertical-align: top;
@@ -2032,21 +2013,21 @@ td.cats_col {
 	background-repeat: none;
 	height: 15px;
 	width: 15px;
-	float: right;
-}
+	float: right;}
+
 #achievements td .levelcont .spacer {
 	width: 15px;
 	display: inline-block;
-	float: right;
-}
+	float: right;}
+
 #achievements td .italic {
 	font-size: 10px;
 	font-style: italic;
-	font-weight: normal;
-}
+	font-weight: normal;}
+
 #achievements td .bold {
-	font-weight: bold;
-}
+	font-weight: bold;}
+
 #achievements td .levelcont .complete {
 	display: inline-block;
     vertical-align: top;
@@ -2054,20 +2035,19 @@ td.cats_col {
 	background-repeat: none;
 	height: 15px;
 	width: 15px;
-	float: right;
-}
+	float: right;}
+
 #achievements img{
 	border: none;
-	vertical-align: middle;
-}
+	vertical-align: middle;}
+
 #achievements .levelcont img{
 	margin-left: 15px;
 	width: 48px;
-	float: left;
-}
+	float: left;}
+
 #achievements img:hover {
-	opacity: 1 !important;
-}
+	opacity: 1 !important;}
 
 /*WIKI*/
 
@@ -2193,7 +2173,6 @@ span.size5 img {float: right;}
     width: 23px;
     height: 21px;
     background-size: 23px;
-    background-image: url(icon/arrow_right46x42.png);
     background-repeat: no-repeat;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -2206,7 +2185,6 @@ span.size5 img {float: right;}
     width: 23px;
     height: 21px;
     background-size: 23px;
-    background-image: url(icon/arrow_right46x42.png);
     background-repeat: no-repeat;}
 
 /*Cleans up daily gazelle box*/
@@ -2573,9 +2551,7 @@ li#stats_share_score {
     margin-left: 48.5%;
     padding-top: 3px;
     text-align: center;
-    z-index: 10;
-    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
-}
+    z-index: 10;}
 
 #share_score .large_progress_bar > span {
     display: block;
@@ -2626,10 +2602,6 @@ span.italic {
 
 #share_score .large_progress_bar .bonus_section {
     right: 0;}
-
-#share_score .large_progress_bar .main_section {
-    border-right: 2px solid white;
-}
 
 .global_buffs .color_green .buff_text,
 .global_buffs .color_purple .buff_text {
@@ -3204,12 +3176,10 @@ input[type="button"] {
 #equipment #equip_panel {
 	top: 24px;
 	position: relative;
-	background: url(equipment_panel_test.png);
 	height: 800px;
 	width: 550px;
 	float: right;
-	display: inline-block;
-}
+	display: inline-block;}
 
 #equipment {
     margin: 0 auto;
@@ -3434,12 +3404,10 @@ input[type="button"] {
 	text-align: left;
 	vertical-align: top;
 	position: absolute;}
-/* #shop li.new {background: rgba(0,0,0,0.7) url('images/shop/new.png') top left no-repeat;} */
 		
 #shop li.featured {
 	display: block;
 	width: 47%;}
-/* #shop .featured {background: rgba(0,0,0,.7) url('images/shop/featured.png') top left no-repeat !important;} */
 #shop .featured  {
 	visibility: visible;
 	height: auto;}
@@ -3485,7 +3453,6 @@ input[type="button"] {
     opacity: 1;
     position: relative;
     top: -163px;
-    background: url(soldoutwhite.png);
     background-repeat: repeat;
     padding: 0;
     height: 235px;
@@ -3507,7 +3474,6 @@ input[type="button"] {
     opacity: 1;
     position: relative;
     top: -163px;
-    background: url(soldoutwhite.png);
     background-repeat: repeat;
     padding: 0;
     height: 235px;
@@ -3663,7 +3629,6 @@ input[type="button"] {
 .book .book_content {
 	padding: 25px;}
 .book span.size7 {
-	border-bottom: 2px solid black;
 	width: 100%;
 	display: block;}
  
@@ -3956,8 +3921,7 @@ input[type="button"] {
 	font-weight:bold;
 	padding-top: 20px;
     font-size: 1.1em;
-	width: 100%;
-	border-bottom: 1px solid rgb(37, 92, 124);}
+	width: 100%;}
 .more_info .info_cost {text-align: center;}
 .more_info .info_cost #cost {
 	font-size: 2em;
@@ -4863,7 +4827,6 @@ ul#items_list li.no_items {
 #existing_freeleech_pots >tbody >tr[class^="row_"]:hover,
 #top10 tr[class^="row"]:hover,
 #inbox #messageform >table >tbody >tr:nth-child(n+2):hover {
-    outline: 1px solid rgba(150, 150, 150, 1);
     outline-offset: -1px;}
 
 .sidebar #freeleech >.head.colhead_dark {
@@ -4974,8 +4937,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 	width: 327px;
 	z-index: -1;}
 .error_message {
-    z-index: 99;
-    background: radial-gradient(at center, rgba(45,81,99,1) 0%,rgba(111,85,103,1) 50%,rgb(232,80,102) 100%);}
+    z-index: 99;}
 .error_message:after {
 	content:'';
 	position: absolute;
@@ -5035,7 +4997,6 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     padding: 0;
     margin-top: 10px;}
 .hovereffect .overlay:hover h2 {
-	outline: 2px solid rgb(232,80,102);
 	outline-offset: -2px;}
 
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody tr td.body blockquote {
@@ -5080,11 +5041,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     outline-offset: -3px;
     transition: 0.05s;}
 .box.box_image.box_image_coverart div[align="center"] a:hover:after{
-    outline: 3px solid rgb(232,80,102);
     transition: 0.05s;}
-
-.body.similar ul.nobullet li span.similar_votes a:not([title="Mark as similar"]):hover {
-    filter: drop-shadow(0px 0 2px black);}
 
 #recommended #vanityhouse tbody tr td {
     position: relative;
@@ -5937,7 +5894,6 @@ textarea {
     margin: 0;
     padding: 0;}
 #forums #content .thin td.unread{
-	background-image: url(icon/balloon-unread.png);
 	background-repeat: no-repeat;
 	background-position: 50%;
 	width:18px;
@@ -5954,7 +5910,6 @@ textarea {
     background-position: 50%;
     width:18px; height:18px}
 #forums #content .thin td.unread_sticky {
-    background-image:url(icon/sticky-unread.png);
     background-repeat: no-repeat;
     background-position: 50%;
     width:18px;
@@ -5966,7 +5921,6 @@ textarea {
     width:18px;
     height:18px;}
 #forums #content .thin td.unread_locked {
-    background-image:url(icon/lock-unread.png);
     background-repeat: no-repeat;
     background-position: 50%;
     width:18px;
@@ -5978,13 +5932,11 @@ textarea {
     width:18px;
     height:18px;}
 #forums #content .thin td.unread_locked_sticky {
-    background-image: url(icon/lock-sticky-unread.png);
     background-repeat: no-repeat;
     background-position: 50%;
     width:18px;
     height:18px;}
 .last_read {
-    background-image: url(arrow30x26.png);
     width: 15px !important;
     height: 13px !important;
     background-size: 15px;
