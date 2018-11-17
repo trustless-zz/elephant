@@ -1,6 +1,5 @@
-﻿html {background-image: url(zebraInv.png);}
-@import url(https://gitcdn.xyz/repo/trustless-zz/elephant/master/base.css);
-@import url(https://gitcdn.xyz/repo/trustless-zz/elephant/master/colors_dark.css);
-@import url(https://gitcdn.xyz/repo/trustless-zz/elephant/master/icons_dark.css);
+﻿@import url(base.css);
+@import url(icons_dark.css);
+@import url(colors_dark.css);
 
 @import url(https://gazellegames.net/static/styles/game_room/holidayeffects.css);

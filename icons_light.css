@@ -1,3 +1,5 @@
+html {
+    background-image: url(zebra.png);}
 .last_read,
 .show_torrents a,
 .hide_torrents a {
