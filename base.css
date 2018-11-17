@@ -1812,8 +1812,8 @@ td.cats_col {
 
 #user .content .r00,
 #user .content .r01,
-#user .content .r02.
-#user .content .r03.
+#user .content .r02,
+#user .content .r03,
 #user .content .r04,
 #user .content .r05,
 #user .content .r06,
@@ -4246,11 +4246,11 @@ input[type="button"] {
     transition: opacity 0.1s;}
 .head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
     z-index: 0;}
-#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a {
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a {
     z-index: 99;}
 .edition_info {
 	height: 12px;}
-.head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"], #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1), #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"], #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"], .edition_info, #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"], #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] {
+.head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"], #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1), #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"], #torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"], .edition_info, #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"], #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] {
     position: relative;}
 #index .newsdate, #index #wrapper #content .thin .main_column_bg .main_column .box .head span.time, .head[title="Click to expand/collapse"] strong, #index #recommended .head strong, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] strong, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong, .edition_info strong {
     z-index: 2;}
@@ -4262,7 +4262,7 @@ input[type="button"] {
     min-height: 28px;}
 #user .head[title="Click to expand/collapse"] {
 	min-height: 25px;}
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"]
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong {
 	position: absolute;
 	top: 5px;
@@ -4723,7 +4723,7 @@ ul#items_list li:hover, .inventory #content li.item_li:hover, #equipment .item:h
     transition: 0.1s;	
     box-shadow: none;}
 
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] {
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] {
   text-overflow: unset;}
 
 
@@ -4774,7 +4774,7 @@ ul#items_list li.no_items {
 /* error message */
 #wiki .thin >h2 + .box.pad:nth-child(2),
 #bookmarks #wrapper #content > .thin > .box.pad:nth-child(2),
-#torrents #wrapper #content > .thin > .box.pad:nth-child(2),
+#torrents > .thin > .box.pad:nth-child(2),
 #forums #wrapper #content > .thin > .box.pad:nth-child(2) {
     background: none;
     box-shadow: none;
@@ -4990,7 +4990,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     word-wrap: break-word;
     max-width: 631px;}
 
-#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1), #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >span:nth-child(1), #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >span,
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1), #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >span:nth-child(1), #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >span,
 #bookmarks .group_torrent td[colspan="3"] >span {
     padding: 10px 10px 30px 6px;
     margin: -10px -10px -30px -6px !important;
@@ -5128,7 +5128,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     text-align: unset;}
 #torrents #requests #requests_list tr[class^="requestrows row"] td:first-child, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) {
     overflow: hidden;}
-#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a, #torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) >a,
+#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a, #torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) >a,
 #bookmarks .group_torrent td[colspan="3"] >a {
     padding: 10px 1000px 50px 20px;
     margin: -10px -1000px -50px -20px;
@@ -5675,6 +5675,142 @@ span.size10 {font-size: 3em;line-height: 1em}
 #top10 .thin.top10_tags #ut + br,
 #top10 .thin.top10_tags #ur + br {
     display: none;}
+
+.top10_users #views td {
+    white-space: nowrap;}
+/** saving space by using profile icons, may be too cryptic**/
+.top10_users #views .colhead td:nth-child(3) {
+    font-size: 0;
+    background-image: url(icon/views.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #forum .colhead td:nth-child(3),
+.top10_users #irc .colhead td:nth-child(3),
+.top10_users #snatch .colhead td:nth-child(3),
+.top10_users #seedsize .colhead td:nth-child(3),
+.top10_users #seedtime .colhead td:nth-child(3),
+.top10_users #goldhour .colhead td:nth-child(3),
+.top10_users #gold .colhead td:nth-child(3),
+.top10_users #views .colhead td:nth-child(4) {
+    font-size: 0;
+    background-image: url(https://gazellegames.net/static/common/symbols/mining.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #forum .colhead td:nth-child(4),
+.top10_users #irc .colhead td:nth-child(4),
+.top10_users #snatch .colhead td:nth-child(4),
+.top10_users #seedsize .colhead td:nth-child(4),
+.top10_users #seedtime .colhead td:nth-child(4),
+.top10_users #goldhour .colhead td:nth-child(4),
+.top10_users #gold .colhead td:nth-child(4),
+.top10_users #views .colhead td:nth-child(5) {
+    font-size: 0;
+    background-image: url(https://gazellegames.net/static/common/symbols/woodcutting.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #numul .colhead td:nth-child(3),
+.top10_users #dl .colhead td:nth-child(3),
+.top10_users #ul .colhead td:nth-child(3),
+.top10_users #sharescore .colhead td:nth-child(3)  {
+    font-size: 0;
+    background-image: url(icon/sword_upload.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #numul .colhead td:nth-child(4),
+.top10_users #dl .colhead td:nth-child(4),
+.top10_users #ul .colhead td:nth-child(4),
+.top10_users #sharescore .colhead td:nth-child(4)  {
+    font-size: 0;
+    background-image: url(icon/shield_down.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #forum .colhead td:nth-child(7),
+.top10_users #irc .colhead td:nth-child(7),
+.top10_users #snatch .colhead td:nth-child(7),
+.top10_users #seedsize .colhead td:nth-child(7),
+.top10_users #seedtime .colhead td:nth-child(7),
+.top10_users #goldhour .colhead td:nth-child(7),
+.top10_users #gold .colhead td:nth-child(7),
+.top10_users #views .colhead td:nth-child(8) {
+    font-size: 0;
+    background-image: url(https://gazellegames.net/static/common/symbols/accuracy.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #numul .colhead td:nth-child(5),
+.top10_users #dl .colhead td:nth-child(5),
+.top10_users #ul .colhead td:nth-child(5),
+.top10_users #sharescore .colhead td:nth-child(5),
+.top10_users #forum .colhead td:nth-child(8),
+.top10_users #irc .colhead td:nth-child(8),
+.top10_users #snatch .colhead td:nth-child(8),
+.top10_users #seedsize .colhead td:nth-child(8),
+.top10_users #seedtime .colhead td:nth-child(8),
+.top10_users #goldhour .colhead td:nth-child(8),
+.top10_users #gold .colhead td:nth-child(8),
+.top10_users #views .colhead td:nth-child(9) {
+    font-size: 0;
+    background-image: url(https://gazellegames.net/static/common/symbols/strength.gif);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #numul .colhead td:nth-child(6),
+.top10_users #dl .colhead td:nth-child(6),
+.top10_users #ul .colhead td:nth-child(6),
+.top10_users #sharescore .colhead td:nth-child(6),
+.top10_users #forum .colhead td:nth-child(9),
+.top10_users #irc .colhead td:nth-child(9),
+.top10_users #snatch .colhead td:nth-child(9),
+.top10_users #seedsize .colhead td:nth-child(9),
+.top10_users #seedtime .colhead td:nth-child(9),
+.top10_users #goldhour .colhead td:nth-child(9),
+.top10_users #gold .colhead td:nth-child(9),
+.top10_users #views .colhead td:nth-child(10) {
+    font-size: 0;
+    background-image: url(icon/ratio.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #numul .colhead td:nth-child(7),
+.top10_users #dl .colhead td:nth-child(7),
+.top10_users #ul .colhead td:nth-child(7),
+.top10_users #sharescore .colhead td:nth-child(7),
+.top10_users #forum .colhead td:nth-child(10),
+.top10_users #irc .colhead td:nth-child(10),
+.top10_users #snatch .colhead td:nth-child(10),
+.top10_users #seedsize .colhead td:nth-child(10),
+.top10_users #seedtime .colhead td:nth-child(10),
+.top10_users #goldhour .colhead td:nth-child(10),
+.top10_users #gold .colhead td:nth-child(10),
+.top10_users #views .colhead td:nth-child(11) {
+    font-size: 0;
+    background-image: url(icon/share_score.png);
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+.top10_users #numul .colhead td:nth-child(8),
+.top10_users #dl .colhead td:nth-child(8),
+.top10_users #ul .colhead td:nth-child(8),
+.top10_users #sharescore .colhead td:nth-child(8),
+.top10_users #forum .colhead td:nth-child(11),
+.top10_users #irc .colhead td:nth-child(11),
+.top10_users #snatch .colhead td:nth-child(11),
+.top10_users #seedsize .colhead td:nth-child(11),
+.top10_users #seedtime .colhead td:nth-child(11),
+.top10_users #goldhour .colhead td:nth-child(11),
+.top10_users #gold .colhead td:nth-child(11),
+.top10_users #views .colhead td:nth-child(12) {
+    font-size: 0;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;}
+/** /saving space by using icons **/
+
 #share_score_breakdown .large_progress_bar {
     box-shadow: none;}
 .bbbutt.hidden {

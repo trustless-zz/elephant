@@ -51,11 +51,7 @@ a,
 #torrents .filelist_table tbody >tr:nth-child(n+2):hover,
 #torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
 #user #requests tr[class^="row"]:hover,
-.forum_latest .search #forumlist tr td:not([colspan="2"]):hover,
-#uploaded_table tr:not([class="colhead"]):hover,
-#downloaded_table tr:not([class="colhead"]):hover
-#snatched_table tr:not([class="colhead"]):hover,
-#snatched_not_seeding_table tr:not([class="colhead"]):hover {
+.forum_latest .search #forumlist tr td:not([colspan="2"]):hover {
     outline: 1px solid #969696;}
 
 .error_message {
@@ -265,7 +261,6 @@ input#FLTorrent {
 #torrents #collages >tbody >tr:nth-child(even),
 #torrents div[id^="peers_"] tbody >tr:nth-child(even),
 #torrents .filelist_table tbody >tr:nth-child(even),
-#torrents #seeding_table >tbody >tr:not([class="colhead"]):nth-child(even),
 #existing_freeleech_pots .row_b,
 #running_freeleech .group_torrent.row_b,
 #clan_users >table.border >tbody >tr:nth-child(even),
@@ -273,8 +268,10 @@ input#FLTorrent {
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(even) td:nth-child(-n+2),
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(odd) td:not([colspan="2"]):nth-child(n+3),
 #clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even),
-#uploaded_table tr:not([class="colhead"]):nth-child(even)
+#uploaded_table tr:not([class="colhead"]):nth-child(even),
+#leeching_table tr:not([class="colhead"]):nth-child(even),
 #downloaded_table tr:not([class="colhead"]):nth-child(even),
+#seeding_table tr:not([class="colhead"]):nth-child(even),
 #snatched_table tr:not([class="colhead"]):nth-child(even),
 #snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even),
 .torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]):nth-child(even) {
@@ -338,10 +335,14 @@ input#FLTorrent {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
-#torrents table#uploaded_table,
 #torrents .thin.torrent_history table:not([class="border"]),
 #torrents #requests,
-#torrents .thin #seeding_table,
+#torrents #uploaded_table,
+#torrents #leeching_table,
+#torrents #downloaded_table,
+#torrents #seeding_table,
+#torrents #snatched_table,
+#torrents #snatched_not_seeding_table,
 .forum_latest .search {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7) !important;
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7) !important;
@@ -507,9 +508,7 @@ blockquote,
 #top10 .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) tbody >tr.colhead,
 #torrents div[id^="peers_"] >table,
 #torrents .filelist_table,
-#torrents div[id^="history"] >form >table.border,
-#torrents #seeding_table >tbody >tr.colhead,
-#torrents #seeding_table >tbody >tr >td {
+#torrents div[id^="history"] >form >table.border {
     border: 1px solid #aaaaaa;}
 
 .torrent_table tbody .group_torrent {
@@ -527,29 +526,29 @@ blockquote,
     color: #4a7a2c;}
 
 .torrent_table a,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span,
 #collections #torrent_table tr.group_torrent td a span{
 	color: #2184BE;}
 
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching .torrent_info_tags,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching a {
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching .torrent_info_tags,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching a {
 	color: #fe5672 !important;}
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding .torrent_info_tags,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding a {
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding .torrent_info_tags,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding a {
     color: #5fb31e !important;}
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded .torrent_info_tags,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded a {
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded .torrent_info_tags,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded a {
 	color: #82cc1e !important;}
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched .torrent_info_tags,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched a {
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched .torrent_info_tags,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched a {
     color: #af5f72 !important;}
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded .torrent_info_tags,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded a {
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded .torrent_info_tags,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded a {
     color: #af5f72 !important;}
 
 .profile .box_art_gallery .gallery_small_slot.selected {
@@ -557,7 +556,7 @@ blockquote,
 
 #bookmarks .group_torrent:hover,
 #torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
 #artist #torrent_table >tbody >tr:nth-child(n+2):hover {
     box-shadow: inset 0.5px 0.5px 0 1px #969696;}
 
@@ -565,9 +564,14 @@ blockquote,
 #collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover,
 #running_freeleech >tbody tr[class^="group_torrent row_"]:hover,
 #top10 tr[class^="group_torrent"]:hover,
-#torrents #wrapper #content .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover,
-#torrents #seeding_table >tbody >tr:not([class="colhead"]):nth-child(n+2):hover {
+#torrents .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover,
+#torrents #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover,
+#uploaded_table tr:not([class="colhead"]):hover,
+#leeching_table tr:not([class="colhead"]):hover,
+#downloaded_table tr:not([class="colhead"]):hover,
+#seeding_table tr:not([class="colhead"]):hover,
+#snatched_table tr:not([class="colhead"]):hover,
+#snatched_not_seeding_table tr:not([class="colhead"]):hover {
     box-shadow: inset 0.5px 0.5px 0 1.5px #969696;}
 
 .bbcode_table_div table.bbcode_table,
@@ -578,7 +582,13 @@ blockquote,
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
 #collections ul li[class^="image"],
-.forum_latest .search #forumlist tr td:not([colspan="2"]) {
+.forum_latest .search #forumlist tr td:not([colspan="2"]),
+#uploaded_table tr:not([class="colhead"]) td,
+#leeching_table tr:not([class="colhead"]) td,
+#downloaded_table tr:not([class="colhead"]) td,
+#seeding_table tr:not([class="colhead"]) td,
+#snatched_table tr:not([class="colhead"]) td,
+#snatched_not_seeding_table tr:not([class="colhead"]) td {
 	border: 1px solid #DBDBDB;}
 
 #bookmarks .collage tbody tr td a {
@@ -795,7 +805,7 @@ h2 a,
 .edition_info:before {
     background: linear-gradient(to top, rgba(232,80,102,0.3) 0%,rgba(42, 79, 101, 0) 100%);}
 #torrents tbody[id^="edition_"] tr.group_torrent:hover,
-#torrents #wrapper #content #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
+#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
 #collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"]:hover,
 #bookmarks .group_torrent:hover {
     background: radial-gradient(circle, #f2f2f2, #ededed);}
@@ -870,7 +880,7 @@ strong.trumpable_label {
     color: #BC2839;}
 #color_neutralleech,
 strong.neutralleech_label {text-shadow: 0 0 7px;}
-#torrents #wrapper #content .thin.torrent_history table tbody tr.owner td a[title="View Torrent"] {
+#torrents .thin.torrent_history table tbody tr.owner td a[title="View Torrent"] {
     color: #64ae00;}
 /** /TORRENT STATUS COLORS **/
 
@@ -966,3 +976,31 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
 .master_2719 #logo:hover, .master_7884 #logo:hover, .master_117 #logo:hover, .franchise_2773 #logo:hover {
 	box-shadow: inset 0 0 45px rgba(153, 153, 153, 0.7);}
 /** /GAME STYLES **/
+
+/** adding contrast to the top10 icons **/
+.top10_users #numul .colhead td:nth-child(6),
+.top10_users #dl .colhead td:nth-child(6),
+.top10_users #ul .colhead td:nth-child(6),
+.top10_users #sharescore .colhead td:nth-child(6),
+.top10_users #forum .colhead td:nth-child(9),
+.top10_users #irc .colhead td:nth-child(9),
+.top10_users #snatch .colhead td:nth-child(9),
+.top10_users #seedsize .colhead td:nth-child(9),
+.top10_users #seedtime .colhead td:nth-child(9),
+.top10_users #goldhour .colhead td:nth-child(9),
+.top10_users #gold .colhead td:nth-child(9),
+.top10_users #views .colhead td:nth-child(10),
+.top10_users #numul .colhead td:nth-child(7),
+.top10_users #dl .colhead td:nth-child(7),
+.top10_users #ul .colhead td:nth-child(7),
+.top10_users #sharescore .colhead td:nth-child(7),
+.top10_users #forum .colhead td:nth-child(10),
+.top10_users #irc .colhead td:nth-child(10),
+.top10_users #snatch .colhead td:nth-child(10),
+.top10_users #seedsize .colhead td:nth-child(10),
+.top10_users #seedtime .colhead td:nth-child(10),
+.top10_users #goldhour .colhead td:nth-child(10),
+.top10_users #gold .colhead td:nth-child(10),
+.top10_users #views .colhead td:nth-child(11) {
+    filter: drop-shadow(0px 0 1px black);}
+/** /adding contrast to the top10 icons **/
