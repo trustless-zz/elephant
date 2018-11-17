@@ -18,11 +18,6 @@ a,
 #requests form #otherop tr td:nth-child(1) {
     border-right: 1px dotted #829ce7;}
 
-#achievements tr,
-#achievements tr.colhead {
-	border-bottom: #000 1px solid;}
-#achievements tr.colhead {
-	border-top: #000 1px solid;}
 .book span.size7 {
     border-bottom: 2px solid #000;}
 .body.similar ul.nobullet li span.similar_votes a:not([title="Mark as similar"]):hover {
@@ -233,16 +228,6 @@ input[type=search],
 #user .notice,
 input#FLTorrent {
 	border: 1px solid #e5e5e5;}
-
-.head,
-.colhead,
-.colhead_dark,
-.similar .similar_votes,
-#gazelleview #titlerow,
-#items_navigation h3 {
-	background-color: rgba(42,79,101,0.5);}
-#index .colhead_dark {
-    background: rgba(42,79,101,0.5) !important;}
 
 .curtain {
     background-color: #0E1720;}
@@ -588,10 +573,14 @@ blockquote,
 
 #bookmarks .collage tbody tr td a {
     border: 1px solid #DBDBDB !important;}
-
 #torrents .similar_votes {
-    border-left: 1px solid #DBDBDB;
+    border-left: 1px solid #DBDBDB;}
+#achievements tr,
+#achievements tr.colhead,
+#torrents .similar_votes {
     border-bottom: 1px solid #DBDBDB;}
+#achievements tr.colhead {
+	border-top: 1px solid #DBDBDB;}
 
 .forum_post td.avatar {
 	border-right: 1px solid #e5e5e5;}
@@ -686,7 +675,17 @@ h2 a,
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody 
 #torrents #requests #requests_list >tbody >tr:first-child >td,
 tr.colhead_dark {
-    background-color: rgba(42, 79, 101 ,0.35);}
+    background-color: rgba(42,79,101,0.35);}
+
+.head,
+.colhead,
+.colhead_dark,
+.similar .similar_votes,
+#gazelleview #titlerow,
+#items_navigation h3 {
+	background-color: rgba(42,79,101,0.5);}
+#index .colhead_dark {
+    background: rgba(42,79,101,0.5) !important;}
 
 #requests .thin > table tr td,
 #clan_users >table.border >tbody >tr:nth-child(n+2) >td:nth-child(n+2),

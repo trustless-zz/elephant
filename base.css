@@ -350,8 +350,8 @@ overflow: auto;}
     border: none;
     width: 100%;
     position: relative;
-    margin-top:-5px;
-    top:-15px;}
+    /* margin-top:-5px;
+    top:-15px; */}
 
 #index .error_message {top:0px; margin-top:-20px;}
 #forums .error_message {margin-top:-15px; top:-5px}
@@ -1995,7 +1995,7 @@ td.cats_col {
 	background: none;}
 
 #achievements td {
-	border: none;
+	border: none !important;
 	vertical-align: middle;
 	text-align: center;}
 
@@ -4412,7 +4412,7 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #artist .sidebar .box .body {padding: 5px !important;}
 #artist .main_column_bg .main_column .box {margin-bottom: 25px;}
 #artist .main_column_bg .main_column .box table#requests {margin: 0;}
-#artist .main_column_bg .main_column .box .body {padding: 5px !important;}
+#artist .main_column_bg .main_column .box .body {padding: 10px !important;}
 
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead {background-color: transparent !important;}
 
@@ -6078,7 +6078,9 @@ tr.likes td {
 .badge_icon {
     margin: -3px 2px 0 2px;}
 .username_badges a[href="clans.php"] img {
-    margin: 0 2px 0 6px;}
+    margin: 0 2px;}
+.forum_post tr.colhead_dark a.username {
+    margin-right: 4px;}
 /** /forums **/
 
 

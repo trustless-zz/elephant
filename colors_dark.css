@@ -13,8 +13,7 @@ body {
 a,
 .hovereffect h2 a,
 #content li.item_li a,
-.ui-widget-content a,
-#requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a {
+.ui-widget-content a {
 	text-decoration: none;
 	color: #c09a9a;}
 
@@ -79,6 +78,8 @@ input[type=search],
 .donate_box_header_plat,
 .torrent_table tr.group_torrent {
     background-color: #000;}
+.filter_torrents table.cat_list[width="100%"] {
+    background: none;}
 
 #torrentscomplete li:nth-child(even),
 #index .pad,
@@ -134,8 +135,6 @@ table,
 .forum_latest .search {
     background: #1f2023 !important;}
 
-button#AvatarPreview,
-button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 input[type="button"],
@@ -144,7 +143,6 @@ input[type="button"],
 #markread,
 #markread:before,
 #progress_bar,
-#shop li.item_li.nostock .submit_section:before,
 .alertable-ok,
 .book_dialog,
 .body.similar ul.nobullet li span.similar_votes span,
@@ -152,7 +150,6 @@ input[type="button"],
 .donate-button-silver,
 .error_message,
 .large_progress_bar,
-.no_access:before,
 .overlay h2 a:hover {
     color: #fff;}
 
@@ -233,7 +230,9 @@ input[type=search]:focus,
 .alertable-cancel {
     color: #c4c4c4;}
 
-.spoilerbox span{
+#shop li.item_li.nostock .submit_section:before,
+.no_access:before,
+.spoilerbox span {
     color: #000 !important;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
     color: #c4c4c4 !important;}
@@ -250,16 +249,6 @@ input[type=search],
 #user .notice,
 input#FLTorrent {
 	border: 1px solid #1a1a1a;}
-
-.head,
-.colhead,
-.colhead_dark,
-.similar .similar_votes,
-#gazelleview #titlerow,
-#items_navigation h3 {
-	background-color: rgba(213,176,154,0.5);}
-#index .colhead_dark {
-    background: rgba(213,176,154,0.5) !important;}
 
 .curtain {
     background-color: #0E1720;}
@@ -525,7 +514,7 @@ blockquote,
 .torrent_table,
 .torrent td, .torrent .center,
 #bookmarks #torrent_table tbody tr.discog td.center.cats_col,
-#collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(1),
+#collections .thin.collections #torrent_t   able >tbody >tr[class="group discog"] >td.collicon:nth-child(1),
 #collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2),
 #upload_table table tbody tr td,
 #top10 .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) tbody >tr.colhead,
@@ -613,11 +602,11 @@ blockquote,
     border-bottom: 1px solid #303030;}
 
 .forum_post td.avatar {
-	border-right: 1px solid #808080;}
+	border-right: 1px solid #1a1a1a;}
 .forum_post td.avatar,
 #userhistory .forum_post tbody tr .body,
 #inbox #messageform input + table {
-    border-bottom: 1px solid #808080;}
+    border-bottom: 1px solid #1a1a1a;}
 
 #inbox tr.unreadpm {
 	background: #323232;}
@@ -627,12 +616,8 @@ blockquote,
 .book .page {
     background-color: #2b4e66;}
 
-blockquote,
-textarea {
+blockquote
 	background-color: #0a0a0a;}
-
-textarea {
-    border:solid #555 2px;}
 
 #forums table.forum_unread {
     outline: #68c077 solid 2px;}
@@ -649,7 +634,8 @@ textarea {
 #collections #torrent_table a,
 #torrents #torrentbrowse #torrent_table.grouping >tbody >tr:nth-child(n+2) a,
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a,
-.group_torrent td span a {
+.group_torrent td span a,
+#requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a {
     color: #d5b09a;}
 
 i.fa.fa-fl-pots {
@@ -704,8 +690,18 @@ h2 a,
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody 
 #torrents #requests #requests_list >tbody >tr:first-child >td,
-tr.colhead_dark {
+.colhead_dark {
     background-color: rgba(213,176,154,0.35);}
+
+.head,
+.colhead,
+.colhead_dark,
+.similar .similar_votes,
+#gazelleview #titlerow,
+#items_navigation h3 {
+	background-color: rgba(213,176,154,0.5);}
+#index .colhead_dark {
+    background: rgba(213,176,154,0.5) !important;}
 
 #requests .thin > table tr td,
 #clan_users >table.border >tbody >tr:nth-child(n+2) >td:nth-child(n+2),
@@ -761,8 +757,8 @@ tr.colhead_dark {
 #user .notice {
 	background-color: #801216;}
 
+form textarea,
 .bbbutt {
-	background-color: #c4c4c4;
     border: 2px solid rgba(213,176,154,0.5);}
 
 #requests form #otherop tr:nth-child(even) {
@@ -824,9 +820,12 @@ input[type="reset" i],
 input[type="file" i]::-webkit-file-upload-button,
 button {
     color: buttontext;}
-select#order_by,
-select#order_way {
-    background-color: rgb(196, 196, 196);}
+
+input[type="number"],
+form textarea,
+.bbbutt,
+select {
+    background-color: #c4c4c4;}
 
 .collage tbody tr td a:hover,
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover,

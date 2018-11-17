@@ -19,17 +19,20 @@
 4.
 	#forums .forum_index .forum_index tr[class^="row"] >td:nth-child(3) .last_topic a
 
-	text legth limit to be managed with 'text-overflow' instead of being predetermined
+	text length limit to be managed with 'text-overflow' instead of being predetermined
 
 5.
+	same as 4, but for PM subject on #inbox
+
+6.
 	#torrents .ratings
 	score to be combined with " / 10 "(alternatively " / 10 " to be contained in a separate span as well) and be apart from the reviewer icon (instead of being contained inside it)
 
-6.
+7.
 	#torrents  .box_tags
 	"There are no tags to display." message to have a container
 
-7.
+8.
 	#inbox
 	"Sticky" to be in a container,
 	tricky tr to have its own class, like unread PM with .unreadpm
