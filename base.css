@@ -4370,8 +4370,8 @@ input[type="submit"], input[type="button"], button[type="button"] {
 
 
 /* hiding empty (System) torrent groups  */
-#torrents #torrentbrowse #torrent_table.grouping tbody tr[class="torrent rowa"] {display: none;}
-#torrents #torrentbrowse #torrent_table.grouping tbody tr[class="torrent rowb"] {display: none;}
+#torrents #torrentbrowse #torrent_table.grouping tr[class="torrent rowa"] {display: none;}
+#torrents #torrentbrowse #torrent_table.grouping tr[class="torrent rowb"] {display: none;}
 
 
 ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
@@ -5768,6 +5768,10 @@ textarea {
 .box_add_freeleech #groupid_input {
     width: calc(100% - 225px);}
 /** /search/input bars width **/
+
+/** hiding an empty column on the 'Hit 'n' Runs' page, but not on the 'Torrent History' page, since it's being used there **/
+.torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]) td:last-child:empty {
+    display: none;}
 
 /** inbox **/
 #inbox table {
