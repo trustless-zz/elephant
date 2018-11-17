@@ -276,7 +276,8 @@ input#FLTorrent {
 #uploaded_table tr:not([class="colhead"]):nth-child(even)
 #downloaded_table tr:not([class="colhead"]):nth-child(even),
 #snatched_table tr:not([class="colhead"]):nth-child(even),
-#snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even) {
+#snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even),
+.torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]):nth-child(even) {
     background: #e7e7e7;}
 
 #torrentscomplete .highlight {
@@ -683,7 +684,7 @@ h2 a,
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody 
 #torrents #requests #requests_list >tbody >tr:first-child >td,
-tr.colhead_dark {
+.colhead_dark {
     background-color: rgba(42,79,101,0.35);}
 
 .head,

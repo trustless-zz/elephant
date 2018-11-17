@@ -297,7 +297,8 @@ input#FLTorrent {
 #uploaded_table tr:not([class="colhead"]):nth-child(even)
 #downloaded_table tr:not([class="colhead"]):nth-child(even),
 #snatched_table tr:not([class="colhead"]):nth-child(even),
-#snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even) {
+#snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even),
+.torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]):nth-child(even) {
     background: #000;}
 
 #torrentscomplete .highlight {
