@@ -1,4 +1,4 @@
-/*~~~~~~FONTS~~~~~~*/
+﻿/*~~~~~~FONTS~~~~~~*/
 
 
 @font-face {
@@ -4612,20 +4612,10 @@ span.user_title span[style="font-family: cursive;"] {
     right: 10px;
     margin-top: unset;
     padding-right: unset;}
-/* #index .main_column .head a {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    left: unset;
-    margin-top: unset;} */
 #index #wrapper #content .thin .main_column_bg .main_column .box .head {
     position: relative;
     display: flex;
     padding: 9px 10px 8px 10px;}
-/* #index #wrapper #content .thin .main_column_bg .main_column .box .head span[style="float: right;"] {
-    top: 0;
-    right: 0;
-    position: absolute;} */
 #index #wrapper #content .thin .main_column_bg .main_column .box .head span.time {
     font-family: neuzite, sans-serif;
     font-style: italic;
@@ -4633,11 +4623,7 @@ span.user_title span[style="font-family: cursive;"] {
     font-size: 10pt;
     text-align: right;
     position: absolute;
-    right: 10px;}
-/* #index #wrapper #content .thin .main_column_bg .main_column .box .head span[style="float: right;"] .brackets:before {
-    content: "(";}
-#index #wrapper #content .thin .main_column_bg .main_column .box .head span[style="float: right;"] .brackets:after {
-    content: ")";} */
+    right: 10px;}   
 #index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"] .head strong:before {
     content: ' ';
     width: 82px;
@@ -5773,6 +5759,16 @@ textarea {
 #torrents #torrent_comments #reply_box .box.pad #quickreplypreview {
     margin: -45px 0 0 0;}
 
+/** search/input bars width **/
+#shop_search #search_query {
+    width: calc(100% - 430px);}
+#crafting_panel #search_query,
+.equipment #search_query {
+    width: calc(100% - 90px);}
+.box_add_freeleech #groupid_input {
+    width: calc(100% - 225px);}
+/** /search/input bars width **/
+
 /** inbox **/
 #inbox table {
 	border-collapse:collapse;}
@@ -5990,6 +5986,8 @@ textarea {
     padding: 300px;
     margin: -300px;
     cursor: pointer;}
+.forum_latest .search #forumlist tr td:not([colspan="2"]):hover {
+    outline-offset: -1px;}
 #forums #content .forum_latest .forum_index.forum_latest {
     margin-top: 25px;}
 #forums .forums_search .search_form table.layout.border input[type="search"] {

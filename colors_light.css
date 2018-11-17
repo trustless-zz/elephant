@@ -50,7 +50,12 @@ a,
 #torrents div[id^="peers_"] tbody >tr:nth-child(n+2):hover,
 #torrents .filelist_table tbody >tr:nth-child(n+2):hover,
 #torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
-#user #requests tr[class^="row"]:hover {
+#user #requests tr[class^="row"]:hover,
+.forum_latest .search #forumlist tr td:not([colspan="2"]):hover,
+#uploaded_table tr:not([class="colhead"]):hover,
+#downloaded_table tr:not([class="colhead"]):hover
+#snatched_table tr:not([class="colhead"]):hover,
+#snatched_not_seeding_table tr:not([class="colhead"]):hover {
     outline: 1px solid #969696;}
 
 .error_message {
@@ -267,7 +272,11 @@ input#FLTorrent {
 #clan_stats .clan_past_stats table tbody tr:not([class="colhead"]):nth-child(even),
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(even) td:nth-child(-n+2),
 #clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(odd) td:not([colspan="2"]):nth-child(n+3),
-#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even) {
+#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even),
+#uploaded_table tr:not([class="colhead"]):nth-child(even)
+#downloaded_table tr:not([class="colhead"]):nth-child(even),
+#snatched_table tr:not([class="colhead"]):nth-child(even),
+#snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even) {
     background: #e7e7e7;}
 
 #torrentscomplete .highlight {
