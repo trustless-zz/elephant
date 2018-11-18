@@ -1,3 +1,5 @@
+/** contains almost every color used **/
+
 #shop .featured {
     background: white url('icon/temp_featured.png') top left no-repeat !important;}
 #shop .owned {
@@ -12,8 +14,8 @@ a,
 #content li.item_li a,
 .ui-widget-content a,
 #requests .thin table.border[border="0"][width="100%"] >tbody tr[class^="row"] >td a {
-	text-decoration: none;
-	color: #255c7c;}
+    text-decoration: none;
+    color: #255c7c;}
 
 #requests form #otherop tr td:nth-child(1) {
     border-right: 1px dotted #829ce7;}
@@ -51,7 +53,9 @@ a,
 #torrents .filelist_table tbody >tr:nth-child(n+2):hover,
 #torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
 #user #requests tr[class^="row"]:hover,
-.forum_latest .search #forumlist tr td:not([colspan="2"]):hover {
+.forum_latest .search #forumlist tr td:not([colspan="2"]):hover,
+#collections #manage_collage_table >tbody tr:not([class="rowa"]):not(:last-child):hover,
+#allreviews table tr:hover {
     outline: 1px solid #969696;}
 
 .error_message {
@@ -109,6 +113,7 @@ table,
 .donate-button-platinum {
     background: #fff repeat-x;}
 
+#collections #sort_table,
 .forum_latest .search,
 .alertable-cancel:hover {
     background: #fff !important;}
@@ -274,7 +279,9 @@ input#FLTorrent {
 #seeding_table tr:not([class="colhead"]):nth-child(even),
 #snatched_table tr:not([class="colhead"]):nth-child(even),
 #snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even),
-.torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]):nth-child(even) {
+.torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]):nth-child(even),
+#collections #manage_collage_table >tbody tr:not([class="rowa"]):nth-child(even):not(:last-child),
+#torrents .userreviews tr:nth-child(even) {
     background: #e7e7e7;}
 
 #torrentscomplete .highlight {
@@ -321,7 +328,7 @@ input#FLTorrent {
 #top10 #wrapper #content .thin table.border,
 #collections #content .center table,
 #collections .thin .center >form[method="get"],
-#collections .thin table.collections_art_display[width="100%"] >tbody,
+#collections table,
 #collections #wrapper #content .thin table[class="forum_post wrap_overflow box vertical_margin forum_unread"],
 #userhistory table[id^="post"],
 #clan_stats .ongoing_clan_war >table.border,
@@ -343,7 +350,8 @@ input#FLTorrent {
 #torrents #seeding_table,
 #torrents #snatched_table,
 #torrents #snatched_not_seeding_table,
-.forum_latest .search {
+.forum_latest .search,
+#allreviews table {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7) !important;
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7) !important;
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7) !important;}
@@ -366,17 +374,6 @@ input#FLTorrent {
 .collections .linkbox .selected .pageslink,
 #requests .thin > table tr td a {
     color: #333333;}
-
-#collections table.collage tr{
-    background-color:rgba(27,47,63,0.85);}
-
-#collections #content #new_collage tr td.label,
-#collections #content #edit_collage tr td.label {
-    background-color:rgba(24,59,88,0.85);}
-
-#collections #content #new_collage tr td,
-#collections #content #edit_collage tr td{
-    background-color:rgba(27,47,63,0.65);}
 
 #share_score .large_progress_bar .main_bar,
 #center_poll,
@@ -606,7 +603,8 @@ blockquote,
 	border-right: 1px solid #e5e5e5;}
 .forum_post td.avatar,
 #userhistory .forum_post tbody tr .body,
-#inbox #messageform input + table {
+#inbox #messageform input + table,
+#collections #manage_collage_table >tbody tr:nth-last-child(2) {
     border-bottom: 1px solid #e5e5e5;}
 
 #inbox tr.unreadpm {
@@ -692,7 +690,7 @@ h2 a,
 #artist .main_column_bg .main_column .box table#requests tbody .colhead_dark, 
 #user .box_gold td.label, 
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
-#user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody 
+#user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody,
 #torrents #requests #requests_list >tbody >tr:first-child >td,
 .colhead_dark {
     background-color: rgba(42,79,101,0.35);}

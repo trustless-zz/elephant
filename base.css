@@ -785,17 +785,6 @@ h2 a {
 	width: 590px !important;
 }
 
-#torrents .main_column_bg .main_column .sub {
-	height: 1px;
-	overflow: visible;
-	position: inherit;
-	top: -18px;
-	visibility: hidden;
-	width: max-content;
-	z-index: 99;
-	font-size: 10pt;
-}
-
 
 .filter_torrents h3 {
     font-family: Whitney, sans-serif;
@@ -4005,7 +3994,6 @@ input[type="button"] {
 
 
 #allreviews {position: relative;}
-#allreviews h2 {margin-bottom: 16px;}
 #torrents .linkbox.groupoptions {margin-bottom: 1px;}
 #shop #shop_search {margin-top: 16px;}
 #user #crafting_panel {position: relative;}
@@ -4812,7 +4800,9 @@ ul#items_list li.no_items {
 #torrents div[id^="history"] form table.border tbody tr[class^="row"]:hover,
 #existing_freeleech_pots >tbody >tr[class^="row_"]:hover,
 #top10 tr[class^="row"]:hover,
-#inbox #messageform >table >tbody >tr:nth-child(n+2):hover {
+#inbox #messageform >table >tbody >tr:nth-child(n+2):hover,
+.forum_latest .search #forumlist tr td:not([colspan="2"]):hover,
+#collections #manage_collage_table >tbody tr:not([class="rowa"]):hover {
     outline-offset: -1px;}
 
 .sidebar #freeleech >.head.colhead_dark {
@@ -5905,9 +5895,68 @@ textarea {
     width: calc(100% - 225px);}
 /** /search/input bars width **/
 
+#torrent_comments {
+    position: relative;}
+#torrents .thin .sub {
+    visibility: hidden;}
+#torrent_comments >.linkbox:first-child +.sub {
+    margin-top: -12px !important;}
+
 /** hiding an empty column on the 'Hit 'n' Runs' page, but not on the 'Torrent History' page, since it's being used there **/
 .torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]) td:last-child:empty {
     display: none;}
+
+/** user reviews rows, allreviews everything **/
+#torrents .userreviews_div >.body {
+    padding: 10px 0 0 0;}
+#torrents .userreviews table {
+    margin: 0 0 40px 0;}
+#torrents .userreviews tr:last-child #usersreview {
+    position: relative;}
+#torrents .userreviews tr:last-child #usersreview #allreviewslink {
+    position: absolute;
+    bottom: -22px;
+    right: 10px;}
+#allreviews >.box.pad {
+    background: none;
+    box-shadow: none;
+    padding: 0 !important;
+    overflow: visible;}
+#allreviews >.box.pad .linkbox:first-child {
+    margin-top: 1px;}
+#allreviews .linkbox {
+    font-family: whitney, sans-serif;}
+#allreviews #usersreviewimage {
+    padding-left: 15px;}
+#allreviews #usersreview {
+    padding-right: 15px;}
+#allreviews #reviewdate {
+    display: block;}
+
+
+/** 'manage collection' page **/
+#collections #easysort {
+    width: 100%;
+    margin-top: 10px !important;
+    float: unset !important;}
+#collections #easysort >form {
+    margin: 0;
+    padding: 0;}
+#collections #sort_table tbody {
+    display: flex;}
+#collections #sort_table tr {
+    white-space: nowrap;}
+#collections #sort_table tr td:empty {
+    display: none;}
+#collections #sort_table #enable_pager_checkbox {
+    margin-right: 30px;}
+#collections #manage_collage_table {
+    margin-top: 16px !important;}
+#collections #manage_collage_table .colhead th {
+    font-weight: normal;
+    padding: 5px;}
+/** /'manage collection' page **/
+
 
 /** inbox **/
 #inbox table {
@@ -5974,7 +6023,8 @@ textarea {
 	margin: 0;
 	height: 18px;
 	line-height: 19px;}
-#forums #content .thin .sub {
+#torrents .thin .sub,
+#forums .thin .sub {
     position: absolute;
     left: 0;
     margin-top: -17px;}
@@ -6126,8 +6176,6 @@ textarea {
     padding: 300px;
     margin: -300px;
     cursor: pointer;}
-.forum_latest .search #forumlist tr td:not([colspan="2"]):hover {
-    outline-offset: -1px;}
 #forums #content .forum_latest .forum_index.forum_latest {
     margin-top: 25px;}
 #forums .forums_search .search_form table.layout.border input[type="search"] {
