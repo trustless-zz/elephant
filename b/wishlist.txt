@@ -3,36 +3,40 @@
 	&
 	#index #dailygazelle
 
-	imgs to have their own containers
+	imgs should have their own containers
 
 
 2.
 	#collections .hovereffect .collection_art
 
-	to have images being applied through HTML 'img' instead of CSS 'background-image'
+	should have images being applied through HTML 'img' instead of CSS 'background-image'
 
 3.
 	#index #markread
 
-	to be beside .head instead of being inside
+	should be beside .head instead of being inside of it
 
 4.
 	#forums .forum_index .forum_index tr[class^="row"] >td:nth-child(3) .last_topic a
 
-	text length limit to be managed with 'text-overflow' instead of being predetermined
+	text length limit should be managed with 'text-overflow' instead of being predetermined
 
 5.
 	same as 4, but for PM subject on #inbox
 
 6.
 	#torrents .ratings
-	score to be combined with " / 10 "(alternatively " / 10 " to be contained in a separate span as well) and be apart from the reviewer icon (instead of being contained inside it)
+	score should be combined with " / 10 " (alternatively " / 10 " should be contained in a separate span as well) and should be apart from the reviewer icon (instead of being contained inside it)
 
 7.
 	#torrents  .box_tags
-	"There are no tags to display." message to have a container
+	"There are no tags to display." message should have a container
 
 8.
 	#inbox
 	"Sticky" to be in a container,
-	tricky tr to have its own class, like unread PM with .unreadpm
+	tricky tr should have its own class, like unread PM with .unreadpm
+
+9.
+	#torrents .userreviews_div
+	the link to All Reviews should be separate from the last review container.
