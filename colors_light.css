@@ -96,6 +96,7 @@ table,
 .torrent_table tr.group_torrent {
     background-color: #fff;}
 
+#staffpm #compose,
 #shop li.item_li,
 #dailygazelle #gazelletitle,
 #collections .thin .center >form[method="get"],
@@ -338,7 +339,8 @@ input#FLTorrent {
 #progress_bar,
 #reports .thin >h2.center + h3 + .box.pad + p +table,
 #reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center,
-#forums #content .thin table {
+#forums #content .thin table,
+#staffpm #compose {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}

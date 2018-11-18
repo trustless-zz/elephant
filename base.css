@@ -5901,6 +5901,30 @@ textarea {
 #torrent_comments >.linkbox:first-child +.sub {
     margin-top: -12px !important;}
 
+#staffpm #new_pm >br:first-child,
+#staffpm #new_pm >br:first-child + br,
+#staffpm .header:first-child + br + br,
+#staffpm .header:first-child + br {
+    display: none;}
+#staffpm #inbox {
+    padding: 0;
+    background: none;
+    box-shadow: none;}
+#staffpm #inbox >h2 {
+    margin-top: 16px;}
+#staffpm #compose {
+    margin-top: 22px;}
+#staffpm #compose #subject,
+#staffpm #compose #message {
+    width: 98%;}
+
+/** invite page **/
+#user .thin >.header:first-child + .box.pad + .box.pad + h3 + .box.pad,
+#user .thin >.header:first-child + .box.pad + .box.pad {
+    padding: 0;}
+#user .thin >.header:first-child + .box.pad + .box.pad + h3 + .box.pad > table {
+    box-shadow: none;}
+
 /** hiding an empty column on the 'Hit 'n' Runs' page, but not on the 'Torrent History' page, since it's being used there **/
 .torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]) td:last-child:empty {
     display: none;}
@@ -5925,13 +5949,16 @@ textarea {
     margin-top: 1px;}
 #allreviews .linkbox {
     font-family: whitney, sans-serif;}
+#torrents .userreviews #usersreviewimage,
 #allreviews #usersreviewimage {
     padding-left: 15px;}
+#torrents .userreviews #usersreview,
 #allreviews #usersreview {
     padding-right: 15px;}
+#torrents .userreviews #reviewdate,
 #allreviews #reviewdate {
     display: block;}
-
+/** /user reviews rows, allreviews everything **/
 
 /** 'manage collection' page **/
 #collections #easysort {

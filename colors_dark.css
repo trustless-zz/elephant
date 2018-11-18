@@ -113,6 +113,7 @@ table,
 #rules .thin form.search_form {
     background-color: #1f2023;}
 
+#staffpm #compose,
 #collections .thin table.collections_art_display[width="100%"] >tbody,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
 #collections .thin .center >form[method="get"],
@@ -359,7 +360,8 @@ input#FLTorrent {
 #progress_bar,
 #reports .thin >h2.center + h3 + .box.pad + p +table,
 #reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center,
-#forums #content .thin table {
+#forums #content .thin table,
+#staffpm #compose {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
