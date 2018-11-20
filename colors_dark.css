@@ -361,10 +361,13 @@ input#FLTorrent {
 #reports .thin >h2.center + h3 + .box.pad + p +table,
 #reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center,
 #forums #content .thin table,
-#staffpm #compose {
+#staffpm #compose,
+#torrents .torrent_history form[action="torrents.php"][method="get"]:nth-child(2) {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
+.torrent_edit #upload_table >.border.slice,
+.torrent_edit #upload_table #releaseinfo,
 #torrents .thin.torrent_history table:not([class="border"]),
 #torrents #requests,
 #torrents #uploaded_table,
@@ -563,7 +566,7 @@ blockquote,
 #collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover,
 #running_freeleech >tbody tr[class^="group_torrent row_"]:hover,
 #top10 tr[class^="group_torrent"]:hover,
-#torrents .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):hover,
+#torrents .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):not(:last-child):hover,
 #torrents #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover,
 #uploaded_table tr:not([class="colhead"]):hover,
 #leeching_table tr:not([class="colhead"]):hover,
@@ -577,7 +580,7 @@ blockquote,
 .bbcode_table_div table.bbcode_table tbody tr td,
 #user td,
 #recommended #vanityhouse tbody tr td,
-#torrents .torrent_history table tbody tr td,
+#torrents .torrent_history table tbody tr:not([class="colhead"]) td,
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
 #collections ul li[class^="image"],
@@ -686,7 +689,8 @@ h2 a,
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody,
 #torrents #requests #requests_list >tbody >tr:first-child >td,
-.colhead_dark {
+.colhead_dark,
+.torrent_edit #upload_table #releaseinfo td.label {
     background-color: rgba(213,176,154,0.35);}
 
 .head,

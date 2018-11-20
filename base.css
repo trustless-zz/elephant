@@ -1548,9 +1548,7 @@ td.cats_col {
 
 #rules .thin .box:nth-of-type(2) {
 	width: 1200px;
-	margin: 10px auto;
-	padding: 0 !important;
-}
+	margin: 10px auto;}
 
 /*collections*/
 
@@ -4404,14 +4402,19 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead {background-color: transparent !important;}
 
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] {margin-top: 16px;}
-#rules .thin #actual_rules .before_rules .box.pad {padding: 5px !important;}
 #rules .thin form.search_form {
     border-collapse: collapse;
     font-family: neuzite, sans-serif;
     font-size: 10pt;
     padding: 5px;}
+#rules #actual_rules .box.pad {
+    padding: 10px !important;}
+#rules .thin >#jump + .box.pad {
+    padding: 0 !important;}
+#rules .thin >#jump + .box.pad table{
+    margin: 0;}
 #rules .thin .before_rules .box.pad ul li {padding: 5px 10px 5px 10px;}
-#rules .thin .before_rules .box.pad ul li#Introk {padding-top: 38px !important;}
+#rules .thin .before_rules .box.pad ul li#Introk {padding-top: 28px !important;}
 
 
 /* creating a sidebar for rules.php?p=upload */
@@ -4424,7 +4427,7 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
     width: 300px;
     margin-right: 27px;
     z-index: -1;}
-#rules .thin .before_rules .box.pad{width: inherit !important;}
+/* #rules .thin .before_rules .box.pad{width: inherit !important;} */
 #rules .thin .before_rules {
     display: block !important;
     margin-top: 0;
@@ -4437,6 +4440,8 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
     width: auto;
     position: relative;
     z-index: 1 !important;}
+#rules .search_form #search_string {
+    width: 263px;}
 
 
 /* rules.php?p=clients */
@@ -4445,7 +4450,7 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
     display: block;}
 #rules .thin .box.pad table.border[cellpadding="5"][cellspacing="1"] tbody {width: 300px; display: table;}
 #rules .thin .box.pad table.border[cellpadding="5"][cellspacing="1"] tbody .colhead {display: none;}
-#rules .thin .box.pad p {padding: 5px;}
+#rules .thin .box.pad p {padding: 5px 0;}
 
 
 #torrents .sidebar .hovereffect {
@@ -5667,6 +5672,14 @@ span.size10 {font-size: 3em;line-height: 1em}
 
 .top10_users #views td {
     white-space: nowrap;}
+
+.torrent_edit #upload_table #releaseinfo input#release_title {
+    width: 99%;}
+.torrent_edit #upload_table #releaseinfo input#gamedoxvers {
+    width: 91%;}
+.torrent_edit #upload_table #releaseinfo textarea#release_desc {
+    width: 98% !important;}
+
 /** saving space by using profile icons, may be too cryptic**/
 .top10_users #views .colhead td:nth-child(3) {
     font-size: 0;
@@ -6298,6 +6311,8 @@ tr.likes td {
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#rules .search_form #search_string {
+    width: 363px;}
 #crafting_recipes li.item_li {
 	height: 250px;
     width: 200px;}
