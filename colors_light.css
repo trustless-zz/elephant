@@ -529,27 +529,6 @@ blockquote,
 #collections #torrent_table tr.group_torrent td a span{
 	color: #2184BE;}
 
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching .torrent_info_tags,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_leeching a {
-	color: #fe5672 !important;}
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding .torrent_info_tags,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_seeding a {
-    color: #5fb31e !important;}
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded .torrent_info_tags,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_uploaded a {
-	color: #82cc1e !important;}
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched .torrent_info_tags,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_snatched a {
-    color: #af5f72 !important;}
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded .torrent_info_tags,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="]:hover #color_downloaded a {
-    color: #af5f72 !important;}
-
 .profile .box_art_gallery .gallery_small_slot.selected {
     border: 2px solid #969696;}
 
@@ -817,7 +796,52 @@ button[type="button"]:not([title="Close"]):hover,
     background: radial-gradient(circle, #e85066 0%,#255c7c 100%);}
 .body.similar ul.nobullet li span.similar_votes:hover:before {
     background: linear-gradient(to top, rgba(232,80,102,0.5) 0%,rgba(232,80,102, 0) 100%);}
+/** /COLORS **/
 
+/** TORRENT STATUS COLORS **/
+#color_leeching,
+#color_leeching .torrent_info_tags,
+#color_leeching a {
+    color: #e03854 !important;}
+#color_seeding,
+#color_seeding .torrent_info_tags,
+#color_seeding a {
+    color: #418b00 !important;}
+#color_uploaded,
+#color_uploaded .torrent_info_tags,
+#color_uploaded a {
+    color: #DC9202 !important;
+    text-shadow: 0 0 2px #FCC201;}
+#color_snatched,
+#color_snatched .torrent_info_tags,
+#color_snatched a {
+    color: #914154 !important;}
+#color_downloaded,
+#color_downloaded .torrent_info_tags,
+#color_downloaded a {
+    color: #914154 !important;}
+#color_freeleech,
+strong.freeleech_label {
+    color: #6441a5 !important;
+    text-shadow: 0 0 7px rgba(218, 120, 252, 0.7);}
+#color_personal_freeleech,
+strong.personal_freeleech_label {text-shadow: 0 0 7px;}
+#color_reported,
+strong.reported_label {
+    color: #ff0000 !important;
+    text-shadow: 0 0 7px;}
+#color_trumpable,
+strong#trumpable_tag,
+strong.trumpable_label {
+    color: #BC2839 !important;
+    text-shadow: 0 0 7px;}
+#color_neutralleech,
+strong.neutralleech_label {text-shadow: 0 0 7px;}
+#torrents .thin.torrent_history table tbody tr.owner td a[title="View Torrent"] {
+    color: #64ae00 !important;}
+/** /TORRENT STATUS COLORS **/
+
+/** HOVER COLORS **/
 .collage tbody tr td a:hover,
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a:hover,
 .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a:hover,
@@ -830,6 +854,23 @@ button[type="button"]:not([title="Close"]):hover,
 
 #index #clans .large_progress_bar:hover {
     background-color: #e85066;}
+
+#color_leeching:hover,
+#color_leeching:hover .torrent_info_tags,
+#color_leeching:hover a,
+#color_seeding:hover,
+#color_seeding:hover .torrent_info_tags,
+#color_seeding:hover a,
+#color_uploaded:hover,
+#color_uploaded:hover .torrent_info_tagsr,
+#color_uploaded:hover a,
+#color_snatched:hover,
+#color_snatched:hover .torrent_info_tags,
+#color_snatched:hover a,
+#color_downloaded:hover,
+#color_downloaded:hover .torrent_info_tags,
+#color_downloaded:hover a,
+#torrents .thin.torrent_history table tbody tr.owner td a[title="View Torrent"]:hover,
 a:hover, #userinfo_minor li a:hover,
 a:hover span,
 .tags >a:hover,
@@ -837,52 +878,7 @@ a:hover span,
 #clickable:not([class="overlay"]):hover >h3,
 .global_buffs a:hover .buff_text {
     color: #e85066 !important;}
-
-
-
-/** /COLORS **/
-
-/** TORRENT STATUS COLORS **/
-#color_leeching,
-#color_leeching .torrent_info_tags,
-#color_leeching a {
-    color: #e03854 !important;}
-#color_seeding,
-#color_seeding .torrent_info_tags,
-#color_seeding a {
-    color: #418b00;}
-#color_uploaded,
-#color_uploaded .torrent_info_tags,
-#color_uploaded a {
-    color: #DC9202 !important;
-    text-shadow: 0 0 2px #FCC201;}
-#color_snatched,
-#color_snatched .torrent_info_tags,
-#color_snatched a {
-    color: #914154;}
-#color_downloaded,
-#color_downloaded .torrent_info_tags,
-#color_downloaded a {
-    color: #914154;}
-#color_freeleech,
-strong.freeleech_label {
-    color: #6441a5;
-    text-shadow: 0 0 7px rgba(218, 120, 252, 0.7);}
-#color_personal_freeleech,
-strong.personal_freeleech_label {text-shadow: 0 0 7px;}
-#color_reported, strong.reported_label {
-    color: #ff0000;
-    text-shadow: 0 0 7px;}
-#color_trumpable,
-strong#trumpable_tag,
-strong.trumpable_label {
-    text-shadow: 0 0 7px;
-    color: #BC2839;}
-#color_neutralleech,
-strong.neutralleech_label {text-shadow: 0 0 7px;}
-#torrents .thin.torrent_history table tbody tr.owner td a[title="View Torrent"] {
-    color: #64ae00;}
-/** /TORRENT STATUS COLORS **/
+/** /HOVER COLORS **/
 
 /** DONATION COLORS **/
 .donation_box,

@@ -5086,7 +5086,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 #equipment img.avatar[class="avatar pixelart"] {
     width: 224px;}
 .colhead_dark marquee {
-    max-width: 50%;
+    max-width: 45%;
     vertical-align: bottom;}
 .user_title img {
     max-height: 18px;}
@@ -6248,7 +6248,7 @@ tr.likes td {
 	padding: 1px 3px;}
 .user_title img {
     display: inline-block;
-    vertical-align: bottom;}
+    vertical-align: middle;}
 #forums .forum_signature td {
 	text-align: left;
 	padding: 10px 4px 4px 10px;
