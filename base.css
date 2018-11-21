@@ -1377,17 +1377,17 @@ td.cats_col {
 #torrents #content .thin .main_column .torrent_table .group_torrent span{
 	margin: 0;
 }
-#torrents #content .center .box form div input[type="text"],
-#wiki #content .center .box form div input[type="text"],
-#artist #content .center .box form div input[type="text"]{width:500px;  margin-bottom:10px}
+#torrents .center .box form div input[type="text"],
+#wiki .center .box form div input[type="text"],
+#artist .center .box form div input[type="text"]{width:500px;  margin-bottom:10px}
 
 #wiki p {
 	margin: 10px;
 }
 
-#torrents #content .center .box form div,
-#wiki #content .center .box form div,
-#artist #content .center .box form div{text-align:left !important}
+#torrents .center .box form div,
+#wiki .center .box form div,
+#artist .center .box form div{text-align:left !important}
 
 #artist .main_column #torrent_table {
 	width: 100%;
@@ -5865,6 +5865,23 @@ textarea {
 
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] {
     margin-bottom: 25px !important;}
+#wiki .thin >h2 + .linkbox + .center table.border tbody {
+    display: flex;}
+#wiki .thin >h2 + .linkbox + .center table.border tbody tr td {
+    height: 24px;}
+#wiki .thin >h2 + .linkbox + .center input[type="text"] {
+    width: 600px;}
+#wiki .thin >h2 + .linkbox + .center + br {
+    display: none;}
+#wiki .center.thin form h3 {
+    margin: 0 0 5px 20px !important;}
+#wiki .center.thin form textarea + div {
+    padding: 5px;}
+#wiki .center.thin form[method="post"] textarea + div,
+#wiki .center.thin form[method="post"] >div {
+    text-align: center !important;}
+#wiki .center.thin form[method="post"] >div >h3 + input[type="text"] {
+    width: 95% !important;}
 
 /* 'You haven't joined a clan yet!'  message */
 #clans #clan_stats >span[style="float: right;"]:first-child + .box.pad {
@@ -6295,6 +6312,8 @@ tr.likes td {
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#wiki .thin >h2 + .linkbox + .center input[type="text"] {
+    width: 700px;}
 #rules .search_form #search_string {
     width: 363px;}
 #crafting_recipes li.item_li {

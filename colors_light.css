@@ -59,7 +59,8 @@ a,
 #torrents .thin >.header + table >tbody >tr.rowa:hover,
 #rules .thin >#jump + .box.pad tr:not(.colhead):hover,
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):hover,
-#artist .thin >h2 + table.border tr:not(.colhead):hover {
+#artist .thin >h2 + table.border tr:not(.colhead):hover,
+#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):hover {
     outline: 1px solid #969696;
     outline-offset: -1px;}
 
@@ -289,7 +290,8 @@ input#FLTorrent {
 #collections #manage_collage_table >tbody tr:not([class="rowa"]):nth-child(even):not(:last-child),
 #torrents .userreviews tr:nth-child(even),
 #torrents .thin >.header + table >tbody >tr.rowa:nth-child(even),
-#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):nth-child(even) {
+#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):nth-child(even),
+#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):nth-child(even) {
     background: #e7e7e7;}
 
 #torrentscomplete .highlight {
@@ -350,7 +352,9 @@ input#FLTorrent {
 #staffpm #compose,
 #torrents .torrent_history form[action="torrents.php"][method="get"]:nth-child(2),
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"],
-#artist .thin >h2 + table.border {
+#artist .thin >h2 + table.border,
+#wiki .thin >h2 + .linkbox + .center,
+#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
