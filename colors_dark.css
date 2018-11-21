@@ -606,7 +606,7 @@ blockquote,
 
 #bookmarks .collage tbody tr td a {
     border: 1px solid #303030 !important;}
-
+#artist #requests >tbody >tr:not(.colhead_dark) >td:nth-child(n+2), 
 #torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), 
 #torrents #collages >tbody >tr:not(.colhead) >td:nth-child(2),
 #torrents div[id^="peers_"] tbody >tr:not(.colhead_dark) >td:nth-child(n+2),
@@ -727,7 +727,6 @@ h2 a,
     background: rgba(213,176,154,0.5) !important;}
 
 #requests .thin > table tr td,
-#artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), 
 #torrents .group td,
 #clan_stats .clan_stat_totals >table.border tbody tr:not(.colhead) td:nth-child(3) {
     border-left: 1px solid #555;}
