@@ -65,7 +65,8 @@ a,
 #allreviews table tr:hover,
 #torrents .thin >.header + table >tbody >tr.rowa:hover,
 #rules .thin >#jump + .box.pad tr:not(.colhead):hover,
-#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):hover {
+#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):hover,
+#artist .thin >h2 + table.border tr:not(.colhead):hover {
     outline: 1px solid #696969;
     outline-offset: -1px;}
 
@@ -369,7 +370,8 @@ input#FLTorrent {
 #forums #content .thin table,
 #staffpm #compose,
 #torrents .torrent_history form[action="torrents.php"][method="get"]:nth-child(2),
-#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] {
+#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"],
+#artist .thin >h2 + table.border {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
