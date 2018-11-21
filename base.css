@@ -4763,9 +4763,9 @@ span.user_title span[style="font-family: cursive;"] {
 
 /* error message */
 #wiki .thin >h2 + .box.pad:nth-child(2),
-#bookmarks #wrapper #content > .thin > .box.pad:nth-child(2),
-#torrents > .thin > .box.pad:nth-child(2),
-#forums #wrapper #content > .thin > .box.pad:nth-child(2) {
+#bookmarks .thin >h2 + .box.pad:nth-child(2),
+#torrents .thin >h2 + .box.pad:nth-child(2),
+#forums .thin >h2 + .box.pad:nth-child(2) {
     background: none;
     box-shadow: none;
     font-size: 16pt;
