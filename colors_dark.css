@@ -44,11 +44,11 @@ a,
 .torrent {
 	background: #303030;}
 
-#artist #requests >tbody >tr[class^="row"]:hover, 
-#clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(n+2):hover,
-#clan_stats .clan_stat_totals >table.border tbody tr:nth-child(n+2):hover,
-#clan_stats .clan_past_stats table tbody tr:nth-child(n+2):hover,
-#clan_users >table.border >tbody >tr:nth-child(n+2):hover,
+#artist #requests >tbody >tr:not(.colhead_dark):hover, 
+#clan_stats .ongoing_clan_war >table.border tbody >tr:not(.colhead):hover,
+#clan_stats .clan_stat_totals >table.border tbody tr:not(.colhead):hover,
+#clan_stats .clan_past_stats table tbody tr:not(.colhead):hover,
+#clan_users >table.border >tbody >tr:not(.colhead):hover,
 #existing_freeleech_pots >tbody >tr[class^="row_"]:hover,
 #forums tr[class^="row"]:hover, 
 #inbox #messageform >table >tbody >tr:nth-child(n+2):hover,
@@ -62,8 +62,12 @@ a,
 #user #requests tr[class^="row"]:hover,
 .forum_latest .search #forumlist tr td:not([colspan="2"]):hover,
 #collections #manage_collage_table >tbody tr:not([class="rowa"]):not(:last-child):hover,
-#allreviews table tr:hover {
-    outline: 1px solid #696969;}
+#allreviews table tr:hover,
+#torrents .thin >.header + table >tbody >tr.rowa:hover,
+#rules .thin >#jump + .box.pad tr:not(.colhead):hover,
+#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):hover {
+    outline: 1px solid #696969;
+    outline-offset: -1px;}
 
 .error_message {
     background: radial-gradient(at center, #2d5163 0%,#6f5567 50%,#e85066 100%);}
@@ -291,19 +295,21 @@ input#FLTorrent {
 #existing_freeleech_pots .row_b,
 #running_freeleech .group_torrent.row_b,
 #clan_users >table.border >tbody >tr:nth-child(even),
-#clan_stats .clan_past_stats table tbody tr:not([class="colhead"]):nth-child(even),
-#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(even) td:nth-child(-n+2),
-#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]):nth-child(odd) td:not([colspan="2"]):nth-child(n+3),
+#clan_stats .clan_past_stats table tbody tr:not(.colhead):nth-child(even),
+#clan_stats .clan_stat_totals >table.border tbody tr:not(.colhead):nth-child(even) td:nth-child(-n+2),
+#clan_stats .clan_stat_totals >table.border tbody tr:not(.colhead):nth-child(odd) td:not([colspan="2"]):nth-child(n+3),
 #clan_stats .ongoing_clan_war >table.border tbody >tr:nth-child(even),
-#uploaded_table tr:not([class="colhead"]):nth-child(even),
-#leeching_table tr:not([class="colhead"]):nth-child(even),
-#downloaded_table tr:not([class="colhead"]):nth-child(even),
-#seeding_table tr:not([class="colhead"]):nth-child(even),
-#snatched_table tr:not([class="colhead"]):nth-child(even),
-#snatched_not_seeding_table tr:not([class="colhead"]):nth-child(even),
+#uploaded_table tr:not(.colhead):nth-child(even),
+#leeching_table tr:not(.colhead):nth-child(even),
+#downloaded_table tr:not(.colhead):nth-child(even),
+#seeding_table tr:not(.colhead):nth-child(even),
+#snatched_table tr:not(.colhead):nth-child(even),
+#snatched_not_seeding_table tr:not(.colhead):nth-child(even),
 .torrent_history .linkbox + table[width="100%"] tr:not([class="colhead nobr"]):nth-child(even),
 #collections #manage_collage_table >tbody tr:not([class="rowa"]):nth-child(even):not(:last-child),
-#torrents .userreviews tr:nth-child(even) {
+#torrents .userreviews tr:nth-child(even),
+#torrents .thin >.header + table >tbody >tr.rowa:nth-child(even),
+#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):nth-child(even) {
     background: #000;}
 
 #torrentscomplete .highlight {
@@ -362,7 +368,8 @@ input#FLTorrent {
 #reports .thin >h2.center + h3 + .box.pad + p +table + h3 + .box.pad.center,
 #forums #content .thin table,
 #staffpm #compose,
-#torrents .torrent_history form[action="torrents.php"][method="get"]:nth-child(2) {
+#torrents .torrent_history form[action="torrents.php"][method="get"]:nth-child(2),
+#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -377,7 +384,10 @@ input#FLTorrent {
 #torrents #snatched_table,
 #torrents #snatched_not_seeding_table,
 .forum_latest .search,
-#allreviews table {
+#allreviews table,
+#torrents .thin >.header + table,
+#wiki .thin >.box.pad.center:only-child,
+#wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] + .box.pad.center {
 	-webkit-box-shadow: 0 0 30px #000 !important;
 	-moz-box-shadow: 0 0 30px #000 !important;
     box-shadow: 0 0 30px #000 !important;}
@@ -528,10 +538,10 @@ blockquote,
 #collections .thin.collections #torrent_t   able >tbody >tr[class="group discog"] >td.collicon:nth-child(1),
 #collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2),
 #upload_table table tbody tr td,
-#top10 .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) tbody >tr.colhead,
 #torrents div[id^="peers_"] >table,
 #torrents .filelist_table,
-#torrents div[id^="history"] >form >table.border {
+#torrents div[id^="history"] >form >table.border,
+#artist #torrent_table tr:not(.colhead) td {
     border: 1px solid #555;}
 
 .torrent_table tbody .group_torrent {
@@ -549,7 +559,7 @@ blockquote,
     color: #4a7a2c;}
 
 .torrent_table a,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span,
+#torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="] span,
 #collections #torrent_table tr.group_torrent td a span{
 	color: #DA9369;}
 
@@ -558,45 +568,56 @@ blockquote,
 
 #bookmarks .group_torrent:hover,
 #torrents .main_column tbody[id^="edition_"] tr.group_torrent:hover,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
+#torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"]:hover,
 #artist #torrent_table >tbody >tr:nth-child(n+2):hover {
     box-shadow: inset 0.5px 0.5px 0 1px #969696;}
 
 #bookmarks #torrent_table tbody tr.discog:hover,
-#collections .thin.collections .main_column table#torrent_table >tbody >tr:not(:first-child):hover,
+#collections .thin.collections .main_column #torrent_table >tbody >tr:not(:first-child):hover,
 #running_freeleech >tbody tr[class^="group_torrent row_"]:hover,
 #top10 tr[class^="group_torrent"]:hover,
 #torrents .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):not(:last-child):hover,
-#torrents #torrentbrowse table#torrent_table tbody tr[class^="group group_"]:hover,
-#uploaded_table tr:not([class="colhead"]):hover,
-#leeching_table tr:not([class="colhead"]):hover,
-#downloaded_table tr:not([class="colhead"]):hover,
-#seeding_table tr:not([class="colhead"]):hover,
-#snatched_table tr:not([class="colhead"]):hover,
-#snatched_not_seeding_table tr:not([class="colhead"]):hover {
+#torrents #torrentbrowse #torrent_table tbody tr[class^="group group_"]:hover,
+#uploaded_table tr:not(.colhead):hover,
+#leeching_table tr:not(.colhead):hover,
+#downloaded_table tr:not(.colhead):hover,
+#seeding_table tr:not(.colhead):hover,
+#snatched_table tr:not(.colhead):hover,
+#snatched_not_seeding_table tr:not(.colhead):hover {
     box-shadow: inset 0.5px 0.5px 0 1.5px #696969;}
 
+.thin.top10_torrents div:not(.center) tr:not(.colhead) td,
+.thin.top10_games div:not(.center) tr:not(.colhead) td,
 .bbcode_table_div table.bbcode_table,
 .bbcode_table_div table.bbcode_table tbody tr td,
 #user td,
 #recommended #vanityhouse tbody tr td,
-#torrents .torrent_history table tbody tr:not([class="colhead"]) td,
+#torrents .torrent_history table tbody tr:not(.colhead) td,
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
 #collections ul li[class^="image"],
-#uploaded_table tr:not([class="colhead"]) td,
-#leeching_table tr:not([class="colhead"]) td,
-#downloaded_table tr:not([class="colhead"]) td,
-#seeding_table tr:not([class="colhead"]) td,
-#snatched_table tr:not([class="colhead"]) td,
-#snatched_not_seeding_table tr:not([class="colhead"]) td {
+#uploaded_table tr:not(.colhead) td,
+#leeching_table tr:not(.colhead) td,
+#downloaded_table tr:not(.colhead) td,
+#seeding_table tr:not(.colhead) td,
+#snatched_table tr:not(.colhead) td,
+#snatched_not_seeding_table tr:not(.colhead) td {
 	border: 1px solid #303030;}
 
 #bookmarks .collage tbody tr td a {
     border: 1px solid #303030 !important;}
 
+#torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), 
+#torrents #collages >tbody >tr:not(.colhead) >td:nth-child(2),
+#torrents div[id^="peers_"] tbody >tr:not(.colhead_dark) >td:nth-child(n+2),
+#torrents div[id^="history"] form table.border tbody tr:not(.colhead) >td:nth-child(n+2),
+#torrents .filelist_table >tbody >tr:not(.colhead_dark) >td:nth-child(n+2),
+#clan_users >table.border >tbody >tr:not(.colhead) >td:nth-child(n+2),
+#clan_users >table.border >tbody >tr:not(.colhead) >td:nth-child(n+2),
 #torrents .similar_votes {
-    border-left: 1px solid #303030;
+    border-left: 1px solid #303030;}
+#torrents div[id^="history"] form table.border tbody tr:not(.colhead):nth-last-child(2),
+#torrents .similar_votes {
     border-bottom: 1px solid #303030;}
 
 .forum_post td.avatar {
@@ -619,9 +640,11 @@ blockquote
 	background-color: #0a0a0a;}
 
 #forums table.forum_unread {
-    outline: #68c077 solid 2px;}
+    outline: #68c077 solid 2px;
+    outline-offset: -1px;}
 #forums table.sticky_post {
-    outline: #79675d solid 2px;}
+    outline: #79675d solid 2px;
+    outline-offset: -1px;}
 
 .forum_post tbody tr td[id^="likers_"],
 #forums .forum_signature td div {
@@ -684,9 +707,9 @@ h2 a,
     color: #c09a9a !important;}
 
 #artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead, 
-#artist .main_column_bg .main_column .box table#requests tbody .colhead_dark, 
+#artist .main_column_bg .main_column .box #requests tbody .colhead_dark, 
 #user .box_gold td.label, 
-#user .thin .sidebar .box.box_gold table#box_gold_scrollbar tbody .colhead td, 
+#user .thin .sidebar .box.box_gold #box_gold_scrollbar tbody .colhead td, 
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody,
 #torrents #requests #requests_list >tbody >tr:first-child >td,
 .colhead_dark,
@@ -704,14 +727,9 @@ h2 a,
     background: rgba(213,176,154,0.5) !important;}
 
 #requests .thin > table tr td,
-#clan_users >table.border >tbody >tr:nth-child(n+2) >td:nth-child(n+2),
 #artist #requests >tbody >tr[class^="row"] >td:nth-child(n+2), 
 #torrents .group td,
-#torrents #requests #requests_list >tbody >tr[class^="requestrows row"] >td:nth-child(n+2), 
-#torrents #collages >tbody >tr:nth-child(n+2) >td:nth-child(2),
-#torrents div[id^="peers_"] tbody >tr:nth-child(n+2) >td:nth-child(n+2),
-#torrents .filelist_table >tbody >tr:nth-child(n+2) >td:nth-child(n+2),
-#torrents div[id^="history"] form table.border tbody tr[class^="row"],#clan_stats .clan_stat_totals >table.border tbody tr:not([class="colhead"]) td:nth-child(3) {
+#clan_stats .clan_stat_totals >table.border tbody tr:not(.colhead) td:nth-child(3) {
     border-left: 1px solid #555;}
 
 #bookmarks #torrent_table tbody tr.discog,
@@ -801,8 +819,8 @@ form textarea,
 .edition_info:before {
     background: linear-gradient(to top, rgba(232,80,102,0.3) 0%,rgba(42, 79, 101, 0) 100%);}
 #torrents tbody[id^="edition_"] tr.group_torrent:hover,
-#torrents #torrentbrowse table#torrent_table tbody tr[class*=" edition_"]:hover,
-#collections .thin.collections .main_column table#torrent_table >tbody >tr[class^="group_torrent"]:hover,
+#torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"]:hover,
+#collections .thin.collections .main_column #torrent_table >tbody >tr[class^="group_torrent"]:hover,
 #bookmarks .group_torrent:hover {
     background: radial-gradient(circle, #2a2a2a, #121212);}
 .alertable-ok:hover,
