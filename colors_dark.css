@@ -67,6 +67,7 @@ a,
 #rules .thin >#jump + .box.pad tr:not(.colhead):hover,
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):hover,
 #artist .thin >h2 + table.border tr:not(.colhead):hover,
+#torrents .thin.torrent_history table[width="100%"][cellpadding="6"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):not(:last-child):hover,
 #wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):hover {
     outline: 1px solid #696969;
     outline-offset: -1px;}
@@ -583,7 +584,7 @@ blockquote,
 #collections .thin.collections .main_column #torrent_table >tbody >tr:not(:first-child):hover,
 #running_freeleech >tbody tr[class^="group_torrent row_"]:hover,
 #top10 tr[class^="group_torrent"]:hover,
-#torrents .thin.torrent_history table[width="100%"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):not(:last-child):hover,
+#torrents .thin.torrent_history table[width="100%"]:not([id="th_search"]):not([cellpadding="6"]) tbody tr:not([class="colhead nobr"]):hover,
 #torrents #torrentbrowse #torrent_table tbody tr[class^="group group_"]:hover,
 #uploaded_table tr:not(.colhead):hover,
 #leeching_table tr:not(.colhead):hover,
