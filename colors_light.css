@@ -131,7 +131,7 @@ input#PlainTitlePreview,
 input[type="submit"],
 input[type="button"],
 #forums .poll li.graph,
-#forums td.body a[onclick="BBCode.spoiler(this);"],
+a[onclick="BBCode.spoiler(this);"],
 #user .notice,
 #markread,
 #markread:before,
@@ -464,7 +464,8 @@ button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 button#AvatarPreview,
-input[type="button"] {
+input[type="button"],
+a[onclick="BBCode.spoiler(this);"] {
     background-color:#255c7c;}
 
 #crafting_panel .ui-widget-content,
@@ -619,8 +620,6 @@ blockquote,
 
 #inbox tr.unreadpm {
 	background: #d2d2d2;}
-#forums td.body a[onclick="BBCode.spoiler(this);"] {
-    background-color: #2b4e66 !important;}
 
 .book .page {
     background-color: #2b4e66;}

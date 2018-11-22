@@ -6260,8 +6260,13 @@ tr.likes td {
     /* background: linear-gradient(rgba(104, 192, 119, 1), rgba(42,79,101,0.5)); */}
 #forums a[onclick*="#thread_notes_tabl"] {
 	margin: 5px;}
-#forums td.body a[onclick="BBCode.spoiler(this);"] {
-	padding: 1px 3px;}
+a[onclick="BBCode.spoiler(this);"] {
+	border: none;
+	padding: 3px 8px 3px 8px;
+	width: 29px;
+	text-align: center;
+	display: inline-block;
+	font-size: 10px;}
 .user_title img {
     display: inline-block;
     vertical-align: middle;}
