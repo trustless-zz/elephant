@@ -133,7 +133,6 @@ input#PlainTitlePreview,
 input[type="submit"],
 input[type="button"],
 #forums .poll li.graph,
-a[onclick="BBCode.spoiler(this);"],
 #user .notice,
 #markread,
 #markread:before,
@@ -149,7 +148,8 @@ a[onclick="BBCode.spoiler(this);"],
 .no_access:before,
 .overlay h2 a:hover {
     color: #fff;}
-
+a[onclick="BBCode.spoiler(this);"],
+a[onclick="BBCode.spoiler(this);"]:hover,
 .body.similar ul.nobullet li span.similar_votes a {
     color: #fff !important;}
 
@@ -821,7 +821,8 @@ h2 a,
 input[type="submit"]:hover, 
 input[type="button"]:hover, 
 button[type="button"]:not([title="Close"]):hover,
-.body.similar ul.nobullet li span.similar_votes:hover {
+.body.similar ul.nobullet li span.similar_votes:hover,
+a[onclick="BBCode.spoiler(this);"]:hover {
     background: radial-gradient(circle, #e85066 0%,#255c7c 100%);}
 .body.similar ul.nobullet li span.similar_votes:hover:before {
     background: linear-gradient(to top, rgba(232,80,102,0.5) 0%,rgba(232,80,102, 0) 100%);}

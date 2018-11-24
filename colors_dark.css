@@ -245,6 +245,8 @@ input[type=search]:focus,
 .alertable-cancel {
     color: #c4c4c4;}
 
+a[onclick="BBCode.spoiler(this);"],
+a[onclick="BBCode.spoiler(this);"]:hover,
 #shop li.item_li.nostock .submit_section:before,
 .no_access:before,
 .spoilerbox span {
@@ -645,7 +647,7 @@ blockquote,
 .book .page {
     background-color: #2b4e66;}
 
-blockquote
+blockquote {
 	background-color: #0a0a0a;}
 
 #forums table.forum_unread {
@@ -835,7 +837,8 @@ form textarea,
 input[type="submit"]:hover, 
 input[type="button"]:hover, 
 button[type="button"]:not([title="Close"]):hover,
-.body.similar ul.nobullet li span.similar_votes:hover {
+.body.similar ul.nobullet li span.similar_votes:hover,
+a[onclick="BBCode.spoiler(this);"]:hover {
 	background: radial-gradient(circle, #e85066 0%,#c09a9a 100%);}
 .body.similar ul.nobullet li span.similar_votes:hover:before {
     background: linear-gradient(to top, rgba(232,80,102,0.5) 0%,rgba(232,80,102, 0) 100%);}
