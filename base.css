@@ -6108,7 +6108,7 @@ textarea {
 #forums .forum_post .colhead_dark td {
 	text-align: left;}
 #forums .forum_post .colhead_dark div[style="float:left;"] {
-	width: 90%;
+	width: 84.9%;
 	margin: 0;
 	height: 18px;
 	line-height: 19px;}
@@ -6292,8 +6292,9 @@ tr.likes td {
 .forum_post tbody tr td[id^="likers_"] {
     padding: 5px;}
 #forums .colhead_dark div[id*="bar"] {
-	margin-top: 1px;
-	padding-right: 5px;}
+    margin: -1px 0 -2px 0;}
+#forums .colhead_dark div[id*="bar"] * {
+    margin-right: 5px;}
 #forums .sub {visibility: hidden;}
 #forums blockquote {
 	margin-top:5px;}
