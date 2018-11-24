@@ -5883,6 +5883,50 @@ textarea {
 #wiki .center.thin form[method="post"] >div >h3 + input[type="text"] {
     width: 95% !important;}
 
+#forums .thin >h2 + #newthreadpreview + .box.pad {
+    max-width: 1280px;
+    margin-top: 16px;}
+#forums #newthreadtext {
+    box-shadow: none !important;}
+
+/** Site Log **/
+#log .thin >.box.pad {
+    padding: 0;
+    margin: 16px 0 15px 0;}
+#log .linkbox {
+    margin: 0;}
+#log .thin .search_form input[type="search"] {
+    height: 24px;
+    width: 90%;}
+#log .thin .search_form >table.layout.border {
+    margin: 0;}
+#log .thin .search_form >table.layout.border td.label {
+    width: 81px;}
+#log #log_table {
+    margin-top: 10px;}
+#log #log_table .colhead strong {
+    font-weight: normal;}
+
+/** Active Item Effects (wip)**/
+#user .thin >h2:first-child + .box.pad {
+    padding: 0;}
+
+/** #requests post reply & making h3 look like .head **/
+#requests #request_comments #reply_box >.box.pad {
+    padding: 0;}
+#requests #request_comments #reply_box >.box.pad >h3:first-child {
+    font-family: adelle, sans-serif;
+    font-size: 16pt;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 9px 0 8px 0;}
+#requests #request_comments #quickpostform #quickreplytext {
+    padding-top: 10px;}
+#requests #request_comments #quickpostform #quickreplybuttons {
+    padding: 10px 0;}
+/** /#requests post reply & making h3 look like .head **/
+
 /* 'You haven't joined a clan yet!'  message */
 #clans #clan_stats >span[style="float: right;"]:first-child + .box.pad {
     padding: 0;
@@ -5892,6 +5936,7 @@ textarea {
     text-align: center;
     font-weight: bold;
     font-family: whitney, sans-serif;}
+/* /'You haven't joined a clan yet!'  message */
 
 #torrents #torrent_comments #reply_box .box.pad {
     padding: 0;}

@@ -68,7 +68,8 @@ a,
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):hover,
 #artist .thin >h2 + table.border tr:not(.colhead):hover,
 #torrents .thin.torrent_history table[width="100%"][cellpadding="6"]:not([id="th_search"]) tbody tr:not([class="colhead nobr"]):not(:last-child):hover,
-#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):hover {
+#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):hover,
+#log #log_table tr:not(.colhead):hover {
     outline: 1px solid #696969;
     outline-offset: -1px;}
 
@@ -116,7 +117,7 @@ table,
 #equipment #items,
 #equipment .item,
 #torrents .center form,
-#requests form[id="quickpostform"][class="send_form"][name="reply"][action="comments.php?page=requests"][method="post"][style="display: block; text-align: center;"],
+#requests #request_comments #reply_box,
 #rules .thin form.search_form {
     background-color: #1f2023;}
 
@@ -347,7 +348,7 @@ input#FLTorrent {
 #upload_table table:not([id="reviews_table"]):not([id="weblinks"]),
 #requests .center.box.pad,
 #requests .thin > table,
-#requests form[id="quickpostform"][class="send_form"][name="reply"][action="comments.php?page=requests"][method="post"][style="display: block; text-align: center;"],
+#requests #request_comments #reply_box,
 #grouplinks:after,
 #torrent_table,
 #torrents .center form,
@@ -376,7 +377,8 @@ input#FLTorrent {
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"],
 #artist .thin >h2 + table.border,
 #wiki .thin >h2 + .linkbox + .center,
-#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table {
+#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table,
+#log #log_table {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -446,7 +448,8 @@ input#FLTorrent {
 .save_message,
 .inventory .save_message span,
 #announcement,
-#index .sidebar #progress_bar {
+#index .sidebar #progress_bar,
+#requests #request_comments #reply_box >.box.pad >h3:first-child {
     background-color: #79675d;}
 
 .ui-widget-header {
@@ -637,7 +640,7 @@ blockquote,
     border-bottom: 1px solid #1a1a1a;}
 
 #inbox tr.unreadpm {
-	background: #323232;}
+	background: rgba(104, 192, 119, 0.3);}
 
 .book .page {
     background-color: #2b4e66;}
