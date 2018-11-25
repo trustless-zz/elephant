@@ -380,7 +380,8 @@ input#FLTorrent {
 #artist .thin >h2 + table.border,
 #wiki .thin >h2 + .linkbox + .center,
 #wiki .thin >h2 + .linkbox + .center + br + .linkbox + table,
-#log #log_table {
+#log #log_table,
+#staffpm #inbox table.message_table.checkboxes {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}

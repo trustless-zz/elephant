@@ -2781,6 +2781,11 @@ form textarea, form input {
     height: 300px;
 }
 
+#staffpm .box.vertical_space >.body {
+    padding: 10px;}
+#staffpm #messageform {
+    margin-top: 20px;}
+#staffpm #inbox,
 #torrent_table {
     overflow: visible;}
 
@@ -4711,7 +4716,7 @@ span.user_title span[style="font-family: cursive;"] {
     transition: 0.1s;}
 #items_list li:hover, .inventory #content li.item_li:hover, #equipment .item:hover, #crafting_panel .item:hover {
     transition: 0.1s;	
-    box-shadow: none;}
+    box-shadow: none !important;}
 
 #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] {
   text-overflow: unset;}
