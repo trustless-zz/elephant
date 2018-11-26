@@ -2804,11 +2804,7 @@ form textarea, form input {
     text-shadow: none;}
 
 #requests .box_albumart p {
-    margin-top: 20px;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    width: auto !important;
-}
+    width: auto !important;}
 
 #requests .sidebar .box {
     /* padding-bottom: 20px; */
