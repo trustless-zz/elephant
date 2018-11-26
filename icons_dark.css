@@ -13,7 +13,8 @@ html {
     background: url(equipment_panel_test-dark.png);}
 #shop li.item_li.nostock #clickable .item_description,
 #shop li.item_li.featured.nostock #clickable .item_description {
-    background: url(soldoutblack.png);}
+    background: #202124; /** opacity affects rgb values for some reason **/
+    -webkit-mask-image: url(soldoutwhite.png);}
 
 #forums #content .thin td.unread{
     background-image: url(icon/balloon-unread-dark.png);}
