@@ -103,6 +103,8 @@ table,
 .donate_box_header_plat,
 .torrent_table tr.group_torrent {
     background-color: #fff;}
+#trading_panel #items {
+    background-color: #fff !important;}
 
 #staffpm #compose,
 #shop li.item_li,
@@ -122,6 +124,7 @@ table,
 .donate-button-platinum {
     background: #fff repeat-x;}
 
+.trade_table,
 #collections #sort_table,
 .forum_latest .search,
 .alertable-cancel:hover {
@@ -227,6 +230,7 @@ input[type=search]:focus,
 .alertable-cancel {
     color: #000;}
 
+.trade_table .name_tag,
 .spoilerbox span,
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
     color: #000 !important;}
@@ -333,8 +337,7 @@ input#FLTorrent {
 #torrents .center form,
 #torrents #content .thin .main_column .torrent_table:after,
 #rules .thin form.search_form,
-#gazelles #wrapper #content div #gazelleview table.gazelleinfo,
-#gazelles #wrapper #content div,
+#gazelles #gazelleview table.gazelleinfo,
 #gazelleview table.gazellepic,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
 #top10 #wrapper #content .thin table.border,
@@ -358,7 +361,9 @@ input#FLTorrent {
 #wiki .thin >h2 + .linkbox + .center,
 #wiki .thin >h2 + .linkbox + .center + br + .linkbox + table,
 #log #log_table,
-#staffpm #inbox table.message_table.checkboxes {
+#staffpm #inbox table.message_table.checkboxes,
+#trading_panel #items,
+.trade_table {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
@@ -719,7 +724,8 @@ h2 a,
 #gazelleview #titlerow,
 #items_navigation h3 {
 	background-color: rgba(42,79,101,0.5);}
-#index .colhead_dark {
+#index .colhead_dark,
+.trade_table .name_tag {
     background: rgba(42,79,101,0.5) !important;}
 
 #requests .thin > table tr td,

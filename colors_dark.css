@@ -120,6 +120,8 @@ table,
 #requests #request_comments #reply_box,
 #rules .thin form.search_form {
     background-color: #1f2023;}
+#trading_panel #items {
+    background-color: #1f2023 !important;}
 
 #staffpm #compose,
 #collections .thin table.collections_art_display[width="100%"] >tbody,
@@ -134,8 +136,6 @@ table,
 #dailygazelle #gazelletitle,
 #forums .thin.forum_latest >.search.box.pad >form[method="post"] {
     background: #1f2023;}
-.alertable-cancel:hover {
-    background: #1f2023 !important;}
 
 #forums .poll li.graph {
     color: #1f2023;}
@@ -146,8 +146,10 @@ table,
 .donate-button-platinum {
     background: #fff repeat-x;}
 
+.trade_table,
 #collections #sort_table,
-.forum_latest .search {
+.forum_latest .search,
+.alertable-cancel:hover {
     background: #1f2023 !important;}
 
 input#PlainTitlePreview,
@@ -251,6 +253,7 @@ a[onclick="BBCode.spoiler(this);"]:hover,
 .no_access:before,
 .spoilerbox span {
     color: #000 !important;}
+.trade_table .name_tag,
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
     color: #c4c4c4 !important;}
 
@@ -356,8 +359,7 @@ input#FLTorrent {
 #torrents .center form,
 #torrents #content .thin .main_column .torrent_table:after,
 #rules .thin form.search_form,
-#gazelles #wrapper #content div #gazelleview table.gazelleinfo,
-#gazelles #wrapper #content div,
+#gazelles #gazelleview table.gazelleinfo,
 #gazelleview table.gazellepic,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
 #top10 #wrapper #content .thin table.border,
@@ -381,7 +383,9 @@ input#FLTorrent {
 #wiki .thin >h2 + .linkbox + .center,
 #wiki .thin >h2 + .linkbox + .center + br + .linkbox + table,
 #log #log_table,
-#staffpm #inbox table.message_table.checkboxes {
+#staffpm #inbox table.message_table.checkboxes,
+#trading_panel #items,
+.trade_table {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -735,7 +739,8 @@ h2 a,
 #gazelleview #titlerow,
 #items_navigation h3 {
 	background-color: rgba(213,176,154,0.5);}
-#index .colhead_dark {
+#index .colhead_dark,
+.trade_table .name_tag {
     background: rgba(213,176,154,0.5) !important;}
 
 #requests .thin > table tr td,
