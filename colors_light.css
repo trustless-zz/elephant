@@ -101,8 +101,11 @@ table,
 .ui-dialog .ui-dialog-content,
 .filter_torrents .box table:nth-child(4),
 .donate_box_header_plat,
-.torrent_table tr.group_torrent {
+.torrent_table tr.group_torrent,
+#trading_panel div.gold_trade:before {
     background-color: #fff;}
+
+#trading_panel .gold_trade .gold_trade_box_right,
 #trading_panel #items {
     background-color: #fff !important;}
 
@@ -363,7 +366,8 @@ input#FLTorrent {
 #log #log_table,
 #staffpm #inbox table.message_table.checkboxes,
 #trading_panel #items,
-.trade_table {
+.trade_table,
+#trading_panel div.gold_trade:before {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}

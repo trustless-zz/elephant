@@ -3727,6 +3727,8 @@ input[type="button"] {
 .crafting #crafting_panel #items #items-wrapper {
     height: calc(100% - 64px);}
 
+#trading_panel .gold_trade .gold_trade_amount {
+    font-family: whitney, sans-serif;}
 #trading_panel #items {
     padding: 3px 0 !important;
     width: 385px !important;}
@@ -3738,6 +3740,50 @@ input[type="button"] {
     height: 611px !important;}
 #trading_panel #main-items-wrapper {
     height: 629px !important;}
+#trading_panel .gold_trade .gold_trade_box {
+    border: none !important;}
+#trading_panel .gold_trade .gold_trade_box_left {
+    background-color: transparent !important;}
+#trading_panel .gold_trade .gold_trade_box_right {
+    height: auto !important;}
+#trading_panel .trade_table .items-wrapper .item {
+    margin: 4px !important;
+    padding: 4px !important;}
+.trade_table {
+    width: 385px !important;}
+.trade_table#my_trade_table {
+    margin-left: 20px !important;}
+#trading_panel div.gold_trade {
+    width: 100% !important;
+    position: relative !important;
+    height: 105px !important;
+    margin-top: -105px !important;}
+#trading_panel #my_gold_trade .gold_trade_box {
+    width: 340px !important;}
+#trading_panel .gold_trade #my_gold_trade_amount {
+    width: 280px !important;}
+#trading_panel #other_gold_trade .gold_trade_box {
+    width: 100% !important;
+    margin-left: 0 !important;
+    overflow: hidden;}
+#trading_panel #other_gold_trade .gold_trade_box_left {
+    position: absolute !important;
+    height: 55px !important;
+    width: 55px !important;
+    top: 15px;
+    left: 0;}
+#trading_panel #other_gold_trade .gold_trade_box_right {
+    width: 440px !important;
+    text-indent: 55px;
+    margin-left: -55px;}
+#trading_panel div.gold_trade:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 0;
+    z-index: -999;}
 
 .profile .box_stats .label {display: none;}
 
@@ -6402,6 +6448,8 @@ a[onclick="BBCode.spoiler(this);"] {
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+.trade_table#my_trade_table {
+    margin-left: 27px !important;}
 #wiki .thin >h2 + .linkbox + .center input[type="text"] {
     width: 700px;}
 #rules .search_form #search_string {
