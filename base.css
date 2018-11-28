@@ -2503,9 +2503,10 @@ span.user_title {
     top: 145px;
     right: 110px;
     left: unset;
-    opacity: 0.7;
     filter: none;
     width: 1px;}
+.global_buffs a >* {
+    opacity: 0.7;}
 .global_buffs a .buff_text {
     transition: 0.1s;}
 .clan_trophy {
@@ -2513,7 +2514,9 @@ span.user_title {
     top: 25px;
     right: 30px;
     opacity: 0.7;}
-.global_buffs:hover,
+.global_buffs a:hover i.fa.fa-fl-pots {
+    filter: drop-shadow(2px 2px 2px #e85066);}
+.global_buffs a:hover >*,
 .clan_trophy:hover {
     opacity: 1;}
 .clan_trophy img {
@@ -3727,11 +3730,12 @@ input[type="button"] {
 .crafting #crafting_panel #items #items-wrapper {
     height: calc(100% - 64px);}
 
+/** overriding trade.css **/
 #trading_panel .gold_trade .gold_trade_amount {
     font-family: whitney, sans-serif;}
 #trading_panel #items {
     padding: 3px 0 !important;
-    width: 385px !important;}
+    width: 370px !important;}
 #trading_panel .items-wrapper {
     overflow-y: auto !important;}
 #trading_panel .trade_table .items-wrapper {
@@ -3750,7 +3754,7 @@ input[type="button"] {
     margin: 4px !important;
     padding: 4px !important;}
 .trade_table {
-    width: 385px !important;}
+    width: 370px !important;}
 .trade_table#my_trade_table {
     margin-left: 20px !important;}
 #trading_panel div.gold_trade {
@@ -3759,9 +3763,9 @@ input[type="button"] {
     height: 105px !important;
     margin-top: -105px !important;}
 #trading_panel #my_gold_trade .gold_trade_box {
-    width: 340px !important;}
+    width: 325px !important;}
 #trading_panel .gold_trade #my_gold_trade_amount {
-    width: 280px !important;}
+    width: 265px !important;}
 #trading_panel #other_gold_trade .gold_trade_box {
     width: 100% !important;
     margin-left: 0 !important;
@@ -3773,9 +3777,20 @@ input[type="button"] {
     top: 15px;
     left: 0;}
 #trading_panel #other_gold_trade .gold_trade_box_right {
-    width: 440px !important;
+    width: 425px !important;
     text-indent: 55px;
     margin-left: -55px;}
+#trading_panel h2 {
+    visibility: inherit !important;}
+#trading_panel .linkbox {
+    font-size: 10pt !important;
+    text-align: center !important;
+    margin-bottom: 46px !important;}
+#trading_panel .linkbox #how_to {
+    float: inherit !important;}
+#trading_panel .item {
+    border: none !important;
+    border-radius: 0 !important;}
 #trading_panel div.gold_trade:before {
     content: '';
     position: absolute;
@@ -3784,6 +3799,7 @@ input[type="button"] {
     left: 0;
     top: 0;
     z-index: -999;}
+/** /overriding trade.css **/
 
 .profile .box_stats .label {display: none;}
 
@@ -4172,14 +4188,16 @@ input[type="button"] {
 #userhistory .linkbox a[href$="&showunread=1&group=1"]:before,  
 #userhistory .linkbox a[href$="&liked=1"]:before, 
 #userhistory .linkbox a[href$="&disliked=1"]:before, 
-#userhistory .linkbox a[href^="userhistory.php?action=posts&userid="]:before {
+#userhistory .linkbox a[href^="userhistory.php?action=posts&userid="]:before,
+#trading_panel .linkbox a:before {
     content: "[";}
 #collections .sidebar .box.pad a:after, 
 #userhistory .linkbox a[href$="&showunread=1"]:after, 
 #userhistory .linkbox a[href$="&showunread=1&group=1"]:after,  
 #userhistory .linkbox a[href$="&liked=1"]:after, 
 #userhistory .linkbox a[href$="&disliked=1"]:after, 
-#userhistory .linkbox a[href^="userhistory.php?action=posts&userid="]:after {
+#userhistory .linkbox a[href^="userhistory.php?action=posts&userid="]:after,
+#trading_panel .linkbox a:after {
     content: "]";}
 #collections .box.box_contributors .pad, #collections .box.box_tags .pad {position: relative; left: 15px;}
 #collections .box.box_contributors .pad ol, #collections .box.box_tags .pad ol {list-style: decimal;}
@@ -4783,10 +4801,16 @@ span.user_title span[style="font-family: cursive;"] {
 #top10 #wrapper #content .thin table.border tbody tr.colhead td[style="text-align:right"] {
     padding: 5px 10px 5px 10px;}
 
-#items_list li, .inventory #content li.item_li, #equipment .item, #crafting_panel .item {
+#items_list li,
+.inventory #content li.item_li,
+#equipment .item,
+#crafting_panel .item {
     transition: 0.1s;}
-#items_list li:hover, .inventory #content li.item_li:hover, #equipment .item:hover, #crafting_panel .item:hover {
-    transition: 0.1s;	
+#trading_panel .item:hover,
+#items_list li:hover,
+.inventory #content li.item_li:hover,
+#equipment .item:hover,
+#crafting_panel .item:hover {
     box-shadow: none !important;}
 
 #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] {
@@ -4841,7 +4865,8 @@ span.user_title span[style="font-family: cursive;"] {
 #wiki .thin >h2 + .box.pad:nth-child(2),
 #bookmarks .thin >h2 + .box.pad:nth-child(2),
 #torrents .thin >h2 + .box.pad:nth-child(2),
-#forums .thin >h2 + .box.pad:nth-child(2) {
+#forums .thin >h2 + .box.pad:nth-child(2),
+#user .thin >h2 + .box.pad:nth-child(2) {
     background: none;
     box-shadow: none;
     font-size: 16pt;

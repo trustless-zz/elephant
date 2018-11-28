@@ -257,6 +257,7 @@ a[onclick="BBCode.spoiler(this);"]:hover,
 .no_access:before,
 .spoilerbox span {
     color: #000 !important;}
+#trading_panel .item,
 .trade_table .name_tag,
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
     color: #c4c4c4 !important;}
@@ -508,7 +509,9 @@ a[onclick="BBCode.spoiler(this);"] {
 
 #crafting_panel .ui-widget-content,
 #equipment .item {
-    background: rgba(153, 153, 153, 0.7);}
+    background: rgba(102, 102, 102, 0.7);}
+#trading_panel .item {
+    background: rgba(102, 102, 102, 0.7) !important;}
 
 #crafting_panel .item,
 #equipment .item {
@@ -519,6 +522,8 @@ a[onclick="BBCode.spoiler(this);"] {
 #crafting_panel .item h3,
 #equipment .item h3 {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px #000;}
+#trading_panel .item h3 {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px #000 !important;}
 
 #equipment div.itemslot.highlight {
 	-moz-box-shadow: 0 0 15px rgba(255, 129, 0, 0.8);
