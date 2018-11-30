@@ -5152,6 +5152,10 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     margin-left: -5px;
     margin-top: 2px;}
 
+#titlepreview_dialog .colhead_dark span[style="float:left;"] {
+    left: 0;
+    width: 84.9%;}
+
 #requests .colhead_dark >td strong {
     font-weight: normal;
     white-space: nowrap;
@@ -5170,13 +5174,16 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 #equipment img.avatar[class="avatar pixelart"] {
     width: 224px;}
 .colhead_dark marquee {
-    max-width: 30%;
+    max-width: 26%;
     vertical-align: bottom;}
 .user_title img {
     max-height: 18px;}
 
 .sidebar #freeleech span.platform, .sidebar #freeleech span.tor_info {
     font-size: 8pt;}
+
+.thin.global_buffs_shop .global_buffs_shop_main .box.pad.box_add_buff {
+    margin-bottom: 70px !important;}
 
 #torrents #requests tbody tr.colhead td {
     position: relative;}
@@ -5192,6 +5199,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     z-index: 99;}
 #torrents #requests tbody tr.colhead {
     height: 45px;}
+.global_buffs_shop_main .box.pad.box_add_buff,
 #torrents #requests >tbody >tr:nth-child(n+2) >td {
     padding: 0;}
 #torrents #requests #requests_list {
