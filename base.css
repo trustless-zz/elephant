@@ -4142,7 +4142,7 @@ input[type="button"] {
 #user .thin form#userform table.border tbody td.label {font-weight: bold;}
 #user .thin form#userform table.border tbody tr td table {box-shadow: none !important;}
 
-#userhistory h2.center {top: -16px; position: relative;}
+#userhistory h2.center {position: relative;}
 #userhistory table tbody tr td span[style="float:left;"] {margin: -3px 0 0 5px;}
 
 #allreviews h1 {
@@ -5344,7 +5344,7 @@ ul[class="collage_images"] {
     margin-top: -13px;}
 
 #userhistory .linkbox:nth-of-type(1) {
-    margin: -16px 0 12px 0;}
+    margin: 0 0 12px 0;}
 #userhistory .linkbox >br:nth-of-type(2) {
     display: none;}
 #forum_search_cat_list[class="cat_list layout"] {
@@ -5694,7 +5694,7 @@ span.size10 {font-size: 3em;line-height: 1em}
 #clan_stats .clan_past_stats table tbody tr td {
     text-align: left;}
 #clan_stats .ongoing_clan_war >h2 {
-    margin: -16px 0 16px 0;}
+    margin: 0 0 16px 0;}
 #clan_stats .ongoing_clan_war >table.border {
     margin-top: 25px;}
 
