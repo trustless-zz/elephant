@@ -415,6 +415,44 @@ overflow: auto;}
 	padding-left: 5px;
 	width: 115px;}
 
+/** header hover underlines **/
+#menu ul li a, #userinfo_minor li a {
+	position: relative;
+	transition: 0.1s}
+#userinfo_minor li a:before,
+#userinfo_minor li a:after,
+#menu ul li a:before,
+#menu ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 2px;}
+#userinfo_minor li a:before,
+#menu ul li a:before {
+    opacity: 0;
+    transform: translateY(4px);
+    transition: transform 0s linear, opacity 0s;}
+#userinfo_minor li a:after,
+#menu ul li a:after {
+    opacity: 0;
+    transform: translateY(4px);
+    transition: transform 0.1s linear, opacity 0.1s;}
+#userinfo_minor li a:hover:before,
+#userinfo_minor li a:hover:after,
+#menu ul li a:hover:before,
+#menu ul li a:hover:after {
+    opacity: 1;
+    transform: translateY(0);}
+#userinfo_minor li a:before,
+#menu ul li a:hover:before {
+    transition: transform 0.1s linear, opacity 0.1s;}
+#userinfo_minor li a:hover:after,
+#menu ul li a:hover:after {
+    transition: transform  0.1s linear, opacity  0.1s;}
+/** /header hover underlines **/
+
 #torrentscomplete {
 	position: absolute;
 	width: 700px;

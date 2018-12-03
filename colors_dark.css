@@ -415,9 +415,6 @@ input#FLTorrent {
 	-moz-box-shadow: 0 0 30px #000 !important;
     box-shadow: 0 0 30px #000 !important;}
 
-#menu ul li a:hover, #userinfo_minor li a:hover {
-    border-bottom: 2px solid #e85066;}
-
 #torrentscomplete {
 	-webkit-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
@@ -931,6 +928,10 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
 #recommended #vanityhouse tbody tr td a:nth-child(1):before {
 	background: #e85066;}
 
+#userinfo_minor li a:before,
+#userinfo_minor li a:after,
+#menu ul li a:before,
+#menu ul li a:after,
 #index #clans .large_progress_bar:hover {
     background-color: #e85066;}
 
