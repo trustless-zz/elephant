@@ -87,7 +87,6 @@ table,
 #collections #content .center table tr td.label,
 #items_navigation,
 #crafting_panel #items,
-#crafting_panel .item,
 #crafting_recipes,
 #equipment #items,
 #equipment .item,
@@ -105,6 +104,7 @@ table,
 #trading_panel div.gold_trade:before {
     background-color: #fff;}
 
+#trading_panel .message_box,
 #trading_panel .gold_trade .gold_trade_box_right,
 #trading_panel #items {
     background-color: #fff !important;}
@@ -154,6 +154,7 @@ input[type="button"],
 .no_access:before,
 .overlay h2 a:hover {
     color: #fff;}
+#trading_panel button,
 a[onclick="BBCode.spoiler(this);"],
 a[onclick="BBCode.spoiler(this);"]:hover,
 .body.similar ul.nobullet li span.similar_votes a {
@@ -368,7 +369,8 @@ input#FLTorrent {
 #staffpm #inbox table.message_table.checkboxes,
 #trading_panel #items,
 .trade_table,
-#trading_panel div.gold_trade:before {
+#trading_panel div.gold_trade:before,
+#trading_panel .message_box {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
@@ -432,6 +434,12 @@ input#FLTorrent {
 .global_buffs .color_yellow .buff_text {
     color: #2e5266;}
 
+.crafting #crafting_recipes:before,
+#crafting_panel #slots_panel:before,
+#crafting_panel #items >span:first-child,
+#equipment #equip_panel:before,
+.equipment #items_inner >span:first-child,
+#trading_panel #items >span:first-child,
 .save_message,
 .inventory .save_message span,
 #announcement,
@@ -459,6 +467,9 @@ input#FLTorrent {
 .alertable-cancel {
     border: solid 1px #c4c4c4 !important;}
 
+#trading_panel button:disabled {
+    color: #c4c4c4 !important;}
+
 .alertable-cancel:hover {
     border: solid 1px #333333 !important;}
 
@@ -479,10 +490,14 @@ button#AvatarPreview,
 input[type="button"],
 a[onclick="BBCode.spoiler(this);"] {
     background-color:#255c7c;}
+#trading_panel button {
+    background-color:#255c7c !important;}
 
+#crafting_panel .item,
 #crafting_panel .ui-widget-content,
 #equipment .item {
     background: rgba(153, 153, 153, 0.7);}
+#trading_panel .trade_table .notice,
 #trading_panel .item {
     background: rgba(153, 153, 153, 0.7) !important;}
 
@@ -644,6 +659,10 @@ blockquote,
 textarea {
 	background-color: #f5f5f5;}
 
+#trading_panel .message_box ul.bbbutt,
+#trading_panel .message_box textarea {
+	background-color: #f5f5f5 !important;}
+
 textarea {
     border:solid #aaaaaa 2px;}
 
@@ -785,6 +804,8 @@ h2 a,
 .bbbutt {
 	background-color: #EEEEEE;
     border: 2px solid #aaaaaa;}
+#trading_panel .message_box ul.bbbutt{
+    border: 2px solid #aaaaaa !important;}
 
 #requests form #otherop tr:nth-child(even) {
 	background-color: #e5e5e5;}
@@ -835,7 +856,8 @@ input[type="submit"]:hover,
 input[type="button"]:hover, 
 button[type="button"]:not([title="Close"]):hover,
 .body.similar ul.nobullet li span.similar_votes:hover,
-a[onclick="BBCode.spoiler(this);"]:hover {
+a[onclick="BBCode.spoiler(this);"]:hover,
+#trading_panel button:hover:not(:disabled) {
     background: radial-gradient(circle, #e85066 0%,#255c7c 100%);}
 .body.similar ul.nobullet li span.similar_votes:hover:before {
     background: linear-gradient(to top, rgba(232,80,102,0.5) 0%,rgba(232,80,102, 0) 100%);}
@@ -923,7 +945,8 @@ a:hover span,
 .tags >a:hover,
 #requests .thin > table >tbody >tr.colhead_dark >td >a >strong:hover,
 #clickable:not([class="overlay"]):hover >h3,
-.global_buffs a:hover .buff_text {
+.global_buffs a:hover .buff_text,
+#crafting_recipes #items_list .item_li:hover {
     color: #e85066 !important;}
 /** /HOVER COLORS **/
 
