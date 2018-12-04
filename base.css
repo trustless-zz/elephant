@@ -3727,7 +3727,7 @@ input[type="button"] {
 	float: left;
 	height: 230px;
 	width: 184px;
-	margin: 0 17px 10px 0;
+	margin: 0 16px 10px 0;
 	cursor: pointer;}
 .crafting #crafting_recipes #items_list li.item_li:nth-child(6n) {
 	margin-right: 0;}
@@ -3762,7 +3762,7 @@ input[type="button"] {
     display: none !important;}
 .crafting #crafting_panel #items #items-wrapper,
 .crafting #crafting_recipes #items_list {
-    overflow: auto !important;}
+    overflow-y: auto !important;}
 .crafting #crafting_panel #items #items-wrapper {
     height: 366px;}
 
@@ -6605,6 +6605,7 @@ a[onclick="BBCode.spoiler(this);"] {
 #rules .search_form #search_string {
     width: 363px;}
 #crafting_recipes li.item_li {
+    margin: 0 17px 10px 0;
 	height: 250px;
     width: 200px;}
 #crafting_recipes .item_center.item_image {
