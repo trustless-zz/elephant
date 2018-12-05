@@ -126,6 +126,7 @@ table,
 #trading_panel #items {
     background-color: #1f2023 !important;}
 
+.rowa,
 #staffpm #compose,
 #collections .thin table.collections_art_display[width="100%"] >tbody,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
@@ -753,6 +754,8 @@ h2 a,
 .colhead_dark,
 .torrent_edit #upload_table #releaseinfo td.label {
     background-color: rgba(213,176,154,0.35);}
+#user .profile .box_requests tr.colhead_dark {
+    background-color: #5e524d;}
 
 .head,
 .colhead,

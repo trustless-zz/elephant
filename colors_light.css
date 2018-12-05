@@ -741,6 +741,8 @@ h2 a,
 .colhead_dark,
 .torrent_edit #upload_table #releaseinfo td.label {
     background-color: rgba(42,79,101,0.35);}
+#user .profile .box_requests tr.colhead_dark {
+    background-color: #b4c1c9;}
 
 .head,
 .colhead,

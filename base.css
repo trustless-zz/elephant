@@ -1816,7 +1816,7 @@ td.cats_col {
 	width: auto;
 	padding: 10px !important;}
 
-#user .main_column table {
+#user .main_column table:not(.bbcode_table) {
 	float: left;}
 
 #user .main_column table tbody {
