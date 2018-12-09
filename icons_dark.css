@@ -16,6 +16,12 @@ html {
     background: #202124; /** opacity affects rgb values for some reason **/
     -webkit-mask-image: url(soldoutwhite.png);}
 
+img[src="static//styles/game_room/images/go_last_read.png"] {
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/arrow_dark.svg');}
+
 #forums #content .thin td.unread{
     background-image: url(icon/balloon-unread-dark.png);}
 #forums #content .thin td.unread_sticky {

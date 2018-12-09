@@ -733,6 +733,7 @@ width:100%;
 
 /*FORUMS*/
 
+#requests #request_comments .colhead_dark >td strong,
 .forum_index {
 	font-family: neuzite, sans-serif;
 	font-size: 10pt;}
@@ -797,11 +798,13 @@ blockquote {
 
 /*TORRENTS*/
 
+.global_buffs_shop >h3:first-child,
 h2 {
 	font-size: 16pt;
 	text-align: center;
-	margin-left: 0;
-}
+	margin-left: 0;}
+.global_buffs_shop >h3:first-child {
+    margin: 0;}
 
 h2 a {
 	text-align: left;}
@@ -1509,6 +1512,85 @@ td.cats_col {
 }
 
 /*UPLOAD*/
+#upload .colhead {
+    font-size: 12pt !important;
+    font-family: neuzite, sans-serif !important;}
+
+#upload_table #remaster_title {
+    margin: 10px 0 5px 0;}
+#upload_table #remaster_year {
+    margin-bottom: 5px;}
+#user tr input#irckey,
+#user tr input#email,
+#user #avatar_url #avatar,
+#upload_table #release_title,
+#upload_table #reviews_table #metauri,
+#upload_table #reviews_table #ignuri,
+#upload_table #reviews_table #gamespotscoreuri,
+#upload_table #aliases,
+#upload_table #title_tr #title,
+#upload_table #announce_uri input.valid {
+    width: 99%;}
+#user tr textarea[name="publickey"],
+#user tr textarea[name="signature"],
+#user tr textarea[name="info"] {
+    min-width: 98% !important;
+    resize: vertical;}
+#upload_table #weblinks input {
+    min-width: 96% !important;
+    max-width: 96% !important;}
+#upload_table #remaster_title {
+    width: 96%;}
+#upload_table #image,
+#upload_table #trailer {
+    width: 90%;}
+#upload_table #image_block input:first-child {
+    width: 88% !important;}
+#groupinfo #tags {
+    width: 86%;
+    margin-left: 7px;}
+#user tr input#vpnip {
+    width: 80%;}
+#upload_table #reviews_table #meta,
+#upload_table #reviews_table #ignscore,
+#upload_table #reviews_table #gamespotscore {
+    width: 30px;
+    text-align: right;
+    padding-right: 2px;}
+#upload_table #year,
+#upload_table #remaster_year {
+    width: 40px;}
+#upload_table #steamid {
+    width: 100px;}
+#user tr td select#paranoia,
+#user tr input#vpnip,
+#user tr input#irckey,
+#user tr input#email,
+#user #avatar_url #avatar,
+#upload_table #release_desc,
+#upload_table #releaseinfo #miscellaneous,
+#upload_table #release_title,
+#upload_table #trailer,
+#upload_table #title_tr #title,
+#upload_table #reviews_table #meta,
+#upload_table #reviews_table #ignscore,
+#upload_table #reviews_table #gamespotscore,
+#upload_table #image,
+#upload_table #album_desc,
+#upload_table #image_block input:first-child {
+    margin-bottom: 5px;}
+#upload_table #image_block input:nth-child(2) {
+    margin-left: 5px;}
+#upload_table #reviews_table tr td p:first-child {
+    margin-bottom: 12px;}
+#upload_table #image_block span[id^="screenSpan"] input:nth-child(2) {
+    margin-left: 8px;}
+#upload div[style="margin:0px auto;width:700px"] td:first-child,
+#upload_table #weblinks td:nth-child(3) {
+    width: 1px !important;}
+#upload div[style="margin:0px auto;width:700px"] td:first-child,
+#upload_table #reviews_table tr td p {
+    white-space: nowrap;}
 
 #upload #content div[style="margin:0px auto;width:700px"] {
     width: auto !important;
@@ -1533,9 +1615,6 @@ td.cats_col {
     width: auto !important;
     font-family: neuzite, sans-serif;
     font-size: 10pt;}
-
-#upload .thin div {
-	width: 1200px !important;}
 
 #upload_table table {
 	margin-bottom: 10px;}
@@ -1620,6 +1699,10 @@ td.cats_col {
 }
 
 /*requests*/
+#requests .main_column form input[type="text"] {
+    width: 80%;}
+#requests #voting #amount_box {
+    width: 80px;}
 
 #requests #content .center table[cellpadding="6"] {
 	/* width: 700px; */
@@ -1660,6 +1743,10 @@ td.cats_col {
 	margin-left: 5px;
 }
 
+#requests .sidebar .box_votes table {
+    margin: 5px;
+}
+
 #requests .cat_list {
 	margin: 0 auto;
 	-webkit-border-radius: 3px;
@@ -1684,9 +1771,11 @@ td.cats_col {
 
 #requests .thin > table {
 	width: 1200px;
-	margin: 8px 0 10px 0;
+	margin: 20px 0 10px 0;
 	font-family: neuzite, sans-serif;
 	font-size: 10pt;}
+#requests .thin >.center.box.pad + .linkbox {
+    margin-bottom: -10px;}
 
 #requests .thin > table tr td {
 	padding: 4px;}
@@ -2078,6 +2167,9 @@ td.cats_col {
 
 /*WIKI*/
 
+#wiki .sidebar .search_form input {
+    width: 100%;}
+
 #wiki .main_column .box, .main_column table:not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]):not([id*="requests"]):not([class="bbcode_table"]) {
 	padding: 0 10px 0 10px;
     z-index: 1;
@@ -2418,7 +2510,7 @@ ul {padding-left: 10px;} /*was 12px*/
 .collections_art_display{background:url('images/companioncube-blue.png')!important;}
 .collections_art_display td{border:none;padding:2px;width:25%;}
 .collections_art_display .collection_art{height:100px;background-size:246px 100px;}
-#collections #content .center table tr,td{background:none;}
+#collections #content .center table tr:not(.colhead_dark),td{background:none;}
 .hovereffect{width:100%;height:100%;float:left;overflow:hidden;position:relative;text-align:center;cursor:default;}
 .hovereffect .overlay{width:100%;height:100%;position:absolute;overflow:hidden;top:0;left:0;}
 .hovereffect .img_responsive{display:block;position:relative;width:100%;}
@@ -2853,7 +2945,7 @@ form textarea, form input {
 
 #requests .sidebar .box {
     /* padding-bottom: 20px; */
-    margin-top: 20px;
+    margin-bottom: 20px;
     box-sizing: border-box;
 }
 
@@ -2963,7 +3055,7 @@ input[type="button"] {
 }
 
 #shop #items_navigation {
-    margin: 14px 0 0 0;
+    margin: 16px 0 0 0;
 }
 
 .freeleech_shop_main .box p, .global_buffs_shop_main .box p {
@@ -2978,7 +3070,7 @@ input[type="button"] {
 }
 
 .freeleech_shop_main .box {
-    margin-top: 14px;
+    margin-top: 16px;
 }
 
 .global_buffs_shop_main .box {
@@ -3292,10 +3384,27 @@ input[type="button"] {
     margin-top: 8px;}
 
 
+#requests .main_column_bg .main_column >table {
+    margin-top: 6px !important;}
 #requests .center.box.pad {
     margin: 11px 0 10px 0 !important;}
 #requests .box.box_albumart {
     padding: 38px 0;}
+#requests .center.box.pad .requests_outer_table {
+    margin: 0;}
+#requests #otherop td.label {
+    width: 1px;}
+#requests .center.box.pad .requests_outer_table input[type="text"] {
+    width: 100%;}
+#requests .thin >table td {
+    padding: 4px 5px !important;}
+#torrents .thin .center form table td.label,
+#user .thin .center form table td.label,
+#requests .thin >table td:nth-child(n+2) {
+    width: 1px;
+    white-space: nowrap;}
+#user .thin .center form table td input[type="text"] {
+    width: 91%;}
 
 
 /* blatantly stolen from game room */
@@ -4160,17 +4269,40 @@ input[type="button"] {
 #dailygazelle .head.colhead_dark,
 #user .head.colhead_dark {padding: 9px 0 8px 0 !important; min-height: 0;}
 
+.inventory #item_search .flright,
+#shop #item_search .flright {
+    right: 5px;
+    top: 9px;
+    position: absolute;
+    white-space: nowrap;}
+.inventory #item_search td.label,
+#shop #item_search td.label {
+    white-space: nowrap;
+    width: 1px;
+    height: 24px;}
+.inventory  #shop_search #advanced_search >tr >td:not(.label),
+#shop #shop_search #advanced_search >tr >td:not(.label) {
+    white-space: nowrap;}
+.inventory 
+#shop #item_search {
+    height: 34px;}
+.inventory #item_search td[colspan="2"], 
+#shop #item_search td[colspan="2"] {
+    position: absolute;
+    top: 0;
+    left: 80px;}
 
-#allreviews {position: relative;}
+.inventory #item_search,
+#shop #item_search,
+#allreviews,
+#user #equipment,
+#user #crafting_panel {position: relative;}
 #torrents .linkbox.groupoptions {margin-bottom: 1px;}
 #shop #shop_search {margin-top: 16px;}
-#user #crafting_panel {position: relative;}
 #user #crafting_panel h2 {margin-bottom: -8px;}
-#user #equipment {position: relative;}
 #user form#userform {margin-top: 16px;}
 #user .center {margin-top: 16px;}
 #user .box.pad {margin-top: 16px;}
-#requests .sidebar {margin-top: -9px;}
 #requests .main_column_bg {float: left; margin-top: -23px;}
 #collections #content .center {margin-top: -14px;}
 #collections .thin.collections .linkbox {margin-bottom: 1px;}
@@ -4194,7 +4326,7 @@ input[type="button"] {
     margin: 10px 0 10px 0 !important;
     position: relative;
     display: inline-table;}
-#upload textarea {width: 97%;}
+#upload textarea {width: 98% !important;}
 #quickreplypreview {box-shadow: none !important;}
 
 #collections .sidebar .pad {margin-bottom: 10px;}
@@ -4286,13 +4418,8 @@ input[type="button"] {
     padding-top: 5px !important;
     padding-right: 10px !important;
     padding-left: 10px !important;}
-#collections #wrapper #content .thin table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody .colhead_dark td {
-    padding: 0 10px 0 0;}
-#collections #wrapper #content .thin table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody .colhead_dark td div[style="float: left;"] {
-    width: 90%;
-    float: left;
-    margin-left: 5px;
-    margin-top: 1px;}
+#collections .forum_post .colhead_dark td {
+    padding: 5px;}
 #collections #reply_box h3 {
     font-family: whitney, sans-serif;
     margin-left: 20px;
@@ -4304,8 +4431,8 @@ input[type="button"] {
     max-width: 1150px;}
 #collections .thin #reply_box .box.pad {
     width: 1200px;
-    padding: 10px 0 0 0 !important;
-    margin: 0 auto;}
+    padding: 55px 0 0 0 !important;
+    margin: -45px 0 0 0;}
 
 #collections .thin #reply_box .box.pad form#quickpostform #quickreplybuttons {
     margin-top: -5px;
@@ -4727,7 +4854,8 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 .freeleech_shop_main .box, .global_buffs_shop_main .box {max-width: 956px;}
 #shop .box.pad.box_buffs_info {
     padding: 38px 10px 10px 10px !important;
-    max-width: 936px;}
+    max-width: 936px;
+    margin-top: -4px;}
 #shop .global_buffs_shop_main .box.pad.box_add_buff .head {
     font-family: adelle, sans-serif;
     font-size: 16pt;
@@ -4994,7 +5122,7 @@ span.user_title span[style="font-family: cursive;"] {
 input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:not([title="Close"]):hover, input[type="checkbox"], input[type="radio"] {
     cursor: pointer;}
 
-.last_read:hover, .prev:hover, .next:hover, .show_torrents a:hover {
+.last_read:hover, .prev:hover, .next:hover, .show_torrents a:hover, img[src="static//styles/game_room/images/go_last_read.png"]:hover {
     transform: scaleY(-1);}
 .prev:hover, .hide_torrents a:hover {
     transform: scale(-1, -1);}
@@ -5368,6 +5496,9 @@ img[alt="Snatches"][title="Snatches"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/snatched.svg');}
+
+#userhistory img[src="static//styles/game_room/images/go_last_read.png"] {
+    vertical-align: sub;}
 
 #user .box.box_info span[style="float:right;"] {
     position: absolute;
@@ -5801,6 +5932,12 @@ span.size10 {font-size: 3em;line-height: 1em}
     padding: 38px 10px 10px 10px !important;
     margin-top: 11px;}
 
+#top10 .center .border tbody td.center {
+    padding-top: 7px;}
+#top10 .center .border tbody input[type="text"] {
+    width: 640px !important;}
+#top10 .center .border tbody {
+    display: flex;}
 #top10 .thin tbody >tr.colhead >td,
 #torrents #seeding_table >tbody >tr.colhead >td {
     border: none;}
@@ -5859,6 +5996,7 @@ span.size10 {font-size: 3em;line-height: 1em}
 .top10_users #views td {
     white-space: nowrap;}
 
+#torrents .thin .center form table input[type="text"],
 .torrent_edit #upload_table #releaseinfo input#release_title {
     width: 99%;}
 .torrent_edit #upload_table #releaseinfo input#gamedoxvers {
@@ -6093,6 +6231,9 @@ textarea {
 #forums #newthreadtext {
     box-shadow: none !important;}
 
+#collections .thin.collections #reply_box #quickpostform {
+    padding: 10px !important;}
+
 /** Site Log **/
 #log .thin >.box.pad {
     padding: 0;
@@ -6118,6 +6259,7 @@ textarea {
 /** #requests post reply & making h3 look like .head **/
 #requests #request_comments #reply_box >.box.pad {
     padding: 0;}
+#collections #reply_box >h3:first-child,
 .crafting #crafting_recipes:before,
 #crafting_panel #slots_panel:before,
 #crafting_panel #items >span:first-child,
@@ -6131,10 +6273,17 @@ textarea {
     text-align: center;
     margin: 0;
     padding: 9px 0 8px 0;}
+#collections #reply_box >h3:first-child {
+    position: relative;}
 #requests #request_comments #quickpostform #quickreplytext {
     padding-top: 10px;}
 #requests #request_comments #quickpostform #quickreplybuttons {
     padding: 10px 0;}
+#collections #reply_box #quickpostform {
+    padding: 0 !important;
+    margin: -10px 0 0 0 !important;}
+#collections #reply_box #quickpostform #quickreplypreview {
+    margin: 1px 0 30px 0;}
 /** /#requests post reply & making h3 look like .head **/
 
 /* 'You haven't joined a clan yet!'  message */
@@ -6166,7 +6315,7 @@ textarea {
     margin: -45px 0 0 0;}
 
 #shop_search #search_query {
-    width: calc(100% - 430px);}
+    width: 600px;}
 .box_add_freeleech #groupid_input {
     width: calc(100% - 225px);}
 
@@ -6198,6 +6347,17 @@ textarea {
 #staffpm #compose #subject,
 #staffpm #compose #message {
     width: 98%;}
+
+#user .thin .center form table td,
+#user .thin >table tr td,
+#running_freeleech td {
+    border: none;}
+
+.global_buffs_shop_main >.items_table:not(#existing_buff_pots) {
+    width: 957px;
+    float: right;
+    margin: -4px 0 20px 0;}
+
 
 /** invite page **/
 #user .thin >.header:first-child + .box.pad + .box.pad + h3 + .box.pad,
@@ -6324,17 +6484,25 @@ textarea {
     width: 100%;
     height: 100%;
     display: block;}
+#requests #request_comments .forum_post,
 #userhistory .forum_post,
 #forums .forum_post {
     margin-bottom: 25px !important;}
 #forums .forum_post .colhead_dark td {
 	text-align: left;}
+#collections .forum_post .colhead_dark span[style="float:left;"],
+#collections .forum_post .colhead_dark div[style="float: left;"],
 #userhistory .forum_post .colhead_dark span[style="float:left;"],
-#forums .forum_post .colhead_dark div[style="float:left;"] {
+#forums .forum_post .colhead_dark div[style="float:left;"],
+#requests #request_comments .colhead_dark div[style="float: left;"] {
 	width: 84.9%;
 	margin: 0;
 	height: 18px;
 	line-height: 19px;}
+#collections .forum_post {
+    margin: 10px auto 25px auto;}
+#collections .thin .sub,
+#requests .thin .sub,
 #gazelleview .sub,
 #torrents .thin .sub,
 #forums .thin .sub {
@@ -6594,6 +6762,12 @@ a[onclick="BBCode.spoiler(this);"] {
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+.global_buffs_shop_main >.items_table:not(#existing_buff_pots) {
+    width: 1037px;}
+#shop_search #search_query {
+    width: 700px;}
+#top10 .center .border tbody input[type="text"] {
+    width: 740px !important;}
 #crafting_panel #items #search_query {
     width: 364px;}
 .equipment #search_query {
@@ -6653,8 +6827,6 @@ a[onclick="BBCode.spoiler(this);"] {
     max-width: 232px !important;}
 #extra1, #wrapper, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #collections .thin #reply_box .box.pad, .thin, #gazelles #wrapper #content .thin table.gazelles_art_display {
     width: 1300px;}
-#upload .thin div {
-	width: 1300px !important;}
 .torrent_table a.removebookmark,
 .torrent_table a.addbookmark {
     text-indent: -1300px;}

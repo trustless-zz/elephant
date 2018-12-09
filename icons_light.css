@@ -15,6 +15,12 @@ html {
 #shop li.item_li.featured.nostock #clickable .item_description {
     background: url(soldoutwhite.png);}
 
+img[src="static//styles/game_room/images/go_last_read.png"] {
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: url('icon/svg/arrow_light.svg');}
+
 #forums #content .thin td.unread{
     background-image: url(icon/balloon-unread.png);}
 #forums #content .thin td.unread_sticky {
