@@ -1,20 +1,18 @@
 ﻿@font-face {
-	font-family: neutro;
+	font-family: Neutro;
 	src: url(Neutro-Medium.otf);}
 
 html {
-    line-height: 1;
-    font-size: 13px;}
+    line-height: 1.1em;
+    font-size: 10pt;    }
 body {
     background-size: 60px;
-    color: #1e1e1e;
-    font-family: neutro, sans-serif;
+    font-family: Neutro, Arial, Helvetica, sans-serif;
     margin: 0;
     min-height: 100%;
     min-width: 950px;
     overflow-wrap: break-word;
     position: relative;
-    background-color: #dcdcdc;
     background-image: url('pattern2.svg');}
 body, html {
     width: 100%;}
@@ -25,24 +23,21 @@ body, html {
     box-sizing: border-box;
     max-width: 1300px;
     width: 100%;}
+
 .thin {
     margin: 0 auto;}
 .sidebar {
     float: right;
     height: 100%;
     width: 300px;}
-#staff .box, .sidebar .box {
-    margin: 0 0 15px;
-    padding: 10px!important;}
-#artist .edit_form, #artist_information, #changelog .changelog_entry, #collage .create_form, #edit_collage, #filter_form, #friends .friends_table, #inbox #searchbox, #questions .box2, #reportform, #reports .box, #similar_artist_map, #staff .box, #torrents .edit_form, #torrents .torrent_description, #upload #content>div, #user .edit_form:not(#userform), .inbox_message, .sidebar .box, .users_reports_table, .vertical_space.box, table.forum_post {
-    background-color: #f0f0f0;
-    border: 1px solid #d3d0d1;
-    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, .1);
-    box-shadow: 0 0 4px 1px rgba(0, 0, 0, .1);}
+.main_column >.box,
+.sidebar .box {
+    margin: 0 0 15px;}
+.sidebar .box {
+    padding: 10px;}
 .box {
     font-size: 1em;}
-#rules h4, #rules h5, #torrents table:not(.forum_post) .colhead_dark, .sidebar .colhead_dark, .sidebar .head {
-    color: #544;
+.sidebar .head {
     font-weight: 400;
     padding: 2px 5px 7px 4px;
     vertical-align: middle;}
@@ -51,9 +46,7 @@ body, html {
 .head {
     background: transparent;
     font-size: 1.1em;
-    padding: 4px 10px 5px;
-    border-bottom: 1px solid #ccc;
-    color: #7a1111;}
+    padding: 4px 10px 5px;}
 .head strong, .colhead_dark strong {
     font-weight: 400;}
 b, strong {
@@ -63,7 +56,6 @@ a, a:hover {
     text-decoration: none;}
 a {
     border: 0;
-    color: #dc5356;
     -webkit-transition: all .1s linear;
     -o-transition: all .1s linear;
     transition: all .1s linear;
@@ -77,84 +69,8 @@ img {
     border-style: none;}
 .center {
     text-align: center;}
-.box_description, .pad, .wiki_article {
-    line-height: 1.5em;}
-.sidebar .box ol, .sidebar .box ul, ul {
-    margin: 0;
-    padding: 0;}
-ul.nobullet {
-    list-style-type: none;}
-li {
-    margin: 5px 15px;}
-.nobullet li {
-    margin: 5px;}
-ul.stats li {
-    padding: 0 0 1px;}
-.sidebar .box li {
-    list-style-type: none;
-    margin-left: 5px;}
-p {
-    margin: 10px 0;}
-
-#index li.graph {
-    margin-left: auto;
-    margin-right: auto;
-    width: 245px;}
-ul.poll li.graph {
-    margin-bottom: 8px;
-    margin-top: 4px;
-    padding-left: 20px;}
-.sidebar .box li {
-    list-style-type: none;
-    margin-left: 5px;}
-ul.poll li {
-    clear: left;
-    margin: 0;
-    padding: 5px 0 0 10px;}
-li.graph {
-    border-radius: 25px;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3)!important;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3)!important;
-    height: 14px;
-    padding: 3px!important;
-    position: relative;
-    background: #dcdcdc;}
-
-.center_poll, .center_poll:after {
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 8px;}
-.center_poll {
-    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 -2px 6px rgba(0, 0, 0, .6);
-    box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 -2px 6px rgba(0, 0, 0, .6);
-    float: left;
-    height: 14px;
-    overflow: hidden;
-    position: relative;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#b05a5e), to(#b0545a));
-    background-image: -webkit-linear-gradient(top, #b05a5e, #b0545a);
-    background-image: -o-linear-gradient(top, #b05a5e, #b0545a);
-    background-image: linear-gradient(180deg, #b05a5e, #b0545a);}
-
+.pad {
+    padding: 10px;
+    line-height: 1.2;}
 .main_column {
-    margin: 0 310px 0 0;}
-.main_column .box, .main_column table {
-    margin-bottom: 10px;}
-#recommended .head {
-    padding-right: 10px;}
-#recommended .head a {
-    float: right;}
-.brackets {
-    text-indent: 0px;
-    white-space: nowrap;}
-
-.torrent_table {
-    margin-bottom: 35px!important;
-    width: 100%;
-    border: 1px solid #e0e0e0;}
-.hidden, input.hidden {
-    display: none;}
-.hidden {
-    left: -10000px;
-    position: absolute;}
+    margin: 0 315px 0 0;}
