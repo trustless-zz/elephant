@@ -1,13 +1,21 @@
 ﻿@font-face {
-	font-family: Neutro;
-	src: url(Neutro-Medium.otf);}
+    font-family: 'SourceSansPro';
+    src: url(SourceSansPro-Regular.ttf);}
+@font-face {
+	font-family: "SourceSansPro-Italic";
+	src: url(SourceSansPro-Italic.ttf);
+	font-style: italic;}
+@font-face {
+	font-family: "SourceSansPro-Bold";
+	src: url(SourceSansPro-Bold.ttf);
+	font-weight: bold;}
 
 html {
     line-height: 1.1em;
     font-size: 10pt;    }
 body {
     background-size: 60px;
-    font-family: Neutro, Arial, Helvetica, sans-serif;
+    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
     margin: 0;
     min-height: 100%;
     min-width: 950px;
