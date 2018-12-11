@@ -6450,6 +6450,8 @@ textarea {
 #inbox #messageform #quickpost textarea {
     width: 98% !important;
     float: left;}
+#inbox #messageform >.box.pad {
+    text-align: center;}
 #inbox #quickpost h3 {
     margin: 5px;
     font-weight: normal;}
