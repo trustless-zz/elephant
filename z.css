@@ -1,5 +1,5 @@
 ﻿@font-face {
-    font-family: 'SourceSansPro';
+    font-family: "SourceSansPro";
     src: url(SourceSansPro-Regular.ttf);}
 @font-face {
 	font-family: "SourceSansPro-Italic";
@@ -14,7 +14,7 @@ html {
     line-height: 1.1em;
     font-size: 11pt;    }
 body {
-    background-size: 60px;
+    background-size: 50px;
     font-family: SourceSansPro, Helvetica, Arial, sans-serif;
     margin: 0;
     min-height: 100%;
@@ -32,6 +32,63 @@ body, html {
     max-width: 1300px;
     width: 100%;}
 
+#header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    font-size: 1em;
+    height: 34px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    padding: 0 5px;
+    text-align: center;
+    z-index: 10;
+    background: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    margin-bottom: 15px;
+    position: relative;}
+
+#header:before {
+    content: '';
+    width: 200px;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    position: fixed;
+    z-index: -10;
+    height: 100vh;}
+
+#menu {
+    position: fixed;
+    font-size: 1.4em;
+    width: 200px;
+    top: 50px;}
+#menu ul {
+    list-style: none;
+    margin: 0 0 0 -40px;}
+#menu ul li {
+    margin: 5px;
+    padding: 10px;}
+
+
+b, strong {
+    font-weight: bold;}
+ul, ol {
+    margin-bottom: 0px;}
+li:first-of-type {
+    padding-top: 0px;}
+li {
+    padding: 2px 0;}
+
 .thin {
     margin: 0 auto;}
 .sidebar {
@@ -40,23 +97,25 @@ body, html {
     width: 300px;}
 .main_column >.box,
 .sidebar .box {
+    border: 1px solid;
     margin: 0 0 15px;}
 .sidebar .box {
     padding: 10px;}
+.sidebar ul {
+    list-style: none;
+    margin: 10px 0 10px -40px;}
+.sidebar #freeleech li.group_torrent {
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;}
 .box {
     font-size: 1em;}
-.sidebar .head {
-    font-weight: 400;
-    padding: 2px 5px 7px 4px;
-    vertical-align: middle;}
-.colhead_dark {
-    vertical-align: middle;}
 .head {
-    background: transparent;
-    font-size: 1.1em;
-    padding: 4px 10px 5px;}
-.head strong, .colhead_dark strong {
-    font-weight: 400;}
+    font-size: 1.35em;
+    padding: 10px;}
+.sidebar .head {
+    margin: -10px -10px 0;}
 b, strong {
     font-weight: inherit;
     font-weight: bolder;}
