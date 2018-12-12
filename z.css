@@ -2,15 +2,15 @@
     font-family: "SourceSansPro";
     src: url(SourceSansPro-Regular.ttf);}
 @font-face {
-	font-family: "SourceSansPro-Italic";
+	font-family: "SourceSansPro";
 	src: url(SourceSansPro-Italic.ttf);
 	font-style: italic;}
 @font-face {
-	font-family: "SourceSansPro-SemiBold";
-	src: url(SourceSansPro-Bold.ttf);
+	font-family: "SourceSansPro";
+	src: url(SourceSansPro-SemiBold.ttf);
 	font-weight: 600;}
 @font-face {
-	font-family: "SourceSansPro-Bold";
+	font-family: "SourceSansPro";
 	src: url(SourceSansPro-Bold.ttf);
 	font-weight: bold;}
 
@@ -79,9 +79,12 @@ body, html {
     padding: 0;
     display: inline-block;}
 
+li.active {
+    font-weight: 600;}
+#menu ul li a {
+    color: #323232;}
 #menu ul li.active a {
-    background: linear-gradient(155deg, #12c9c2, #51cca5);
-    color: #fff;}
+    background: linear-gradient(155deg, #12c9c2, #51cca5);}
 
 #searchbars {
     text-align: center;
@@ -150,13 +153,11 @@ li {
 .box {
     font-size: 1em;}
 .head {
-    font-size: 1.35em;
+    font-size: 1.4em;
     padding: 10px;}
 .sidebar .head {
-    margin: -10px -10px 0;}
-b, strong {
-    font-weight: inherit;
-    font-weight: bolder;}
+    margin: -10px -10px 0;
+    font-weight: 600;}
 a, a:hover {
     text-decoration: none;}
 a {
