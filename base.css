@@ -3398,6 +3398,7 @@ input[type="button"] {
     width: 100%;}
 #requests .thin >table td {
     padding: 4px 5px !important;}
+#torrents #torrent_history_search td.label,
 #torrents .thin .center form table td.label,
 #user .thin .center form table td.label,
 #requests .thin >table td:nth-child(n+2) {
@@ -3405,6 +3406,8 @@ input[type="button"] {
     white-space: nowrap;}
 #user .thin .center form table td input[type="text"] {
     width: 91%;}
+#torrents #torrent_history_search input#search_query {
+    width: 64%;}
 
 
 /* blatantly stolen from game room */
@@ -5419,6 +5422,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     z-index: 99;}
 #torrents #requests tbody tr.colhead {
     height: 45px;}
+#torrents #torrent_history_search >.box.pad,
 .global_buffs_shop_main .box.pad.box_add_buff,
 #torrents #requests >tbody >tr:nth-child(n+2) >td {
     padding: 0;}
@@ -5973,6 +5977,7 @@ span.size10 {font-size: 3em;line-height: 1em}
 #top10 .thin.top10_tags table.border tbody tr td.center,
 #top10 .thin.top10_tags tbody >tr >td:nth-child(n+3) {
     width: 1px;}
+.top10_users #views td,
 #top10 .thin.top10_tags tbody >tr.colhead >td {
     white-space: nowrap;}
 #top10 .thin.top10_tags tbody >tr.colhead >td:nth-child(4) {
@@ -5992,9 +5997,6 @@ span.size10 {font-size: 3em;line-height: 1em}
 #top10 .thin.top10_tags #ut + br,
 #top10 .thin.top10_tags #ur + br {
     display: none;}
-
-.top10_users #views td {
-    white-space: nowrap;}
 
 #torrents .thin .center form table input[type="text"],
 .torrent_edit #upload_table #releaseinfo input#release_title {
