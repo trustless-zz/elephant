@@ -14,6 +14,13 @@
 	src: url(SourceSansPro-Bold.ttf);
 	font-weight: bold;}
 
+/* delete later */
+.error_message,
+.global_buffs,
+.clan_trophy {
+    display: none;}
+/* /delete later */
+
 html {
     line-height: 1.1em;
     font-size: 15px;
@@ -27,7 +34,7 @@ body {
     min-width: 950px;
     overflow-wrap: break-word;
     position: relative;
-    background-image: url('pattern2.svg');}
+    background-image: url('pattern3.svg');}
 body, html {
     width: 100%;}
 #content, #wrapper {
