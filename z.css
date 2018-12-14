@@ -16,7 +16,9 @@
 
 html {
     line-height: 1.1em;
-    font-size: 15px;}
+    font-size: 15px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;}
 body {
     background-size: 50px;
     font-family: SourceSansPro, Helvetica, Arial, sans-serif;
@@ -36,67 +38,96 @@ body, html {
     max-width: 1300px;
     width: 100%;}
 
+#header,
+#menu ul,
+#menu ul li,
+#searchbars ul,
+#userinfo_minor li,
+#userinfo_minor,
+#userinfo_stats,
+#userinfo_username,
+#userinfo_username #nav_userinfo,
+#userinfo_username .sub,
+#nav_useredit,
+#nav_logout,
+#nav_donate,
+.sidebar ul {
+    padding:0;}
+#menu ul,
+#menu ul li a,
+#userinfo_minor,
+#userinfo_stats,
+#userinfo_username {
+    margin:0;}
+#menu ul,
+#searchbars ul,
+#userinfo_minor,
+#userinfo_stats,
+#userinfo_username,
+.sidebar ul {
+    list-style:none;}
+
+#menu,
+#userinfo_username #nav_userinfo {
+    font-size: 0;}
+#menu ul li a,
+#userinfo_username #nav_userinfo a.username {
+    font-size: 21px;}
+
+b, strong {
+    font-weight: bold;}
+ul, ol {
+    margin-bottom: 0px;}
+li:first-of-type {
+    padding-top: 0px;}
+li {
+    padding: 2px 0;}
+
 #header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 1em;
     height: 70px;
-    padding: 0;
     text-align: center;
     z-index: 10;
-    background: #f7f7f7;
-    border-bottom: 1px solid #ccc;
-    -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.05);
-    box-shadow: 0 1px 4px rgba(0,0,0,.05);
+    border-bottom: 1px solid;
     margin-bottom: 15px;
     flex-flow: column;
     position: relative;}
 
 #menu ul li a {
-    display: block;
-    padding: 10px 15px;}
+    display: inline-table;
+    padding: 0 15px;
+    line-height: 36px;}
 
 #header:before {
     content: '';
     width: 200px;
     left: 0;
     top: 0;
-    /* background: #ffffff; */
     position: fixed;
     z-index: -10;
     height: 100vh;}
 
 #menu {
-    font-size: 1.4em;
     width: 100%;
     order: 2;
-    background-color: #f5f5f5;}
-#menu ul {
-    list-style: none;
-    margin: 0 0 0 -40px;}
+    z-index: -10;}
 #menu ul li {
-    padding: 0;
     display: inline-block;}
 
 li.active {
     font-weight: 600;}
-#menu ul li a {
-    color: #323232;}
-#menu ul li.active a {
-    background: linear-gradient(155deg, #12c9c2, #51cca5);}
 
 #searchbars {
     text-align: center;
     width: 100%;
     height: 34px;
-    order: 1;
-    background: linear-gradient(155deg, #12c9c2, #51cca5);}
+    order: 1;}
 #searchbars ul {
     margin: 0 auto;
-    padding: 0;
-    max-width: 1320px;
-    list-style: none;}
+    max-width: 1320px;}
 #searchbars ul li {
     display: inline;}
 #searchbars ul li form {
@@ -112,10 +143,7 @@ li.active {
     padding: 2px 9px 0;
     position: relative;
     width: 15.55%;
-    background: #f0f0f0;
-    border: 1px solid #ccc;
-    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,.1);
-    box-shadow: inset 1px 1px 2px rgba(0,0,0,.1);}
+    border: 1px solid;}
 
 #userinfo {
     order: 3;
@@ -124,7 +152,10 @@ li.active {
     flex-flow: column;}
 
 #userinfo_minor a {
-    font-size: 1.2em;}
+    font-size: 1.2em;
+    width: 100%;
+    display: inline-block;
+    line-height: 30px;}
 
 #userinfo_minor {
     order: 1;
@@ -141,60 +172,36 @@ li.active {
 #userinfo_username {
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     height: 70px;
     display: flex;
     flex-flow: wrap;
     width: 500px;}
-#userinfo_minor,
-#userinfo_stats,
-#userinfo_username {
-    list-style: none;
-    margin: 0;
-    padding: 0;}
 
 #userinfo_username #nav_userinfo {
-    font-size: 0;
-    height: 34px;
-    padding: 0;
     text-align: center;
-    order: 4;
-    line-height: 34px;}
+    order: 4;}
 #userinfo_username #nav_userinfo a.username {
-    font-size: 21px;
-    font-weight: 600;}
+    font-weight: 600;
+    padding: 4px 10px;}
 #userinfo_username .sub {
     order: 5;
-    padding: 0;
     height: 36px;
     width: 300px;
     margin-left: auto;
     line-height: 18px;
     text-align: right;}
 
-#nav_useredit {
-    height: 34px;
-    padding: 0;
-    order: 2;
-    line-height: 34px;}
-#nav_logout {
-    height: 34px;
-    padding: 0;
-    margin-left: auto;
-    line-height: 34px;}
+#userinfo_username #nav_userinfo,
+#nav_useredit,
+#nav_logout,
 #nav_donate {
     height: 34px;
-    padding: 0;
     line-height: 34px;}
-
-b, strong {
-    font-weight: bold;}
-ul, ol {
-    margin-bottom: 0px;}
-li:first-of-type {
-    padding-top: 0px;}
-li {
-    padding: 2px 0;}
+#nav_logout {
+    margin-left: auto;}
+#nav_useredit {
+    order: 2;}
 
 .thin {
     margin: 0 auto;}
@@ -209,8 +216,7 @@ li {
 .sidebar .box {
     padding: 10px;}
 .sidebar ul {
-    list-style: none;
-    margin: 10px 0 10px -40px;}
+    margin: 10px 0;}
 .sidebar #freeleech li.group_torrent {
     width: auto;
     white-space: nowrap;
@@ -246,3 +252,70 @@ img {
     line-height: 1.2;}
 .main_column {
     margin: 0 315px 0 0;}
+
+/** header hover **/
+#menu ul li a, #userinfo_minor li a {
+	position: relative;
+	transition: 0.1s}
+#userinfo_minor li:not(.active) a:before,
+#userinfo_minor li:not(.active) a:after,
+#menu ul li:not(.active) a:before,
+#menu ul li:not(.active) a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index:-9;}
+#userinfo_minor li a:before {
+    transform: translateX(-100%);
+    transition: transform 0s linear;}
+#menu ul li a:before {
+    transform: translateY(-100%);
+    transition: transform 0s linear;}
+#userinfo_minor li a:after {
+    transform: translateX(-100%);
+    transition: transform 0.1s linear;}
+#menu ul li a:after {
+    transform: translateY(-100%);
+    transition: transform 0.1s linear;}
+#userinfo_minor li a:hover:before,
+#userinfo_minor li a:hover:after{
+    transform: translateX(0);}
+#menu ul li a:hover:before,
+#menu ul li a:hover:after {
+    transform: translateY(0);}
+#userinfo_minor li a:before,
+#menu ul li a:hover:before,
+#userinfo_minor li a:hover:after,
+#menu ul li a:hover:after {
+    transition: transform 0.1s linear;}
+/** /header hover **/
+
+#header:before {
+    border-bottom: 1px solid;}
+
+#toplink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 10;
+    text-align: center;
+    line-height: 34px;}
+#toplink:before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 34px;
+    left: 0;
+    top: 0;
+    clip: rect(0, 200px, 34px, 0);
+    z-index: 1;}
+#toplink a {
+    position: fixed;
+    z-index: 0;
+    width: 200px;
+    left: 0;
+    top: 0;}

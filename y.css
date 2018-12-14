@@ -1,17 +1,50 @@
-﻿body {
-    color: #323232;
+﻿body,
+#userinfo_username li:not(.sub) a,
+#userinfo_minor a,
+#menu a {
+    color: #323232;}
+body {
     background-color: #dcdcdc;}
+#header,
+#header:before {
+    -webkit-box-shadow: 0 0px 4px rgba(0,0,0,.1);
+    box-shadow: 0 0px 4px rgba(0,0,0,.1);}
+#header,
+.main_column >.box,
+.sidebar .box,
+#header:before {
+    border-color: #d2d2d2;}
 .main_column >.box,
 .sidebar .box {
-    border-color: #d2d2d2;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);}
-.head {
+.head,
+#userinfo_minor .active a,
+#menu .active a,
+#searchbars,
+#userinfo_minor li:not(.active) a:before,
+#userinfo_minor li:not(.active) a:after,
+#menu ul li:not(.active) a:before,
+#menu ul li:not(.active) a:after,
+#toplink:before {
     background: linear-gradient(155deg, #12c9c2, #51cca5);}
 a {
     color: #c72641;}
 a:hover {
     color: #fa534d;}
 .sidebar .box,
-.main_column >.box {
+.main_column >.box,
+#header:before,
+#menu,
+#userinfo_username #nav_userinfo a.username {
     background-color: #f5f5f5;}
+#searchbars input {
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,.1);}
+#searchbars input {
+    border-color: #ccc;}
+#searchbars input {
+    background-color: #f0f0f0;}
+#userinfo_username .sub:hover + #nav_userinfo a.username,
+#userinfo_username #nav_userinfo a.username:hover {
+    background-color: #51cca5;}
