@@ -56,8 +56,7 @@ body {
     min-height: 100%;
     min-width: 950px;
     overflow-wrap: break-word;
-    position: relative;
-    background-image: url('pattern3.svg');}
+    position: relative;}
 body, html {
     width: 100%;}
 #content, #wrapper {
@@ -224,7 +223,6 @@ li.active {
     text-align: center;
     order: 4;}
 #userinfo_username #nav_userinfo a.username {
-    background-color: var(--box);
     font-weight: 600;
     padding: 5px 10px;}
 #userinfo_username .sub {
@@ -249,6 +247,23 @@ li.active {
     margin-left: auto;}
 #nav_useredit {
     order: 2;}
+
+#nav_logout,
+#nav_donate,
+#nav_userinfo,
+#nav_useredit {
+    background-color: var(--box);}
+
+#nav_donate {
+    font-size: 0;}
+#nav_donate a,
+#nav_useredit a {
+    font-size: 0;
+    width: 36px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px;}
 
 #userinfo_username .sub:hover + #nav_userinfo a.username,
 #userinfo_username #nav_userinfo a.username:hover {
