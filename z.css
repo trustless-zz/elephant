@@ -24,7 +24,6 @@
 html {
     line-height: 1.1em;
     font-size: 15px;
-    overflow-x: hidden;
     scroll-behavior: smooth;}
 body {
     background-size: 50px;
@@ -314,7 +313,7 @@ img {
 #toplink:before {
     content: '';
     position: absolute;
-    width: 100vw;
+    width: calc(100vw - 15px);
     height: 34px;
     left: 0;
     top: 0;
