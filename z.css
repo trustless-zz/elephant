@@ -1,4 +1,26 @@
-﻿@font-face {
+﻿:root {
+/** COLORS **/
+	--text: #323232;
+	--body: #e6e6e6;
+    --box: #f5f5f5;
+    --input: #f0f0f0;
+    --bar1: #12c9c2;
+    --bar2: #51cca5;
+    --anchor: #c72641;
+    --anchor-hover: #fa534d;
+	--header-shadow-color: rgba(0,0,0,.1);
+    --main-shadow-color: rgba(0,0,0,0.2);
+    --main-border-color: #d2d2d2;
+    --input-border-color: #ccc;
+/** /COLORS **/
+    --bar-gradient: linear-gradient(155deg,var(--bar1),var(--bar2));
+    --header-shadow: 0 0px 4px var(--header-shadow-color);
+    --main-shadow: 0 0 4px var(--main-shadow-color);
+    --main-border: 1px solid var(--main-border-color);
+    --input-border: 1px solid var(--input-border-color);
+    --input-shadow: inset 1px 1px 2px var(--header-shadow-color);}
+
+@font-face {
     font-family: "SourceSansPro";
     src: url(SourceSansPro-Regular.ttf);}
 @font-face {
@@ -26,6 +48,8 @@ html {
     font-size: 15px;
     scroll-behavior: smooth;}
 body {
+    color: var(--text);
+    background-color: var(--body);
     background-size: 50px;
     font-family: SourceSansPro, Helvetica, Arial, sans-serif;
     margin: 0;
@@ -90,14 +114,16 @@ li {
     padding: 2px 0;}
 
 #header {
+    -webkit-box-shadow: var(--header-shadow);
+    box-shadow: var(--header-shadow);
+    border-bottom: var(--main-border);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 1em;
-    height: 70px;
+    height: 72px;
     text-align: center;
     z-index: 10;
-    border-bottom: 1px solid;
     margin-bottom: 15px;
     flex-flow: column;
     position: relative;}
@@ -108,6 +134,10 @@ li {
     line-height: 36px;}
 
 #header:before {
+    background-color: var(--box);
+    -webkit-box-shadow: var(--header-shadow);
+    box-shadow: var(--header-shadow);
+    border-right: var(--main-border);
     content: '';
     width: 200px;
     left: 0;
@@ -117,6 +147,7 @@ li {
     height: 100vh;}
 
 #menu {
+    background-color: var(--box);
     width: 100%;
     order: 2;
     z-index: -10;}
@@ -127,9 +158,10 @@ li.active {
     font-weight: 600;}
 
 #searchbars {
+    background: var(--bar-gradient);
     text-align: center;
     width: 100%;
-    height: 34px;
+    height: 36px;
     order: 1;}
 #searchbars ul {
     margin: 0 auto;
@@ -140,16 +172,19 @@ li.active {
     display: inline;
     margin: 0 5px;}
 #searchbars input {
+    -webkit-box-shadow: var(--input-shadow);
+    box-shadow: var(--input-shadow);
     -webkit-box-sizing: border-box;
+    border: var(--input-border);
+    background-color: var(--input);
     box-sizing: border-box;
     font-size: 1em;
     height: 26px;
     line-height: 24px;
-    margin: 4px 0;
+    margin: 5px 0;
     padding: 2px 9px 0;
     position: relative;
-    width: 15.55%;
-    border: 1px solid;}
+    width: 15.55%;}
 
 #userinfo {
     order: 3;
@@ -158,6 +193,7 @@ li.active {
     flex-flow: column;}
 
 #userinfo_minor a {
+    color: var(--text);
     font-size: 1.2em;
     width: 100%;
     display: inline-block;
@@ -179,7 +215,7 @@ li.active {
     position: absolute;
     top: 0;
     right: 0;
-    height: 70px;
+    height: 72px;
     display: flex;
     flex-flow: wrap;
     width: 500px;}
@@ -188,26 +224,35 @@ li.active {
     text-align: center;
     order: 4;}
 #userinfo_username #nav_userinfo a.username {
+    background-color: var(--box);
     font-weight: 600;
-    padding: 4px 10px;}
+    padding: 5px 10px;}
 #userinfo_username .sub {
     order: 5;
     height: 36px;
     width: 300px;
-    margin-left: auto;
+    margin: 0 5px 0 auto;
     line-height: 18px;
     text-align: right;}
+
+#menu a,
+#userinfo_username li:not(.sub) a {
+    color: var(--text);}
 
 #userinfo_username #nav_userinfo,
 #nav_useredit,
 #nav_logout,
 #nav_donate {
-    height: 34px;
-    line-height: 34px;}
+    height: 36px;
+    line-height: 36px;}
 #nav_logout {
     margin-left: auto;}
 #nav_useredit {
     order: 2;}
+
+#userinfo_username .sub:hover + #nav_userinfo a.username,
+#userinfo_username #nav_userinfo a.username:hover {
+    background-color: var(--bar2);}
 
 .thin {
     margin: 0 auto;}
@@ -217,7 +262,10 @@ li.active {
     width: 300px;}
 .main_column >.box,
 .sidebar .box {
-    border: 1px solid;
+    background-color: var(--box);
+    -webkit-box-shadow: var(--main-shadow);
+    box-shadow: var(--main-shadow);
+    border: var(--main-border);
     margin: 0 0 15px;}
 .sidebar .box {
     padding: 10px;}
@@ -231,6 +279,7 @@ li.active {
 .box {
     font-size: 1em;}
 .head {
+    background: var(--bar-gradient);
     font-size: 1.4em;
     padding: 10px;}
 .sidebar .head {
@@ -239,12 +288,16 @@ li.active {
 a, a:hover {
     text-decoration: none;}
 a {
+    color: var(--anchor);
     border: 0;
     -webkit-transition: all .1s linear;
     -o-transition: all .1s linear;
     transition: all .1s linear;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;}
+a:hover {
+    color: var(--anchor-hover);}
+
 .sidebar img {
     height: unset;
     max-width: 100%;}
@@ -259,6 +312,10 @@ img {
 .main_column {
     margin: 0 315px 0 0;}
 
+#userinfo_minor .active a,
+#menu .active a {
+    background: var(--bar-gradient);}
+
 /** header hover **/
 #menu ul li a, #userinfo_minor li a {
 	position: relative;
@@ -268,6 +325,7 @@ img {
 #menu ul li:not(.active) a:before,
 #menu ul li:not(.active) a:after {
     content: '';
+    background: var(--bar-gradient);
     position: absolute;
     top: 0;
     left: 0;
@@ -299,9 +357,6 @@ img {
     transition: transform 0.1s linear;}
 /** /header hover **/
 
-#header:before {
-    border-bottom: 1px solid;}
-
 #toplink {
     position: absolute;
     top: 0;
@@ -312,6 +367,7 @@ img {
     line-height: 34px;}
 #toplink:before {
     content: '';
+    background: var(--bar-gradient);
     position: absolute;
     width: calc(100vw - 15px);
     height: 34px;
