@@ -5043,7 +5043,7 @@ span.user_title span[style="font-family: cursive;"] {
     position: relative;}
 #requirements {
     display: none;}
-.no_access:before {
+.thin:not(.others_inventory) .no_access:before {
     content: 'Requirements not met';
     font-family: whitney, sans-serif;
     font-size: 1.2em;
