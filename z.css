@@ -4,8 +4,8 @@
 	--body: #e6e6e6;
     --box: #f5f5f5;
     --input: #f0f0f0;
-    --bar1: #12c9c2;
-    --bar2: #51cca5;
+    --bar1: #12c9c2; --bar3: #6cdad6;
+    --bar2: #51cca5; --bar4: #92dcc5;
     --anchor: #c72641;
     --anchor-hover: #fa534d;
 	--header-shadow-color: rgba(0,0,0,.1);
@@ -13,7 +13,8 @@
     --main-border-color: #d2d2d2;
     --input-border-color: #ccc;
 /** /COLORS **/
-    --bar-gradient: linear-gradient(155deg,var(--bar1),var(--bar2));
+    --searchbar-gradient: linear-gradient(155deg,var(--bar1),var(--bar2));
+    --header-gradient: linear-gradient(155deg,var(--bar3),var(--bar4));
     --header-shadow: 0 0px 4px var(--header-shadow-color);
     --main-shadow: 0 0 4px var(--main-shadow-color);
     --main-border: 1px solid var(--main-border-color);
@@ -97,10 +98,15 @@ body, html {
     list-style:none;}
 
 #menu,
-#userinfo_username #nav_userinfo {
+#nav_userinfo,
+#toplink,
+#nav_logout,
+#nav_donate,
+#nav_donate a,
+#nav_useredit a {
     font-size: 0;}
 #menu ul li a,
-#userinfo_username #nav_userinfo a.username {
+#nav_userinfo a.username {
     font-size: 21px;}
 
 b, strong {
@@ -157,7 +163,7 @@ li.active {
     font-weight: 600;}
 
 #searchbars {
-    background: var(--bar-gradient);
+    background: var(--searchbar-gradient);
     text-align: center;
     width: 100%;
     height: 36px;
@@ -219,12 +225,13 @@ li.active {
     flex-flow: wrap;
     width: 500px;}
 
-#userinfo_username #nav_userinfo {
+#nav_userinfo {
     text-align: center;
     order: 4;}
-#userinfo_username #nav_userinfo a.username {
+#nav_userinfo a.username {
     font-weight: 600;
-    padding: 5px 10px;}
+    padding: 5px 25px 5px 5px;
+    position: relative;}
 #userinfo_username .sub {
     order: 5;
     height: 36px;
@@ -237,7 +244,7 @@ li.active {
 #userinfo_username li:not(.sub) a {
     color: var(--text);}
 
-#userinfo_username #nav_userinfo,
+#nav_userinfo,
 #nav_useredit,
 #nav_logout,
 #nav_donate {
@@ -248,26 +255,37 @@ li.active {
 #nav_useredit {
     order: 2;}
 
-#nav_logout,
-#nav_donate,
-#nav_userinfo,
-#nav_useredit {
-    background-color: var(--box);}
-
-#nav_donate {
-    font-size: 0;}
+#nav_logout a,
+#nav_userinfo a.username:after,
+#toplink a,
 #nav_donate a,
 #nav_useredit a {
-    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;}
+
+#nav_userinfo a.username:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    width: 10px;}
+
+#nav_userinfo a.username:hover {
+    color: var(--box);}
+
+#toplink a {
+    background-size: 150px 24px;
+    opacity: 0.3;}
+#toplink a:hover {
+    opacity: 1;}
+
+#nav_logout a,
+#nav_donate a,
+#nav_useredit a {
     width: 36px;
     display: block;
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 26px;}
-
-#userinfo_username .sub:hover + #nav_userinfo a.username,
-#userinfo_username #nav_userinfo a.username:hover {
-    background-color: var(--bar2);}
 
 .thin {
     margin: 0 auto;}
@@ -294,7 +312,7 @@ li.active {
 .box {
     font-size: 1em;}
 .head {
-    background: var(--bar-gradient);
+    background: var(--header-gradient);
     font-size: 1.4em;
     padding: 10px;}
 .sidebar .head {
@@ -329,10 +347,11 @@ img {
 
 #userinfo_minor .active a,
 #menu .active a {
-    background: var(--bar-gradient);}
+    background: var(--searchbar-gradient);}
 
 /** header hover **/
-#menu ul li a, #userinfo_minor li a {
+#menu ul li a,
+#userinfo_minor li a {
 	position: relative;
 	transition: 0.1s}
 #userinfo_minor li:not(.active) a:before,
@@ -340,7 +359,7 @@ img {
 #menu ul li:not(.active) a:before,
 #menu ul li:not(.active) a:after {
     content: '';
-    background: var(--bar-gradient);
+    background: var(--searchbar-gradient);
     position: absolute;
     top: 0;
     left: 0;
@@ -379,16 +398,16 @@ img {
     width: 200px;
     z-index: 10;
     text-align: center;
-    line-height: 34px;}
+    line-height: 36px;}
 #toplink:before {
     content: '';
-    background: var(--bar-gradient);
+    background: var(--searchbar-gradient);
     position: absolute;
     width: calc(100vw - 15px);
-    height: 34px;
+    height: 36px;
     left: 0;
     top: 0;
-    clip: rect(0, 200px, 34px, 0);
+    clip: rect(0, 200px, 36px, 0);
     z-index: 1;}
 #toplink a {
     position: fixed;

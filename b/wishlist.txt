@@ -26,17 +26,28 @@
 
 6.
 	#torrents .ratings
+
 	score should be combined with " / 10 " (alternatively " / 10 " should be contained in a separate span as well) and should be apart from the reviewer icon (instead of being contained inside it)
 
 7.
 	#torrents  .box_tags
+
 	"There are no tags to display." message should have a container
 
 8.
 	#inbox
+
 	"Sticky" to be in a container,
-	tricky tr should have its own class, like unread PM with .unreadpm
+	sticky tr should have its own class, like unread PM with .unreadpm
 
 9.
 	#torrents .userreviews_div
+
 	the link to All Reviews should be separate from the last review container.
+
+10.
+	#reply_box
+
+	should have a consistent structure across the site. Specifically h3 "Post reply" is being juggled depending on the page it geats loaded in.
+	Fo example #requests, #forums and #torrents position the h3 differently from each other.
+	

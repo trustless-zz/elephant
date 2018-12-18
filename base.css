@@ -6268,13 +6268,15 @@ textarea {
 #equipment #equip_panel:before,
 .equipment #items_inner >span:first-child,
 #trading_panel #items >span:first-child,
-#requests #request_comments #reply_box >.box.pad >h3:first-child {
+#requests #request_comments #reply_box >.box.pad >h3:first-child,
+#forums .linkbox.linkbox_bottom + br + h3:nth-last-child(2) {
     font-family: adelle, sans-serif;
     font-size: 16pt;
     font-weight: normal;
     text-align: center;
     margin: 0;
     padding: 9px 0 8px 0;}
+#forums .linkbox.linkbox_bottom + br + h3:nth-last-child(2),
 #collections #reply_box >h3:first-child {
     position: relative;}
 #requests #request_comments #quickpostform #quickreplytext {
@@ -6286,6 +6288,9 @@ textarea {
     margin: -10px 0 0 0 !important;}
 #collections #reply_box #quickpostform #quickreplypreview {
     margin: 1px 0 30px 0;}
+#forums .linkbox.linkbox_bottom + br + h3:nth-last-child(2) + #reply_box .box.pad {
+    padding-top: 55px;
+    margin-top: -45px;}
 /** /#requests post reply & making h3 look like .head **/
 
 /* 'You haven't joined a clan yet!'  message */
@@ -6529,7 +6534,7 @@ textarea {
 #forums .linkbox_bottom {
 	margin: 5px 0;}
 #forums #reply_box .box.pad #quickpostform #quickreplypreview {
-    margin: -20px 0 10px 0;}
+    margin: -9px 0 10px 0;}
 #forums #reply_box .box.pad #quickpostform #quickreplypreview tr.colhead_dark td[colspan="2"] span[style="float:left;"] {
     margin-top: 2px;}
 #forums table.border td {
@@ -6741,9 +6746,6 @@ a[onclick="BBCode.spoiler(this);"] {
     margin-top: -2px;}
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] {
     padding-top: 9px !important;}
-#forums .linkbox.linkbox_bottom + br + h3 {
-    margin-bottom: 10px;
-    margin-top: -10px;}
 #forums #reply_box #quickreplytext #quickpost + br + .bbbutt {
     margin-top: 10px;}
 #forums #reply_box >.box.pad {

@@ -457,7 +457,8 @@ input#FLTorrent {
 #announcement,
 #index .sidebar #progress_bar,
 #collections #reply_box >h3:first-child,
-#requests #request_comments #reply_box >.box.pad >h3:first-child {
+#requests #request_comments #reply_box >.box.pad >h3:first-child,
+#forums .linkbox.linkbox_bottom + br + h3:nth-last-child(2) {
     background-color: #94a6b1;}
 
 .ui-widget-header {
