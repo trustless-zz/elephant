@@ -6,12 +6,14 @@
     --input: #f0f0f0;
     --bar1: #12c9c2; --bar3: #6cdad6;
     --bar2: #51cca5; --bar4: #92dcc5;
-    --anchor: #c72641;
-    --anchor-hover: #fa534d;
+    --anchor: #bd002c;
+    --anchor-hover: #630017;
 	--header-shadow-color: rgba(0,0,0,.1);
     --main-shadow-color: rgba(0,0,0,0.2);
     --main-border-color: #d2d2d2;
     --input-border-color: #ccc;
+/** 10 stages, bar1 to bar2 **/
+    --b1: #12c9c2; --b2: #19c9bf; --b3: #20cabc; --b4: #27cab8; --b5: #2ecab5; --b6: #35cbb2; --b7: #3ccbaf; --b8: #43cbab; --b9: #4acca8; --b10: #51cca5;
 /** /COLORS **/
     --searchbar-gradient: linear-gradient(155deg,var(--bar1),var(--bar2));
     --header-gradient: linear-gradient(155deg,var(--bar3),var(--bar4));
@@ -51,7 +53,7 @@ html {
 body {
     color: var(--text);
     background-color: var(--body);
-    background-size: 50px;
+    background-size: 50px 50px;
     font-family: SourceSansPro, Helvetica, Arial, sans-serif;
     margin: 0;
     min-height: 100%;
@@ -285,7 +287,7 @@ li.active {
 #nav_useredit a {
     width: 36px;
     display: block;
-    background-size: 26px;}
+    background-size: 26px 26px;}
 
 .thin {
     margin: 0 auto;}
@@ -345,10 +347,6 @@ img {
 .main_column {
     margin: 0 315px 0 0;}
 
-#userinfo_minor .active a,
-#menu .active a {
-    background: var(--searchbar-gradient);}
-
 /** header hover **/
 #menu ul li a,
 #userinfo_minor li a {
@@ -359,7 +357,6 @@ img {
 #menu ul li:not(.active) a:before,
 #menu ul li:not(.active) a:after {
     content: '';
-    background: var(--searchbar-gradient);
     position: absolute;
     top: 0;
     left: 0;
@@ -389,6 +386,74 @@ img {
 #userinfo_minor li a:hover:after,
 #menu ul li a:hover:after {
     transition: transform 0.1s linear;}
+
+#nav_inbox a:before,
+#nav_inbox a:after,
+#nav_inbox.active,
+#nav_index a:before,
+#nav_index a:after,
+#nav_index.active {
+    background-color: var(--b1);}
+#nav_top10 a:before,
+#nav_top10 a:after,
+#nav_top10.active,
+#nav_torrents a:before,
+#nav_torrents a:after,
+#nav_torrents.active {
+    background-color: var(--b2);}
+#nav_bookmarks a:before,
+#nav_bookmarks a:after,
+#nav_bookmarks.active,
+#nav_collections a:before,
+#nav_collections a:after,
+#nav_collections.active {
+    background-color: var(--b3);}
+#notilia nav_notifications a:before,
+#notilia nav_notifications a:after,
+#notilia nav_notifications.active,
+#nav_requests a:before,
+#nav_requests a:after,
+#nav_requests.active {
+    background-color: var(--b4);}
+#nav_uploaded a:before,
+#nav_uploaded a:after,
+#nav_uploaded.active,
+#nav_forums a:before,
+#nav_forums a:after,
+#nav_forums.active {
+    background-color: var(--b5);}
+#nav_staffinbox a:before,
+#nav_staffinbox a:after,
+#nav_staffinbox.active,
+#nav_irc a:before,
+#nav_irc a:after,
+#nav_irc.active {
+    background-color: var(--b6);}
+#nav_inventory a:before,
+#nav_inventory a:after,
+#nav_inventory.active,
+#nav_shop a:before,
+#nav_shop a:after,
+#nav_shop.active {
+    background-color: var(--b7);}
+#nav_upload a:before,
+#nav_upload a:after,
+#nav_upload.active,
+#nav_rules a:before,
+#nav_rules a:after,
+#nav_rules.active {
+    background-color: var(--b8);}
+#nav_invite a:before,
+#nav_invite a:after,
+#nav_invite.active,
+#nav_wiki a:before,
+#nav_wiki a:after,
+#nav_wiki.active {
+    background-color: var(--b9);}
+#nav_staff a:before,
+#nav_staff a:after,
+#nav_staff.active {
+    background-color: var(--b10);}
 /** /header hover **/
 
 #toplink {

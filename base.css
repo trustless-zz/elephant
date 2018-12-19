@@ -5594,6 +5594,8 @@ ul[class="collage_images"] {
     max-width: 100% !important;
     height: auto;
     align-self: center;}
+#torrents .box.screenshots_div .head {
+    margin-bottom: 1px;}
 
 #torrents .body.similar {
     padding: 0 !important;}
