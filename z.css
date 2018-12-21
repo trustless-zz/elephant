@@ -6,8 +6,8 @@
     --input: #f0f0f0;
     --bar1: #12c9c2; --bar3: #6cdad6;
     --bar2: #51cca5; --bar4: #92dcc5;
-    --anchor: #bd002c;
-    --anchor-hover: #630017;
+    --anchor: #0b7a76; /* #bd002c */
+    --anchor-hover: ##053d3b; /* #630017 */
 	--header-shadow-color: rgba(0,0,0,.1);
     --main-shadow-color: rgba(0,0,0,0.2);
     --main-border-color: #d2d2d2;
@@ -225,7 +225,7 @@ li.active {
     height: 72px;
     display: flex;
     flex-flow: wrap;
-    width: 500px;}
+    width: 305px;}
 
 #nav_userinfo {
     text-align: center;
@@ -238,10 +238,13 @@ li.active {
     order: 5;
     height: 36px;
     width: 300px;
-    margin: 0 5px 0 auto;
+    margin: 0 0 0 auto;
+    padding-right: 2px;
     line-height: 18px;
-    text-align: right;}
+    text-align: center;
+    transition-delay: .1s;}
 
+#userinfo_username .sub a,
 #menu a,
 #userinfo_username li:not(.sub) a {
     color: var(--text);}
@@ -273,6 +276,7 @@ li.active {
     height: 100%;
     width: 10px;}
 
+#userinfo_username .sub a:hover,
 #nav_userinfo a.username:hover {
     color: var(--box);}
 
@@ -348,10 +352,15 @@ img {
     margin: 0 315px 0 0;}
 
 /** header hover **/
+#nav_userinfo,
 #menu ul li a,
 #userinfo_minor li a {
 	position: relative;
 	transition: 0.1s}
+#userinfo_username .sub:hover + #nav_userinfo:after,
+#userinfo_username .sub:hover + #nav_userinfo:before,
+#nav_userinfo:after,
+#nav_userinfo:before,
 #userinfo_minor li:not(.active) a:before,
 #userinfo_minor li:not(.active) a:after,
 #menu ul li:not(.active) a:before,
@@ -362,30 +371,48 @@ img {
     left: 0;
     right: 0;
     height: 100%;
-    z-index:-9;}
-#userinfo_minor li a:before {
-    transform: translateX(-100%);
-    transition: transform 0s linear;}
-#menu ul li a:before {
-    transform: translateY(-100%);
-    transition: transform 0s linear;}
+    z-index: -9;}
+#userinfo_username .sub:hover + #nav_userinfo:after,
+#userinfo_username .sub:hover + #nav_userinfo:before,
+#nav_userinfo:after,
+#nav_userinfo:before {
+    clip: rect(0 , calc(100vw - 15px), 36px, calc(100vw - 320px));
+    left: unset;
+    right: 0;}
+#userinfo_minor li a:before,
 #userinfo_minor li a:after {
-    transform: translateX(-100%);
-    transition: transform 0.1s linear;}
+    transform: translateX(-100%);}
+#menu ul li a:before,
 #menu ul li a:after {
-    transform: translateY(-100%);
-    transition: transform 0.1s linear;}
+    transform: translateY(-100%);}
 #userinfo_minor li a:hover:before,
 #userinfo_minor li a:hover:after{
     transform: translateX(0);}
 #menu ul li a:hover:before,
 #menu ul li a:hover:after {
     transform: translateY(0);}
+#userinfo_username .sub:hover + #nav_userinfo:before,
+#userinfo_username .sub:hover + #nav_userinfo:after,
+#nav_userinfo:hover:before,
+#nav_userinfo:hover:after {
+    transform: translateY(100%);}
+#userinfo_username .sub:hover + #nav_userinfo:before,
+#userinfo_username .sub:hover + #nav_userinfo:after,
 #userinfo_minor li a:before,
+#menu ul li a:before,
+#nav_userinfo:before,
+#nav_userinfo:after,
+#nav_userinfo:hover:before,
+#nav_userinfo:hover:after,
+#menu ul li a:after,
 #menu ul li a:hover:before,
-#userinfo_minor li a:hover:after,
-#menu ul li a:hover:after {
+#menu ul li a:hover:after,
+#userinfo_minor li a:after,
+#userinfo_minor li a:hover:after {
     transition: transform 0.1s linear;}
+#nav_userinfo:before,
+#nav_userinfo:after {
+    transition-delay: .7s;}
 
 #nav_inbox a:before,
 #nav_inbox a:after,
@@ -408,9 +435,9 @@ img {
 #nav_collections a:after,
 #nav_collections.active {
     background-color: var(--b3);}
-#notilia nav_notifications a:before,
-#notilia nav_notifications a:after,
-#notilia nav_notifications.active,
+#userinfo_minor a.notificationsico:before,
+#userinfo_minor a.notificationsico:after,
+#userinfo_minor li:nth-child(4).active,
 #nav_requests a:before,
 #nav_requests a:after,
 #nav_requests.active {
@@ -466,14 +493,17 @@ img {
     line-height: 36px;}
 #toplink:before {
     content: '';
-    background: var(--searchbar-gradient);
     position: absolute;
-    width: calc(100vw - 15px);
     height: 36px;
     left: 0;
     top: 0;
     clip: rect(0, 200px, 36px, 0);
     z-index: 1;}
+#toplink:before,
+#nav_userinfo:after,
+#nav_userinfo:before {
+    background: var(--searchbar-gradient);
+    width: calc(100vw - 15px);}
 #toplink a {
     position: fixed;
     z-index: 0;
