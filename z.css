@@ -70,6 +70,19 @@ body, html {
     max-width: 1300px;
     width: 100%;}
 
+#logo {
+    height: 200px;
+    top: 36px;
+    left: 0;
+    position: fixed;}
+#logo a {
+    display: block;
+    height: 200px;
+    width: 200px;
+    opacity: 0.25;}
+#logo a:hover{
+    opacity: 1;}
+
 #header,
 #menu ul,
 #menu ul li,
@@ -210,7 +223,7 @@ li.active {
     order: 1;
     width: 200px;
     position: fixed;
-    top: 100px;
+    top: 250px;
     left: 0;}
 #userinfo_stats {
     order: 2;
@@ -236,13 +249,15 @@ li.active {
     position: relative;}
 #userinfo_username .sub {
     order: 5;
-    height: 36px;
-    width: 300px;
+    width: 150px;
     margin: 0 0 0 auto;
-    padding-right: 2px;
-    line-height: 18px;
+    line-height: 26px;
     text-align: center;
-    transition-delay: .1s;}
+    transition-delay: .1s;
+    overflow: hidden;}
+#userinfo_username .sub a {
+    width: 100%;
+    display: block;}
 
 #userinfo_username .sub a,
 #menu a,
@@ -260,6 +275,7 @@ li.active {
 #nav_useredit {
     order: 2;}
 
+#logo a,
 #nav_logout a,
 #nav_userinfo a.username:after,
 #toplink a,
@@ -276,7 +292,6 @@ li.active {
     height: 100%;
     width: 10px;}
 
-#userinfo_username .sub a:hover,
 #nav_userinfo a.username:hover {
     color: var(--box);}
 
@@ -352,13 +367,14 @@ img {
     margin: 0 315px 0 0;}
 
 /** header hover **/
+#userinfo_username .sub a,
 #nav_userinfo,
 #menu ul li a,
 #userinfo_minor li a {
 	position: relative;
 	transition: 0.1s}
-#userinfo_username .sub:hover + #nav_userinfo:after,
-#userinfo_username .sub:hover + #nav_userinfo:before,
+#userinfo_username .sub span:not(.active) a:after,
+#userinfo_username .sub span:not(.active) a:before,
 #nav_userinfo:after,
 #nav_userinfo:before,
 #userinfo_minor li:not(.active) a:before,
@@ -372,21 +388,26 @@ img {
     right: 0;
     height: 100%;
     z-index: -9;}
-#userinfo_username .sub:hover + #nav_userinfo:after,
-#userinfo_username .sub:hover + #nav_userinfo:before,
 #nav_userinfo:after,
 #nav_userinfo:before {
-    clip: rect(0 , calc(100vw - 15px), 36px, calc(100vw - 320px));
+    top: -146px;
+    width: 150px;
+    height: 182px;
     left: unset;
     right: 0;}
+#userinfo_username .sub a:after,
+#userinfo_username .sub a:before {
+    transform: translateX(100%);}
 #userinfo_minor li a:before,
 #userinfo_minor li a:after {
     transform: translateX(-100%);}
 #menu ul li a:before,
 #menu ul li a:after {
     transform: translateY(-100%);}
+#userinfo_username .sub a:hover:after,
+#userinfo_username .sub a:hover:before,
 #userinfo_minor li a:hover:before,
-#userinfo_minor li a:hover:after{
+#userinfo_minor li a:hover:after {
     transform: translateX(0);}
 #menu ul li a:hover:before,
 #menu ul li a:hover:after {
@@ -396,8 +417,8 @@ img {
 #nav_userinfo:hover:before,
 #nav_userinfo:hover:after {
     transform: translateY(100%);}
-#userinfo_username .sub:hover + #nav_userinfo:before,
-#userinfo_username .sub:hover + #nav_userinfo:after,
+#userinfo_username .sub a:after,
+#userinfo_username .sub a:before,
 #userinfo_minor li a:before,
 #menu ul li a:before,
 #nav_userinfo:before,
@@ -410,10 +431,29 @@ img {
 #userinfo_minor li a:after,
 #userinfo_minor li a:hover:after {
     transition: transform 0.1s linear;}
+#nav_userinfo a.username:after,
 #nav_userinfo:before,
 #nav_userinfo:after {
     transition-delay: .7s;}
+#nav_userinfo a.username:hover:after {
+    transition-delay: 0s;}
+#userinfo_username .sub span:not(.active) a:after,
+#userinfo_username .sub span:not(.active) a:before {
+    z-index: -1;}
 
+#nav_userinfo:after,
+#nav_userinfo:before {
+    border-left: var(--main-border);
+    border-bottom: var(--main-border);
+    background-color: var(--box);
+    z-index: -99 !important;}
+#nav_userinfo:after {
+    -webkit-box-shadow: var(--header-shadow);
+    box-shadow: var(--header-shadow);}
+
+#userinfo_username .sub .sub span:nth-child(10) a:after,
+#userinfo_username .sub .sub span:nth-child(10) a:before,
+#userinfo_username .sub span.active:nth-child(10) a,
 #nav_inbox a:before,
 #nav_inbox a:after,
 #nav_inbox.active,
@@ -421,6 +461,9 @@ img {
 #nav_index a:after,
 #nav_index.active {
     background-color: var(--b1);}
+#userinfo_username .sub span:nth-child(9) a:after,
+#userinfo_username .sub span:nth-child(19) a:before,
+#userinfo_username .sub span.active:nth-child(9) a,
 #nav_top10 a:before,
 #nav_top10 a:after,
 #nav_top10.active,
@@ -428,6 +471,9 @@ img {
 #nav_torrents a:after,
 #nav_torrents.active {
     background-color: var(--b2);}
+#userinfo_username .sub span:nth-child(8) a:after,
+#userinfo_username .sub span:nth-child(8) a:before,
+#userinfo_username .sub span.active:nth-child(8) a,
 #nav_bookmarks a:before,
 #nav_bookmarks a:after,
 #nav_bookmarks.active,
@@ -435,6 +481,9 @@ img {
 #nav_collections a:after,
 #nav_collections.active {
     background-color: var(--b3);}
+#userinfo_username .sub span:nth-child(7) a:after,
+#userinfo_username .sub span:nth-child(7) a:before,
+#userinfo_username .sub span.active:nth-child(7) a,
 #userinfo_minor a.notificationsico:before,
 #userinfo_minor a.notificationsico:after,
 #userinfo_minor li:nth-child(4).active,
@@ -442,6 +491,9 @@ img {
 #nav_requests a:after,
 #nav_requests.active {
     background-color: var(--b4);}
+#userinfo_username .sub span:nth-child(6) a:after,
+#userinfo_username .sub span:nth-child(6) a:before,
+#userinfo_username .sub span.active:nth-child(6) a,
 #nav_uploaded a:before,
 #nav_uploaded a:after,
 #nav_uploaded.active,
@@ -449,6 +501,9 @@ img {
 #nav_forums a:after,
 #nav_forums.active {
     background-color: var(--b5);}
+#userinfo_username .sub span:nth-child(5) a:after,
+#userinfo_username .sub span:nth-child(5) a:before,
+#userinfo_username .sub span.active:nth-child(5) a,
 #nav_staffinbox a:before,
 #nav_staffinbox a:after,
 #nav_staffinbox.active,
@@ -456,6 +511,9 @@ img {
 #nav_irc a:after,
 #nav_irc.active {
     background-color: var(--b6);}
+#userinfo_username .sub span:nth-child(4) a:after,
+#userinfo_username .sub span:nth-child(4) a:before,
+#userinfo_username .sub span.active:nth-child(4) a,
 #nav_inventory a:before,
 #nav_inventory a:after,
 #nav_inventory.active,
@@ -463,6 +521,9 @@ img {
 #nav_shop a:after,
 #nav_shop.active {
     background-color: var(--b7);}
+#userinfo_username .sub span:nth-child(3) a:after,
+#userinfo_username .sub span:nth-child(3) a:before,
+#userinfo_username .sub span.active:nth-child(3) a,
 #nav_upload a:before,
 #nav_upload a:after,
 #nav_upload.active,
@@ -470,6 +531,9 @@ img {
 #nav_rules a:after,
 #nav_rules.active {
     background-color: var(--b8);}
+#userinfo_username .sub span:nth-child(2) a:after,
+#userinfo_username .sub span:nth-child(2) a:before,
+#userinfo_username .sub span.active:nth-child(2) a,
 #nav_invite a:before,
 #nav_invite a:after,
 #nav_invite.active,
@@ -477,6 +541,9 @@ img {
 #nav_wiki a:after,
 #nav_wiki.active {
     background-color: var(--b9);}
+#userinfo_username .sub span:nth-child(1) a:after,
+#userinfo_username .sub span:nth-child(1) a:before,
+#userinfo_username .sub span.active:nth-child(1) a,
 #nav_staff a:before,
 #nav_staff a:after,
 #nav_staff.active {
@@ -499,9 +566,7 @@ img {
     top: 0;
     clip: rect(0, 200px, 36px, 0);
     z-index: 1;}
-#toplink:before,
-#nav_userinfo:after,
-#nav_userinfo:before {
+#toplink:before {
     background: var(--searchbar-gradient);
     width: calc(100vw - 15px);}
 #toplink a {
