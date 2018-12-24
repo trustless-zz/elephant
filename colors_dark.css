@@ -314,7 +314,6 @@ input#FLTorrent {
 
 .row_b,
 .rowb,
-#existing_buff_pots tr:not(.colhead):nth-child(even),
 #upload div[style="margin:0px auto;width:700px"] tr:not(.colhead):nth-child(even),
 .forum_latest .search #forumlist tr td input[checked="checked"] + label,
 #torrents #collages >tbody >tr:nth-child(even),
