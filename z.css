@@ -14,6 +14,8 @@
     --input-border-color: #ccc;
 /** 10 stages, bar1 to bar2 **/
     --b1: #12c9c2; --b2: #19c9bf; --b3: #20cabc; --b4: #27cab8; --b5: #2ecab5; --b6: #35cbb2; --b7: #3ccbaf; --b8: #43cbab; --b9: #4acca8; --b10: #51cca5;
+/** 50% opacity vs --box **/
+    --b501: #83dfdb; --b502: #86dfda; --b503: #8adfd8; --b504: #8ddfd6; --b505: #91dfd5; --b506: #94e0d3; --b507: #98e0d2; --b508: #9be0d0; --b509: #9fe0ce; --b5010: #a2e0cd;
 /** /COLORS **/
     --searchbar-gradient: linear-gradient(155deg,var(--bar1),var(--bar2));
     --header-gradient: linear-gradient(155deg,var(--bar3),var(--bar4));
@@ -369,188 +371,129 @@ img {
 .main_column {
     margin: 0 315px 0 0;}
 
+}
+
 /** header hover **/
-#userinfo_username .sub a,
-#nav_userinfo,
-#menu ul li a,
-#userinfo_minor li a {
+#userinfo_username .sub a {
 	position: relative;
-	transition: 0.1s}
-#userinfo_username .sub span:not(.active) a:after,
-#userinfo_username .sub span:not(.active) a:before,
-#nav_userinfo:after,
-#nav_userinfo:before,
-#userinfo_minor li:not(.active) a:before,
-#userinfo_minor li:not(.active) a:after,
-#menu ul li:not(.active) a:before,
-#menu ul li:not(.active) a:after {
+	transition: .1s}
+#nav_userinfo:before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 100%;
-    z-index: -9;}
-#nav_userinfo:after,
-#nav_userinfo:before {
+    z-index: -9;
     top: -146px;
     width: 150px;
     height: 182px;
     left: unset;
     right: 0;}
-#userinfo_username .sub a:after,
-#userinfo_username .sub a:before {
-    transform: translateX(100%);}
-#userinfo_minor li a:before,
-#userinfo_minor li a:after {
-    transform: translateX(-100%);}
-#menu ul li a:before,
-#menu ul li a:after {
-    transform: translateY(-100%);}
-#userinfo_username .sub a:hover:after,
-#userinfo_username .sub a:hover:before,
-#userinfo_minor li a:hover:before,
-#userinfo_minor li a:hover:after {
-    transform: translateX(0);}
-#menu ul li a:hover:before,
-#menu ul li a:hover:after {
-    transform: translateY(0);}
+
 #userinfo_username .sub:hover + #nav_userinfo:before,
-#userinfo_username .sub:hover + #nav_userinfo:after,
-#nav_userinfo:hover:before,
-#nav_userinfo:hover:after {
+#nav_userinfo:hover:before {
     transform: translateY(100%);}
-#userinfo_username .sub a:after,
-#userinfo_username .sub a:before,
-#userinfo_minor li a:before,
-#menu ul li a:before,
+
 #nav_userinfo:before,
-#nav_userinfo:after,
-#nav_userinfo:hover:before,
-#nav_userinfo:hover:after,
-#menu ul li a:after,
-#menu ul li a:hover:before,
-#menu ul li a:hover:after,
-#userinfo_minor li a:after,
-#userinfo_minor li a:hover:after {
-    transition: transform 0.1s linear;}
+#nav_userinfo:hover:before {
+    transition: .1s linear;}
 #nav_userinfo a.username:after,
-#nav_userinfo:before,
-#nav_userinfo:after {
+#nav_userinfo:before {
     transition-delay: .7s;}
 #nav_userinfo a.username:hover:after {
     transition-delay: 0s;}
-#userinfo_username .sub span:not(.active) a:after,
-#userinfo_username .sub span:not(.active) a:before {
-    z-index: -1;}
 
-#nav_userinfo:after,
 #nav_userinfo:before {
     border-left: var(--main-border);
     border-bottom: var(--main-border);
     background-color: var(--box);
     z-index: -99 !important;}
-#nav_userinfo:after {
-    -webkit-box-shadow: var(--header-shadow);
-    box-shadow: var(--header-shadow);}
 
-#userinfo_username .sub .sub span:nth-child(10) a:after,
-#userinfo_username .sub .sub span:nth-child(10) a:before,
-#userinfo_username .sub span.active:nth-child(10) a,
-#nav_inbox a:before,
-#nav_inbox a:after,
-#nav_inbox.active,
-#nav_index a:before,
-#nav_index a:after,
-#nav_index.active {
+#userinfo_username .sub span {
+    display: block;
+    transition: .1s linear;}
+
+#menu li:nth-child(1).active,
+#userinfo_minor li:nth-child(1).active,
+#userinfo_username .sub span:nth-child(10).active {
     background-color: var(--b1);}
-#userinfo_username .sub span:nth-child(9) a:after,
-#userinfo_username .sub span:nth-child(19) a:before,
-#userinfo_username .sub span.active:nth-child(9) a,
-#nav_top10 a:before,
-#nav_top10 a:after,
-#nav_top10.active,
-#nav_torrents a:before,
-#nav_torrents a:after,
-#nav_torrents.active {
+#menu li:nth-child(2).active,
+#userinfo_minor li:nth-child(2).active,
+#userinfo_username .sub span:nth-child(9).active {
     background-color: var(--b2);}
-#userinfo_username .sub span:nth-child(8) a:after,
-#userinfo_username .sub span:nth-child(8) a:before,
-#userinfo_username .sub span.active:nth-child(8) a,
-#nav_bookmarks a:before,
-#nav_bookmarks a:after,
-#nav_bookmarks.active,
-#nav_collections a:before,
-#nav_collections a:after,
-#nav_collections.active {
+#menu li:nth-child(3).active,
+#userinfo_minor li:nth-child(3).active,
+#userinfo_username .sub span:nth-child(8).active {
     background-color: var(--b3);}
-#userinfo_username .sub span:nth-child(7) a:after,
-#userinfo_username .sub span:nth-child(7) a:before,
-#userinfo_username .sub span.active:nth-child(7) a,
-#userinfo_minor a.notificationsico:before,
-#userinfo_minor a.notificationsico:after,
+#menu li:nth-child(4).active,
 #userinfo_minor li:nth-child(4).active,
-#nav_requests a:before,
-#nav_requests a:after,
-#nav_requests.active {
+#userinfo_username .sub span:nth-child(7).active {
     background-color: var(--b4);}
-#userinfo_username .sub span:nth-child(6) a:after,
-#userinfo_username .sub span:nth-child(6) a:before,
-#userinfo_username .sub span.active:nth-child(6) a,
-#nav_uploaded a:before,
-#nav_uploaded a:after,
-#nav_uploaded.active,
-#nav_forums a:before,
-#nav_forums a:after,
-#nav_forums.active {
+#menu li:nth-child(5).active,
+#userinfo_minor li:nth-child(5).active,
+#userinfo_username .sub span:nth-child(6).active {
     background-color: var(--b5);}
-#userinfo_username .sub span:nth-child(5) a:after,
-#userinfo_username .sub span:nth-child(5) a:before,
-#userinfo_username .sub span.active:nth-child(5) a,
-#nav_staffinbox a:before,
-#nav_staffinbox a:after,
-#nav_staffinbox.active,
-#nav_irc a:before,
-#nav_irc a:after,
-#nav_irc.active {
+#menu li:nth-child(6).active,
+#userinfo_minor li:nth-child(6).active,
+#userinfo_username .sub span:nth-child(5).active {
     background-color: var(--b6);}
-#userinfo_username .sub span:nth-child(4) a:after,
-#userinfo_username .sub span:nth-child(4) a:before,
-#userinfo_username .sub span.active:nth-child(4) a,
-#nav_inventory a:before,
-#nav_inventory a:after,
-#nav_inventory.active,
-#nav_shop a:before,
-#nav_shop a:after,
-#nav_shop.active {
+#menu li:nth-child(7).active,
+#userinfo_minor li:nth-child(7).active,
+#userinfo_username .sub span:nth-child(4).active {
     background-color: var(--b7);}
-#userinfo_username .sub span:nth-child(3) a:after,
-#userinfo_username .sub span:nth-child(3) a:before,
-#userinfo_username .sub span.active:nth-child(3) a,
-#nav_upload a:before,
-#nav_upload a:after,
-#nav_upload.active,
-#nav_rules a:before,
-#nav_rules a:after,
-#nav_rules.active {
+#menu li:nth-child(8).active,
+#userinfo_minor li:nth-child(8).active,
+#userinfo_username .sub span:nth-child(3).active {
     background-color: var(--b8);}
-#userinfo_username .sub span:nth-child(2) a:after,
-#userinfo_username .sub span:nth-child(2) a:before,
-#userinfo_username .sub span.active:nth-child(2) a,
-#nav_invite a:before,
-#nav_invite a:after,
-#nav_invite.active,
-#nav_wiki a:before,
-#nav_wiki a:after,
-#nav_wiki.active {
+#menu li:nth-child(9).active,
+#userinfo_minor li:nth-child(9).active,
+#userinfo_username .sub span:nth-child(2).active {
     background-color: var(--b9);}
-#userinfo_username .sub span:nth-child(1) a:after,
-#userinfo_username .sub span:nth-child(1) a:before,
-#userinfo_username .sub span.active:nth-child(1) a,
-#nav_staff a:before,
-#nav_staff a:after,
-#nav_staff.active {
+#menu li:nth-child(10).active,
+#userinfo_minor li:nth-child(10).active,
+#userinfo_username .sub span:nth-child(1).active {
     background-color: var(--b10);}
+
+
+#menu li:nth-child(1):not(.active) a:hover,
+#userinfo_minor li:nth-child(1):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(10):not(.active):hover {
+    background-color: var(--b501);}
+#menu li:nth-child(2):not(.active) a:hover,
+#userinfo_minor li:nth-child(2):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(9):not(.active):hover {
+    background-color: var(--b502);}
+#menu li:nth-child(3):not(.active) a:hover,
+#userinfo_minor li:nth-child(3):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(8):not(.active):hover {
+    background-color: var(--b503);}
+#menu li:nth-child(4):not(.active) a:hover,
+#userinfo_minor li:nth-child(4):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(7):not(.active):hover {
+    background-color: var(--b504);}
+#menu li:nth-child(5):not(.active) a:hover,
+#userinfo_minor li:nth-child(5):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(6):not(.active):hover {
+    background-color: var(--b505);}
+#menu li:nth-child(6):not(.active) a:hover,
+#userinfo_minor li:nth-child(6):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(5):not(.active):hover {
+    background-color: var(--b506);}
+#menu li:nth-child(7):not(.active) a:hover,
+#userinfo_minor li:nth-child(7):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(4):not(.active):hover {
+    background-color: var(--b507);}
+#menu li:nth-child(8):not(.active) a:hover,
+#userinfo_minor li:nth-child(8):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(3):not(.active):hover {
+    background-color: var(--b508);}
+#menu li:nth-child(9):not(.active) a:hover,
+#userinfo_minor li:nth-child(9):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(2):not(.active):hover {
+    background-color: var(--b509);}
+#menu li:nth-child(10):not(.active) a:hover,
+#userinfo_minor li:nth-child(10):not(.active) a:hover,
+#userinfo_username .sub span:nth-child(1):not(.active):hover {
+    background-color: var(--b5010);}
+
 /** /header hover **/
 
 #toplink {
@@ -561,20 +504,9 @@ img {
     z-index: 10;
     text-align: center;
     line-height: 36px;}
-#toplink:before {
-    content: '';
-    position: absolute;
-    height: 36px;
-    left: 0;
-    top: 0;
-    clip: rect(0, 200px, 36px, 0);
-    z-index: 1;}
-#toplink:before {
-    background: var(--searchbar-gradient);
-    width: calc(100vw - 15px);}
 #toplink a {
     position: fixed;
     z-index: 0;
     width: 200px;
     left: 0;
-    top: 0;}
+    bottom: 0;}
