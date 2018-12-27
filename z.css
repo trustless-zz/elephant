@@ -238,9 +238,9 @@ li.active {
     width: 200px;}
 #userinfo_username {
     position: absolute;
-    top: 0;
+    top: 36px;
     right: 0;
-    height: 72px;
+    height: 36px;
     display: flex;
     flex-flow: wrap;
     width: 305px;}
@@ -296,9 +296,6 @@ li.active {
     right: 10px;
     height: 100%;
     width: 10px;}
-
-#nav_userinfo a.username:hover {
-    color: var(--box);}
 
 #toplink a {
     background-size: 150px 24px;
@@ -371,8 +368,6 @@ img {
 .main_column {
     margin: 0 315px 0 0;}
 
-}
-
 /** header hover **/
 #userinfo_username .sub a {
 	position: relative;
@@ -381,12 +376,15 @@ img {
     content: '';
     position: absolute;
     height: 100%;
-    z-index: -9;
-    top: -146px;
+    z-index: -99;
+    top: -147px;
     width: 150px;
     height: 182px;
     left: unset;
-    right: 0;}
+    right: 0;
+    border-left: var(--main-border);
+    border-bottom: var(--main-border);
+    background-color: var(--box);}
 
 #userinfo_username .sub:hover + #nav_userinfo:before,
 #nav_userinfo:hover:before {
@@ -401,96 +399,139 @@ img {
 #nav_userinfo a.username:hover:after {
     transition-delay: 0s;}
 
-#nav_userinfo:before {
-    border-left: var(--main-border);
-    border-bottom: var(--main-border);
-    background-color: var(--box);
-    z-index: -99 !important;}
-
+#nav_logout,
+#nav_donate,
+#nav_useredit,
+#nav_userinfo,
+#menu li,
+#userinfo_minor li,
 #userinfo_username .sub span {
     display: block;
     transition: .1s linear;}
 
+#menu li:hover:active,
+#userinfo_minor li:hover:active,
+#userinfo_username .sub span:hover:active {
+    transition: 0s;}
+
+#menu li:nth-child(1):not(.active):hover:active,
+#userinfo_minor li:nth-child(1):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(10):not(.active):hover:active,
 #menu li:nth-child(1).active,
 #userinfo_minor li:nth-child(1).active,
 #userinfo_username .sub span:nth-child(10).active {
     background-color: var(--b1);}
+#menu li:nth-child(2):not(.active):hover:active,
+#userinfo_minor li:nth-child(2):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(9):not(.active):hover:active,
 #menu li:nth-child(2).active,
 #userinfo_minor li:nth-child(2).active,
 #userinfo_username .sub span:nth-child(9).active {
     background-color: var(--b2);}
+#menu li:nth-child(3):not(.active):hover:active,
+#userinfo_minor li:nth-child(3):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(8):not(.active):hover:active,
 #menu li:nth-child(3).active,
 #userinfo_minor li:nth-child(3).active,
 #userinfo_username .sub span:nth-child(8).active {
     background-color: var(--b3);}
+#menu li:nth-child(4):not(.active):hover:active,
+#userinfo_minor li:nth-child(41):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(7):not(.active):hover:active,
 #menu li:nth-child(4).active,
 #userinfo_minor li:nth-child(4).active,
 #userinfo_username .sub span:nth-child(7).active {
     background-color: var(--b4);}
+#menu li:nth-child(5):not(.active):hover:active,
+#userinfo_minor li:nth-child(5):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(6):not(.active):hover:active,
 #menu li:nth-child(5).active,
 #userinfo_minor li:nth-child(5).active,
 #userinfo_username .sub span:nth-child(6).active {
     background-color: var(--b5);}
+#menu li:nth-child(6):not(.active):hover:active,
+#userinfo_minor li:nth-child(6):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(5):not(.active):hover:active,
 #menu li:nth-child(6).active,
 #userinfo_minor li:nth-child(6).active,
 #userinfo_username .sub span:nth-child(5).active {
     background-color: var(--b6);}
+#nav_logout:hover:active,
+#menu li:nth-child(7):not(.active):hover:active,
+#userinfo_minor li:nth-child(7):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(4):not(.active):hover:active,
 #menu li:nth-child(7).active,
 #userinfo_minor li:nth-child(7).active,
 #userinfo_username .sub span:nth-child(4).active {
     background-color: var(--b7);}
+#nav_donate a:hover:active,
+#menu li:nth-child(8):not(.active):hover:active,
+#userinfo_minor li:nth-child(8):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(3):not(.active):hover:active,
 #menu li:nth-child(8).active,
 #userinfo_minor li:nth-child(8).active,
 #userinfo_username .sub span:nth-child(3).active {
     background-color: var(--b8);}
+#nav_useredit:hover:active,
+#menu li:nth-child(9):not(.active):hover:active,
+#userinfo_minor li:nth-child(9):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(2):not(.active):hover:active,
 #menu li:nth-child(9).active,
 #userinfo_minor li:nth-child(9).active,
 #userinfo_username .sub span:nth-child(2).active {
     background-color: var(--b9);}
+#nav_userinfo:hover:active,
+#menu li:nth-child(10):not(.active):hover:active,
+#userinfo_minor li:nth-child(10):not(.active):hover:active,
+#userinfo_username .sub span:nth-child(1):not(.active):hover:active,
 #menu li:nth-child(10).active,
 #userinfo_minor li:nth-child(10).active,
 #userinfo_username .sub span:nth-child(1).active {
     background-color: var(--b10);}
 
 
-#menu li:nth-child(1):not(.active) a:hover,
-#userinfo_minor li:nth-child(1):not(.active) a:hover,
+#menu li:nth-child(1):not(.active):hover,
+#userinfo_minor li:nth-child(1):not(.active):hover,
 #userinfo_username .sub span:nth-child(10):not(.active):hover {
     background-color: var(--b501);}
-#menu li:nth-child(2):not(.active) a:hover,
-#userinfo_minor li:nth-child(2):not(.active) a:hover,
+#menu li:nth-child(2):not(.active):hover,
+#userinfo_minor li:nth-child(2):not(.active):hover,
 #userinfo_username .sub span:nth-child(9):not(.active):hover {
     background-color: var(--b502);}
-#menu li:nth-child(3):not(.active) a:hover,
-#userinfo_minor li:nth-child(3):not(.active) a:hover,
+#menu li:nth-child(3):not(.active):hover,
+#userinfo_minor li:nth-child(3):not(.active):hover,
 #userinfo_username .sub span:nth-child(8):not(.active):hover {
     background-color: var(--b503);}
-#menu li:nth-child(4):not(.active) a:hover,
-#userinfo_minor li:nth-child(4):not(.active) a:hover,
+#menu li:nth-child(4):not(.active):hover,
+#userinfo_minor li:nth-child(4):not(.active):hover,
 #userinfo_username .sub span:nth-child(7):not(.active):hover {
     background-color: var(--b504);}
-#menu li:nth-child(5):not(.active) a:hover,
-#userinfo_minor li:nth-child(5):not(.active) a:hover,
+#menu li:nth-child(5):not(.active):hover,
+#userinfo_minor li:nth-child(5):not(.active):hover,
 #userinfo_username .sub span:nth-child(6):not(.active):hover {
     background-color: var(--b505);}
-#menu li:nth-child(6):not(.active) a:hover,
-#userinfo_minor li:nth-child(6):not(.active) a:hover,
+#menu li:nth-child(6):not(.active):hover,
+#userinfo_minor li:nth-child(6):not(.active):hover,
 #userinfo_username .sub span:nth-child(5):not(.active):hover {
     background-color: var(--b506);}
-#menu li:nth-child(7):not(.active) a:hover,
-#userinfo_minor li:nth-child(7):not(.active) a:hover,
+#nav_logout:hover,
+#menu li:nth-child(7):not(.active):hover,
+#userinfo_minor li:nth-child(7):not(.active):hover,
 #userinfo_username .sub span:nth-child(4):not(.active):hover {
     background-color: var(--b507);}
-#menu li:nth-child(8):not(.active) a:hover,
-#userinfo_minor li:nth-child(8):not(.active) a:hover,
+#nav_donate a:hover,
+#menu li:nth-child(8):not(.active):hover,
+#userinfo_minor li:nth-child(8):not(.active):hover,
 #userinfo_username .sub span:nth-child(3):not(.active):hover {
     background-color: var(--b508);}
-#menu li:nth-child(9):not(.active) a:hover,
-#userinfo_minor li:nth-child(9):not(.active) a:hover,
+#nav_useredit:hover,
+#menu li:nth-child(9):not(.active):hover,
+#userinfo_minor li:nth-child(9):not(.active):hover,
 #userinfo_username .sub span:nth-child(2):not(.active):hover {
     background-color: var(--b509);}
-#menu li:nth-child(10):not(.active) a:hover,
-#userinfo_minor li:nth-child(10):not(.active) a:hover,
+#nav_userinfo:hover,
+#menu li:nth-child(10):not(.active):hover,
+#userinfo_minor li:nth-child(10):not(.active):hover,
 #userinfo_username .sub span:nth-child(1):not(.active):hover {
     background-color: var(--b5010);}
 

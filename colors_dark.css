@@ -461,9 +461,7 @@ input#FLTorrent {
 
 .global_buffs .color_green .fa,
 .global_buffs .color_purple .fa,
-.global_buffs .color_yellow .fa {
-    color: #ed5166;}
-
+.global_buffs .color_yellow .fa,
 .global_buffs .color_green .buff_text,
 .global_buffs .color_purple .buff_text,
 .global_buffs .color_yellow .buff_text {
@@ -990,8 +988,10 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
 #color_downloaded:hover .torrent_info_tags,
 #color_downloaded:hover a,
 #torrents .thin.torrent_history table tbody tr.owner td a[title="View Torrent"]:hover,
-a:hover, #userinfo_minor li a:hover,
+a:hover,
+a:hover i,
 a:hover span,
+#userinfo_minor li a:hover,
 .tags >a:hover,
 #requests .thin > table >tbody >tr.colhead_dark >td >a >strong:hover,
 #clickable:not([class="overlay"]):hover >h3,
