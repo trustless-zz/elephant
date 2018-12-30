@@ -26,19 +26,19 @@
     --input-shadow: inset 1px 1px 2px var(--header-shadow-color);}
 
 @font-face {
-    font-family: "SourceSansPro";
-    src: url(SourceSansPro-Regular.ttf);}
+    font-family: "OpenSans";
+    src: url(OpenSans-Regular.ttf);}
 @font-face {
-	font-family: "SourceSansPro";
-	src: url(SourceSansPro-Italic.ttf);
+	font-family: "OpenSans";
+	src: url(OpenSans-Italic.ttf);
 	font-style: italic;}
 @font-face {
-	font-family: "SourceSansPro";
-	src: url(SourceSansPro-SemiBold.ttf);
+	font-family: "OpenSans";
+	src: url(OpenSans-SemiBold.ttf);
 	font-weight: 600;}
 @font-face {
-	font-family: "SourceSansPro";
-	src: url(SourceSansPro-Bold.ttf);
+	font-family: "OpenSans";
+	src: url(OpenSans-Bold.ttf);
 	font-weight: bold;}
 
 /* delete later */
@@ -49,14 +49,14 @@
 /* /delete later */
 
 html {
-    line-height: 1.1em;
-    font-size: 15px;
+    line-height: 1.15em;
+    font-size: 14px;
     scroll-behavior: smooth;}
 body {
     color: var(--text);
     background-color: var(--body);
     background-size: 50px 50px;
-    font-family: SourceSansPro, Helvetica, Arial, sans-serif;
+    font-family: OpenSans, Helvetica, Arial, sans-serif;
     margin: 0;
     min-height: 100%;
     min-width: 950px;
@@ -142,8 +142,6 @@ li {
     -webkit-box-shadow: var(--header-shadow);
     box-shadow: var(--header-shadow);
     border-bottom: var(--main-border);
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-size: 1em;
     height: 72px;
@@ -395,7 +393,7 @@ img {
     transition: .1s linear;}
 #nav_userinfo a.username:after,
 #nav_userinfo:before {
-    transition-delay: .7s;}
+    transition-delay: .8s;}
 #nav_userinfo a.username:hover:after {
     transition-delay: 0s;}
 
@@ -411,7 +409,9 @@ img {
 
 #menu li:hover:active,
 #userinfo_minor li:hover:active,
-#userinfo_username .sub span:hover:active {
+#userinfo_username .sub span:hover:active,
+#userinfo_username >li:hover:active,
+#nav_donate a:hover:active {
     transition: 0s;}
 
 #menu li:nth-child(1):not(.active):hover:active,
@@ -436,7 +436,7 @@ img {
 #userinfo_username .sub span:nth-child(8).active {
     background-color: var(--b3);}
 #menu li:nth-child(4):not(.active):hover:active,
-#userinfo_minor li:nth-child(41):not(.active):hover:active,
+#userinfo_minor li:nth-child(4):not(.active):hover:active,
 #userinfo_username .sub span:nth-child(7):not(.active):hover:active,
 #menu li:nth-child(4).active,
 #userinfo_minor li:nth-child(4).active,
