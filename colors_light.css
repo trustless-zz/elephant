@@ -911,7 +911,10 @@ strong.freeleech_label {
     color: #6441a5 !important;
     text-shadow: 0 0 7px rgba(218, 120, 252, 0.7);}
 #color_personal_freeleech,
-strong.personal_freeleech_label {text-shadow: 0 0 7px;}
+strong.personal_freeleech_label,
+#color_partial_freeleech,
+strong.partial_freeleech_label {
+    text-shadow: 0 0 7px;}
 #color_reported,
 strong.reported_label {
     color: #ff0000 !important;
