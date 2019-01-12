@@ -3394,6 +3394,7 @@ input[type="button"] {
     margin: 0;}
 #requests #otherop td.label {
     width: 1px;}
+#index #freeleech_time_left #progress_bar,
 #requests .center.box.pad .requests_outer_table input[type="text"] {
     width: 100%;}
 #requests .thin >table td {
