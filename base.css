@@ -5710,6 +5710,29 @@ span.size8 {font-size: 2.5em;line-height: 1em}
 span.size9 {font-size: 2.75em;line-height: 1em}
 span.size10 {font-size: 3em;line-height: 1em}
 
+.forum_post .colhead_dark >td[colspan="2"] {
+    overflow: hidden;}
+.user_title span.size1,
+.user_title span.size2,
+.user_title span.size3,
+.user_title span.size4,
+.user_title span.size5,
+.user_title span.size6,
+.user_title span.size7,
+.user_title span.size8,
+.user_title span.size9,
+.user_title span.size10 {
+    line-height: 19px;}
+.user_title span.size3,
+.user_title span.size4,
+.user_title span.size5,
+.user_title span.size6,
+.user_title span.size7,
+.user_title span.size8,
+.user_title span.size9,
+.user_title span.size10 {
+    vertical-align: middle;}
+
 .body.similar ul.nobullet li span.similar_votes:hover:before {
     position: absolute;
     content: '';
@@ -6699,8 +6722,8 @@ tr.likes td {
 .forum_post tbody tr td[id^="likers_"] {
     padding: 5px;}
 #forums .colhead_dark div[id*="bar"] {
-    margin: -1px 0 -2px 0;}
-#forums .colhead_dark div[id*="bar"] * {
+    margin: 1px 0 -2px 0;}
+#forums .colhead_dark div[id*="bar"] a {
     margin-right: 5px;}
 #forums .sub {visibility: hidden;}
 #forums blockquote {
