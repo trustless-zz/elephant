@@ -6790,11 +6790,17 @@ a[onclick="BBCode.spoiler(this);"] {
 #userhistory .thin table[id^="post"] tbody tr td.body img,
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
     max-width: 1000px !important;}
+
+/* td.avatar gets 210px width sometimes, can't tell why yet */
+#forums .forum_post .body >div[id^="content"] {
+    min-width: 1029px;}
 /** /forums **/
 
 
 /* widescreen */
 @media screen and (min-width: 1320px) {
+#forums .forum_post .body >div[id^="content"] {
+    min-width: 1129px;}
 .global_buffs_shop_main >.items_table:not(#existing_buff_pots) {
     width: 1037px;}
 #shop_search #search_query {
