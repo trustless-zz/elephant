@@ -199,7 +199,7 @@ overflow: auto;}
 
 #wrapper {
 	display: block;
-	width: 1200px;
+	width: 1200px !important; /* !important in case if holidayeffects is applied to #wrapper */
 	margin: 0 auto;}
 
 #userinfo {
@@ -6505,7 +6505,8 @@ textarea {
 #inbox .comp td {padding: 0;}
 #inbox .userclasses {float: left; width: 25%;}
 #inbox #preview {
-    box-shadow: none;}
+    box-shadow: none;
+    text-align: left;}
 #inbox #preview + #buttons >* {
     margin-left: 5px;}
 /** /inbox **/
@@ -6863,8 +6864,10 @@ a[onclick="BBCode.spoiler(this);"] {
     width: 183.6px;}
 #recommended #vanityhouse tbody tr td a img {
     max-width: 232px !important;}
-#extra1, #wrapper, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #collections .thin #reply_box .box.pad, .thin, #gazelles #wrapper #content .thin table.gazelles_art_display {
+#extra1, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #collections .thin #reply_box .box.pad, .thin, #gazelles #wrapper #content .thin table.gazelles_art_display {
     width: 1300px;}
+#wrapper {
+    width: 1300px !important;}/* !important in case if holidayeffects is applied to #wrapper */
 .torrent_table a.removebookmark,
 .torrent_table a.addbookmark {
     text-indent: -1300px;}
