@@ -526,7 +526,7 @@ overflow: auto;}
 	font-size: 10pt;
 	border: 0 solid #1a1a1a;}
 
-#index #wrapper #content .thin .main_column_bg .main_column .box {
+#index .thin .main_column_bg .main_column .box {
 	margin-top: 0;
 	margin-bottom: 25px;
 	overflow: visible; /* for #markread to be seen outside */}
@@ -588,7 +588,7 @@ width:100%;
     max-height: 250px;
     max-width: 280px !important;}
 
-#index #wrapper #content .thin .sidebar .box .colhead_dark {
+#index .sidebar .box .colhead_dark {
 	background: none;
 }
 
@@ -4239,7 +4239,7 @@ input[type="button"] {
 #torrents tr.colhead.nobr td {border: none !important;}
 #torrents .nobr {white-space: nowrap;}
 
-#index #wrapper #content .thin .sidebar .box .colhead_dark {padding: 7px 0 6px 0;}
+#index .sidebar .box .colhead_dark {padding: 7px 0 6px 0;}
 #torrents .sidebar .box.box_freeleech {margin-bottom: 0 !important;}
 #requests .sidebar .box .head strong {font-size: 12pt;}
 #collections .sidebar .box .head strong,
@@ -4489,14 +4489,14 @@ input[type="button"] {
 /* buttons & hovers */
 .head[title="Click to expand/collapse"]:before,
 #index #recommended .head:before,
-#index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before,
+#index .thin .main_column_bg .main_column .box[class="box news_post"] .head:before,
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before,
 #torrents #requests tbody tr.colhead >td:before {
     transition: opacity 0.15s;}
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after, 
 .head[title="Click to expand/collapse"]:before, 
 #index #recommended .head:before, 
-#index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, 
+#index .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, 
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, 
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, 
 .edition_info:not([colspan="7"]):not([colspan="9"]):before, 
@@ -4525,7 +4525,7 @@ input[type="button"] {
     transition: opacity 0.1s;}
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 872px;}
-.head[title="Click to expand/collapse"]:hover:before, #index #recommended .head:hover:before, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover:before, #torrents #requests tbody tr.colhead >td:hover:before {
+.head[title="Click to expand/collapse"]:hover:before, #index #recommended .head:hover:before, #index .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover:before, #torrents #requests tbody tr.colhead >td:hover:before {
     opacity: 1;
     transition: opacity 0.15s;}
 .edition_info:hover:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:hover:before {
@@ -4539,13 +4539,13 @@ input[type="button"] {
 	height: 12px;}
 .head[title="Click to expand/collapse"], #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"], #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a, #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span >a, #torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1), #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"], #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"], .edition_info, #collections .thin.collections .main_column #torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"], #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] {
     position: relative;}
-#index .newsdate, #index #wrapper #content .thin .main_column_bg .main_column .box .head span.time, .head[title="Click to expand/collapse"] strong, #index #recommended .head strong, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] strong, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong, .edition_info strong {
+#index .newsdate, #index .thin .main_column_bg .main_column .box .head span.time, .head[title="Click to expand/collapse"] strong, #index #recommended .head strong, #index .thin .main_column_bg .main_column .box[class="box news_post"] .head strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] strong, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] strong, .edition_info strong {
     z-index: 2;}
 .head[title="Click to expand/collapse"] strong, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] strong {
 	position: absolute;
     width: 100%;
     left: 0;}
-.head[title="Click to expand/collapse"], #index #recommended .head, #index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head {
+.head[title="Click to expand/collapse"], #index #recommended .head, #index .thin .main_column_bg .main_column .box[class="box news_post"] .head {
     min-height: 28px;}
 #user .head[title="Click to expand/collapse"] {
 	min-height: 25px;}
@@ -4919,11 +4919,11 @@ span.user_title span[style="font-family: cursive;"] {
     right: 10px;
     margin-top: unset;
     padding-right: unset;}
-#index #wrapper #content .thin .main_column_bg .main_column .box .head {
+#index .thin .main_column_bg .main_column .box .head {
     position: relative;
     display: flex;
     padding: 9px 10px 8px 10px;}
-#index #wrapper #content .thin .main_column_bg .main_column .box .head span.time {
+#index .thin .main_column_bg .main_column .box .head span.time {
     font-family: neuzite, sans-serif;
     font-style: italic;
     top: 18px;
@@ -4931,12 +4931,12 @@ span.user_title span[style="font-family: cursive;"] {
     text-align: right;
     position: absolute;
     right: 10px;}   
-#index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"] .head strong:before {
+#index .thin .main_column_bg .main_column div[class="box news_post"] .head strong:before {
     content: ' ';
     width: 82px;
     float: right;
     height: 5px;}
-#index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong:before {
+#index .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong:before {
     content: ' ';
     width: 147px;
     float: right;
@@ -4954,9 +4954,9 @@ span.user_title span[style="font-family: cursive;"] {
     text-align: center;}
 #recommended #vanityhouse tbody tr td a img {
     max-width: 207px !important;}
-#index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong{
+#index .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong{
     text-indent: 143px;}
-#index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"] .head strong {
+#index .thin .main_column_bg .main_column div[class="box news_post"] .head strong {
     text-indent: 89px;}
 #gazelles #gazelleview {
     background: none;
@@ -5195,7 +5195,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     top: 14px;}
 
 /* flexible #index */
-#index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"] .head strong, #index #wrapper #content .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong {
+#index .thin .main_column_bg .main_column div[class="box news_post"] .head strong, #index .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong {
     width: 98.89%;}
 #index div[id^="news"] div[id^="newsbody"] img {
     max-width: 98% !important;}
@@ -5231,7 +5231,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     opacity: 1;
     transition:  opacity 0.15s;}
 
-#index #wrapper #content .thin .main_column_bg .main_column .box {
+#index .thin .main_column_bg .main_column .box {
     overflow: hidden;}
 
 #torrents .box.similar_div .head strong:before {

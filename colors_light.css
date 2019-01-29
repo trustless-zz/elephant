@@ -856,7 +856,7 @@ h2 a,
 
 .head[title="Click to expand/collapse"]:before,
 #index #recommended .head:before,
-#index #wrapper #content .thin .main_column_bg .main_column .box[class="box news_post"] .head:before,
+#index .thin .main_column_bg .main_column .box[class="box news_post"] .head:before,
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before,
 #torrents #requests tbody tr.colhead >td:before {
     background: linear-gradient(to top, #e85066 0%,rgba(42, 79, 101, 0) 100%);}
