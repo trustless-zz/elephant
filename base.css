@@ -456,32 +456,33 @@ overflow: auto;}
     transition: transform  0.1s linear, opacity  0.1s;}
 /** /header hover underlines **/
 
-#torrentscomplete {
-	position: absolute;
-	width: 700px;
-	left: 50%;
-	margin-top: 10px;
-	margin-left: -350px;
-	z-index: 99999;
-	padding-left: 0;}
 
-#torrentscomplete li {
-	text-align: center;
-	font-size: 14pt;
-	font-family: whitney, sans-serif !important;
-	height: 20px;
-	clear: both;
-	width: 100%;
-	padding-top: 7px;
-	padding-bottom: 4px;
-	font-weight: normal;}
-
-#torrentscomplete .highlight {
+#searchbars .search_form {
+    justify-content: center;
+    display: flex;}
+.autocomplete_list {
+    margin-left: -14px;
+    position: absolute;
+    margin-top: 39px;
+    z-index: 99999;
+    padding-left: 0;
+    padding-right: 10px;}
+.autocomplete_list li {
+    padding: 7px 5px 4px 5px;
+    text-align: center;
+    font-size: 14pt;
+    font-family: whitney, sans-serif !important;
+    height: 20px;
+    clear: both;
+    width: 100%;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 20px;}
+.autocomplete_list .highlight {
 	cursor: pointer;}
 
-/* #recommended {
-	display: none;
-} */
 
 #content {
 	width: 1200px;

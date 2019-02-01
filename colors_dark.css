@@ -95,7 +95,7 @@ a,
 input[type=text],
 input[type=search],
 #searchbars ul li form input,
-#torrentscomplete,
+.autocomplete_list,
 .forum_post td.avatar,
 .filter_torrents .box table:nth-child(4),
 .donate_box_header_plat,
@@ -105,7 +105,7 @@ input[type=search],
     background: none;}
 
 #crafting_recipes,
-#torrentscomplete li:nth-child(even),
+.autocomplete_list li:nth-child(even),
 #index .pad,
 .box,
 #reportsv2 .box,
@@ -278,7 +278,7 @@ a[onclick="BBCode.spoiler(this);"]:hover,
 input[type=text],
 input[type=search],
 #searchbars ul li form input,
-#torrentscomplete,
+.autocomplete_list,
 #requests form #otherop,
 .donation_box_wrapper,
 #user .notice,
@@ -306,7 +306,7 @@ input#FLTorrent {
 #searchbars ul li form input{
     color: #757575;}
 
-#torrentscomplete li:nth-child(odd),
+.autocomplete_list li:nth-child(odd),
 #torrents .filter_torrents #platcheckbox td[colspan="5"],
 #forums table.border .cat_list td[colspan="5"],
 #trading_panel .gold_trade #my_gold_trade_amount {
@@ -340,7 +340,7 @@ input#FLTorrent {
 #wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):nth-child(even) {
     background: #000;}
 
-#torrentscomplete .highlight {
+.autocomplete_list .highlight {
     background-color: #ef5165 !important;}
 
 #searchbars ul li form input:focus {
@@ -428,7 +428,7 @@ input#FLTorrent {
 	-moz-box-shadow: 0 0 30px #000 !important;
     box-shadow: 0 0 30px #000 !important;}
 
-#torrentscomplete {
+.autocomplete_list {
 	-webkit-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
     box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);}
