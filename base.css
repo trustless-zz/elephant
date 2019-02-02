@@ -463,7 +463,7 @@ overflow: auto;}
 .autocomplete_list {
     margin-left: -14px;
     position: absolute;
-    margin-top: 39px;
+    margin-top: 30px;
     z-index: 99999;
     padding-left: 0;
     padding-right: 10px;}
