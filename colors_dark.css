@@ -492,6 +492,7 @@ input#FLTorrent {
 .error_message:after {
     background: radial-gradient(at center, #e85066 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
 
+#requests .sticky td:first-child:before,
 .sticky #displayname:before {
     -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
     -moz-filter: drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));

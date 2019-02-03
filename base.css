@@ -2953,6 +2953,7 @@ form textarea, form input {
 #requests img, #artist .sidebar .box >div >img {
     max-width: 300px !important;}
 
+#requests .sticky td:first-child:before,
 .sticky #displayname:before {
     content: "";
     height: 16px;
