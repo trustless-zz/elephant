@@ -5830,6 +5830,9 @@ span.size10 {font-size: 3em;line-height: 1em}
 
 #index .thin #clans {
     margin-bottom: 25px;}
+#clans .large_progress_bar {
+    display: flex;
+    justify-content: space-between;}
 #clans .large_progress_bar .main_bar.clan_1_bar {
     animation: expandWidth 0.7s;
     animation-fill-mode: forwards;
