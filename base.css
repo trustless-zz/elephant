@@ -5383,7 +5383,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     left: 0;
     width: 84.9%;}
 
-#requests .colhead_dark >td strong {
+#requests table.border .colhead_dark >td strong {
     font-weight: normal;
     white-space: nowrap;
     font-size: 12pt;}
