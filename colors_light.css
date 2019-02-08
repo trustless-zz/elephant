@@ -112,9 +112,11 @@ table,
 .filter_torrents .box table:nth-child(4),
 .donate_box_header_plat,
 .torrent_table tr.group_torrent,
-#trading_panel div.gold_trade:before {
+#trading_panel div.gold_trade:before,
+#header #alerts .blend {
     background-color: #fff;}
 
+.tooltipster-default,
 #trading_panel .message_box,
 #trading_panel .gold_trade .gold_trade_box_right,
 #trading_panel #items {
@@ -246,6 +248,7 @@ input[type=search]:focus,
 .alertable-cancel {
     color: #000;}
 
+.tooltipster-default,
 #trading_panel .item,
 .trade_table .name_tag,
 .spoilerbox span,
@@ -313,7 +316,8 @@ input#FLTorrent {
 #torrents .userreviews tr:nth-child(even),
 #torrents .thin >.header + table >tbody >tr.rowa:nth-child(even),
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):nth-child(even),
-#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):nth-child(even) {
+#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):nth-child(even),
+#header #alerts a:nth-child(even) {
     background: #e7e7e7;}
 
 .autocomplete_list .highlight {
@@ -381,7 +385,8 @@ input#FLTorrent {
 #trading_panel #items,
 .trade_table,
 #trading_panel div.gold_trade:before,
-#trading_panel .message_box {
+#trading_panel .message_box,
+#header #alerts .blend {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
@@ -404,6 +409,7 @@ input#FLTorrent {
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7) !important;
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7) !important;}
 
+.tooltipster-default,
 .autocomplete_list {
 	-webkit-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
 	-moz-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
@@ -607,6 +613,7 @@ blockquote,
 #torrents #torrentbrowse #torrent_table tbody tr[class^="group group_"]:hover {
     box-shadow: inset 0.5px 0.5px 0 1.5px #969696;}
 
+.tooltipster-default,
 .thin.top10_torrents div:not(.center) tr:not(.colhead) td,
 .thin.top10_games div:not(.center) tr:not(.colhead) td,
 .bbcode_table_div table.bbcode_table,
@@ -855,6 +862,7 @@ h2 a,
 #requests .thin > table tr td:nth-child(4) span[title] {
 	color: #418b00;}
 
+.head.tooltip[onclick]:before,
 .head[title="Click to expand/collapse"]:before,
 #index #recommended .head:before,
 #index .thin .main_column_bg .main_column .box[class="box news_post"] .head:before,

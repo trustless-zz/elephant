@@ -31,6 +31,8 @@ img[src="static//styles/game_room/images/go_last_read.png"] {
 #forums #content .thin td.unread_locked_sticky {
     background-image: url(icon/lock-sticky-unread-dark.png);}
 
+#header #alerts {
+    background: url(icon/svg/toolbar-light.svg);}
 
 .amigacd32 {
     background: url(icon/svg/amigacd32_light.svg);}

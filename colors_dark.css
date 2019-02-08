@@ -129,9 +129,11 @@ table,
 #torrents .center form,
 #requests #request_comments #reply_box,
 #rules .thin form.search_form,
-#trading_panel div.gold_trade:before {
+#trading_panel div.gold_trade:before,
+#header #alerts .blend {
     background-color: #1f2023;}
 
+.tooltipster-default,
 #trading_panel .message_box,
 #trading_panel .gold_trade .gold_trade_box_right,
 #trading_panel #items {
@@ -270,6 +272,7 @@ a[onclick="BBCode.spoiler(this);"]:hover,
 .no_access:before,
 .spoilerbox span {
     color: #000 !important;}
+.tooltipster-default,
 #trading_panel .item,
 .trade_table .name_tag,
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
@@ -337,7 +340,8 @@ input#FLTorrent {
 #torrents .userreviews tr:nth-child(even),
 #torrents .thin >.header + table >tbody >tr.rowa:nth-child(even),
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):nth-child(even),
-#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):nth-child(even) {
+#wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):nth-child(even),
+#header #alerts a:nth-child(even) {
     background: #000;}
 
 .autocomplete_list .highlight {
@@ -405,7 +409,8 @@ input#FLTorrent {
 #trading_panel #items,
 .trade_table,
 #trading_panel div.gold_trade:before,
-#trading_panel .message_box {
+#trading_panel .message_box,
+#header #alerts .blend {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -628,6 +633,7 @@ blockquote,
 #torrents #torrentbrowse #torrent_table tbody tr[class^="group group_"]:hover {
     box-shadow: inset 0.5px 0.5px 0 1.5px #696969;}
 
+.tooltipster-default,
 .thin.top10_torrents div:not(.center) tr:not(.colhead) td,
 .thin.top10_games div:not(.center) tr:not(.colhead) td,
 .bbcode_table_div table.bbcode_table,
@@ -868,6 +874,7 @@ textarea,
 #requests .thin > table tr td:nth-child(4) span[title] {
 	color: #418b00;}
 
+.head.tooltip[onclick]:before,
 .head[title="Click to expand/collapse"]:before,
 #index #recommended .head:before,
 #index .thin .main_column_bg .main_column .box[class="box news_post"] .head:before,
