@@ -6831,9 +6831,10 @@ a[onclick="BBCode.spoiler(this);"] {
     visibility: hidden;
     transition-delay: .5s;}
 #header #alerts a {
-    padding: 5px;
+    padding: 0 5px;
     font-family: neuzite, sans-serif;
     font-size: 10pt;
+    line-height: 20pt;
     font-weight: normal;
     white-space: nowrap;
     display: block;}
@@ -6841,6 +6842,7 @@ a[onclick="BBCode.spoiler(this);"] {
 .tooltipster-default {
 	border-radius: 0px !important;}
 .tooltipster-default .tooltipster-content {
+    padding: 4px 5px 3px 5px !important;
     font-family: neuzite, sans-serif !important;
 	font-size: 9pt !important;}
 

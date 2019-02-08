@@ -80,7 +80,8 @@ a,
 #downloaded_table tr:not(.colhead):hover,
 #seeding_table tr:not(.colhead):hover,
 #snatched_table tr:not(.colhead):hover,
-#snatched_not_seeding_table tr:not(.colhead):hover {
+#snatched_not_seeding_table tr:not(.colhead):hover,
+#header #alerts a:hover {
     outline: 1px solid #696969;
     outline-offset: -1px;}
 
