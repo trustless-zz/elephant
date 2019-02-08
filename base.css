@@ -5455,6 +5455,7 @@ img[src="static/common/symbols/donor.png"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/donor.svg');}
+img[src="https://gazellegames.net/static/common/symbols/disabled.png"],
 img[src="static/common/symbols/disabled.png"] {
     height: 13px;
     background-repeat: no-repeat;
