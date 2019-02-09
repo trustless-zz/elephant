@@ -6818,10 +6818,11 @@ a[onclick="BBCode.spoiler(this);"] {
     height: 28px;
     opacity: .7;
     text-align: left;
-    font-size: 0;}
+    font-size: 0;
+    transition: .1s;}
 #header #alerts:hover {
     opacity: 1;}
-#header #alerts:hover .blend
+#header #alerts:hover .blend,
 #header #alerts .blend:hover {
     visibility: visible;
     transition-delay: 0s;}
