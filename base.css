@@ -7063,7 +7063,7 @@ a[onclick="BBCode.spoiler(this);"] {
     top: 64px;
     margin-left: 464px;}
 #header #alerts {
-    left: 182px;}
+    left: 178px;}
 }
 @media screen and (min-width: 1280px) and (max-width: 1319px) {
 #logo {
@@ -7079,7 +7079,7 @@ a[onclick="BBCode.spoiler(this);"] {
     top: 64px;
     margin-left: 417px;}
 #header #alerts {
-    left: 182px;}
+    left: 178px;}
 }
 @media screen and (max-width: 1399px) and (min-width: 1320px) {
 #userinfo_username {
@@ -7095,7 +7095,8 @@ a[onclick="BBCode.spoiler(this);"] {
     top: 64px;
     margin-left: 450px;}
 #header #alerts {
-    left: 182px;}
+    top: 5px;
+    left: 210px;}
 }
 @media screen and (max-width: 1450px) and (min-width: 1280px) {
 .global_buffs {
@@ -7116,6 +7117,10 @@ a[onclick="BBCode.spoiler(this);"] {
     top: 105px;}
 .clan_trophy img {
     height: 70px;}
+}
+@media screen and (max-width: 1365px) and (min-width: 1320px) {
+.clan_trophy {
+    right: 45px;}
 }
 
 /* individual game styles wip */
