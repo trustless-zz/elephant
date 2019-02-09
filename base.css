@@ -6807,6 +6807,7 @@ a[onclick="BBCode.spoiler(this);"] {
 /** /forums **/
 
 #header #alerts {
+    position: absolute;
     top: 250px;
     left: 157px;
     z-index: 999;
