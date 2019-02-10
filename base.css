@@ -5037,6 +5037,7 @@ span.user_title span[style="font-family: cursive;"] {
     position: relative;}
 #requirements {
     display: none;}
+.thin:not(.others_inventory) .hide_req:before,
 .thin:not(.others_inventory) .no_access:before {
     content: 'Requirements not met';
     font-family: whitney, sans-serif;
@@ -5048,6 +5049,9 @@ span.user_title span[style="font-family: cursive;"] {
     position: absolute;
     bottom: 0;
     left: 0;}
+.no_access input.submit[value="Buy & Use"],
+.hide_req input.submit[value="Buy & Use"] {
+    display: none;}
 
 
 .inventory #items_list:before {

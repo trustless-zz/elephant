@@ -192,6 +192,7 @@ a[onclick="BBCode.spoiler(this);"],
 .body.similar ul.nobullet li span.similar_votes a {
     color: #323232 !important;}
 
+.hide_req:before,
 .no_access:before {
     background: #ff0000;}
 
@@ -270,6 +271,7 @@ input[type=search]:focus,
 a[onclick="BBCode.spoiler(this);"],
 a[onclick="BBCode.spoiler(this);"]:hover,
 #shop li.item_li.nostock .submit_section:before,
+.hide_req:before,
 .no_access:before,
 .spoilerbox span {
     color: #000 !important;}

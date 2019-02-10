@@ -166,6 +166,7 @@ input[type="button"],
 .donate-button-silver,
 .error_message,
 .large_progress_bar,
+.hide_req:before,
 .no_access:before,
 .overlay h2 a:hover {
     color: #fff;}
@@ -175,6 +176,7 @@ a[onclick="BBCode.spoiler(this);"]:hover,
 .body.similar ul.nobullet li span.similar_votes a {
     color: #fff !important;}
 
+.hide_req:before,
 .no_access:before {
     background: #ff0000;}
 
