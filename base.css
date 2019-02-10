@@ -805,7 +805,6 @@ h2 a {
 
 #torrents #vote_matches .head strong span[style="float: right; margin-right: 10px;"] {
     display: none;}
-#torrents #vote_matches .head {cursor: pointer;}
 
 #torrents .colhead td:nth-child(7) {
 	/* display: block; */
@@ -4442,9 +4441,6 @@ input[type="button"] {
 
 #torrents .main_column_bg .main_column #torrent_comments #reply_box .box.pad form#quickpostform #quickreplytext textarea#quickpost {
     max-width: 815px;}
-#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"] {cursor: pointer;}
-#torrents #content .thin .main_column .torrent_table tbody tr.group_torrent td.edition_info {cursor: pointer;}
-#torrents #torrent_table tbody [class^="group_torrent groupid_"] td.edition_info {cursor: pointer;}
 #user #wrapper #content .thin.profile .sidebar .box.box_image.box_image_coverart div a img {max-width: 300px;}
 #user #requests table.border tbody tr.rowa td {text-align: left !important; font-family: neuzite, sans-serif;}
 
@@ -5439,6 +5435,12 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     margin: -10px -1000px -50px -20px;
     z-index: 98;
     position: relative;}
+.prev, .next,
+#index .main_column .head a:not([id="markread"]),
+a.show_torrents_link, 
+#torrents .screenshots >a,
+#torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a {
+    cursor: default;}
 #torrents #requests {
     margin-top: 25px;
     margin-bottom: 25px;}
@@ -5640,11 +5642,6 @@ ul[class="collage_images"] {
 .sidebar .box.box_albumart img,
 #artist .sidebar >.box:first-child div:nth-child(2) img {
     transition: 0.2s;}
-#index .sidebar #dailygazelle img:hover,
-#index .slides_control ul.nobullet img:hover,
-.sidebar .box.box_albumart:hover,
-#artist .sidebar >.box:first-child div:nth-child(2) {
-    cursor: pointer;}
 #torrents .box_albumart p {
     margin-bottom: 38px;}
 #artist .sidebar >.box:first-child div:nth-child(2) img,
