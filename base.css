@@ -6513,9 +6513,6 @@ textarea {
     text-align: left;}
 #inbox #preview + #buttons >input {
     margin-left: 5px;}
-#inbox .box.vertical_space .body[id^="message"] br:nth-child(1),
-#inbox .box.vertical_space .body[id^="message"] br:nth-last-child(3) {
-    display: none;}
 /** /inbox **/
 
 
