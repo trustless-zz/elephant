@@ -534,8 +534,7 @@ a[onclick="BBCode.spoiler(this);"]{
     background-color:#c09a9a !important;}
 
 #crafting_panel .item,
-#crafting_panel .ui-widget-content,
-#equipment .item {
+#crafting_panel .ui-widget-content {
     background: rgba(102, 102, 102, 0.7);}
 #trading_panel .trade_table .notice,
 #trading_panel .item {
@@ -919,6 +918,10 @@ select {
 #trading_panel .message_box ul.bbbutt,
 #trading_panel .message_box textarea {
     background-color: #c4c4c4 !important;}
+
+#equipment .item,
+#equipment .itemslot #purchase {
+    background-color: #515151;}
 /** /COLORS **/
 
 /** TORRENT STATUS COLORS **/
