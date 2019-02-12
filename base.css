@@ -4891,7 +4891,9 @@ span.user_title span[style="font-family: cursive;"] {
     text-shadow: 0 0 7px;}
 
 
-#index .main_column .head a:not([id="markread"]), #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] a, #torrents #requests tbody tr.colhead td a.brackets {
+#index .main_column .head a:not([id="markread"]),
+#forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] a,
+#torrents #requests tbody tr.colhead td a.brackets {
     width: 100%;
     height: 100%;
     display: block;
@@ -4903,6 +4905,9 @@ span.user_title span[style="font-family: cursive;"] {
     z-index: 99;}
 #torrents #requests tbody tr.colhead td a.brackets {
     top: 0;}
+#forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] a {
+    top: 0;
+    cursor: default;}
 
 
 #index .sidebar #freeleech_time_left #progress_bar {
