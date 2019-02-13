@@ -1364,7 +1364,16 @@ td.cats_col {
 
 #torrent_table tbody .group td:nth-child(1) {
 	padding: 5px;
-    width: 20px;}
+    width: 20px;
+    overflow: hidden;
+    position: relative;}
+.torrent_table .show_torrents_link:before {
+    content: '';
+    position: absolute;
+    left: -100px;
+    top: -150px;
+    width: 300px;
+    height: 300px;}
 
 #collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(1) {
     width: 16px;
