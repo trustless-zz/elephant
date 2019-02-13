@@ -6830,19 +6830,21 @@ a[onclick="BBCode.spoiler(this);"] {
     opacity: .7;
     text-align: left;
     font-size: 0;
-    transition: .1s;}
+    transition: .1s;
+    transition-delay: .2s;}
 #header #alerts:hover {
-    opacity: 1;}
-#header #alerts:hover .blend,
-#header #alerts .blend:hover {
-    visibility: visible;
+    opacity: 1;
     transition-delay: 0s;}
 #header #alerts .blend {
     position: absolute;
     width: auto;
     left: 30px;
-    visibility: hidden;
-    transition-delay: .5s;}
+    clip: rect(0, 0, 0, 0);
+    transition-delay: .2s !important;}
+#header #alerts:hover .blend,
+#header #alerts .blend:hover {
+    clip: rect(-30px, 500px, 500px, -30px);
+    transition-delay: 0s !important;}
 #header #alerts a {
     padding: 0 5px;
     font-family: neuzite, sans-serif;
