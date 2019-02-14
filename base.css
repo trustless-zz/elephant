@@ -5512,21 +5512,23 @@ img[alt="Down Votes"][title="Down Votes"] {
     background-repeat: no-repeat;
     background-position: center;
     content: url('icon/svg/downvote.svg');}
-img[alt="Leechers"][title="Leechers"] {
+
+.sign img[title="Leechers"],
+#leechers_icon img,
+.sign img[title="Seeders"],
+#seeders_icon img,
+.sign img[title="Snatches"],
+#snatches_icon img {
+    -webkit-filter: none !important;
+    filter: none !important;
     height: 15px;
+    width: 15px;
+    background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position: center;
-    content: url('icon/svg/leechers.svg');}
-img[alt="Seeders"][title="Seeders"] {
-    height: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/seeders.svg');}
-img[alt="Snatches"][title="Snatches"] {
-    height: 15px;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/snatched.svg');}
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 15px;}
 
 #userhistory img[src="static//styles/game_room/images/go_last_read.png"] {
     vertical-align: sub;}

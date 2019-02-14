@@ -425,6 +425,10 @@ input#FLTorrent {
 #artist #torrent_table >tbody >tr.group:hover {
 	background-color: rgba(62,99,121,0.25) !important;}
 
+#artist .edition_info:hover,
+#bookmarks .edition_info:hover {
+    background-color: #e6e6e6;}
+
 #torrents #torrent_table .group span a,
 .collections .linkbox .selected .pageslink,
 #requests .thin > table tr td a {
