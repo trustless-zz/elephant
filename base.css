@@ -249,7 +249,7 @@ overflow: auto;}
 #userinfo_username {
 	top: 31px;
 	font-size: 13pt;
-	width: 350px;
+	width: 400px;
 }
 
 .donateico strong {
@@ -4957,8 +4957,6 @@ span.user_title span[style="font-family: cursive;"] {
     width: 147px;
     float: right;
     height: 5px;}
-#userinfo_username {
-    width: 330px;}
 
 #index #recommended .head strong {
     width: 100%;}
@@ -6993,8 +6991,6 @@ a[onclick="BBCode.spoiler(this);"] {
     max-width: 1250px;}
 #gazelles #wrapper #content div #gazelleview #torrent_comments #reply_box .box.pad #quickpostform #quickreplytext textarea#quickpost {
     margin-left: 4px !important;}
-#userinfo_username {
-    width: 340px;}
 #gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect {
     left: 0;}
 .inventory #content li.item_li {
@@ -7051,25 +7047,33 @@ a[onclick="BBCode.spoiler(this);"] {
     top: 31px;
     height: 188px;
     margin-left: 49px;}
+#menu {
+    margin-left: 622.5px;}
+#menu ul li {
+    margin-right: 20px;}
 #userinfo_username {
     margin-left: 347px;}
 #userinfo_stats {
     top: 61px;
     margin-left: 345px;}
+#userinfo_minor {
+    margin-left: 797px;}
 }
-@media screen and (min-width: 1320px) and (max-width: 1699px) {
+@media screen and (min-width: 1320px) and (max-width: 1599px) {
 #menu {
     margin-left: 612.5px;}
 #menu ul li{
     margin-right: 22px;}
+#userinfo_minor {
+    margin-left: 787px;}
+}
+@media screen and (min-width: 1320px) and (max-width: 1699px) {
 #searchbars {
     margin-left: 524px;}
 #userinfo_stats, #stats_ratio, #stats_share_score, #stats_hnr, #connectable, #online_irc {
     width: 200px;}
 #userinfo_minor li {
     margin-right: 16px;}
-#userinfo_minor {
-    margin-left: 787px;}
 }
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
 #logo {
@@ -7080,7 +7084,8 @@ a[onclick="BBCode.spoiler(this);"] {
     height: 164px;
     margin-left: 169px;}
 #userinfo_username {
-    margin-left: 370px;}
+    text-align: right;
+    margin-left: 304px;}
 #userinfo_stats {
     top: 64px;
     margin-left: 464px;}
@@ -7096,7 +7101,7 @@ a[onclick="BBCode.spoiler(this);"] {
     height: 164px;
     margin-left: 138px;}
 #userinfo_username {
-    margin-left: 339px;}
+    margin-left: 280px;}
 #userinfo_stats {
     top: 64px;
     margin-left: 417px;}
@@ -7105,7 +7110,8 @@ a[onclick="BBCode.spoiler(this);"] {
 }
 @media screen and (max-width: 1399px) and (min-width: 1320px) {
 #userinfo_username {
-    margin-left: 372px;}
+    margin-left: 290px;
+    text-align: right;}
 #logo {
     top: 58px;
     left: 210px;}
