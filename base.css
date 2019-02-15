@@ -5514,11 +5514,8 @@ img[alt="Down Votes"][title="Down Votes"] {
     content: url('icon/svg/downvote.svg');}
 
 img[title="Leechers"],
-#leechers_icon img,
 img[title="Seeders"],
-#seeders_icon img,
-img[title="Snatches"],
-#snatches_icon img {
+img[title="Snatches"] {
     -webkit-filter: none !important;
     filter: none !important;
     height: 15px;
