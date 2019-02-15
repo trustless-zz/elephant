@@ -5216,6 +5216,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 /* flexible #index */
 #index .thin .main_column_bg .main_column div[class="box news_post"] .head strong, #index .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong {
     width: 98.89%;}
+.wiki_article img,
 #index div[id^="news"] div[id^="newsbody"] img {
     max-width: 98% !important;}
 #index .main_column {
