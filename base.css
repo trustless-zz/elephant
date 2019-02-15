@@ -5513,11 +5513,11 @@ img[alt="Down Votes"][title="Down Votes"] {
     background-position: center;
     content: url('icon/svg/downvote.svg');}
 
-.sign img[title="Leechers"],
+img[title="Leechers"],
 #leechers_icon img,
-.sign img[title="Seeders"],
+img[title="Seeders"],
 #seeders_icon img,
-.sign img[title="Snatches"],
+img[title="Snatches"],
 #snatches_icon img {
     -webkit-filter: none !important;
     filter: none !important;
