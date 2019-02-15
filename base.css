@@ -5514,6 +5514,9 @@ img[alt="Down Votes"][title="Down Votes"] {
     background-position: center;
     content: url('icon/svg/downvote.svg');}
 
+img[title="Downloaded"],
+img[title="Uploaded"],
+img[title="Ratio"],
 img[title="Leechers"],
 img[title="Seeders"],
 img[title="Snatches"] {
