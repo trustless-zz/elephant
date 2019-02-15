@@ -6383,7 +6383,7 @@ textarea {
     position: relative;}
 #torrents .thin .sub {
     visibility: hidden;}
-#torrent_comments >.sub:first-child,
+/* #torrent_comments >.sub:first-child, */
 #torrent_comments >.linkbox:first-child +.sub {
     margin-top: -12px !important;}
 #gazelles #torrent_comments >h1:first-child +.sub,
