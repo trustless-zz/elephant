@@ -317,7 +317,7 @@ input#FLTorrent {
 #wiki .thin >h2 + table[width="100%"][style="margin-bottom:10px;"] tr:not(.colhead):hover,
 #wiki .thin >h2 + .linkbox + .center + br + .linkbox + table tr:not(.colhead):hover,
 #header #alerts a:hover {
-    background: #f3f3f3 !important;}
+    background: #dddddd !important;}
 
 .autocomplete_list .highlight {
     background-color: #ef5165 !important;}
