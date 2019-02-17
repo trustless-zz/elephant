@@ -4088,8 +4088,7 @@ input[type="button"] {
 .profile .box_stats #download {order: 9;}
 
 .profile .box_links {
-	font-size: 1.1em;
-}
+	font-size: 1.1em;}
 
 .profile .box_links ul {
     display: block;
@@ -4099,6 +4098,8 @@ input[type="button"] {
     line-height: 1.5em;
 	width: 95%;
 	float: left;}
+#user .box.box_links li {
+    margin-left: 0;}
 .profile .box_links .profile_link:after {content: ":";}
 .profile .box_links #torrent_history .profile_link:after {content: none;}
 .profile .box_links .profile_link_count {
