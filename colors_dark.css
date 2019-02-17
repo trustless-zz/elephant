@@ -7,6 +7,9 @@
 #shop li.new {
     background: #1f2023 url('icon/temp_new.png') top left no-repeat !important;}
 
+#user img[alt="Tip User"] {
+    -webkit-filter: drop-shadow(0px 0px 1px rgba(255,255,255, .4));
+    filter: drop-shadow(0px 0px 1px rgba(255,255,255, .4));}
 
 /** COLORS **/
 body {
@@ -61,6 +64,11 @@ input[type=search],
 .donate_box_header_plat,
 .torrent_table tr.group_torrent {
     background-color: #000;}
+input[type=text]:focus {
+	background-color: #0a0a0a;}
+select:hover {
+	background-color: #bababa;}
+
 .filter_torrents table.cat_list[width="100%"] {
     background: none;}
 
@@ -240,6 +248,7 @@ a[onclick="BBCode.spoiler(this);"]:hover,
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
     color: #c4c4c4 !important;}
 
+select,
 input[type=text],
 input[type=search],
 #searchbars ul li form input,
@@ -345,12 +354,21 @@ input#FLTorrent {
 .autocomplete_list .highlight {
     background-color: #ef5165 !important;}
 
+textarea:focus,
+select:focus,
+input:focus {
+	-webkit-box-shadow: 0 0 2px #FF8100;
+	-moz-box-shadow: 0 0 2px #FF8100;
+	-ms-box-shadow: 0 0 2px #FF8100;
+	-o-box-shadow: 0 0 2px #FF8100;
+	box-shadow: 0 0 2px #FF8100;
+	outline:none;}
 #searchbars ul li form input:focus {
 	-webkit-box-shadow: 0 0 5px #FF8100;
 	-moz-box-shadow: 0 0 5px #FF8100;
 	-ms-box-shadow: 0 0 5px #FF8100;
 	-o-box-shadow: 0 0 5px #FF8100;
-	box-shadow: 0 0 5px #FF8100;}
+    box-shadow: 0 0 5px #FF8100}
 
 .box,
 .hovereffect,

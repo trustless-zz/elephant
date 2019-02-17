@@ -4066,7 +4066,7 @@ input[type="button"] {
 .profile .box_stats #share_score .stat {background: url("icon/share_score.png") no-repeat left center;}
 #shop img[title="Gold"],
 .profile .box_stats #gold .stat {
-    background: var(--gold) no-repeat left center;
+    background: url('icon/svg/gold.svg') no-repeat left center;
     background-size: 16px 16px;}
 #shop img[title="Gold"] {
     -webkit-box-sizing: border-box;
@@ -4369,6 +4369,10 @@ input[type="button"] {
 #torrents #torrentbrowse #torrent_table.grouping {margin: 8px 0 10px 0;}
 #torrents #torrentbrowse form input.inputtext.smaller {width: 600px;}
 #torrents #torrentbrowse form input.inputtext[name="filelist"] {width: 600px;}
+.filter_torrents input.inputtext.smallest {
+    width: 50px;}
+.filter_torrents input.inputtext.smallest[name="releasegroup"] {
+    width: 135px;}
 
 #user a {cursor: pointer;}
 #user .thin form#userform table.border tbody td.label {font-weight: bold;}
@@ -4649,6 +4653,7 @@ input[type="submit"], input[type="button"], button[type="button"] {
     overflow: visible;}
 
 #user img[alt="Tip User"] {
+    background: url(icon/svg/gold_plus.svg);
     margin: 8px 0 -8px 0;
     height: 32px;
     width: 32px;
