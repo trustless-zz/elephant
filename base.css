@@ -4064,7 +4064,16 @@ input[type="button"] {
 
 .profile .box_stats #ratio .stat {background: url("icon/ratio.png") no-repeat left center;}
 .profile .box_stats #share_score .stat {background: url("icon/share_score.png") no-repeat left center;}
-.profile .box_stats #gold .stat {background: url("icon/coins.png") no-repeat left center;}
+#shop img[title="Gold"],
+.profile .box_stats #gold .stat {
+    background: var(--gold) no-repeat left center;
+    background-size: 16px 16px;}
+#shop img[title="Gold"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    padding-left: 16px;}
 .profile .box_stats #upload .stat {background: url("icon/sword_upload.png") no-repeat left center;}
 .profile .box_stats #download .stat {background: url("icon/shield_down.png") no-repeat left center;}
  
@@ -4639,7 +4648,15 @@ input[type="submit"], input[type="button"], button[type="button"] {
     box-shadow: none;
     overflow: visible;}
 
-#user img[alt="Tip User"] {margin-top: 8px; margin-bottom: -8px;}
+#user img[alt="Tip User"] {
+    margin: 8px 0 -8px 0;
+    height: 32px;
+    width: 32px;
+    background-size: 16px 16px, auto 32px !important;
+    background-repeat: no-repeat !important;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 32px;}
 
 
 /* shadow anti-overlapping trickery */
@@ -5372,6 +5389,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 #recommended #vanityhouse tbody tr td a:nth-child(2):hover {
     text-decoration: underline;}
 
+#user img[alt="Tip User"]:hover,
 #crafting_recipes #items_list .item_li:hover img,
 .ratings:hover,
 .tilt:hover,
