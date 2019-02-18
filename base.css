@@ -3392,7 +3392,10 @@ input[type="button"] {
     font-family: adelle, sans-serif;
     margin-top: 8px;}
 
-
+#requests .requests_outer_table #requests_donate input[type="submit"] {
+    margin-top: 2px;}
+#requests .requests_outer_table input#gold_donation {
+    width: 80px;}
 #requests .main_column_bg .main_column >table {
     margin-top: 6px !important;}
 #requests .center.box.pad {
@@ -4064,16 +4067,18 @@ input[type="button"] {
 
 .profile .box_stats #ratio .stat {background: url("icon/ratio.png") no-repeat left center;}
 .profile .box_stats #share_score .stat {background: url("icon/share_score.png") no-repeat left center;}
-#shop img[title="Gold"],
+img[title="Gold"],
 .profile .box_stats #gold .stat {
     background: url('icon/svg/gold.svg') no-repeat left center;
     background-size: 16px 16px;}
-#shop img[title="Gold"] {
+img[title="Gold"] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 16px;
     height: 16px;
     padding-left: 16px;}
+#requests img[title="Gold"] {
+    vertical-align:text-top;}
 .profile .box_stats #upload .stat {background: url("icon/sword_upload.png") no-repeat left center;}
 .profile .box_stats #download .stat {background: url("icon/shield_down.png") no-repeat left center;}
  
@@ -4658,8 +4663,8 @@ input[type="submit"], input[type="button"], button[type="button"] {
     margin: 8px 0 -8px 0;
     height: 32px;
     width: 32px;
-    background-size: 16px 16px, auto 32px !important;
-    background-repeat: no-repeat !important;
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding-left: 32px;}

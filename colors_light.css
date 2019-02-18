@@ -50,7 +50,8 @@ a,
 
 select,
 input[type=text],
-input[type=search] {
+input[type=search],
+input[type="number"] {
 	background-color: #f5f5f5;}
 select:hover,
 input[type=text]:focus {
@@ -228,6 +229,7 @@ input[type=search]:focus,
 select,
 input[type=text],
 input[type=search],
+input[type="number"],
 #searchbars ul li form input,
 .autocomplete_list,
 #requests form #otherop,
