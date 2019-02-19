@@ -2640,7 +2640,8 @@ span.user_title {
     left: unset;
     filter: none;
     width: 1px;}
-.global_buffs a >* {
+.global_buffs a >i,
+.global_buffs a >div {
     opacity: 0.7;}
 .global_buffs a .buff_text {
     transition: 0.1s;}
