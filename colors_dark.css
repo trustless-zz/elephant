@@ -427,7 +427,8 @@ input:focus {
 .trade_table,
 #trading_panel div.gold_trade:before,
 #trading_panel .message_box,
-#header #alerts .blend {
+#header #alerts .blend,
+#stats .box.pad.center {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
