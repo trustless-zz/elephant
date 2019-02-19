@@ -19,7 +19,8 @@
 /*~~~~~~STYLESHEET~~~~~~*/
 
 html {
-	font-weight: normal;}
+	font-weight: normal;
+    overflow-x: hidden;}
 
 body {
 	overflow-x: hidden;
@@ -116,11 +117,11 @@ z-index:1002;
 overflow: auto;}
 
 #header {
-    width: calc(100% + 250px) !important;
-    margin: 0 !important;
+    width: 1200px;
+    margin: 0 auto !important;
     height: 230px !important;
     position: relative;
-    left: -210px !important;}
+    left: 0;}
 
 #logo {
 	position: relative;
@@ -191,14 +192,12 @@ overflow: auto;}
 	width: 1px;}
 
 #wrapper {
-	display: block;
-	width: 1200px !important; /* !important in case if holidayeffects is applied to #wrapper */
 	margin: 0 auto;}
 
 #userinfo {
 	font-size: 9pt;
 	font-family: whitney, sans-serif;
-	margin-left: -70px;}
+	margin-left: -280px;}
 
 #userinfo_stats, #userinfo_username, #userinfo_minor {
 	position: absolute;}
@@ -217,7 +216,7 @@ overflow: auto;}
 
 #menu {
 	margin-top: -136px;
-	margin-left: 544px;
+	margin-left: 334px;
 	font-family: adelle, sans-serif;
 	font-size: 16pt;
 	width: 928px;}
@@ -372,7 +371,7 @@ overflow: auto;}
 	display: block;
 	width: 75%;
 	margin-top: 135px;
-	margin-left: 424px;}
+	margin-left: 214px;}
 
 #searchbars > ul {
 	width: 1040px;
@@ -2636,7 +2635,7 @@ span.user_title {
 .global_buffs {
     position: absolute;
     top: 145px;
-    right: 16px;
+    right: 0px;
     left: unset;
     filter: none;
     width: 1px;}
@@ -2648,7 +2647,7 @@ span.user_title {
 .clan_trophy {
     position: absolute;
     top: 25px;
-    right: -60px;
+    right: -75px;
     opacity: 0.7;}
 .global_buffs a:hover i.fa.fa-fl-pots {
     filter: drop-shadow(2px 2px 2px #e85066);}
@@ -6855,7 +6854,7 @@ a[onclick="BBCode.spoiler(this);"] {
 #header #alerts {
     position: absolute;
     top: 250px;
-    left: 157px;
+    left: -53px;
     z-index: 999;
     width: 28px;
     background-size: 28px 28px;
@@ -6897,25 +6896,24 @@ a[onclick="BBCode.spoiler(this);"] {
 	font-size: 9pt !important;}
 
 /* widescreen */
-@media (max-width: 1278px) {
-html {
-    width: 1278px;
-    overflow-x: hidden;}
+@media (max-width: 1279px) {
+body {
+    width: 1279px;}
 #header {
     width: 100% !important;
     left: 0 !important;}
 #logo {
-    top: 58px !important;
-    left: -30px !important;}
+    top: 58px;
+    left: 2px;}
 #menu {
     white-space: nowrap;
-    margin-left: 334px !important;}
+    margin-left: 376px;}
 #searchbars {
-    white-space: nowrap;
-    margin-left: 214px !important;}
+    margin-left: 254px;
+    white-space: nowrap;}
 #userinfo {
     white-space: nowrap;
-    margin-left: -65px;}
+    margin-left: -31px;}
 #userinfo_username {
     margin-left: 70px;}
 #userinfo_stats {
@@ -6923,10 +6921,10 @@ html {
     top: 64px;
     margin-left: 207px;}
 #userinfo_minor {
-    margin-left: 523px;}
+    margin-left: 530px;}
 .global_buffs {
-    left: 41.8%;
-    width: 59.2%;
+    left: 34.5%;
+    width: 65.5%;
     top: 105px;}
 .global_buffs>div {
     padding: 0;
@@ -6944,15 +6942,39 @@ html {
 #extra1 span {
     top: 58px;
     height: 164px;
-    margin-left: 138px;}
+    margin-left: 132px;}
 a >.error_message {
     white-space: nowrap;}
 #header #alerts {
     top: 5px;
-    left: -35px;}
+    left: 5px;}
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1319px) {
+body {
+    min-width: 1265px;}
+#logo {
+    top: 58px;
+    left: -30px;}
+#extra1 span {
+    top: 58px;
+    height: 164px;
+    margin-left: 138px;}
+#userinfo_username {
+    margin-left: 280px;}
+#userinfo_stats {
+    top: 64px;
+    margin-left: 417px;}
+#header #alerts {
+    top: 5px;
+    left: -32px;}
 }
 
 @media screen and (min-width: 1320px) {
+body {
+    min-width: 1305px;}
+#header {
+    width: 1300px;}
 #forums .forum_post .body >div[id^="content"] {
     min-width: 1129px;}
 .global_buffs_shop_main >.items_table:not(#existing_buff_pots) {
@@ -7020,8 +7042,6 @@ a >.error_message {
     max-width: 232px !important;}
 #extra1, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #collections .thin #reply_box .box.pad, .thin, #gazelles #wrapper #content .thin table.gazelles_art_display {
     width: 1300px;}
-#wrapper {
-    width: 1300px !important;}/* !important in case if holidayeffects is applied to #wrapper */
 .torrent_table a.removebookmark,
 .torrent_table a.addbookmark {
     text-indent: -1300px;}
@@ -7094,74 +7114,12 @@ a >.error_message {
     background-size: 100% 181.535px;}
 }
 
-@media screen and (min-width: 1700px) and (max-width: 9001px) {
-#logo {
-    top: 43px;
-    left: 21px;}
-#extra1 span {
-    top: 31px;
-    height: 188px;
-    margin-left: -1px;}
-#userinfo_username {
-    margin-left: 297px;}
-#userinfo_stats {
-    top: 61px;
-    margin-left: 295px;}
-#menu {
-    margin-left: 590px;}
-#menu ul li{
-    margin-right: 27px;}
-#userinfo_minor li {
-    margin-right: 22px;}
-#userinfo_minor {
-    margin-left: 741px;}
-#searchbars ul li form input{
-    margin-right: 28px;}
-#searchbars {
-    margin-left: 484px;}
-#userinfo_stats, #stats_ratio, #stats_share_score, #stats_hnr, #connectable, #online_irc {
-    width: 210px;}
-}
-@media screen and (min-width: 1600px) and (max-width: 1699px) {
-#logo {
-    top: 31px;
-    left: 71px;}
-#extra1 span {
-    top: 31px;
-    height: 188px;
-    margin-left: 49px;}
-#menu {
-    margin-left: 622.5px;}
-#menu ul li {
-    margin-right: 20px;}
-#userinfo_username {
-    margin-left: 347px;}
-#userinfo_stats {
-    top: 61px;
-    margin-left: 345px;}
-#userinfo_minor {
-    margin-left: 797px;}
-}
-@media screen and (min-width: 1320px) and (max-width: 1599px) {
-#menu {
-    margin-left: 612.5px;}
-#menu ul li{
-    margin-right: 22px;}
-#userinfo_minor {
-    margin-left: 787px;}
-}
-@media screen and (min-width: 1320px) and (max-width: 1699px) {
-#searchbars {
-    margin-left: 524px;}
-#userinfo_stats, #stats_ratio, #stats_share_score, #stats_hnr, #connectable, #online_irc {
-    width: 200px;}
-#userinfo_minor li {
-    margin-right: 16px;}
-}
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
+body {
+    min-width: 1385px;}
 #logo {
     top: 58px;
-    left: 191px;}
+    left: -19px;}
 #extra1 span {
     top: 58px;
     height: 164px;
@@ -7172,32 +7130,95 @@ a >.error_message {
 #userinfo_stats {
     top: 64px;
     margin-left: 464px;}
-#header #alerts {
-    left: 178px;}
 }
-@media screen and (min-width: 1280px) and (max-width: 1319px) {
+
+@media screen and (min-width: 1600px) and (max-width: 1699px) {
+body {
+    min-width: 1585px;}
 #logo {
-    top: 58px;
-    left: 177px;}
+    top: 31px;
+    left: -139px;}
 #extra1 span {
-    top: 58px;
-    height: 164px;
-    margin-left: 138px;}
+    top: 31px;
+    height: 188px;
+    margin-left: 49px;}
+#menu {
+    margin-left: 412px;}
+#menu ul li {
+    margin-right: 20px;}
 #userinfo_username {
-    margin-left: 280px;}
+    margin-left: 347px;}
 #userinfo_stats {
-    top: 64px;
-    margin-left: 417px;}
-#header #alerts {
-    left: 178px;}
+    top: 61px;
+    margin-left: 345px;}
+#userinfo_minor {
+    margin-left: 797px;}
 }
+
+@media screen and (min-width: 1700px) {
+body {
+    min-width: 1685px;}
+#logo {
+    top: 43px;
+    left: -189px;}
+#extra1 span {
+    top: 31px;
+    height: 188px;
+    margin-left: -1px;}
+#userinfo_username {
+    margin-left: 297px;}
+#userinfo_stats {
+    top: 61px;
+    margin-left: 295px;}
+#menu {
+    margin-left: 380px;}
+#menu ul li{
+    margin-right: 27px;}
+#userinfo_minor li {
+    margin-right: 22px;}
+#userinfo_minor {
+    margin-left: 741px;}
+#searchbars ul li form input{
+    margin-right: 28px;}
+#searchbars {
+    margin-left: 274px;}
+#userinfo_stats, #stats_ratio, #stats_share_score, #stats_hnr, #connectable, #online_irc {
+    width: 210px;}
+}
+
+@media screen and (min-width: 1320px) and (max-width: 1599px) {
+#menu {
+    margin-left: 402px;}
+#menu ul li{
+    margin-right: 22px;}
+#userinfo_minor {
+    margin-left: 787px;}
+}
+@media screen and (min-width: 1320px) and (max-width: 1699px) {
+#searchbars {
+    margin-left: 314px;}
+#userinfo_stats, #stats_ratio, #stats_share_score, #stats_hnr, #connectable, #online_irc {
+    width: 200px;}
+#userinfo_minor li {
+    margin-right: 16px;}
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1409px) {
+#header #alerts {
+    left: 42px;}
+}
+@media screen and (min-width: 1410px) and (max-width: 1599px) {
+#header #alerts {
+    left: 45px;}
+}
+
 @media screen and (max-width: 1399px) and (min-width: 1320px) {
 #userinfo_username {
     margin-left: 290px;
     text-align: right;}
 #logo {
     top: 58px;
-    left: 210px;}
+    left: 0;}
 #extra1 span {
     top: 58px;
     height: 164px;
@@ -7207,12 +7228,12 @@ a >.error_message {
     margin-left: 450px;}
 #header #alerts {
     top: 5px;
-    left: 210px;}
+    left: 0;}
 }
 @media screen and (max-width: 1450px) and (min-width: 1280px) {
 .global_buffs {
-    left: 41.8%;
-    width: 100%;
+    left: 33.5%;
+    width: 66.5%;
     top: 105px;}
 .global_buffs>div {
     padding: 0;
@@ -7224,7 +7245,7 @@ a >.error_message {
 .global_buffs .buff_text .buff_multiplier {
     font-size: 15px;}
 .clan_trophy {
-    right: 25px;
+    right: 0px;
     top: 105px;}
 .clan_trophy img {
     height: 70px;}
@@ -7233,6 +7254,7 @@ a >.error_message {
 .clan_trophy {
     right: 45px;}
 }
+
 
 /* individual game styles wip */
 .master_2639 #logo, .tgroup_6526 #logo, .series_885 #logo, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"], .series_196 #logo, .series_169 #logo, .series_58 #logo, .series_52 #logo, .series_179 #logo, .series_211 #logo, .series_22 #logo, .series_15 #logo, .series_208 #logo, .series_178 #logo, 
