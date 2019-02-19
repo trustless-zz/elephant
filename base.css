@@ -5131,12 +5131,7 @@ span.user_title span[style="font-family: cursive;"] {
     border: none !important;}
 
 /* error message */
-#tools .thin >h2 + .box.pad:nth-child(2),
-#wiki .thin >h2 + .box.pad:nth-child(2),
-#bookmarks .thin >h2 + .box.pad:nth-child(2),
-#torrents .thin >h2 + .box.pad:nth-child(2),
-#forums .thin >h2 + .box.pad:nth-child(2),
-#user .thin >h2 + .box.pad:nth-child(2) {
+.thin >h2 + .box.pad:nth-child(2) {
     background: none;
     box-shadow: none;
     font-size: 16pt;
@@ -6902,6 +6897,61 @@ a[onclick="BBCode.spoiler(this);"] {
 	font-size: 9pt !important;}
 
 /* widescreen */
+@media (max-width: 1278px) {
+html {
+    width: 1278px;
+    overflow-x: hidden;}
+#header {
+    width: 100% !important;
+    left: 0 !important;}
+#logo {
+    top: 58px !important;
+    left: -30px !important;}
+#menu {
+    white-space: nowrap;
+    margin-left: 334px !important;}
+#searchbars {
+    white-space: nowrap;
+    margin-left: 214px !important;}
+#userinfo {
+    white-space: nowrap;
+    margin-left: -65px;}
+#userinfo_username {
+    margin-left: 70px;}
+#userinfo_stats {
+    line-height: 17px;
+    top: 64px;
+    margin-left: 207px;}
+#userinfo_minor {
+    margin-left: 523px;}
+.global_buffs {
+    left: 41.8%;
+    width: 59.2%;
+    top: 105px;}
+.global_buffs>div {
+    padding: 0;
+    max-width: 70px;
+    min-width: 70px;
+    line-height: 1.1;}
+.individual_buff:first-child:nth-last-child(9) .fa,
+.individual_buff .fa {
+    font-size: 22px;}
+.clan_trophy {
+    right: 25px;
+    top: 105px;}
+.clan_trophy img {
+    height: 70px;}
+#extra1 span {
+    top: 58px;
+    height: 164px;
+    margin-left: 138px;}
+a >.error_message {
+    white-space: nowrap;}
+#header #alerts {
+    top: 5px;
+    left: -35px;}
+}
+
 @media screen and (min-width: 1320px) {
 #forums .forum_post .body >div[id^="content"] {
     min-width: 1129px;}
