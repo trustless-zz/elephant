@@ -348,7 +348,6 @@ tr.likes {
     #userinfo_stats:hover li {
     	display: flex;    }
 	#userinfo_stats {
-		
 		background-size: 28px 28px;
 		top: 58px;
 		background-repeat: no-repeat;
@@ -360,16 +359,12 @@ tr.likes {
 		padding: 0;
 		overflow: visible;
 		z-index: 998;
-		
-		
 		text-align: center !important;
-		
-		
 		display: flex;
 		flex-flow: column;
 		flex-direction: row;
 		flex-wrap: wrap;
-		width: 328px;
+		/* width: 328px; */
 		}
 
 	ul#userinfo_stats:before {
@@ -467,7 +462,8 @@ tr.likes {
 	opacity:1;}
 		
 #header >#searchbars:hover {
-	width:100%;}
+	/* width:100%; */
+	}
 #header >#searchbars:hover >ul {
 	display: flex;}
 #header >#searchbars {
@@ -519,13 +515,11 @@ tr.likes {
 		background-size: contain;}
 
 	#searchbars >ul >li {
-		
-		
-		
-		
-		width: calc(100%/6);
-		min-width: 126px;
-		max-width: 127px;
+		/* width: calc(100%/6); */
+		width: 130px;
+		/* max-width: 127px; */
+		/* top: 58px; */
+		/* left: 177px; */
 		}
 #header >#searchbars input {
     margin: 0;}
@@ -533,8 +527,7 @@ tr.likes {
 	font-size:17px;
 }
 #searchbars ul li form input:focus {
-	position:absolute;
-    z-inder: 999;
+    z-index: 999;
 }
 	#searchbars input[type="text"] {
 		height: 35px;}
@@ -545,7 +538,7 @@ tr.likes {
 	#searchbars ul:hover li {
 		left: 0px;}
 
-.autocomplete_list {margin: 39px 0 0 48px;padding: 0;max-width: 220px;}
+.autocomplete_list {margin: 0;padding: 0;max-width: 220px;left: 0px;top: 0;top: 39px;left: -50px;}
 
 	#searchbars ul:hover li ul li {
 		margin: 0;
@@ -775,6 +768,9 @@ tr.likes {
 		left: 0px;
 		margin: 10px auto 0;
 		}
+	#slides img {
+		max-width: 90% !important;
+	}
 	.slides_control {width: 100% !important;}
 	.sidebar #slides ul {width: 100%; margin: 0 auto;}
 	#slides .center a {
@@ -2009,4 +2005,35 @@ tr.likes {
 	#share_score_breakdown .label {
 		margin-left: 2% !important;}
 
+.forum_list {
+    width: 100%;}
+
+}
+
+
+@media screen and (max-width: 400px) {
+    .global_buffs {
+        width: 28px;
+        height: 0;
+        /* min-height: 28px; */
+        background-size: 28px 28px;
+        background-repeat: no-repeat;
+        background-position: top right;
+        flex-direction: row;
+        padding-top: 33px;
+    }
+    .global_buffs:hover {
+    	width: calc(100% - 215px);
+    	height: auto;
+    	}
+    .global_buffs .individual_buff {
+    	display:none;
+    	width: 50%;
+    	margin: 0;
+    	max-height: 55px;
+    	height: auto;
+    }
+    .global_buffs:hover .individual_buff {
+    	display:block;
+    }
 }

@@ -1147,3 +1147,8 @@ a:hover span,
     #menu ul li a {
         color: #255c7c;}    
 }
+@media screen and (max-width: 400px) {
+    .global_buffs .individual_buff {
+        border: 1px solid #e5e5e5;
+        background: #fff;}
+}
