@@ -1123,3 +1123,27 @@ a:hover span,
 .top10_users #views .colhead td:nth-child(11) {
     filter: drop-shadow(0px 0 1px #000);}
 /** /adding contrast to the top10 icons **/
+
+
+@media (max-width: 800px) {
+    #torrents .filter_torrents td.label {
+        background: #e7e7e7;}
+    #torrents .main_column .forum_post .avatar img {
+        border-right: 1px solid #e5e5e5;}
+    #torrents .main_column .forum_post td.body {
+        border-left: 1px solid #e5e5e5;}
+    tr.likes {
+        border-top: 1px solid #e5e5e5;}
+    #torrents .groupoptions a,
+    #torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a,
+    #userinfo_stats li,
+    #userinfo_minor li a,
+    #header .sub a,
+    #menu ul li a {
+        border: 1px solid #e5e5e5;
+        background: #fff;}
+    #userinfo_minor li a,
+    #header .sub a,
+    #menu ul li a {
+        color: #255c7c;}    
+}

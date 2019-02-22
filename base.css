@@ -1884,7 +1884,6 @@ td.cats_col {
 /*user page*/
 
 .thin {
-	width: 1200px;
 	position: relative;}
 
 #user .profile .sidebar {
@@ -6845,10 +6844,6 @@ a[onclick="BBCode.spoiler(this);"] {
 #userhistory .thin table[id^="post"] tbody tr td.body img,
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
     max-width: 1000px !important;}
-
-/* td.avatar gets 210px width sometimes, can't tell why yet */
-#forums .forum_post .body >div[id^="content"] {
-    min-width: 1029px;}
 /** /forums **/
 
 #header #alerts {
@@ -6896,12 +6891,12 @@ a[onclick="BBCode.spoiler(this);"] {
 	font-size: 9pt !important;}
 
 /* widescreen */
-@media (max-width: 1279px) {
+@media (min-width: 801px) and (max-width: 1279px) {
 body {
     width: 1279px;}
 #header {
-    width: 100% !important;
-    left: 0 !important;}
+    width: 100%;
+    left: 0;}
 #logo {
     top: 58px;
     left: 2px;}
@@ -6968,6 +6963,9 @@ body {
 #header #alerts {
     top: 5px;
     left: -32px;}
+/* td.avatar gets 210px width sometimes, can't tell why yet */
+#forums .forum_post .body >div[id^="content"] {
+    min-width: 1029px;}
 }
 
 @media screen and (min-width: 1320px) {
@@ -7040,7 +7038,7 @@ body {
     width: 183.6px;}
 #recommended #vanityhouse tbody tr td a img {
     max-width: 232px !important;}
-#extra1, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #collections .thin #reply_box .box.pad, .thin, #gazelles #wrapper #content .thin table.gazelles_art_display {
+#extra1, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #collections .thin #reply_box .box.pad, #gazelles #wrapper #content .thin table.gazelles_art_display {
     width: 1300px;}
 .torrent_table a.removebookmark,
 .torrent_table a.addbookmark {

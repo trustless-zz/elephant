@@ -1120,3 +1120,27 @@ a:hover span,
 .master_2719 #logo:hover, .master_7884 #logo:hover, .master_117 #logo:hover, .franchise_2773 #logo:hover {
 	box-shadow: inset 0 0 45px #000;}
 /** /GAME STYLES **/
+
+
+@media (max-width: 800px) {
+    #torrents .filter_torrents td.label {
+        background: #000;}
+    #torrents .main_column .forum_post .avatar img {
+        border-right: 1px solid #1a1a1a;}
+    #torrents .main_column .forum_post td.body {
+        border-left: 1px solid #1a1a1a;}
+    tr.likes {
+        border-top: 1px solid #1a1a1a;}
+    #torrents .groupoptions a,
+    #torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a,
+    #userinfo_stats li,
+    #userinfo_minor li a,
+    #header .sub a,
+    #menu ul li a {
+        border: 1px solid #1a1a1a;
+        background: #1f2023;}
+    #userinfo_minor li a,
+    #header .sub a,
+    #menu ul li a {
+        color: #c09a9a;}    
+}

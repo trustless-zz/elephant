@@ -1,0 +1,2012 @@
+﻿@-webkit-keyframes fadeOut800 {
+    0% {
+        opacity: 1;}
+    100% {
+        opacity: 0;}
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+    html {
+    overflow-x: unset;}
+#header {
+    white-space: nowrap;}
+.forum_post td.avatar, #userhistory .forum_post tbody tr .body, #inbox #messageform input + table, #collections #manage_collage_table >tbody tr:nth-last-child(2) {
+    margin: 0;
+    border: none !important;}
+.forum_post td.avatar {
+    border-right: none !important;}
+tr.likes {
+    opacity: .7;}
+#forums #contentpreview img, #userhistory .thin table[id^="post"] tbody tr td.body img, #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
+    max-width: 95% !important;}
+
+
+	#content {
+		top: 11px;
+		position: relative;
+		}
+
+	h2 {
+		height: auto;
+		width: 99%;}
+#recommended #vanityhouse tbody tr td a img {
+	max-width: 100% !IMPORTANT;
+}
+	img {
+		max-width: 100% !important;}
+
+	form {
+		max-width: 100%;
+		}
+
+	.box {
+		width: 100%;
+		}
+
+	td.nobr {
+		white-space: normal;}
+
+	input, textarea {
+		max-width: 300px !important;}
+
+#index .thin .main_column_bg .main_column div[class="box news_post"] .head strong, #index .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong {
+    width: 98.5%;}
+
+#userinfo_stats li span {
+	padding-left: 3px;
+}
+#userinfo_minor li a {
+	
+	
+	
+	
+	padding: 0 5px;
+	
+	text-align: center;
+	
+	width: 150px;
+	line-height: 37px;
+	
+}
+	a {
+	  overflow-wrap: break-word;
+	  word-wrap: break-word;
+	  word-break: break-word;
+	  -ms-hyphens: auto;
+	  -moz-hyphens: auto;
+	  -webkit-hyphens: auto;
+	  hyphens: auto;
+	  }
+#stats_ratio, #stats_gold, #stats_leeching, #stats_seeding {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+#stats_gold a:before, #stats_leeching a:before, #stats_seeding a:before, #stats_share_score a:before, #stats_hnr a:before, #online_irc a:before {
+    content: '';
+    top: 0;
+    left: -200px;
+    width: 600px;
+    height: 46px;
+    position: absolute;
+}
+	.box, table {
+		
+		}
+
+	::-webkit-scrollbar {
+		width: 12px;}
+
+	::-webkit-scrollbar-track {
+	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	    border-radius: 10px;}
+
+	::-webkit-scrollbar-thumb {
+    		border-radius: 10px;
+	    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.4);}
+
+	::-webkit-scrollbar-corner {
+		background-color:transparent;
+		}
+
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) span:nth-child(1), #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] >span:nth-child(1), #collections .thin.collections .main_column #torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >span:nth-child(1), #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >span, #bookmarks .group_torrent td[colspan="3"] >span,
+#torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent >td:first-child >a, #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column #torrent_table >tbody >tr[class^="group_torrent"] >td[colspan="3"] >a, #artist #torrent_table >tbody >tr.group_torrent >td[colspan="2"] >a, #collages >tbody >tr:nth-child(n+2) >td:nth-child(1) >a,
+#bookmarks .group_torrent td[colspan="3"] >a {
+    padding: 0;
+    margin: 0 !important;
+    }
+
+
+	span.size4 img {
+		float: none;
+		padding: 5px 5px 5px 0;
+		box-shadow: none !important;}
+
+	span.size5 img {
+		float: none;
+		padding:5px 0 5px 5px;
+		box-shadow: none !important;}
+
+	.global_buffs .fa {
+		font-size: 20px;}
+#torrents .box.similar_div ul.nobullet, #torrents #vote_matches ul.nobullet {
+    width: 100%;
+}
+#torrents .box.similar_div li.similar_group {
+    width: 20%;
+}
+#torrents li.similar_group {
+	width: 20%;
+}
+#torrents li.similar_group >a {
+    width: 100%;
+    padding: 0;
+    
+}
+#torrents li.similar_group >a img {
+    padding: 5px;
+    width: calc(100% - 10px);
+}
+
+#torrents .similar_votes {
+	width: 100%;
+	margin-left: -100%;
+}
+	.global_buffs .buff_text{
+		font-size: 0.8em;}
+
+	.global_buffs .individual_buff i {
+		display: none;}
+
+	.clan_trophy img {
+		height: 80px;}
+
+
+	.bbbutt {
+	    height: auto;
+		width: 93%;}
+
+	.bbbutt li {
+		width: 13.5%;
+		float: left;
+		padding: 7px 0;}
+
+	.bbbutt li select {
+		margin-top: 5px;}
+
+	.bbbutt li:last-of-type {
+		display: block;
+		float: none;
+		margin-left: 10px;}
+
+
+	#header {
+		width: 95%;
+		height: 110px !important;
+		}
+
+	#header #logo {
+		display: inline-block;
+		margin: 10px 0 0 0;
+		width: 76px;
+		height: 76px;
+		}
+
+	#header #logo a {
+		
+		
+		width: 76px;
+		height: 76px;
+		}
+
+	#announcement {
+		font-size: 1.1em;}
+
+	.clan_trophy {
+		display: none;}
+
+
+	#userinfo_username {
+		left: 0px;
+		margin-left: 0px;
+		margin-top: 17px;}
+
+	#userinfo_username li {
+		
+		margin-right: 5px;
+		top: 38px;
+		position: relative;
+		}
+#header .sub:hover span {
+	display:block;}
+#header .sub span {
+    
+    display: none;
+    margin-top: 38px;
+    margin-bottom: -38px;
+    
+    
+}
+#header .sub a {
+    display: block !important;
+    height: 100%;
+    width: 115px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 17px;
+    
+    padding: 0 5px;
+    
+}
+
+	#us_pop span {
+		display: block;
+		width: 100%;
+		
+		
+		
+		
+		}
+
+	ul#userinfo_minor{
+		
+		background-size: 28px 28px;
+		width: 28px;
+		height: 28px;
+		
+		left: 134px;
+		top: 15px;
+		z-index: 998;
+		padding: 0;
+		margin: 0;
+		
+		background-position: top left;
+		
+		
+		background-repeat: no-repeat;
+		}
+
+	ul#userinfo_minor:hover {
+		
+		
+		
+		
+		}
+
+	ul#userinfo_minor li {
+		
+		
+		font-size: 18px;
+		
+		margin: 81px 0 -81px 0px;
+		display: none;
+		
+		text-align: center;
+		
+		flex-flow: column;
+		}
+	ul#userinfo_minor:hover li {
+    display: flex;
+    }
+	ul#userinfo_minor.highlighted {
+		background:url("../images/personred.png") no-repeat !important;
+		background-size: 25px auto !important;
+		background-position: 0px 0px !important;}
+
+#userinfo {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+	#userinfo_username {
+		width: 0;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		top: 58px;
+		left: 0;
+		
+		}
+#header .sub {
+    height: 28px;
+    width: 28px;
+    background-size: 28px 28px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    visibility: visible !important;
+    top: 0px;
+    left: 91px;
+    position: absolute;
+    z-index: 999;
+    }
+
+	#userinfo #userinfo_username .donateico {
+		
+		
+		
+		padding: 0;
+		margin: 0;
+		vertical-align: middle;
+		}
+#userinfo_minor li a:before, #userinfo_minor li a:after, #menu ul li a:before, #menu ul li a:after {
+	content: none;}
+	#userinfo #userinfo_username .donateico a {
+		left: 0px !important;
+		text-shadow: none !important;
+		font-size: 1em !important;}
+	#userinfo_stats:hover {
+    width: 230px;
+    }
+    #userinfo_stats:hover li {
+    	display: flex;    }
+	#userinfo_stats {
+		
+		background-size: 28px 28px;
+		top: 58px;
+		background-repeat: no-repeat;
+		left: 134px;
+		width: 28px;
+		font-size: 16px;
+		height: 28px;
+		margin: 0;
+		padding: 0;
+		overflow: visible;
+		z-index: 998;
+		
+		
+		text-align: center !important;
+		
+		
+		display: flex;
+		flex-flow: column;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 328px;
+		}
+
+	ul#userinfo_stats:before {
+		content: none;
+		margin-top: 0px;
+		display: block;
+		margin-left: -26px;
+		margin-bottom: 8px;}
+
+	ul#userinfo_stats:hover {
+		
+		
+		
+		
+		
+		
+		
+		}
+#stats_seeding {
+
+}
+
+#stats_ratio {
+    order: 1;}
+#connectable {
+    position: relative;
+    order: 7;
+    }
+#stats_seeding {
+    order: 2;
+    }
+#stats_leeching {
+    order: 3;
+    }
+ #stats_hnr {
+    order: 4;
+    }
+ #stats_share_score {
+    order: 5;
+    }
+#stats_gold {
+    order: 7;}
+#online_irc {
+    order: 8;}
+    
+	ul#userinfo_stats li {
+		
+		
+		margin: 38px 0 -38px 0 !important;
+		z-index: 999;
+		
+		
+		width: 220px;
+		
+		
+		
+		line-height: 37px;
+		padding: 0 5px;
+		
+		
+		display: none;
+		
+		
+		
+		justify-content: center;
+		position: relative !important;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		}
+
+	ul#userinfo_stats:hover li {
+		
+		}
+.global_buffs {
+    top: 10px;
+    right: 0;
+    width: calc(100% - 215px);
+    height: 82px;
+    z-index: 9999;
+    direction: rtl;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.global_buffs .individual_buff {
+    padding: 0;
+    margin: 0 0 6px 10px;
+    height: 35px;
+    width: 80px;
+    min-width: unset;
+}
+
+.global_buffs a >i, .global_buffs a >div {
+	opacity:1;}
+		
+#header >#searchbars:hover {
+	width:100%;}
+#header >#searchbars:hover >ul {
+	display: flex;}
+#header >#searchbars {
+	margin: 0 !important;
+	display: inline-block;
+	max-height: 184px;
+	position: absolute;
+	
+	
+	width: 28px;
+	height: 28px;
+	background-size: 28px 28px;
+	background-position: top left;
+	background-repeat: no-repeat;
+	top: 58px;
+	left: 177px;
+	z-index: 999;
+}
+	#header >#searchbars >ul {
+		
+		
+		
+		
+		
+		
+		
+		
+		height: auto;
+		
+		width: 100%;
+		padding: 0;
+		display: none;
+		flex-wrap: wrap;
+		margin-top: 38px;
+		margin-left: -177px;
+		}
+
+	#searchbars ul::before {
+		content:none;
+		margin-top: 8px;
+		display: block;
+		margin-left: -24px;
+		margin-bottom: 8px;}
+
+	#searchbars ul:hover {
+		padding-left: 0px;
+		padding-top:35px;
+		width: 23px;
+		background-size: contain;}
+
+	#searchbars >ul >li {
+		
+		
+		
+		
+		width: calc(100%/6);
+		min-width: 126px;
+		max-width: 127px;
+		}
+#header >#searchbars input {
+    margin: 0;}
+#searchbars ul li form input {
+	font-size:17px;
+}
+#searchbars ul li form input:focus {
+	position:absolute;
+    z-inder: 999;
+}
+	#searchbars input[type="text"] {
+		height: 35px;}
+
+	#searchbars ul:hover li ul li {
+		left: 0px;}
+
+	#searchbars ul:hover li {
+		left: 0px;}
+
+.autocomplete_list {margin: 39px 0 0 48px;padding: 0;max-width: 220px;}
+
+	#searchbars ul:hover li ul li {
+		margin: 0;
+		padding: 10px;
+		max-width: 200px;
+		}
+
+
+	#menu {
+		
+		
+		margin: 0 !important;
+		display: inline-block;
+		max-height: 184px;
+		position: absolute;
+		top: 15px;
+		left: 91px;
+		width: 28px;
+		height: 28px;
+		background-size: 28px 28px;
+		background-position: top left;
+		background-repeat: no-repeat;
+		}
+	#menu:hover {
+		    width: 100%;
+		    }
+
+	#menu ul {
+		width: 100%;
+		flex-wrap: wrap;
+		margin: 0 !important;
+		display: none;
+		
+		
+		padding: 0;
+		
+		
+		top: 81px;
+		left: -91px;
+		position: absolute;
+		}
+
+	#menu:hover ul {
+		display:flex;}
+
+	#menu ul a {
+		text-shadow: none;}
+
+	#menu ul li {
+		
+		
+		background: wheat;
+		
+		z-index: 999;
+		margin:0!important;
+		
+		top:0px;
+		
+		
+		
+		display: block;
+		
+		}
+
+	#menu ul:hover li {;
+		border:0;
+		display:block;
+		margin-top:-1px}
+
+	#menu ul li:first-child {
+		border-top:0}
+
+	#menu ul li a {
+		display:block;
+		font-weight:400;
+		text-decoration:none;
+		position:relative;
+		width: 99px;
+		padding: 6px;
+		height: 24px;
+		line-height: 24px;
+		text-align: center;
+		}
+
+	#menu ul li:hover {
+		border-bottom:none}
+
+#index .main_column:before {
+	content: none;
+}
+
+
+	#announcement {
+		top: 0px;}
+
+#header #alerts {
+    top: 58px;
+    left: 177px;}
+#header #alerts .blend {
+    left: 28px;}
+
+
+	#server_stats,
+	#toplink,
+	#site_debug,
+	#copyright {
+		display: none;}
+
+	#footer {
+		height: 25px;
+		width: 95%;}
+
+	#content {
+		margin-bottom: 0px;}
+
+
+#index .error_message {
+    top: 0px;
+    margin-bottom: 0px;
+}
+#torrents .save_message {
+	width: 100%;
+	padding: 4px 0;
+	}
+	#content  {
+		width: 95%;
+		}
+
+	.thin {
+		display: flex;
+		flex-wrap: wrap;
+		}
+#index .sidebar {
+	    
+	    }
+#user .profile .sidebar {flex-direction: row;}
+#user .box {
+    
+}
+#user .box_main_info {
+    width: 100%;
+}
+#user .box_personal_history .box.box_personal {
+    height: calc(100% - 25px);
+}
+#user .box_personal_history {
+	margin-right: 2%;}
+#user .box_personal_history, #user .box.box_image.box_image_avatar {
+	width: 49%;
+	}
+	.sidebar {
+		float: none !important;
+		width: auto !important;
+		position: inherit !important;
+		order: 2;
+		flex-wrap: wrap;
+		flex-direction: row;
+		
+		display: flex !important;
+		}
+
+	.sidebar img {
+		width: 90%;}
+#index .sidebar #dailygazelle img{
+    max-width: 90% !important;
+    width: auto;
+    max-height: 600px !important;
+    height: auto;
+}
+	#index .main_column, .main_column {
+		float:none;
+		
+		order: 1;
+		}
+
+	.newsdate {
+		display: none;}
+
+	
+	#index .main_column .box:nth-child(3n),
+	#index .main_column .box:nth-child(4n),
+	#index .main_column .box:nth-child(5n),
+	#index .main_column .box:nth-child(6n),
+	#more_news {
+		display:none !important;}
+
+	
+	.sidebar .box {
+		width: 100%;
+		}
+
+	.sidebar .colhead_dark,
+	.head {
+		margin-bottom: 0px;}
+
+#torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after, .head[title="Click to expand/collapse"]:before, .head.tooltip[onclick]:before, #index #recommended .head:before, #index .thin .main_column_bg .main_column .box[class="box news_post"] .head:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, .edition_info:not([colspan="7"]):not([colspan="9"]):before, #torrents #requests tbody tr.colhead >td:before {
+	transition: 0s !important;}
+.head.tooltip[onclick]:hover:before, .head[title="Click to expand/collapse"]:hover:before, #index #recommended .head:hover:before, #index .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover:before, #torrents #requests tbody tr.colhead >td:hover:before, .edition_info:not([colspan="7"]):not([colspan="9"]):before {
+    -webkit-animation: fadeOut800 0.5s linear forwards;
+    -moz-animation: fadeOut800 0.5s linear forwards;
+    -o-animation: fadeOut800 0.5s linear forwards;
+    animation: fadeOut800 0.5s linear forwards}
+
+	#dailygazelle {width: 100%;}
+	#dailygazelle a {margin: 3px 0px;}
+	#dailygazelle .colhead_dark {margin-bottom: 15px;}
+#blogposts {
+    order: 1;
+}
+#dailygazelle {
+    order: 2;
+}
+#slides {
+    order: 3;
+}
+#polcont {
+    order: 4;
+}
+#stats {
+    order: 5;
+}
+	#slides .colhead_dark li {padding-left: 0px;}
+	#slides {width: 49%;margin-right: 2%;order: 3;}
+	.slides_container {
+		height: 315px;
+		width: auto;
+		left: 0px;
+		margin: 10px auto 0;
+		}
+	.slides_control {width: 100% !important;}
+	.sidebar #slides ul {width: 100%; margin: 0 auto;}
+	#slides .center a {
+		font-size: .9em;
+		line-height: 15px;
+		width: 100%;
+		display: inline-block;}
+
+	.sidebar #slides ul a {
+		max-width: 80%;
+		width: 80%;
+		margin: 0 auto;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: inline-block !important;}
+
+	#polcont {width: 49%;}
+	#polcont p {}
+	.poll li {
+		
+		margin-right:0;
+		width: 100%;
+		list-style: none;
+		
+		padding: 5px 0px;
+		}
+	#polcont ul {margin-right: 0px;}
+	#left_poll, #right_poll {display: none;}
+	#index #stats {width: 100%;}
+	#polcont li {padding: 2px 0px;}
+
+
+	.torrent_table a[href*="edit"],
+	#torrents #torrentbrowse .filter_torrents,
+	#torrents #torrentbrowse .torrent_table .colhead,
+	#torrents #content #torrentbrowse div:nth-of-type(2),
+	#torrents #torrentbrowse .torrent_table #groupplatform,
+	#torrents #torrentbrowse .torrent_table a.addbookmark,
+	#torrents #torrentbrowse .torrent_table a.removebookmark,
+	#torrents #torrentbrowse .torrent_table #hyphen,
+	#torrents #torrentbrowse .torrent_table #grouprating,
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(1),					
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(4), 					
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(6),					
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(7) {					
+		display: none;}
+
+.torrent_table {
+    width: auto;}
+
+	#torrents #torrentbrowse .torrent_table .group {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		height: auto;}
+
+	#torrents #torrentbrowse .torrent_table td {
+		display: inline-block;
+		width: 96%;
+		overflow: hidden;
+		border: 0;
+		}
+
+	
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(2) {
+		order: 1;
+		text-align: right !important;
+		border: 0;
+		
+		
+		}
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(2) >div {
+		    display: inline-block;}
+
+	#torrents #torrentbrowse #content .center {
+		text-align:right;
+		padding-right: 10px;
+		width: 50px;}
+
+	
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(3) {
+		order: 2;
+		margin-top: -40px;
+		z-index:2;
+		width: calc(100% - 50px);
+		padding: 15px 5px 0 0;
+		margin-left: 5px;
+		border: 0;
+		}
+
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(3) a {
+		font-size: 2em;}
+
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(3) .tags a {
+		font-size: 1em;
+		margin-left: 0px;
+		line-height: 20px;}
+
+	.tags_ratings {
+		padding: 5px 0;}
+
+	#torrents .tags a {
+		padding-left: 2px;}
+
+	
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(5) {  	
+		order: 3;
+		float: left;
+		width: auto;
+		padding: 0 5px 0 7px;}
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(5):after {
+		content: "\00a0\00a0 |";}
+
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(8) {		
+		order: 4;
+		float: left;
+		width: auto;
+		padding: 0px 0;}
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(8):before {
+		content: "Snatches: ";}
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(8):after {
+		content: "\00a0\00a0 | \00a0";}
+
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(9) {		
+		order: 5;
+		float: left;
+		width: auto;
+		padding: 0px 0;}
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(9):before {
+		content: "Seeders: ";}
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(9):after {
+		content: "";}
+
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(10) { 	
+		order: 6;
+		float: left;
+		width: auto;
+		padding: 0 0 25px;}
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(10):before {
+		content: "\00a0\00a0 | \00a0 Leechers: ";}
+
+	
+	#torrents #torrentbrowse .torrent_table td:nth-of-type(11) {	
+		order: 8;
+		text-align: right;
+		margin-top: -45px;
+		margin-right: 20px;}
+	#torrents #content .notchecked,
+	#torrents #content .checked {
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		background-size: contain;
+		opacity: .5;}
+.filter_torrents .box.pad,
+.filter_torrents {
+	width: auto;}
+	
+	#torrentbrowse {display: flex; flex-direction: column;}
+	#torrents #torrentbrowse .filter_torrents {display: block;}
+	#torrentbrowse form {
+		order: 4;
+		width: 102%;
+		max-width: 102%;
+		}
+	#torrents #content form[name="filter"] {margin: 0 -5px !important;}
+	.filter_torrents h3 {width: 95%;}
+	#torrentbrowse form td {display: block;}
+	#torrentbrowse form td input, #torrentbrowse form td select {margin: 5px;}
+	.filter_torrents.basic tr:nth-of-type(2) td:nth-of-type(3) {top: -2px; left: 20px;}
+
+	#torrents .filter_torrents td.label {
+		text-align: left;
+		width: 100% !important;
+		display: block;
+		padding: 5px;
+		
+		}
+#torrentbrowse form .filter_torrents.advanced .box.pad table tbody > tr > td.label:nth-child(1) {
+	max-width: unset;
+}
+	#torrents .cat_list {width: 100% !important; margin-left: 0px !important;}
+	#torrents .filter_torrents table.cat_list td {display: inline-block; width: 32%;}
+	.filter_torrents.basic .submit span {left: 0px; width: 100%; padding-bottom: 5px;}
+
+	#torrentbrowse .group_torrent {
+	    display: none;}
+
+	.sticky td {border-bottom: none !important;}
+
+
+	#torrents .torrent_notifications .group_torrent {display: block;}
+
+	#torrents .torrent_notifications td:nth-child(2) {width: auto; }
+
+	#torrents .torrent_notifications .colhead,
+	#torrents .torrent_notifications td:nth-child(3),
+	#torrents .torrent_notifications td:nth-child(4),
+	#torrents .torrent_notifications td:nth-child(5),
+	#torrents .torrent_notifications td:nth-child(6)
+		{display: none !important;}
+
+
+	#torrents h2 {width: 90%;}
+#torrents .groupoptions:hover {
+	    width: calc(100% - 33px);
+	    height: auto;
+	    padding-right: 33px !important;
+}
+#torrents .groupoptions {
+    position: absolute;
+    
+    right: 0;
+    top: 5px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 28px;
+    
+    
+    display: flex;
+    
+    z-index: 99;
+    height: 28px;
+    
+    flex-wrap: wrap;
+    direction: rtl;
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    }
+#torrents .groupoptions:hover a {
+	display: block;}
+#torrents .groupoptions a {
+	font-size: 17px;
+	line-height: 37px;
+	white-space: nowrap;
+	
+	padding: 0;
+	display: none;
+	
+	padding: 0 5px;
+}
+
+
+	
+	#torrents .main_column_bg {width: 100%;}
+	#torrents .main_column {width: 100%; padding: 0;}
+	#torrents .sidebar {width: 100%;}
+	#torrents h2 {font-size: 1.2em;}
+	#torrents .sidebar .box {width: 49%; margin-right: 1%;}
+#torrents .sidebar .box {
+    margin-top: 20px;}
+	#torrents #content .new_status {margin: auto 4px;float: none;line-height: 10pt;}
+
+	
+	#torrents .main_column tr.group {
+		display: inline;
+		margin-bottom:0px;}
+.group_torrent td {
+	max-width: unset;}
+	#torrents .main_column td {
+		display: inline;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		}
+#torrents .userreviews #usersreview {
+	display:table-cell;}
+	#torrents .main_column td:nth-child(1) {
+		display:block;
+		}
+	#torrents .main_column td:nth-child(2) {
+		width: auto;
+		float: none;
+		padding: 0px;
+		}
+	#torrents .main_column td:nth-child(3) {
+		margin-left: 0px;
+		min-height: auto;
+		padding: 0px}
+	#torrents .main_column td:nth-child(4) {
+		margin-left: 0px;
+		float: none;
+		
+		}
+	#torrents .main_column td:nth-child(5) {
+		
+		}
+	#torrents .main_column td:nth-child(7) {
+		float: none;
+		margin-left: 0px;
+		display:none;}
+	#torrents .main_column td:nth-child(8) {
+		float: none;
+		margin-left: 0px;}
+	#torrents .main_column td:nth-child(9) {
+		padding-bottom:0px;}
+
+	
+	#grouplinks {height: auto;width: auto;}
+	#torrents .main_column #grouplinks td {
+		padding: 7px 20px 7px 10px;
+		float: left;}
+
+	
+	#torrents .main_column .torrent_table .colhead_dark {display:none;}
+	#torrents .main_column .torrent_table {
+		position: relative;
+		
+		max-height: 300px;
+		overflow: auto;
+		overflow-x: none;
+		width: 100%;
+		}
+
+	#torrents .main_column tr.group_torrent {
+		
+		display: block;
+		
+		}
+
+	tbody[id^="edition_"], tbody[id*=" edition_"] {line-height: 1.6em;}
+
+	#torrents .main_column .torrent_table tbody {
+		
+		
+		height: 100%;
+		width: 100%;
+		}
+
+	
+	#torrents .main_column tr.group_torrent td:nth-child(1) {
+		display: block;
+		font-size: 1.1em;
+		font-weight:bold;
+		
+		
+		
+		
+		overflow: visible;
+		}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a {
+    font-size: 17px;
+    line-height: 30px;
+    display: none;
+    
+    width: 100%;
+    background: white;
+    position: absolute !important;
+    top: 0;
+    text-align: center;
+    padding: 0 5px;
+    right: 30px;
+    }
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child:hover a {
+	display: block;}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:nth-child(1) {
+	top: 0px;}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:nth-child(2) {
+	top: 30px;}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:nth-child(3) {
+	top: 60px;}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:nth-child(4) {
+	top: 90px;}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:nth-child(5) {
+	top: 120px;}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:nth-child(6) {
+	top: 150px;}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:nth-child(7) {
+	top: 180px;}
+	#torrents .main_column tr.group_torrent td:nth-child(1) a {
+		margin-left: -10px;}
+
+	
+	#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child {
+		
+		float: right;
+		margin-right: 5px;
+		overflow: hidden;
+		font-size: 0;
+		padding-top:  1px !important;
+		padding-right: 5px !important;
+		background-size: 20px 20px;
+		height: 20px;
+		width: 20px;
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		overflow: visible;
+		}
+
+
+	#torrents .main_column tr.group_torrent td:nth-child(1) span a {
+		position: relative;
+		z-index: 5;
+		margin: 0 !important;
+		}
+
+	
+	#torrents .main_column tr.group_torrent td:nth-child(2) {
+		display:inline;
+		float: left;
+		padding-right: 0px;
+		
+		}
+
+	
+	#torrents .main_column tr.group_torrent td:nth-child(3) {
+		display:inline;
+		float: left;
+		padding-right: 5px;
+		padding-left: 5px;}
+
+	#torrents .main_column tr.group_torrent td:nth-child(3):before {
+		content: "| Size:\00a0 ";}
+
+	#torrents .main_column tr.group_torrent td:nth-child(3):after {
+		content: " | Snatches:";}
+
+	
+	#torrents .main_column tr.group_torrent td:nth-child(5):before {
+		content: "| Seeders: \00a0 ";
+		vertical-align: 1px;
+		}
+
+	
+	#torrents .main_column tr.group_torrent td:nth-child(6):before {
+		content: "| Leechers: \00a0 ";
+		vertical-align: 1px;}
+
+	
+	#torrents .main_column tr.group_torrent td.edition_info:nth-child(1) {
+		
+		font-size:1em;
+		
+		}
+
+	
+	#torrents .main_column #collages td:nth-child(2) {display:none;}
+	#torrents #collages {margin-top: 25px; padding-bottom: 10px;}
+	#torrents #collages .colhead {display: block; font-weight:bold;}
+	#torrents #collages tr {display: block;}
+	#torrents #collages tr.colhead {padding: 5px 5px 5px 15px;}
+	#torrents #collages td {
+    padding: 5px;
+}
+
+	#torrents .main_column .screenshots img {
+		
+		}
+
+	#torrents .main_column .screenshots {
+		
+		
+		
+		}
+#torrents .screenshots >a {
+    width: calc(25% - 11px);}
+
+	#torrents .main_column td#usersreviewimage:nth-child(1) {
+		float: left;
+		margin: 0 5px 5px 5px;
+		}
+
+	tr#usersreviewimage {
+		margin-bottom:10px;}
+
+	.userreviews tr {
+		
+		
+		
+		}
+
+	
+	#torrents .sidebar .box .body {padding: 5px;}
+
+	#torrents .sidebar {display: flex; flex-direction:row;}
+	#torrents .sidebar .box_albumart {order: 1;}
+	#torrents .sidebar .box_weblinks {order: 3; width: 100%;}
+	#torrents .sidebar .box_user_rating {order: 4}
+	#torrents .sidebar .box_game_ratings {order: 2}
+	#torrents .sidebar .box_game_info {order: 5}
+	#torrents .sidebar .box_series {order: 6}
+	#torrents .sidebar .box_tags {order: 7}
+	#torrents .sidebar .box_add_tags {order: 8}
+	#torrents .sidebar .box_torrent_checking {order: 9}
+	.box_albumart img {
+		width: 95% !important;
+		height: auto !important;
+		max-width: 95% !important;
+		min-width:95% !important;}
+
+	#torrents .sidebar td:nth-child(1) {display: block;}
+	#torrents .sidebar td:nth-child(2) {width: auto; float: none;}
+
+	#torrents .userratingdiv td {text-align: center;}
+	#torrents .userratingdiv table {background:none;}
+
+	#torrents #weblinksdiv .body {padding: 0px;}
+	#torrents #weblinksdiv .body.center {margin: 10px 5px;}
+
+	#torrents select {min-width:auto;}
+
+	
+	#torrents .main_column .forum_post .time,
+	#torrents .main_column .forum_post a[href*="report"],
+	#torrents .main_column .forum_post a[href="#"] {
+		display: none;}
+
+	#torrents #commentsdiv {
+		position: relative;
+		max-height: 300px;
+		overflow: auto;}
+
+	#torrents .main_column .forum_post .colhead_dark td {
+		padding: 3px;}
+
+	#torrents .main_column .forum_post td {
+		display:block;}
+
+	#torrents .main_column .forum_post td.body {
+		padding: 10px;
+	    	margin-left: 100px;
+	    	display: block;}
+
+	#torrents .main_column .forum_post .body a {
+		display: inline-block;}
+
+	#torrents .forum_post blockquote {
+		width: auto;}
+
+	#torrents .forum_post .comment_rating .flleft {
+		float: left;}
+
+	#torrents #commentsdiv form textarea {
+		max-width: 95%;
+		height: 100px;}
+
+	.avatar {
+		min-width: 100px !important;
+		width: 100px  !important;
+		max-width: 100px !important;
+		float: left;
+		}
+
+	#torrents textarea {
+		margin-left: -5px;
+		max-width: 95% !important;}
+
+	
+	#torrents .thin.torrent_history td:nth-child(1) {display:inline;}
+	#torrents .thin.torrent_history tr {padding: 10px 5px; display: block;}
+	#torrents .thin.torrent_history .colhead {display: none;}
+	#torrents .thin.torrent_history td:nth-child(2) {width: auto; float: none; padding: 0 15px; display: inline}
+
+	
+	.torrent_edit form {width: 100%;}
+	#torrents .torrent_edit td:nth-child(1) {display: block; width: 100%}
+	#torrents .torrent_edit td:nth-child(2) {width: auto; padding: 10px 5px;}
+	#torrents .torrent_edit td.label {
+		padding: 5px;
+		display: block;}
+	#torrents .torrent_edit textarea {margin: 0;}
+	#torrents .torrent_edit select, #torrents .torrent_edit input {margin: 10px 0}
+
+	
+	.screenshots img:hover {
+		-moz-transform: none;
+		-webkit-transform: none;
+		transform: none;}
+
+	.screenshots a:hover:nth-of-type(4n) {
+		position: relative;
+		right: 0px;}
+
+	
+	#torrents #content .new_status {
+		
+		}
+
+	
+	#reviewdate {
+	    display: inline-block; margin-top: 2px;}
+
+
+	#upload #content div,
+	#upload #content #thin {
+		display:none;}
+
+	#upload #content:after {
+		content: "Disabled on mobile devices.";}
+
+
+	#forums .rowa td a, #forums .rowb td a {
+		font-size: 1em;}
+
+	#forums .forum_index td:nth-of-type(4), #forums .forum_index td:nth-of-type(5), #forums .forum_index td:nth-of-type(6), #forums .forum_index .colhead {
+		display: none;
+		}
+
+	#forums .forum_index td:nth-of-type(1) {width: 25px;}
+	#forums .forum_index td:nth-of-type(2) {width: 30%; padding-right: 10px;}
+	#forums .forum_index td:nth-of-type(2) a {font-size: 1em;}
+
+	#forums span[style="float:right;"] {
+		float: none!important;
+		display: block;
+		clear: both;}
+.forum_signature {display: none;}
+
+	#forums .forum_index tr td {padding: 15px 0px;}
+	#forums td {text-align: left;}
+	#forums .last_read {
+		float: right !important;
+		margin: -10px 5px;
+		clear: both;
+		height: 25px; width: 25px;}
+	#forums .last_read a {
+		height: 25px;
+		width: 25px;}
+	#forums .forum_list table {background: none;}
+
+	div[class*="thin forum_"] td:nth-of-type(1) {width: 25px !important;}
+	div[class*="thin forum_"] td:nth-of-type(2) {width: calc(100% - 25px) !important; padding-right: 10px;}
+	div[class*="thin forum_"] td:nth-of-type(3) {display: none;}
+	div[class*="thin forum_"] td:nth-of-type(4) {display: none;}
+	div[class*="thin forum_"] td {padding: 15px 0px;}
+
+	#forums #content .forum_index span[style="float:left;"] {padding-right: 40px;}
+
+	#forums .forum_post .colhead_dark {
+		
+		padding: 5px 0;
+		width: 100%;
+		min-height: 30px;
+		}
+	#forums .forum_post .colhead_dark div[style="float:left;"] {
+		display: flex;
+		flex-direction:row;
+		width: 100%;
+		}
+
+	#forums .forum_post .colhead_dark div[style="float:left;"] input{
+		height: inherit;}
+
+
+	#forums .forum_post .colhead_dark div[style="float:left;"] strong a {margin-right: 4px;}
+	#forums .forum_post .colhead_dark a.post_id {margin-top: 1px !important;margin-left: 2px;margin-right: 2px;}
+	#forums .forum_post .colhead_dark div[style="float:left;"] a {font-size: 1em;}
+
+	#forums .forum_post .colhead_dark div[style="float:left;"] .user_title {display: none;}
+	#forums .forum_post .colhead_dark div[style="float:left;"] .time {
+		order: 10;
+		font-size: 1em;
+		margin: 17px 0;
+		left: 6px;
+		position: absolute;
+		}
+	#forums .sticky_post .colhead_dark div[style="float:left;"] .time {left: auto;}
+	#forums .forum_post .colhead_dark div[style="float:left;"] a[title="Sticky this post"] {display: none;}
+	#forums .forum_post .colhead_dark div[style="float: right;"] a {display: none;}
+	#forums .forum_post .colhead_dark .username {
+		font-size: 1.2em !important;
+		display: block;
+		padding-left: 3px;
+		margin-top: 1px;}
+
+	#forums h2 {font-size: 1.2em;}
+	#forums .pad {width: 100%;}
+	#forums #content .thin table {word-break:break-word;}
+	#forums .linkbox {margin: 10px auto;}
+	#forums .linkbox_top {display: none;}
+
+	.avatar .forumstat {display: none;}
+	.username_badges {display: none;}
+	#forums .box {margin-top: 0px;padding: 0px;}
+	#forums td.body {padding: 10px 10px 25px 10px;border-left: 1px solid #e5e5e5;}
+	#forums td.body br {line-height: 10px;}
+	td.avatar {box-shadow:none;}
+
+	tr.likes td:nth-of-type(1) {
+		vertical-align: top;
+		padding-bottom: 20px;
+		padding-left: 10px;}
+
+	tr.likes td:nth-of-type(2) {
+		vertical-align: top;
+		padding-left: 15px;
+		padding-bottom: 20px;
+		}
+
+	#forums .forum_post img {}
+	#forums .forum_post iframe {max-width: 90% !important; height: auto !important;}
+
+	#forums blockquote {width: 90%;}
+	#forums .linkbox_bottom {float: none;}
+	#forums #quickreplybuttons {display: block !important;}
+	#forums .edit_form {width: 100%;}
+	#forums #quickreplytext {margin-top: 5px;}
+	#forums form textarea {margin-top: 5px;}
+
+	#forums h3, #forums h2 {
+		width: 99%;
+	    padding-bottom: 0px;
+    	margin: 10px 0px 0px 3px;}
+
+	#forums #content .thin table#otherop {min-height:auto;}
+
+	#forums .forums_search .search_form td {display: block;}
+	#forums .forums_search .search_form td input[type="text"],
+	#forums .forums_search .search_form td input[type="search"] {
+		width: 100%; max-width: 100% !important;}
+
+	#forums .forums_search .search_form .cat_list td[colspan="5"] {height: auto;}
+	#forums .forums_search .search_form .cat_list td {width: 100%;}
+	#forums .forums_search .forum_list td:nth-of-type(3),
+	#forums .forums_search .forum_list td:nth-of-type(4) {
+		display: none;}
+
+	div.breadcrumbs {
+    		text-align: center;
+    		width: 100%;
+		padding-top: 10px;}
+
+	
+	.forum_latest .search {order: 2; margin-left: 0px;}
+	.forum_latest #forumlist tr {display: inline;}
+	.forum_latest #forumlist td {display: block; width: 48% !important; float: left; overflow:hidden; padding: 0 !important;}
+	.forum_latest .search td {width: 100%; border: 0; padding: 0 !important; background: none;}
+	.forum_latest .search table {border: none !important;}
+	#forums #content .forum_latest table td {border: 0;}
+	.forum_latest td:nth-of-type(2) {padding-right: 0 !important;}
+
+
+	#collections .center {display: none;}
+	.collections_art_display td {display: block; float: left; width: calc(50% - 3px); padding: 1px;}
+
+	#collections .thin .linkbox:nth-of-type(2) a[href*="page"] {display: none;}
+	#collections .thin .linkbox:nth-of-type(2) strong {display: none;}
+	.collections_art_display {margin-top: -40px;}
+	#collections .hovereffect:hover h2 {display: none;}
+
+	#collections .collections .linkbox:nth-of-type(2) a[href*="page"] {display: inline;}
+	#collections .collections .linkbox:nth-of-type(2) strong {display: inline;}
+
+	#collections .thin {display: flex;}
+	#collections .thin .main_column {order: 1;}
+	#collections .thin .sidebar {order: 2;}
+
+	#collections ul.collage_images li {width: calc(33% - 3px); padding: 1px;}
+	#collections ul.collage_images img {width: 100%;}
+	#collections .sidebar .box {width: 48%; display: none;}
+	#collections .sidebar .box:nth-of-type(even) {margin-left: 2%;}
+	#collections form textarea {height: 75px;}
+
+	#collections .sidebar .box_albumart,
+	#collections .sidebar .box_description,
+	#collections .sidebar .box_comment,
+	#collections .sidebar #reply_box .box {display: block; width: 100%;}
+
+	#collections #reply_box {width: 99%;}
+	#collections .sidebar h3 {font-size: 1.3em; margin: 5px 0px 0px 5px; width: 100%;}
+	#collections .sidebar div:nth-of-type(10) {width: 100%;}
+	#collections .sidebar #reply_box .box {width: 100%;}
+
+	#collections .box_addtorrent .subhead {padding: 10px 0 0 5px;}
+
+	#collections input, #collections textarea {max-width: 300px !important;}
+	#collections .box_addtorrent input {max-width: 140px !important;}
+
+	#collections #easysort {background: url('../images/smokeybackground.jpg');}
+	#collections #easysort tr {display: inline;}
+	#collections #easysort td {display: block; width: 70%; float: left;}
+	#collections #easysort td select {margin: 5px 0; width: 40%;}
+
+	#collections #manage_collage_table th:nth-of-type(5),
+	#collections #manage_collage_table td:nth-of-type(5)
+		{display: none;}
+	#collections #manage_collage_table th:nth-of-type(6),
+	#collections #manage_collage_table td:nth-of-type(6)
+		{width: 100px;}
+
+
+	#blog .thin {
+		display: block !important;}
+
+	#blog img,
+	#blog iframe {
+		max-width: 100% !important;
+		height: auto !important;}
+
+
+
+	.permission_container {width: 93%;}
+
+	#staffpm .message_table td:nth-of-type(4) {padding-bottom: 0px;}
+	#staffpm td:nth-of-type(4):before {content: "Status:\00a0"}
+	#staffpm td:nth-of-type(4) {font-size: .8em;}
+	#staffpm td:nth-of-type(5) {font-size: 1em;}
+	#staffpm td:nth-of-type(6):before {content: "Assigned to:\00a0"}
+	#staffpm td:nth-of-type(6) {font-size: .8em;}
+	#staffpm td:nth-of-type(7):before {content: "Last PM by:\00a0"}
+	#staffpm td:nth-of-type(7) {padding-bottom: 25px; font-size: .8em;}
+
+	#inbox input[value="Resolve selected"] {display:none;}
+
+	#inbox .message_table td:nth-of-type(1) {display: block; padding-top: 25px; font-size: 1.1em;}
+	#inbox .message_table td:nth-of-type(2) {padding-top: 0px; padding-bottom: 5px; font-size: .8em;}
+
+	#staffpm #inbox {margin-top: -20px;}
+
+	#tm_stats #quick_links {display: block;}
+	#tm_stats table#tms {margin-top: 25px;}
+	#tm_stats #tms td {display:block; float: left; width: 48%; height: auto !important;}
+	#tm_stats #tm_info {height: 100px;}
+	#tm_stats #tms #avatar {height: 200px; }
+	#tm_stats #tms img {max-height: 100%}
+	#tm_stats td#platform_name {min-width: 150px;}
+
+	#reportsv2 .box {width: 95% !important;}
+	#reportsv2 #content table tr {display: flex; flex-direction: column;}
+	#reportsv2 #content table tr td:nth-of-type(1) {order:2;}
+	#reportsv2 #content table tr td:nth-of-type(2) {order:1;}
+	#reportsv2 #content table tr td table tr {display: flex; flex-direction: row;}
+	#reportsv2 #content table tr td table tr td {display: inline; width: 98%;}
+	#reportsv2 #content table tr td.colhead {font-size: 1em;}
+	#reportsv2 h3 {line-height: 0px; margin-top: 40px; margin-bottom: 0px;}
+	#reportsv2 textarea, #reportsv2 input {max-width: 300px;}
+	#reportsv2 #all_reports {width: 95% !important;}
+	#reportsv2 #all_reports input[type=button]:disabled:hover {box-shadow: none;}
+
+	#staffpm .linkbox {margin: 10px 0 20px;}
+
+	#tools #recommended {display:block;}
+	#tools #recommended input {max-width: 200px !important;}
+	#tools #recommended #slides {width: 100%;}
+	#tools #recommended #torrent_form td:nth-of-type(1) {display: none;}
+	#tools #recommended #torrent_form td:nth-of-type(2) {max-width: 100px;}
+
+	
+	input[name="addGazelle"], input[name="gazelleTitle"] {max-width: 250px;}
+	#gazelle_images form {width: 100%;}
+	#gazelle_images table th:nth-of-type(3),
+	#gazelle_images table th:nth-of-type(4),
+	#gazelle_images table th:nth-of-type(5),
+	#gazelle_images table th:nth-of-type(7),
+	#gazelle_images table th:nth-of-type(9),
+	#gazelle_images table td:nth-of-type(3),
+	#gazelle_images table td:nth-of-type(4),
+	#gazelle_images table td:nth-of-type(5),
+	#gazelle_images table td:nth-of-type(7),
+	#gazelle_images table td:nth-of-type(9) {
+		display: none;}
+	#gazelleview form {display:block !important;}
+	#gazelles input[type="text"] {max-width: 250px;}
+	#gazelles form td#uploader, #gazelles form td#tags {display: block;}
+	#gazelle_images .box form table td {display: block; }
+	#gazelle_images .box form table td div {text-align:left !important;}
+	#gazelle_images .box form table p {max-width: 300px !important;}
+	.gazelleinfo td {display: block;}
+
+	
+	#user .thin table#sessions_table td {display: inline-block; width: 15%;}
+	#user .thin table#sessions_table .rowa td {background: none;}
+	#user .thin table#sessions_table .rowb td {background: none;}
+
+	
+	#tools .user_applications table .colhead {display: none;}
+	#tools .user_applications table tr {width: 98%; float: none; margin: 1%;}
+	#tools .user_applications table td {display: block; padding: 10px 5px;}
+
+	#tools .user_applications table td:nth-of-type(2):before {content: "Email: "; display: block; font-weight: bold;}
+	#tools .user_applications table td:nth-of-type(3):before {content: "Origin: "; display: block; font-weight: bold;}
+	#tools .user_applications table td:nth-of-type(4):before {content: "Referer: "; display: block; font-weight: bold;}
+	#tools .user_applications table td:nth-of-type(5):before {content: "What can you contribute?: "; display: block; font-weight: bold;}
+	#tools .user_applications table td:nth-of-type(6):before {content: "IP: "; display: block; font-weight: bold;}
+	#tools .user_applications table td:nth-of-type(7):before {content: "When Applied: "; display: block; font-weight: bold;}
+	#tools .user_applications table td.center {text-align: left; margin-bottom: 20px;}
+
+	#tools table[style="width: 960px; text-align: center;"] {max-width: 400px;}
+	#tools table[style="width: 960px; text-align: center;"] textarea,
+	#tools table[style="width: 960px; text-align: center;"] input {
+		max-width: 100% !important;
+		display: block;}
+	#tools table[style="width: 960px; text-align: center;"] .colhead:last-of-type {background: none;}
+	#tools table[style="width: 960px; text-align: center;"] .colhead:last-of-type td {display: block !important;}
+	#tools table[style="width: 960px; text-align: center;"] .colhead:last-of-type input {width: 135px;}
+
+	#tools table[style="width: 960px; text-align: center;"] tr.colhead {text-align: left;}
+
+
+	#requests .center {
+		display: none;
+		margin: 0 !important;}
+
+	#requests .thin table .colhead_dark {display: none;}
+	#requests .thin table td:nth-of-type(1) {
+		width: 98% !important;
+		display: block;
+		padding-top: 25px;
+		font-size: 1.2em;
+		font-weight:bold;}
+	#requests .thin table td:nth-of-type(1) a { font-weight:bold !important;}
+	#requests .thin table td:nth-of-type(2) {display: none;}
+	#requests .thin table td:nth-of-type(3):before {content: "Bounty:\00a0";}
+	#requests .thin table td:nth-of-type(3) {
+		width: 100% !important;
+		display: block;
+		text-align: left;
+		font-size: .8em;
+		margin-top: -10px;
+		padding-bottom: 25px;}
+	#requests .thin table td:nth-of-type(4) {display: none;}
+	#requests .thin table td:nth-of-type(5) {display: none;}
+	#requests .thin table td:nth-of-type(6) {display: none;}
+	#requests .thin table td:nth-of-type(7) {display: none;}
+	#requests .thin table td:nth-of-type(8) {display: none;}
+	#requests .thin table td:nth-of-type(1) .tags a {font-size: .8em !important; font-weight:normal !important;}
+
+	#requests .thin form table td:nth-of-type(2) {display: block; padding-left: 10px;}
+
+	#requests .main_column {width: 100%; float: none;}
+	#requests .thin .main_column table td.label {
+		width: 100% !important;
+		display: block;
+		float: left;
+		padding: 10px 5px;
+		font-size: 1em;}
+	#requests .thin .main_column table td:nth-of-type(2) {
+		width: auto;
+		display: inline-block;
+		padding: 10px 5px;}
+
+	#requests .sidebar {width: 100%;}
+	#requests .sidebar .box {width: 48%;}
+	#requests .sidebar .box:nth-of-type(1) {margin-right: 3%;}
+	#requests .sidebar .box:nth-of-type(3) {margin-right: 3%;}
+	#requests .main_column input {padding: 5px !important; margin: 5px !important;}
+	#requests form textarea {max-width: 95%; height: 50px;}
+	#requests .box table {background: none;}
+
+
+	#staff td:nth-of-type(1) {width: 120px;}
+	#staff td:nth-of-type(2) {display: none;}
+	#staff .colhead {display:none;}
+	#staff td.nobr {padding: 10px;}
+	#staff .thin .box table td {padding: 0 10px;}
+
+
+	#wiki .main_column {width: 100%;}
+	#wiki .header {width: 100%;}
+	#wiki ol {margin: 15px auto;}
+	.wiki_index .wiki_article ul li {width: 90%; padding: 5px 0;}
+
+
+	#user .main_column, #user .main_column_bg {
+		width: 100%;
+		display: flex;
+	    flex-direction: column;}
+	#user img, #user iframe {max-width: 100% !important;height: auto !important;}
+
+	#user .thin form {order: 1}
+	#user .box {order: 2}
+
+	#user .sidebar img {width: inherit;}
+	#user .avatar {float: none;}
+
+	#user .thin table td {}
+	#user .thin form {width: 100%;}
+
+	#user td.label {
+    	margin: 15px 2px;
+		width: 70%;}
+	#user select {min-width: auto; width: 95% !important}
+	#user table {min-width: 100% !important}
+	#user .thin table td.right {text-align: left;}
+	#user form input[type="text"], #user form textarea, #user form select {
+		max-width: 100% !important;
+		width: 100% !important;
+		margin: 10px 0;}
+	#styleurl {display: block; width: 100%;}
+
+	.box_image_coverart img {margin-top: 15px;}
+
+	
+	#user .likes_icon img {width: 20px; float: right;}
+	#snatchesrow td, #uploadsrow td, #likesrow td {}
+	#snatchesrow img, #uploadsrow img,  #likesrow img {
+		
+		
+		
+		
+		
+		
+		margin: 0 auto;
+		}
+	#snatchesrow td:nth-of-type(5), #uploadsrow td:nth-of-type(5), #likesrow td:nth-of-type(5) {
+		display:none !important;}
+
+	
+	#user .main_column .box_community #community_stats {/* overflow: hidden; */padding: 15px 25px !important;}
+	.profile .box_community #community_stats {overflow: hidden;}
+	.profile .box_community #community_stats ul {display: block;width: 100%;float: none;margin: 0;padding: 0;margin-bottom: 20px;}
+
+	
+	#user table#invitee_list td {display: inline-block; width: 24%; height: 100%; vertical-align:middle;}
+	#user table#invitee_list td:nth-of-type(2),
+	#user table#invitee_list td:nth-of-type(5),
+	#user table#invitee_list td:nth-of-type(6) {display: none;}
+
+
+	#top10 h3 {margin-left: 5px;}
+	#top10 h3 small {display: block; margin-left: -10px;}
+
+	#top10 .linkbox {
+		display: block;
+		width: 100%;}
+	#top10 table .colhead {display: none;}
+	#top10 .top10_torrents table td:nth-of-type(3){padding: 20px 10px;}
+	#top10 .top10_games table td:nth-of-type(3){padding: 20px 10px;}
+	#top10 table td:nth-of-type(5) {display: none;}
+	#top10 table td:nth-of-type(6) {display: none;}
+	#top10 table td:nth-of-type(7) {display: none;}
+	#top10 table td:nth-of-type(8) {display: none;}
+	#top10 table td:nth-of-type(9) {display: none;}
+	#top10 table td:nth-of-type(10) {display: none;}
+ 	#top10 .content_basiccontainer {display: none;}
+
+	#top10 .top10_tags table td:nth-of-type(4) {display: none;}
+	#top10 .top10_tags table td {padding: 0 5px;}
+	#top10 .top10_users table td {padding: 0 5px;}
+	#top10 .top10_uploaders table td {padding: 0 5px;}
+
+	.top10_torrents span {display: none;}
+	.top10_torrents strong span {display: inline;}
+
+	
+	#top10 #ul table td:nth-of-type(4),
+	#top10 #ul table td:nth-of-type(5),
+	#top10 #ul table td:nth-of-type(6),
+	#top10 #ul table td:nth-of-type(7),
+	#top10 #ul table td:nth-of-type(8),
+	#top10 #ul table td:nth-of-type(9) {display: none;}
+	#top10 #ul table td:nth-of-type(3) {display: table-cell;}
+
+	
+	#top10 #dl table td:nth-of-type(3),
+	#top10 #dl table td:nth-of-type(4),
+	#top10 #dl table td:nth-of-type(6),
+	#top10 #dl table td:nth-of-type(7),
+	#top10 #dl table td:nth-of-type(8),
+	#top10 #dl table td:nth-of-type(9) {display: none;}
+	#top10 #dl table td:nth-of-type(5) {display: table-cell;}
+
+	
+	#top10 #numul table td:nth-of-type(3),
+	#top10 #numul table td:nth-of-type(4),
+	#top10 #numul table td:nth-of-type(5),
+	#top10 #numul table td:nth-of-type(6),
+	#top10 #numul table td:nth-of-type(8),
+	#top10 #numul table td:nth-of-type(9) {display: none;}
+	#top10 #numul table td:nth-of-type(7) {display: table-cell;}
+
+	
+	#top10 #uls table td:nth-of-type(3),
+	#top10 #uls table td:nth-of-type(5),
+	#top10 #uls table td:nth-of-type(6),
+	#top10 #uls table td:nth-of-type(7),
+	#top10 #uls table td:nth-of-type(8),
+	#top10 #uls table td:nth-of-type(9) {display: none;}
+	#top10 #uls table td:nth-of-type(4) {display: table-cell;}
+
+	
+	#top10 #dls table td:nth-of-type(3),
+	#top10 #dls table td:nth-of-type(4),
+	#top10 #dls table td:nth-of-type(5),
+	#top10 #dls table td:nth-of-type(7),
+	#top10 #dls table td:nth-of-type(8),
+	#top10 #dls table td:nth-of-type(9) {display: none;}
+	#top10 #dls table td:nth-of-type(6) {display: table-cell;}
+
+	
+	#top10 #snatched table td:nth-of-type(4),
+	#top10 #snatched table td:nth-of-type(6),
+	#top10 #snatched table td:nth-of-type(7),
+	#top10 #snatched table td:nth-of-type(8),
+	#top10 #snatched table td:nth-of-type(9) {display: none;}
+	#top10 #snatched table td:nth-of-type(5) {display: table-cell;}
+
+	
+	#top10 #irc table td:nth-of-type(4),
+	#top10 #irc table td:nth-of-type(5),
+	#top10 #irc table td:nth-of-type(6),
+	#top10 #irc table td:nth-of-type(7),
+	#top10 #irc table td:nth-of-type(8),
+	#top10 #irc table td:nth-of-type(9) {display: none;}
+
+	
+	#top10 #forum table td:nth-of-type(3),
+	#top10 #forum table td:nth-of-type(5),
+	#top10 #forum table td:nth-of-type(6),
+	#top10 #forum table td:nth-of-type(7),
+	#top10 #forum table td:nth-of-type(8),
+	#top10 #forum table td:nth-of-type(9) {display: none;}
+
+	
+	#top10 #views table td:nth-of-type(4),
+	#top10 #views table td:nth-of-type(5),
+	#top10 #views table td:nth-of-type(6),
+	#top10 #views table td:nth-of-type(7),
+	#top10 #views table td:nth-of-type(8),
+	#top10 #views table td:nth-of-type(9) {display: none;}
+
+	
+	#top10 .top10_uploaders #numul table td:nth-of-type(3),
+	#top10 .top10_uploaders #numul table td:nth-of-type(5),
+	#top10 .top10_uploaders #numul table td:nth-of-type(6),
+	#top10 .top10_uploaders #numul table td:nth-of-type(7),
+	#top10 .top10_uploaders #numul table td:nth-of-type(8),
+	#top10 .top10_uploaders #numul table td:nth-of-type(9) {display: none;}
+	#top10 .top10_uploaders #numul table td:nth-of-type(4) {display: table-cell;}
+
+	#top10 .top10_uploaders #numuloneago table td:nth-of-type(3),
+	#top10 .top10_uploaders #numultwoago table td:nth-of-type(3) {display: none;}
+
+	
+	#top10 #upvoted table td:nth-of-type(4),
+	#top10 #upvoted table td:nth-of-type(5),
+	#top10 #upvoted table td:nth-of-type(6),
+	#top10 #upvoted table td:nth-of-type(9) {display: none;}
+	#top10 #upvoted table td:nth-of-type(8) {display: table-cell;}
+
+	
+	#top10 #downvoted table td:nth-of-type(4),
+	#top10 #downvoted table td:nth-of-type(5),
+	#top10 #downvoted table td:nth-of-type(6),
+	#top10 #downvoted table td:nth-of-type(7),
+	#top10 #downvoted table td:nth-of-type(8),
+	#top10 #downvoted table td:nth-of-type(9) {display: none;}
+	#top10 #downvoted table td:nth-of-type(9) {display: table-cell;}
+
+
+	.donate_box_wrapper {width: 49%; padding: 0; margin: 0;}
+
+
+	#rules #content .search_form {height: 100%;}
+	#rules .before_rules {width: 100%;}
+
+
+	#bookmarks .sidebar {display: none;}
+	#bookmarks table#collage_table td {width: 32%; float: left; display: block; height: 160px; padding:7px 1px;}
+	#bookmarks table#collage_table tr {display:inline;}
+	#bookmarks table#collage_table td[colspan^=""] {width: auto;}
+
+
+	.gazelles_art_display td {width: 50%;}
+	#gazelles .gazelle_art {background-size: cover;}
+
+	#gazelles .pad form {display: none;}
+	#gazelles .hovereffect:hover h2 {display: none;}
+
+
+	#inbox .box, #inbox .pad {padding: 0; width: 100%;}
+	#inbox form {width: 100%;}
+	#inbox td {display: block; padding: 0 10px;}
+	
+	#inbox tr.colhead {display:none;}
+	#inbox #messageform td:nth-of-type(1) {float: right; padding-top: 17px;}
+	#inbox #messageform td:nth-of-type(2) {display: block; padding-top: 25px;}
+	#inbox #messageform td:nth-of-type(2) a {font-size: 1.1em; font-weight:bold;}
+	#staffpm #inbox #messageform td:nth-of-type(2) a {font-size: 1.4em; font-weight: bold;}
+	#inbox #messageform td:nth-of-type(3) {display: block; font-size: .8em;}
+	#inbox td:nth-of-type(3):before {content:"With:";}
+	#inbox td:nth-of-type(4) {display: block; padding-bottom: 25px;}
+	#inbox input[value="Delete messages"] {display:none;}
+
+	#inbox .box .body {padding: 10px 5px;}
+	#inbox a[onclick^="Quote("] {font-size: .8em;}
+	#inbox span[style^="width: 80%;"] {display: none; float: none !important;}
+	#inbox span[style^="width: 20%;"] {display: none; float: none !important;}
+	#inbox textarea {width: 95%; margin-left: 5px;}
+	#inbox td.label {width: auto; padding-left: 10px;}
+
+	#inbox #searchbox div {height: auto;}
+
+
+	#progress_bar {width: auto;}
+	.flright {float: none; margin-top: 0px !important;}
+	.flleft {float: none;}
+
+	#achievements td {border-right: rgba(198,230,246,.3) solid 1px;}
+	#achievements .colhead td:first-of-type, #achievements .colhead td:last-of-type {border: none;}
+
+
+	#log form table:nth-of-type(2) td {float: left;}
+	#log .center {width: 100%;}
+
+
+	#friends .avatar {width: 75px; min-width:75px; max-width:75px;}
+	#friends .avatar img {width: 75px;}
+
+	#friends table {margin: 20px 0;}
+	#friends td span {font-size: .9em; float: none !important;}
+	#friends td .time {display: block;}
+	#friends textarea {width: 70%;}
+
+	#friends td:nth-of-type(2) {display: block;}
+	#friends td:nth-of-type(3) {display: inline-flex;}
+
+
+	#todo table .colhead {display: none;}
+	#todo table td {display: block; padding: 0 5px;}
+	#todo table td:first-of-type {padding-top: 10px;}
+	#todo table td:last-of-type {padding-bottom: 10px;}
+	#todo table td:nth-of-type(3):before {content: "Added By: ";}
+	#todo table td:nth-of-type(4):before {content: "Date Added: ";}
+	#todo table td:nth-of-type(5):before {content: "Priority: ";}
+	#todo table td:nth-of-type(6):before {content: "Status: ";}
+	#todo table td:nth-of-type(7):before {content: "Last Edited: ";}
+	#todo table td:nth-of-type(8):before {content: "Completion Time: ";}
+
+	#todo .center {text-align:left;}
+
+
+	#share_score_breakdown td {
+		display: block;
+		width: 95% !important;
+		text-align: center;
+		height: auto !important;}
+
+	#share_score_breakdown .label {
+		margin-left: 2% !important;}
+
+}
