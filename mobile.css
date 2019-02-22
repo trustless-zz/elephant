@@ -4,7 +4,12 @@
     100% {
         opacity: 0;}
 }
-
+@-webkit-keyframes rotate800 {
+    0% {
+        -webkit-transform: rotate(0deg);}
+    100% {
+        -webkit-transform: rotate(360deg);}
+}
 
 
 
@@ -197,13 +202,16 @@ tr.likes {
 		margin: 10px 0 0 0;
 		width: 76px;
 		height: 76px;
+		animation: rotate800 60s linear infinite;
+		-webkit-transition: none !important;
 		}
 
 	#header #logo a {
-		
-		
 		width: 76px;
 		height: 76px;
+		animation: rotate800 60s linear infinite;
+		animation-direction: reverse;
+		-webkit-transition: none !important;
 		}
 
 	#announcement {
