@@ -5141,8 +5141,6 @@ span.user_title span[style="font-family: cursive;"] {
     padding: 9px 10px 8px 10px;}
 .trailer {
     position: relative;
-    padding-bottom: 466.06249px !important;
-    padding-top: 25px !important;
     height: 0;}
 .trailer iframe {
     width: 100%;
@@ -7014,7 +7012,7 @@ body {
 #clan_stats .clan_stat_totals .center{
     width: 637px;}
 .trailer {
-    padding-bottom: 522.31249px !important;}
+    padding: 0 0 56.25% 0 !important;}
 #user .inventory .save_message {
     width: 100%;}
 #torrents li.similar_group >a {

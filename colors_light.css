@@ -1126,6 +1126,7 @@ a:hover span,
 
 
 @media (max-width: 800px) {
+    #requests .thin .main_column table td.label,
     #torrents .filter_torrents td.label {
         background: #e7e7e7;}
     #torrents .main_column .forum_post .avatar img {
@@ -1145,7 +1146,13 @@ a:hover span,
     #userinfo_minor li a,
     #header .sub a,
     #menu ul li a {
-        color: #255c7c;}    
+        color: #255c7c;}
+    #user.equipment #items_navigation,
+    #items_navigation:hover {
+        background-color: #fff;
+        -webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
+        -moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
+        box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
 }
 @media screen and (max-width: 400px) {
     .global_buffs .individual_buff {

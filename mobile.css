@@ -12,7 +12,7 @@
 }
 
 
-
+/* src: https://gazellegames.net/static/styles/game_room/screenSizes/mobile.css */
 @media screen and (max-width: 800px) {
 
 
@@ -41,7 +41,7 @@ tr.likes {
 		height: auto;
 		width: 99%;}
 #recommended #vanityhouse tbody tr td a img {
-	max-width: 100% !IMPORTANT;
+	max-width: 100% !important;
 }
 	img {
 		max-width: 100% !important;}
@@ -55,10 +55,13 @@ tr.likes {
 		}
 
 	td.nobr {
-		white-space: normal;}
-
+		white-space: normal !important;}
+#user #share_score_breakdown td {
+    border: 0;}
 	input, textarea {
 		max-width: 300px !important;}
+    #torrents #torrent_history_search td.label, #torrents .thin .center form table td.label, #user .thin .center form table td.label, #requests .thin >table td:nth-child(n+2) {
+        white-space: normal;}
 
 #index .thin .main_column_bg .main_column div[class="box news_post"] .head strong, #index .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong {
     width: 98.5%;}
@@ -145,10 +148,10 @@ tr.likes {
     width: 100%;
 }
 #torrents .box.similar_div li.similar_group {
-    width: 20%;
+    width: 25%;
 }
 #torrents li.similar_group {
-	width: 20%;
+	width: 25%;
 }
 #torrents li.similar_group >a {
     width: 100%;
@@ -320,9 +323,14 @@ tr.likes {
 		margin: 0;
 		padding: 0;
 		top: 58px;
-		left: 0;
-		
-		}
+		left: 0;}
+.thin.inventory >div:first-child {
+    width: 100%;
+}
+#user .inventory >.center:nth-child(2) {
+    width: 100%;
+    order: -10;
+}
 #header .sub {
     height: 28px;
     width: 28px;
@@ -336,6 +344,9 @@ tr.likes {
     z-index: 999;
     }
 
+    #items_list{
+        width: 100%;
+    }
 	#userinfo #userinfo_username .donateico {
 		
 		
@@ -344,6 +355,8 @@ tr.likes {
 		margin: 0;
 		vertical-align: middle;
 		}
+.inventory #items_list:after,
+#items_list:before,
 #userinfo_minor li a:before, #userinfo_minor li a:after, #menu ul li a:before, #menu ul li a:after {
 	content: none;}
 	#userinfo #userinfo_username .donateico a {
@@ -353,6 +366,29 @@ tr.likes {
 	#userinfo_stats:hover {
     width: 230px;
     }
+#header #alerts a {
+    font-size: 17px;
+    line-height: 37px;}
+#shop_search {
+    width: 100% !important;
+    order: -10 !important;
+    margin: 0 auto;
+}
+.inventory li.item_li {
+    width: 44% !important;
+    left: 0 !important;}
+.inventory #items_navigation {
+    top: 120px;}
+#items_list {
+    width: 100%;
+    margin: 0;
+    padding: 0;}
+#shop li.item_li {
+    margin: 7px 0 13px 20px;
+}
+.inventory #content li.item_li{
+    margin: 7px 0 13px 40px;
+}
     #userinfo_stats:hover li {
     	display: flex;    }
 	#userinfo_stats {
@@ -372,7 +408,7 @@ tr.likes {
 		flex-flow: column;
 		flex-direction: row;
 		flex-wrap: wrap;
-		/* width: 328px; */
+		
 		}
 
 	ul#userinfo_stats:before {
@@ -470,7 +506,7 @@ tr.likes {
 	opacity:1;}
 		
 #header >#searchbars:hover {
-	/* width:100%; */
+	
 	}
 #header >#searchbars:hover >ul {
 	display: flex;}
@@ -523,11 +559,11 @@ tr.likes {
 		background-size: contain;}
 
 	#searchbars >ul >li {
-		/* width: calc(100%/6); */
+		
 		width: 130px;
-		/* max-width: 127px; */
-		/* top: 58px; */
-		/* left: 177px; */
+		
+		
+		
 		}
 #header >#searchbars input {
     margin: 0;}
@@ -991,19 +1027,14 @@ tr.likes {
 }
 #torrents .groupoptions {
     position: absolute;
-    
     right: 0;
-    top: 5px;
+    top: 2px;
     margin: 0 !important;
     padding: 0 !important;
     width: 28px;
-    
-    
     display: flex;
-    
     z-index: 99;
     height: 28px;
-    
     flex-wrap: wrap;
     direction: rtl;
     background-size: 28px 28px;
@@ -1029,7 +1060,7 @@ tr.likes {
 	#torrents .main_column {width: 100%; padding: 0;}
 	#torrents .sidebar {width: 100%;}
 	#torrents h2 {font-size: 1.2em;}
-	#torrents .sidebar .box {width: 49%; margin-right: 1%;}
+	#torrents .sidebar .box {width: 48.5%; margin-bottom: 0;}
 #torrents .sidebar .box {
     margin-top: 20px;}
 	#torrents #content .new_status {margin: auto 4px;float: none;line-height: 10pt;}
@@ -1126,14 +1157,13 @@ tr.likes {
     font-size: 17px;
     line-height: 30px;
     display: none;
-    
     width: 100%;
     background: white;
     position: absolute !important;
     top: 0;
     text-align: center;
     padding: 0 5px;
-    right: 30px;
+    right: 35px;
     }
 #torrents .main_column tr.group_torrent td:nth-child(1) span:first-child:hover a {
 	display: block;}
@@ -1237,7 +1267,8 @@ tr.likes {
 		
 		}
 #torrents .screenshots >a {
-    width: calc(25% - 11px);}
+    width: calc(25% - 11px);
+    }
 
 	#torrents .main_column td#usersreviewimage:nth-child(1) {
 		float: left;
@@ -1256,7 +1287,7 @@ tr.likes {
 	
 	#torrents .sidebar .box .body {padding: 5px;}
 
-	#torrents .sidebar {display: flex; flex-direction:row;}
+	#torrents .sidebar {display: flex; flex-direction:row; justify-content: space-between;}
 	#torrents .sidebar .box_albumart {order: 1;}
 	#torrents .sidebar .box_weblinks {order: 3; width: 100%;}
 	#torrents .sidebar .box_user_rating {order: 4}
@@ -1295,6 +1326,7 @@ tr.likes {
 		overflow: auto;}
 
 	#torrents .main_column .forum_post .colhead_dark td {
+        line-height: 20px;
 		padding: 3px;}
 
 	#torrents .main_column .forum_post td {
@@ -1326,7 +1358,7 @@ tr.likes {
 		}
 
 	#torrents textarea {
-		margin-left: -5px;
+		margin: 0;
 		max-width: 95% !important;}
 
 	
@@ -1528,10 +1560,11 @@ tr.likes {
 	#collections .thin {display: flex;}
 	#collections .thin .main_column {order: 1;}
 	#collections .thin .sidebar {order: 2;}
+    .main_column {width: 100%;}
 
-	#collections ul.collage_images li {width: calc(33% - 3px); padding: 1px;}
+	#collections ul.collage_images li {width: calc(20% - 3px); padding: 1px;}
 	#collections ul.collage_images img {width: 100%;}
-	#collections .sidebar .box {width: 48%; display: none;}
+	#collections .sidebar .box {width: 48.5%; display: none;}
 	#collections .sidebar .box:nth-of-type(even) {margin-left: 2%;}
 	#collections form textarea {height: 75px;}
 
@@ -1547,7 +1580,7 @@ tr.likes {
 
 	#collections .box_addtorrent .subhead {padding: 10px 0 0 5px;}
 
-	#collections input, #collections textarea {max-width: 300px !important;}
+	#collections input, #collections textarea {max-width: 95% !important;}
 	#collections .box_addtorrent input {max-width: 140px !important;}
 
 	#collections #easysort {background: url('../images/smokeybackground.jpg');}
@@ -1585,7 +1618,8 @@ tr.likes {
 	#staffpm td:nth-of-type(7) {padding-bottom: 25px; font-size: .8em;}
 
 	#inbox input[value="Resolve selected"] {display:none;}
-
+    #collections .thin.collections .sidebar #reply_box .box form#quickpostform #quickreplybuttons {
+        margin: 0 auto; width: fit-content;}
 	#inbox .message_table td:nth-of-type(1) {display: block; padding-top: 25px; font-size: 1.1em;}
 	#inbox .message_table td:nth-of-type(2) {padding-top: 0px; padding-bottom: 5px; font-size: .8em;}
 
@@ -1707,34 +1741,80 @@ tr.likes {
 		display: block;
 		float: left;
 		padding: 10px 5px;
-		font-size: 1em;}
+		font-size: 1em;
+    text-align: left;}
 	#requests .thin .main_column table td:nth-of-type(2) {
 		width: auto;
 		display: inline-block;
 		padding: 10px 5px;}
-
+    #shop #item_search td[colspan="2"] {
+        position: unset;}
+#header #alerts .blend,
+#header #alerts {
+    transition: 0s !important;
+    opacity: 1 !important;
+    transition-delay: 0s !important;}
+#shop_search td.label,
+#shop #item_search td.label,
+#shop #shop_search td:last-child {
+    display: none;}
 	#requests .sidebar {width: 100%;}
-	#requests .sidebar .box {width: 48%;}
+	#requests .sidebar .box {width: 48.5%;}
 	#requests .sidebar .box:nth-of-type(1) {margin-right: 3%;}
 	#requests .sidebar .box:nth-of-type(3) {margin-right: 3%;}
 	#requests .main_column input {padding: 5px !important; margin: 5px !important;}
-	#requests form textarea {max-width: 95%; height: 50px;}
+	#requests form textarea {max-width: 95% !important; height: 50px;}
 	#requests .box table {background: none;}
-
-
+#items_navigation >h3, #items_navigation >ul, #items_navigation >a {
+    display: none;}
+#items_navigation:hover >h3, #items_navigation:hover >ul, #items_navigation:hover >a {
+    display: block;}
+#requests .sidebar .box {
+    margin-top: 20px;
+    margin-bottom: 0;}
+    #requests .sidebar {
+        width: 100% !important;}
+#items_navigation {
+        background-color: transparent;
+    margin: 0 !important;
+        box-shadow: none;
+        top: 80px;
+        width: 33px;
+        height: 33px;
+        background-size: 28px 28px;
+        background-repeat: no-repeat;
+        background-position: 5px 5px;}
+#items_navigation:hover {
+    width: 195px;
+    height: auto;}
+.ui-widget-content {
+    z-index: 9999;}
 	#staff td:nth-of-type(1) {width: 120px;}
 	#staff td:nth-of-type(2) {display: none;}
 	#staff .colhead {display:none;}
 	#staff td.nobr {padding: 10px;}
 	#staff .thin .box table td {padding: 0 10px;}
-
-
+#items_navigation ul li {
+    line-height: 21px;}
+    .inventory #item_search .flright, #shop #item_search .flright {}
+    #shop #item_search {
+	margin: 0;}
+    #item_search .flright {
+        display: none;
+    }
+    .inventory #item_search td[colspan="2"], #shop #item_search td[colspan="2"] {
+        position: inherit;
+    }
 	#wiki .main_column {width: 100%;}
 	#wiki .header {width: 100%;}
 	#wiki ol {margin: 15px auto;}
 	.wiki_index .wiki_article ul li {width: 90%; padding: 5px 0;}
-
-
+.inventory #shop_search select {
+    width: auto !important;}
+    .inventory #items_list {
+        width: 100%;
+        left: 0 !important;
+    }
 	#user .main_column, #user .main_column_bg {
 		width: 100%;
 		display: flex;
@@ -1757,8 +1837,8 @@ tr.likes {
 	#user table {min-width: 100% !important}
 	#user .thin table td.right {text-align: left;}
 	#user form input[type="text"], #user form textarea, #user form select {
-		max-width: 100% !important;
-		width: 100% !important;
+		max-width: 95% !important;
+		width: 95% !important;
 		margin: 10px 0;}
 	#styleurl {display: block; width: 100%;}
 
@@ -1780,7 +1860,7 @@ tr.likes {
 		display:none !important;}
 
 	
-	#user .main_column .box_community #community_stats {/* overflow: hidden; */padding: 15px 25px !important;}
+	#user .main_column .box_community #community_stats {padding: 15px 25px !important;}
 	.profile .box_community #community_stats {overflow: hidden;}
 	.profile .box_community #community_stats ul {display: block;width: 100%;float: none;margin: 0;padding: 0;margin-bottom: 20px;}
 
@@ -2015,7 +2095,53 @@ tr.likes {
 
 .forum_list {
     width: 100%;}
-
+#torrents .box.similar_div .head strong:before {
+	content: none;}
+#user tr textarea[name="publickey"], #user tr textarea[name="signature"], #user tr textarea[name="info"] {
+    min-width: 95% !important;}
+    #collections .thin .linkbox:nth-of-type(2) {
+        display: none;}
+    #collections ul.collage_images {
+        width: 100%;
+    }
+    #torrent_table .group td {
+        white-space: normal;
+    }
+    #collections .thin .header {
+        width: 100%;
+    }
+        .ui-widget-content {
+    max-width: 100%;}
+    #shop li.featured {
+    float: left;
+    width: 45%;}
+#requests .linkbox {
+    margin: 0 auto;}
+#requests .main_column_bg {
+    margin:0;
+    width: 100%;}
+#requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]) {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;}
+    
+    
+    
+    
+    
+#user.equipment #items_navigation >h3, #user.equipment #items_navigation >ul, #user.equipment #items_navigation >a {
+    display: block;}
+#user.equipment #items_navigation {
+    position: inherit;
+    top: 0;
+    width: auto;
+    height: auto;}
+#user.equipment #content >div >h2,
+#user.equipment #content >div >div:not(#items_navigation),
+#user.crafting #content >div {
+    display: none !important;}
 }
 
 
@@ -2023,7 +2149,7 @@ tr.likes {
     .global_buffs {
         width: 28px;
         height: 0;
-        /* min-height: 28px; */
+        
         background-size: 28px 28px;
         background-repeat: no-repeat;
         background-position: top right;
@@ -2044,4 +2170,22 @@ tr.likes {
     .global_buffs:hover .individual_buff {
     	display:block;
     }
+    #torrents li.similar_group,
+    #torrents .box.similar_div li.similar_group {
+        width: calc(100% / 3);
+    }
+    #torrents .screenshots >a {
+    width: calc(100% / 3 - 11px);
+    }
+    .collections_art_display td {
+        width: 50% !important;
+    }
+    #collections ul.collage_images li {
+        width: calc(100% / 3 - 3px);}
+    #shop li.item_li {
+    width: 85%;}
+    .inventory li.item_li {
+        width: 86% !important;}
+    .inventory #items_navigation {
+    top: 140px;}
 }
