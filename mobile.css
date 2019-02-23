@@ -607,7 +607,7 @@ tr.likes {
 		background-repeat: no-repeat;
 		}
 	#menu:hover {
-		    width: 100%;
+		    width: calc(100% - 91px);
 		    }
 
 	#menu ul {
