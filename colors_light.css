@@ -1126,6 +1126,7 @@ a:hover span,
 
 
 @media (max-width: 800px) {
+    #inbox td.label,
     #requests .thin .main_column table td.label,
     #torrents .filter_torrents td.label {
         background: #e7e7e7;}

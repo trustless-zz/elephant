@@ -306,11 +306,9 @@ tr.likes {
 	ul#userinfo_minor:hover li {
     display: flex;
     }
-	ul#userinfo_minor.highlighted {
-		background:url("../images/personred.png") no-repeat !important;
-		background-size: 25px auto !important;
-		background-position: 0px 0px !important;}
-
+#inbox h2 + #messageform span + br + #quickpost {
+    max-width: 95% !important;
+}
 #userinfo {
     margin: 0;
     position: absolute;
@@ -509,7 +507,8 @@ tr.likes {
 	
 	}
 #header >#searchbars:hover >ul {
-	display: flex;}
+	display: block;
+    width: 130px;}
 #header >#searchbars {
 	margin: 0 !important;
 	display: inline-block;
@@ -527,20 +526,10 @@ tr.likes {
 	z-index: 999;
 }
 	#header >#searchbars >ul {
-		
-		
-		
-		
-		
-		
-		
-		
 		height: auto;
-		
 		width: 100%;
 		padding: 0;
 		display: none;
-		flex-wrap: wrap;
 		margin-top: 38px;
 		margin-left: -177px;
 		}
@@ -582,7 +571,7 @@ tr.likes {
 	#searchbars ul:hover li {
 		left: 0px;}
 
-.autocomplete_list {margin: 0;padding: 0;max-width: 220px;left: 0px;top: 0;top: 39px;left: -50px;}
+.autocomplete_list {margin: 0;padding: 0;max-width: 220px;left: 0px;top: 0;top: 39px;left: -46px;}
 
 	#searchbars ul:hover li ul li {
 		margin: 0;
@@ -609,7 +598,14 @@ tr.likes {
 	#menu:hover {
 		    width: calc(100% - 91px);
 		    }
-
+#forums .linkbox_bottom + br + h3,
+#forums #reply_box {
+    width: 100%;
+}
+#forums #reply_box #quickreplytext #quickpost {
+    min-width: 95%;
+    max-width: 95%;
+}
 	#menu ul {
 		width: 100%;
 		flex-wrap: wrap;
@@ -2041,11 +2037,15 @@ tr.likes {
 	#inbox span[style^="width: 80%;"] {display: none; float: none !important;}
 	#inbox span[style^="width: 20%;"] {display: none; float: none !important;}
 	#inbox textarea {width: 95%; margin-left: 5px;}
-	#inbox td.label {width: auto; padding-left: 10px;}
+	#inbox td.label {width: auto; padding-left: 10px; text-align: left;}
 
 	#inbox #searchbox div {height: auto;}
-
-
+#inbox #messageform >.box.pad {
+    padding-bottom: 10px;
+}
+#inbox .linkbox {
+    width: 100%;
+}
 	#progress_bar {width: auto;}
 	.flright {float: none; margin-top: 0px !important;}
 	.flleft {float: none;}
