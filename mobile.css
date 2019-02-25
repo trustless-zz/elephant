@@ -1834,15 +1834,18 @@ tr.likes {
     left: unset !important;
     visibility: visible !important;
     right: calc(-100% + 42px);
-    top: 0;
-    z-index: 9;}
+    top: 17px;
+    z-index: 9;
+    }
 #torrents .thin .sub {
     width: 27px;
     height: 27px;
     margin: 0 0 -43px 0;
     background-size: 23px 23px;
     background-position: 2px 2px;
-    right: calc(-100% + 27px);}
+    right: calc(-100% + 27px);
+    top: 0;
+    }
 #requests .thin .sub {
     position: relative !important;
     width: 42px;
