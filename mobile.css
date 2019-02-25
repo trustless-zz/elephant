@@ -43,6 +43,7 @@ tr.likes {
 #recommended #vanityhouse tbody tr td a img {
 	max-width: 100% !important;
 }
+    #requests .avatar img,
 	img {
 		max-width: 100% !important;}
 
@@ -235,20 +236,23 @@ tr.likes {
 		top: 38px;
 		position: relative;
 		}
-#header .sub:hover span {
+.sub:hover span {
 	display:block;}
-#header .sub span {
-    
+.sub span {
+    top: 0;
+    right: 135px;
     display: none;
-    margin-top: 38px;
-    margin-bottom: -38px;
+    position: relative;}
+#header .sub span {
+    top: 38px;
+    left: -91px;}
     
     
 }
-#header .sub a {
+.sub a {
     display: block !important;
     height: 100%;
-    width: 115px;
+    width: 120px;
     text-align: center;
     line-height: 35px;
     font-size: 17px;
@@ -258,7 +262,6 @@ tr.likes {
 }
 
 	#us_pop span {
-		display: block;
 		width: 100%;
 		
 		
@@ -292,11 +295,12 @@ tr.likes {
 		}
 
 	ul#userinfo_minor li {
-		
+        position: relative;
 		
 		font-size: 18px;
 		
-		margin: 81px 0 -81px 0px;
+    top: 81px;
+    left: -134px;
 		display: none;
 		
 		text-align: center;
@@ -456,13 +460,7 @@ tr.likes {
 		
 		
 		margin: 38px 0 -38px 0 !important;
-		z-index: 999;
-		
-		
 		width: 220px;
-		
-		
-		
 		line-height: 37px;
 		padding: 0 5px;
 		
@@ -474,8 +472,8 @@ tr.likes {
 		justify-content: center;
 		position: relative !important;
 		top: 0;
-		left: 0;
-		overflow: hidden;
+		left: -134px;
+		overflow: visible;
 		}
 
 	ul#userinfo_stats:hover li {
@@ -606,6 +604,8 @@ tr.likes {
     min-width: 95%;
     max-width: 95%;
 }
+    #header {
+    z-index: 999;}
 	#menu ul {
 		width: 100%;
 		flex-wrap: wrap;
@@ -632,10 +632,10 @@ tr.likes {
 		
 		background: wheat;
 		
-		z-index: 999;
 		margin:0!important;
-		
-		top:0px;
+		    position: relative;
+		    top: 0;
+    left: 0;
 		
 		
 		
@@ -675,7 +675,7 @@ tr.likes {
 		top: 0px;}
 
 #header #alerts {
-    top: 58px;
+    top: 15px;
     left: 177px;}
 #header #alerts .blend {
     left: 28px;}
@@ -1040,6 +1040,7 @@ tr.likes {
 #torrents .groupoptions:hover a {
 	display: block;}
 #torrents .groupoptions a {
+        position: relative;
 	font-size: 17px;
 	line-height: 37px;
 	white-space: nowrap;
@@ -1200,7 +1201,6 @@ tr.likes {
 
 	#torrents .main_column tr.group_torrent td:nth-child(1) span a {
 		position: relative;
-		z-index: 5;
 		margin: 0 !important;
 		}
 
@@ -1747,9 +1747,16 @@ tr.likes {
         position: unset;}
 #header #alerts .blend,
 #header #alerts {
+    clip: unset !important;
     transition: 0s !important;
     opacity: 1 !important;
     transition-delay: 0s !important;}
+#header #alerts .blend {
+    left: -177px;
+    top: 81px;
+    display: none;}
+#header #alerts:hover .blend {
+    display: block;}
 #shop_search td.label,
 #shop #item_search td.label,
 #shop #shop_search td:last-child {
@@ -1801,6 +1808,11 @@ tr.likes {
     .inventory #item_search td[colspan="2"], #shop #item_search td[colspan="2"] {
         position: inherit;
     }
+    #forums .box.thin.clear .head.colhead_dark {
+    width: 100%;
+    }
+    #forums #content .thin table {
+        margin: 0;}
 	#wiki .main_column {width: 100%;}
 	#wiki .header {width: 100%;}
 	#wiki ol {margin: 15px auto;}
@@ -1811,6 +1823,38 @@ tr.likes {
         width: 100%;
         left: 0 !important;
     }
+.thin .sub {
+    position: relative !important;
+    width: 42px;
+    height: 42px;
+    margin: 0 0 -42px 0;
+    background-size: 28px 28px;
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    left: unset !important;
+    visibility: visible !important;
+    right: calc(-100% + 42px);
+    top: 0;
+    z-index: 9;}
+#torrents .thin .sub {
+    width: 27px;
+    height: 27px;
+    margin: 0 0 -43px 0;
+    background-size: 23px 23px;
+    background-position: 2px 2px;
+    right: calc(-100% + 27px);}
+#requests .thin .sub {
+    position: relative !important;
+    width: 42px;
+    height: 42px;
+    margin: 0 0 -52px 0 !important;
+    background-size: 28px 28px;
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+    left: unset !important;
+    visibility: visible !important;
+    right: calc(-100% + 42px);}
+
 	#user .main_column, #user .main_column_bg {
 		width: 100%;
 		display: flex;
@@ -2093,6 +2137,9 @@ tr.likes {
 	#share_score_breakdown .label {
 		margin-left: 2% !important;}
 
+#torrents .main_column_bg .main_column .torrent_table tbody[id^="edition"] .group_torrent td:nth-child(1) >span:nth-child(1) >a {
+    z-index: unset;
+}
 .forum_list {
     width: 100%;}
 #torrents .box.similar_div .head strong:before {
@@ -2121,13 +2168,52 @@ tr.likes {
     margin:0;
     width: 100%;}
 #requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]) {
-    padding: 0;
+    padding: 0 !important;
     width: 100%;
     height: auto;
     margin: 0;
     overflow: hidden;}
+.sub span:before {
+    content: '';
+    position: absolute;
+    width: 132px;
+    height: 37px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    }
+#torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:before,
+#torrents .groupoptions a:before,
+#menu ul li:before,
+#header #userinfo_stats li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    }
+#searchbars >ul >li:before {
+    content: '';
+    position: absolute;
+    width: 127px;
+    z-index: -1;
+    height: 39px;
+    left: -175px;
+    }
+#userinfo_minor li:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 162px;
+    height: 39px;
+    z-index: -1;
+    }
     
     
+
     
     
     

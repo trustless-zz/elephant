@@ -1140,20 +1140,30 @@ a:hover span,
     #torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a,
     #userinfo_stats li,
     #userinfo_minor li a,
-    #header .sub a,
-    #menu ul li a {
+    .sub a,
+    #menu ul li a,
+    #header #alerts a {
         border: 1px solid #e5e5e5;
         background: #fff;}
     #userinfo_minor li a,
-    #header .sub a,
+    .sub a,
     #menu ul li a {
         color: #255c7c;}
+    #torrents .main_column tr.group_torrent td:nth-child(1) span:first-child a:before,
+    #torrents .groupoptions a:before,
+    #userinfo_minor li:before,
+    #menu ul li:before,
+    #searchbars >ul >li:before,
+    #header #userinfo_stats li:before,
+    .sub span:before,
     #user.equipment #items_navigation,
     #items_navigation:hover {
-        background-color: #fff;
         -webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
         -moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
         box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
+    #user.equipment #items_navigation,
+    #items_navigation:hover {
+        background-color: #fff;}
 }
 @media screen and (max-width: 400px) {
     .global_buffs .individual_buff {
