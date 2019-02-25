@@ -6,9 +6,11 @@
 }
 @-webkit-keyframes rotate800 {
     0% {
-        -webkit-transform: rotate(0deg);}
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);}
     100% {
-        -webkit-transform: rotate(360deg);}
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);}
 }
 
 
@@ -247,8 +249,6 @@ tr.likes {
     top: 38px;
     left: -91px;}
     
-    
-}
 .sub a {
     display: block !important;
     height: 100%;
@@ -2209,8 +2209,7 @@ tr.likes {
     top: 0;
     width: 162px;
     height: 39px;
-    z-index: -1;
-    }
+    z-index: -1;}
     
     
 
