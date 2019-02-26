@@ -280,19 +280,21 @@ tr.likes {
 		z-index: 998;
 		padding: 0;
 		margin: 0;
-		
 		background-position: top left;
-		
-		
 		background-repeat: no-repeat;
 		}
-
-	ul#userinfo_minor:hover {
-		
-		
-		
-		
-		}
+    #snatchesrow img,
+    #uploadsrow img,
+    #likesrow img {
+        width: calc(100% - 10px);
+    }
+    
+    .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td,
+    .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td,
+    .box.box_likes.box_torrents div #likesrow >tbody >tr >td {
+        width: 20% !important;
+        max-width: 100% !important;
+    }
 
 	ul#userinfo_minor li {
         position: relative;
@@ -1898,8 +1900,7 @@ tr.likes {
 		
 		margin: 0 auto;
 		}
-	#snatchesrow td:nth-of-type(5), #uploadsrow td:nth-of-type(5), #likesrow td:nth-of-type(5) {
-		display:none !important;}
+
 
 	
 	#user .main_column .box_community #community_stats {padding: 15px 25px !important;}
@@ -2276,4 +2277,7 @@ tr.likes {
         width: 86% !important;}
     .inventory #items_navigation {
     top: 140px;}
+    #torrents .ratings {
+    height: 70px;
+    text-indent: 85px;}
 }

@@ -4156,7 +4156,7 @@ img[title="Gold"] {
 
 /*Recent Liks, Snatches, Uploads*/
 #snatchesrow img, #uploadsrow img, #likesrow img {
-    width: 163.6px;
+    width: calc(100% - 10px);
     height: auto;
     padding: 5px;
     align-self: center;
@@ -5141,7 +5141,8 @@ span.user_title span[style="font-family: cursive;"] {
     padding: 9px 10px 8px 10px;}
 .trailer {
     position: relative;
-    height: 0;}
+    height: 0;
+    padding: 0 0 56.25% 0 !important;}
 .trailer iframe {
     width: 100%;
     height: 100%;
@@ -7011,8 +7012,6 @@ body {
 #clan_stats .clan_stat_totals >table.border,
 #clan_stats .clan_stat_totals .center{
     width: 637px;}
-.trailer {
-    padding: 0 0 56.25% 0 !important;}
 #user .inventory .save_message {
     width: 100%;}
 #torrents li.similar_group >a {
@@ -7031,7 +7030,6 @@ body {
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 972px;}
 #bookmarks .collage tbody tr td a img,
-#snatchesrow img, #uploadsrow img, #likesrow img,
 #collections ul.collage_images li {
     width: 183.6px;}
 #recommended #vanityhouse tbody tr td a img {
