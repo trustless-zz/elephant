@@ -2280,4 +2280,6 @@ tr.likes {
     #torrents .ratings {
     height: 70px;
     text-indent: 85px;}
+    #shop li.item_li.nostock .submit_section:before {
+    left: 77px;}
 }
