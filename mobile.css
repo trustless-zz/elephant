@@ -203,7 +203,7 @@ tr.likes {
 		height: 110px !important;
 		}
 
-	#header #logo {
+	#logo {
 		display: inline-block;
 		margin: 10px 0 0 0;
 		width: 76px;
@@ -212,7 +212,7 @@ tr.likes {
 		-webkit-transition: none !important;
 		}
 
-	#header #logo a {
+	#logo a {
 		width: 76px;
 		height: 76px;
 		animation: rotate800 60s linear infinite;
