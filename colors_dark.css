@@ -1129,6 +1129,7 @@ a:hover span,
         background: #000;}
     #torrents .main_column .forum_post .avatar img {
         border-right: 1px solid #1a1a1a;}
+    #forums td.body,
     #torrents .main_column .forum_post td.body {
         border-left: 1px solid #1a1a1a;}
     tr.likes {

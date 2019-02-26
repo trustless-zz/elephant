@@ -1155,7 +1155,6 @@ tr.likes {
     line-height: 30px;
     display: none;
     width: 100%;
-    background: white;
     position: absolute !important;
     top: 0;
     text-align: center;
@@ -1484,7 +1483,7 @@ tr.likes {
 	.avatar .forumstat {display: none;}
 	.username_badges {display: none;}
 	#forums .box {margin-top: 0px;padding: 0px;}
-	#forums td.body {padding: 10px 10px 25px 10px;border-left: 1px solid #e5e5e5;}
+	#forums td.body {padding: 10px 10px 25px 10px;}
 	#forums td.body br {line-height: 10px;}
 	td.avatar {box-shadow:none;}
 
@@ -2213,7 +2212,8 @@ tr.likes {
     width: 162px;
     height: 39px;
     z-index: -1;}
-    
+#forums .thin >h2:first-child {
+    margin: 10px 0 10px 3px;}
     
 
     
