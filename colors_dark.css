@@ -1141,7 +1141,8 @@ a:hover span,
     #userinfo_minor li a,
     .sub a,
     #menu ul li a,
-    #header #alerts a {
+    #header #alerts a,
+    .global_buffs .individual_buff {
         border: 1px solid #1a1a1a;
         background: #1f2023;}
     #userinfo_minor li a,
@@ -1163,9 +1164,6 @@ a:hover span,
     #user.equipment #items_navigation,
     #items_navigation:hover {
         background-color: #1f2023;}
-}
-@media screen and (max-width: 400px) {
-    .global_buffs .individual_buff {
-        border: 1px solid #1a1a1a;
-        background: #1f2023;}
+    #announcement:hover {
+        background-color: #7a685e;}
 }

@@ -221,6 +221,7 @@ tr.likes {
 		}
 
 	#announcement {
+        z-index: 999;
 		font-size: 1.1em;}
 
 	.clan_trophy {
@@ -493,12 +494,7 @@ tr.likes {
     flex-direction: column;
 }
 .global_buffs .individual_buff {
-    padding: 0;
-    margin: 0 0 6px 10px;
-    height: 35px;
-    width: 80px;
-    min-width: unset;
-}
+    padding: 0;}
 
 .global_buffs a >i, .global_buffs a >div {
 	opacity:1;}
@@ -671,11 +667,36 @@ tr.likes {
 #index .main_column:before {
 	content: none;
 }
+    #index .thin #clans {
+        margin-bottom: 15px;
+        width: 100%;}
 
-
-	#announcement {
-		top: 0px;}
-
+#announcement {
+    background-color: transparent;
+	top: 0px;
+    background-image: url('icon/svg/announce800.svg');
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: calc(50% - 19px);
+    width: 28px;
+    height: 28px;
+    position: absolute;}
+#announcement span {
+    display: none;}
+#announcement:hover {
+    background-image: none;
+    -webkit-filter: unset;
+    -moz-filter: unset;
+    -ms-filter: unset;
+    -o-filter: unset;
+    filter: unset;
+    width: 100%;
+    height: auto;
+    left:0;}
+#announcement:hover span {
+    display: inline;}
+    
 #header #alerts {
     top: 15px;
     left: 177px;}
@@ -2215,8 +2236,10 @@ tr.likes {
     z-index: -1;}
 #forums .thin >h2:first-child {
     margin: 10px 0 10px 3px;}
-    
-
+#shop #content .thin.freeleech_shop .freeleech_shop_main .box.pad.box_freeleech_info {
+    width: calc(100% - 20px);}
+.freeleech_shop #items_navigation {
+    top: 72px;}
     
     
     
@@ -2231,34 +2254,36 @@ tr.likes {
 #user.equipment #content >div >div:not(#items_navigation),
 #user.crafting #content >div {
     display: none !important;}
-}
-
-
-@media screen and (max-width: 400px) {
+    
+    
+    
+    
+    
     .global_buffs {
         width: 28px;
         height: 0;
-        
         background-size: 28px 28px;
         background-repeat: no-repeat;
         background-position: top right;
         flex-direction: row;
-        padding-top: 33px;
-    }
+        padding-top: 33px;}
     .global_buffs:hover {
     	width: calc(100% - 215px);
-    	height: auto;
-    	}
+    	height: auto;}
     .global_buffs .individual_buff {
     	display:none;
-    	width: 50%;
-    	margin: 0;
-    	max-height: 55px;
-    	height: auto;
-    }
+    	width: auto;
+        padding: 5px;
+        max-width: 80px;
+        margin: 0;
+    	max-height: 80px;
+    	height: auto;}
     .global_buffs:hover .individual_buff {
-    	display:block;
-    }
+    	display:block;}
+}
+
+
+@media screen and (max-width: 400px) {
     #torrents li.similar_group,
     #torrents .box.similar_div li.similar_group {
         width: calc(100% / 3);

@@ -2928,6 +2928,7 @@ form textarea, form input {
     overflow: visible;}
 
 #announcement {
+    white-space: normal;
     position: absolute;
     left: 0;
     top: 0;
