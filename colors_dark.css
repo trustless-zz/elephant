@@ -1124,6 +1124,7 @@ a:hover span,
 
 
 @media (max-width: 800px) {
+    #user td.label,
     #inbox td.label,
     #requests .thin .main_column table td.label,
     #torrents .filter_torrents td.label {

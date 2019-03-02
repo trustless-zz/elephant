@@ -487,7 +487,7 @@ tr.likes {
     right: 0;
     width: calc(100% - 215px);
     height: 82px;
-    z-index: 9999;
+    z-index: 98;
     direction: rtl;
     display: flex;
     flex-wrap: wrap;
@@ -691,7 +691,7 @@ tr.likes {
     -ms-filter: unset;
     -o-filter: unset;
     filter: unset;
-    width: 100%;
+    width: calc(100% - 8px);
     height: auto;
     left:0;}
 #announcement:hover span {
@@ -1892,7 +1892,9 @@ tr.likes {
 	#user .sidebar img {width: inherit;}
 	#user .avatar {float: none;}
 
-	#user .thin table td {}
+	#user .thin table td {
+        display: block;
+        border: 0;}
 	#user .thin form {width: 100%;}
 
 	#user td.label {
@@ -2284,6 +2286,9 @@ tr.likes {
 
 
 @media screen and (max-width: 400px) {
+    #announcement {
+        left: 220px;
+    }
     #torrents li.similar_group,
     #torrents .box.similar_div li.similar_group {
         width: calc(100% / 3);
