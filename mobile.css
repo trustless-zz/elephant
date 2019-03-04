@@ -17,7 +17,7 @@
 /* src: https://gazellegames.net/static/styles/game_room/screenSizes/mobile.css */
 @media screen and (max-width: 800px) {
 
-
+@-webkit-keyframes logoslide {from {background-position: 0 0;} to {background-position: calc(100% - 76px) 0;}}
 
     html {
     overflow-x: unset;}
