@@ -4172,7 +4172,12 @@ img[title="Gold"] {
 /****Reviews****/
 .userreviews table td {vertical-align: top; padding-bottom:10px;}
 #usersreviewimage {width: 35px;}
-#usersreviewimage img {height: 25px; padding-right:5px; margin-top:5px;}
+#usersreviewimage img {
+    height: 25px;
+    width: 25px;
+    padding-left: 25px;
+    padding-right:5px;
+    margin-top:5px;}
 .userreviews {margin-bottom: -10px;}
 #reviewdate {font-size:.7em; font-style:italic;}
 #allreviewslink {float:right; margin-top:30px;}
@@ -4192,7 +4197,8 @@ img[title="Gold"] {
 	margin-right: 5px;}
 #torrents .forum_post .comment_rating img {
 	height: 25px;
-	width: 25px;}
+	width: 25px;
+    padding-left: 25px;}
 #torrents .forum_post .comment_rating p {
 	font-size: 0.8em;}
 
@@ -5293,7 +5299,9 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     left: 90px;
     z-index: 1;}
 #user .box.box_likes.box_torrents .head span.likes_icon.flright img {
-    height: 28px;}
+    height: 28px;
+    width: 28px;
+    padding-left: 28px;}
 
 #torrents #torrentbrowse .box.pad[align="center"] {
     background: none;
@@ -5507,41 +5515,60 @@ a.show_torrents_link,
     width: 60% !important;}
 
 img[src="static/common/symbols/donor.png"] {
+    padding-left: 15px;
+    width: 15px;
     height: 13px;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/donor.svg');}
+    background-image: url('icon/svg/donor.svg');}
 img[src="https://gazellegames.net/static/common/symbols/disabled.png"],
 img[src="static/common/symbols/disabled.png"] {
+    padding-left: 13px;
+    width: 13px;
     height: 13px;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/disabled.svg');}
+    background-image: url('icon/svg/disabled.svg');}
 img[src="static/common/symbols/warned.png"] {
+    padding-left: 18px;
+    width: 18px;
     height: 13px;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/warned.svg');}
+    background-image: url('icon/svg/warned.svg');}
 img[src="static/common/thumbsup.png"],
 img[src="static//common/thumbsup.png"] {
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/thumbsup.svg');}
+    width: 50px;
+    padding-left: 50px;
+    height: 50px;
+    background-image: url('icon/svg/thumbsup.svg');}
 img[src="static/common/thumbsdown.png"] {
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/thumbsdown.svg');}
+    width: 50px;
+    padding-left: 50px;
+    height: 50px;
+    background-image: url('icon/svg/thumbsdown.svg');}
 img[alt="Up Votes"][title="Up Votes"],
 img[alt="User Ratings"][title="User Ratings"] {
+    padding-left: 15px;
+    width: 15px;
     height: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/upvote.svg');}
+    background-image: url('icon/svg/upvote.svg');}
 img[alt="Down Votes"][title="Down Votes"] {
+    padding-left: 15px;
+    width: 15px;
     height: 16px;
+    background-image: url('icon/svg/downvote.svg');}
+
+
+img[src="static/common/symbols/donor.png"],
+img[src="https://gazellegames.net/static/common/symbols/disabled.png"],
+img[src="static/common/symbols/disabled.png"],
+img[src="static/common/symbols/warned.png"],
+img[src="static/common/thumbsup.png"],
+img[src="static//common/thumbsup.png"],
+img[src="static/common/thumbsdown.png"],
+img[alt="Up Votes"][title="Up Votes"],
+img[alt="User Ratings"][title="User Ratings"],
+img[alt="Down Votes"][title="Down Votes"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     background-repeat: no-repeat;
-    background-position: center;
-    content: url('icon/svg/downvote.svg');}
+    background-position: center;}
+
 
 img[title="Downloaded"],
 img[title="Uploaded"],
@@ -5572,7 +5599,9 @@ img[title="Snatches"] {
     margin: 0 !important;
     left: 0;}
 #user .box.box_info img[src^="static/common/symbols"] {
-    height: 28px;}
+    height: 28px;
+    width: 28px;
+    padding-left: 28px;}
 #user marquee {
     vertical-align: bottom;
     max-width: 50%;}
