@@ -316,6 +316,7 @@ overflow: auto;}
     position: relative;
     top: -18px;
     visibility: hidden;
+    width: -moz-max-content;
     width: max-content;
 	z-index: 99;
     font-size: 10pt;}
@@ -2733,6 +2734,7 @@ span.italic {
 .sidebar #freeleech li.group_torrent {
     white-space: nowrap;
     font-size: 9pt;
+    width: -moz-max-content;
     width: max-content;
     padding: 2px 0 4px 0;}
 #index .sidebar ul.stats.nobullet {
@@ -2827,6 +2829,9 @@ ul, ol {
 .colhead, .colhead_dark, .head {
     min-height: 25px;
 }
+
+.toggle_tags {
+    white-space: nowrap;}
 
 .save_message {
     padding: 4px;
@@ -5373,7 +5378,8 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 #recommended #vanityhouse tbody tr td a:nth-child(1),
 #collections ul.collage_images li >a {
 	padding: 500px;
-	margin: -500px;}
+	margin: -500px;
+    display: inline-block;}
 .box.box_uploads.box_torrents div #uploadsrow >tbody >tr >td a, 
 .box.box_snatches.box_torrents div #snatchesrow >tbody >tr >td a, 
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td a {
@@ -6035,6 +6041,7 @@ span.size10 {font-size: 3em;line-height: 1em}
     font-weight: bold;}
 #top10 .thin.top10_tags {
     margin: 0 auto;
+    width: -moz-max-content;
     width: max-content;}
 #top10 .thin.top10_tags #ut,
 #top10 .thin.top10_tags #ur,
@@ -7438,3 +7445,25 @@ body {
 /* disabling custom user backgrounds for now */
 #user[style^="background: url('http"] {
     background: inherit !important;}
+
+
+@-moz-document url-prefix() {
+    #torrentbrowse form .filter_torrents.advanced .box.pad table tbody tr td #platcheckbox a.flright[onclick="toggle_myplatforms('hide'); return false;"]::before {
+        bottom: 1107px;}
+    .group_torrent td {
+        text-overflow: initial;}
+    #torrents #requests #requests_list tr[class^="requestrows row"] td:first-child a, #torrents .main_column_bg .main_column .torrent_table tbody .group_torrent > td:first-child > a, #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] a[href^="torrents.php?id="], #collections .thin.collections .main_column #torrent_table > tbody > tr[class^="group_torrent"] > td[colspan="3"] > a, #artist #torrent_table > tbody > tr.group_torrent > td[colspan="2"] > a, #collages > tbody > tr:nth-child(n+2) > td:nth-child(1) > a, #bookmarks .group_torrent td[colspan="3"] > a {
+        display: inline-block;}
+    #requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]),
+    #grouplinks {
+        width: 873px;}
+    .edition_info {
+        background-clip: padding-box;}
+    @media screen and (min-width: 1320px) {
+        #requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]),
+        .profile .box_art_gallery .gallery_row,
+        #grouplinks {
+            width: 973px;}
+    }
+ 
+}
