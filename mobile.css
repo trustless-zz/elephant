@@ -2259,6 +2259,10 @@ tr.likes {
     
     
     
+.freeleech_shop >div:first-child {
+    width: 100%;}
+.freeleech_shop #items_navigation {
+    top: 45px;}
     
     
     .global_buffs {
