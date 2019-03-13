@@ -406,7 +406,8 @@ input:focus {
 #trading_panel .message_box,
 #header #alerts .blend,
 #stats .box.pad.center,
-#userhistory .linkbox + table {
+#userhistory .linkbox + table,
+#reportsv2 #report_table >table {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}

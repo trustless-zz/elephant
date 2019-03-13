@@ -520,6 +520,15 @@ overflow: auto;}
 	font-family: neuzite, sans-serif;
 	font-size: 10pt;
 	border: 0 solid #1a1a1a;}
+#reportsv2 #report_table td.label {
+    width: 1px;
+    white-space: nowrap;}
+#reportsv2 #sitelink,
+#reportsv2 textarea {
+    width: 95% !important;
+    max-width: 95% !important;}
+#reportsv2 #report_table input[type="submit"] {
+    margin: -26px 0 0 5px;}
 
 #index .thin .main_column_bg .main_column .box {
 	margin-top: 0;

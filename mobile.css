@@ -1653,13 +1653,14 @@ tr.likes {
 
 	#reportsv2 .box {width: 95% !important;}
 	#reportsv2 #content table tr {display: flex; flex-direction: column;}
-	#reportsv2 #content table tr td:nth-of-type(1) {order:2;}
-	#reportsv2 #content table tr td:nth-of-type(2) {order:1;}
 	#reportsv2 #content table tr td table tr {display: flex; flex-direction: row;}
 	#reportsv2 #content table tr td table tr td {display: inline; width: 98%;}
 	#reportsv2 #content table tr td.colhead {font-size: 1em;}
-	#reportsv2 h3 {line-height: 0px; margin-top: 40px; margin-bottom: 0px;}
-	#reportsv2 textarea, #reportsv2 input {max-width: 300px;}
+	#reportsv2 h3 {
+        line-height: 0px;
+        margin-top: 25px;
+        margin-bottom: 15px;}
+	#reportsv2 textarea, #reportsv2 input {max-width: 300px; margin-bottom: 10px;}
 	#reportsv2 #all_reports {width: 95% !important;}
 	#reportsv2 #all_reports input[type=button]:disabled:hover {box-shadow: none;}
 
