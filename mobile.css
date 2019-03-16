@@ -2287,10 +2287,20 @@ tr.likes {
     	height: auto;}
     .global_buffs:hover .individual_buff {
     	display:block;}
+    
+    
+    #fight_skill_points_assign #items_navigation {
+        position: absolute;
+        top: 42px;}
+    #fight_skill_points_assign table {
+        margin: 10px 0 0 0;}
 }
 
 
 @media screen and (max-width: 400px) {
+    #fight_skill_points_assign #items_navigation {
+        top: 59px;
+    }
     #announcement {
         left: 220px;
     }

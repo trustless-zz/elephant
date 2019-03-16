@@ -430,7 +430,9 @@ input:focus {
 #header #alerts .blend,
 #stats .box.pad.center,
 #userhistory .linkbox + table,
-#reportsv2 #report_table >table {
+#reportsv2 #report_table >table,
+.adventure_table,
+#adventure_search {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -791,7 +793,8 @@ h2 a,
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody,
 #torrents #requests #requests_list >tbody >tr:first-child >td,
 .colhead_dark,
-.torrent_edit #upload_table #releaseinfo td.label {
+.torrent_edit #upload_table #releaseinfo td.label,
+#user_fight_attacks .label {
     background-color: rgba(213,176,154,0.35);}
 #user .profile .box_requests tr.colhead_dark {
     background-color: #5e524d;}

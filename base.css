@@ -6935,6 +6935,21 @@ a[onclick="BBCode.spoiler(this);"] {
     font-family: neuzite, sans-serif !important;
 	font-size: 9pt !important;}
 
+#fight_skill_points_assign table tr:not(.colhead) td:first-child {
+    width: 50px;}
+#fight_skill_points_assign table tr:not(.colhead) td:last-child {
+    width: 1px;
+    white-space: nowrap;}
+#fight_skill_points_assign #items_navigation {
+    position: initial;}
+#fight_skill_points_assign table {
+    margin: 24px 0 0 0;
+    width: calc(100% - 251px);
+    float: right;}
+#user_fight_attacks table.border {
+    font-weight: normal;}
+
+
 /* widescreen */
 @media (min-width: 801px) and (max-width: 1279px) {
 body {
@@ -7014,6 +7029,8 @@ body {
 }
 
 @media screen and (min-width: 1320px) {
+#fight_skill_points_assign table {
+    width: calc(100% - 271px);}
 body {
     min-width: 1305px;}
 #header {
@@ -7293,6 +7310,10 @@ body {
 @media screen and (max-width: 1365px) and (min-width: 1320px) {
 .clan_trophy {
     right: 45px;}
+}
+@media (min-width: 1280px) {
+    .adventure_table .colhead td {
+        white-space: nowrap;}
 }
 
 
