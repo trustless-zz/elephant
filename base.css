@@ -6949,6 +6949,12 @@ a[onclick="BBCode.spoiler(this);"] {
 #user_fight_attacks table.border {
     font-weight: normal;}
 
+.freeleech_shop_main:before {
+    display: inline-block;
+    content: '';
+    width: 224px;
+    height: 362px;
+    float: left;}
 
 /* widescreen */
 @media (min-width: 801px) and (max-width: 1279px) {
@@ -7108,6 +7114,7 @@ body {
     width: 264px;}
 #equipment #items, #crafting_panel #items {
     left: 254px;}
+.freeleech_shop_main:before,
 #shop li.item_li.nostock #clickable .item_description, #shop li.item_li.featured.nostock #clickable .item_description, #items_navigation, #equipment img.avatar[class="avatar pixelart"] {
     width: 244px;}
 #shop li[class*="item_type_"] {
