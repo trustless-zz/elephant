@@ -64,7 +64,9 @@ tr.likes {
 	input, textarea {
 		max-width: 300px !important;}
     #torrents #torrent_history_search td.label, #torrents .thin .center form table td.label, #user .thin .center form table td.label, #requests .thin >table td:nth-child(n+2) {
-        white-space: normal;}
+        white-space: normal;
+    width: auto;
+        margin: 0;}
 
 #index .thin .main_column_bg .main_column div[class="box news_post"] .head strong, #index .thin .main_column_bg .main_column div[class="box news_post"]:nth-of-type(n+7) .head strong {
     width: 98.5%;}
@@ -383,7 +385,7 @@ tr.likes {
     width: 44% !important;
     left: 0 !important;}
 .inventory #items_navigation {
-    top: 120px;}
+    top: 155px;}
 #items_list {
     width: 100%;
     margin: 0;
@@ -2321,7 +2323,7 @@ tr.likes {
     .inventory li.item_li {
         width: 86% !important;}
     .inventory #items_navigation {
-    top: 140px;}
+    top: 175px;}
     #torrents .ratings {
     height: 70px;
     text-indent: 85px;}

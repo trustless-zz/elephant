@@ -27,6 +27,7 @@ a,
     border-bottom: 2px solid #000;}
 .body.similar ul.nobullet li span.similar_votes a:not([title="Mark as similar"]):hover {
     filter: drop-shadow(0px 0 2px #000);}
+#seedtime_tokens .large_progress_bar .points,
 #share_score .large_progress_bar .points {
     text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;}
 #share_score .large_progress_bar .main_section {
@@ -48,12 +49,14 @@ a,
 .box.box_image.box_image_coverart div[align="center"] a:hover:after{
     outline: 3px solid #e85066;}
 
+input[type="url"],
 select,
 input[type=text],
 input[type=search],
 input[type="number"] {
 	background-color: #f5f5f5;}
 select:hover,
+input[type="url"]:focus,
 input[type=text]:focus {
 	background-color: #ebebeb;}
 table,
@@ -168,13 +171,16 @@ a[onclick="BBCode.spoiler(this);"]:hover,
 #shop #clickable:hover .item_description {
     background-color: rgba(255,255,255,0.8);}
 
+#seedtime_tokens .main_bar,
 #share_score .large_progress_bar .main_bar,
 #center_poll,
 .sidebar #progress_bar .main_bar {
     box-shadow: inset 0 2px 9px rgba(255,255,255,0.3), inset 0 -2px 6px rgba(0,0,0,0.4);}
 
+input[type="url"],
 input[type=text],
 input[type=search],
+input[type="url"]:focus,
 input[type=text]:focus,
 input[type=search]:focus,
 #searchbars ul li form input:focus,
@@ -216,7 +222,9 @@ input[type=search]:focus,
 .donate_box_content_nature,
 #achievements tr,
 #achievements tr.colhead,
-.alertable-cancel {
+.alertable-cancel,
+#seedtime_tokens .large_progress_bar .last_drop,
+#seedtime_tokens .large_progress_bar .next_drop {
     color: #000;}
 
 .tooltipster-default,
@@ -226,6 +234,7 @@ input[type=search]:focus,
 #recommended #vanityhouse tbody tr td a:nth-child(1):hover {
     color: #000 !important;}
 
+input[type="url"],
 select,
 input[type=text],
 input[type=search],
@@ -458,6 +467,7 @@ input:focus {
 #requests .thin > table tr td a {
     color: #333333;}
 
+#seedtime_tokens .main_bar,
 #share_score .large_progress_bar .main_bar,
 #center_poll,
 .sidebar #progress_bar .main_bar {
@@ -466,6 +476,7 @@ input:focus {
 #share_score .large_progress_bar .bonus_section {
     background-color: rgba(177,232,0,0.2);}
 
+#seedtime_tokens .main_bar,
 #share_score .large_progress_bar .main_bar {
     background-image: linear-gradient(to bottom, #a15766, #ed5166, #6a5466);}
 

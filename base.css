@@ -23,7 +23,6 @@ html {
     overflow-x: hidden;}
 
 body {
-	overflow-x: hidden;
 	font-size: 10pt;
 	font-family: whitney, sans-serif;}
 
@@ -2679,6 +2678,7 @@ span.user_title {
     min-width: 80px;
 }
 
+#seedtime_tokens .large_progress_bar .points,
 #share_score .large_progress_bar .points {
     font-weight: bold;
     margin-left: 48.5%;
@@ -2686,14 +2686,21 @@ span.user_title {
     text-align: center;
     z-index: 10;}
 
-#share_score .large_progress_bar > span {
+.large_progress_bar > span {
     display: block;
     height: 100%;
     position: absolute;
     top: 0;
 }
 
-#share_score .large_progress_bar .main_bar {
+#seedtime_tokens .large_progress_bar .last_drop {
+    top: 100%;
+    left: 5px;}
+#seedtime_tokens .large_progress_bar .next_drop {
+    top: 100%;
+    right: 5px;}
+
+.large_progress_bar .main_bar {
     position: relative;
     z-index: 1;}
 
@@ -6958,8 +6965,6 @@ a[onclick="BBCode.spoiler(this);"] {
 
 /* widescreen */
 @media (min-width: 801px) and (max-width: 1279px) {
-body {
-    width: 1279px;}
 #header {
     width: 100%;
     left: 0;}
@@ -7012,8 +7017,6 @@ a >.error_message {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1319px) {
-body {
-    min-width: 1265px;}
 #logo {
     top: 58px;
     left: -30px;}
@@ -7037,8 +7040,6 @@ body {
 @media screen and (min-width: 1320px) {
 #fight_skill_points_assign table {
     width: calc(100% - 271px);}
-body {
-    min-width: 1305px;}
 #header {
     width: 1300px;}
 #forums .forum_post .body >div[id^="content"] {
@@ -7179,8 +7180,6 @@ body {
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
-body {
-    min-width: 1385px;}
 #logo {
     top: 58px;
     left: -19px;}
@@ -7197,8 +7196,6 @@ body {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1699px) {
-body {
-    min-width: 1585px;}
 #logo {
     top: 31px;
     left: -139px;}
@@ -7220,8 +7217,6 @@ body {
 }
 
 @media screen and (min-width: 1700px) {
-body {
-    min-width: 1685px;}
 #logo {
     top: 43px;
     left: -189px;}
