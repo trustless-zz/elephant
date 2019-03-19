@@ -300,6 +300,9 @@ tr.likes {
         display: inline-block;
     }
 
+    #user #box_gold_scrollbar {
+    height: auto !important;}
+    
 	ul#userinfo_minor li {
         position: relative;
 		
