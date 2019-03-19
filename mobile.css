@@ -102,11 +102,13 @@ tr.likes {
     position: relative;
     overflow: hidden;
 }
-#stats_gold a:before, #stats_leeching a:before, #stats_seeding a:before, #stats_share_score a:before, #stats_hnr a:before, #online_irc a:before {
+    #stats_gold a:before, #stats_leeching a:before,
+    #stats_seeding a:before, #stats_share_score a:before,
+    #stats_hnr a:before, #online_irc a:before {
     content: '';
     top: 0;
     left: -200px;
-    width: 600px;
+    width: 460px;
     height: 46px;
     position: absolute;
 }
