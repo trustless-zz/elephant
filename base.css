@@ -3851,6 +3851,10 @@ input[type="button"] {
 #crafting_panel #enchanting.active {background-image: url('https://gazellegames.net/static/styles/game_room/images/icons/enchant_activated.png');}
 
 
+#crafting_panel .item img,
+#equipment .item img {
+    width: 100%;}
+
 /* Crafting books */
 .crafting #crafting_recipes #items_list {
 	left:0px;}
