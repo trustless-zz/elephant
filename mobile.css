@@ -1477,9 +1477,9 @@ tr.likes {
 	#forums .forum_post .colhead_dark div[style="float:left;"] {
 		display: flex;
 		flex-direction:row;
-		width: 100%;
-		}
-
+        width: calc(100% - 37px);
+        margin-right: 37px;}
+    
 	#forums .forum_post .colhead_dark div[style="float:left;"] input{
 		height: inherit;}
 
@@ -2302,10 +2302,31 @@ tr.likes {
         top: 42px;}
     #fight_skill_points_assign table {
         margin: 10px 0 0 0;}
+    
 }
 
 
 @media screen and (max-width: 400px) {
+	#forums .forum_post .colhead_dark div[style="float:left;"] {
+        font-size: 0;}
+    #forums .forum_post .colhead_dark div[style="float:left;"] a,
+    #forums .forum_post .colhead_dark div[style="float:left;"] strong,
+    #forums .forum_post .colhead_dark div[style="float:left;"] span,
+    #forums .forum_post .colhead_dark div[style="float:left;"] .time {
+        font-size: 13px;}
+    #forums .forum_post .colhead_dark .sticky_post_label {
+        font-size: 0 !important;
+        position: absolute;
+        right: 28px;}
+    #forums .forum_post .colhead_dark .sticky_post_label::before {
+        margin: 0;}
+    #forums .forum_post .colhead_dark a[onclick],
+    a.post_id,
+    .forum_post a.username {
+    white-space: nowrap;}
+    
+    
+    
     #fight_skill_points_assign #items_navigation {
         top: 59px;
     }
