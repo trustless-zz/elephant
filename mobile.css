@@ -934,7 +934,7 @@ tr.likes {
 		}
 
 	#torrents #torrentbrowse .torrent_table td:nth-of-type(3) a {
-		font-size: 2em;}
+		font-size: 20px;}
 
 	#torrents #torrentbrowse .torrent_table td:nth-of-type(3) .tags a {
 		font-size: 1em;
@@ -990,6 +990,14 @@ tr.likes {
 		text-align: right;
 		margin-top: -45px;
 		margin-right: 20px;}
+    
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(5),
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(8),
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(9),
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(10) {
+        font-size: 12px;}
+    
+    
 	#torrents #content .notchecked,
 	#torrents #content .checked {
 		display: inline-block;
@@ -2307,6 +2315,12 @@ tr.likes {
 
 
 @media screen and (max-width: 400px) {
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(5),
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(8),
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(9),
+    #torrents #torrentbrowse .torrent_table td:nth-of-type(10) {
+        font-size: 11px;}
+    
 	#forums .forum_post .colhead_dark div[style="float:left;"] {
         font-size: 0;}
     #forums .forum_post .colhead_dark div[style="float:left;"] a,
