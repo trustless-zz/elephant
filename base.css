@@ -7513,6 +7513,31 @@ a >.error_message {
 
 
 @-moz-document url-prefix() {
+    .box.box_uploads.box_torrents div #uploadsrow > tbody > tr > td, 
+    .box.box_snatches.box_torrents div #snatchesrow > tbody > tr > td, 
+    .box.box_likes.box_torrents div #likesrow > tbody > tr > td {
+        max-width: unset;
+        width: calc(100% / 5);
+        margin: 0 -1px -1px 0;}
+    .box.box_uploads.box_torrents div #uploadsrow > tbody > tr:last-child > td, 
+    .box.box_snatches.box_torrents div #snatchesrow > tbody > tr:last-child > td, 
+    .box.box_likes.box_torrents div #likesrow > tbody > tr:last-child > td {
+        margin: 0 -1px 0 0;}
+    .box.box_uploads.box_torrents div #uploadsrow > tbody > tr, 
+    .box.box_snatches.box_torrents div #snatchesrow > tbody > tr, 
+    .box.box_likes.box_torrents div #likesrow > tbody > tr {
+        display: flex;
+        flex-flow: row;}
+    .box.box_uploads.box_torrents div #uploadsrow > tbody > tr > td a, 
+    .box.box_snatches.box_torrents div #snatchesrow > tbody > tr > td a, 
+    .box.box_likes.box_torrents div #likesrow > tbody > tr > td a {
+        display: flex;
+        justify-content: center;}
+    #snatchesrow img, #uploadsrow img, #likesrow img {
+        margin-right: 0;}
+    
+    #torrents li.similar_group > a {
+        width: 160px;}
     #torrentbrowse form .filter_torrents.advanced .box.pad table tbody tr td #platcheckbox a.flright[onclick="toggle_myplatforms('hide'); return false;"]::before {
         bottom: 1107px;}
     .group_torrent td {
@@ -7529,6 +7554,8 @@ a >.error_message {
         .profile .box_art_gallery .gallery_row,
         #grouplinks {
             width: 973px;}
+    #torrents li.similar_group > a {
+        width: 180px;}
     }
  
 }
