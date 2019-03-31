@@ -6401,7 +6401,8 @@ textarea {
 .equipment #items_inner >span:first-child,
 #trading_panel #items >span:first-child,
 #requests #request_comments #reply_box >.box.pad >h3:first-child,
-#forums .linkbox.linkbox_bottom + br + h3:nth-last-child(2) {
+#forums .linkbox.linkbox_bottom + br + h3:nth-last-child(2),
+#inbox .vertical_space + h2 {
     font-family: adelle, sans-serif;
     font-size: 16pt;
     font-weight: normal;
@@ -6591,6 +6592,8 @@ textarea {
     float: left;}
 #inbox #messageform >.box.pad {
     text-align: center;}
+#inbox .thin >h2 + #messageform  >.box.pad {
+    padding-top: 55px;}
 #inbox #quickpost h3 {
     margin: 5px;
     font-weight: normal;}
@@ -6602,8 +6605,12 @@ textarea {
 #inbox .thin .box.vertical_space .head strong span.username_badges {
     margin-left: 5px;}
 #inbox .thin >h2 + form[action="inbox.php"][method="post"] {
-    margin-top: 10px !important;
-    margin-bottom: 25px;}
+    margin-bottom: 25px;
+    position: relative;
+    top: -45px;}
+#inbox .vertical_space + h2 {
+    position: relative;
+    z-index: 99;}
 #inbox h2 + #messageform span + br + #quickpost {
     width: 98.9% !important;}
 #inbox textarea {margin: 10px auto; width:100%;}
@@ -6615,6 +6622,25 @@ textarea {
     text-align: left;}
 #inbox #preview + #buttons >input {
     margin-left: 5px;}
+
+#inbox .vertical_space .head {
+    width: 100%;
+    text-align: left !important;
+    padding: 5px;
+    font-family: neuzite, sans-serif;
+    font-size: 10pt;
+    margin: 0;
+    height: 18px;
+    line-height: 19px;
+    min-height: unset;}
+#inbox .vertical_space .head strong {
+    font-size: unset;
+    font-family: inherit;
+    font-weight: bold !important;}
+
+#inbox .thin >h2 + form[action="inbox.php"][method="post"] + h2 {
+    position: relative;
+    top: -55px;}
 /** /inbox **/
 
 
