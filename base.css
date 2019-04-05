@@ -4737,8 +4737,6 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 
 #requests .save_message {
     display: block;
-    width: 99.334%;
-    top: -15px;
     position: relative;}
 
 #torrents table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody .colhead_dark td div[style="float: left;"] strong .username_badges, #gazelles #wrapper #content div #gazelleview #torrent_comments table[id^="post"] tbody tr.colhead_dark td div[style="float: left;"] strong .username_badges {
