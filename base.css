@@ -4272,7 +4272,7 @@ img[title="Gold"] {
 #wiki .main_column {margin-top: -17px;}
 #staff p {padding: 5px;}
 #requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]) {
-    padding: 38px 10px 10px 10px !important;
+    padding: 10px;
     width: 853px;
     height: auto;
     display: block;}
@@ -4285,7 +4285,6 @@ img[title="Gold"] {
     padding-left: 20px;}
 #wiki .box.box_info.pad {padding: 10px !important;}
 #wiki h3 {margin-bottom: -10px !important;}
-#wiki .main_column .box {padding: 28px 0 0 0 !important;}
 #torrents .center form {position: relative; margin-top: 16px;}
 #user .main_column_sortable .box .head {position: relative;}
 #torrents .box.pad #th_search {margin: 0 !important;}
@@ -4849,7 +4848,7 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 
 
 #shop #content .thin.freeleech_shop .freeleech_shop_main .box.pad.box_freeleech_info {
-    padding: 38px 10px 10px 10px !important;
+    padding: 10px;
     max-width: 954px !important;}
 #shop #content .thin.freeleech_shop .freeleech_shop_main .box.pad.box_add_freeleech .head {
     font-family: adelle, sans-serif;
@@ -4924,7 +4923,7 @@ ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
 #shop #content .thin.freeleech_shop .freeleech_shop_main .box.pad.box_freeleech_info {max-width: 936px !important;}
 .freeleech_shop_main .box, .global_buffs_shop_main .box {max-width: 956px;}
 #shop .box.pad.box_buffs_info {
-    padding: 38px 10px 10px 10px !important;
+    padding: 10px;
     max-width: 936px;
     margin-top: -4px;}
 #shop .global_buffs_shop_main .box.pad.box_add_buff .head {
@@ -5480,9 +5479,6 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 
 .sidebar #freeleech span.platform, .sidebar #freeleech span.tor_info {
     font-size: 8pt;}
-
-.thin.global_buffs_shop .global_buffs_shop_main .box.pad.box_add_buff {
-    margin-bottom: 70px !important;}
 
 #torrents #requests tbody tr.colhead td {
     position: relative;}
@@ -6984,6 +6980,7 @@ a[onclick="BBCode.spoiler(this);"] {
 #user_fight_attacks table.border {
     font-weight: normal;}
 
+.global_buffs_shop_main:before,
 .freeleech_shop_main:before {
     display: inline-block;
     content: '';
@@ -7143,6 +7140,7 @@ a >.error_message {
     width: 264px;}
 #equipment #items, #crafting_panel #items {
     left: 254px;}
+.global_buffs_shop_main:before,
 .freeleech_shop_main:before,
 #shop li.item_li.nostock #clickable .item_description, #shop li.item_li.featured.nostock #clickable .item_description, #items_navigation, #equipment img.avatar[class="avatar pixelart"] {
     width: 244px;}

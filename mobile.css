@@ -2279,7 +2279,7 @@ tr.likes {
 .freeleech_shop >div:first-child {
     width: 100%;}
 .freeleech_shop #items_navigation {
-    top: 45px;}
+    top: 44px;}
     
     
     .global_buffs {
@@ -2310,6 +2310,23 @@ tr.likes {
         top: 42px;}
     #fight_skill_points_assign table {
         margin: 10px 0 0 0;}
+    
+    .global_buffs_shop_main:before,
+    .freeleech_shop_main:before {
+        width: unset;}
+    .box.pad.box_freeleech_info:before,
+    .box.pad.box_buffs_info:before {
+        content: '';
+        shape-outside: inset(0);
+        float: left;
+        width: 30px;
+        height: 30px;}
+    #shop .box.pad.box_buffs_info {
+        width: calc(100% - 20px);}
+    .thin.global_buffs_shop #items_navigation {
+        top: 44px;}
+    .thin.global_buffs_shop >div:first-child {
+        width: 100%;}
     
 }
 
