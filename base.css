@@ -792,9 +792,14 @@ h2 {
 	padding: 10px;
 }
 
+.spoilerbox,
 blockquote {
 	margin: 10px;
 	padding: 10px 20px;}
+input[type="button"][value="Show"],
+input[type="button"][value="Hide"],
+a[onclick="BBCode.spoiler(this);"] {
+    margin-top: 5px;}
 
 
 
@@ -6856,6 +6861,7 @@ tr.likes td {
 #forums .colhead_dark div[id*="bar"] input[type="button"]:nth-child(n+2) {
     margin-left: 5px;}
 #forums .sub {visibility: hidden;}
+#forums .spoilerbox,
 #forums blockquote {
 	margin-top:5px;}
 #userhistory .forum_post td.body img,
@@ -6919,7 +6925,7 @@ a[onclick="BBCode.spoiler(this);"] {
 #forums #contentpreview img,
 #userhistory .thin table[id^="post"] tbody tr td.body img,
 #forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
-    max-width: 1000px !important;}
+    max-width: calc(100% - 10px) !important;}
 /** /forums **/
 
 #header #alerts {
@@ -7189,10 +7195,6 @@ a >.error_message {
     left: 0;}
 .inventory #content li.item_li {
     width: 410px;}
-#forums #contentpreview img,
-#userhistory .thin table[id^="post"] tbody tr td.body img,
-#forums .thin table[id^="post"] tbody tr td.body div[id^="content"] img {
-    max-width: 1100px !important;}
 #torrents .save_message {
     width: 1292px;}
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody tr td.body blockquote {

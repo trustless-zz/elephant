@@ -628,6 +628,7 @@ a[onclick^="show_reported"] {
 .reportinfo_table {
     border: 1px solid #ff0000;}
 
+.spoilerbox,
 blockquote,
 .group_torrent td,
 .torrent_table,
@@ -729,6 +730,7 @@ blockquote,
 .book .page {
     background-color: #2b4e66;}
 
+.spoilerbox,
 blockquote {
 	background-color: #0a0a0a;}
 
