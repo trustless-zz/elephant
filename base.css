@@ -4735,7 +4735,7 @@ input[type="submit"], input[type="button"], button[type="button"] {
 #torrents #torrentbrowse #torrent_table.grouping tr[class="torrent rowb"] {display: none;}
 
 
-ul[id="noty_bottomRight_layout_container"][class="i-am-new"] li {
+ul#noty_bottomRight_layout_container.i-am-new li {
     border-radius: 0 !important;
     border: 0 !important;}
 
