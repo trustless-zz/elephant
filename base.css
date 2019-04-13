@@ -2295,8 +2295,15 @@ td.cats_col {
 
 /* END BB CODE BUTTONS */
 
-/*Allows images in bbcode to be floated right*/
-span.size5 img {float: right;}
+/*Allows images in bbcode to be floated*/
+span.size4 iframe,
+span.size4 .twitter_post,
+span.size4 img {
+    float: left; margin-right: 10px !important;}
+span.size5 iframe,
+span.size5 .twitter_post,
+span.size5 img {
+    float: right; margin-left: 10px !important;}
 
 /*Adds arrows to the staff pick box.*/
 .prev {
@@ -6864,11 +6871,31 @@ tr.likes td {
 #forums .spoilerbox,
 #forums blockquote {
 	margin-top:5px;}
-#userhistory .forum_post td.body img,
-#forums .forum_post td.body img, 
-#forums .forum_post td.body iframe {
+
+.twitter-tweet,
+.forum_post td.body iframe,
+.forum_post td.body img,
+.box.news_post >.pad iframe,
+.box.news_post >.pad img {
     margin: 5px;
     padding: 5px;}
+.twitter_post h4 {
+    display: none;}
+.twitter_post {
+    margin: 0 5px;
+    width: moz-fit-content;
+    width: fit-content;}
+.twitter_post >br {
+    display: none;}
+.twitter-tweet {
+    margin: 0 !important;}
+/* twitter align test */
+.body div[style="text-align:center;"] >.twitter_post {
+    margin: 0 auto !important;}
+.body div[style="text-align:left;"] >.twitter_post {
+    margin: 0 auto 0 5px !important;}
+.body div[style="text-align:right;"] >.twitter_post {
+    margin: 0 5px 0 auto !important;}
 #forums table.forum_unread tr.colhead_dark {
     /* background: linear-gradient(rgba(104, 192, 119, 1), rgba(42,79,101,0.5)); */}
 #forums a[onclick*="#thread_notes_tabl"] {
