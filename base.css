@@ -2956,6 +2956,7 @@ form textarea, form input {
     padding: 10px;}
 #staffpm #messageform {
     margin-top: 20px;}
+#user_fight_attacks >.box.pad,
 #staffpm #inbox,
 #torrent_table {
     overflow: visible;}
@@ -3126,6 +3127,7 @@ input[type="button"] {
     top: 0;
 }
 
+#backpack #items #items-wrapper,
 #crafting_panel #items #items-wrapper {
     margin-top: 0;
     text-align: center;
@@ -3136,6 +3138,7 @@ input[type="button"] {
     position: relative;
 }
 
+#backpack #items,
 #crafting_panel #items {
 	top: 24px;
 	left: 14px;
@@ -3147,7 +3150,11 @@ input[type="button"] {
     height: 415px;
     text-align: center;
     overflow: hidden;}
+#wrapper #backpack #slots_panel,
+#backpack #items {
+    height: 650px;}
 
+#backpack .item,
 #crafting_panel .item {
     list-style-type: none;
     margin: 4px;
@@ -3160,6 +3167,7 @@ input[type="button"] {
     position: relative;
     font-weight: bold;}
 
+#backpack .item h3,
 #crafting_panel .item h3 {
     position: absolute;
     bottom: 2px;
@@ -3167,57 +3175,49 @@ input[type="button"] {
     margin-left: auto;
     text-align: center;}
 
+#backpack #slots_panel,
 #crafting_panel #slots_panel {
 	position: relative;
 	top: 24px;
     height: 415px;
-    width: 550px;}
+    width: 503px;}
 
+#backpack .itemslot,
 #crafting_panel .itemslot {
     width: 106px;
     height: 106px;
-    position: absolute;
-}
+    position: absolute;}
+
 
 #crafting_panel .itemslot#slot_0 {
-    margin: 58px 0 0 13px;
-}
+    margin: 58px 0 0 13px;}
 
 #crafting_panel .itemslot#slot_1 {
-    margin: 58px 0 0 132px;
-}
+    margin: 58px 0 0 132px;}
 
 #crafting_panel .itemslot#slot_2 {
-    margin: 58px 0 0 251px;
-}
+    margin: 58px 0 0 251px;}
 
 #crafting_panel .itemslot#slot_3 {
-    margin: 177px 0 0 13px;
-}
+    margin: 177px 0 0 13px;}
 
 #crafting_panel .itemslot#slot_4 {
-    margin: 177px 0 0 132px;
-}
+    margin: 177px 0 0 132px;}
 
 #crafting_panel .itemslot#slot_5 {
-    margin: 177px 0 0 251px;
-}
+    margin: 177px 0 0 251px;}
 
 #crafting_panel .itemslot#slot_6 {
-    margin: 296px 0 0 13px;
-}
+    margin: 296px 0 0 13px;}
 
 #crafting_panel .itemslot#slot_7 {
-    margin: 296px 0 0 132px;
-}
+    margin: 296px 0 0 132px;}
 
 #crafting_panel .itemslot#slot_8 {
-    margin: 296px 0 0 251px;
-}
+    margin: 296px 0 0 251px;}
 
 #crafting_panel .itemslot#CraftingResult {
-    margin: 177px 0 0 431px;
-}
+    margin: 177px 0 0 431px;}
 
 .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
     position: absolute;
@@ -3235,6 +3235,7 @@ input[type="button"] {
     width: 6px;
 }
 
+#backpack .itemslot .item,
 #crafting_panel .itemslot .item {
     width: 96px;
     height: 96px;
@@ -3242,6 +3243,7 @@ input[type="button"] {
     margin: 1px;
 }
 
+#backpack .item:hover,
 #crafting_panel .item:hover {
     cursor: grab;
     cursor: -webkit-grab;
@@ -3699,6 +3701,9 @@ input[type="button"] {
 /**********************************
 ************INVENTORY**************
 **********************************/
+.thin.inventory {
+    min-height: 900px;}
+
 
 .inventory div.center form {
     margin: 10px auto 11px auto;}
@@ -3822,6 +3827,73 @@ input[type="button"] {
     width: 100%;}
 .page_break::after {content: attr(id);}
 
+
+
+
+/**********************************************
+*************** BACKPACK **********************
+**********************************************/
+
+#backpack #slots_header {
+    text-align: center;
+    padding: 9px 0 8px 0;
+	position: relative;
+	margin-bottom: 5px;}
+#backpack #slots_header img {
+    display: none;}
+#backpack #slots_header span {
+    font-family: adelle, sans-serif;
+    font-size: 16pt;
+    font-weight: normal;}
+
+#backpack .ui-widget-content {
+    background: none;}
+#backpack .itemslot {
+    padding: 0;
+	list-style-type: none;
+	margin: 4px;
+	width: 106px;
+	height: 106px;
+	float: left;
+	position: relative;}
+
+#backpack .itemslot .slot_number {
+	position: absolute;
+	z-index: 1;
+	left: -2px;
+	top: -6px;
+	padding: 2px;}
+
+#backpack .itemslot .item {
+	box-sizing: border-box;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 4px;}
+
+/* Buttons */
+#backpack button {
+	cursor: pointer;
+    margin-top: 3px;
+    margin-right: 5px;
+	float: right;}
+
+#backpack button:hover {
+	filter: brightness(95%);}
+
+#backpack button:active {}
+
+#backpack button:focus {
+	outline: 0;}
+
+#backpack button:disabled {
+    pointer-events: none;
+	filter: grayscale(85%);
+	cursor: default;}
+
+
+
+
 /**********************************
 ***********ITEM CREATOR************
 **********************************/ 
@@ -3866,6 +3938,9 @@ input[type="button"] {
 #crafting_panel .item img,
 #equipment .item img {
     width: 100%;}
+#backpack .item img {
+    max-width: 100px;
+    max-height: 100px;}
 
 /* Crafting books */
 .crafting #crafting_recipes #items_list {
@@ -3922,11 +3997,14 @@ input[type="button"] {
 .trading.items_style div[class^="ps-scrollbar-"],
 .crafting div[class^="ps-scrollbar-"] {
     display: none !important;}
+#backpack #items #items-wrapper,
 .crafting #crafting_panel #items #items-wrapper,
 .crafting #crafting_recipes #items_list {
     overflow-y: auto !important;}
 .crafting #crafting_panel #items #items-wrapper {
     height: 366px;}
+#backpack #items #items-wrapper {
+    height: 601px;}
 
 /** overriding trade.css **/
 #trading_panel button {
@@ -3964,6 +4042,7 @@ input[type="button"] {
 #trading_panel #items {
     padding: 0 !important;
     width: 371px !important;}
+#backpack #items #items-wrapper,
 .crafting #crafting_panel #items #items-wrapper,
 #equipment #items #items-wrapper,
 #trading_panel .items-wrapper {
@@ -4040,6 +4119,7 @@ input[type="button"] {
     max-width: 98% !important;
     padding: 3px 5px !important;
     margin: 0 !important;}
+#backpack #items #search_query,
 #crafting_panel #items #search_query,
 .equipment #search_query,
 #trading_panel #items #search_query {
@@ -4053,6 +4133,7 @@ input[type="button"] {
     display: block;}
 /** /overriding trade.css **/
 
+#backpack #items #search_query,
 #crafting_panel #items #search_query {
     width: 266px;}
 .profile .box_stats .label {display: none;}
@@ -4928,6 +5009,7 @@ ul#noty_bottomRight_layout_container.i-am-new li {
 #crafting_panel #slots_panel:before {
     content: 'Crafting Place';}
 
+#backpack #items,
 #crafting_panel #items {
     left: 234px;
     width: 383px;}
@@ -5114,7 +5196,8 @@ span.user_title span[style="font-family: cursive;"] {
 #items_list li:hover,
 .inventory #content li.item_li:hover,
 #equipment .item:hover,
-#crafting_panel .item:hover {
+#crafting_panel .item:hover,
+#backpack .item:hover {
     box-shadow: none !important;}
 
 #torrents #torrentbrowse #torrent_table tbody tr[class*=" edition_"] td[colspan="4"] {
@@ -6402,6 +6485,7 @@ textarea {
 #collections #reply_box >h3:first-child,
 .crafting #crafting_recipes:before,
 #crafting_panel #slots_panel:before,
+#backpack #items span:first-child,
 #crafting_panel #items >span:first-child,
 #equipment #equip_panel:before,
 .equipment #items_inner >span:first-child,
@@ -6443,6 +6527,7 @@ textarea {
     font-family: whitney, sans-serif;}
 /* /'You haven't joined a clan yet!'  message */
 
+#backpack #items span:first-child,
 #crafting_panel #items >span:first-child,
 .equipment #items_inner >span:first-child,
 #trading_panel #items >span:first-child {
@@ -7108,6 +7193,7 @@ a >.error_message {
     width: 700px;}
 #top10 .center .border tbody input[type="text"] {
     width: 740px !important;}
+#backpack #items #search_query,
 #crafting_panel #items #search_query {
     width: 364px;}
 .equipment #search_query {
@@ -7129,6 +7215,8 @@ a >.error_message {
     margin: 177px 0 0 410px;}
 #crafting_panel #slots_panel {
     width: 529px;}
+#backpack #slots_panel {
+    width: 503px;}
 #top10 .thin.top10_tags #ut,
 #top10 .thin.top10_tags #ur,
 #top10 .thin.top10_tags #v {
@@ -7171,6 +7259,7 @@ a >.error_message {
     width: 1320px;}
 #items_list:before {
     width: 264px;}
+#backpack #items,
 #equipment #items, #crafting_panel #items {
     left: 254px;}
 .global_buffs_shop_main:before,
@@ -7203,6 +7292,7 @@ a >.error_message {
     max-width: 1240px;}
 #equipment #items {
     width: 487px;}
+#backpack #items,
 #crafting_panel #items {
     width: 487px;}
 .freeleech_shop_main .box, .global_buffs_shop_main .box, #user .inventory .save_message {max-width: 1036px;}

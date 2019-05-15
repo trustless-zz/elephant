@@ -107,7 +107,10 @@ table,
 .inventory #content li.item_li,
 .inventory .save_message,
 .rowa,
-.row_a {
+.row_a,
+#backpack #slots_panel,
+#backpack #items,
+#backpack .itemslot .slot_number {
     background: #fff;}
 
 .donate-button-platinum {
@@ -123,6 +126,7 @@ button#AvatarPreview,
 button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
+#backpack button,
 input[type="button"],
 #forums .poll li.graph,
 #user .notice,
@@ -418,7 +422,9 @@ input:focus {
 #userhistory .linkbox + table,
 #reportsv2 #report_table >table,
 .adventure_table,
-#adventure_search {
+#adventure_search,
+#backpack #slots_panel,
+#backpack #items {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}
@@ -492,6 +498,8 @@ input:focus {
 .global_buffs .color_yellow .buff_text {
     color: #2e5266;}
 
+#backpack #slots_header,
+#backpack #items span:first-child,
 .crafting #crafting_recipes:before,
 #crafting_panel #slots_panel:before,
 #crafting_panel #items >span:first-child,
@@ -540,6 +548,7 @@ button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 button#AvatarPreview,
+#backpack button,
 input[type="button"] {
     border-color: rgba(31, 32, 35, 0);}
 
@@ -549,12 +558,14 @@ button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 button#AvatarPreview,
+#backpack button,
 input[type="button"],
 a[onclick="BBCode.spoiler(this);"] {
     background-color:#255c7c;}
 #trading_panel button {
     background-color:#255c7c !important;}
 
+#backpack .itemslot,
 #crafting_panel .item,
 #crafting_panel .ui-widget-content {
     background: rgba(153, 153, 153, 0.7);}
@@ -562,12 +573,14 @@ a[onclick="BBCode.spoiler(this);"] {
 #trading_panel .item {
     background: rgba(153, 153, 153, 0.7) !important;}
 
+#backpack .item,
 #crafting_panel .item,
 #equipment .item {
     -moz-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
     -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
     box-shadow: 3px 3px 8px rgba(0,0,0,0.7);}
 
+#backpack .item h3,
 #crafting_panel .item h3,
 #equipment .item h3 {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 0 6px #fff;}
@@ -912,7 +925,8 @@ h2 a,
 #bookmarks .group_torrent:hover, .torrent_table tbody .group_torrent:hover {
     background-color: #f7f7f7 !important;}
 .alertable-ok:hover,
-input[type="submit"]:hover, 
+input[type="submit"]:hover,
+#backpack button:hover,
 input[type="button"]:hover, 
 button[type="button"]:not([title="Close"]):hover,
 .body.similar ul.nobullet li span.similar_votes:hover,

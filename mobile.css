@@ -2271,7 +2271,8 @@ tr.likes {
     height: auto;}
 #user.equipment #content >div >h2,
 #user.equipment #content >div >div:not(#items_navigation),
-#user.crafting #content >div {
+#user.crafting #content >div,
+#user.backpack.items_style #content >div {
     display: none !important;}
     
     

@@ -113,6 +113,9 @@ table,
 .row_a,
 .rowa,
 #staffpm #compose,
+#backpack .itemslot .slot_number,
+#backpack #slots_panel,
+#backpack #items,
 #collections .thin table.collections_art_display[width="100%"] >tbody,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
 #collections .thin .center >form[method="get"],
@@ -442,7 +445,9 @@ input:focus {
 #userhistory .linkbox + table,
 #reportsv2 #report_table >table,
 .adventure_table,
-#adventure_search {
+#adventure_search,
+#backpack #slots_panel,
+#backpack #items {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -515,6 +520,7 @@ input:focus {
 .global_buffs .color_yellow .buff_text {
     color: #c09a9a;}
 
+#backpack #items span:first-child,
 .crafting #crafting_recipes:before,
 #crafting_panel #slots_panel:before,
 #crafting_panel #items >span:first-child,
@@ -560,6 +566,7 @@ button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 button#AvatarPreview,
+#backpack button,
 input[type="button"] {
     border-color: rgba(31, 32, 35, 0);}
 
@@ -569,12 +576,14 @@ button.submit,
 input#PlainTitlePreview,
 input[type="submit"],
 button#AvatarPreview,
+#backpack button,
 input[type="button"],
 a[onclick="BBCode.spoiler(this);"]{
     background-color:#c09a9a;}
 #trading_panel button {
     background-color:#c09a9a !important;}
 
+#backpack .itemslot,
 #crafting_panel .item,
 #crafting_panel .ui-widget-content {
     background: rgba(102, 102, 102, 0.7);}
@@ -582,12 +591,14 @@ a[onclick="BBCode.spoiler(this);"]{
 #trading_panel .item {
     background: rgba(102, 102, 102, 0.7) !important;}
 
+#backpack .item,
 #crafting_panel .item,
 #equipment .item {
     -moz-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
     -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
     box-shadow: 3px 3px 8px rgba(0,0,0,0.7);}
 
+#backpack .item h3,
 #crafting_panel .item h3,
 #equipment .item h3 {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 0 6px #000;}
@@ -925,7 +936,8 @@ textarea,
     background-color: #000 !important;}
 .alertable-ok:hover,
 input[type="submit"]:hover, 
-input[type="button"]:hover, 
+input[type="button"]:hover,
+#backpack button:hover,
 button[type="button"]:not([title="Close"]):hover,
 .body.similar ul.nobullet li span.similar_votes:hover,
 a[onclick="BBCode.spoiler(this);"]:hover,
