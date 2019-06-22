@@ -1182,8 +1182,9 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .hartungamemaster,
 .hartunggamemaster {
     background: url(icon/svg/hartunggamemaster.svg);}
+.mattelintellivision,
 .intellivision {
-    background: url(icon/svg/interactivedvd.svg);}
+    background: url(icon/svg/mattelintellivision.svg);}
 .interactivedvd {
     background: url(icon/svg/interactivedvd.svg);}
 .ios {
@@ -1196,8 +1197,6 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url(icon/svg/magnavox-phillipsodyssey.svg);}
 .mastersystem {
     background: url(icon/svg/mastersystem.svg);}
-.mattelintellivision {
-    background: url(icon/svg/mattelintellivision.svg);}
 .megadrive {
     background: url(icon/svg/megadrive.svg);}
 .memotechmtx {
