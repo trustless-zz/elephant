@@ -2666,7 +2666,7 @@ span.user_title {
 .clan_trophy {
     position: absolute;
     top: 25px;
-    right: -85px;
+    right: -80px;
     opacity: 0.7;}
 .global_buffs a:hover i.fa.fa-fl-pots {
     filter: drop-shadow(2px 2px 2px #e85066);}
