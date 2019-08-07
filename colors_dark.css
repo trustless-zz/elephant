@@ -76,6 +76,7 @@ select:hover {
     background: none;}
 
 #crafting_recipes,
+#userinfo_stats .my_buffer,
 .autocomplete_list li:nth-child(even),
 #index .pad,
 .box,
