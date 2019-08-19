@@ -102,7 +102,9 @@ table,
 #requests #request_comments #reply_box,
 #rules .thin form.search_form,
 #trading_panel div.gold_trade:before,
-#header #alerts .blend {
+#header #alerts .blend,
+#tools #addgroup,
+#tools #mastergroups {
     background-color: #1f2023;}
 
 .tooltipster-default,
@@ -302,6 +304,8 @@ input#FLTorrent {
 
 .row_b,
 .rowb,
+#tools #mastergroups table tr:not(.colhead):nth-child(even),
+#tools .thin >#recommended #torrent_form >table tr:not(.colhead):nth-child(even),
 #upload div[style="margin:0px auto;width:700px"] tr:not(.colhead):nth-child(even),
 .forum_latest .search #forumlist tr td input[checked="checked"] + label,
 #torrents #collages >tbody >tr:nth-child(even),
@@ -332,6 +336,8 @@ input#FLTorrent {
 .rowb:hover,
 .row_a:hover,
 .rowa:hover,
+#tools #mastergroups table tr:not(.colhead):hover,
+#tools .thin >#recommended #torrent_form >table tr:not(.colhead):hover,
 #upload div[style="margin:0px auto;width:700px"] tr:not(.colhead):hover,
 .forum_latest .search #forumlist tr td input[checked="checked"] + label:hover,
 #torrents #collages >tbody >tr:not(.colhead):hover,
@@ -448,7 +454,16 @@ input:focus {
 .adventure_table,
 #adventure_search,
 #backpack #slots_panel,
-#backpack #items {
+#backpack #items,
+#tools .permission_container >table,
+#tools .thin >#recommended >form >table,
+#tools #content >.thin >table,
+#tools #content >table,
+#tools .sidebar #slides,
+#tools #addgroup,
+#tools #mastergroups,
+#torrents #content >#newlink,
+#torrents #content >script:first-child +h2 +form {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -660,6 +675,7 @@ blockquote,
 #index #dailygazelle .head.colhead_dark {
     background-color: #7a685e !important;}
 
+.edition_info +td,
 .edition_info {
     background-color: #202020;
 	color: #a9a9a9;}
@@ -829,6 +845,9 @@ h2 a,
 .head,
 .colhead,
 .colhead_dark,
+#tools #addgroup >h1,
+#tools #mastergroups >h2:first-child,
+#tools #mastergroups >span:first-child +h2,
 .similar .similar_votes,
 #gazelleview #titlerow,
 #items_navigation h3 {

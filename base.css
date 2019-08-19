@@ -67,6 +67,7 @@ input[type=search]:focus {
 	text-align: left;
 	font-style: normal;}
 
+#tools #mastergroups table th,
 table td {
 	padding: 5px;}
 
@@ -501,6 +502,10 @@ overflow: auto;}
 
 /*NEWS PAGE*/
 
+#tools #mastergroups >span:first-child +h2,
+#tools #mastergroups >h2:first-child,
+#tools #addgroup >h1,
+#tools #content >.thin >.box:not(#recommended) >.head,
 .box .head strong {
 	font-family: adelle, sans-serif;
 	font-size: 16pt;
@@ -717,6 +722,7 @@ width:100%;
     width:50%;
 }
 
+#tools #content >.thin >.box:not(#recommended),
 #user .box {
 	margin-bottom: 25px;
 }
@@ -772,7 +778,8 @@ table {
 	font-size: 10pt;
 	margin: 0 auto;}
 
-#user #likesrow {box-shadow: none;}
+#tools #content >.thin >.box .box:not(#slides),
+#user #likesrow,
 #user #snatchesrow {box-shadow: none;}
 
 h2 {
@@ -809,8 +816,50 @@ a[onclick="BBCode.spoiler(this);"] {
 
 
 
+/* tools.php */
+.permissions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    flex-flow: row wrap;
+    justify-content: space-between;}
+#tools .permission_container {
+    width: calc(25% - 20.25px);}
+.permission_container a {
+	margin-left: 5px;}
+#tools .thin >#recommended >div:not(.sidebar), #tools .thin >#recommended >form {
+    width: calc(100% - 327px);
+    float: left;}
+#tools .thin >#recommended {
+    overflow: visible;
+    width: 100%;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    background-color: unset;}
+#tools .thin >#recommended .sidebar {
+    width: 300px;
+    float: right !important;}
+#tools .thin >#recommended >.head.colhead_dark {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: unset;
+    margin-bottom: 16px;}
+.head.colhead_dark strong {
+    font-weight: 700 !important;
+    font-family: whitney, sans-serif;}
+#tools .thin >#recommended >form {
+    padding: 0;}
+#tools .thin >#recommended >form >table {
+    margin: 0 0 20px 0;}
+/* /tools.php */
+
+
 /*TORRENTS*/
 
+#tools .thin >#recommended >.head.colhead_dark,
 .global_buffs_shop >h3:first-child,
 h2 {
 	font-size: 16pt;
@@ -2919,9 +2968,7 @@ ul, ol {
 
 
 
-.center.box.pad {
-    box-shadow: none;}
-
+.center.box.pad,
 #torrents #content form table {
     box-shadow: none;}
 
@@ -2957,6 +3004,10 @@ form textarea, form input {
     height: 300px;
 }
 
+#tools #mastergroups >#searchgroups input[type="text"] {
+    width: calc(100% - 280px);}
+
+#tools #mastergroups >#searchgroups,
 #gazelles #reply_box #quickpostform,
 #staffpm .box.vertical_space >.body {
     padding: 10px;}
@@ -4394,6 +4445,7 @@ img[title="Gold"] {
 #torrents tr.colhead.nobr td {border: none !important;}
 #torrents .nobr {white-space: nowrap;}
 
+#tools .sidebar #slides .head,
 #index .sidebar .box .colhead_dark {padding: 7px 0 6px 0;}
 #torrents .sidebar .box.box_freeleech {margin-bottom: 0 !important;}
 #requests .sidebar .box .head strong {font-size: 12pt;}
@@ -5268,7 +5320,12 @@ span.user_title span[style="font-family: cursive;"] {
     font-weight: bold;
     font-family: whitney, sans-serif;}
 
+#tools #mastergroups >span:first-child +h2,
+#tools #mastergroups >h2:first-child,
+#tools #addgroup >h1,
+#tools #content >.thin >.box >.head:not(.colhead_dark),
 #wrapper #content .thin[class^="thin torrent_details"] .main_column_bg .main_column .box > .head {
+    text-align: center;
     padding: 9px 10px 8px 10px;}
 .trailer {
     position: relative;
@@ -5371,6 +5428,8 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 .wiki_article img,
 #index div[id^="news"] div[id^="newsbody"] img {
     max-width: 98% !important;}
+#torrents form table#torrent_link textarea {
+    width: calc(100% - 14px) !important;}
 #index .main_column {
 	width: inherit !important}
 #index .sidebar {
@@ -5596,6 +5655,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     z-index: 99;}
 #torrents #requests tbody tr.colhead {
     height: 45px;}
+#tools .permissions,
 #torrents #torrent_history_search >.box.pad,
 .global_buffs_shop_main .box.pad.box_add_buff,
 #torrents #requests >tbody >tr:nth-child(n+2) >td {
@@ -6735,8 +6795,10 @@ textarea {
 #gazelles #reply_box >.box.pad,
 #inbox .thin >.box.pad:nth-child(3):nth-of-type(2) {
     padding: 0;}
+#tools #addgroup >form,
 #inbox .thin .box.vertical_space [id^="message"] {
     padding: 10px;}
+#tools #mastergroups >#searchgroups input[type="submit"],
 #inbox .thin .box.vertical_space .head strong span.username_badges {
     margin-left: 5px;}
 #inbox .thin >h2 + form[action="inbox.php"][method="post"] {
@@ -6746,6 +6808,11 @@ textarea {
 #inbox .vertical_space + h2 {
     position: relative;
     z-index: 99;}
+
+#tools #addgroup input[type="text"] {
+    width: calc(100% - 155px);}
+#tools #addgroup input[type="submit"] {
+    margin-left: 5px;}
 #inbox h2 + #messageform span + br + #quickpost {
     width: 98.9% !important;}
 #inbox textarea {margin: 10px auto; width:100%;}
