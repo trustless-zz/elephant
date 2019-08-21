@@ -104,7 +104,8 @@ table,
 #trading_panel div.gold_trade:before,
 #header #alerts .blend,
 #tools #addgroup,
-#tools #mastergroups {
+#tools #mastergroups,
+#wrapper #content li.item[title^="Level:"]:before {
     background-color: #1f2023;}
 
 .tooltipster-default,
@@ -668,7 +669,8 @@ blockquote,
 #torrents div[id^="peers_"] >table,
 #torrents .filelist_table,
 #torrents div[id^="history"] >form >table.border,
-#artist #torrent_table tr:not(.colhead) td {
+#artist #torrent_table tr:not(.colhead) td,
+#wrapper #content li.item[title^="Level:"]:before {
     border: 1px solid #555;}
 
 .torrent_table tbody .group_torrent {
@@ -1139,15 +1141,25 @@ a:hover span,
 
 /** RATIO COLORS **/
 .r00 {color: #ff0000;}
+#wrapper #content li.item[title="Level: 1"]:before,
+#wrapper #content li.item[title="Level: 2"]:before,
 .r01,
 .r02 {color: #ff1300;}
+#wrapper #content li.item[title="Level: 3"]:before,
 .r03 {color: #ff2600;}
+#wrapper #content li.item[title="Level: 4"]:before,
 .r04 {color: #ff4c00;}
+#wrapper #content li.item[title="Level: 5"]:before,
+#wrapper #content li.item[title="Level: 6"]:before,
 .r05,
 .r06 {color: #ff5e00;}
+#wrapper #content li.item[title="Level: 7"]:before,
 .r07 {color: #ff7100;}
+#wrapper #content li.item[title="Level: 8"]:before,
 .r08 {color: #ff9700;}
+#wrapper #content li.item[title="Level: 9"]:before,
 .r09 {color: #fa0;}
+#wrapper #content li.item[title="Level: 10"]:before,
 .r10 {color: #68D51D;}
 .r20,
 .r50,
