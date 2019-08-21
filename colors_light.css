@@ -440,7 +440,9 @@ input:focus {
 #tools #addgroup,
 #tools #mastergroups,
 #torrents #content >#newlink,
-#torrents #content >script:first-child +h2 +form {
+#torrents #content >script:first-child +h2 +form,
+#torrents #wrapper #content div#currentlinks table,
+#requests .thin >h2:first-child +form#request_form {
 	-webkit-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7);
 	box-shadow: 0 0 30px rgba(153, 153, 153, 0.7);}

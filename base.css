@@ -778,6 +778,7 @@ table {
 	font-size: 10pt;
 	margin: 0 auto;}
 
+h2#non_wiki_editing +.box.pad form,
 #tools #content >.thin >.box .box:not(#slides),
 #user #likesrow,
 #user #snatchesrow {box-shadow: none;}
@@ -865,6 +866,7 @@ h2 {
 	font-size: 16pt;
 	text-align: center;
 	margin-left: 0;}
+h2#non_wiki_editing +.box.pad form,
 .global_buffs_shop >h3:first-child {
     margin: 0;}
 
@@ -4502,6 +4504,10 @@ img[title="Gold"] {
     top: 0;
     left: 80px;}
 
+#torrents .center.thin h2#non_wiki_editing,
+#torrents .center.thin h2#non_wiki_editing ~h2 {
+    margin: 25px 0 16px 0;}
+
 .inventory #item_search,
 #shop #item_search,
 #allreviews,
@@ -5169,6 +5175,7 @@ span.user_title span[style="font-family: cursive;"] {
 
 #index #recommended .head strong {
     width: 100%;}
+#torrents .center.thin h2#non_wiki_editing ~.box.pad form,
 #index #recommended #vanityhouse {
     box-shadow: none;
     margin: 0;}
@@ -5313,6 +5320,8 @@ span.user_title span[style="font-family: cursive;"] {
 
 /* error message */
 .thin >h2 + .box.pad:nth-child(2) {
+    padding: 0;
+    overflow: visible;
     background: none;
     box-shadow: none;
     font-size: 16pt;
@@ -5428,6 +5437,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 .wiki_article img,
 #index div[id^="news"] div[id^="newsbody"] img {
     max-width: 98% !important;}
+#torrents .center.thin textarea[name="body"],
 #torrents form table#torrent_link textarea {
     width: calc(100% - 14px) !important;}
 #index .main_column {
@@ -5860,6 +5870,34 @@ ul[class="collage_images"] {
     align-self: center;}
 #torrents .box.screenshots_div .head {
     margin-bottom: 1px;}
+
+
+#reviews_table tr >td:first-child {
+    width: 150px;}
+#reviews_table input#gamespotscore,
+#reviews_table input#ignscore,
+#reviews_table input#meta {
+    width: 30px;}
+#reviews_table input#gamespotscoreuri,
+#reviews_table input#ignuri,
+#reviews_table input#metauri {
+    width: calc(100% - 150px);}
+#torrents .center.thin h2#non_wiki_editing ~.box.pad td.label {
+    width: 80px;}
+#torrents .center.thin input[type="text"][name="summary"],
+#torrents .center.thin input[type="text"][name="aliases"] {
+    width: 100%;}
+#torrents .center.thin input[type="text"][name="image"] {
+    width: calc(100% - 82px);}
+table#weblinks_edit tr >td:first-child {
+    width: 200px;}
+table#weblinks_edit input.weblinks {
+    width: calc(100% - 10px);
+    margin: 5px;}
+#torrents .center.thin h2#non_wiki_editing ~.box.pad input[type="text"][name="targetgroupid"],
+#torrents .center.thin h2#non_wiki_editing ~.box.pad input[type="text"][name="name"],
+#torrents .center.thin h2#non_wiki_editing ~.box.pad input#trailer {
+    width: calc(100% - 10px);}
 
 #torrents .body.similar {
     padding: 0 !important;}
@@ -6796,7 +6834,8 @@ textarea {
 #inbox .thin >.box.pad:nth-child(3):nth-of-type(2) {
     padding: 0;}
 #tools #addgroup >form,
-#inbox .thin .box.vertical_space [id^="message"] {
+#inbox .thin .box.vertical_space [id^="message"],
+.thin >h2 + .box.pad:nth-child(2) form {
     padding: 10px;}
 #tools #mastergroups >#searchgroups input[type="submit"],
 #inbox .thin .box.vertical_space .head strong span.username_badges {
