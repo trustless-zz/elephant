@@ -100,6 +100,8 @@ img[src="static//styles/game_room/images/go_last_read.png"] {
     background: url("icon/svg/removebookmark_light.svg");}
 .Amazon {
     background-image: url("weblinks/svg/Amazon_light.svg");}
+.EpicGames {
+    background-image: url("weblinks/svg/EpicGames_light.svg");}
 
 .boardgame,
 .cardgame,
