@@ -119,7 +119,7 @@ overflow: auto;}
 #header {
     width: 1200px;
     margin: 0 auto !important;
-    height: 230px !important;
+    min-height: 230px !important;
     position: relative;
     left: 0;}
 
@@ -220,7 +220,7 @@ overflow: auto;}
     vertical-align: text-bottom;}
 
 #menu {
-	margin-top: -136px;
+	margin-top: -144px;
 	margin-left: 334px;
 	font-family: adelle, sans-serif;
 	font-size: 16pt;
@@ -241,7 +241,7 @@ overflow: auto;}
 	font-family: adelle, sans-serif;
 	margin-left: 733px;
 	font-size: 11pt;
-	top: 80px;}
+	top: 72px;}
 
 #userinfo_minor li {
 	margin-right: 10px;}
@@ -251,7 +251,7 @@ overflow: auto;}
 	font-weight: normal;}
 
 #userinfo_username {
-	top: 31px;
+	top: 23px;
 	font-size: 13pt;
 	width: 400px;
 }
@@ -377,7 +377,7 @@ overflow: auto;}
 #searchbars {
 	display: block;
 	width: 75%;
-	margin-top: 135px;
+	margin-top: 127px;
 	margin-left: 214px;}
 
 #searchbars > ul {
@@ -3023,10 +3023,9 @@ form textarea, form input {
     overflow: visible;}
 
 #announcement {
+    margin-top: 6px;
     white-space: normal;
-    position: absolute;
-    left: 0;
-    top: 0;
+    box-sizing: border-box;
     padding: 4px;
     text-align: center;
     width: 100%;}
@@ -7299,7 +7298,7 @@ a[onclick="BBCode.spoiler(this);"] {
     width: 100%;
     left: 0;}
 #logo {
-    top: 58px;
+    top: 50px;
     left: 2px;}
 #menu {
     white-space: nowrap;
@@ -7314,7 +7313,7 @@ a[onclick="BBCode.spoiler(this);"] {
     margin-left: 70px;}
 #userinfo_stats {
     line-height: 17px;
-    top: 64px;
+    top: 56px;
     margin-left: 207px;}
 #userinfo_minor {
     margin-left: 530px;}
@@ -7336,7 +7335,7 @@ a[onclick="BBCode.spoiler(this);"] {
 .clan_trophy img {
     height: 70px;}
 #extra1 span {
-    top: 58px;
+    top: 50px;
     height: 164px;
     margin-left: 132px;}
 a >.error_message {
@@ -7348,16 +7347,16 @@ a >.error_message {
 
 @media screen and (min-width: 1280px) and (max-width: 1319px) {
 #logo {
-    top: 58px;
+    top: 50px;
     left: -30px;}
 #extra1 span {
-    top: 58px;
+    top: 50px;
     height: 164px;
     margin-left: 138px;}
 #userinfo_username {
     margin-left: 280px;}
 #userinfo_stats {
-    top: 64px;
+    top: 56px;
     margin-left: 417px;}
 #header #alerts {
     top: 5px;
@@ -7513,26 +7512,26 @@ a >.error_message {
 
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
 #logo {
-    top: 58px;
+    top: 50px;
     left: -19px;}
 #extra1 span {
-    top: 58px;
+    top: 50px;
     height: 164px;
     margin-left: 169px;}
 #userinfo_username {
     text-align: right;
     margin-left: 304px;}
 #userinfo_stats {
-    top: 64px;
+    top: 56px;
     margin-left: 464px;}
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1699px) {
 #logo {
-    top: 31px;
+    top: 23px;
     left: -139px;}
 #extra1 span {
-    top: 31px;
+    top: 23px;
     height: 188px;
     margin-left: 49px;}
 #menu {
@@ -7542,7 +7541,7 @@ a >.error_message {
 #userinfo_username {
     margin-left: 347px;}
 #userinfo_stats {
-    top: 61px;
+    top: 53px;
     margin-left: 345px;}
 #userinfo_minor {
     margin-left: 797px;}
@@ -7550,16 +7549,16 @@ a >.error_message {
 
 @media screen and (min-width: 1700px) {
 #logo {
-    top: 43px;
+    top: 35px;
     left: -189px;}
 #extra1 span {
-    top: 31px;
+    top: 23px;
     height: 188px;
     margin-left: -1px;}
 #userinfo_username {
     margin-left: 297px;}
 #userinfo_stats {
-    top: 61px;
+    top: 53px;
     margin-left: 295px;}
 #menu {
     margin-left: 380px;}
@@ -7608,14 +7607,14 @@ a >.error_message {
     margin-left: 290px;
     text-align: right;}
 #logo {
-    top: 58px;
+    top: 50px;
     left: 0;}
 #extra1 span {
-    top: 58px;
+    top: 50px;
     height: 164px;
     margin-left: 171px;}
 #userinfo_stats {
-    top: 64px;
+    top: 56px;
     margin-left: 450px;}
 #header #alerts {
     top: 5px;

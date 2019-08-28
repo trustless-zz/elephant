@@ -204,6 +204,7 @@ tr.likes {
 
 	#header {
 		width: 95%;
+        min-height: unset !important;
 		height: 110px !important;
 		}
 
@@ -225,8 +226,10 @@ tr.likes {
 		}
 
 	#announcement {
+        margin-top: 0;
         z-index: 999;
-		font-size: 1.1em;}
+		font-size: 1.1em;
+        box-sizing: content-box;}
 
 	.clan_trophy {
 		display: none;}
@@ -467,6 +470,7 @@ tr.likes {
 #online_irc {
     order: 8;}
     
+    #userinfo_stats .my_buffer,
 	ul#userinfo_stats li {
 		
 		
@@ -486,6 +490,10 @@ tr.likes {
 		left: -134px;
 		overflow: visible;
 		}
+    #userinfo_stats .my_buffer {
+        clip-path: unset;
+        opacity: 1;
+    }
 
 	ul#userinfo_stats:hover li {
 		
