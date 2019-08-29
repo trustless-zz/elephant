@@ -617,6 +617,7 @@ a[onclick="BBCode.spoiler(this);"]{
     -webkit-box-shadow: 3px 3px 8px rgba(0,0,0,0.7);
     box-shadow: 3px 3px 8px rgba(0,0,0,0.7);}
 
+#wrapper .item .item_count,
 #backpack .item h3,
 #crafting_panel .item h3,
 #equipment .item h3 {

@@ -3583,6 +3583,13 @@ input[type="button"] {
 	margin-top: 15px;
 	vertical-align: middle;
 	display: block;}
+
+#wrapper .item .item_count {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    line-height: 15px;
+    font-size: 13px;}
  
 #shop #clickable {
 	height: 225px;
