@@ -62,6 +62,8 @@ input[type=text]:focus {
 table,
 #searchbars ul li form input,
 .autocomplete_list,
+#torrents ul#torrentsbrowsecomplete,
+#torrents #torrentsbrowsecomplete li:nth-child(even),
 .autocomplete_list li:nth-child(even),
 #index .pad,
 #user .main_column .box .pad,
@@ -249,6 +251,7 @@ input[type=search],
 input[type="number"],
 #searchbars ul li form input,
 .autocomplete_list,
+#torrents ul#torrentsbrowsecomplete,
 #requests form #otherop,
 .donation_box_wrapper,
 #user .notice,
@@ -275,6 +278,7 @@ input#FLTorrent {
 #searchbars ul li form input{
     color: #8a8a8a;}
 
+#torrents #torrentsbrowsecomplete li:nth-child(odd),
 .autocomplete_list li:nth-child(odd),
 #torrents .filter_torrents #platcheckbox td[colspan="5"],
 #forums table.border .cat_list td[colspan="5"] {
@@ -350,6 +354,8 @@ input#FLTorrent {
 #header #alerts a:hover {
     background: #dddddd !important;}
 
+#torrents ul#torrentsbrowsecomplete .highlight,
+#torrents ul#torrentsbrowsecomplete li:hover,
 .autocomplete_list .highlight {
     background-color: #ef5165 !important;}
 
@@ -466,6 +472,7 @@ input:focus {
 	-moz-box-shadow:  0 0 30px rgba(153, 153, 153, 0.7) !important;
     box-shadow: 0 0 30px rgba(153, 153, 153, 0.7) !important;}
 
+#torrents ul#torrentsbrowsecomplete,
 .tooltipster-default,
 .autocomplete_list {
 	-webkit-box-shadow: 0 3px 5px rgba(50, 50, 50, 0.75);
