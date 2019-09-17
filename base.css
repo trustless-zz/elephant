@@ -19,6 +19,7 @@
 /*~~~~~~STYLESHEET~~~~~~*/
 
 html {
+    scroll-behavior: smooth;
 	font-weight: normal;
     overflow-x: hidden;}
 
