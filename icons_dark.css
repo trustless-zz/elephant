@@ -103,6 +103,7 @@ img[src="static//styles/game_room/images/go_last_read.png"] {
 .EpicGames {
     background-image: url("weblinks/svg/EpicGames_light.svg");}
 
+tr.participated >td:nth-child(2):before,
 .boardgame,
 .cardgame,
 .cats_guides,
