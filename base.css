@@ -802,28 +802,27 @@ h2#non_wiki_editing +.box.pad form,
 #user #likesrow,
 #user #snatchesrow {box-shadow: none;}
 
+#torrents .thin.torrent_history form#torrent_history_search table#th_search table {
+    box-shadow: none !important;}
+
 h2 {
 	font-family: whitney, sans-serif;
 	font-size: 14pt;
-	font-weight: bold;
-}
+	font-weight: bold;}
 
 .sidebar .pad {
 	margin-bottom: 20px;}
 
 #quickreplytext textarea {
 	width: 811px;
-	max-width: 811px;
-}
+	max-width: 811px;}
 
 
 #threadpoll #polls label {
-	padding: 5px;
-}
+	padding: 5px;}
 
 #threadpoll #polls {
-	padding: 10px;
-}
+	padding: 10px;}
 
 .spoilerbox,
 blockquote {
