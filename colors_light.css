@@ -552,6 +552,7 @@ input:focus {
 .error_message:after {
     background: radial-gradient(at center, #e85066 0%,rgba(111,85,103,1) 50%,rgba(45,81,99,1) 100%);}
 
+#inbox .sticky >td:nth-child(2):before,
 #requests .sticky td:first-child:before,
 .sticky #displayname:before {
     -webkit-filter: drop-shadow(1px 1px 1px rgba(0,0,0, 0.5));
@@ -720,6 +721,7 @@ blockquote,
 #snatched_table tr:not(.colhead) td:nth-child(n+2),
 #snatched_not_seeding_table tr:not(.colhead) td:nth-child(n+2) {
     border-left: 1px solid #DBDBDB;}
+#inbox #searchbox,
 #running_freeleech tr:not(.colhead):not(:last-child),
 #requests .thin >table tr:not(.colhead_dark):not(:last-child),
 #torrents div[id^="history"] form table.border tbody tr:not(.colhead):nth-last-child(2),

@@ -3068,6 +3068,7 @@ form textarea, form input {
 #requests img, #artist .sidebar .box >div >img {
     max-width: 300px !important;}
 
+#inbox .sticky >td:nth-child(2):before,
 #requests .sticky td:first-child:before,
 .sticky #displayname:before {
     content: "";
@@ -6875,12 +6876,14 @@ textarea {
 #inbox #searchbox #msg_search {
 	width:160px;}
 #inbox #searchbox {
-	height:14px;
+	/* height:14px; */
 	padding:5px;}
 #inbox .thin >.box.pad:nth-child(3):nth-of-type(2) {}
 #messageform {}
 #inbox input[type="submit"][name="actiontype"] {
     margin: 0 -5px 10px 10px;}
+#inbox #messageform input:first-child +div input {
+    margin: 12px -5px 0 10px;}
 #inbox .linkbox:nth-child(4) {
     margin: 11px 0 0 0;}
 #inbox #messageform #quickpost textarea {
