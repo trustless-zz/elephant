@@ -68,6 +68,7 @@ input[type=search]:focus {
 	text-align: left;
 	font-style: normal;}
 
+#bookmarks table#manage_collage_table th,
 #tools #mastergroups table th,
 table td {
 	padding: 5px;}
@@ -741,6 +742,7 @@ width:100%;
     width:50%;
 }
 
+#bookmarks #wrapper .thin >.center.box.pad,
 #tools #content >.thin >.box:not(#recommended),
 #user .box {
 	margin-bottom: 25px;
@@ -1565,6 +1567,7 @@ td.cats_col {
     padding-left: 16px;
     text-indent: -1200px;
     font-size: 0;}
+#bookmarks table.collections_art_display .remove_bookmark_div,
 .torrent_table a.removebookmark {
     height: 20px;
     background-repeat: no-repeat !important;
@@ -1574,6 +1577,18 @@ td.cats_col {
     padding-left: 16px;
     text-indent: -1200px;
     font-size: 0;}
+#bookmarks table.collections_art_display .remove_bookmark_div {
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0;
+    line-height: 0;}
+#bookmarks table.collections_art_display a.removebookmark {
+    display: block;
+    width: 100%;
+    height: 100%;}
 
 .nobr {
 	padding: 5px;}
@@ -1678,6 +1693,7 @@ td.cats_col {
 #upload div[style="margin:0px auto;width:700px"] td:first-child,
 #upload_table #weblinks td:nth-child(3) {
     width: 1px !important;}
+#bookmarks .nobr,
 #upload div[style="margin:0px auto;width:700px"] td:first-child,
 #upload_table #reviews_table tr td p {
     white-space: nowrap;}
@@ -1972,6 +1988,7 @@ td.cats_col {
 
 /*user page*/
 
+#bookmarks table.collections_art_display td,
 .thin {
 	position: relative;}
 
@@ -2560,6 +2577,7 @@ tr.participated >td:nth-child(2):before,
 .tilt:hover,
 #torrents .body.center.userratingdiv .vote:hover,
 #linkedgroup:hover,
+#bookmarks table.collections_art_display .remove_bookmark_div:hover,
 .torrent_table a.removebookmark:hover {
     opacity: 1;}
 .tilt:hover, #torrents .body.center.userratingdiv .vote:hover {
@@ -2598,7 +2616,7 @@ ul {padding-left: 10px;} /*was 12px*/
 #collections #content #edit_collage tr td,
 #collections #content #new_collage tr td.label,
 #collections #content #edit_collage tr td.label{border:none;}
-#collections .collage_images li{vertical-align:middle;}
+.collage_images li{vertical-align:middle;}
 #collections .sidebar .box_description img{width:auto;border:0px;margin:0px;}
 #collections .sidebar .box_albumart img{width:300px;border:0px;margin:0px;max-width: 300px !important;}
 #collections .sidebar .subhead{padding-top:1px;text-align:center;}
@@ -3007,6 +3025,8 @@ form textarea, form input {
     max-width: 100%;
 }
 
+#bookmarks table#requests_list,
+#bookmarks .thin >.center.box.pad,
 #coverart {
     margin: 10px 0 10px 0;
 }
@@ -4731,6 +4751,7 @@ img[title="Gold"] {
     margin: 0;}
 
 /* buttons & hovers */
+#bookmarks td#sorting_head:before,
 .head[title="Click to expand/collapse"]:before,
  .head.tooltip[onclick]:before,
 #index #recommended .head:before,
@@ -4738,6 +4759,8 @@ img[title="Gold"] {
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:before,
 #torrents #requests tbody tr.colhead >td:before {
     transition: opacity 0.15s;}
+#bookmarks td#sorting_head:before,
+#bookmarks td#sorting_head:after,
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after, 
 .head[title="Click to expand/collapse"]:before, 
  .head.tooltip[onclick]:before,
@@ -4755,6 +4778,15 @@ img[title="Gold"] {
     height: 100%;
     opacity: 0;
     z-index: 1;}
+#bookmarks #wrapper td#sorting_head:after {
+    font-family: adelle, sans-serif;
+    font-size: 16pt;
+    line-height: 45px;
+    text-align: center;
+    font-weight: normal !important;
+    opacity: 1;
+    z-index: 2;
+    content: 'Sorting';}
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	z-index: 3;}
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark {
@@ -4771,6 +4803,7 @@ img[title="Gold"] {
     transition: opacity 0.1s;}
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:before, #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 872px;}
+#bookmarks td#sorting_head:hover:before,
  .head.tooltip[onclick]:hover:before, .head[title="Click to expand/collapse"]:hover:before, #index #recommended .head:hover:before, #index .thin .main_column_bg .main_column .box[class="box news_post"] .head:hover:before, #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"]:hover:before, #torrents #requests tbody tr.colhead >td:hover:before {
     opacity: 1;
     transition: opacity 0.15s;}
@@ -4791,6 +4824,7 @@ img[title="Gold"] {
 	position: absolute;
     width: 100%;
     left: 0;}
+#bookmarks td#sorting_head,
  .head.tooltip[onclick], .head[title="Click to expand/collapse"], #index #recommended .head, #index .thin .main_column_bg .main_column .box[class="box news_post"] .head {
     min-height: 28px;}
  .head.tooltip[onclick], #user .head[title="Click to expand/collapse"] {
@@ -5019,6 +5053,7 @@ ul#noty_bottomRight_layout_container.i-am-new li {
     max-width: 300px !important;
     height: 100%;
     background-size: 300px 100%;}
+#bookmarks .thin >table.layout td#drag_drop_textnote,
 #torrents .sidebar .box.box_pack .body.center, 
 #torrents .sidebar .box.box_main_pack .body.center {
     margin: 0;
@@ -5143,6 +5178,7 @@ span.user_title span[style="font-family: cursive;"] {
     text-shadow: 0 0 7px;}
 
 
+#bookmarks td#sorting_head a,
 #index .main_column .head a:not([id="markread"]),
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] a,
 #torrents #requests tbody tr.colhead td a.brackets {
@@ -5155,6 +5191,7 @@ span.user_title span[style="font-family: cursive;"] {
     left: 0;
     top: -5px;
     z-index: 99;}
+#bookmarks #wrapper td#sorting_head a,
 #torrents #requests tbody tr.colhead td a.brackets {
     top: 0;}
 #forums .thin .box.thin.clear .head.colhead_dark[style="padding-top: 5px; height:20px;"] a {
@@ -5178,6 +5215,7 @@ span.user_title span[style="font-family: cursive;"] {
     right: 10px;
     margin-top: unset;
     padding-right: unset;}
+#bookmarks td#sorting_head,
 #index .thin .main_column_bg .main_column .box .head {
     position: relative;
     display: flex;
@@ -5240,10 +5278,10 @@ span.user_title span[style="font-family: cursive;"] {
     box-shadow: none;}
 #gazelles .thin .box.pad {
     margin-bottom: 5px;}
-#gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"], #collections #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] {
+#gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"], #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] {
     top: 0;
     width: 100%;}
-#gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"] h2, #collections #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] h2 {
+#gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"] h2, #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] h2 {
     top: 0;}
 #shop[class="items_style fl_shop"] .box.pad.box_add_buff {
     margin-top: 0;
@@ -5518,6 +5556,10 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     height: 28px;
     width: 28px;
     padding-left: 28px;}
+#bookmarks td.center.collicon {
+    width: 28px;}
+#bookmarks .group span[style="text-align: right; float:right;"] {
+    clear: both;}
 
 #torrents #torrentbrowse .box.pad[align="center"] {
     background: none;
@@ -5528,11 +5570,11 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     margin: 30px 0 0 0 !important;}
 #collections #content .thin .center >form[method="get"] >table.border {
     box-shadow: none;}
-#collections .thin table.collections_art_display[width="100%"] >tbody tr td, .gazelles_art_display td {
+.thin table.collections_art_display[width="100%"] >tbody tr td, .gazelles_art_display td {
     border: none;
     padding: 0;
     width: 25%;}
-#collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect {
+.thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -5540,12 +5582,12 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     left: 0;
     margin: 0;
     box-shadow: none;}
-#collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
+.thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
     height: 139px;
     background-size: 100% 139px;}
 .collections_art_display, .gazelles_art_display {
     border-collapse: initial;}
-#collections .thin table.collections_art_display[width="100%"] {
+.thin table.collections_art_display[width="100%"] {
     padding: 0;
     margin-top: 10px;}
 .hovereffect .overlay:hover h2 {
@@ -5600,7 +5642,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     overflow: hidden;
     z-index: -2;}
 #recommended #vanityhouse tbody tr td a:nth-child(1),
-#collections ul.collage_images li >a {
+.collage_images li >a {
 	padding: 500px;
 	margin: -500px;
     display: inline-block;}
@@ -5630,6 +5672,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 .tilt:hover,
 #torrents .body.center.userratingdiv .vote:hover,
 #linkedgroup:hover,
+#bookmarks table.collections_art_display .remove_bookmark_div:hover,
 .torrent_table a.removebookmark:hover,
 #user .box.box_items #itemsdiv table tbody tr td a >img:hover, 
 #torrents #torrentbrowse >#torrent_table .colhead >td >a > img:hover, 
@@ -5784,6 +5827,9 @@ img[alt="Down Votes"][title="Down Votes"] {
     background-position: center;}
 
 
+img[alt="Snatches"],
+img[alt="Seeders"],
+img[alt="Leechers"],
 img[title="Downloaded"],
 img[title="Uploaded"],
 img[title="Ratio"],
@@ -5835,9 +5881,10 @@ img[title="Snatches"] {
 i.fa.fa-fl-pots {
     font-family: whitney, sans-serif;}
 
+#bookmarks .thin >.center.box.pad,
 #collections .main_column >#coverart {
     padding: 0;}
-#collections ul.collage_images {
+.collage_images {
     width: 873px;
     padding: 0 0 0 1px !important;
     margin: 39px 0 38px 0;
@@ -5846,7 +5893,7 @@ i.fa.fa-fl-pots {
 ul[class="collage_images"] {
     display: flex;
     flex-wrap: wrap;}
-#collections ul.collage_images li {
+.collage_images li {
     width: 163.6px;
     display: flex;
     flex-direction: column;
@@ -5855,11 +5902,12 @@ ul[class="collage_images"] {
     position: relative;}
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
+#bookmarks ul li[class^="image"],
 #collections ul li[class^="image"] {
     padding: 5px;
     margin: -1px 0 0 -1px;
     z-index: 1;}
-#collections ul.collage_images img {
+.collage_images img {
     width: 100%;
     height: auto;}
 
@@ -6045,7 +6093,7 @@ table#weblinks_edit input.weblinks {
     text-align: center;}
 
 .collage tbody tr td a div,
-#collections ul.collage_images li >a >div {
+.collage_images li >a >div {
     width: calc(100% - 10px) !important;}
 
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a {
@@ -6343,6 +6391,7 @@ span.size10 {font-size: 3em;line-height: 1em}
 #top10 .thin.top10_torrents .group_torrent >td.center.cats_col + td:nth-child(3) {
     font-family: neuzite, sans-serif;
     font-size: 10pt;}
+#bookmarks div#pageslinksdiv a,
 #top10 .thin.top10_torrents .group_torrent >td.center.cats_col + td:nth-child(3) >span a {
     font-weight: bold;}
 #top10 .thin.top10_tags {
@@ -6864,6 +6913,7 @@ textarea {
 /** inbox **/
 #inbox table {
 	border-collapse:collapse;}
+#bookmarks div#coverhead,
 #inbox .head {
     padding: 9px 10px 8px 10px;}
 #inbox .box.vertical_space {
@@ -6898,6 +6948,7 @@ textarea {
 #gazelles #reply_box >.box.pad,
 #inbox .thin >.box.pad:nth-child(3):nth-of-type(2) {
     padding: 0;}
+#bookmarks .thin >table.layout td#drag_drop_textnote >ul,
 #tools #addgroup >form,
 #inbox .thin .box.vertical_space [id^="message"],
 .thin >h2 + .box.pad:nth-child(2) form {
@@ -7470,12 +7521,13 @@ a >.error_message {
 #torrents #content .thin .main_column .torrent_table tbody tr.colhead_dark td[width="80%"]:after {
 	width: 972px;}
 #bookmarks .collage tbody tr td a img,
-#collections ul.collage_images li {
+.collage_images li {
     width: 183.6px;}
 #recommended #vanityhouse tbody tr td a img {
     max-width: 232px !important;}
 #extra1, #content, #forums #wrapper #content .thin .box, .forum_post, .filter_torrents, .torrent_table, #upload #content div[style="margin:0px auto;width:700px"] table, #rules .thin .box, #rules .thin .box:nth-of-type(2), #requests .thin > table, #collections .thin #reply_box .box.pad, #gazelles #wrapper #content .thin table.gazelles_art_display {
     width: 1300px;}
+#bookmarks table.collections_art_display .remove_bookmark_div,
 .torrent_table a.removebookmark,
 .torrent_table a.addbookmark {
     text-indent: -1300px;}
@@ -7501,7 +7553,7 @@ a >.error_message {
     left: -24px;}
 #shop li.item_li.nostock .submit_section:before {
     left: 32px;}
-#index .main_column, .main_column  .torrent_table, .torrent_table:not(#torrent_table), .main_column, #user .main_column, #torrents #requests tbody tr.colhead td span, #collections ul.collage_images {
+#index .main_column, .main_column  .torrent_table, .torrent_table:not(#torrent_table), .main_column, #user .main_column, #torrents #requests tbody tr.colhead td span, .collage_images {
     width: 973px;}
 .profile .box_art_gallery .gallery_main_slot, .profile .box_art_gallery .gallery_main_slot {
     max-width: 953px}
@@ -7540,7 +7592,7 @@ a >.error_message {
     width: 1292px;}
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] tbody tr td.body blockquote {
     max-width: 731px;}
-#collections .thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
+.thin table.collections_art_display[width="100%"] >tbody tr td .hovereffect .collection_art {
     height: 151px;
     background-size: 100% 151px;}
 .gazelles_art_display .gazelle_art {

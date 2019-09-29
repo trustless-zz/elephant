@@ -122,7 +122,7 @@ table,
 #backpack .itemslot .slot_number,
 #backpack #slots_panel,
 #backpack #items,
-#collections .thin table.collections_art_display[width="100%"] >tbody,
+.thin table.collections_art_display[width="100%"] >tbody,
 #gazelles #wrapper #content .thin table.gazelles_art_display >tbody,
 #collections .thin .center >form[method="get"],
 .inventory .save_message,
@@ -189,7 +189,7 @@ a[onclick="BBCode.spoiler(this);"],
     background-color: rgba(0,0,0,0.2);}
 
 .hovereffect h2,
-#gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"] h2, #collections #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] h2 {
+#gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"] h2, #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] h2 {
     background: rgba(0,0,0,0.7);}
 
 #shop #clickable:hover .item_description {
@@ -235,10 +235,10 @@ input[type=search]:focus,
 #user .qtip-content .pad.review p,
 #user .qtip-dark,
 #gazelles #wrapper #content .thin table.gazelles_art_display tbody tr td .hovereffect #clickable[class="overlay"] h2,
-#collections #wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] h2,
+#wrapper #content .thin table.collections_art_display tbody tr td .hovereffect div[class="overlay"] h2,
 .rating_container:hover,
 .collage tbody tr td a:hover div,
-#collections ul.collage_images li >a:hover >div,
+.collage_images li >a:hover >div,
 #top10 .linkbox a strong,
 #inbox .linkbox:nth-child(2) >strong,
 #inbox .linkbox:nth-child(2) >a:nth-child(-n+5) >strong,
@@ -472,7 +472,11 @@ input:focus {
 #torrents #content >#newlink,
 #torrents #content >script:first-child +h2 +form,
 #torrents #wrapper #content div#currentlinks table,
-#requests .thin >h2:first-child +form#request_form {
+#requests .thin >h2:first-child +form#request_form,
+#bookmarks table#manage_collage_table,
+#bookmarks .thin >table.layout,
+#bookmarks .thin >.center.box.pad,
+#bookmarks table#requests_list {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
 	box-shadow: 0 0 30px #000;}
@@ -673,6 +677,7 @@ blockquote,
 .torrent_table,
 .torrent td, .torrent .center,
 #bookmarks #torrent_table tbody tr.discog td.center.cats_col,
+#bookmarks .group.discog td,
 #collections .thin.collections #torrent_t   able >tbody >tr[class="group discog"] >td.collicon:nth-child(1),
 #collections .thin.collections #torrent_table >tbody >tr[class="group discog"] >td.collicon:nth-child(2),
 #torrents div[id^="peers_"] >table,
@@ -715,6 +720,7 @@ blockquote,
 #torrents .torrent_history table tbody tr:not(.colhead) td,
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
+#bookmarks ul li[class^="image"],
 #collections ul li[class^="image"] {
 	border: 1px solid #303030;}
 
@@ -952,6 +958,7 @@ textarea,
 #requests .thin > table tr td:nth-child(4) span[title] {
 	color: #418b00;}
 
+#bookmarks td#sorting_head:before,
 .head.tooltip[onclick]:before,
 .head[title="Click to expand/collapse"]:before,
 #index #recommended .head:before,
@@ -1055,7 +1062,7 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
 .box.box_likes.box_torrents div #likesrow >tbody >tr >td a:hover,
 #torrents li.similar_group >a:hover,
 #torrents .screenshots >a:hover,
-#collections ul.collage_images li >a:hover,
+.collage_images li >a:hover,
 #recommended #vanityhouse tbody tr td a:nth-child(1):before {
 	background: #e85066;}
 

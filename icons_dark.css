@@ -16,30 +16,40 @@ html {
     background: #202124; /** opacity affects rgb values for some reason **/
     -webkit-mask-image: url(soldoutwhite.png);}
 
+img[alt="Snatches"],
 img[title="Ratio"],
 img[title="Snatches"] {
     background-image: url('icon/svg/snatches_light.svg');}
+a >img[alt="Snatches"],
 a >img[title="Ratio"],
 a >img[title="Snatches"] {
     background-image: url('icon/svg/a.snatches_light.svg');}
+a:hover >img[alt="Snatches"],
 a:hover >img[title="Ratio"],
 a:hover >img[title="Snatches"] {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 428.029 429.494"><path d="M68.49,372.457c72.261,67.4,183.08,76.065,264.927,20.66,107.054-72.4,125.09-219.308,44.738-315.2L421.887,40.43c2.43-2.083,1.118-6.226-2.158-6.974L276.413.093a3.651,3.651,0,0,0-4.479,3.84l11.054,146.732c.239,3.351,4.209,5.217,6.562,3.2l43.657-37.421c56.143,67.649,45.167,169.78-26.614,223.407-61.706,46.174-149.888,39.179-203.655-16.018-56.988-58.495-57.9-148.987-7.508-208.514a29.541,29.541,0,0,0-.25-38.244C83.53,63.483,62.347,63.2,50.731,76.846-21.235,161.45-17.8,291.923,68.49,372.457Z" fill="rgb(232, 80, 102)"/></svg>');}
+img[alt="Seeders"],
+img[alt="Leechers"],
 img[title="Downloaded"],
 img[title="Uploaded"],
 img[title="Leechers"],
 img[title="Seeders"] {
     background-image: url('icon/svg/downloaded_light.svg');}
+a >img[alt="Seeders"],
+a >img[alt="Leechers"],
 a >img[title="Downloaded"],
 a >img[title="Uploaded"],
 a >img[title="Leechers"],
 a >img[title="Seeders"] {
     background-image: url('icon/svg/a.downloaded_light.svg');}
+a:hover >img[alt="Seeders"],
+a:hover >img[alt="Leechers"],
 a:hover >img[title="Downloaded"],
 a:hover >img[title="Uploaded"],
 a:hover >img[title="Leechers"],
 a:hover >img[title="Seeders"] {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 15"><polygon points="5.5 0 0 7 3 7 3 15 8 15 8 7 11 7 5.5 0" fill="rgb(232, 80, 102)"/></svg>');}
+img[alt="Leechers"],
 img[title="Downloaded"],
 img[title="Leechers"] {
     transform: scaleY(-1);}
@@ -94,8 +104,10 @@ img[src="static//styles/game_room/images/go_last_read.png"] {
     background: url(icon/svg/watarasupervision_light.svg);}
 .wiiu {
     background: url(icon/svg/wiiu_light.svg);}
+#bookmarks table.collections_art_display .remove_bookmark_div,
 .torrent_table a.removebookmark {
     background: url("icon/svg/bookmarked_light.svg");}
+#bookmarks table.collections_art_display .remove_bookmark_div:hover,
 .torrent_table a.removebookmark:hover {
     background: url("icon/svg/removebookmark_light.svg");}
 .Amazon {
