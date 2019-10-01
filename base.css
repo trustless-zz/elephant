@@ -835,6 +835,9 @@ input[type="button"][value="Hide"],
 a[onclick="BBCode.spoiler(this);"] {
     margin-top: 5px;}
 
+code {
+    padding: 1px 5px;}
+
 
 
 /* tools.php */
