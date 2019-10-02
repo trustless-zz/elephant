@@ -686,6 +686,8 @@ blockquote,
 #artist #torrent_table tr:not(.colhead) td,
 #wrapper #content li.item[title^="Level:"]:before {
     border: 1px solid #555;}
+blockquote code {
+    outline: 1px solid #555;}
 
 .torrent_table tbody .group_torrent {
 	background-color: #121212;}
