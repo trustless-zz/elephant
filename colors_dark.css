@@ -107,7 +107,7 @@ table,
 #header #alerts .blend,
 #tools #addgroup,
 #tools #mastergroups,
-#wrapper #content li.item[title^="Level:"]:before {
+.item img.equipment_level ~h3:before {
     background-color: #1f2023;}
 
 .tooltipster-default,
@@ -684,7 +684,7 @@ blockquote,
 #torrents .filelist_table,
 #torrents div[id^="history"] >form >table.border,
 #artist #torrent_table tr:not(.colhead) td,
-#wrapper #content li.item[title^="Level:"]:before {
+.item img.equipment_level ~h3:before {
     border: 1px solid #555;}
 blockquote code {
     outline: 1px solid #555;}
@@ -1161,25 +1161,25 @@ a:hover span,
 
 /** RATIO COLORS **/
 .r00 {color: #ff0000;}
-#wrapper #content li.item[title="Level: 1"]:before,
-#wrapper #content li.item[title="Level: 2"]:before,
+.item img.equipment_level[src$="level1.png"] ~h3:before,
+.item img.equipment_level[src$="level2.png"] ~h3:before,
 .r01,
 .r02 {color: #ff1300;}
-#wrapper #content li.item[title="Level: 3"]:before,
+.item img.equipment_level[src$="level3.png"] ~h3:before,
 .r03 {color: #ff2600;}
-#wrapper #content li.item[title="Level: 4"]:before,
+.item img.equipment_level[src$="level4.png"] ~h3:before,
 .r04 {color: #ff4c00;}
-#wrapper #content li.item[title="Level: 5"]:before,
-#wrapper #content li.item[title="Level: 6"]:before,
+.item img.equipment_level[src$="level5.png"] ~h3:before,
+.item img.equipment_level[src$="level6.png"] ~h3:before,
 .r05,
 .r06 {color: #ff5e00;}
-#wrapper #content li.item[title="Level: 7"]:before,
+.item img.equipment_level[src$="level7.png"] ~h3:before,
 .r07 {color: #ff7100;}
-#wrapper #content li.item[title="Level: 8"]:before,
+.item img.equipment_level[src$="level8.png"] ~h3:before,
 .r08 {color: #ff9700;}
-#wrapper #content li.item[title="Level: 9"]:before,
+.item img.equipment_level[src$="level9.png"] ~h3:before,
 .r09 {color: #fa0;}
-#wrapper #content li.item[title="Level: 10"]:before,
+.item img.equipment_level[src$="level10.png"] ~h3:before,
 .r10 {color: #68D51D;}
 .r20,
 .r50,

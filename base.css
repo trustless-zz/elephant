@@ -5979,39 +5979,66 @@ table#weblinks_edit input.weblinks {
     width: calc(100% - 10px);}
 
 
-#wrapper #content .item img.equipment_level {
-    display: none;}
-#wrapper #content li.item[title^="Level:"]:before {
+
+/* ONLY needed to make item levels visible again */
+#crafting_panel         .item,
+#backpack               .item,
+#equipment              .item,
+#wrapper #trading_panel .item {
+    display: grid;}
+#backpack               .item img,
+#crafting_panel         .item img,
+#equipment              .item img,
+#wrapper #trading_panel .item img {
+    margin: 0 auto;}
+#backpack               .item h3,
+#crafting_panel         .item h3,
+#equipment              .item h3,
+#wrapper #trading_panel .item h3 {
+    word-break: break-word;
+    z-index: 9;
+    margin-left: 4px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 85px;}
+.item img.equipment_level ~h3:before {
+    text-shadow: none;
     position: absolute;
-    left: 2px;
-    top: 2px;
+    left: -2px;
+    top: -4px;
     line-height: 18px;
     font-size: 16px;
     font-weight: 700;
     width: 20px;
     height: 18px;}
-#wrapper #content li.item[title="Level: 0"]:before {
+.item img.equipment_level[src$="level0.png"] ~h3:before {
     content: '0';}
-#wrapper #content li.item[title="Level: 1"]:before {
+.item img.equipment_level[src$="level1.png"] ~h3:before {
     content: '1';}
-#wrapper #content li.item[title="Level: 2"]:before {
+.item img.equipment_level[src$="level2.png"] ~h3:before {
     content: '2';}
-#wrapper #content li.item[title="Level: 3"]:before {
+.item img.equipment_level[src$="level3.png"] ~h3:before {
     content: '3';}
-#wrapper #content li.item[title="Level: 4"]:before {
+.item img.equipment_level[src$="level4.png"] ~h3:before {
     content: '4';}
-#wrapper #content li.item[title="Level: 5"]:before {
+.item img.equipment_level[src$="level5.png"] ~h3:before {
     content: '5';}
-#wrapper #content li.item[title="Level: 6"]:before {
+.item img.equipment_level[src$="level6.png"] ~h3:before {
     content: '6';}
-#wrapper #content li.item[title="Level: 7"]:before {
+.item img.equipment_level[src$="level7.png"] ~h3:before {
     content: '7';}
-#wrapper #content li.item[title="Level: 8"]:before {
+.item img.equipment_level[src$="level8.png"] ~h3:before {
     content: '8';}
-#wrapper #content li.item[title="Level: 9"]:before {
+.item img.equipment_level[src$="level9.png"] ~h3:before {
     content: '9';}
-#wrapper #content li.item[title="Level: 10"]:before {
+.item img.equipment_level[src$="level10.png"] ~h3:before {
     content: '10';}
+/* /ONLY needed to make item levels visible again */
+#wrapper #content .item img.equipment_level {
+    display: none;}
+
+
 
 #torrents .body.similar {
     padding: 0 !important;}
