@@ -821,6 +821,7 @@ tr.likes {
     -o-animation: fadeOut800 0.5s linear forwards;
     animation: fadeOut800 0.5s linear forwards}
 
+    #inbox #quickpost td,
 	#dailygazelle {width: 100%;}
 	#dailygazelle a {margin: 3px 0px;}
 	#dailygazelle .colhead_dark {margin-bottom: 15px;}
