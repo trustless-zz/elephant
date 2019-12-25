@@ -125,7 +125,7 @@ overflow: auto;}
     position: relative;
     left: 0;}
 
-#logo {
+#wrapper #logo {
 	position: relative;
 	display: block;
 	height: 164px;
@@ -7416,7 +7416,7 @@ a[onclick="BBCode.spoiler(this);"] {
 #header {
     width: 100%;
     left: 0;}
-#logo {
+#wrapper #logo {
     top: 50px;
     left: 2px;}
 #menu {
@@ -7465,7 +7465,7 @@ a >.error_message {
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1319px) {
-#logo {
+#wrapper #logo {
     top: 50px;
     left: -30px;}
 #extra1 span {
@@ -7631,7 +7631,7 @@ a >.error_message {
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1599px) {
-#logo {
+#wrapper #logo {
     top: 50px;
     left: -19px;}
 #extra1 span {
@@ -7647,7 +7647,7 @@ a >.error_message {
 }
 
 @media screen and (min-width: 1600px) and (max-width: 1699px) {
-#logo {
+#wrapper #logo {
     top: 23px;
     left: -139px;}
 #extra1 span {
@@ -7668,7 +7668,7 @@ a >.error_message {
 }
 
 @media screen and (min-width: 1700px) {
-#logo {
+#wrapper #logo {
     top: 35px;
     left: -189px;}
 #extra1 span {
@@ -7726,7 +7726,7 @@ a >.error_message {
 #userinfo_username {
     margin-left: 290px;
     text-align: right;}
-#logo {
+#wrapper #logo {
     top: 50px;
     left: 0;}
 #extra1 span {
@@ -7771,14 +7771,14 @@ a >.error_message {
 
 
 /* individual game styles wip */
-.master_2639 #logo, .tgroup_6526 #logo, .series_885 #logo, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"], .series_196 #logo, .series_169 #logo, .series_58 #logo, .series_52 #logo, .series_179 #logo, .series_211 #logo, .series_22 #logo, .series_15 #logo, .series_208 #logo, .series_178 #logo, 
-.tgroup_24482 #logo, .tgroup_24230 #logo, .tgroup_23617 #logo, .series_31 #logo, .series_191 #logo, .master_465 #logo, .tgroup_5993 #logo, .tgroup_8046 #logo, .series_70 #logo, .franchise_53 #logo, 
-.series_19 #logo, .series_65 #logo, .series_827 #logo, .series_183 #logo, .series_26 #logo, .series_327 #logo, .series_291 #logo, .franchise_55 #logo, .series_896 #logo, .master_2940 #logo, 
-.franchise_360 #logo, .series_857 #logo, .series_198 #logo, .alpacas #logo, .daftpunk #logo, .series_555 #logo, .series_279 #logo, .series_188 #logo, .series_177 #logo, .series_184 #logo, 
-.series_630 #logo, .franchise_135 #logo, .franchise_595 #logo, .series_302 #logo, .series_237 #logo, .master_3805 #logo, .master_3787 #logo, .series_27 #logo, .franchise_986 #logo, 
-.franchise_1519 #logo, .series_1503 #logo, .series_298 #logo, .franchise_91 #logo, .series_1434 #logo, .series_587 #logo, .series_57 #logo, .series_35 #logo, .tgroup_30661 #logo, 
-.series_548 #logo, .master_3944 #logo, .series_987 #logo, .series_575 #logo, .franchise_2521 #logo, .master_680 #logo, .tgroup_11495 #logo, .tgroup_18505 #logo, .master_691 #logo, 
-.master_2719 #logo, .master_7884 #logo, .master_117 #logo, .franchise_2773 #logo {
+.master_2639 #wrapper #logo, .tgroup_6526 #wrapper #logo, .series_885 #wrapper #logo, #logo[style^="background: url('https://ptpimg.me/t475s2.png')"], .series_196 #wrapper #logo, .series_169 #wrapper #logo, .series_58 #wrapper #logo, .series_52 #wrapper #logo, .series_179 #wrapper #logo, .series_211 #wrapper #logo, .series_22 #wrapper #logo, .series_15 #wrapper #logo, .series_208 #wrapper #logo, .series_178 #wrapper #logo, 
+.tgroup_24482 #wrapper #logo, .tgroup_24230 #wrapper #logo, .tgroup_23617 #wrapper #logo, .series_31 #wrapper #logo, .series_191 #wrapper #logo, .master_465 #wrapper #logo, .tgroup_5993 #wrapper #logo, .tgroup_8046 #wrapper #logo, .series_70 #wrapper #logo, .franchise_53 #wrapper #logo, 
+.series_19 #wrapper #logo, .series_65 #wrapper #logo, .series_827 #wrapper #logo, .series_183 #wrapper #logo, .series_26 #wrapper #logo, .series_327 #wrapper #logo, .series_291 #wrapper #logo, .franchise_55 #wrapper #logo, .series_896 #wrapper #logo, .master_2940 #wrapper #logo, 
+.franchise_360 #wrapper #logo, .series_857 #wrapper #logo, .series_198 #wrapper #logo, .alpacas #wrapper #logo, .daftpunk #wrapper #logo, .series_555 #wrapper #logo, .series_279 #wrapper #logo, .series_188 #wrapper #logo, .series_177 #wrapper #logo, .series_184 #wrapper #logo, 
+.series_630 #wrapper #logo, .franchise_135 #wrapper #logo, .franchise_595 #wrapper #logo, .series_302 #wrapper #logo, .series_237 #wrapper #logo, .master_3805 #wrapper #logo, .master_3787 #wrapper #logo, .series_27 #wrapper #logo, .franchise_986 #wrapper #logo, 
+.franchise_1519 #wrapper #logo, .series_1503 #wrapper #logo, .series_298 #wrapper #logo, .franchise_91 #wrapper #logo, .series_1434 #wrapper #logo, .series_587 #wrapper #logo, .series_57 #wrapper #logo, .series_35 #wrapper #logo, .tgroup_30661 #wrapper #logo, 
+.series_548 #wrapper #logo, .master_3944 #wrapper #logo, .series_987 #wrapper #logo, .series_575 #wrapper #logo, .franchise_2521 #wrapper #logo, .master_680 #wrapper #logo, .tgroup_11495 #wrapper #logo, .tgroup_18505 #wrapper #logo, .master_691 #wrapper #logo, 
+.master_2719 #wrapper #logo, .master_7884 #wrapper #logo, .master_117 #wrapper #logo, .franchise_2773 #wrapper #logo {
 	background-repeat: repeat-x !important;
 	overflow-x: visible;
 	background-size: cover !important;
@@ -7806,152 +7806,152 @@ a >.error_message {
 	opacity: 0;
 	transition:none;}
 @-webkit-keyframes logoslide {from {background-position: 0 0;} to {background-position: calc(100% - 164px) 0;}}
-.master_2639 #logo {
+.master_2639 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/stellarislogo.png'), url(logo/alt-logo-30p.png);}
-.tgroup_6526 #logo {
+.tgroup_6526 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/androidlogo.png'), url(logo/alt-logo-30p.png);}
-.series_885 #logo {
+.series_885 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/mirrorsedgelogo.png'), url(logo/alt-logo-30p.png);}
 #logo[style^="background: url('https://ptpimg.me/t475s2.png')"] {
 	background-image:url(https://ptpimg.me/t475s2.png), url(logo/alt-logo-30p.png) !important;}
-.series_196 #logo {
+.series_196 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/crysislogo.png), url(logo/alt-logo-30p.png);}
-.series_169 #logo {
+.series_169 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/elderscrollslogo.png'), url(logo/alt-logo-30p.png);}
-.series_58 #logo {
+.series_58 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/masseffectlogo.png), url(logo/alt-logo-30p.png);}
-.series_52 #logo {
+.series_52 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/zeldalogo.png), url(logo/alt-logo-30p.png);}
-.series_179 #logo {
+.series_179 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/witcherlogo.png), url(logo/alt-logo-30p.png);}
-.series_211 #logo {
+.series_211 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/portallogo.png'), url(logo/alt-logo-30p.png);}
-.series_22 #logo {
+.series_22 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/falloutlogo.png), url(logo/alt-logo-30p.png);}
-.series_15 #logo {
+.series_15 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/asssassinscreedlogo.png'), url(logo/alt-logo-30p.png);}
-.series_208 #logo {
+.series_208 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/batmanarkhamlogo.png'), url(logo/alt-logo-30p.png);}
-.series_178 #logo {
+.series_178 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/bioshocklogo.png'), url(logo/alt-logo-30p.png);}
-.tgroup_24482 #logo, 
-.tgroup_24230 #logo {
+.tgroup_24482 #wrapper #logo, 
+.tgroup_24230 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/nomansskylogo.png'), url(logo/alt-logo-30p.png);}
-.tgroup_23617 #logo {
+.tgroup_23617 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/wehappyfewlogo.png), url(logo/alt-logo-30p.png);}
-.series_31 #logo {
+.series_31 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/battlefieldlogo.png), url(logo/alt-logo-30p.png);}
-.series_191 #logo {
+.series_191 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/wingcommanderlogo.png'), url(logo/alt-logo-30p.png);}
-.master_465 #logo,
-.tgroup_5993 #logo,
-.tgroup_8046 #logo {
+.master_465 #wrapper #logo,
+.tgroup_5993 #wrapper #logo,
+.tgroup_8046 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/bullylogo.png'), url(logo/alt-logo-30p.png);}
-.series_70 #logo {
+.series_70 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/gtalogo.png'), url(logo/alt-logo-30p.png);}
-.franchise_53 #logo {
+.franchise_53 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/finalfantasylogo.png'), url(logo/alt-logo-30p.png);}
-.series_19 #logo {
+.series_19 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/residentevillogo.png'), url(logo/alt-logo-30p.png);}
-.series_65 #logo {
+.series_65 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/callofdutylogo.png'), url(logo/alt-logo-30p.png);}
-.series_827 #logo {
+.series_827 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/mafialogo.png'), url(logo/alt-logo-30p.png);}
-.series_183 #logo {
+.series_183 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/civilizationlogo.png'), url(logo/alt-logo-30p.png);}
-.series_26 #logo {
+.series_26 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/metroidlogo.png'), url(logo/alt-logo-30p.png);}
-.series_327 #logo {
+.series_327 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/guitarherologo.png'), url(logo/alt-logo-30p.png);}
-.series_291 #logo {
+.series_291 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/farcrylogo.png), url(logo/alt-logo-30p.png);}
-.franchise_55 #logo {
+.franchise_55 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/mariologo.png'), url(logo/alt-logo-30p.png);}
-.series_896 #logo {
+.series_896 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/pacmanlogo.png'), url(logo/alt-logo-30p.png);}
-.master_2940 #logo {
+.master_2940 #wrapper #logo {
 	background-image:url(https://gazellegames.net/static/styles/game_room/images/gameseries/stardewlogo.png), url(logo/alt-logo-30p.png);}
-.franchise_360 #logo {
+.franchise_360 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/megamanlogo.png'), url(logo/alt-logo-30p.png);}
-.series_857 #logo {
+.series_857 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/amnesialogo.png'), url(logo/alt-logo-30p.png);}
-.series_198 #logo {
+.series_198 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/tombraiderlogo.png'), url(logo/alt-logo-30p.png);}
-.alpacas #logo {
+.alpacas #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/alpacaslogo.png'), url(logo/alt-logo-30p.png);}
-.daftpunk #logo {
+.daftpunk #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/daftpunklogo.png'), url(logo/alt-logo-30p.png);}
-.series_555 #logo {
+.series_555 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/dayofthetentaclelogo.png'), url(logo/alt-logo-30p.png);}
-.series_279 #logo {
+.series_279 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/darksoulslogo.png'), url(logo/alt-logo-30p.png);}
-.series_188 #logo {
+.series_188 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/metalgearlogo.png'), url(logo/alt-logo-30p.png);}
-.series_177 #logo {
+.series_177 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/deadspacelogo.png'), url(logo/alt-logo-30p.png);}
-.series_184 #logo {
+.series_184 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/dragonagelogo.png'), url(logo/alt-logo-30p.png);}
-.series_630 #logo {
+.series_630 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/monkeyislandlogo.png'), url(logo/alt-logo-30p.png);}
-.franchise_135 #logo {
+.franchise_135 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/starwarslogo.png'), url(logo/alt-logo-30p.png);}
-.franchise_595 #logo {
+.franchise_595 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/donkeykonglogo.png'), url(logo/alt-logo-30p.png);}
-.series_302 #logo {
+.series_302 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/fearlogo.png'), url(logo/alt-logo-30p.png);}
-.series_237 #logo {
+.series_237 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/fifalogo.png'), url(logo/alt-logo-30p.png);}
-.master_3805 #logo {
+.master_3805 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/persona5logo.png'), url(logo/alt-logo-30p.png);}
-.master_3787 #logo {
+.master_3787 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/wowlogo.png'), url(logo/alt-logo-30p.png);}
-.series_27 #logo {
+.series_27 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/stalkerlogo.png'), url(logo/alt-logo-30p.png);}
-.franchise_986 #logo {
+.franchise_986 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/hatsunelogo.png'), url(logo/alt-logo-30p.png);}
-.franchise_1519 #logo {
+.franchise_1519 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/southparklogo.png'), url(logo/alt-logo-30p.png);}
-.series_1503 #logo {
+.series_1503 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/evilwithinlogo.png'), url(logo/alt-logo-30p.png);}
-.series_298 #logo {
+.series_298 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/silenthilllogo.png'), url(logo/alt-logo-30p.png);}
-.franchise_91 #logo {
+.franchise_91 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/cthulhulogo.png'), url(logo/alt-logo-30p.png);}
-.series_1434 #logo {
+.series_1434 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/grisaialogo.png'), url(logo/alt-logo-30p.png);}
-.series_587 #logo {
+.series_587 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/hyperdimensionlogo.png'), url(logo/alt-logo-30p.png);}
-.series_57 #logo {
+.series_57 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/halologo.png'), url(logo/alt-logo-30p.png); background-size: contain;}
-.series_35 #logo {
+.series_35 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/halflifelogo.png'), url(logo/alt-logo-30p.png); background-size: contain;}
-.tgroup_30661 #logo {
+.tgroup_30661 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/rickandmortylogo.png'), url(logo/alt-logo-30p.png); background-size: contain;}
-.series_548 #logo {
+.series_548 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/momodoralogo.png'), url(logo/alt-logo-30p.png); background-size: contain;}
-.master_3944 #logo {
+.master_3944 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/hollowknightlogo.png'), url(logo/alt-logo-30p.png); background-size: contain;}
-.series_987 #logo {
+.series_987 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/superhotlogo.png'), url(logo/alt-logo-30p.png); background-size: contain;}
-.series_575 #logo {
+.series_575 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/nekoparalogo.png'), url(logo/alt-logo-30p.png);}
-.franchise_2521 #logo {
+.franchise_2521 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/monstergirlquestlogo.png'), url(logo/alt-logo-30p.png);}
-.master_680 #logo {
+.master_680 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/farcryblooddragonlogo.png'), url(logo/alt-logo-30p.png);}
-.tgroup_11495 #logo {
+.tgroup_11495 #wrapper #logo {
 	background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/spaceengineerslogo.png'), url(logo/alt-logo-30p.png);}
-.tgroup_18505 #logo {
+.tgroup_18505 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/medievalengineerslogo.png'), url(logo/alt-logo-30p.png);}
-.master_691 #logo {
+.master_691 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/ftllogo.png'), url(logo/alt-logo-30p.png);}
-.master_2719 #logo {
+.master_2719 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/subnauticalogo.png'), url(logo/alt-logo-30p.png); background-size: contain;}
-.master_7884 #logo {
+.master_7884 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/intothebreachlogo.png'), url(logo/alt-logo-30p.png);}
-.master_117 #logo {
+.master_117 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/limbologo.png'), url(logo/alt-logo-30p.png);}
-.franchise_2773 #logo {
+.franchise_2773 #wrapper #logo {
     background-image:url('https://gazellegames.net/static/styles/game_room/images/gameseries/swordartonlinelogo.png'), url(logo/alt-logo-30p.png);}
 
 /* disabling custom user backgrounds for now */
