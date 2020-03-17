@@ -149,7 +149,7 @@ tr.likes {
 		padding:5px 0 5px 5px;
 		box-shadow: none !important;}
 
-	.global_buffs .fa {
+	#wrapper .global_buffs .fa {
 		font-size: 20px;}
 #torrents .box.similar_div ul.nobullet, #torrents #vote_matches ul.nobullet {
     width: 100%;
@@ -208,7 +208,7 @@ tr.likes {
 		height: 110px !important;
 		}
 
-	#logo {
+	#wrapper #logo {
 		display: inline-block;
 		margin: 10px 0 0 0;
 		width: 76px;
@@ -217,7 +217,7 @@ tr.likes {
 		-webkit-transition: none !important;
 		}
 
-	#logo a {
+	#wrapper #logo a {
 		width: 76px;
 		height: 76px;
 		animation: rotate800 60s linear infinite;
@@ -225,7 +225,7 @@ tr.likes {
 		-webkit-transition: none !important;
 		}
 
-	#announcement {
+	#wrapper #announcement {
         margin-top: 0;
         z-index: 999;
 		font-size: 1.1em;
@@ -498,7 +498,7 @@ tr.likes {
 	ul#userinfo_stats:hover li {
 		
 		}
-.global_buffs {
+#wrapper .global_buffs {
     top: 10px;
     right: 0;
     width: calc(100% - 215px);
@@ -687,7 +687,7 @@ tr.likes {
         margin-bottom: 15px;
         width: 100%;}
 
-#announcement {
+#wrapper #announcement {
     background-color: transparent;
 	top: 0px;
     background-image: url('icon/svg/announce800.svg');
@@ -698,9 +698,9 @@ tr.likes {
     width: 28px;
     height: 28px;
     position: absolute;}
-#announcement span {
+#wrapper #announcement span {
     display: none;}
-#announcement:hover {
+#wrapper #announcement:hover {
     background-image: none;
     -webkit-filter: unset;
     -moz-filter: unset;
@@ -710,10 +710,11 @@ tr.likes {
     width: calc(100% - 8px);
     height: auto;
     left:0;}
-#announcement:hover span {
+#wrapper #announcement:hover span {
     display: inline;}
     
 #header #alerts {
+    text-align: center;
     top: 15px;
     left: 177px;}
 #header #alerts .blend {
@@ -2292,7 +2293,7 @@ tr.likes {
     top: 44px;}
     
     
-    .global_buffs {
+    #wrapper .global_buffs {
         width: 28px;
         height: 0;
         background-size: 28px 28px;
@@ -2300,7 +2301,7 @@ tr.likes {
         background-position: top right;
         flex-direction: row;
         padding-top: 33px;}
-    .global_buffs:hover {
+    #wrapper .global_buffs:hover {
     	width: calc(100% - 215px);
     	height: auto;}
     .global_buffs .individual_buff {
@@ -2371,7 +2372,7 @@ tr.likes {
     #fight_skill_points_assign #items_navigation {
         top: 59px;
     }
-    #announcement {
+    #wrapper #announcement {
         left: 220px;
     }
     #torrents li.similar_group,

@@ -2751,7 +2751,7 @@ img.avatar {
 span.user_title {
     white-space: nowrap;}
 
-.global_buffs {
+#wrapper .global_buffs {
     position: absolute;
     top: 145px;
     right: 0px;
@@ -2803,6 +2803,12 @@ span.user_title {
     position: absolute;
     top: 0;
 }
+
+#wrapper .individual_buff {
+    white-space: normal;
+    font-size: 10pt;}
+#wrapper .individual_buff .fa {
+    font-size: 34px;}
 
 #seedtime_tokens .large_progress_bar .last_drop {
     top: 100%;
@@ -3064,7 +3070,7 @@ form textarea, form input {
 #torrent_table {
     overflow: visible;}
 
-#announcement {
+#wrapper #announcement {
     margin-top: 6px;
     white-space: normal;
     box-sizing: border-box;
@@ -7436,7 +7442,7 @@ a[onclick="BBCode.spoiler(this);"] {
     margin-left: 207px;}
 #userinfo_minor {
     margin-left: 530px;}
-.global_buffs {
+#wrapper .global_buffs {
     left: 34.5%;
     width: 65.5%;
     top: 105px;}
@@ -7445,14 +7451,14 @@ a[onclick="BBCode.spoiler(this);"] {
     max-width: 70px;
     min-width: 70px;
     line-height: 1.1;}
-.individual_buff:first-child:nth-last-child(9) .fa,
-.individual_buff .fa {
+#wrapper .individual_buff:first-child:nth-last-child(9) .fa,
+#wrapper .individual_buff .fa {
     font-size: 22px;}
 .clan_trophy {
     right: 25px;
     top: 105px;}
 .clan_trophy img {
-    height: 70px;}
+    height: 64px;}
 #extra1 span {
     top: 50px;
     height: 164px;
@@ -7741,7 +7747,7 @@ a >.error_message {
     left: 0;}
 }
 @media screen and (max-width: 1450px) and (min-width: 1280px) {
-.global_buffs {
+#wrapper .global_buffs {
     left: 33.5%;
     width: 66.5%;
     top: 105px;}
@@ -7750,15 +7756,18 @@ a >.error_message {
     max-width: 70px;
     min-width: 70px;
     line-height: 1.1;}
-.individual_buff:first-child:nth-last-child(9) .fa, .individual_buff .fa {
+#wrapper .individual_buff:first-child:nth-last-child(9) .fa,
+#wrapper .individual_buff .fa {
     font-size: 22px;}
 .global_buffs .buff_text .buff_multiplier {
     font-size: 15px;}
+#wrapper .individual_buff {
+    font-size: 9pt;}
 .clan_trophy {
     right: 0px;
     top: 105px;}
 .clan_trophy img {
-    height: 70px;}
+    height: 64px;}
 }
 @media screen and (max-width: 1365px) and (min-width: 1320px) {
 .clan_trophy {
