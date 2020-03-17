@@ -2754,7 +2754,7 @@ span.user_title {
 #wrapper .global_buffs {
     position: absolute;
     top: 145px;
-    right: 0px;
+    right: calc((100vw - 100%) / -2 + 110px);
     left: unset;
     filter: none;
     width: 1px;}
@@ -2766,7 +2766,7 @@ span.user_title {
 .clan_trophy {
     position: absolute;
     top: 25px;
-    right: -80px;
+    right: calc((100vw - 100%) / -2 + 26px);
     opacity: 0.7;}
 .global_buffs a:hover i.fa.fa-fl-pots {
     filter: drop-shadow(2px 2px 2px #e85066);}
@@ -7721,11 +7721,11 @@ a >.error_message {
 
 @media screen and (min-width: 1400px) and (max-width: 1409px) {
 #header #alerts {
-    left: 42px;}
+    left: -42px;}
 }
 @media screen and (min-width: 1410px) and (max-width: 1599px) {
 #header #alerts {
-    left: 45px;}
+    left: -45px;}
 }
 
 @media screen and (max-width: 1399px) and (min-width: 1320px) {
@@ -7746,7 +7746,7 @@ a >.error_message {
     top: 5px;
     left: 0;}
 }
-@media screen and (max-width: 1450px) and (min-width: 1280px) {
+@media screen and (max-width: 1510px) and (min-width: 1280px) {
 #wrapper .global_buffs {
     left: 33.5%;
     width: 66.5%;
