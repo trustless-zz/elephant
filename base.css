@@ -4555,11 +4555,11 @@ img[title="Gold"] {
 .inventory 
 #shop #item_search {
     height: 34px;}
-.inventory #item_search td[colspan="2"], 
+/*.inventory #item_search td[colspan="2"], 
 #shop #item_search td[colspan="2"] {
     position: absolute;
     top: 0;
-    left: 80px;}
+    left: 80px;}*/
 
 #torrents .center.thin h2#non_wiki_editing,
 #torrents .center.thin h2#non_wiki_editing ~h2 {
@@ -7468,6 +7468,8 @@ a >.error_message {
 #header #alerts {
     top: 5px;
     left: 5px;}
+#wrapper .individual_buff {
+    font-size: 9pt;}
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1319px) {
