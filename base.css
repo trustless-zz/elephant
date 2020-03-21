@@ -6837,7 +6837,7 @@ textarea {
     margin: -45px 0 0 0;}
 
 #shop_search #search_query {
-    width: 590px;}
+    width: 575px;}
 .box_add_freeleech #groupid_input {
     width: calc(100% - 225px);}
 
@@ -7504,7 +7504,7 @@ a >.error_message {
 .global_buffs_shop_main >.items_table:not(#existing_buff_pots) {
     width: 1037px;}
 #shop_search #search_query {
-    width: 690px;}
+    width: 675px;}
 #top10 .center .border tbody input[type="text"] {
     width: 740px !important;}
 #backpack #items #search_query,
