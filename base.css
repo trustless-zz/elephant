@@ -4849,6 +4849,7 @@ img[title="Gold"] {
     left:3px;}
     
 input[type="submit"], input[type="button"], button[type="button"] {
+    font-family: Arial, Sans-Serif;
     border: none;
     padding: 3px 8px 3px 8px;
     /* transition: 0.05s; */ }
@@ -6836,7 +6837,7 @@ textarea {
     margin: -45px 0 0 0;}
 
 #shop_search #search_query {
-    width: 596px;}
+    width: 590px;}
 .box_add_freeleech #groupid_input {
     width: calc(100% - 225px);}
 
@@ -7503,7 +7504,7 @@ a >.error_message {
 .global_buffs_shop_main >.items_table:not(#existing_buff_pots) {
     width: 1037px;}
 #shop_search #search_query {
-    width: 696px;}
+    width: 690px;}
 #top10 .center .border tbody input[type="text"] {
     width: 740px !important;}
 #backpack #items #search_query,
