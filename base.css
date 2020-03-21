@@ -512,7 +512,7 @@ overflow: auto;}
 	width: 1040px;
 	margin: 0 auto;
 	text-align: center;
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 8pt;
 	clear: both;
 	padding-bottom: 10px;}
@@ -539,7 +539,7 @@ overflow: auto;}
 	overflow: hidden;}
 
 .box {
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 10pt;
 	overflow: hidden;}
 .pad {
@@ -547,7 +547,7 @@ overflow: auto;}
 
 #reportsv2 .box {
 	border: 0 solid #1a1a1a;
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 10pt;
 	border: 0 solid #1a1a1a;}
 #reportsv2 #report_table td.label {
@@ -566,7 +566,7 @@ overflow: auto;}
 	overflow: visible; /* for #markread to be seen outside */}
 
 .newsdate {
-font-family: Arial, Sans-Serif;
+font-family: Sans-Serif;
     font-style: italic;
     /* margin-left: 770px; */
     margin-top: -19px;
@@ -677,7 +677,7 @@ width:100%;
     width: 300px;}
 .staff_pick .slides_control .nobullet .center {
     text-align: center;
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-style: italic;
     font-weight: bold;
     margin-top: 5px;
@@ -770,7 +770,7 @@ width:100%;
 
 #requests #request_comments .colhead_dark >td strong,
 .forum_index {
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 10pt;}
 
 .forum_index tbody tr {
@@ -789,13 +789,13 @@ width:100%;
 
 table {
 	border-collapse: collapse;
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 10pt;
 	margin: 10px auto;}
 
 #user table {
 	border-collapse: collapse;
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 10pt;
 	margin: 0 auto;}
 
@@ -1500,7 +1500,7 @@ td.cats_col {
 	width: 1200px;
 	margin: 0 auto;
 	margin-left: 0;
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 10pt;}
 
 .main_column  .torrent_table {
@@ -1622,7 +1622,7 @@ td.cats_col {
 /*UPLOAD*/
 #upload .colhead {
     font-size: 12pt !important;
-    font-family: Arial, Sans-Serif !important;}
+    font-family: Sans-Serif !important;}
 
 #upload_table #remaster_title {
     margin: 10px 0 5px 0;}
@@ -1704,7 +1704,7 @@ td.cats_col {
 #upload #content div[style="margin:0px auto;width:700px"] {
     width: auto !important;
     margin-left: 10px !important;
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;}
 
 #upload #content div[style="margin:0px auto;width:700px"] table {
@@ -1722,7 +1722,7 @@ td.cats_col {
 
 #upload #content .thin {
     width: auto !important;
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;}
 
 #upload_table table {
@@ -1881,7 +1881,7 @@ td.cats_col {
 #requests .thin > table {
 	width: 1200px;
 	margin: 20px 0 10px 0;
-	font-family: Arial, Sans-Serif;
+	font-family: Sans-Serif;
 	font-size: 10pt;}
 #requests .thin >.center.box.pad + .linkbox {
     margin-bottom: -10px;}
@@ -4723,7 +4723,7 @@ img[title="Gold"] {
 #torrents .main_column_bg .main_column #torrent_comments #reply_box .box.pad form#quickpostform #quickreplytext textarea#quickpost {
     max-width: 815px;}
 #user #wrapper #content .thin.profile .sidebar .box.box_image.box_image_coverart div a img {max-width: 300px;}
-#user #requests table.border tbody tr.rowa td {text-align: left !important; font-family: Arial, Sans-Serif;}
+#user #requests table.border tbody tr.rowa td {text-align: left !important; font-family: Sans-Serif;}
 
 
 /****Image Gallery****/
@@ -4848,12 +4848,14 @@ img[title="Gold"] {
     top:3px;
     left:3px;}
 
-select
+/*select
 input[type="submit"],
 input[type="button"],
 button[type="button"] {
-    font-family: Arial, Sans-Serif;}
-input[type="submit"], input[type="button"], button[type="button"]{
+    font-family: Sans-Serif;}*/
+input[type="submit"],
+input[type="button"],
+button[type="button"] {
     border: none;
     padding: 3px 8px 3px 8px;
     /* transition: 0.05s; */ }
@@ -4905,7 +4907,7 @@ input[type="submit"], input[type="button"], button[type="button"]{
     content: "NEW";
     padding: 1px 3px 1px 2px;
     position: absolute;
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 8pt;
     font-weight: bold;
     display: inline-block;
@@ -5005,7 +5007,7 @@ ul#noty_bottomRight_layout_container.i-am-new li {
 #torrents .main_column #torrent_comments table[class="forum_post wrap_overflow box vertical_margin forum_unread"] {margin-top: 16px;}
 #rules .thin form.search_form {
     border-collapse: collapse;
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;
     padding: 5px;}
 #rules #actual_rules .box.pad {
@@ -5220,7 +5222,7 @@ span.user_title span[style="font-family: cursive;"] {
 #index .sidebar #freeleech_time_left #progress_bar span.main_bar {
     margin-top: 4px;}
 #index .newsdate {
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-style: italic;
     top: 18px;
     font-size: 10pt;
@@ -5235,7 +5237,7 @@ span.user_title span[style="font-family: cursive;"] {
     display: flex;
     padding: 9px 10px 8px 10px;}
 #index .thin .main_column_bg .main_column .box .head span.time {
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-style: italic;
     top: 18px;
     font-size: 10pt;
@@ -5317,12 +5319,12 @@ span.user_title span[style="font-family: cursive;"] {
 #top10 #wrapper #content .thin table.border tbody tr[class^="group_torrent"] td strong,
 #top10 #wrapper #content .thin table.border tbody tr[class^="group_torrent"] td[style="text-align:right"],
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong {
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;
     font-weight: normal;}
 #top10 #wrapper #content .thin table.border tbody tr[class^="group_torrent"] td strong a,
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a {
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;
     font-weight: bold;}
 #top10 #wrapper #content .thin:not([class="thin  top10_users"]):not([class="thin top10_uploaders"]):not([class="thin top10_tags"]) table.border tbody .colhead td:nth-child(3) {
@@ -5462,7 +5464,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
 
 #user .main_column_bg .main_column .main_column_sortable .box.box_requests #requests table.border tbody tr.colhead_dark >td >strong {
     font-weight: normal;
-    font-family: Arial, Sans-Serif;}
+    font-family: Sans-Serif;}
 #user .box.box_gold >.head.colhead_dark >span {
     font-size: 16px !important;}
 #user .box.box_badges >.pad {
@@ -6138,7 +6140,7 @@ table#weblinks_edit input.weblinks {
     width: calc(100% - 10px) !important;}
 
 #running_freeleech >tbody tr[class^="group_torrent row_"] >td >strong a {
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;
     font-weight: bold;}
 
@@ -6430,7 +6432,7 @@ span.size10 {font-size: 3em;line-height: 1em}
     font-weight: bold;
     margin: 0;}
 #top10 .thin.top10_torrents .group_torrent >td.center.cats_col + td:nth-child(3) {
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;}
 #bookmarks div#pageslinksdiv a,
 #top10 .thin.top10_torrents .group_torrent >td.center.cats_col + td:nth-child(3) >span a {
@@ -7025,7 +7027,7 @@ textarea {
     width: 100%;
     text-align: left !important;
     padding: 5px;
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;
     margin: 0;
     height: 18px;
@@ -7386,7 +7388,7 @@ a[onclick="BBCode.spoiler(this);"] {
     transition-delay: 0s !important;}
 #header #alerts a {
     padding: 0 5px;
-    font-family: Arial, Sans-Serif;
+    font-family: Sans-Serif;
     font-size: 10pt;
     line-height: 20pt;
     font-weight: normal;
@@ -7397,7 +7399,7 @@ a[onclick="BBCode.spoiler(this);"] {
 	border-radius: 0px !important;}
 .tooltipster-default .tooltipster-content {
     padding: 4px 5px 3px 5px !important;
-    font-family: Arial, Sans-Serif !important;
+    font-family: Sans-Serif !important;
 	font-size: 9pt !important;}
 
 #fight_skill_points_assign table tr:not(.colhead) td:first-child {
