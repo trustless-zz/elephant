@@ -4540,9 +4540,9 @@ img[title="Gold"] {
 
 .inventory #item_search .flright,
 #shop #item_search .flright {
-    right: 5px;
+    /*right: 5px;
     top: 9px;
-    position: absolute;
+    position: absolute;*/
     white-space: nowrap;}
 .inventory #item_search td.label,
 #shop #item_search td.label {
@@ -6843,7 +6843,7 @@ textarea {
     margin: -45px 0 0 0;}
 
 #shop_search #search_query {
-    width: 575px;}
+    width: 475px;}
 .box_add_freeleech #groupid_input {
     width: calc(100% - 225px);}
 
@@ -7510,7 +7510,7 @@ a >.error_message {
 .global_buffs_shop_main >.items_table:not(#existing_buff_pots) {
     width: 1037px;}
 #shop_search #search_query {
-    width: 675px;}
+    width: 575px;}
 #top10 .center .border tbody input[type="text"] {
     width: 740px !important;}
 #backpack #items #search_query,
