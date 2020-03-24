@@ -180,6 +180,9 @@
 @font-face {
     font-family: 'Whitney';
     src: url(Whitney-Medium.otf);}
+@font-face {
+    font-family: 'Arimo';
+    src: url(Arimo.ttf);}
 
 @keyframes expandWidth {
     0% {transform: scaleX(0);}
@@ -202,7 +205,7 @@ body {
     background-color: var(--c-body);
     background-image: url('zebra.svg');
     background-size: 121px 38px;
-    font-family: Sans-Serif;
+    font-family: Arimo, Sans-Serif;
     margin: 0;
     min-height: 100%;
     overflow-wrap: break-word;
@@ -309,7 +312,7 @@ textarea {
     resize: vertical;
     width: 100%;
     color: var(--c-txt);
-    font-family: Sans-Serif;
+    font-family: Arimo, Sans-Serif;
     padding: 3px 5px;
     margin-bottom: 8px !important;
     outline: 0 !important;}
@@ -368,7 +371,7 @@ select {
     box-shadow: var(--p-input-shdw);*/
     color: unset; /*var(--c-low);*/
     font-size: 10pt;
-    font-family: Sans-Serif;}
+    font-family: Arimo, Sans-Serif;}
 textarea:hover,
 textarea:focus,
 #wrapper #trading_panel .message_box textarea:hover,
@@ -428,7 +431,7 @@ table#otherop.hidden ~table.otheroptoggle a,
 .filelist_title a.brackets*/ {
     font-size: 14px;
     line-height: 1em;
-    font-family: Sans-Serif !important;
+    font-family: Arimo, Sans-Serif !important;
     font-weight: 400;
     cursor: pointer;
     outline: 0;
