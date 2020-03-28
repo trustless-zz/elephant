@@ -7441,7 +7441,7 @@ a[onclick="BBCode.spoiler(this);"] {
 #wrapper td.calendar-day {
     display: flex;
     flex-flow: column;
-    width: calc(50% - 13px);
+    width: calc(50% - 5px);
     padding: 3px;
     justify-content: center;
     position: relative;}
