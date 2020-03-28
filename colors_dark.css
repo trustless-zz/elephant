@@ -300,6 +300,7 @@ input#FLTorrent {
 #searchbars ul li form input{
     color: #757575;}
 
+.calendar .calendar-day.today,
 #torrents #torrentsbrowsecomplete li:nth-child(odd),
 .autocomplete_list li:nth-child(odd),
 #torrents .filter_torrents #platcheckbox td[colspan="5"],
@@ -341,6 +342,7 @@ input#FLTorrent {
 .rowb:hover,
 .row_a:hover,
 .rowa:hover,
+.calendar .calendar-day:hover,
 #tools #mastergroups table tr:not(.colhead):hover,
 #tools .thin >#recommended #torrent_form >table tr:not(.colhead):hover,
 #upload div[style="margin:0px auto;width:700px"] tr:not(.colhead):hover,
@@ -723,6 +725,7 @@ blockquote code {
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
 #bookmarks ul li[class^="image"],
+#wrapper td.calendar-day,
 #collections ul li[class^="image"] {
 	border: 1px solid #303030;}
 
@@ -1076,6 +1079,8 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
 #index #clans .large_progress_bar:hover {
     background-color: #e85066;}
 
+#calendar .day-number:hover,
+td.calendar-day a[style="color: white;"]:hover,
 #color_leeching:hover,
 #color_leeching:hover .torrent_info_tags,
 #color_leeching:hover a,

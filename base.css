@@ -2627,7 +2627,7 @@ ul {padding-left: 10px;} /*was 12px*/
 #collections .main_column >#coverart {
     padding-bottom: 30px;}
 #collections .box_comment .pad img{height:initial;width:initial;border:0px;padding:1px;margin:0px;}
-.collections_art_display{background:url('images/companioncube-blue.png')!important;}
+/*.collections_art_display{background:url('images/companioncube-blue.png')!important;}*/
 .collections_art_display td{border:none;padding:2px;width:25%;}
 .collections_art_display .collection_art{height:100px;background-size:246px 100px;}
 #collections #content .center table tr:not(.colhead_dark),td{background:none;}
@@ -2801,8 +2801,10 @@ span.user_title {
     display: block;
     height: 100%;
     position: absolute;
-    top: 0;
-}
+    top: 0;}
+
+.large_progress_bar .main_section {
+    left: 0;}
 
 #wrapper .individual_buff {
     white-space: normal;
@@ -4535,6 +4537,7 @@ img[title="Gold"] {
 #torrents .sidebar .box_pack .head,
 #index #freeleech .head.colhead_dark,
 #blogposts .head.colhead_dark,
+#index #upcoming_calendar .head.colhead_dark,
 #dailygazelle .head.colhead_dark,
 #user .head.colhead_dark {padding: 9px 0 8px 0 !important; min-height: 0;}
 
@@ -7423,6 +7426,155 @@ a[onclick="BBCode.spoiler(this);"] {
     width: 224px;
     height: 362px;
     float: left;}
+
+
+/* Upcomming Events */
+#wrapper table.calendar {
+    width: 100%;
+    height: 100%;
+    display: block;}
+#index table.calendar {
+    width: calc(100% - 15px);
+    border: 0;
+    margin: 0;
+    padding: 0 5px 10px 10px;}
+#wrapper td.calendar-day {
+    display: flex;
+    flex-flow: column;
+    width: calc(50% - 13px);
+    padding: 3px;
+    justify-content: center;
+    position: relative;}
+#index .calendar-day {
+    margin-right: 5px;}
+.calendar tr.calendar-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;}
+#calendar .calendar tr.calendar-row {
+    justify-content: space-between;}
+table.calendar tbody {
+    display: block;}
+.calendar  span.event_end_time {
+    white-space: normal;
+    font-size: 10px;}
+.calendar .day-events p.tooltip {
+    position: relative;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0;}
+.calendar .day-events p.tooltip span {
+    position: relative;}
+#wrapper td.calendar-day {
+    font-size: 10pt;}
+.calendar .day-number {
+    margin: 0;
+    padding: 3px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    line-height: 1em;
+    z-index: 1;
+    color: inherit;}
+.calendar .day-events {
+    width: 100%;
+    margin: auto;
+    z-index: 2;}
+#calendar .calendar .day-events {
+    margin: 17px auto;
+    width: auto;
+    /*margin-left: 0;*/}
+#calendar .calendar .day-events p:first-child {
+    margin-top: 0;}
+#calendar .calendar .day-events p:last-child {
+    margin-bottom: 0;}
+td.calendar-day a[style="color: white;"],
+td.calendar-day span[style="color: white;"] {
+    color: inherit !important;}
+#wrapper td.calendar-day:hover {
+    background-color: var(--c-row-hvr);}
+.tooltipster-content h2 {
+    margin-bottom: 10px;}
+td.calendar-day.today {
+    outline: 1px solid var(--c-table-brdr);
+    outline-offset: -1px;}
+.day-events .event_day {
+    font-weight: 600;}
+#calendar h2 input#monthPicker {
+    height: 0;}
+#calendar span#MonthPicker_Button_monthPicker {
+    float: left;}
+
+table.event_form_table td.label.small_label[colspan="4"] {
+    text-align: left;}
+.event_form_table input#end_date,
+.event_form_table input#start_date,
+#calendar .main_column {
+    width: 100%;}
+#calendar td.calendar-row.calendar-heading,
+#calendar td.calendar-day-np,
+#calendar td.calendar-day {
+    width: calc((100% / 7) - (30px / 7));}
+#calendar .calendar tr:first-child {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;}
+#calendar .calendar,
+.calendar td.calendar-row.calendar-heading,
+.calendar td.calendar-day,
+.calendar td.calendar-day-np {
+    box-sizing: border-box;}
+.calendar .day-events p {
+    padding: 5px 0;}
+.calendar td.calendar-day,
+.calendar td.calendar-day-np {
+    margin-top: 10px;
+    min-height: 110px;
+    height: auto;
+    padding: unset;
+    border: unset;}
+#wrapper .day-number {
+    background: unset;}
+#wrapper .calendar-day-np {
+    background-color: var(--c-tgroup);}
+#calendar .calendar {
+    padding-bottom: 10px;
+    border: unset;}
+
+#calendar #content {
+    position: relative;}
+#calendar .change_month_links a {
+    display: inline-block;}
+#calendar .change_month_links {
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    line-height: 1em;
+    font-size: 1.4em;}
+#calendar .change_month_links #last_month {
+    margin-right: 2px;}
+
+.month-picker-header .ui-icon {
+    background-image: none;}
+
+.month-picker-header .ui-icon {
+    width: 20px;
+    height: 30px;
+    margin-top: -15px;}
+.month-picker-header .ui-icon-circle-triangle-e {
+    margin-left: -11px;}
+.month-picker-header .ui-icon-circle-triangle-w {
+    margin-left: -9px;}
+/* /Upcomming Events */
+
+
+
+
+
 
 /* widescreen */
 @media (min-width: 801px) and (max-width: 1279px) {
