@@ -708,7 +708,7 @@ blockquote code {
 #torrents .screenshots >a,
 #bookmarks ul li[class^="image"],
 #collections ul li[class^="image"],
-#wrapper td.calendar-day,
+#wrapper .calendar-day,
 .forum_latest .search #forumlist tr td:not([colspan="2"]) {
 	border: 1px solid #DBDBDB;}
 
@@ -1056,7 +1056,7 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
     background-color: #e85066;}
 
 #calendar .day-number:hover,
-td.calendar-day a[style="color: white;"]:hover,
+.calendar-day a[style="color: white;"]:hover,
 #color_leeching:hover,
 #color_leeching:hover .torrent_info_tags,
 #color_leeching:hover a,

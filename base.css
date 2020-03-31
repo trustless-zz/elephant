@@ -7429,44 +7429,49 @@ a[onclick="BBCode.spoiler(this);"] {
 
 
 /* Upcomming Events */
-#wrapper table.calendar {
+#wrapper .calendar {
     width: 100%;
     height: 100%;
     display: block;}
-#index table.calendar {
+#index .calendar {
     width: calc(100% - 15px);
     border: 0;
     margin: 0;
     padding: 0 5px 10px 10px;}
-#wrapper td.calendar-day {
+#wrapper .calendar-day {
     display: flex;
     flex-flow: column;
     width: calc(50% - 5px);
     padding: 3px;
     justify-content: center;
-    position: relative;}
+    position: relative;
+    font-size: 10pt;}
+#wrapper .calendar-day.today:only-child {
+    width: calc(100% - 5px);}
+.calendar-day.today:only-child .tooltip {
+    display: flex;
+    flex-flow: column;}
 #index .calendar-day {
     margin-right: 5px;}
-.calendar tr.calendar-row {
+.calendar .calendar-row {
     width: 100%;
     display: flex;
     flex-flow: row wrap;}
-#calendar .calendar tr.calendar-row {
+#calendar .calendar .calendar-row {
     justify-content: space-between;}
-table.calendar tbody {
+.calendar tbody {
     display: block;}
 .calendar  span.event_end_time {
     white-space: normal;
     font-size: 10px;}
-.calendar .day-events p.tooltip {
+#wrapper .calendar .day-events .tooltip {
     position: relative;
     text-align: center;
     padding: 5px 0;
     margin: 0;}
-.calendar .day-events p.tooltip span {
+.calendar .day-events .tooltip span {
     position: relative;}
-#wrapper td.calendar-day {
-    font-size: 10pt;}
+.calendar-day.today:only-child .day-label,
 .calendar .day-number {
     margin: 0;
     padding: 3px;
@@ -7484,29 +7489,33 @@ table.calendar tbody {
     width: 100%;
     margin: auto;
     z-index: 2;}
+#index .calendar .day-events {
+    padding: 0;
+    margin: 0 auto;}
 #calendar .calendar .day-events {
     margin: 17px auto;
-    width: auto;
+    width: calc(100% - 10px);
     /*margin-left: 0;*/}
 #calendar .calendar .day-events p:first-child {
     margin-top: 0;}
 #calendar .calendar .day-events p:last-child {
     margin-bottom: 0;}
-td.calendar-day a[style="color: white;"],
-td.calendar-day span[style="color: white;"] {
+.calendar-day a[style="color: white;"],
+.calendar-day span[style="color: white;"] {
     color: inherit !important;}
-#wrapper td.calendar-day:hover {
+#wrapper .calendar-day:hover {
     background-color: var(--c-row-hvr);}
 .tooltipster-content h2 {
     margin-bottom: 10px;}
-td.calendar-day.today {
+.calendar-day.today {
     outline: 1px solid var(--c-table-brdr);
     outline-offset: -1px;}
 .day-events .event_day {
+    width: auto;
     font-weight: 600;}
 #calendar h2 input#monthPicker {
     height: 0;}
-#calendar span#MonthPicker_Button_monthPicker {
+#calendar #MonthPicker_Button_monthPicker {
     float: left;}
 
 table.event_form_table td.label.small_label[colspan="4"] {
@@ -7515,23 +7524,23 @@ table.event_form_table td.label.small_label[colspan="4"] {
 .event_form_table input#start_date,
 #calendar .main_column {
     width: 100%;}
-#calendar td.calendar-row.calendar-heading,
-#calendar td.calendar-day-np,
-#calendar td.calendar-day {
+#calendar .calendar-row.calendar-heading,
+#calendar .calendar-day-np,
+#calendar .calendar-day {
     width: calc((100% / 7) - (30px / 7));}
 #calendar .calendar tr:first-child {
     display: flex;
     flex-flow: row;
     justify-content: space-between;}
 #calendar .calendar,
-.calendar td.calendar-row.calendar-heading,
-.calendar td.calendar-day,
-.calendar td.calendar-day-np {
+.calendar .calendar-row.calendar-heading,
+.calendar .calendar-day,
+.calendar .calendar-day-np {
     box-sizing: border-box;}
 .calendar .day-events p {
-    padding: 5px 0;}
-.calendar td.calendar-day,
-.calendar td.calendar-day-np {
+    padding: 2px 0;}
+.calendar .calendar-day,
+.calendar .calendar-day-np {
     margin-top: 10px;
     min-height: 110px;
     height: auto;

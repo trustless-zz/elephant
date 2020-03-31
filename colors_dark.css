@@ -725,7 +725,7 @@ blockquote code {
 #torrents li.similar_group >a,
 #torrents .screenshots >a,
 #bookmarks ul li[class^="image"],
-#wrapper td.calendar-day,
+#wrapper .calendar-day,
 #collections ul li[class^="image"] {
 	border: 1px solid #303030;}
 
@@ -1080,7 +1080,7 @@ strong.neutralleech_label {text-shadow: 0 0 7px;}
     background-color: #e85066;}
 
 #calendar .day-number:hover,
-td.calendar-day a[style="color: white;"]:hover,
+.calendar-day a[style="color: white;"]:hover,
 #color_leeching:hover,
 #color_leeching:hover .torrent_info_tags,
 #color_leeching:hover a,
