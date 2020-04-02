@@ -531,6 +531,7 @@ input:focus {
     color: #2e5266;}
 
 #backpack #slots_header,
+#friends .forum_post .colhead,
 #backpack #items span:first-child,
 .crafting #crafting_recipes:before,
 #crafting_panel #slots_panel:before,

@@ -552,6 +552,7 @@ input:focus {
 .global_buffs .color_yellow .buff_text {
     color: #c09a9a;}
 
+#friends .forum_post .colhead,
 #backpack #items span:first-child,
 .crafting #crafting_recipes:before,
 #crafting_panel #slots_panel:before,

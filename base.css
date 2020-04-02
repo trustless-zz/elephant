@@ -358,8 +358,8 @@ overflow: auto;}
     top:-15px; */}
 
 #index .error_message {
-    top: -20px;
-    margin-bottom: -20px;}
+    top: -11px;
+    margin-bottom: -11px;}
 
 #connectable {
 	position: absolute;
@@ -7434,25 +7434,22 @@ a[onclick="BBCode.spoiler(this);"] {
     height: 100%;
     display: block;}
 #index .calendar {
-    width: calc(100% - 15px);
     border: 0;
     margin: 0;
-    padding: 0 5px 10px 10px;}
+    padding: 0;}
 #wrapper .calendar-day {
     display: flex;
     flex-flow: column;
-    width: calc(50% - 5px);
-    padding: 3px;
+    width: 100%;
     justify-content: center;
     position: relative;
     font-size: 10pt;}
-#wrapper .calendar-day.today:only-child {
-    width: calc(100% - 5px);}
-.calendar-day.today:only-child .tooltip {
-    display: flex;
-    flex-flow: column;}
+
 #index .calendar-day {
-    margin-right: 5px;}
+    width: calc(100% - 20px);
+    margin: 0 10px 10px 10px;}
+#index .calendar-day:first-child {
+    margin-top: 10px;}
 .calendar .calendar-row {
     width: 100%;
     display: flex;
@@ -7463,15 +7460,17 @@ a[onclick="BBCode.spoiler(this);"] {
     display: block;}
 .calendar  span.event_end_time {
     white-space: normal;
-    font-size: 10px;}
-#wrapper .calendar .day-events .tooltip {
+    font-size: 11px;}
+#upcoming_calendar .event_li.tooltip {
+    display: flex;
+    flex-flow: column;
     position: relative;
     text-align: center;
-    padding: 5px 0;
+    padding: 15px 5px;
     margin: 0;}
 .calendar .day-events .tooltip span {
     position: relative;}
-.calendar-day.today:only-child .day-label,
+.calendar-day .day-label,
 .calendar .day-number {
     margin: 0;
     padding: 3px;
@@ -7493,13 +7492,9 @@ a[onclick="BBCode.spoiler(this);"] {
     padding: 0;
     margin: 0 auto;}
 #calendar .calendar .day-events {
-    margin: 17px auto;
-    width: calc(100% - 10px);
+    margin: 5px 0;
+    width: 100%;
     /*margin-left: 0;*/}
-#calendar .calendar .day-events p:first-child {
-    margin-top: 0;}
-#calendar .calendar .day-events p:last-child {
-    margin-bottom: 0;}
 .calendar-day a[style="color: white;"],
 .calendar-day span[style="color: white;"] {
     color: inherit !important;}
@@ -7507,16 +7502,31 @@ a[onclick="BBCode.spoiler(this);"] {
     background-color: var(--c-row-hvr);}
 .tooltipster-content h2 {
     margin-bottom: 10px;}
-.calendar-day.today {
-    outline: 1px solid var(--c-table-brdr);
-    outline-offset: -1px;}
+.calendar-day.today {}
 .day-events .event_day {
     width: auto;
     font-weight: 600;}
 #calendar h2 input#monthPicker {
     height: 0;}
 #calendar #MonthPicker_Button_monthPicker {
+    position: relative;
+    top: 3px;
+    left: 5px;
     float: left;}
+
+#friends .user_info li,
+#friends .user_links li,
+#friends .item_links li,
+#friends .comment_tr li {
+    list-style-type: none;}
+#friends .comment_input {
+    width: 95%;}
+
+#friends .remove_friend {
+     display: inline-block;
+     height: 20px;
+     width: 20px;
+     background: url('icon/crossn.png') no-repeat left center;}
 
 table.event_form_table td.label.small_label[colspan="4"] {
     text-align: left;}
@@ -7537,12 +7547,13 @@ table.event_form_table td.label.small_label[colspan="4"] {
 .calendar .calendar-day,
 .calendar .calendar-day-np {
     box-sizing: border-box;}
-.calendar .day-events p {
-    padding: 2px 0;}
+#calendar .day-events >p {
+    padding: 0;}
+#calendar .day-events >p a {
+    padding: 12px 5px;}
 .calendar .calendar-day,
 .calendar .calendar-day-np {
     margin-top: 10px;
-    min-height: 110px;
     height: auto;
     padding: unset;
     border: unset;}
@@ -7559,9 +7570,10 @@ table.event_form_table td.label.small_label[colspan="4"] {
 #calendar .change_month_links a {
     display: inline-block;}
 #calendar .change_month_links {
-    position: absolute;
-    top: 7px;
-    right: 6px;
+    margin-top: -23px;
+    position: relative;
+    float: right;
+    right: 5px;
     line-height: 1em;
     font-size: 1.4em;}
 #calendar .change_month_links #last_month {
