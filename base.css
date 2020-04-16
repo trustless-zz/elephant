@@ -7466,8 +7466,10 @@ a[onclick="BBCode.spoiler(this);"] {
     flex-flow: column;
     position: relative;
     text-align: center;
-    padding: 15px 5px;
+    padding: 18px 5px;
     margin: 0;}
+#upcoming_calendar a.event_day {
+    margin: 0 auto;}
 .calendar .day-events .tooltip span {
     position: relative;}
 .calendar-day .day-label,
