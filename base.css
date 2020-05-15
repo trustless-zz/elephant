@@ -2541,6 +2541,7 @@ span.size5 img {
 	font-weight: bold !important;
 	font-family: sans-serif;}
 #users_reviews .display_name:not(:last-child) {
+    text-align: left;
     width: calc(100% - 18px);}
 #users_reviews .review_date .label {
     display: none;}
