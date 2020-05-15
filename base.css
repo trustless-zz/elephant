@@ -2486,6 +2486,9 @@ span.size5 img {
     text-align: center;}
 
 /* new review */
+#expanded_review_box textarea#review {
+    width: 100%;
+    box-sizing: border-box;}
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button {
     margin: 10px;}
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonpane {
