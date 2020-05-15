@@ -116,7 +116,7 @@ width: 90%;
 height: 90%;
 padding: 0;
 z-index:1002;
-overflow: auto;}
+overflow: unset;}
 
 #header {
     width: 1200px;
@@ -874,6 +874,7 @@ code {
 .head.colhead_dark strong {
     font-weight: 700 !important;
     font-family: whitney, sans-serif;}
+#content li.calendar-day,
 #tools .thin >#recommended >form {
     padding: 0;}
 #tools .thin >#recommended >form >table {
@@ -2470,9 +2471,13 @@ span.size5 img {
     text-align: center;
     position: relative;}
 
+#users_reviews .overall_user_ratings strong,
 #torrents #content .box #thumbsup,
 #torrents #content .box #thumbsdown {
     font-size: 30px;}
+#users_reviews .overall_user_ratings strong {
+    line-height: 55px;
+    vertical-align: top;}
 #torrents #content .box .vote {
     min-width: auto;
     width: 50px;
@@ -2480,17 +2485,116 @@ span.size5 img {
     vertical-align: middle;
     text-align: center;}
 
+/* new review */
+.ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button {
+    margin: 10px;}
+.ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonpane {
+    background-color: unset;
+    padding: 0;
+    margin: 0;}
+#users_reviews .review_cell {
+    display: flex;
+    flex-flow: column;
+    width: calc(50% - 10px);
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;}
+#users_reviews >.flextable {
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-flow: row wrap;}
+#users_reviews .flextable-cell {
+    overflow: unset;
+    -webkit-box-flex: unset;
+    flex-grow: unset;}
+.review_cell .flextable-cell:first-child {
+    font-size: 0;
+    line-height: 0;
+    width: auto;
+    padding: 0;}
+.review_cell .flextable-cell .avatar {
+    max-width: 150px;}
+.review_cell .flextable-cell:first-child img:not(.avatar) {
+    max-width: 220px;
+    margin: 5px;}
+.review_cell .flextable-cell:last-child {
+    width: 100%;
+    padding: 5px 10px 10px 10px;}
+#users_reviews .review_cell .flextable {
+    margin: 0;
+    flex-flow: row;}
+#users_reviews .users_review >h3 {
+    display: none;}
+#users_reviews .head {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row;
+	padding: 5px;
+	height: 18px;
+	min-height: 16px;}
+#users_reviews .head strong,
+#users_reviews .head {
+	font-size: 10pt;
+	line-height: 19px;
+	font-weight: bold !important;
+	font-family: sans-serif;}
+#users_reviews .display_name:not(:last-child) {
+    width: calc(100% - 18px);}
+#users_reviews .review_date .label {
+    display: none;}
+#users_reviews .display_name .rating_image {
+    margin: 0 8px 0 0 !important;
+    height: 18px;
+    width: 18px;
+    padding: 0 0 0 18px !important;
+    float: left;    }
+#users_reviews .delete_review {
+    line-height: 18px;}
+#users_reviews blockquote.review {
+	width: 100%;
+	margin-left: 0;
+	box-sizing: border-box;}
+#users_reviews .game_info {
+	margin-top: 10px;
+	padding: 5px;}
+#users_reviews .game_info ul {
+    padding-left: 0.8em; }
+#users_reviews .game_info li {
+    list-style: none; }
+#users_reviews .overall_user_ratings li {
+    display: inline-block;
+    margin-right: 25px;
+    padding-top: 0;
+    margin-bottom: 10px;}
+#users_reviews .review_date {
+    text-align: right;
+    font-size: 13px;
+    margin-top: auto;
+    padding: 5px 10px;}
+#users_reviews >h2 +.box.pad td.label {
+    width: 86px;}
+#users_reviews >h2 +.box.pad input[type="submit"] {
+    margin-top: 5px;}
+.userreviews tr:last-child:not(:only-child) td {
+    text-align: right;}
+#users_reviews .overall_user_ratings strong {
+    line-height: 55px;
+    vertical-align: top;}
+#wrapper .userreviews tr:last-child:not(:only-child) {
+    background: unset !important;}
+
+
+
 .box.box_user_rating .head {
     font-family: adelle, sans-serif;
     font-size: 12pt;
-    text-align: center;
-}
-
+    text-align: center;}
 #torrents .sidebar div.body.center {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 0 10px 0 10px;
-}
+    padding: 0 10px 0 10px;}
 
 /*Web Links - adds images and formatting*/
 tr.participated >td:nth-child(2):before,
@@ -3217,6 +3321,7 @@ input[type="button"] {
     display: block;
 }
 
+#users_reviews >h2 +.box.pad,
 .freeleech_shop_main .box {
     margin-top: 16px;
 }
@@ -3552,6 +3657,7 @@ input[type="button"] {
     margin: 0;}
 #requests #otherop td.label {
     width: 1px;}
+#users_reviews .search_form input[type="text"]:not([name="year"]),
 #index #freeleech_time_left #progress_bar,
 #requests .center.box.pad .requests_outer_table input[type="text"] {
     width: 100%;}
@@ -4412,7 +4518,6 @@ img[title="Gold"] {
     margin-top:5px;}
 .userreviews {margin-bottom: -10px;}
 #reviewdate {font-size:.7em; font-style:italic;}
-#allreviewslink {float:right; margin-top:30px;}
 #allreviews td {padding: 10px 5px;}
 #reviews_table td {padding-bottom: 10px;}
 #torrents .forum_post .comment_rating {
@@ -4961,7 +5066,7 @@ button[type="button"] {
     height: 0;}
 #grouplinks {
     display: block;
-    width: 853px;}
+    /*width: 853px;*/}
 
 
 /* hiding empty (System) torrent groups  */
@@ -6904,8 +7009,6 @@ textarea {
 /** user reviews rows, allreviews everything **/
 #torrents .userreviews_div >.body {
     padding: 10px 0 0 0;}
-#torrents .userreviews table {
-    margin: 0 0 40px 0;}
 #torrents .userreviews tr:last-child #usersreview {
     position: relative;}
 #torrents .userreviews tr:last-child #usersreview #allreviewslink {
@@ -7484,12 +7587,12 @@ a[onclick="BBCode.spoiler(this);"] {
     height: auto;
     font-size: 1em;
     line-height: 1em;
-    z-index: 1;
+    z-index: 2;
     color: inherit;}
 .calendar .day-events {
     width: 100%;
     margin: auto;
-    z-index: 2;}
+    z-index: 1;}
 #index .calendar .day-events {
     padding: 0;
     margin: 0 auto;}
@@ -7500,11 +7603,8 @@ a[onclick="BBCode.spoiler(this);"] {
 .calendar-day a[style="color: white;"],
 .calendar-day span[style="color: white;"] {
     color: inherit !important;}
-#wrapper .calendar-day:hover {
-    background-color: var(--c-row-hvr);}
 .tooltipster-content h2 {
     margin-bottom: 10px;}
-.calendar-day.today {}
 .day-events .event_day {
     width: auto;
     font-weight: 600;}
@@ -7675,6 +7775,11 @@ a >.error_message {
     min-width: 1029px;}
 }
 
+@media screen and (max-width: 1319px) {
+    #wrapper #users_reviews .review_cell {
+        width: 100%;}
+}
+
 @media screen and (min-width: 1320px) {
 #fight_skill_points_assign table {
     width: calc(100% - 271px);}
@@ -7777,7 +7882,7 @@ a >.error_message {
     width: 973px;}
 .profile .box_art_gallery .gallery_main_slot, .profile .box_art_gallery .gallery_main_slot {
     max-width: 953px}
-#requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]), .profile .box_art_gallery .gallery_row, #grouplinks {
+#requests .main_column table:not([id^="quickreplypreview"]):not([class^="forum_post wrap_overflow box vertical_margin forum_unread"]), .profile .box_art_gallery .gallery_row/*, #grouplinks*/ {
     width: 953px;}
 #quickreplytext textarea, #requests #quickreplytext textarea#quickpost {
     width: 911px;

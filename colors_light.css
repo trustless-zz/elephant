@@ -319,7 +319,8 @@ input#FLTorrent {
 .rowb:hover,
 .row_a:hover,
 .rowa:hover,
-.calendar .calendar-day:hover,
+#calendar .calendar-day:hover,
+#upcoming_calendar .event_li:hover,
 #tools #mastergroups table tr:not(.colhead):hover,
 #tools .thin >#recommended #torrent_form >table tr:not(.colhead):hover,
 #upload div[style="margin:0px auto;width:700px"] tr:not(.colhead):hover,
@@ -822,11 +823,13 @@ i.fa.fa-fl-pots {
 .rating_container {
     color: #323232;}
 
+#users_reviews .overall_user_ratings .downvote strong,
 .ratings .red,
 #torrents #content .box #thumbsdown {
     color: #cc0000;}
 .ratings .yellow {
     color: #d6cc00;}
+#users_reviews .overall_user_ratings .upvote strong,
 .ratings .green,
 #torrents #content .box #thumbsup {
     color: #62c746;}
