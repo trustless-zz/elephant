@@ -768,6 +768,7 @@ blockquote code {
 #upload td.label {
 	border-right: 1px solid #303030;}
 
+.review_cell .flextable-cell:first-child,
 .forum_post td.avatar {
 	border-right: 1px solid #1a1a1a;}
 .forum_post td.avatar,
@@ -797,6 +798,7 @@ blockquote {
     outline: #79675d solid 2px;
     outline-offset: -1px;}
 
+#users_reviews .review_date,
 .forum_post tbody tr td[id^="likers_"],
 #forums .forum_signature td div {
     border-top: 1px solid #1a1a1a;}
