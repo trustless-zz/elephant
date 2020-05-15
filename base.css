@@ -2523,8 +2523,10 @@ span.size5 img {
     width: 100%;
     padding: 5px 10px 10px 10px;}
 #users_reviews .review_cell .flextable {
+    display: flex;
     margin: 0;
-    flex-flow: row;}
+    flex-flow: row;
+    flex: 1 1 auto;}
 #users_reviews .users_review >h3 {
     display: none;}
 #users_reviews .head {
@@ -2533,7 +2535,8 @@ span.size5 img {
 	flex-flow: row;
 	padding: 5px;
 	height: 18px;
-	min-height: 16px;}
+	min-height: 16px;
+    flex: 0 1 auto;}
 #users_reviews .head strong,
 #users_reviews .head {
 	font-size: 10pt;
@@ -2550,7 +2553,7 @@ span.size5 img {
     height: 18px;
     width: 18px;
     padding: 0 0 0 18px !important;
-    float: left;    }
+    float: left;}
 #users_reviews .delete_review {
     line-height: 18px;}
 #users_reviews blockquote.review {
@@ -2572,8 +2575,8 @@ span.size5 img {
 #users_reviews .review_date {
     text-align: right;
     font-size: 13px;
-    margin-top: auto;
-    padding: 5px 10px;}
+    padding: 5px 10px;
+    flex: 0 1 auto;}
 #users_reviews >h2 +.box.pad td.label {
     width: 86px;}
 #users_reviews >h2 +.box.pad input[type="submit"] {
@@ -5663,6 +5666,7 @@ input[type="submit"]:hover, input[type="button"]:hover, button[type="button"]:no
     opacity: 1;
     transition:  opacity 0.15s;}
 
+.review_cell .flextable-cell:first-child .center,
 #index .thin .main_column_bg .main_column .box {
     overflow: hidden;}
 
@@ -6188,6 +6192,7 @@ table#weblinks_edit input.weblinks {
     font-weight: bold;
     bottom: -100%;
     margin-left: -172.4px;}
+.review_cell .flextable-cell:first-child img:not(.avatar):hover,
 .sidebar #dailygazelle img:hover,
 .sidebar .staff_pick ul.nobullet img:hover,
 #torrents .screenshots >a:hover img,
@@ -6202,6 +6207,7 @@ table#weblinks_edit input.weblinks {
 .sidebar .staff_pick ul.nobullet img,
 #torrents .screenshots >a img,
 .sidebar .box.box_albumart img,
+.review_cell .flextable-cell:first-child img:not(.avatar),
 #artist .sidebar >.box:first-child div:nth-child(2) img {
     transition: 0.2s;}
 #torrents .box_albumart p {
