@@ -1171,7 +1171,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .cats_guides,
 .cats_ebooks,
 .cats_applications,
-.cats_ost {
+.cats_ost,
+.oculusquest {
     background-size: 28px;
     height:28px;
 	width: 28px;
