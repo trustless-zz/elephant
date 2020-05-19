@@ -114,7 +114,10 @@ img[src="static//styles/game_room/images/go_last_read.png"] {
     background-image: url("weblinks/svg/Amazon_light.svg");}
 .EpicGames {
     background-image: url("weblinks/svg/EpicGames_light.svg");}
+.oculusquest {
+    background-image: url("icon/svg/oculusquest.svg");}
 
+.oculusquest,
 tr.participated >td:nth-child(2):before,
 .boardgame,
 .cardgame,
@@ -159,6 +162,7 @@ tr.participated >td:nth-child(2):before,
     -o-filter: brightness(77%);
     filter: brightness(77%);}
 
+#linkedgroup.oculusquest:hover,
 .tilt.Discogs:hover,
 .tilt.GamesWebsite:hover,
 .tilt.GOG:hover,
