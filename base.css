@@ -2503,6 +2503,8 @@ span.size5 img {
     position: relative;
     padding: 0;
     margin-bottom: 20px;}
+#users_reviews .review_cell:only-child {
+    width: 100%;}
 #users_reviews >.flextable {
     margin: 0;
     padding: 0;
