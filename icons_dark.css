@@ -155,6 +155,7 @@ tr.participated >td:nth-child(2):before,
 .GamesWebsite,
 .GOG,
 .Steam,
+.Oculus,
 .vectrex {
     -webkit-filter: brightness(77%);
     -moz-filter: brightness(77%);
@@ -167,6 +168,7 @@ tr.participated >td:nth-child(2):before,
 .tilt.GamesWebsite:hover,
 .tilt.GOG:hover,
 .tilt.Steam:hover,
+.tilt.Oculus:hover,
 #linkedgroup.boardgame:hover,
 #linkedgroup.cardgame:hover,
 #linkedgroup.cats_guides:hover,
