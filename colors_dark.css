@@ -714,7 +714,7 @@ blockquote code {
 #collections #torrent_table tr.group_torrent td a span{
 	color: #DA9369;}
 
-.profile .box_art_gallery .gallery_small_slot.selected {
+.gallery_row .selected {
     border: 2px solid #696969;}
 
 .tooltipster-default,

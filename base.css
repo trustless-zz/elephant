@@ -4848,37 +4848,54 @@ img[title="Gold"] {
 
 
 /****Image Gallery****/
-.profile .box_art_gallery .gallery {display: inline-block;}
-.profile .box_art_gallery .gallery_slot {overflow: hidden;}
-.profile .box_art_gallery .gallery_row {
-    padding: 0;
-    margin: auto;
-    position: relative;
-    width: 853px;
-    max-height: 150px;
-    white-space: nowrap;}
-.profile .box_art_gallery .large_row .gallery_small_slot {
-    width: auto;}
-.profile .box_art_gallery .gallery_small_slot {
-    display: inline-block;
-    margin: 1px;
-    overflow: hidden;
-    max-height: 80px !important;}
-.profile .box_art_gallery .large_row .gallery_small_slot a img {
-    max-width: 300px;
-    max-height: 80px;
-    height: auto;
-    width: auto;}
-.profile .box_art_gallery .gallery_main_slot {
+.gallery {
+    font-size: 0;
+    line-height: 0;
+    width: calc(100% - 10px);
+    display: inline-block;}
+.gallery_slot {
+    overflow: hidden;}
+.gallery_main_slot {
     text-align: center;
+    width: 100%;
+    max-height: 1000px;}
+.gallery_row {
+	padding: 0;
+	margin: auto;
+    margin-top: 4px;
+	position: relative;
+	width: 100%;
+	max-height: 150px;
+    white-space: nowrap;
+	overflow: auto !important;}
+.gallery_small_slot {
+	margin: 4px;
+	display: inline-block;}
+#wrapper #content .gallery_small_slot img {
+    max-width: 100% !important;}
+.gallery_small_slot img {
+    max-height: 80px;
     width: auto;
-    max-height: 900px;
-    max-width: 853px;
-    height: auto;}
-.profile .box_art_gallery .small_row .gallery_small_slot {width: 24%; margin: 2px;}
-.profile .gallery_small_slot img {display: block;}
-.profile .box_art_gallery .gallery_small_slot.selected {
-    margin: 0;}
+    height: 100%;
+	display: block;}
+.gallery_small_slot a {
+	display: inline-block;
+	max-height: 80px;
+	overflow: hidden;
+    width: auto;}
+.large_row .gallery_small_slot a {
+    height: 80px;}
+.small_row .gallery_small_slot a {
+	margin: 2px;}
+.forum_post .gallery_row {
+    display: flex;
+    flex-flow: wrap;
+    max-height: 200px;
+    justify-content: center;}
+#wrapper .forum_post .gallery_row img {
+    margin: 0;
+    padding: 0;}
+
 
 /* buttons & hovers */
 #bookmarks td#sorting_head:before,
