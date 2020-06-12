@@ -2663,9 +2663,9 @@ tr.participated >td:nth-child(2):before,
     background-image: url("weblinks/png/RPGGeek.png");}
 .RPGnet {
     background-image: url("weblinks/svg/RPGnet.svg");}
-.Steam {
-    background-image: url("weblinks/svg/Oculus.svg");}
 .Oculus {
+    background-image: url("weblinks/svg/Oculus.svg");}
+.Steam {
     background-image: url("weblinks/svg/Steam.svg");}
 .VNDB {
     background-image: url("weblinks/VNDB.png");}
