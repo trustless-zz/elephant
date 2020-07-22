@@ -6156,6 +6156,7 @@ table#weblinks_edit input.weblinks {
     height: 85px;}
 .item img.equipment_level ~h3:before {
     text-shadow: none;
+    text-align: center;
     position: absolute;
     left: -2px;
     top: -4px;
@@ -6185,7 +6186,11 @@ table#weblinks_edit input.weblinks {
 .item img.equipment_level[src$="level9.png"] ~h3:before {
     content: '9';}
 .item img.equipment_level[src$="level10.png"] ~h3:before {
+    width: 22px;
     content: '10';}
+.item img.equipment_level[src$="level10plus.png"] ~h3:before {
+    width: 30px;
+    content: '10+';}
 /* /ONLY needed to make item levels visible again */
 #wrapper #content .item img.equipment_level {
     display: none;}
