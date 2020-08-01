@@ -34,10 +34,123 @@
 
 body {
     color: var(--c-txt);
-    background-color: var(--c-body);
-    background-size: 50px 50px;
+    background-size: 121px 38px;
     font-family: 'Lato', Sans-Serif;
     margin: 0;
     min-height: 100%;
     overflow-wrap: break-word;
     position: relative;}
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************/
+div#content {
+    display: none;
+}
+
+div#logo {
+    display: block;
+    height: 164px;
+    width: 164px;
+    /* display: none; */
+    background: white;
+}
+
+div#alerts {
+    display: none;
+}
+
+.global_buffs {
+    display: none;
+}
+
+.clan_trophy {
+    display: none;
+}
+
+div#header {
+    max-width: 1464px;
+    margin: 0 auto;
+    width: 100%;
+    background: #ff000010;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+#header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background: red; */
+    /* position: absolute; */
+}
+
+.sub {
+    display: none;
+}
+
+#userinfo_username {
+    display: flex;
+    flex-flow: row;
+}
+
+#userinfo_stats {
+    display: table;
+    /* flex-flow: column; */
+    /* width: auto; */
+}
+
+#userinfo_stats li {/* display: table; */}
+
+#userinfo_minor {
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+#menu ul {
+    display: flex;
+    flex-flow: row;
+}
+
+#searchbars ul {
+    display: flex;
+    flex-flow: row;
+    /* display: block; */
+    /* margin-left: auto; */
+}
+
+div#userinfo ul {
+    background-color: #0001ff10;
+}
+
+div#menu ul {
+    background: #00ff2b10;
+}
+
+div#menu {
+    margin-left: auto;
+    display: table;
+}
+
+div#userinfo {
+    display: table;
+}
+
+div#searchbars {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
