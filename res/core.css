@@ -17,13 +17,30 @@
     font-weight: bold;   
     font-style: italic;}
 
-@font-face {
+/*@font-face {
     font-family: 'Domine';
     src: url('../fonts/Domine-Regular.ttf');}
 @font-face {
     font-family: 'Domine';
     src: url('../fonts/Domine-Bold.ttf');
+    font-weight: bold;}*/
+
+@font-face {
+    font-family: 'Adelle Rg';
+    src: url('../fonts/AdelleRg-Regular.ttf');}
+@font-face {
+    font-family: 'Adelle Rg';
+    src: url('../fonts/AdelleRg-Italic.ttf');
+    font-style: italic;}
+@font-face {
+    font-family: 'Adelle Rg';
+    src: url('../fonts/AdelleRg-Bold.ttf');
     font-weight: bold;}
+@font-face {
+    font-family: 'Adelle Rg';
+    src: url('../fonts/AdelleRg-BoldItalic.ttf');
+    font-weight: bold;   
+    font-style: italic;}
     
 
 /** Get More News - duplicate news bug fix **/
@@ -129,7 +146,7 @@ div#header {
     position: absolute;
     right: 0;
     top: calc(15px + 18px + 35px);
-    font-family: Domine, Times New Roman;
+    font-family: Adelle Rg, Times New Roman;
     font-size: 15px;
     line-height: 1em;
     width: 892px;
@@ -161,7 +178,7 @@ div#menu ul {
 #menu {
     margin-left: auto;
     display: table;
-    font-family: Domine, Times New Roman;
+    font-family: Adelle Rg, Times New Roman;
     /* font-size: 0; */
     line-height: 1em;
     font-size: 21px;
