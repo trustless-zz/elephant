@@ -1,4 +1,5 @@
 ﻿@import url('res/core.css');
 
 body {
-    background: #ebebeb url('res/light/zebra.svg');}
+    background: #ebebeb url('res/light/zebra.svg');
+    background-size: 121px 38px;}

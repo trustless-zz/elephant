@@ -2,27 +2,27 @@
 
 @font-face {
     font-family: 'Lato';
-    src: url('fonts/Lato-Regular.ttf');}
+    src: url('../fonts/Lato-Regular.ttf');}
 @font-face {
     font-family: 'Lato';
-    src: url('fonts/Lato-Italic.ttf');
+    src: url('../fonts/Lato-Italic.ttf');
     font-style: italic;}
 @font-face {
     font-family: 'Lato';
-    src: url('fonts/Lato-Bold.ttf');
+    src: url('../fonts/Lato-Bold.ttf');
     font-weight: bold;}
 @font-face {
     font-family: 'Lato';
-    src: url('fonts/Lato-BoldItalic.ttf');
+    src: url('../fonts/Lato-BoldItalic.ttf');
     font-weight: bold;   
     font-style: italic;}
 
 @font-face {
     font-family: 'Domine';
-    src: url('fonts/Domine-Regular.ttf');}
+    src: url('../fonts/Domine-Regular.ttf');}
 @font-face {
     font-family: 'Domine';
-    src: url('fonts/Domine-Bold.ttf');
+    src: url('../fonts/Domine-Bold.ttf');
     font-weight: bold;}
     
 
@@ -34,8 +34,8 @@
 
 body {
     color: var(--c-txt);
-    background-size: 121px 38px;
-    font-family: 'Lato', Sans-Serif;
+    /*background-size: 121px 38px;*/
+    font-family: Lato, Sans-Serif;
     margin: 0;
     min-height: 100%;
     overflow-wrap: break-word;
@@ -49,7 +49,8 @@ body {
 
 
 
-
+a {
+    text-decoration: none;}
 
 
 /**********************************************************/
@@ -63,6 +64,9 @@ div#logo {
     width: 164px;
     /* display: none; */
     background: white;
+    position: absolute;
+    left: -184px;
+    top: calc(50% - 82px);
 }
 
 div#alerts {
@@ -79,12 +83,16 @@ div#alerts {
 
 div#header {
     max-width: 1464px;
+    max-width: 1300px;
     margin: 0 auto;
     width: 100%;
     background: #ff000010;
     display: flex;
     flex-flow: row wrap;
     position: relative;
+    padding: 15px 0 10px 20px;
+    box-sizing: border-box;
+    border-left: 1px solid black;
 }
 
 #header ul {
@@ -94,14 +102,17 @@ div#header {
     /* background: red; */
     /* position: absolute; */
 }
-
+#menu ul li:not(:last-child) {
+    margin-right: 30px;
+    }
 .sub {
     display: none;
 }
 
-#userinfo_username {
+#wrapper #userinfo_username {
     display: flex;
     flex-flow: row;
+    margin-bottom: 15px;
 }
 
 #userinfo_stats {
@@ -112,12 +123,19 @@ div#header {
 
 #userinfo_stats li {/* display: table; */}
 
-#userinfo_minor {
+#wrapper #userinfo_minor {
     display: flex;
     flex-flow: row;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: calc(15px + 18px + 35px);
+    font-family: Domine, Times New Roman;
+    font-size: 15px;
+    line-height: 1em;
+    width: 892px;
+    justify-content: space-around;
+    padding: 0 35px;
+    box-sizing: border-box;
 }
 
 #menu ul {
@@ -140,10 +158,18 @@ div#menu ul {
     background: #00ff2b10;
 }
 
-div#menu {
+#menu {
     margin-left: auto;
     display: table;
-}
+    font-family: Domine, Times New Roman;
+    /* font-size: 0; */
+    line-height: 1em;
+    font-size: 21px;
+    }
+#menu ul {
+    /* font-size: 21px; */
+    /* display: block; */
+    }
 
 div#userinfo {
     display: table;
