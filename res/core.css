@@ -49,6 +49,12 @@
 #index .box.news_post >.head:nth-child(3) +.pad {
     display: none;}
 
+html {
+    /*line-height: var(--p-lh);*/
+    font-size: 13px;
+    line-height: 1.3em;
+    scroll-behavior: smooth;}
+
 body {
     color: var(--c-txt);
     /*background-size: 121px 38px;*/
@@ -98,14 +104,14 @@ div#alerts {
     display: none;
 }
 
-div#header {
+#header {
     max-width: 1464px;
     max-width: 1300px;
     margin: 0 auto;
     width: 100%;
     background: #ff000010;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     position: relative;
     padding: 15px 0 10px 20px;
     box-sizing: border-box;
@@ -119,9 +125,9 @@ div#header {
     /* background: red; */
     /* position: absolute; */
 }
-#menu ul li:not(:last-child) {
+/*#menu ul li:not(:last-child) {
     margin-right: 30px;
-    }
+    }*/
 .sub {
     display: none;
 }
@@ -129,8 +135,17 @@ div#header {
 #wrapper #userinfo_username {
     display: flex;
     flex-flow: row;
-    margin-bottom: 15px;
-}
+    margin-bottom: 15px;}
+#userinfo_username #nav_userinfo {
+    font-size: 0;
+    line-height: 0;}
+#userinfo_username .username_badges {
+    display: none;}
+#nav_userinfo a {
+    font-size: 17px;
+    line-height: 1em;}
+#userinfo_username li:not(#nav_userinfo) {
+    margin-left: 6px;}
 
 #userinfo_stats {
     display: table;
@@ -149,7 +164,7 @@ div#header {
     font-family: Adelle Rg, Times New Roman;
     font-size: 15px;
     line-height: 1em;
-    width: 892px;
+    width: 100%;
     justify-content: space-around;
     padding: 0 35px;
     box-sizing: border-box;
@@ -158,6 +173,7 @@ div#header {
 #menu ul {
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
 }
 
 #searchbars ul {
@@ -180,9 +196,13 @@ div#menu ul {
     display: table;
     font-family: Adelle Rg, Times New Roman;
     /* font-size: 0; */
+    width: 100%;
     line-height: 1em;
-    font-size: 21px;
-    }
+    font-size: 21px;}
+#wrapper #userinfo_minor,
+#wrapper #menu {
+    max-width: 900px}
+}
 #menu ul {
     /* font-size: 21px; */
     /* display: block; */
