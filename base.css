@@ -4708,7 +4708,7 @@ img[title="Gold"] {
     box-shadow: none;
     font-size: 10pt;
     font-family: whitney, sans-serif;}
-#staff .header {margin-bottom: -14px;}
+#staff .thin >.header {margin-bottom: -14px;}
 #staff .box.pad {margin-bottom: 25px;}
 
 #top10 .linkbox {margin-bottom: -3px;}
