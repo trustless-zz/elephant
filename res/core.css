@@ -55,7 +55,7 @@
 
 @font-face {
     font-family: 'Whitney';
-    src: url('../fonts/Whitney-Medium.ttf');}
+    src: url('../fonts/Whitney-Medium.otf');}
     
 
 /** Get More News - duplicate news bug fix **/
@@ -125,12 +125,17 @@ div#logo {
     position: absolute;
     left: -184px;
     top: calc(50% - 82px);}
-
-#header {
-    max-width: 1464px;
-    max-width: 1300px;
+#header,
+#content,
+#footer {
     margin: 0 auto;
-    width: 100%;
+    max-width: 1300px;
+    width: 100%;}
+#header {
+    /*max-width: 1464px;*/
+    /*max-width: 1300px;
+    width: 100%;*/
+    margin: 0 auto 20px auto;
     /*background: #ff000010;*/
     display: flex;
     flex-flow: row;
@@ -144,7 +149,7 @@ div#logo {
     left: -1px;
     top: 15px;
     width: 1px;
-    height: calc(100% - 15px);
+    height: calc(100% - 20px);
     background-color: red;}
 
 #header ul {
@@ -175,18 +180,37 @@ div#logo {
     margin-left: 6px;*/}
 
 #userinfo_stats {
-    display: table;
+    display: flex;
     width: 200px;
-    /* flex-flow: column; */
+    flex-flow: column;
     /* width: auto; */}
 #userinfo_stats .stat {
     float: right;}
 #userinfo_stats li {
-    margin-top: 3px;}
+    margin-top: 2px;}
 #userinfo_stats li:first-child {
     margin-top: 0;}
 #userinfo_stats li span[style] {
     margin: 0 !important;}
+
+#stats_seeding {
+    order: 1;}
+#stats_leeching {
+    order: 2;}
+#stats_gold {
+    order: 3;}
+#stats_ratio {
+    order: 4;}
+#userinfo_stats .my_buffer {
+    order: 5;}
+#stats_share_score {
+    order: 6;}
+#stats_hnr {
+    order: 7;}
+#connectable{
+    order: 8;}
+#online_irc {
+    order: 9;}
 
 #wrapper #userinfo_minor {
     display: flex;
@@ -246,6 +270,8 @@ div#logo {
     /* font-size: 21px; */
     /* display: block; */}
 #userinfo {
+    font-family: Whitney, Sans-Serif;
+    font-size: 10pt;
     display: table;}
 #header >#searchbars {
     width: 900px;
@@ -288,7 +314,6 @@ input:focus,
 #searchbars input:focus {
     background-color: var(--c-i-focus);
     -webkit-box-shadow: 0 0 5px var(--c-s-focus);
-    -moz-box-shadow: 0 0 5px var(--c-s-focus);
-    -ms-box-shadow: 0 0 5px var(--c-s-focus);
-    -o-box-shadow: 0 0 5px var(--c-s-focus);
     box-shadow: 0 0 5px var(--c-s-focus);}
+
+
