@@ -36,21 +36,26 @@
     font-weight: bold;}*/
 
 @font-face {
-    font-family: 'Adelle Rg';
-    src: url('../fonts/AdelleRg-Regular.ttf');}
-@font-face {
-    font-family: 'Adelle Rg';
+    font-family: 'Adelle';
+    src: url('../fonts/adelle_reg-webfont.ttf');
+    /*src: url('../fonts/AdelleRg-Regular.ttf');*/}
+/*@font-face {
+    font-family: 'Adelle';
     src: url('../fonts/AdelleRg-Italic.ttf');
     font-style: italic;}
 @font-face {
-    font-family: 'Adelle Rg';
+    font-family: 'Adelle';
     src: url('../fonts/AdelleRg-Bold.ttf');
     font-weight: bold;}
 @font-face {
-    font-family: 'Adelle Rg';
+    font-family: 'Adelle';
     src: url('../fonts/AdelleRg-BoldItalic.ttf');
     font-weight: bold;   
-    font-style: italic;}
+    font-style: italic;}*/
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('../fonts/Whitney-Medium.ttf');}
     
 
 /** Get More News - duplicate news bug fix **/
@@ -189,7 +194,7 @@ div#logo {
     position: absolute;
     right: 0;
     top: 65px;
-    font-family: Adelle Rg, Times New Roman;
+    font-family: Adelle, Times New Roman;
     font-size: 15px;
     /*line-height: 1em;*/
     width: 100%;
@@ -229,7 +234,7 @@ div#logo {
     flex: 1 0 auto;
     margin-left: auto;
     display: table;
-    font-family: Adelle Rg, Times New Roman;
+    font-family: Adelle, Times New Roman;
     /* font-size: 0; */
     /*width: 100%;*/
     /*line-height: 1em;*/
