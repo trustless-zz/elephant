@@ -1,598 +1,8 @@
-﻿:root {
-    --p-searchbar-grdnt: 				var(--c-b1) linear-gradient(155deg,var(--c-b1),var(--c-b2));
-    --p-head-grdnt: 					var(--c-b3) linear-gradient(155deg,var(--c-b3),var(--c-b4));
-    --p-scroll-grdnt-hvr:               var(--c-b1) linear-gradient(110deg, var(--c-b1), var(--c-b2));
-    --p-scroll-grdnt:                   var(--c-b3) linear-gradient(110deg, var(--c-b3), var(--c-b4));
-    --p-header-shdw: 					0 0 4px var(--c-header-shdw);
-    --p-main-shdw:						0 0 4px var(--c-main-shdw);
-    /*--p-border:                         1px solid;
-    --p-img-border:                     3px solid;*/
-    --p-graph-sh:                       0 1px 2px var(--c-header-shdw);
-    
-    /** --p-top-brdr:                       1px solid var(--c-edition); */
-    /** --p-main-brdr:						1px solid var(--c-main-brdr); */
-    /** --p-table-brdr: 					1px solid var(--c-table-brdr); */
-    /** --p-input-brdr: 					1px solid var(--c-input-brdr); */
-    /** --p-quote-brdr:                     1px solid var(--c-quote-brdr); */
-    /** --p-unread-brdr:                    1px solid var(--c-b3); */
-    /** --p-sticky-brdr: 					1px solid var(--c-b1); */
-    --p-input-shdw: 					inset 1px 1px 2px var(--c-header-shdw);
-    --p-checked-shdw: 					inset 0 0 2px var(--c-header-shdw);
-    --p-expand-hvr: 					linear-gradient(to top, var(--c-b1), var(--c-b00));
-    --p-expand-act: 					linear-gradient(to top, var(--c-b1), var(--c-b2));
-    
-    /** --p-img-brdr: 						3px solid var(--c-main-brdr); */
-    /** --p-img-hvr: 						3px solid var(--c-b3); */
-    /** --p-img-anchor-brdr:				3px solid var(--c-b4); */
-    /** --p-img-anchor-brdr-hvr:			3px solid var(--c-b1); */
-    /*--p-contrast:                       unset;*/ /*drop-shadow(0 0 2px var(--c-contrast));*/
-    --p-post-img:                       drop-shadow(0 0 3px var(--c-post-img));
-    /* --p-post-img-hvr:                   drop-shadow(0 0 3px var(--c-b3)); */
-    /* --p-unread-stripe:                  2px 0 0 0 var(--c-unread-s); */
-    --p-poll-grdnt:						linear-gradient(to bottom, var(--c-b00), var(--c-bg)), linear-gradient(to right, var(--c-b1), var(--c-b2));
-    --p-colhead-tr-bcg: 				var(--c-box) linear-gradient(to top,var(--c-table-brdr),var(--c-box));
-    --p-subcolhead:                     var(--c-sb1) linear-gradient(155deg,var(--c-sb1),var(--c-sb2));
-    --p-post-colhead-bcg:               var(--c-table-brdr) linear-gradient(155deg,var(--c-table-brdr),var(--c-body));
-    --p-sticky-colhead-bcg:             var(--c-input-brdr) linear-gradient(155deg,var(--c-input-brdr),var(--c-sticky-2));
-    --p-colhead-tr-bcg-hvr:				var(--c-box) linear-gradient(to top,var(--c-b3),var(--c-box));
-    --p-colhead-tr-bcg-act:				var(--c-box) linear-gradient(to top,var(--c-b3),var(--c-b4));
-    /* --p-forum-colhead:					linear-gradient(to top,var(--c-table-brdr),var(--c-edition)); */
-    --p-menu:                           var(--c-tor-rowb) linear-gradient(155deg,var(--c-tor-rowb),var(--c-tor-row-hvr));
-    --p-userinfo:                       var(--c-tor-row-hvr) linear-gradient(155deg,var(--c-tor-row-hvr),var(--c-input-obj));
-    --p-extra-menu:                     var(--c-input-obj) linear-gradient(155deg,var(--c-input-obj),var(--c-box));    
-    --p-grouplinks:                     var(--c-tgroup) linear-gradient(155deg,var(--c-tgroup),var(--c-box));
-    --p-lsfl-pulse: 					linear-gradient(to right,var(--c-b00) 20%, var(--c-b1) 60%, var(--c-b2) 100%);
-    /* --p-sticky-brdr:                    1px solid var(--c-input-brdr);
-    --p-show-hide-brdr-shdw: 			inset -1px 0 0 var(--c-table-brdr); */
-    --p-edition-hvr: 					linear-gradient(to top,var(--c-b3),var(--c-edition));
-    --p-edition-act: 					linear-gradient(to top,var(--c-b3),var(--c-b4));
-    --p-btn:							linear-gradient(to bottom, var(--c-btn-b1) 0%, var(--c-body) 100%);
-    --p-btn-hvr:						linear-gradient(to bottom, var(--c-btn-b1) 0%, var(--c-btn-b2) 100%);
-    --p-btn-act:						linear-gradient(to bottom, var(--c-btn-b1) 0%, var(--c-b2) 100%);
-    /* --p-fade:							linear-gradient(to bottom, var(--c-box) 0%, var(--c-b00) 100%); */
-    /*--p-fade-2:                         linear-gradient(to bottom, var(--c-box) 50%, var(--c-b00) 100%);
-    --p-fade-2-h:                       linear-gradient(to right, var(--c-box) 50%, var(--c-b00) 100%);*/
-    --p-selected:                       0 -2px 0px 0px var(--c-b1);
-    --p-lh: 							1.35714286805; /* calc(19 / 14), 1.357142857142857 says 19px but actually is 18px when measured */
-    --p-dot3:							-.02142857142em;
-    --p-head:                           18px;}
-
-@font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-Regular.ttf');}
-@font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-Italic.ttf');
-    font-style: italic;}
-@font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-SemiBold.ttf');
-    font-weight: 600;}
-@font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-SemiBoldItalic.ttf');
-    font-weight: 600;
-    font-style: italic;}
-@font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-Bold.ttf');
-    font-weight: bold;}
-@font-face {
-    font-family: 'OpenSans';
-    src: url('OpenSans-BoldItalic.ttf');
-    font-weight: bold;   
-    font-style: italic;}
-
-/** Get More News - duplicate news bug fix **/
+﻿/** Get More News - duplicate news bug fix **/
 #index .box.news_post:empty,
 #index .box.news_post >.head:nth-child(3),
 #index .box.news_post >.head:nth-child(3) +.pad {
     display: none;}
-
-/** masks **/
-#toplink a,
-td.read:before,
-td.read_sticky:before,
-td.read_locked:before,
-td.read_locked_sticky:before,
-.inventory .item_li.featured:before,
-#shop .item_li.featured:before,
-.torrent_table .show_torrents_link:after,
-#nav_userinfo a:after,
-#stats_ratio .stat:after,
-.torrent_table .addbookmark,
-.torrent_table .removebookmark,
-.collections_art_display .remove_bookmark_div,
-.xdsoft_datetimepicker .xdsoft_next,
-.xdsoft_datetimepicker .xdsoft_prev,
-#wrapper .prev,
-#wrapper .next,
-#wrapper .timeline-nav-button:before,
-.month-picker-header .ui-icon,
-#nav_userinfo a:before {
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: var(--c-text-s);}
-/*#wrapper .torrent_table .show_torrents_link:after {
-    -webkit-mask-size: 20px 20px;
-    mask-size: 20px 20px;}*/
-.torrent_table .addbookmark:hover {
-    background-color: var(--c-on);}
-.collections_art_display .remove_bookmark_div:hover,
-.torrent_table .removebookmark:hover {
-    background-color: var(--c-off);}
-tr.likes td[id^="likers_"] >strong:nth-of-type(1),
-tr.likes td[id^="likers_"] >strong:nth-of-type(2),
-#bb_bold,
-#bb_und,
-#bb_ita,
-#bb_img,
-#bb_link,
-#bb_strk,
-#bb_h1,
-#bb_h2,
-#bb_h3,
-#bb_h4,
-#bb_h5,
-#bb_h6,
-#bb_color,
-#bb_tex,
-#bb_quote,
-#bb_list,
-#bb_spoil,
-#bb_cent,
-#bb_lef,
-#bb_righ,
-#bb_pre,
-#bb_youtube,
-#stats_ratio:before,
-img[title="Snatches"],
-#bookmarks img[alt="Snatches"],
-img[title="Downloaded"],
-img[title="Uploaded"],
-img[title="Leechers"],
-#bookmarks img[alt="Leechers"],
-img[title="Seeders"],
-#bookmarks img[alt="Seeders"],
-.profile .box_stats #ratio .stat:before,
-.profile .box_stats #share_score .stat:before,
-td img[alt="Ratio"],
-#top10 img[alt="Up Votes"],
-#top10 img[alt="Down Votes"],
-tr.participated >td:nth-child(2):before,
-.headerSort span:before {
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: var(--c-txt);}
-td.unread:before,
-td.unread_sticky:before,
-td.unread_locked:before,
-td.unread_locked_sticky:before {
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: var(--c-unread-i);}
-#calendar .change_month_links a,
-#bookmarks tr.group_torrent a.tooltip,
-.forum_post tr.likes >td:first-child a:nth-child(1),
-.forum_post tr.likes >td:first-child a:nth-child(2),
-#stats_seeding a:before,
-#stats_leeching a:before,
-a[title="Download"],
-#better .thin >table a[href^="torrents.php?action=download&id="],
-table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"],
-#index #freeleech .group_torrent >span:first-child a,
-#requests table.border a[href^="upload.php"],
-#bookmarks table#requests_list a[href^="upload.php"],
-.torrent_table #user_rating_icon img,
-a >img[title="Snatches"],
-#bookmarks a >img[alt="Snatches"],
-a >img[title="Downloaded"],
-a >img[title="Uploaded"],
-a >img[title="Leechers"],
-#bookmarks a >img[alt="Leechers"],
-a >img[title="Seeders"],
-#bookmarks a >img[alt="Seeders"],
-a[title="Use a FL Token"],
-#collections .sidebar .box.box_comment a[href^="reports.php?action=report"],
-#quickreplypreview .colhead_dark #barpreview >a:nth-child(1),
-.forum_post .colhead_dark div[style="float: right;"] >a:nth-child(1),
-#newthreadpreview .forum_post .colhead_dark #barpreview a:nth-child(1),
-a[title="Report"],
-a[title="External Link"],
-a[title="Permalink"],
-a[title="Original Group"],
-a[title="Trumpable"],
-a[onclick^="Edit"],
-a[onclick^="edit"],
-a[title="Edit"],
-h3 a[href^="user.php?action=notify_delete&"],
-.inventory .trash_icon,
-a[title="Remove"],
-#friends .colhead_dark .remove_friend,
-.colhead_dark a[onclick^="Quote"],
-.head a[onclick^="Quote"],
-#userhistory .colhead_dark span[style="float:left;"] >span[style="color: red;"] +a img[alt="Last read post"],
-.last_read,
-#userhistory .colhead_dark a img[alt="Last read post"],
-#stats_share_score a:before,
-td a img[alt="Ratio"],
-#users_reviews .delete_review a.remove_review,
-#deletereview a {
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: contain;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    background-color: var(--c-anchor);}
-
-#bookmarks tr.group_torrent a.tooltip:hover,
-.forum_post tr.likes >td:first-child a:nth-child(1):hover,
-.forum_post tr.likes >td:first-child a:nth-child(2):hover,
-#stats_leeching:hover a:before,
-a[title="Download"]:hover,
-#better .thin >table a[href^="torrents.php?action=download&id="]:hover,
-table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"]:hover,
-#index #freeleech .group_torrent >span:first-child a:hover,
-#stats_seeding:hover a:before,
-#stats_share_score:hover a:before,
-#requests table.border a[href^="upload.php"]:hover,
-#bookmarks table#requests_list a[href^="upload.php"]:hover,
-.torrent_table #user_rating_icon a:hover img,
-a:hover >img[title="Snatches"],
-#bookmarks a:hover >img[alt="Snatches"],
-a:hover >img[title="Downloaded"],
-a:hover >img[title="Uploaded"],
-a:hover >img[title="Leechers"],
-#bookmarks a:hover >img[alt="Leechers"],
-a:hover >img[title="Seeders"],
-#bookmarks a:hover >img[alt="Seeders"],
-a[title="Use a FL Token"]:hover,
-#collections .sidebar .box.box_comment a[href^="reports.php?action=report"]:hover,
-#quickreplypreview .colhead_dark #barpreview >a:nth-child(1):hover,
-.forum_post .colhead_dark div[style="float: right;"] >a:nth-child(1):hover,
-#newthreadpreview .forum_post .colhead_dark #barpreview a:nth-child(1):hover,
-a[title="Report"]:hover,
-a[title="External Link"]:hover,
-a[title="Permalink"]:hover,
-a[title="Original Group"]:hover,
-a[title="Trumpable"]:hover,
-a[onclick^="Edit"]:hover,
-a[onclick^="edit"]:hover,
-a[title="Edit"]:hover,
-h3 a[href^="user.php?action=notify_delete&"]:hover,
-.inventory .trash_icon:hover,
-a[title="Remove"]:hover,
-#friends .colhead_dark .remove_friend:hover,
-.colhead_dark a[onclick^="Quote"]:hover,
-.head a[onclick^="Quote"]:hover,
-#userhistory .colhead_dark span[style="float:left;"] >span[style="color: red;"] +a:hover img[alt="Last read post"],
-#wrapper .last_read:hover,
-#userhistory .colhead_dark a:hover img[alt="Last read post"],
-td a:hover img[alt="Ratio"],
-#users_reviews .delete_review a.remove_review:hover,
-#deletereview a:hover {
-    background-color: var(--c-anchor-hvr);}
-
-#wrapper .timeline-nav-button:hover:before,
-.month-picker-header .ui-icon:hover,
-#wrapper .prev:hover,
-#wrapper .next:hover,
-#calendar .change_month_links a:hover,
-.torrent_table .show_torrents_link:hover:after,
-#userinfo_stats:hover #stats_ratio .stat:after,
-#userinfo_username .sub[style="visibility: visible;"] ~#nav_userinfo a:after {
-    background-color: var(--c-low);}
-
-#top10 #wrapper img[alt="Up Votes"] {
-    background-color: var(--c-on);}
-#top10 #wrapper img[alt="Down Votes"] {
-    background-color: var(--c-off);}
-
-#forums td.read:before {
-    -webkit-mask-image: url('icons/read.svg');
-    mask-image: url('icons/read.svg');}
-#forums td.read_sticky:before {
-    -webkit-mask-image: url('icons/read_sticky.svg');
-    mask-image: url('icons/read_sticky.svg');}
-#forums td.read_locked:before {
-    -webkit-mask-image: url('icons/read_locked.svg');
-    mask-image: url('icons/read_locked.svg');}
-#forums td.read_locked_sticky:before {
-    -webkit-mask-image: url('icons/read_locked_sticky.svg');
-    mask-image: url('icons/read_locked_sticky.svg');}
-#forums td.unread:before {
-    -webkit-mask-image: url('icons/unread.svg');
-    mask-image: url('icons/unread.svg');}
-#forums td.unread_sticky:before {
-    -webkit-mask-image: url('icons/unread_sticky.svg');
-    mask-image: url('icons/unread_sticky.svg');}
-#forums td.unread_locked:before {
-    -webkit-mask-image: url('icons/unread_locked.svg');
-    mask-image: url('icons/unread_locked.svg');}
-#forums td.unread_locked_sticky:before {
-    -webkit-mask-image: url('icons/unread_locked_sticky.svg');
-    mask-image: url('icons/unread_locked_sticky.svg');}
-tr.likes td[id^="likers_"] >strong:nth-of-type(1),
-.forum_post tr.likes >td:first-child a:nth-child(1) {
-    -webkit-mask-image: url('icons/like.svg');
-    mask-image: url('icons/like.svg');}
-tr.likes td[id^="likers_"] >strong:nth-of-type(2),
-.forum_post tr.likes >td:first-child a:nth-child(2) {
-    -webkit-mask-image: url('icons/dislike.svg');
-    mask-image: url('icons/dislike.svg');}
-#bb_bold {
-    -webkit-mask-image: url('icons/bbbutt/bold.svg');
-    mask-image: url('icons/bbbutt/bold.svg');}
-#bb_und {
-    -webkit-mask-image: url('icons/bbbutt/und.svg');
-    mask-image: url('icons/bbbutt/und.svg');}
-#bb_ita {
-    -webkit-mask-image: url('icons/bbbutt/ita.svg');
-    mask-image: url('icons/bbbutt/ita.svg');}
-#bb_img {
-    -webkit-mask-image: url('icons/bbbutt/img.svg');
-    mask-image: url('icons/bbbutt/img.svg');}
-#bb_link {
-    -webkit-mask-image: url('icons/bbbutt/link.svg');
-    mask-image: url('icons/bbbutt/link.svg');}
-#bb_strk {
-    -webkit-mask-image: url('icons/bbbutt/strk.svg');
-    mask-image: url('icons/bbbutt/strk.svg');}
-#bb_h1 {
-    -webkit-mask-image: url('icons/bbbutt/h1.svg');
-    mask-image: url('icons/bbbutt/h1.svg');}
-#bb_h2 {
-    -webkit-mask-image: url('icons/bbbutt/h2.svg');
-    mask-image: url('icons/bbbutt/h2.svg');}
-#bb_h3 {
-    -webkit-mask-image: url('icons/bbbutt/h3.svg');
-    mask-image: url('icons/bbbutt/h3.svg');}
-#bb_h4 {
-    -webkit-mask-image: url('icons/bbbutt/h4.svg');
-    mask-image: url('icons/bbbutt/h4.svg');}
-#bb_h5 {
-    -webkit-mask-image: url('icons/bbbutt/h5.svg');
-    mask-image: url('icons/bbbutt/h5.svg');}
-#bb_h6 {
-    -webkit-mask-image: url('icons/bbbutt/h6.svg');
-    mask-image: url('icons/bbbutt/h6.svg');}
-#bb_color {
-    -webkit-mask-image: url('icons/bbbutt/color.svg');
-    mask-image: url('icons/bbbutt/color.svg');}
-#bb_tex {
-    -webkit-mask-image: url('icons/bbbutt/tex.svg');
-    mask-image: url('icons/bbbutt/tex.svg');}
-#bb_quote {
-    -webkit-mask-image: url('icons/quote.svg');
-    mask-image: url('icons/quote.svg');}
-#bb_list {
-    -webkit-mask-image: url('icons/bbbutt/list.svg');
-    mask-image: url('icons/bbbutt/list.svg');}
-#bb_spoil {
-    -webkit-mask-image: url('icons/bbbutt/spoil.svg');
-    mask-image: url('icons/bbbutt/spoil.svg');}
-#bb_cent {
-    -webkit-mask-image: url('icons/bbbutt/cent.svg');
-    mask-image: url('icons/bbbutt/cent.svg');}
-#bb_lef {
-    -webkit-mask-image: url('icons/bbbutt/lef.svg');
-    mask-image: url('icons/bbbutt/lef.svg');}
-#bb_righ {
-    -webkit-mask-image: url('icons/bbbutt/righ.svg');
-    mask-image: url('icons/bbbutt/righ.svg');}
-#bb_pre {
-    -webkit-mask-image: url('icons/bbbutt/pre.svg');
-    mask-image: url('icons/bbbutt/pre.svg');}
-#bb_youtube {
-    -webkit-mask-image: url('icons/bbbutt/youtube.svg');
-    mask-image: url('icons/bbbutt/youtube.svg');}
-#top10 img[alt="Up Votes"],
-#top10 img[alt="Down Votes"],
-.torrent_table #user_rating_icon img,
-.inventory .item_li.featured:before,
-#shop .item_li.featured:before {
-    -webkit-mask-image: url('icons/featured.svg');
-    mask-image: url('icons/featured.svg');}
-
-#bookmarks tr.group_torrent a.tooltip[href^="torrents.php?action=download&id"],
-#stats_leeching a:before,
-a[title="Download"],
-#better .thin >table a[href^="torrents.php?action=download&id="],
-#index #freeleech .group_torrent >span:first-child a {
-    -webkit-mask-image: url('icons/download.svg');
-    mask-image: url('icons/download.svg');}
-
-#stats_seeding a:before,
-#requests table.border a[href^="upload.php"],
-#bookmarks table#requests_list a[href^="upload.php"] {
-    -webkit-mask-image: url('icons/upload.svg');
-    mask-image: url('icons/upload.svg');}
-td img[alt="Ratio"],
-.profile .box_stats #ratio .stat:before,
-#stats_ratio:before {
-    -webkit-mask-image: url('icons/ratio.svg');
-    mask-image: url('icons/ratio.svg');}
-.torrent_table .show_torrents_link:after,
-#nav_userinfo a:after,
-#stats_ratio .stat:after {
-    -webkit-mask-image: url('icons/show.svg');
-    mask-image: url('icons/show.svg');}
-#stats_share_score a:before,
-.profile .box_stats #share_score .stat:before,
-img[title="Snatches"],
-#bookmarks img[alt="Snatches"] {
-    -webkit-mask-image: url('icons/snatches.svg');
-    mask-image: url('icons/snatches.svg');}
-#stats_share_score a:before,
-.profile .box_stats #share_score .stat:before {
-    transform: scaleX(-1) rotate(90deg);}
-img[title="Downloaded"],
-img[title="Uploaded"],
-img[title="Leechers"],
-#bookmarks img[alt="Leechers"],
-img[title="Seeders"],
-#bookmarks img[alt="Seeders"] {
-    -webkit-mask-image: url('icons/seeders.svg');
-    mask-image: url('icons/seeders.svg');}
-img[title="Downloaded"],
-img[title="Leechers"],
-#bookmarks img[alt="Leechers"] {
-    transform:scaleY(-1);}
-
-#bookmarks tr.group_torrent a.tooltip[href$="&usetoken=1"],
-a[title="Use a FL Token"] {
-    -webkit-mask-image: url('icons/tor/fl.svg');
-    mask-image: url('icons/tor/fl.svg');}
-#bookmarks tr.group_torrent a.tooltip[href^="reportsv2.php?action=report&id"],
-#collections .sidebar .box.box_comment a[href^="reports.php?action=report"],
-#quickreplypreview .colhead_dark #barpreview >a:nth-child(1),
-.forum_post .colhead_dark div[style="float: right;"] >a:nth-child(1),
-#newthreadpreview .forum_post .colhead_dark #barpreview a:nth-child(1),
-a[title="Report"] {
-    -webkit-mask-image: url('icons/tor/rp.svg');
-    mask-image: url('icons/tor/rp.svg');}
-a[title="External Link"] {
-    -webkit-mask-image: url('icons/tor/ln.svg');
-    mask-image: url('icons/tor/ln.svg');}
-a[title="Permalink"] {
-    -webkit-mask-image: url('icons/tor/pl.svg');
-    mask-image: url('icons/tor/pl.svg');}
-a[title="Original Group"] {
-    -webkit-mask-image: url('icons/tor/og.svg');
-    mask-image: url('icons/tor/og.svg');}
-#bookmarks tr.group_torrent a.tooltip[href^="torrents.php?action=trumptag"],
-a[title="Trumpable"] {
-    -webkit-mask-image: url('icons/tor/tr.svg');
-    mask-image: url('icons/tor/tr.svg');}
-table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"],
-#bookmarks tr.group_torrent a.tooltip[href^="torrents.php?action=edit"],
-a[onclick^="Edit"],
-a[onclick^="edit"],
-a[title="Edit"] {
-    -webkit-mask-image: url('icons/tor/ed.svg');
-    mask-image: url('icons/tor/ed.svg');}
-h3 a[href^="user.php?action=notify_delete&"],
-.inventory .trash_icon,
-a[title="Remove"],
-#friends .colhead_dark .remove_friend,
-#users_reviews .delete_review a.remove_review,
-#deletereview a {
-    -webkit-mask-image: url('icons/tor/rm.svg');
-    mask-image: url('icons/tor/rm.svg');}
-
-.torrent_table .addbookmark {
-    -webkit-mask-image: url('icons/addbookmark.svg');
-    mask-image: url('icons/addbookmark.svg');}
-.collections_art_display .remove_bookmark_div,
-.torrent_table .removebookmark {
-    -webkit-mask-image: url('icons/removebookmark.svg');
-    mask-image: url('icons/removebookmark.svg');}
-#wrapper .timeline-nav-button:before,
-.xdsoft_datetimepicker .xdsoft_next:active, /*revisit*/
-.xdsoft_datetimepicker .xdsoft_prev:active,
-.xdsoft_datetimepicker .xdsoft_next,
-.xdsoft_datetimepicker .xdsoft_prev,
-#calendar .change_month_links a,
-.ui-icon-circle-triangle-e,
-.ui-icon-circle-triangle-w,
-.prev,
-.next {
-    -webkit-mask-image: url('icons/prev.svg');
-    mask-image: url('icons/prev.svg');}
-.ui-icon-circle-triangle-e,
-#calendar .change_month_links #next_month a,
-.xdsoft_datetimepicker .xdsoft_next,
-.next {
-    transform: scaleX(-1);}
-.colhead_dark a[onclick^="Quote"],
-.head a[onclick^="Quote"] {
-    -webkit-mask-image: url('icons/quote.svg');
-    mask-image: url('icons/quote.svg');}
-#userhistory .colhead_dark span[style="float:left;"] >span[style="color: red;"] +a img[alt="Last read post"],
-.last_read {
-    -webkit-mask-image: url('icons/last_read.svg');
-    mask-image: url('icons/last_read.svg');}
-.read ~td .last_read,
-.read_sticky ~td .last_read,
-.read_locked ~td .last_read,
-.read_locked_sticky ~td .last_read,
-#userhistory .colhead_dark a img[alt="Last read post"] {
-    -webkit-mask-image: url('icons/read_last_read.svg');
-    mask-image: url('icons/read_last_read.svg');}
-
-#nav_donate span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: .75;
-    -webkit-mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-size: auto 20px;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: auto 20px;}
-#nav_donate:hover span {
-    opacity: 1;}
-
-#nav_donate .r01 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r01.svg');
-    mask-image: url('icons/nav/donate_progress/r01.svg');
-    background-color: var(--c-r01);}
-#nav_donate .r02 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r02.svg');
-    mask-image: url('icons/nav/donate_progress/r02.svg');
-    background-color: var(--c-r02);}
-#nav_donate .r03 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r03.svg');
-    mask-image: url('icons/nav/donate_progress/r03.svg');
-    background-color: var(--c-r03);}
-#nav_donate .r04 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r04.svg');
-    mask-image: url('icons/nav/donate_progress/r04.svg');
-    background-color: var(--c-r04);}
-#nav_donate .r05 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r05.svg');
-    mask-image: url('icons/nav/donate_progress/r05.svg');
-    background-color: var(--c-r05);}
-#nav_donate .r06 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r06.svg');
-    mask-image: url('icons/nav/donate_progress/r06.svg');
-    background-color: var(--c-r06);}
-#nav_donate .r07 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r07.svg');
-    mask-image: url('icons/nav/donate_progress/r07.svg');
-    background-color: var(--c-r07);}
-#nav_donate .r08 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r08.svg');
-    mask-image: url('icons/nav/donate_progress/r08.svg');
-    background-color: var(--c-r08);}
-#nav_donate .r09 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r09.svg');
-    mask-image: url('icons/nav/donate_progress/r09.svg');
-    background-color: var(--c-r09);}
-#nav_donate .r10,
-#nav_donate .r20,
-#nav_donate .r50,
-#nav_donate .r99 {
-    -webkit-mask-image: url('icons/nav/donate_progress/r10.svg');
-    mask-image: url('icons/nav/donate_progress/r10.svg');
-    background-color: var(--c-r10);}
 
 
 
@@ -679,7 +89,7 @@ td.center.cats_col+td,
 tr.unreadpm td:first-child {
     position: relative;}
 
-#forums .forum_index            tr:not(.colhead) td:first-child:before,
+/*#forums .forum_index            tr:not(.colhead) td:first-child:before,
 #forums .forum_mythreads        tr:not(.colhead) td:first-child:before,
 #forums .forum_editsubs         tr:not(.colhead) td:first-child:before,
 #forums .forum_subscriptions    tr:not(.colhead) td:first-child:before,
@@ -692,7 +102,7 @@ tr.unreadpm td:first-child {
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;}
+    height: 100%;}*/
 
 #wrapper tr.participated >td:nth-child(2):before {
     content: '';
@@ -712,21 +122,21 @@ tr.unreadpm td:first-child {
     -webkit-mask-image: url('icons/participated_unread.svg');
     mask-image: url('icons/participated_unread.svg');}
 
-.box.box_info span[style="float:right;"],
-.box.box_likes.box_torrents span.likes_icon.flright {
+.box.box_info span[style="float:right;"]/*,
+.box.box_likes.box_torrents span.likes_icon.flright*/ {
     margin: -1px 0;}
 
-#stats_share_score  a:before,
+/*#stats_share_score  a:before,
 #stats_seeding      a:before,
 #stats_leeching     a:before {
     -webkit-mask-size: 18px 18px;
-    mask-size: 18px 18px;}
-#forums .forum_index            tr:not(.colhead) td:first-child:before,
+    mask-size: 18px 18px;}*/
+/*#forums .forum_index            tr:not(.colhead) td:first-child:before,
 #forums .forum_mythreads        tr:not(.colhead) td:first-child:before,
 #forums .forum_editsubs         tr:not(.colhead) td:first-child:before,
 #forums .forum_subscriptions    tr:not(.colhead) td:first-child:before {
     -webkit-mask-size: auto 18px;
-    mask-size: auto 18px;}
+    mask-size: auto 18px;}*/
 /** /masks **/
 
 .ign {background-image: url('weblinks/IGN.svg');}
@@ -760,12 +170,12 @@ filter: drop-shadow(0px 0 1px #000);}
 @keyframes expandWidth {
 	0% {transform: scaleX(0);}
 	100% {transform: scaleY(1);}}
-@-webkit-keyframes lsfl-pulse-a {
+/*@-webkit-keyframes lsfl-pulse-a {
     0% {background-position: 0 0;} 
     100% {background-position: 900px 0;}}
 @-webkit-keyframes lsfl-pulse-b {
     0% {background-position: 0 0;} 
-    100% {background-position: 1215px 0;}}
+    100% {background-position: 1215px 0;}}*/
 
 /* @keyframes logo_move {
     0% {transform: translateX(-60%);}
@@ -774,7 +184,7 @@ filter: drop-shadow(0px 0 1px #000);}
     0% {transform: translateX(0);}
     100% {transform: translateX(-60%);}} */
 
-html {
+/*html {
     line-height: var(--p-lh);
     font-size: 14px;
     scroll-behavior: smooth;}
@@ -785,9 +195,9 @@ body {
     font-family: OpenSans, Sans-Serif;
     margin: 0;
     min-height: 100%;
-    /* min-width: 800px; */
+     min-width: 800px; 
     overflow-wrap: break-word;
-    position: relative;}
+    position: relative;}*/
 body,
 html,
 
@@ -892,10 +302,10 @@ input[type="search"],
 #footer
 /* #bookmarks #collage_table td a - outdated bookmarks */ {
     margin: 0 auto;}
-#content,
+/*#content,
 #footer {
     max-width: 1300px;
-    width: calc(100% - 106px);}
+    width: calc(100% - 106px);}*/
 ul {
     margin: 0;
     padding: 0 0 0 30px;}
@@ -936,7 +346,7 @@ ul {
 .sidebar ul {
     list-style:none;}
 
-#collections .sidebar .box.box_comment a[href^="reports.php?action=report"],
+/*#collections .sidebar .box.box_comment a[href^="reports.php?action=report"],
 #forums .thin>.box.thin.clear .head.colhead_dark a,
 #groupplatform,
 #inbox .box.vertical_space .head a[onclick],
@@ -967,23 +377,23 @@ ul {
 .thin.torrent_history>form#torrent_history_search~table tr:not(.colhead) td:nth-child(2),
 .torrent_table .addbookmark,
 .torrent_table .removebookmark {
-    font-size:0;}
+    font-size:0;}*/
 
-.bold {
+/*.bold {
     font-weight: bold;}
 .italic {
-    font-style: italic;}
+    font-style: italic;}*/
 
 p {
     margin: 10px 0;}
-#bookmarks .linkbox.pager,
+/*#bookmarks .linkbox.pager,
 b, strong {
-    font-weight: bold;}
+    font-weight: bold;}*/
 ul, ol {
     margin-bottom: 0px;}
 .sidebar .box_series ul,
 .postlist {
-    margin-top: .3571428571428571em;}
+    margin-top: .5em;}
 li:first-of-type {
     padding-top: 0px;}
 li {
@@ -991,29 +401,29 @@ li {
 li:last-of-type {
     padding-bottom: 0px;}
 table {
+	width: 100%;
     background-color: var(--c-box);
-    border: 0;
-    border-collapse: collapse;
-    width: 100%;}
+	border-collapse: collapse;}
 td, th {
     padding: 5px;
     text-align: left;}
-.box.box_likes.box_torrents span.likes_icon.flright img,
+/*.box.box_likes.box_torrents span.likes_icon.flright img,
 #thumbsup img,
 #thumbsdown img,
 .sidebar .box_user_rating img,
 td, th, tr {
-    border: 0;}
+    border: 0;}*/
 
-.box.box_info .head.tooltip span[style="float:right;"] img,
+/*.box.box_info .head.tooltip span[style="float:right;"] img,
 .box.box_likes.box_torrents span.likes_icon.flright img {
     width: 20px;
     height: 20px;
-    padding-left: 20px;}
+    padding-left: 20px;}*/
 
 td.label {
-    vertical-align: top;
-    padding: 8px 5px 9px 5px;}
+    text-align: right;
+    /*vertical-align: top;
+    padding: 8px 5px 9px 5px;*/}
 td >select {
     margin: 1px 0;}
 td >input#file {
@@ -1021,27 +431,27 @@ td >input#file {
 
 /***/
 #wrapper .r00, /* override .torrent_table tr:not(.colhead):not(.colhead_dark) td */
+.r00 {color: var(--c-r01);}
 #wrapper .r01,
-.r00,
-.r01 {color: var(--c-r01);}
 #wrapper .r02,
+.r01,
 .r02 {color: var(--c-r02);}
 #wrapper .r03,
 .r03 {color: var(--c-r03);}
 #wrapper .r04,
 .r04 {color: var(--c-r04);}
 #wrapper .r05,
-.r05 {color: var(--c-r05);}
 #wrapper .r06,
-.r06 {color: var(--c-r06);}
+.r05,
+.r06 {color: var(--c-r05);}
 #wrapper .r07,
-.r07 {color: var(--c-r07);}
+.r07 {color: var(--c-r06);}
 #wrapper .r08,
-.r08 {color: var(--c-r08);}
+.r08 {color: var(--c-r07);}
 #wrapper .r09,
-.r09 {color: var(--c-r09);}
+.r09 {color: var(--c-r08);}
 #wrapper .r10,
-.r10 {color: var(--c-r10);}
+.r10 {color: var(--c-r09);}
 #wrapper .r20,
 #wrapper .r50,
 #wrapper .r99,
@@ -1049,39 +459,26 @@ td >input#file {
 .r50,
 .r99 {
     color: var(--c-r10);
-    text-shadow: 0 0 1px var(--c-r99);}
+    /*text-shadow: 0 0 1px var(--c-r99);*/}
 
 
+blockquote,
 .spoilerbox,
-blockquote,
 pre {
-    padding: 10px;
-	border-radius: 0px !important;
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);
-    border: 1px solid var(--c-quote-brdr);
-    background-color: var(--c-quote);}
-blockquote,
-pre {
-    margin: 4px 5px 10px 5px;}
-.spoilerbox {
-    margin: 4px 5px;}
-.torrent_details blockquote {
-    max-height: 2000px;
-    overflow: auto;}
-pre {
-    overflow: auto;
-    white-space: pre-wrap;}
+	margin: 10px;
+	padding: 10px 20px;
+    border: 1px solid var(--c-blqt);
+    background-color: var(--c-blqt-bcg);}
+blockquote code {
+    outline: 1px solid var(--c-blqt);}
 code {
-    padding: 1px 5px;
-    background-color: var(--c-quote);}
+    padding: 1px 5px;}
 
-/* quote indication, not sure if it's a good idea
-a[onclick^="QuoteJump(event"] +blockquote {
-    border-left-width: 2px;
-    border-left-color: var(--c-unread-s);} */
+blockquote pre {
+	filter: none;}
 
-.lightbox img[src*="/nfoimg/"],
+
+/*.lightbox img[src*="/nfoimg/"],
 .torrent_table blockquote#description img[src*="/nfoimg/"] {
     background-image: none !important;
     -webkit-filter:     var(--p-description);
@@ -1089,29 +486,29 @@ a[onclick^="QuoteJump(event"] +blockquote {
     background-color:   var(--c-description);}
 .torrent_table blockquote#description img[src*="/nfoimg/"] {
     max-width: 100% !important;
-    margin: 3px 0;}
+    margin: 3px 0;}*/
 
 strong.mature +strong +br +a[onclick] {
     /* margin-top: 0 !important; */}
 
-#userinfo_username .sub {
-    visibility: visible !important;}
+/*#userinfo_username .sub {
+    visibility: visible !important;}*/
 
-.tooltipster-default {
+.tooltipster-default {/*
 	border-radius: 0px !important;
 	border: 1px solid var(--c-table-brdr) !important;
 	background: var(--c-box) !important;
 	color: var(--c-low) !important;
     -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
-.tooltipster-default .tooltipster-content {
+    box-shadow: var(--p-header-shdw);*/}
+.tooltipster-default .tooltipster-content {/*
     line-height: 15px !important;
-	font-size: 12px !important;}
+	font-size: 12px !important;*/}
 .ui-widget,
-.tooltipster-default .tooltipster-content {
-	font-family: OpenSans, Sans-Serif !important;}
+.tooltipster-default .tooltipster-content {/*
+	font-family: OpenSans, Sans-Serif !important;*/}
 
-.head strong,
+/*.head strong,
 li.active,
 #user h2 +form#userform .colhead_dark strong,
 #user h2 +form#userform .colhead_dark td,
@@ -1127,7 +524,7 @@ li.active,
 #forums td.unread_locked_sticky ~td strong,
 #forums td.unread_locked_sticky ~td .last_topic,
 #forums td.unread_locked_sticky ~td h4.min_padding {
-    font-weight: 600 !important;}
+    font-weight: 600 !important;}*/
 
 /* #requests #requests_list .sticky >td:first-child:after,
 .torrent_table .sticky td.center:first-child:after,
@@ -1145,7 +542,7 @@ tr.unreadpm td:first-child:after {
 #inbox #messageform >input:first-child +table {
     overflow: hidden;} */
 
-#searchbars input {
+/*#searchbars input {
     -webkit-box-shadow: var(--p-input-shdw);
     box-shadow: var(--p-input-shdw);
     border: 1px solid var(--c-input-brdr);
@@ -1156,7 +553,7 @@ tr.unreadpm td:first-child:after {
     margin: 5px 0;
     padding: 0 5px;
     position: relative;
-    width: 100%;}
+    width: 100%;}*/
 
 .autocomplete_list {
     background: var(--c-box);
@@ -1218,9 +615,9 @@ tr.unreadpm td:first-child:after {
 
 
 #index #freeleech .group_torrent >span:not(:first-child) {
-    padding: 0 2px;}
+    /*padding: 0 2px;*/}
 
-#collections .sidebar .box.box_comment .head,
+/*#collections .sidebar .box.box_comment .head,
 li:not(.suggested_similar) .similar_votes >a:nth-child(2),
 .tags,
 #index #freeleech .group_torrent >span:first-child {
@@ -1238,12 +635,12 @@ li:not(.suggested_similar) .similar_votes >a:nth-child(1),
 #index #freeleech .group_torrent span.platform {
     order: 4;}
 #index #freeleech .group_torrent span.tor_info {
-    order: 5;}
+    order: 5;}*/
 
 #index #freeleech .group_torrent span.platform {
-    margin-left: 2px;}
-#index #freeleech .group_torrent span.platform:before {
-    content: '- ';}
+    /*margin-left: 2px;*/}
+#index #freeleech .group_torrent span.platform:before {/*
+    content: '- ';*/}
 #friends table.forum_post.vertical_margin .colhead span.time:before {
     content: 'Last Online: ';}
 
@@ -1352,10 +749,10 @@ h2 .username_badges a {
 
 #calendar .change_month_links a,
 .prev,
-.next {
+.next {/*
     width: 24px;
     height: 24px;
-    background-size: 12px 24px;}
+    background-size: 12px 24px;*/}
 .prev {
     float: left;}
 .next {
@@ -1519,11 +916,11 @@ div#fight_skill_points_assign >table,
     background-color: var(--c-box);
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);
-    border: 1px solid var(--c-main-brdr);
-    margin: 0 0 15px 0;}
+    /*border: 1px solid var(--c-main-brdr);*/
+    margin: 0 0 25px 0;}
 #inbox .box.vertical_space:not(:last-of-type),
 .forum_post {
-    margin: 0 0 10px 0;}
+    margin: 0 0 25px 0;}
 .sidebar ul {
     margin: 10px 0;}
 #user .box.box_gold #box_gold_scrollbar +ul.stats.nobullet,
@@ -1580,22 +977,28 @@ div#fight_skill_points_assign >table,
 .box {
     font-size: 1em;}
 .head {
+    text-align: center;
+    font-family: Adelle, Times New Roman;
     background: var(--p-head-grdnt);
     font-size: var(--p-head);
-    line-height: var(--p-head);
-    padding: 9px 10px;}
+    line-height: 1em;
+    padding: 11px 10px 10px 10px;}
+.head strong {
+    width: 100%;
+    font-weight: normal;}
 #bookmarks .sidebar .head,
 .sidebar .head {
+    font-size: 16px;    
     margin: -10px -10px 0;
-    font-weight: 600;}
+    /*font-weight: 600;*/}
 .sidebar .head strong {
     font-weight: inherit;}
-a, a:hover {
+/*a, a:hover {
     text-decoration: none;}
 a {
     color: var(--c-anchor);
     border: 0;
-    background-color: transparent;}
+    background-color: transparent;}*/
 a:hover,
 .box.vertical_space#preview a:hover img, /*inbox*/
 .box.vertical_space .body a:hover img, /*inbox*/
@@ -1614,8 +1017,8 @@ a:hover .ratings,
 span.user_title a:hover,
 /*.filter_torrents.advanced .flright:hover:before,*/
 .ui-widget-content a:hover {
-    background-color: var(--c-anchor-hvr-bcg);
-    color: var(--c-anchor-hvr);}
+    /*background-color: var(--c-anchor-hvr-bcg);
+    color: var(--c-anchor-hvr);*/}
 
 
 #taglist a:hover,
@@ -1671,7 +1074,7 @@ table#uploadsrow a {
     background-color: transparent;}
 
 #torrents .torrent_details .torrent_table div[id^=history_] table.border tr:last-child:not(.colhead) td {
-    background-color: unset!important;}
+    /*background-color: unset!important;*/}
 /* #threadpoll li.graph {
     color: transparent;} */
 
@@ -1964,7 +1367,7 @@ body >div, /* more info window at #shop */
 #menu a:hover,
 #userinfo_minor a:hover,
 #userinfo_username li:not(.sub) a:hover {
-    color: var(--c-anchor-hvr);}
+    /*color: var(--c-anchor-hvr);*/}
 
 #menu li.active a,
 #userinfo_minor li.active a,
@@ -1972,11 +1375,11 @@ body >div, /* more info window at #shop */
 #userinfo_username .welcome.active a,
 #userinfo_username .sub span.active a,
 #header #announcement {
-    color: var(--c-low);}
+    /*color: var(--c-low);*/}
 
-.sidebar img {
+.sidebar img {/*
     border: 3px solid var(--c-main-brdr);
-    height: unset;
+    height: unset;*/
     max-width: 100% !important;}
 img {
     border: 0;
@@ -2052,20 +1455,20 @@ img[title="Gold"],
 td img[alt="Ratio"],
 #top10 img[alt="Up Votes"],
 #top10 img[alt="Down Votes"] {
-    width: 18px;
+    /*width: 18px;
     height: 18px;
-    background-size: 18px 18px;}
-#stats_gold a {
+    background-size: 18px 18px;*/}
+/*#stats_gold a {
     filter: grayscale(0.5);}
 #stats_gold a:hover{
-    filter: grayscale(0);}
-#stats_ratio span.stat {
-    font-size: 15px;}
-#stats_share_score,
+    filter: grayscale(0);}*/
+/*#stats_ratio span.stat {
+    font-size: 15px;}*/
+/*#stats_share_score,
 #stats_hnr,
 #online_irc {
     position: relative;
-    overflow: hidden;}
+    overflow: hidden;}*/
 
 #users_reviews .delete_review a.remove_review,
 #deletereview a,
@@ -2180,8 +1583,8 @@ a#tag_show\/hide:active,
 .trade_value .trade_value_gold span,
 #index span[style="color: gold;"],
 #upload #content >div >table[style] span[style="color: yellow;"] {
-    color: var(--c-gold) !important;
-    text-shadow: var(--p-gold);}
+    /*color: var(--c-gold) !important;
+    text-shadow: var(--p-gold);*/}
 
 .calendar a[style="color: red;"],
 #better td span[style="color: red;"],
@@ -2204,18 +1607,18 @@ strong.important_text,
 #reportsv2 #dynamic_form >table.border td.label [color="red"],
 #userhistory .colhead_dark span[style="float:left;"] >span[style="color: red;"],
 .torrent_details blockquote#description [style="color: #ff0000;"] {
-    color: var(--c-red) !important;}
+    /*color: var(--c-red) !important;*/}
 
 .calendar a[style="color: green;"],
 #better td span[style="color: green;"],
 #user .thin >h2:first-child +.center ~table.border span[style*="green;"] {
-    color: var(--c-green) !important;}
+    /*color: var(--c-green) !important;*/}
 
 .item_description span[style*="orange;"],
 .info_description span[style*="orange;"],
 #index span[style="color: orange;"] {
-    color: var(--c-orange) !important;
-    text-shadow: var(--p-orange);}
+    /*color: var(--c-orange) !important;
+    text-shadow: var(--p-orange);*/}
 
 .lightbox {
     position: fixed;
@@ -2241,7 +1644,7 @@ strong.important_text,
 img#authcode,
 .fancybox-image,
 .lightbox img {
-    border: 3px solid var(--c-main-brdr);}
+    /*border: 3px solid var(--c-main-brdr);*/}
 
 .review_cell .flextable-cell:first-child img:not(.avatar),
 .tooltipster-default #tooltip_steam img,
@@ -2265,13 +1668,13 @@ img#authcode,
 .sidebar .box.box_albumart img,
 .sidebar .box.box_image_coverart a img,
 /* #bookmarks #collage_table td img, - outdated bookmarks */
-.similar img {
+.similar img {/*
     background-size: 16px 16px;
     background-repeat: repeat;
-    background-position: top left;}
+    background-position: top left;*/}
 
 #wrapper >#overlay {
-    background: none;}
+    /*background: none;*/}
 
 .ui-widget-overlay,
 #wrapper >#overlay:before,
@@ -2342,7 +1745,7 @@ input[disabled] {
     -webkit-box-shadow: none;
     box-shadow: none;}
 
-.fancybox-show-thumbs .fancybox-thumbs {
+/*.fancybox-show-thumbs .fancybox-thumbs {
     background-color: var(--c-box);}
 .fancybox-thumbs>ul>li:before {
     opacity: 1;
@@ -2350,7 +1753,7 @@ input[disabled] {
 .fancybox-thumbs>ul>li.fancybox-thumbs-active:before {
     border-color: var(--c-b1);}
 .fancybox-thumbs>ul>li:not(.fancybox-thumbs-active):hover:before {
-    border-color: var(--c-b3);}
+    border-color: var(--c-b3);}*/
 
 .fancybox-navigation .fancybox-button--arrow_left /*jumping button fix*/ {
     left: 6px !important;}
@@ -2362,11 +1765,12 @@ input[disabled] {
     display: flex;}
 .box.news_post .head .newsdate,
 .box.news_post .head .time {
+    font-style: italic;
     font-size: 14px;
     line-height: 15px;
     position: absolute;
     right: 15px;
-    top: 11px;}
+    top: 16px;}
 #bookmarks td#sorting_head a,
 #forums .thin >.box.thin.clear .head.colhead_dark a,
 #newthreadpreview #pollpreview .head.colhead_dark a,
@@ -2381,12 +1785,18 @@ input[disabled] {
     top: 0;
     z-index: 2;}
 #index #recommended .head strong,
-.box.news_post .head strong {
+.box.news_post .head strong {    
     z-index: 1;}
+.box.news_post .head {
+    font-size: 0;}
+.box.news_post .head strong {
+    text-indent: 90px;
+    font-size: var(--p-head);
+    line-height: 1em;}
 /* reverse text indent */
 .box.news_post .head strong:before {
     content: '';
-    width: 160px;
+    width: 85px;
     float: right;
     height: 15px;}
 #bookmarks td#sorting_head:before,
@@ -2502,6 +1912,8 @@ input[disabled] {
 #torrents #wrapper .torrent_notifications .noticon +td,
 .thin.torrent_history >form#torrent_history_search ~table tr:not(.colhead) td:nth-child(2) >a {
     margin: 0;}
+
+/*** mark 1 ***/
 
 #slides .slides_container:before,
 #slides .slides_container:after {
