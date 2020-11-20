@@ -1915,7 +1915,7 @@ input[disabled] {
 
 /*** mark 1 ***/
 
-#slides .slides_container:before,
+/*#slides .slides_container:before,
 #slides .slides_container:after {
     content: '';
     top: 0;
@@ -1928,7 +1928,7 @@ input[disabled] {
     left: 0;}
 #slides .slides_container:after {
     right: 0;
-    transform: scaleX(-1);}
+    transform: scaleX(-1);}*/
 
 #dailygazelle img,
 #slides img {
@@ -1944,14 +1944,14 @@ input[disabled] {
 .screenshots img:hover,
 #css_gallery .preview_image:hover,
 .sidebar img:hover {
-    border-color: var(--c-b3);}
+    /*border-color: var(--c-b3);*/}
 .sidebar #slides a.prev {
     margin-left: 10px;}
 table#grouplinks #curlinkedgroup,
 .sidebar #slides a.next {
     margin-right: 10px;}
 #slides .slides_control .center {
-    width: calc(100% - 18px);
+    width: calc(100% - 20px);
     margin: 0 auto;}
 #dailygazelle #gazelletitle {
     display: block;
@@ -1961,16 +1961,18 @@ table#grouplinks #curlinkedgroup,
     width: -moz-fit-content;
     width: fit-content;
     display: block;
-    margin: 8px auto 10px auto;}
+    margin: 10px auto 10px auto;}
 
 .large_progress_bar .main_bar,
 #center_poll {
-    background-image: var(--p-poll-grdnt);
+    background-image: var(--p-prog-b);
+    -webkit-box-shadow: var(--p-prog-s);
+    box-shadow: var(--p-prog-s);
     display: block;
     position: relative;
     animation: expandWidth 2s;
     transform-origin: left;
-    height: 14px;
+    height: 11px;
     float: left;
     margin: 0;
     padding: 0;}
@@ -2327,14 +2329,14 @@ a .error_message:hover {
     top: -2px;}
 li.graph {
     width: calc(100% - 6px);
-    height: 14px;
+    height: 11px;
     margin: 2px auto 8px auto;
     padding: 3px;
-    background-color: var(--c-edition);
-    -webkit-box-shadow: inset var(--p-graph-sh);
-    box-shadow: inset var(--p-graph-sh);}
+    background-color: var(--c-i-bcg);
+    /*-webkit-box-shadow: inset var(--p-graph-sh);
+    box-shadow: inset var(--p-graph-sh);*/}
 #threadpoll li.graph {
-    background-color: var(--c-tor-row-hvr); /* preserving contrast */}
+    /*background-color: var(--c-tor-row-hvr);*/ /* preserving contrast */}
 .poll li:not(.graph) {
     margin: 0;
     padding: 0 0 0 5px;}
@@ -2366,7 +2368,7 @@ li.graph {
     animation-fill-mode: forwards;
     transform: scaleX(0);}
 #clans .large_progress_bar .main_bar {
-    height: 14px;
+    height: 11px;
     vertical-align: top;}
 
 #clans .large_progress_bar .main_bar.clan_1_bar {
@@ -2516,11 +2518,11 @@ li.graph {
 .cats_applications,
 .cats_ost,
 .oculusquest {
-    background-size: 28px 28px;
+    /*background-size: 28px 28px;
     height: 28px;
 	width: 28px;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;*/}
 
 .colhead,
 .colhead_dark {
