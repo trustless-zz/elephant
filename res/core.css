@@ -8,6 +8,12 @@
     --c-minor:                              #7a7a7a;
     --c-anchor:                             #255c7c;
     --c-anchor-hvr:                         #e85066;
+    --c-blqt:                               #aaaaaa;
+    --c-blqt-bcg:                           #f5f5f5;
+    --c-main-shdw:                          rgba(153, 153, 153, 0.7);
+    --c-box:                                #ffffff;
+    
+    --p-main-shdw:                          0 0 25px var(--c-main-shdw);
 }
 
 @font-face {
@@ -78,7 +84,19 @@ body {
     min-height: 100%;
     overflow-wrap: break-word;
     position: relative;}
+#wrapper {
+    margin: 0 auto;}
+#header,
+#content,
+#footer {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;}
 
+.bold {
+	font-weight: bold;}
+.italic{
+    font-style: italic;}
 
 
 
@@ -110,6 +128,13 @@ div[id^="ghost"] {
     display:none;}
 
 
+@media (max-width: 1699px) {
+    #wrapper #header {
+        margin-left: 15px;
+        left: 0;
+        width: calc(100% - 30px);}
+}
+
 
 
 
@@ -122,17 +147,11 @@ div#logo {
     width: 164px;
     /* display: none; */
     background: white;
-    position: absolute;
-    left: -184px;
-    top: calc(50% - 82px);}
-#header,
-#content,
-#footer {
-    margin: 0 auto;
-    max-width: 1300px;
-    width: 100%;}
+    position: relative;
+    /* left: -184px; */
+    margin: 15px 20px 0 -204px;
+    order: -9;}
 #header {
-    /*max-width: 1464px;*/
     /*max-width: 1300px;
     width: 100%;*/
     margin: 0 auto 20px auto;
@@ -140,17 +159,21 @@ div#logo {
     display: flex;
     flex-flow: row;
     position: relative;
-    padding: 15px 0 10px 20px;
+    padding: 15px 0 10px 204px;
     box-sizing: border-box;
-    border-left: 1px solid transparent;}
+    border-left: 1px solid transparent;
+    left: calc(-184px /2);
+    width: calc(100% - 204px);
+    max-width: 1484px;}
 #header:before {
     content: '';
-    position: absolute;
-    left: -1px;
-    top: 15px;
+    display: block;
     width: 1px;
-    height: calc(100% - 20px);
-    background-color: red;}
+    height: auto;
+    background-color: red;
+    order: -8;
+    margin-right: 20px;
+    margin-bottom: -5px;}
 
 #header ul {
     list-style: none;
@@ -223,10 +246,11 @@ div#logo {
     /*line-height: 1em;*/
     width: 100%;
     justify-content: space-around;
-    padding: 0 35px 0 255px;
+    padding: 0 35px 0 549px;
     box-sizing: border-box;
     /*padding-left: 255px;*/
-    max-width: calc(900px + 220px);
+    /*max-width: calc(900px + 220px + 190px + 50px);*/
+    max-width: calc(900px + 549px - 35px);
     z-index: 1;}
 #userinfo_minor a {
     color: var(--c-minor);}
@@ -262,6 +286,7 @@ div#logo {
     /* font-size: 0; */
     /*width: 100%;*/
     /*line-height: 1em;*/
+    padding-left: 15px;
     font-size: 21px;/*}
 #wrapper #userinfo_minor,
 #wrapper #menu {*/
@@ -272,10 +297,11 @@ div#logo {
 #userinfo {
     font-family: Whitney, Sans-Serif;
     font-size: 10pt;
-    display: table;}
+    display: table;
+    margin-right: auto;}
 #header >#searchbars {
     width: 900px;
-    max-width: calc(100% - 235px);
+    max-width: calc(100% - 235px - 190px);
     position: absolute;
     right: 0;
     bottom: 15px;}
@@ -307,6 +333,8 @@ select {
     padding: 0 5px;
     position: relative;
     width: 100%;}
+#searchbars li:not(:last-child) {
+    margin-right: 10px;}
 
 textarea:focus,
 select:focus,
@@ -315,5 +343,3 @@ input:focus,
     background-color: var(--c-i-focus);
     -webkit-box-shadow: 0 0 5px var(--c-s-focus);
     box-shadow: 0 0 5px var(--c-s-focus);}
-
-
