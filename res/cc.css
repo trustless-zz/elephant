@@ -2526,22 +2526,26 @@ li.graph {
 
 .colhead,
 .colhead_dark {
+    /*font-size: 16px;*/
     background: var(--p-head-grdnt);}
 #manage_collage_table .colhead th,
 .colhead td,
 .colhead_dark td {
-    font-size: var(--p-head);
-    line-height: var(--p-head);
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+/*    font-size: var(--p-head);
+    line-height: var(--p-head);*/
     vertical-align: middle;
     font-weight: normal;
-    padding: 9px 5px;
+    padding: 5px;
     overflow: hidden;}
 .thin#user_fight_attacks table.border .colhead td:first-child,
 #manage_collage_table .colhead >th:first-child,
 #tools .thin >table .colhead >td:first-child,
 .colhead >td:first-child,
 .colhead_dark >td:first-child {
-    padding-left: 10px;}
+    /*padding-left: 10px;*/}
 .torrent_table tr td.center {
     text-align: center;
     vertical-align: middle;}
@@ -2549,9 +2553,9 @@ li.graph {
 #artist #torrent_table tr.group,
 #torrent_table .group.discog,
 .torrent_table .group.rowa {
-    background-color: var(--c-body);}
+    /*background-color: var(--c-body);*/}
 .torrent_table .group.rowb {
-    background-color: var(--c-tor-rowb);}
+    /*background-color: var(--c-tor-rowb);*/}
 .torrent_table tr:not(.colhead):not(.colhead_dark) td {
 	border-top: 1px solid var(--c-table-brdr);
     color: var(--c-text-s);
@@ -2564,7 +2568,7 @@ li.graph {
 .top10_torrents div:not(.center)>table.border tr:not(.colhead):not(.colhead_dark) td,
 #better .torrent_table tr.torrent.torrent_row td,
 body#requests table#requests_list tr:not(.colhead):not(.colhead_dark) td {
-	border-top: 1px solid var(--c-edition);}
+	/*border-top: 1px solid var(--c-edition);*/}
 
 .rating_container,
 #userinfo_username .sub,
@@ -2610,9 +2614,9 @@ table.adventure_table .colhead td {
 #bookmarks #torrent_table td[colspan="3"] >a,
 #torrents .group_torrent td:first-child >a,
 #torrents .torrent_notifications .noticon +td {
-    font-size: 13px;
+    /*font-size: 13px;
     line-height: 18px;
-    margin-left: 2px;}
+    margin-left: 2px;*/}
 #top10 .group_torrent td:first-child,
 #top10 td.center.cats_col +td >strong,
 .box.box_requests tr:not(.colhead_dark) td:first-child,
@@ -2622,17 +2626,17 @@ table.adventure_table .colhead td {
 .torrent_table #displayname,
 #bookmarks td[colspan="5"] >strong:first-child,
 #artist #torrent_table tr.group >td.center +td {
-    font-size: 15px;
+    font-size: 14px;
     line-height: var(--p-lh);}
 .torrent_table .show_torrents,
 .torrent_table .hide_torrents {
     /*min-width: 30px;*/
     display: block;
-    height: 20px;
-    width: 20px;}
+    height: 15px;
+    width: 15px;}
 .torrent_table .show_torrents_link {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     cursor: default;
     z-index: 2;
     position: relative;}
@@ -2646,7 +2650,7 @@ table.adventure_table .colhead td {
 #bookmarks #torrent_table tr.group_torrent td:not(.edition_info):not(:first-child),
 .torrent_details .torrent_table tbody[id*="edition_"] .group_torrent td,
 .torrent_table tr.group_torrent[class*="edition_"] >td {
-    padding: 4px 5px;
+    padding: 14px 15px;
     font-size: 13px;
     line-height: 18px;}
 #top10 td.center.cats_col +td >span a,
@@ -2656,11 +2660,11 @@ table.adventure_table .colhead td {
 .torrent_details .group_torrent td:first-child span,
 .torrent_table td[colspan="4"] >span:first-child,
 #torrents .torrent_notifications .noticon +td >span:first-child {
-    position: relative;
+    /*position: relative;
     z-index: 1;
     font-size: 0;
     display: inline-block;
-    vertical-align: top;}
+    vertical-align: top;*/}
 #top10 td.center.cats_col +td >span a,
 #artist #torrent_table .group_torrent td[colspan="2"] >span:first-child a,
 #collections #torrent_table .group_torrent td[colspan="3"] >span:first-child aa,
@@ -2683,30 +2687,30 @@ table.adventure_table .colhead td {
 #extlink_table              td.center.cats_col +td span:first-child a,
 .thin.torrent_history >form#torrent_history_search ~table tr:not(.colhead) td:nth-child(2) >span:first-child >a,
 #torrents .torrent_notifications .noticon +td >span:first-child >a {
-    margin-right: 3px;
-    display: inline-block;}
+    /*margin-right: 3px;
+    display: inline-block;*/}
 .torrent_table .show_torrents .show_torrents_link:after {
     transform: rotate(-90deg);}
 .torrent_table .hide_torrents .show_torrents_link:after {
     transform: rotate(0deg);}
 #collections .group.discog td.collicon:nth-child(1),
 .torrent_table td.center:first-child {
-    width: 20px;
+    width: 15px;
     height: 100%;
     overflow: hidden;
     position: relative;
-    border-right: 1px solid var(--c-table-brdr);
+    /*border-right: 1px solid var(--c-table-brdr);*/
     /* box-shadow: var(--p-show-hide-brdr-shdw); */}
 #top10 .group_torrent td:first-child {
-    border-right: 1px solid var(--c-edition);}
+    /*border-right: 1px solid var(--c-edition);*/}
 th[aria-disabled="false"]:hover,
 #collections .group.discog td.collicon:hover:nth-child(1),
 .torrent_table td.center:hover:first-child {
-    background-color: var(--c-colhead-click);}
+    /*background-color: var(--c-colhead-click);*/}
 th[aria-disabled="false"]:active,
 #collections .group.discog td.collicon:active:nth-child(1),
 .torrent_table td.center:active:first-child {
-    background-color: var(--c-colhead-act);}
+    /*background-color: var(--c-colhead-act);*/}
 .torrent_table .show_torrents_link:before { /* psuedo element because table-cell hack doesn't work on firefox */
     content: '';
     position: absolute;
@@ -2735,7 +2739,7 @@ th[aria-disabled="false"]:active,
     max-width: calc(100% - 10px);
     left: 0;
     top: 0;
-    line-height: 25px;
+    line-height: 23px;
     padding-left: 5px;
     cursor: default;}
 .edition_info +td:before,
@@ -2924,7 +2928,7 @@ img[title="Gold"],
 td img[alt="Ratio"],
 #top10 img[alt="Up Votes"],
 #top10 img[alt="Down Votes"] {
-    padding-left: 18px;}
+    padding-left: 16px;}
 .box.box_info .head.tooltip span[style="float:right;"] img[alt="Banned"],
 .box.box_info .head.tooltip span[style="float:right;"] img[alt="Warned"] {
     padding-left: 20px;}
@@ -2934,43 +2938,43 @@ td img[alt="Ratio"],
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: 50px 50px !important;
-    padding-left: 56px !important;
-    width: 56px;
-    height: 56px;}
+    padding-left: 50px !important;
+    width: 50px;
+    height: 50px;}
 .colhead_dark td >a,
 .colhead td >a,
 .colhead th >a {
     /* padding: 2000px;
     margin: -2000px; */
     display: block;
-    padding: 9px 5px;
-    margin: -9px -5px;}
+    /*padding: 9px 5px;
+    margin: -9px -5px;*/}
 .colhead_dark .sign,
 .colhead .sign {
     line-height: 0;}
 .colhead_dark td >a:hover,
 .colhead td >a:hover,
 .colhead th >a:hover {
-    background-color: var(--c-colhead-click);}
+    /*background-color: var(--c-colhead-click);*/}
 .colhead_dark td >a:active,
 .colhead td >a:active,
 .colhead th >a:active {
-    background-color: var(--c-colhead-act);}
+    /*background-color: var(--c-colhead-act);*/}
 
 .torrent_table .group.rowa .empty_group {
-    background-color: var(--c-body);}
+    /*background-color: var(--c-body);*/}
 .torrent_table .group.rowb .empty_group {
-    background-color: var(--c-tor-rowb);}
+    /*background-color: var(--c-tor-rowb);*/}
 .torrent_table .empty_group {
-    width: 100%;
+    /*width: 100%;
     height: 100%;
     cursor: default;
     position: absolute;
     top: 0;
-    left: 0;}
+    left: 0;*/}
 #inbox #wrapper #content tr.sticky,
 .torrent_table .group.sticky {
-    background-color: var(--c-edition);}
+    /*background-color: var(--c-edition);*/}
 .sidebar .body >table,
 .box.userreviews_div .userreviews >table,
 #wrapper .torrent_table .group.sticky .empty_group {
@@ -2980,14 +2984,14 @@ td img[alt="Ratio"],
 .torrent_table .group:hover {
     background-color: var(--c-tor-row-hvr) !important;} */
 .sticky td {
-    border-top: 1px solid var(--c-b1) !important;
-    border-bottom: 1px solid var(--c-b1) !important;}
+    /*border-top: 1px solid var(--c-b1) !important;
+    border-bottom: 1px solid var(--c-b1) !important;*/}
 .collections_art_display .remove_bookmark_div,
 .torrent_table .addbookmark,
 .torrent_table .removebookmark {
     display: inline-block;
     width: 16px;
-    height: 22px;}
+    height: 23px;}
 .collections_art_display .remove_bookmark_div {
     position: absolute;
     cursor: pointer;
@@ -2999,7 +3003,7 @@ td img[alt="Ratio"],
 .torrent_table #upvote,
 .torrent_table #downvote,
 .torrent_table #novote {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: bold;}
 .user_online,
 .torrent_table #upvote {
@@ -3008,25 +3012,29 @@ td img[alt="Ratio"],
 .torrent_table #downvote {
     color: var(--c-off);}
 .tags {
+    font-style: italic;
+    font-size: 11px;
     white-space: normal;
+    /*white-space: normal;
     width: 100%;
     font-size: 0;
-    line-height: 0;
+    line-height: 0;*/
     /*visibility: hidden;*/
     /*line-height: var(--p-lh);*/}
 .tags a {
-    font-size: 12px;
-    line-height: 1em;
+    color: var(--c-tags);
+    /*font-size: 12px;
+    line-height: 1em;*/
     /*margin-top: calc(12px * var(--p-lh) - 16px);*/
-    display: inline-block;
+    /*display: inline-block;*/
     /*padding: 2px;*/
     /*background-color: var(--c-tag);*/
-    color: var(--c-text-s);
+    /*color: var(--c-text-s);*/
     /*visibility: visible;*/}
-.tags a:not(:last-child) {
+/*.tags a:not(:last-child) {
     margin-right: 6px;}
 tr:hover .tags a {
-    background-color: var(--c-tag);}
+    background-color: var(--c-tag);}*/
 #better tr.torrent.torrent_row:hover .tags a,
 #running_freeleech          tr:hover .tags a,
 #requests                   tr:hover .tags a,
@@ -3041,32 +3049,38 @@ tr:hover .tags a {
 #extlink_table              tr:hover .tags a,
 #top10                      tr:hover .tags a,
 table#requests_list         tr:hover .tags a {
-    background-color: var(--c-tag-2);}
+    /*background-color: var(--c-tag-2);*/}
 #wrapper #content .tags a:hover {
-    background-color: var(--c-anchor-hvr-bcg);
-    color: var(--c-anchor-hvr);}
+    /*background-color: var(--c-anchor-hvr-bcg);
+    color: var(--c-anchor-hvr);*/}
 
 .thin.torrent_history .tags {
-    color: var(--c-text-s);
+    /*color: var(--c-text-s);
     font-size: 12px;
-    line-height: var(--p-lh);}
+    line-height: var(--p-lh);*/}
+.rating_container {
+    color: var(--c-txt3);
+    display: inline-block;
+    margin: 1px 5px -3px 1px;
+    float: left;
+    font-size: 12px;}
 
-.rating_container:not(:last-of-type) {
+/*.rating_container:not(:last-of-type) {
     margin-right: 4px;}
 .rating_container:last-of-type {
-    margin-right: 8px;}
+    margin-right: 8px;}*/
 .tags_ratings {
-    display: flex;
-    flex-flow: row;}
+    /*display: flex;
+    flex-flow: row;*/}
 .rating_container {
-    opacity: .8;
+    /*opacity: .8;
     height: 100%;
     padding: 0 2px;
     font-size: 13px;
-    line-height: var(--p-lh);}
+    line-height: var(--p-lh);*/}
 .rating_container:hover {
-    opacity: 1;
-    background-color: var(--c-box);}
+    /*opacity: 1;*/
+    background-color: var(--c-rating-hvr);}
 pre,
 #reportsv2 h2,
 form[name="filter"] {
@@ -3096,7 +3110,7 @@ td.label {
 .requests_outer_table td.label,
 .filter_torrents td.label,
 #torrents .thin >h2:first-child +.center td.label {
-    padding: 5px 5px 8px 5px;}
+    /*padding: 5px 5px 8px 5px;*/}
 
 /* #searchforum input[type="search"],
 #searchthread input[type="search"], */
@@ -3110,15 +3124,24 @@ input[type="text"],
 input[type="url"],
 .select2-container .select2-selection--single,
 select {
-    border-radius: 0;
-    border: 1px solid var(--c-input-brdr);
-    background-color: var(--c-input);
-    height: 26px;
+    color: #8a8a8a;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     -webkit-box-shadow: var(--p-input-shdw);
     box-shadow: var(--p-input-shdw);
-    color: unset; /*var(--c-low);*/
-    font-size: 14px;
-    font-family: OpenSans, Sans-Serif;}
+    background-color: var(--c-i-focus);
+    font-size: 13px;
+    height: 24px;
+    line-height: 22px;
+    /*border-radius: 0;*/
+    /*border: 1px solid var(--c-input-brdr);
+    background-color: var(--c-input);*/
+    /*height: 26px;*/
+    /*-webkit-box-shadow: var(--p-input-shdw);
+    box-shadow: var(--p-input-shdw);*/
+    /*color: unset; *//*var(--c-low);*/
+    /*font-size: 14px;*/
+    /*font-family: OpenSans, Sans-Serif;*/}
 
 .select2-container .select2-selection--single,
 select {
@@ -3126,40 +3149,40 @@ select {
 .select2-container--default .select2-results__group,
 .select2-container--default .select2-selection--single .select2-selection__rendered,
 .select2-container .select2-selection--single {
-    color: var(--c-txt);}
+    /*color: var(--c-txt);*/}
 .select2-container .select2-selection--single {
-    outline: 0;}
+    /*outline: 0;*/}
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 22px;}
+    /*line-height: 22px;*/}
 .select2-container .select2-selection--single .select2-selection__rendered {
-    padding-left: 7px;
-    padding-right: 23px;}
+    /*padding-left: 7px;
+    padding-right: 23px;*/}
 .select2-container[dir="rtl"] .select2-selection--single .select2-selection__rendered {
-    padding-right: 7px;
-    padding-left: 23px;}
+    /*padding-right: 7px;
+    padding-left: 23px;*/}
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 22px;
-    width: 22px;}
+    /*height: 22px;
+    width: 22px;*/}
 .select2-container--default .select2-results__group {
-    line-height: 28px;
+    /*line-height: 28px;
     background-color: var(--c-edition);
-    padding: 0 5px;}
+    padding: 0 5px;*/}
 .select2-dropdown {
-    background-color: var(--c-tgroup);
+    /*background-color: var(--c-tgroup);
     border: 1px solid var(--c-b1);
-    border-radius: 0;}
+    border-radius: 0;*/}
 .select2-results__option {
-    padding: 0 0 0 10px;}
+    /*padding: 0 0 0 10px;*/}
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border: none;
+    /*border: none;
     height: 100%;
     width: 100%;
     left: unset;
     bottom: unset;
     right: 0;
     top: 0;
-    margin: 0;}
+    margin: 0;*/}
 
 
 /* #searchforum input[type="search"],
@@ -3172,15 +3195,19 @@ input[type="number"],
 input[type="text"],
 #wrapper .select2-container--default .select2-selection--multiple,
 input[type="url"] {
-    padding: 0 4px;}
+    padding: 0 5px;}
 /* #searchforum input[type="search"],
 #searchthread input[type="search"] */
 input[type="search"] {
     /* height: 26px; */}
 input[type="search"]:focus {
-    color: var(--c-low) !important;
+    /*color: var(--c-txt1);*/
+    background-color: var(--c-i-focus);
+    -webkit-box-shadow: 0 0 5px var(--c-s-focus);
+    box-shadow: 0 0 5px var(--c-s-focus);
+    /*color: var(--c-low) !important;
     border-color: var(--c-b1) !important;
-    outline: none !important;}
+    outline: none !important;*/} /*** mark 2 ***/
 
 select {
     -webkit-appearance: none;

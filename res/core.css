@@ -4,6 +4,7 @@
     --c-i-focus:                            #ffffff;
     --c-i-bcg:                              #f0f0f0;
     --c-txt1:                               #000000;
+    --c-txt3:                               #323232;
     --c-txt2:                               #8a8a8a;
     --c-minor:                              #7a7a7a;
     --c-anchor:                             #255c7c;
@@ -14,6 +15,8 @@
     --c-graph-shdw:                         rgba(153, 153, 153, 0.5);
     --c-box:                                #ffffff;
     --p-head-grdnt:                         #94a6b1;
+    --c-tags:                               #2a4f65;
+    --c-rating-hvr:                         rgba(255,255,255,0.2);
     
     --c-r01:                                #ff0000;
     --c-r02:                                #ff1300;
@@ -354,7 +357,7 @@ select {
     font-family: Lato, Sans-Serif;}
 
 #searchbars input {
-    color: #8a8a8a;
+    /*color: #8a8a8a;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-shadow: var(--p-input-shdw);
@@ -362,8 +365,8 @@ select {
     background-color: var(--c-i-focus);
     font-size: 13px;
     height: 24px;
-    line-height: 22px;
-    padding: 0 5px;
+    line-height: 22px;*/
+    /*padding: 0 5px;*/
     position: relative;
     width: 100%;}
 #searchbars li:not(:last-child) {
@@ -373,6 +376,7 @@ textarea:focus,
 select:focus,
 input:focus,
 #searchbars input:focus {
-    background-color: var(--c-i-focus);
+    color: var(--c-txt1);
+    /*background-color: var(--c-i-focus);
     -webkit-box-shadow: 0 0 5px var(--c-s-focus);
-    box-shadow: 0 0 5px var(--c-s-focus);}
+    box-shadow: 0 0 5px var(--c-s-focus);*/}
