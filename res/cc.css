@@ -555,6 +555,10 @@ tr.unreadpm td:first-child:after {
     position: relative;
     width: 100%;}*/
 
+#searchbars input:focus {
+    -webkit-box-shadow: 0 0 52px var(--c-s-focus);
+    box-shadow: 0 0 5px var(--c-s-focus);}
+
 .autocomplete_list {
     background: var(--c-box);
     border: 1px solid var(--c-main-brdr);
@@ -3124,7 +3128,16 @@ input[type="text"],
 input[type="url"],
 .select2-container .select2-selection--single,
 select {
-    color: #8a8a8a;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid var(--c-border1);
+    background-color: var(--c-i-bcg);
+    height: 26px;
+    color: var(--c-txt2);
+    font-size: 13px;
+    font-family: Lato, Sans-Serif;
+    
+    /*color: #8a8a8a;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-shadow: var(--p-input-shdw);
@@ -3132,7 +3145,8 @@ select {
     background-color: var(--c-i-focus);
     font-size: 13px;
     height: 24px;
-    line-height: 22px;
+    line-height: 22px;*/
+    
     /*border-radius: 0;*/
     /*border: 1px solid var(--c-input-brdr);
     background-color: var(--c-input);*/
@@ -3202,9 +3216,9 @@ input[type="search"] {
     /* height: 26px; */}
 input[type="search"]:focus {
     /*color: var(--c-txt1);*/
-    background-color: var(--c-i-focus);
+    /*background-color: var(--c-i-focus);
     -webkit-box-shadow: 0 0 5px var(--c-s-focus);
-    box-shadow: 0 0 5px var(--c-s-focus);
+    box-shadow: 0 0 5px var(--c-s-focus);*/
     /*color: var(--c-low) !important;
     border-color: var(--c-b1) !important;
     outline: none !important;*/} /*** mark 2 ***/
@@ -3264,10 +3278,10 @@ input[type="url"]:focus,
 #searchthread input[type="search"]:focus */
 input[type="search"]:hover,
 input[type="search"]:focus {
-    background-color: var(--c-input-focus);}
+    background-color: var(--c-i-focus);}
 .select2-results__option:nth-child(even),
 select >option:nth-child(even) {
-    background-color: var(--c-edition);}
+    /*background-color: var(--c-edition);*/}
 #wrapper #trading_panel .message_box textarea:focus,
 textarea:focus,
 select:focus,
@@ -3275,8 +3289,10 @@ select:focus,
 input:focus,
 #wrapper #trading_panel .gold_trade input#my_gold_trade_amount:focus,
 #wrapper .select2-container--default .select2-selection--multiple[aria-expanded="true"] {
-    color: var(--c-low);
-    border-color: var(--c-b1);
+    color: var(--c-txt1);
+    background-color: var(--c-i-focus);
+    -webkit-box-shadow: 0 0 2px var(--c-s-focus);
+    box-shadow: 0 0 2px var(--c-s-focus);
     outline: none;}
 .select2-container--open .select2-dropdown--below {
     border-color: var(--c-b1);}
@@ -3324,7 +3340,7 @@ table#otherop.hidden ~table.otheroptoggle a,
 .filelist_title a.brackets {
     font-size: 14px;
     line-height: 14px;
-    font-family: OpenSans, Sans-Serif !important;
+    font-family: Lato, Sans-Serif !important; /*** mark 3 ***/
     font-weight: 400;
     cursor: pointer;
     outline: 0;
@@ -4629,7 +4645,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowa,
 #user .thin >h3:first-child +.linkbox +form ~.box.pad.center tr:not(.colhead):nth-child(odd),
 #clan_stats >div:not(.clan_stat_totals) tr:not(.colhead):nth-child(odd),
 #collages tr:not(.colhead):nth-child(odd),
-#searchbars input:focus,
+/*#searchbars input:focus,*/
 .torrent_table tr.group_torrent:hover,
 .userreviews tr:nth-child(odd),
 .requests_outer_table #otherop tr:nth-child(odd),

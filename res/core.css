@@ -347,36 +347,40 @@ div#logo {
 
 input,
 select {
-    outline: none;
+    /*outline: none;
     border-radius: 3px;
     border: 1px solid var(--c-border1);
     background-color: var(--c-i-bcg);
-    /*height: 26px;
-    color: unset;*/
+    
+    height: 26px;
+    color: unset;
+    
     font-size: 13px;
-    font-family: Lato, Sans-Serif;}
+    font-family: Lato, Sans-Serif;*/}
 
 #searchbars input {
     /*color: #8a8a8a;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-shadow: var(--p-input-shdw);
-    box-shadow: var(--p-input-shdw);
+    box-shadow: var(--p-input-shdw);*/
     background-color: var(--c-i-focus);
     font-size: 13px;
     height: 24px;
-    line-height: 22px;*/
+    line-height: 22px;
     /*padding: 0 5px;*/
     position: relative;
     width: 100%;}
 #searchbars li:not(:last-child) {
     margin-right: 10px;}
 
-textarea:focus,
+/*textarea:focus,
 select:focus,
-input:focus,
+input:focus,*/
 #searchbars input:focus {
-    color: var(--c-txt1);
-    /*background-color: var(--c-i-focus);
+    /*-webkit-box-shadow: 0 0 52px var(--c-s-focus);
+    box-shadow: 0 0 5px var(--c-s-focus);*/
+    /*color: var(--c-txt1);
+    background-color: var(--c-i-focus);
     -webkit-box-shadow: 0 0 5px var(--c-s-focus);
     box-shadow: 0 0 5px var(--c-s-focus);*/}
