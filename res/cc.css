@@ -3345,14 +3345,15 @@ table#otherop.hidden ~table.otheroptoggle a,
     cursor: pointer;
     outline: 0;
     padding: 5px 10px;
-    color: var(--c-txt);
-    text-shadow: 1px 1px 1px var(--c-body);
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);
-    border: 1px solid var(--c-main-brdr);
-    background: var(--p-btn);
+    color: var(--c-btn-txt);
+    text-shadow: 1px 1px 1px var(--c-btn-txt-shdw);
+    /*-webkit-box-shadow: var(--p-header-shdw);
+    box-shadow: var(--p-header-shdw);*/
+    border: 0;
+    background: var(--p-btn-bcg);
     background-size: 200% auto !important;
-    display: inline-block;}
+    display: inline-block;
+    border-radius: 3px;}
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button span {
     line-height: 14px !important;}
 #artist #torrent_table .group_torrent td[colspan="2"],
@@ -3488,8 +3489,9 @@ a[href^="javascript:Vote("] strong:hover,
 .box.box_coltags .head span[title="Add Tags"] a:hover,
 .torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"]:hover,
 .filelist_title a.brackets:hover {
-    color: var(--c-low);
-    background: var(--p-btn-hvr);}
+    text-shadow: 1px 1px 1px var(--c-btn-txt-shdw-hvr);
+    color: var(--c-btn-txt-hvr);
+    background: var(--c-btn-bcg-hvr);}
 button:active,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button:active,
 #wrapper #trading_panel button:active,
@@ -3508,7 +3510,7 @@ a[href^="javascript:Vote("] strong:active,
 .box.box_coltags .head span[title="Add Tags"] a:active,
 .torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"]:active,
 .filelist_title a.brackets:active {
-    background: var(--p-btn-act);}
+    /*background: var(--p-btn-act);*/}
 
 .filter_torrents .submit {
     text-align: right;}
