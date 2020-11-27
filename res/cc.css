@@ -3344,7 +3344,7 @@ table#otherop.hidden ~table.otheroptoggle a,
     font-weight: 400;
     cursor: pointer;
     outline: 0;
-    padding: 5px 10px;
+    padding: 5px 8px;
     color: var(--c-btn-txt);
     text-shadow: 1px 1px 1px var(--c-btn-txt-shdw);
     /*-webkit-box-shadow: var(--p-header-shdw);
@@ -3421,7 +3421,7 @@ h2#username span#tip_user,
 #torrent_table .group/*.discog*/ td span[style="float:right;"] /* bookmark icon */
 /* /image container size correction */ {
     font-size: 0;
-    line-height: 0;}
+    line-height: 0;} /*** mark 4 ***/
 /*span.username_badges {
     display: inline-block;
     vertical-align: text-bottom;}*/
@@ -3435,26 +3435,26 @@ table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"]
     display: inline-block;
     vertical-align: bottom;}
 .box_tags .stats.nobullet div a:nth-child(1) {
-    margin-right: 3px;}
+    /*margin-right: 3px;*/}
 .box_tags .stats.nobullet div a:nth-child(2) {
-    margin-left: 4px;}
+    /*margin-left: 4px;*/}
 .box_tags .stats.nobullet div a:nth-child(3) {
-    margin-left: 5px;}
+    /*margin-left: 5px;*/}
 .box_tags .stats.nobullet div {
-    display: flex !important;
+    /*display: flex !important;
     min-width: 80px;
     justify-content: space-between;
-    flex-flow: wrap;}
+    flex-flow: wrap;*/}
 .box_tags .stats.nobullet {
-    margin-top: 0;
-    line-height: 26px;}
+    /*margin-top: 0;
+    line-height: 26px;*/}
 .box_tags .head {
-    margin-bottom: 10px;}
+    /*margin-bottom: 10px;*/}
 .box_tags .stats.nobullet li {
-    margin-bottom: 2px;}
+    /*margin-bottom: 2px;*/}
 .box_tags .stats.nobullet li >a {
-    line-height: 20px;
-    margin: 3px 0;}
+    /*line-height: 20px;
+    margin: 3px 0;*/}
 #image_block >a[onclick]:before,
 #image_block a,
 #newthreadform #newthreadtext #answer_block a,
@@ -3464,13 +3464,13 @@ a[href^="javascript:Vote("] strong:before,
 #torrents #requests.request_table #requests_list .requestrows a.brackets:before,
 .box_tags .stats.nobullet div a:before,
 .box.box_coltags .head span[title="Add Tags"] a:before {
-    font-size: 18px;
-    line-height: 14px;}
+    /*font-size: 18px;
+    line-height: 14px;*/}
 .box_tags .stats.nobullet div a:nth-child(2):before {
-    padding-right: 1px;}
+    /*padding-right: 1px;*/}
 #torrents #requests.request_table #requests_list .requestrows a.brackets,
 .similar_votes a[onclick] {
-    font-size: 18px;}
+    /*font-size: 18px;*/}
 button:hover,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button:hover,
 #wrapper #trading_panel button:hover,
@@ -3510,6 +3510,7 @@ a[href^="javascript:Vote("] strong:active,
 .box.box_coltags .head span[title="Add Tags"] a:active,
 .torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"]:active,
 .filelist_title a.brackets:active {
+    text-shadow: none;
     /*background: var(--p-btn-act);*/}
 
 .filter_torrents .submit {
@@ -3533,10 +3534,10 @@ a#toggle_css_gallery,
 #user .box.box_gold #box_gold_scrollbar+ul.stats.nobullet a.tooltip,
 table#otherop.hidden ~table.otheroptoggle a,
 .torrent_table tr.pad td >.linkbox a:not([href*="?action="]) {
-    position: relative;
+    /*position: relative;
     font-size: 0;
     line-height: 0;
-    background: linear-gradient(to bottom, var(--c-tgroup) 0%, var(--c-body) 100%);
+    background: linear-gradient(to bottom, var(--c-tgroup) 0%, var(--c-body) 100%);*/
     /*margin-right: 5px;
     line-height: 19px;
     margin-top: 3px;*/}
@@ -3551,53 +3552,53 @@ button.alertable-cancel,
 #wrapper [type="button"][value="Cancel"],
 #adventure_search .flright a[onclick],
 #shop_search .flright a[onclick] {
-    background: linear-gradient(to bottom, var(--c-tgroup) 0%, var(--c-body) 100%);}
+    /*background: linear-gradient(to bottom, var(--c-tgroup) 0%, var(--c-body) 100%);*/}
 
 .torrent_table tr.pad td >.linkbox a:before {
-    background: none;}
+    /*background: none;*/}
 .torrent_table tr.pad td >.linkbox a[onclick^="show_peers"]:before {
-    content: 'View Peerlist';}
+    /*content: 'View Peerlist';*/}
 .torrent_table tr.pad td >.linkbox a[onclick^="show_downloads"]:before {
-    content: 'View Downloadlist';}
+    /*content: 'View Downloadlist';*/}
 .torrent_table tr.pad td >.linkbox a[onclick^="show_snatches"]:before {
-    content: 'View Snatchlist';}
+    /*content: 'View Snatchlist';*/}
 .torrent_table tr.pad td >.linkbox a[onclick^="show_files"]:before {
-    content: 'View Filelist';}
+    /*content: 'View Filelist';*/}
 /*.torrent_table tr.pad td >.linkbox a[onclick^="show_history"]:before {
     content: 'View History';}*/
 .torrent_table tr.pad td >.linkbox a[onclick^="show_reported"]:before {
-    color: var(--c-red);
-    content: 'View Report Information';}
+    /*color: var(--c-red);
+    content: 'View Report Information';*/}
 /*.torrent_table tr.pad td >.linkbox a[onclick^="show_downloads"]:before {
     content: 'View Downloadlist';}*/
 .torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"]:before {
-    content: 'Revert to this revision';}
+    /*content: 'Revert to this revision';*/}
 
 .torrent_table tr.pad td >.linkbox a {
     margin-bottom: 5px;}
 
 #user #userform #platcheckbox +a:before {
-    content: 'Hide';}
+    /*content: 'Hide';*/}
 a#tag_show\/hide:before,
 #user #userform #platcheckbox[style="display: none;"] +a:before {
-    content: 'View';}
+    /*content: 'View';*/}
 a#toggle_css_gallery:before {
-    content: 'Show gallery';}
+    /*content: 'Show gallery';*/}
 table#otherop.hidden ~table.otheroptoggle a:before {
-    content: 'Hide Other Options';}
+    /*content: 'Hide Other Options';*/}
 table#otherop.hidden:not([style="display: table;"]) ~table.otheroptoggle a:before {
-    content: 'View Other Options';}
+    /*content: 'View Other Options';*/}
 #user .box.box_gold #box_gold_scrollbar+ul.stats.nobullet a.tooltip:before {
-    content: 'Gold History';}
+    /*content: 'Gold History';*/}
 .forum_latest .search #cat_list a[onclick]:after,
 .filter_torrents.advanced #platdropdown .flright:after {
-    content: 'View More';}
+    /*content: 'View More';*/}
 #taglist:not(.hidden) ~table a.toggle_tags:before {
-    content: 'Hide Tags';}
+    /*content: 'Hide Tags';*/}
 #taglist.hidden ~table a.toggle_tags:before {
-    content: 'View Tags';}
+    /*content: 'View Tags';*/}
 .filter_torrents.advanced #platcheckbox .flright:after {
-    content: 'View Less';}
+    /*content: 'View Less';*/}
 .forum_latest .search #cat_list a[onclick]:after,
 #wrapper #content .torrent_table tr.pad td >.linkbox a:before,
 table#otherop.hidden ~table.otheroptoggle a:before,
@@ -3609,8 +3610,8 @@ a#toggle_css_gallery:before,
 #user #userform #platcheckbox +a:before,
 a#tag_show\/hide:before,
 .filter_torrents.advanced .flright:after {
-    font-size: 14px;
-    line-height: 1em;}
+    /*font-size: 14px;
+    line-height: 1em;*/}
 body /*#reviewrow a*/#expand_review:hover,
 body /*#reviewrow a*/#load_edit_review:hover,
 body #load_edit_review_dialog:hover,
@@ -3632,8 +3633,8 @@ a#toggle_css_gallery:hover,
 a#tag_show\/hide:hover,
 #user #userform #platcheckbox +a:hover,
 .filter_torrents.advanced .flright:hover {
-    color: var(--c-low);
-    background: linear-gradient(to bottom, var(--c-tgroup) 0%, var(--c-box) 100%);}
+    /*color: var(--c-low);
+    background: linear-gradient(to bottom, var(--c-tgroup) 0%, var(--c-box) 100%);*/}
 body /*#reviewrow a*/#expand_review:active,
 body /*#reviewrow a*/#load_edit_review:active,
 body #load_edit_review_dialog:active,
@@ -3655,7 +3656,7 @@ a.toggle_tags:active,
 a#tag_show\/hide:active,
 #user #userform #platcheckbox +a:active,
 .filter_torrents.advanced .flright:active {
-    background: linear-gradient(to bottom, var(--c-row-hvr) 0%, var(--c-box) 100%);}
+    /*background: linear-gradient(to bottom, var(--c-row-hvr) 0%, var(--c-box) 100%);*/}
 #slides >ul.nobullet,
 #user #content >span[style="float: right;"]:first-child /*sharescore*/{
     margin-top: 3px;}
@@ -3664,8 +3665,8 @@ a#tag_show\/hide:active,
 .torrent_notifications table.border .colhead strong,
 #forums #forum_search_cat_list td.forum_cat strong,
 #platcheckbox td[colspan="5"] strong {
-    color: var(--c-txt);
-    font-weight: 600;}
+    /*color: var(--c-txt);
+    font-weight: 600;*/}
 [type="button"][value="Preview"],
 [type="button"][value="Editor"],
 #wrapper [type="button"][value="Cancel"],
@@ -3766,23 +3767,23 @@ body:not(#upload) #artist_tr + tr td.label,
 /* #requests table#requests_list tr:not(.colhead_dark) td:not(first-child),
 #torrents .torrent_notifications table.border tr:not(.colhead) td, */
 .filter_torrents.advanced td[colspan="7"] {
-    color: var(--c-text-s);}
+    /*color: var(--c-text-s);*/}
 .torrent_details .torrent_table tr.pad tr td,
 .filter_torrents.advanced label {
-    color: var(--c-txt);}
+    /*color: var(--c-txt);*/}
 
 .sidebar .box.box_badges,
 .sidebar .box_albumart {
     padding-bottom: 0;}
 
 .linkbox {
-    margin-bottom: 5px;
+    margin-bottom: 11px;
     padding: 5px;
     text-align: center;
     width: 100%;}
 #pageslinksdiv .invisible a,
 .linkbox .selected a {
-    color: var(--c-txt) !important;
+    color: var(--c-txt1) !important;
     pointer-events: none;}
 #wiki .thin >.center >form:first-child .label strong,
 #user h2 +form#userform td.label strong,
@@ -3820,13 +3821,13 @@ body:not(#upload) #artist_tr + tr td.label,
 #torrents .torrent_notifications .noticon +td >strong,
 #torrents #content >#newlink td strong,
 #collections table#edit_collage td.label strong {
-    font-weight: normal;}
+    /*font-weight: normal;*/}
 
 .torrent_details .torrent_table >tbody >.colhead_dark td:nth-child(1):after,
 .torrent_details .torrent_table >tbody >.colhead_dark td:nth-child(1):before {
     position: absolute;
     content: '';
-    width: 983px; /* can't think of another way */
+    width: 983px; /* can't think of another way */ /*** mark 5 ***/
     height: 100%;
     opacity: 0;
     top: 0;
@@ -3867,22 +3868,30 @@ body:not(#upload) #artist_tr + tr td.label,
 #wiki .thin >.center >form:first-child .label {
     width: 71px;}
 
+.box.screenshots_div .body {
+    padding: 0;}
 .screenshots {
     display: flex;
     flex-flow: wrap;
-    margin-bottom: -10px;}
+    /*margin-bottom: -10px;*/}
 .screenshots a {
-    width: calc(25% - (30px / 4));
-    margin: 0 10px 10px 0;
+    border: 1px solid var(--c-brdr1);
+    width: 25%;
+    margin: 0;
+    padding: 5px;
     align-self: center;
     cursor: default;}
+.screenshots a:nth-child(n+5) {
+    border-top: 0;}
+.screenshots a:not(:nth-child(4n+1)) {
+    border-left: 0;}
 #css_gallery .preview_wrapper:nth-child(4n),
-.screenshots a:nth-child(4n) {
+/*.screenshots a:nth-child(4n)*/ {
     margin-right: 0;}
 #css_gallery .preview_image,
 .screenshots img {
     max-width: 100% !important;
-    border: 3px solid var(--c-main-brdr);}
+    /*border: 3px solid var(--c-main-brdr);*/} /*** mark 6 ***/
 
 .trailer_div .head {
     margin: -10px -10px 10px -10px;}

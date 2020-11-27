@@ -1,7 +1,7 @@
 ﻿:root {
     --c-s-focus:                            #007eff;
     --c-border1:                            #e5e5e5;
-    --c-i-focus:                            #ffffff;
+    --c-i-focus:                            #fafafa;
     --c-i-bcg:                              #f0f0f0;
     --c-txt1:                               #000000;
     --c-txt3:                               #323232;
@@ -17,6 +17,8 @@
     --p-head-grdnt:                         #94a6b1;
     --c-tags:                               #2a4f65;
     --c-rating-hvr:                         rgba(255, 255, 255, .2);
+    --c-brdr1:                              #DBDBDB;
+    
     --p-btn-bcg:                            #255c7c;
     --c-btn-txt:                            #ffffff;
     --c-btn-txt-shdw:                       rgba(0, 0, 0, .5);
