@@ -3913,8 +3913,8 @@ body:not(#upload) #artist_tr + tr td.label,
     padding: 0;}
 
 .bbbutt {
-    background-color: var(--c-input-obj);
-    border: 3px solid var(--c-main-brdr);
+    background-color: var(--c-bbbutt-bcg);
+    border: 2px solid var(--c-bbbutt-brdr);
     padding: 0 3px;
     margin: 5px auto;
     list-style: none;
@@ -3927,7 +3927,7 @@ body:not(#upload) #artist_tr + tr td.label,
 .bbbutt li {
     vertical-align: middle;
     display: inline-block;
-    margin: 3px 4px;
+    margin: 5px 4px;
     padding: 0;
     align-self: center;}
 .bbbutt li a {
@@ -4519,23 +4519,23 @@ textarea {
     transition: all .1s linear, height 0s;
     
     min-height: 47px; /*28px without webkit stuff*/
-    border: 1px solid var(--c-input-brdr);
-    background-color: var(--c-input);
-    -webkit-box-shadow: var(--p-input-shdw);
-    box-shadow: var(--p-input-shdw);
+    border: 2px solid var(--c-txtarea-brdr);
+    background-color: var(--c-txtarea-bcg);
+    /*-webkit-box-shadow: var(--p-input-shdw);
+    box-shadow: var(--p-input-shdw);*/
     font-size: 1em !important; /* widget override */
     line-height: var(--p-lh);
     resize: vertical;
     width: 100%;
-    color: var(--c-txt);
-    font-family: OpenSans, Sans-Serif !important; /* widget override */
-    padding: 3px 6px;
-    outline-offset: 0;
+    color: var(--c-txt1);
+    font-family: Lato, Sans-Serif !important; /* widget override */
+    padding: 3px 5px;
+    /*outline-offset: 0;*/
     margin-bottom: 8px !important;
-    outline: 0px solid var(--c-b1) !important;}
+    outline: none !important;}
 #wrapper #trading_panel .message_box textarea:focus,
 textarea:focus {
-    outline-width: 1px !important;}
+    /*outline-width: 1px !important;*/}
 
 .review_cell .flextable-cell:first-child img:not(.avatar),
 #css_gallery .preview_image,
@@ -4544,8 +4544,8 @@ img#authcode,
 .screenshots img,
 .gallery_row a,
 .sidebar img {
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    /*-webkit-box-shadow: var(--p-header-shdw);
+    box-shadow: var(--p-header-shdw);*/}
 /* #bookmarks #collage_table td img:hover, - outdated bookmarks */
 button:hover,
 .timeline-nav-button:hover,
@@ -4589,14 +4589,15 @@ a[href^="javascript:Vote("] strong:hover,
 #wrapper .calendar .calendar-day:hover,
 .filelist_title a.brackets:hover,
 .review_cell .flextable-cell:first-child img:not(.avatar):hover{
-    -webkit-box-shadow: none;
-    box-shadow: none;}
+    /*-webkit-box-shadow: none;
+    box-shadow: none;*/}
 
 .box.box_coltags .head span[title="Add Tags"] {
     padding: 0 !important;
     margin: -4px -5px 0 0;}
 
 #quickreplypreview  {
+    margin: -9px -10px -10px -10px !important;
     -webkit-box-shadow: var(--p-header-shdw) !important;
     box-shadow: var(--p-header-shdw) !important;}
 #quickreplybuttons {
@@ -4613,29 +4614,32 @@ a[href^="javascript:Vote("] strong:hover,
 #user .thin >h3:first-child,
 h2 {
     padding: 0;
-    margin: 0 0 12px 10px;
+    font-family: Whitney, Sans-Serif;
+    text-align: center;
+    margin: 0 0 12px 0;
     font-size: 21px;
     line-height: 21px;
     height: auto;
-    width: calc(100% - 10px);
+    width: 100%;
     font-weight: bold;}
 
 hr {
     opacity: .75;
     border-style: solid;
-    border-color: var(--c-text-s);}
+    border-color: var(--c-txt2);}
 
 #torrents #wrapper #content >span[style="float:right;"]:first-child {
     width: unset;}
 
 h3 {
-    padding: 0;
-    margin: 5px 0 12px 10px;
-    font-size: 17px;
+    font-family: Whitney, Sans-Serif;
+    /*padding: 0;*/
+    margin: 0px 0 10px 20px;
+    /*font-size: 17px;
     line-height: 17px;
     height: auto;
     width: calc(100% - 10px);
-    font-weight: bold;}
+    font-weight: bold;*/}
 
 #tools .thin >#recommended >.head.colhead_dark:first-child strong {
     font-weight: bold !important;}
@@ -4678,7 +4682,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowa,
 .thin.torrent_history >form#torrent_history_search ~table tr:not(.colhead):nth-child(odd),
 #wrapper .clan_stat_totals table.border tr:not(.colhead):not(:last-child):nth-child(odd) td:nth-child(-n+2),
 .clan_stat_totals table.border tr:not(.colhead):not(:last-child):nth-child(even) td:nth-last-child(-n+2) {
-    background-color: var(--c-box);}
+    background-color: var(--c-rowa);}
 .rowb,
 .row_b,
 #better .torrent_table tr.torrent.torrent_row:nth-child(even),
@@ -4710,7 +4714,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 .thin.torrent_history >form#torrent_history_search ~table tr:not(.colhead):nth-child(even),
 #wrapper .clan_stat_totals table.border tr:not(.colhead):not(:last-child):nth-child(even) td:nth-child(-n+2),
 .clan_stat_totals table.border tr:not(.colhead):not(:last-child):nth-child(odd) td:nth-last-child(-n+2) {
-    background-color: var(--c-trowb);}
+    background-color: var(--c-rowb);}
 
 /* hovers are located in desktop.css now */
 /*
@@ -4752,17 +4756,17 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 .torrent_table tr.pad div[id^="snatches_"] td:nth-child(2),
 .torrent_table tr.pad div[id^="downloads_"] td:nth-child(2),
 .clan_stat_totals table.border tr:not(.colhead):not(:last-child) td:nth-child(2) {
-	border-right: 1px solid var(--c-table-brdr);}
+	/*border-right: 1px solid var(--c-table-brdr);*/}
 
 .box_series li {
-    list-style: disc;
+    /*list-style: disc;
     margin-left: 20px;
-    color: var(--c-txt);}
+    color: var(--c-txt);*/}
 
 #torrents .torrent_details tr table {
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);
-	border: 1px solid var(--c-table-brdr);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+	border: 1px solid var(--c-brdr2);
     margin: 0 10px 15px 10px;
     width: calc(100% - 20px);}
 
@@ -4773,20 +4777,21 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
     -webkit-filter: none !important;
     filter: none !important;
     margin: 0 !important;
-    width: 36px;
-    height: 36px;
-    padding: 0 0 0 36px !important;}
+    width: 25px;
+    height: 25px;
+    padding: 0 0 0 25px !important;}
 #usersreviewimage {
-    width: 36px;}
+    width: 25px;}
 #reviewdate {
     width: -moz-fit-content;
     width: fit-content;
     display: block;
-    font-size: 12px;
+    font-size: .7em;
+    font-style: italic;
     line-height: var(--p-lh);
-    color: var(--c-text-s);}
+    /*color: var(--c-text2);*/}
 #reviewdate:hover {
-    color: var(--c-txt);}
+    /*color: var(--c-txt);*/}
 
 /* '#allreviewslink' shouldn't be inside of a review 'tr' */
 /*.box.userreviews_div {
@@ -4816,14 +4821,14 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
     table-layout: fixed;} /*115px=8%*/
 
 #requests tr.sticky {
-    background-color: var(--c-input-obj);}
+    /*background-color: var(--c-input-obj);*/}
 #requests_donate tr:nth-child(1) strong,
 #requests_donate tr:nth-child(1) a {
-    font-size: 14px;}
+    /*font-size: 14px;*/}
 #requests_donate tr:nth-child(1) a {
-    line-height: var(--p-lh);
+    /*line-height: var(--p-lh);
     font-weight: bold;
-    float: right;
+    float: right;*/
     /*line-height: var(--p-lh);
     font-weight: bold;
     margin-top: -5px;
@@ -4858,18 +4863,18 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 .forum_post .comment_rating {
     width: 100%;
     min-height: 25px;
-    margin-top: 10px;
-    padding: 5px 5px 3px 3px;
+    margin-top: 5px;
+    padding: 5px 0 2px 3px;
     overflow-y: auto;
     overflow-x: hidden;
-	border-top: 1px solid var(--c-table-brdr);
-    opacity: 0.65;}
+	border-top: 1px solid var(--c-brdr2);
+    opacity: 0.6;}
 .forum_post .comment_rating:hover {
     opacity: 1;}
 .forum_post .comment_rating .flleft {
-    margin: 1px 5px 0 0;
-    width: 36px;
-    height: 36px;
+    margin: 5px 5px 0 0;
+    width: 25px;
+    height: 25px;
     float: left;}
 /* #torrents #wrapper .torrent_notifications .noticon ~td >span.time,
 #requests table#requests_list span.time, */
@@ -4886,17 +4891,17 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #downloaded_table           tr:not(.colhead) td:nth-child(2) span:not(#groupplatform):not([style="float: right;"]),
 #extlink_table              tr:not(.colhead) td:nth-child(2) span:not(#groupplatform):not([style="float: right;"]) {
     margin: 0;
-    font-size: 13px;
+    /*font-size: 13px;*/
     line-height: var(--p-lh);}
 
 
 
 #groupplatform {
-    width: 34px;
+    /*width: 34px;
     height: 34px;
     position: absolute;
     left: -36px;
-    top: calc(50% - 17px);}
+    top: calc(50% - 17px);*/}
 #better .torrent_table td.center.collicon div:not(.cats_ost):not(.cats_ebooks):not(.cats_applications),
 #bookmarks td.center.collicon div:not(.cats_ost):not(.cats_ebooks):not(.cats_applications),
 #uploaded_table             td.center.cats_col div:not(.cats_ost):not(.cats_ebooks):not(.cats_applications),
@@ -4913,24 +4918,24 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #running_freeleech td.center.cats_col div:not(.cats_ost):not(.cats_ebooks):not(.cats_applications),
 #torrents .torrent_notifications .noticon div:not(.cats_ost):not(.cats_ebooks):not(.cats_applications),
 #torrents .thin.torrent_history >form#torrent_history_search ~table td.center.cats_col div:not(.cats_ost):not(.cats_ebooks):not(.cats_applications) {
-    background: none;}
+    /*background: none;*/}
 #bookmarks td.center.collicon {
-    width: 28px;}
+    /*width: 28px;*/}
 #groupplatform a {
-    width: 100%;
+    /*width: 100%;
     height: 100%;
     display: block;
     background-size: 28px 28px;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;*/}
 #requests .thin >table.border .colhead_dark {
     white-space: nowrap;}
 #wrapper h2 #groupplatform {
-    width: unset;
+    /*width: unset;
     height: unset;
     position: inherit;
     font-size: 21px;
-    line-height: 21px;}
+    line-height: 21px;*/}
 #users_reviews #groupplatform,
 #wiki #groupplatform,
 #wrapper .box.news_post #groupplatform,
@@ -4938,19 +4943,19 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #existing_freeleech_pots #groupplatform,
 #wrapper .box.box_artists #groupplatform,
 #manage_collage_table #groupplatform {
-    width: unset;
+    /*width: unset;
     height: unset;
     position: inherit;
     font-size: inherit;
     line-height: var(--p-lh);
     left: unset;
-    top: unset;}
+    top: unset;*/}
 #wrapper .box.box_requests #groupplatform {
-    width: unset;
+    /*width: unset;
     height: unset;
     position: inherit;
     font-size: 15px;
-    line-height: var(--p-lh);}
+    line-height: var(--p-lh);*/}
 #wrapper #users_reviews #groupplatform a,
 #wiki #groupplatform a,
 #wrapper .box.news_post #groupplatform a,
@@ -4959,22 +4964,22 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #wrapper .box.box_artists #groupplatform a,
 #manage_collage_table #groupplatform a,
 #wrapper h2 #groupplatform a {
-    background-image: none;
+    /*background-image: none;
     width: unset;
     height: unset;
-    display: inherit;}
+    display: inherit;*/}
 
 
 
 #torrents .torrent_notifications .noticon +td >strong +strong {
     font-weight: bold;}
 #torrents .torrent_notifications .noticon +td >strong +strong:not([class]) {    
-    color: var(--c-low);}
+    /*color: var(--c-low);*/}
 
 #requests .main_column >table:first-child {
-    position: relative;
+    /*position: relative;
     top: -19px;
-    margin-bottom: -4px;}
+    margin-bottom: -4px;*/}
 
 /** table padding with no container (this is horrible) **/
 #gazelleview table.gazelleinfo tr td:first-child,
@@ -4996,7 +5001,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #tools .thin >#recommended >.head.colhead_dark:first-child +form.pad tr td:first-child,
 
 #torrents .torrent_edit >.thin >form tr:not(.colhead) td:first-child {
-    padding-left: 10px;}
+    /*padding-left: 10px;*/}
 
 #gazelleview table.gazelleinfo tr td:last-child,
 #todo .thin >form tr:not(.colhead) td:last-child,
@@ -5016,7 +5021,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #tools .thin >#recommended >.head.colhead_dark:first-child +form.pad .colhead ~tr td:last-child,
 
 #torrents .torrent_edit >.thin >form tr:not(.colhead) td:last-child {
-    padding-right: 10px;}
+    /*padding-right: 10px;*/}
 
 #todo .thin >form tr:nth-child(2) td,
 #user .thin >h2 +form#userform >table.border .colhead_dark +tr td,
@@ -5035,7 +5040,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #friends .col_avatar.avatar ~td,
 
 #torrents .torrent_edit >.thin >form .colhead +tr td {
-    padding-top: 10px;}
+    /*padding-top: 10px;*/}
 
 #gazelleview table.gazelleinfo tr:last-child td,
 #todo .thin >form tr:last-child td,
@@ -5054,10 +5059,10 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #tools .thin >#recommended >.head.colhead_dark:first-child +form.pad tr:last-child td,
 
 #torrents .torrent_edit >.thin >form tr:not(.colhead):last-child td {
-    padding-bottom: 10px;}
+    /*padding-bottom: 10px;*/}
 
 #bookmarks table.layout td#drag_drop_textnote >ul {
-    padding: 10px 10px 10px 30px;}
+    /*padding: 10px 10px 10px 30px;*/}
 
 #user .thin >h2 +form#userform >table.border .colhead_dark +tr td.label,
 #reportsv2 #dynamic_form >table.border tr:last-child td,
@@ -5071,11 +5076,11 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 
 #upload #torrent_properties tr:nth-child(2) td.label,
 .thin >#request_form >table tr:nth-child(2) td.label {
-    padding-top: 13px;}
+    /*padding-top: 13px;*/}
 
 #tools .thin >#recommended >.head.colhead_dark:first-child +form.pad .colhead +tr td {
-    padding-top: 10px;
-    padding-bottom: 0;}
+    /*padding-top: 10px;
+    padding-bottom: 0;*/}
 
 /** convert ... to head **/
 #calendar #content >h2,
@@ -5119,18 +5124,18 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 form[name="filter"] h3,
 #request_comments #reply_box h3,
 #forums .linkbox.linkbox_bottom +br +h3 {
-    text-align: left;
+    /*text-align: left;
     width: 100%;
     font-weight: 600;
     background: var(--p-head-grdnt);
     font-size: var(--p-head) !important;
     line-height: var(--p-head);
     padding: 9px 10px;
-    margin: -10px -10px 10px -10px;}
+    margin: -10px -10px 10px -10px;*/}
 #staffpm .box.vertical_space ~h3 {
-    margin: 15px 0 0 0;}
+    /*margin: 15px 0 0 0;*/}
 #staff .thin >.box.pad >h3:first-of-type {
-    margin: -10px -10px 0 -10px;}
+    /*margin: -10px -10px 0 -10px;*/}
 #tools #mastergroups >h2,
 #allreviews >h1,
 #wrapper #gazelleview #titlerow p,
@@ -5140,33 +5145,33 @@ form[name="filter"] h3,
 #top10 .thin >.linkbox ~div:not(.center) >h3,
 #wrapper .gazelles_art_display:before,
 #collections .thin >#reply_box >h3 {
-    margin: 0;
-    width: calc(100% - 20px);}
+    /*margin: 0;
+    width: calc(100% - 20px);*/}
 #staff .thin >.box.pad >h3:first-of-type ~h3 {
-    font-weight: 600;
-    margin: 10px 0 8px 5px;}
+    /*font-weight: 600;
+    margin: 10px 0 8px 5px;*/}
 #wrapper #gazelleview #titlerow p:empty {
     height: 18px;}
 #calendar #content >h2,
 #torrents .torrent_edit >.thin >h2,
 #user .thin >.header:first-child ~h3 {
-    margin: 0;
+    /*margin: 0;
     position: relative;
     top: 1px;
     left: 1px;
-    width: calc(100% - 22px);}
+    width: calc(100% - 22px);*/}
 #artist .center.thin >h2 +.box.pad,
 #torrents .torrent_edit >.thin:first-of-type ~.thin >form,
 #user .thin >.header:first-child ~h3 +.box.pad:last-child {
-    margin-top: -36px;
-    padding-top: 46px;}
+    /*margin-top: -36px;
+    padding-top: 46px;*/}
 
 #artist .center.thin >h2 {
-    margin: 0;
+    /*margin: 0;
     width: calc(100% - 22px);
     left: 1px;
     top: 1px;
-    position: relative;}
+    position: relative;*/} /*** mark 7 ***/
 
 #newthreadform #newthreadtext #answer_block a,
 /*#image_block a,*/

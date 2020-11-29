@@ -7610,7 +7610,7 @@ a[onclick="BBCode.spoiler(this);"] {
 .calendar  span.event_end_time {
     white-space: normal;
     font-size: 11px;}
-#upcoming_calendar .event_li.tooltip {
+#upcoming_calendar .event_li[class*="tooltip"] {
     display: flex;
     flex-flow: column;
     position: relative;
