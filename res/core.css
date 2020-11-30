@@ -60,19 +60,19 @@
 @font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Regular.ttf');}
-@font-face {
+/*@font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Italic.ttf');
-    font-style: italic;}
+    font-style: italic;}*/
 @font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-Bold.ttf');
     font-weight: bold;}
-@font-face {
+/*@font-face {
     font-family: 'Lato';
     src: url('../fonts/Lato-BoldItalic.ttf');
     font-weight: bold;   
-    font-style: italic;}
+    font-style: italic;}*/
 
 /*@font-face {
     font-family: 'Domine';
@@ -381,6 +381,8 @@ select {
     box-sizing: border-box;
     -webkit-box-shadow: var(--p-input-shdw);
     box-shadow: var(--p-input-shdw);*/
+    text-align: center;
+    color: var(--c-txt2);
     background-color: var(--c-i-focus);
     font-size: 13px;
     height: 24px;

@@ -556,6 +556,7 @@ tr.unreadpm td:first-child:after {
     width: 100%;}*/
 
 #searchbars input:focus {
+    text-align: left;
     -webkit-box-shadow: 0 0 52px var(--c-s-focus);
     box-shadow: 0 0 5px var(--c-s-focus);}
 
@@ -3133,10 +3134,9 @@ select {
     border: 1px solid var(--c-border1);
     background-color: var(--c-i-bcg);
     height: 26px;
-    color: var(--c-txt2);
+    color: unset;
     font-size: 13px;
     font-family: Lato, Sans-Serif;
-    
     /*color: #8a8a8a;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -3156,6 +3156,28 @@ select {
     /*color: unset; *//*var(--c-low);*/
     /*font-size: 14px;*/
     /*font-family: OpenSans, Sans-Serif;*/}
+.select2-container--default .select2-search--dropdown .select2-search__field,
+input[type="search"],
+input[type="password"],
+input[type="number"],
+#wrapper #trading_panel .gold_trade input#my_gold_trade_amount,
+input[type="text"],
+#wrapper .select2-container--default .select2-selection--multiple,
+input[type="url"],
+.select2-container .select2-selection--single/*,
+select*/ {
+    font-style: italic;}
+.select2-container--default .select2-search--dropdown .select2-search__field:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+#wrapper #trading_panel .gold_trade input#my_gold_trade_amount:focus,
+input[type="text"]:focus,
+#wrapper .select2-container--default .select2-selection--multiple:focus,
+input[type="url"]:focus,
+.select2-container .select2-selection--single:focus,
+select:focus {
+    font-style: normal;}
 
 .select2-container .select2-selection--single,
 select {
@@ -3308,13 +3330,14 @@ ul#noty_bottomRight_layout_container img[title="Gold"] {
 button,
 .timeline-nav-button,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button,
-/*#reviewrow a*/#expand_review,
-/*#reviewrow a*/#load_edit_review,
+/*#expand_review,
+#load_edit_review,*/
 #load_edit_review_dialog,
 #wrapper #trading_panel button,
 .alertable button,
 input[type=button],
-input[type=submit],
+input[type=submit]/*,
+
 .forum_latest .search #cat_list a[onclick],
 .similar_votes a,
 .box_tags .stats.nobullet div a,
@@ -3337,7 +3360,7 @@ a#toggle_css_gallery,
 table#otherop.hidden ~table.otheroptoggle a,
 .torrent_table tr.pad td >.linkbox a:not([href*="?action="]),
 .torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"],
-.filelist_title a.brackets {
+.filelist_title a.brackets*/ {
     font-size: 14px;
     line-height: 14px;
     font-family: Lato, Sans-Serif !important; /*** mark 3 ***/
@@ -3476,7 +3499,8 @@ button:hover,
 #wrapper #trading_panel button:hover,
 .alertable button:hover,
 input[type=button]:hover,
-input[type=submit]:hover,
+input[type=submit]:hover/*,
+
 .similar_votes a:hover,
 a[href^="javascript:IndexVote("] strong:hover,
 a[href^="javascript:Vote("] strong:hover,
@@ -3488,7 +3512,7 @@ a[href^="javascript:Vote("] strong:hover,
 .box.box_coltags .pad li a:nth-child(n+2):hover,
 .box.box_coltags .head span[title="Add Tags"] a:hover,
 .torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"]:hover,
-.filelist_title a.brackets:hover {
+.filelist_title a.brackets:hover*/ {
     text-shadow: 1px 1px 1px var(--c-btn-txt-shdw-hvr);
     color: var(--c-btn-txt-hvr);
     background: var(--c-btn-bcg-hvr);}
@@ -3497,7 +3521,7 @@ button:active,
 #wrapper #trading_panel button:active,
 .alertable button:active,
 input[type=button]:active,
-input[type=submit]:active,
+input[type=submit]:active/*,
 .similar_votes a:active,
 a[href^="javascript:IndexVote("] strong:active,
 a[href^="javascript:Vote("] strong:active,
@@ -3509,7 +3533,7 @@ a[href^="javascript:Vote("] strong:active,
 .box.box_coltags .pad li a:nth-child(n+2):active,
 .box.box_coltags .head span[title="Add Tags"] a:active,
 .torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"]:active,
-.filelist_title a.brackets:active {
+.filelist_title a.brackets:active*/ {
     text-shadow: none;
     /*background: var(--p-btn-act);*/}
 
@@ -4072,15 +4096,15 @@ a[href^="javascript:Vote("] strong:before,
 .box_tags .stats.nobullet div a:nth-child(2):before,
 li:not(.suggested_similar) .similar_votes >a:nth-child(1):before,
 .box.box_coltags .head span[title="Add Tags"] a:before {
-    content: '+';}
+    /*content: '+';*/}
 #image_block >a[onclick]:nth-of-type(2):before,
 .box_tags .stats.nobullet div a:nth-child(1):before,
 li:not(.suggested_similar) .similar_votes >a:nth-child(2):before {
-    content: '-';}
+    /*content: '-';*/}
 .box_tags .stats.nobullet div a:nth-child(3):before {
-    font-size: 14px;
+    /*font-size: 14px;
     line-height: 14px;
-    content: 'X';}
+    content: 'X';*/}
 li:not(.suggested_similar) .similar_votes >span {
     order: 2;
     font-size: 16px;
@@ -12729,12 +12753,12 @@ div#fight_skill_points_assign >table {
     background-color: var(--c-main-brdr) !important;}
 
 
-::-webkit-input-placeholder     {color: var(--c-text-s) !important;}
-::-moz-placeholder              {color: var(--c-text-s) !important;}
-:-ms-input-placeholder          {color: var(--c-text-s) !important;}
-:-moz-placeholder               {color: var(--c-text-s) !important;}
+::-webkit-input-placeholder     {color: var(--c-text2) !important;}
+::-moz-placeholder              {color: var(--c-text2) !important;}
+:-ms-input-placeholder          {color: var(--c-text2) !important;}
+:-moz-placeholder               {color: var(--c-text2) !important;}
 
-::-moz-selection {
+/*::-moz-selection {
     text-shadow: none;
     color: var(--c-high-t);
     background-color: var(--c-selection);}
@@ -12747,24 +12771,24 @@ img::-moz-selection {
     background-color: var(--c-selection);}
 img::selection {
     color: var(--c-high-t);
-    background-color: var(--c-selection-i);}
+    background-color: var(--c-selection-i);}*/
 
 
 /** webkit scrollbar **/
-.xdsoft_time_box::-webkit-scrollbar-button {
+/*.xdsoft_time_box::-webkit-scrollbar-button {
     display: none !important;}
 .xdsoft_time_box::-webkit-scrollbar {
     height: 10px !important;
-    width: 10px !important;}
+    width: 10px !important;}*/
 
-::-webkit-scrollbar-button {
+/*::-webkit-scrollbar-button {
     display: none;}
 
 ::-webkit-scrollbar-button:end:increment,
 ::-webkit-scrollbar-button:start:decrement {
-    display: block;}
+    display: block;}*/
 
-::-webkit-scrollbar,
+/*::-webkit-scrollbar,
 ::-webkit-scrollbar-button {
 	border: 1px solid var(--c-tor-row-hvr);}
 
@@ -12821,9 +12845,9 @@ img::selection {
     background-color: var(--c-input-obj);}
 
 ::-webkit-scrollbar-button:hover {
-    background-color: var(--c-row-hvr);}
+    background-color: var(--c-row-hvr);}*/
 
-textarea {/* prevent resizer from disappearing */
+/*textarea {
     overflow-y: scroll;}
 
 ::-webkit-scrollbar-corner {
@@ -12832,7 +12856,7 @@ textarea {/* prevent resizer from disappearing */
     background-color: transparent;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;}*/
 /** /webkit scrollbar **/
 
 /**
@@ -12897,9 +12921,9 @@ table.diff.split_view tr:first-child td {
         margin-bottom: unset;}*/
     
     :root {
-        scrollbar-color: var(--c-b3) var(--c-input-obj);
-        scrollbar-height: 15px;
-        scrollbar-width: 15px;}
+        /*scrollbar-color: var(--c-b3) var(--c-input-obj);*/
+        /*scrollbar-height: 15px;
+        scrollbar-width: 15px;*/}
     html * {
         scrollbar-width: thin;}
     
