@@ -716,7 +716,7 @@ img[alt="Warned"] {
     background-repeat: no-repeat;
     background-position: center;}
 
-a[onclick="BBCode.spoiler(this);"],
+#wrapper a[onclick="BBCode.spoiler(this);"],
 #inbox .box.vertical_space .head a[onclick],
 .forum_post .colhead_dark a[onclick],
 #quickreplypreview .colhead_dark #barpreview >a,
@@ -1224,6 +1224,7 @@ td.sign img,
 input,
 select,
 button,
+#wrapper a[onclick="BBCode.spoiler(this);"],
 textarea,
 .alertable button,
 input[type=button],
@@ -1545,6 +1546,7 @@ th[aria-disabled="false"]:active,
 .edition_info:active:before,
 .edition_info:active +td:before,
 button:active,
+#wrapper a[onclick="BBCode.spoiler(this);"]:active,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button:active,
 .alertable button:active,
 input[type=button]:active,
@@ -1747,6 +1749,7 @@ img[style^="max-height: 64px; transition: all 0.5s ease-in-out"],
 .timeline-nav-button:disabled,
 input:disabled,
 button:disabled,
+#wrapper a[onclick="BBCode.spoiler(this);"]:disabled,
 input.disabled,
 input[disabled] {
 	cursor: default;
@@ -3333,6 +3336,7 @@ ul#noty_bottomRight_layout_container img[title="Gold"] {
     vertical-align: text-top;}
 
 button,
+#wrapper a[onclick="BBCode.spoiler(this);"],
 .timeline-nav-button,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button,
 /*#expand_review,
@@ -3500,6 +3504,7 @@ a[href^="javascript:Vote("] strong:before,
 .similar_votes a[onclick] {
     /*font-size: 18px;*/}
 button:hover,
+#wrapper a[onclick="BBCode.spoiler(this);"]:hover,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button:hover,
 #wrapper #trading_panel button:hover,
 .alertable button:hover,
@@ -3522,6 +3527,7 @@ a[href^="javascript:Vote("] strong:hover,
     color: var(--c-btn-txt-hvr);
     background: var(--c-btn-bcg-hvr);}
 button:active,
+#wrapper a[onclick="BBCode.spoiler(this);"]:active,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button:active,
 #wrapper #trading_panel button:active,
 .alertable button:active,
@@ -4334,6 +4340,7 @@ li:not(.suggested_similar) .similar_votes >span {
 .forum_post .colhead_dark div[style="float: right;"] >a,
 #newthreadpreview .forum_post .colhead_dark #barpreview a,
 #user .thin >h2 ~form[method="post"] >input[value="notify_handle"]:first-child ~table input[type="button"],
+#wrapper a[onclick="BBCode.spoiler(this);"],
 #collections table#new_collage input#art +input[type="button"],
 .thin.torrent_history >form#torrent_history_search input[type="submit"],
 .box.pad.box_add_freeleech input[type="submit"],
@@ -5733,17 +5740,17 @@ form#drag_drop_collage_form .drag_drop_save:first-child {
 #reports .thin >h3,
 #reportsv2 #report_table >h3,
 #forums .linkbox.linkbox_bottom +br +h3 {
-    width: 100%;
+    /*width: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: 9;} /*** mark 8 ***/
+    z-index: 9;*/} /*** mark 8 ***/
 #inbox .box.vertical_space +h2 +form,
 #inbox #messageform +h2 +form,
 #inbox h2 +#messageform,
 #reports .thin >.box.pad,
 #forums #reply_box,
 #reportsv2 #report_table >.box.pad {
-    margin-top: -37px;}
+    /*margin-top: -37px;*/}
 #reportsv2 #report_table >.box.pad,
 #reports .thin >.box.pad:first-of-type,
 #requests .main_column >table:first-child tr:first-child td,
@@ -5753,29 +5760,29 @@ form#drag_drop_collage_form .drag_drop_save:first-child {
 #user .thin >h2 ~form[method="post"],
 #staffpm .box.vertical_space ~h3 +.box.pad,
 #gazelleview table.gazelleinfo tr:first-child td {
-    padding-top: 46px;}
+    /*padding-top: 46px;*/}
 #gazelles .thin >h2:first-child +.box.pad table,
 #wiki .center.thin >.box.pad input[type="text"],
 #wiki .center.thin >.box.pad textarea,
 #user input#park_message,
 #forums #reply_box #quickpost {
-    width: 100% !important;}
+    /*width: 100% !important;*/}
 
 #wiki .center.thin >.box.pad form h3 {
-    margin: 10px 0 8px 5px;
+    margin: 0 0 5px 20px !important;
     font-weight: 600;}
 #artist .center.thin >h2 +.box.pad h3,
 #torrents .center.thin >.box.pad form h3 {
     text-align: left;
     font-weight: 600;
-    margin: 10px 0 8px 5px;}
+    margin: 10px 0 8px 20px;}
 
 tr.likes td[id^="likers_"] >strong {
-    background-position: center left;
+    /*background-position: center left;
     height: 18px;
     width: 27px;
     display: inline-block;
-    vertical-align: bottom;}
+    vertical-align: bottom;*/}
 .inventory #one_time_inputs input,
 #collections .sidebar .box_addtorrent span:last-child,
 #user .thin >h2 ~form[method="post"] >input[value="notify_handle"]:first-child ~table p,
@@ -5796,37 +5803,42 @@ tr.likes td[id^="likers_"] >strong:nth-of-type(2),
 #collections table#edit_collage input#art {
     margin-bottom: 2px;}
 tr.likes td[id^="likers_"] >strong:after {
-    content: ':';
+    /*content: ':';
     font-size: 14px;
     line-height: var(--p-lh);
-    float: right;}
+    float: right;*/}
 tr.likes td[id^="likers_"] {
-    opacity: .85;}
+    /*opacity: .85;*/}
 tr.likes td[id^="likers_"]:hover {
-    opacity: 1;}
+    /*opacity: 1;*/}
 
 .forum_post.forum_unread .colhead_dark {
-    background: var(--p-head-grdnt);}
+    /*background: var(--p-head-grdnt);*/}
 .forum_post.sticky_post .colhead_dark {
-    background: var(--p-sticky-colhead-bcg);}
+    /*background: var(--p-sticky-colhead-bcg);*/}
 .forum_post.sticky_post .colhead_dark div[style="float:left;"] >strong:last-of-type {
     position: absolute;
     top: 0;
     right: -48px;}
 .forum_post.sticky_post {
-    width: 95% !important;
+    outline: 2px solid var(--p-head-grdnt);
+    outline-offset: -1px;
+    /*width: 95% !important;
     margin-right: auto !important;
-    margin-left: auto !important;}
+    margin-left: auto !important;*/}
+.forum_post.forum_unread {
+    outline: 2px solid var(--c-unread);
+    outline-offset: -1px;}
 
 #forums .forum_post.forum_unread .avatar >div:before {
-    border-left: 1px solid var(--c-unread-br);}
+    /*border-left: 1px solid var(--c-unread-br);*/}
 #content .forum_post.forum_unread {
-    border-color: var(--c-unread-br);}
+    /*border-color: var(--c-unread-br);*/}
 
 #forums .forum_post.sticky_post .avatar >div:before {
-    border-left: 1px solid var(--c-input-brdr);}
+    /*border-left: 1px solid var(--c-input-brdr);*/}
 #content .forum_post.sticky_post {
-    border-color: var(--c-input-brdr);}
+    /*border-color: var(--c-input-brdr);*/}
 
 #forums .thin .forum_post table {
     background-color: inherit;
@@ -5835,11 +5847,12 @@ tr.likes td[id^="likers_"]:hover {
     border: inherit;
     margin: inherit;}
 #wrapper #content table.bbcode_table {
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);
-    background-color: var(--c-box);}
+    border: 1px solid var(--c-brdr1);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    /*background-color: var(--c-box);*/}
 #wrapper #content table.bbcode_table td {
-	border: 1px solid var(--c-table-brdr);}
+	border: 1px solid var(--c-brdr1);}
 #wrapper .clan_stat_totals table.border tr:not(.colhead):not(:last-child) td,
 #running_freeleech td.center.cats_col,
 #inbox .colhead >td:first-child,
@@ -5899,8 +5912,8 @@ span.size10 {
     line-height: 1em;}
 
 .twitter-tweet {
-    -webkit-filter: var(--p-post-img);
-    filter: var(--p-post-img);
+    /*-webkit-filter: var(--p-post-img);
+    filter: var(--p-post-img);*/
     margin: 5px !important;}
 #wrapper .twitter-tweet >iframe {
     max-width: unset !important;
@@ -5930,8 +5943,8 @@ iframe {
 iframe/*,
 div[id^="twitch-embed-"]*/ {
     max-width: calc(100% - 10px)!important;
-    -webkit-filter: var(--p-post-img);
-    filter: var(--p-post-img);
+    /*-webkit-filter: var(--p-post-img);
+    filter: var(--p-post-img);*/
     margin: 0 5px;
     padding: 5px;}
 /*.box.vertical_space video,
@@ -5940,8 +5953,8 @@ div[id^="twitch-embed-"]*/ {
 .forum_post td.body*/ video {
     max-width: 80%;
     height: auto;
-    -webkit-filter: var(--p-post-img);
-    filter: var(--p-post-img);
+    /*-webkit-filter: var(--p-post-img);
+    filter: var(--p-post-img);*/
     margin: 0 5px;
     padding: 5px;}
 .box.vertical_space#preview img, /*inbox*/
@@ -5955,8 +5968,8 @@ blockquote#description img {
     max-width: 714px !important;
     width: auto;
     height: auto;
-    -webkit-filter: var(--p-post-img);
-    filter: var(--p-post-img);
+    /*-webkit-filter: var(--p-post-img);
+    filter: var(--p-post-img);*/
     /*margin: -4px 0;
     padding: 7px;*/
     padding: 5px;}
@@ -6007,14 +6020,14 @@ div[style="text-align:right;"] >.twitter_post {
 
 ul#noty_bottomRight_layout_container li {
     border-radius: 0 !important;
-    -webkit-box-shadow: var(--p-main-shdw) !important;
-    box-shadow: var(--p-main-shdw) !important;
-    border: 1px solid var(--c-unread-br) !important;
-    background-color: var(--c-sb1) !important;
-    color: var(--c-low) !important;}
+    /*-webkit-box-shadow: var(--p-main-shdw) !important;
+    box-shadow: var(--p-main-shdw) !important;*/
+    border: 0 !important;
+    /*background-color: var(--c-sb1) !important;
+    color: var(--c-low) !important;*/}
 ul#noty_bottomRight_layout_container li[style*="darkred"] {
-    border-color: var(--c-em-hvr) !important;
-    background-color: var(--c-em-act) !important;}
+    /*border-color: var(--c-em-hvr) !important;
+    background-color: var(--c-em-act) !important;*/}
 
 table.forum_post td.body {
     -webkit-hyphens: auto;
@@ -6026,7 +6039,11 @@ table.forum_post td.body {
 
 input[type="button"][value="Show"],
 input[type="button"][value="Hide"],
-a[onclick="BBCode.spoiler(this);"] {
+#wrapper a[onclick="BBCode.spoiler(this);"] {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    padding: 4px 7px !important;
+    margin: 5px 10px 0 0 !important;/*
     width: auto !important;
     font-size: 14px !important;
     line-height: var(--p-lh) !important;
@@ -6034,8 +6051,7 @@ a[onclick="BBCode.spoiler(this);"] {
     border: none !important;
     box-shadow: none !important;
     color: var(--c-anchor);
-    padding: 0 !important;
-    margin: 5px 10px 0 0 !important;
+    padding: 0 !important;*/
     /* cursor: default !important; */}
 .calendar a[style="color: white;"] {
     color: var(--c-anchor) !important;}
@@ -6045,9 +6061,9 @@ a[onclick="BBCode.spoiler(this);"] {
 .ui-widget-content button:hover,
 input[type="button"][value="Show"]:hover,
 input[type="button"][value="Hide"]:hover,
-a[onclick="BBCode.spoiler(this);"]:hover {
-    color: var(--c-anchor-hvr);
-    background-color: var(--c-anchor-hvr-bcg) !important;}
+#wrapper a[onclick="BBCode.spoiler(this);"]:hover {
+    /*color: var(--c-anchor-hvr);
+    background-color: var(--c-anchor-hvr-bcg) !important;*/} /*** mark 9 ***/
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -6728,11 +6744,11 @@ input[type="radio"]:active {
 .linkbox a[href="inbox.php"],
 .linkbox a[href="wiki.php?action=create"] {
     /* display: contents; */
-    -webkit-transition: all 0s;
+    /*-webkit-transition: all 0s;
     -o-transition: all 0s;
     transition: all 0s;
     font-size: 0;
-    line-height: 0;}
+    line-height: 0;*/}
 
 .torrent_table tr.pad div >.linkbox,
 .linkbox >strong,
@@ -6753,7 +6769,7 @@ input[type="radio"]:active {
     margin-top: 2px;
     display: inline-block;}
 
-.linkbox a[href^="comments.php?action=torrents&id"][href$="&type=uploaded"]:before      {content: 'Display comments left on torrents user has uploaded';}
+/*.linkbox a[href^="comments.php?action=torrents&id"][href$="&type=uploaded"]:before      {content: 'Display comments left on torrents user has uploaded';}
 .linkbox a[href^="comments.php?action=collages&id"][href$="&type=created"]:before       {content: 'Display comments left on collections created by user';}
 .linkbox a[href^="comments.php?action=collages&id"][href$="&type=contributed"]:before   {content: 'Display comments left on collections user has contributed to';}
 .linkbox a[href^="comments.php?action=requests&id"][href$="&type=created"]:before       {content: 'Display comments left on requests created by user';}
@@ -6828,12 +6844,12 @@ input[type="radio"]:active {
 .linkbox a[href="inbox.php?action=compose"]:before                              {content: 'Compose';}
 .linkbox a[href="inbox.php?action=sentbox"]:before                              {content: 'Sentbox';}
 .linkbox a[href="inbox.php"]:before                                             {content: 'Inbox';}
-.linkbox a[href="wiki.php?action=create"]:before                                {content: 'Create';}
+.linkbox a[href="wiki.php?action=create"]:before                                {content: 'Create';}*/
 
 #more_news >a:hover:before,
 #slides >.nobullet a:hover:before,
 .linkbox a:hover:before {
-    background-color: var(--c-anchor-hvr-bcg);}
+    /*background-color: var(--c-anchor-hvr-bcg);*/}
 
     /* clip-path: polygon(5px 0, calc(100% - 5px) 0, calc(100% - 5px) 100%, 5px 100%); */
 
