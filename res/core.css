@@ -187,7 +187,10 @@ div[id^="ghost"] {
         left: 0;
         width: calc(100% - 30px);}
 }
-
+@media (min-width: 801px) {
+.sidebar {
+    flex-direction: column;}
+}
 
 
 

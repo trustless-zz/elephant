@@ -988,6 +988,11 @@ div#fight_skill_points_assign >table,
     font-size: var(--p-head);
     line-height: 1em;
     padding: 11px 10px 10px 10px;}
+#artist .sidebar >.box:first-child .head,
+.box_albumart .head {
+    display: none;}
+.box_albumart p {
+    margin: 38px 0;}
 .head strong {
     width: 100%;
     font-weight: normal;}
@@ -5295,15 +5300,16 @@ input[name="year"],
 #upload #content >div >table[style],
 #better table#collection_files,
 #staff .thin >.box.pad table {
-    -webkit-box-shadow: var(--p-header-shdw);
+    margin: 0;
+    /*-webkit-box-shadow: var(--p-header-shdw);
     box-shadow: var(--p-header-shdw);
-	border: 1px solid var(--c-table-brdr);}
+	border: 1px solid var(--c-table-brdr);*/}
 #torrents #content>script:first-child+h2+form #freerow td:last-child,
 .profile .box.box_requests td:first-child,
 #upload #content >div >table[style] td {
     width: auto !important;}
 #upload .thin form table .colhead:not(:first-child) {
-	border-top: 1px solid var(--c-table-brdr);}
+	/*border-top: 1px solid var(--c-table-brdr);*/}
 .event_form_table #body, /* calendar new */
 .thin >#request_form input[name="title"],
 /* #upload */input#release_title,
@@ -5360,7 +5366,7 @@ input[name="year"],
     margin-top: 8px;}
 #user h2 +form#userform td.label,
 #upload td.label {
-    background-color: var(--c-tgroup);}
+    /*background-color: var(--c-tgroup);*/}
 input#file[disabled] {
     background-color: transparent;
     opacity: .9;}
@@ -5382,7 +5388,7 @@ input#file {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 45px auto 10px auto;
-    font-size: 13px;
+    font-size: 12px;
     line-height: var(--p-lh);}
 #disclaimer_container {
     text-align: justify;}
@@ -5398,18 +5404,20 @@ input#file {
 #server_stats >strong:not(:first-child) {
     margin-left: 2px;}
 #server_stats:before {
-    content: 'jacoto stylesheet by SilverTea';
+    content: 'custom elephant stylesheet by cake & SilverTea';
     display: block;
     margin-bottom: 5px;}
+#footer #toplink {
+    margin: 0 auto;}
 
 #forums h3 {
 	padding: 0px;
-    margin: 0 0 5px 10px;}
+    margin: 0 0 5px 35px;}
 .forum_post h3 {
     margin: 0 !important;
-	border-bottom: 1px solid var(--c-table-brdr);}
+	border-bottom: 1px solid var(--c-brdr1);}
 #forums td.body {
-    padding: 10px 10px 15px 10px;}
+    padding: 10px 10px 25px 10px;}
 .forumstat,
 #forums h4,
 #forums td.body,
@@ -5456,7 +5464,7 @@ div.breadcrumbs,
     padding: 0;}
 #existing_freeleech_pots tr:not(.colhead) td:nth-child(n+2):not(:last-child),
 #bookmarks span.time {
-    font-size: 13px;}
+    font-size: 12px;}
 #forums .forum_index.forum_latest tr span[style="float:right;"],
 #forums .forum_mythreads tr span[style="float:right;"],
 #forums .last_poster,
@@ -5468,14 +5476,14 @@ div.breadcrumbs,
 #forums .forum_editsubs tr:not(.colhead) td:first-child,
 #forums .forum_subscriptions tr:not(.colhead) td:first-child {
     /*background-size: 19px 18px;*/
-    width: 20px;
+    width: 18px;
     height: 100%; /* trying to fix a weird height bug(?) */
     max-height: calc(15px * var(--p-lh));} /* =line-height */
 #forums .forum_index .colhead td:nth-child(1),
 #forums .forum_mythreads .colhead td:nth-child(1),
 #forums .forum_editsubs .colhead td:nth-child(1),
 #forums .forum_subscriptions .colhead td:nth-child(1) {
-    width: 30px !important;
+    width: 28px !important;
     padding-left: 0 !important;
     padding-right: 0 !important;}
 #forums .forum_subscriptions tr:not(.colhead) td,
@@ -5514,7 +5522,7 @@ div.breadcrumbs,
 
 
 .avatar .forumstat {
-    opacity: 0;
+    /*opacity: 0;
     width: max-content;
     position: absolute;
     background-color: var(--c-input-obj);
@@ -5534,9 +5542,9 @@ div.breadcrumbs,
         -5px -5px,
         -5px -5px,
         -5px -5px,
-        -5px -5px);}
+        -5px -5px);*/}
 .avatar:hover .forumstat {
-    opacity: 1;
+    /*opacity: 1;
     -webkit-clip-path: polygon(
         -5px -5px,
         calc(100% + 5px) -5px,
@@ -5546,7 +5554,7 @@ div.breadcrumbs,
         -5px -5px,
         calc(100% + 5px) -5px,
         calc(100% + 5px) calc(100% + 5px),
-        -5px calc(100% + 5px));}
+        -5px calc(100% + 5px));*/}
 
 .profile .box_stats:hover .offline,
 .profile .box_stats:hover #last_seen,
@@ -5559,39 +5567,39 @@ div.breadcrumbs,
 .forum_post .colhead_dark a.post_id:hover, */
 #forums .forum_signature td > div:hover,
 tr.likes td[id^="likers_"]:hover {
-    transition-delay: .3s;}
+    /*transition-delay: .3s;*/}
 
 
 /* forum post 'back to top' button */
  #quickreplypreview .colhead_dark #barpreview,
  .forum_post .colhead_dark div[style="float: right;"],
  #newthreadpreview .forum_post .colhead_dark #barpreview {
-     height: 18px;
+     /*height: 18px;
      font-size: 0;
      line-height: 0;
      min-width: 18px;
      position: absolute;
      right: 5px;
      top: 7px;
-     z-index: 999;}
+     z-index: 999;*/}
 #quickreplypreview .colhead_dark span[style="float:left;"],
 .forum_post .colhead_dark div[style="float: left;"],
 .forum_post .colhead_dark div[style="float:left;"],
 #newthreadpreview .forum_post .colhead_dark span[style="float: left;"] {
-    text-align: left;
-    width: calc(100% - 23px);}
+    /*text-align: left;
+    width: calc(100% - 23px);*/}
 /* /forum post 'back to top' button */
 .forum_post.sticky_post .colhead_dark div[style="float:left;"] {
     width: calc(100% - 70px);}
 
 
 #forums .forum_post .avatar >div:first-child:after {
-    content: 'User Stats';
+    /*content: 'User Stats';
     font-weight: 600;
     font-size: 13px;
     line-height: var(--p-lh);
     padding: 0 15px;
-    margin: 4px auto 0 auto; /* 4px - image container size correction */
+    margin: 4px auto 0 auto;
     display: block;
     width: -moz-fit-content;
     width: fit-content;
@@ -5599,7 +5607,7 @@ tr.likes td[id^="likers_"]:hover {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 0 0;
-    opacity: .65;}
+    opacity: .65;*/}
 #load_edit_review.brackets:before,
 #load_edit_review.brackets:after,
 #load_edit_review_dialog.brackets:before,
@@ -5629,9 +5637,9 @@ tr.likes td[id^="likers_"]:hover {
 .ui-widget-header:after {
     content: none !important;}
 #forums .forum_post .avatar:hover >div:first-child:after {
-    background-size: 10px 10px;
+    /*background-size: 10px 10px;
     opacity: 1;
-    transition-delay: .2s;}
+    transition-delay: .2s;*/}
 
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button span,
 #better .thin >.center:first-child td,
@@ -5674,14 +5682,14 @@ h2 marquee {
 
 #forums .forum_signature td {
     text-align: left;
-    padding: 10px 0 0 0;
+    padding: 10px 4px 4px 10px;
     height: auto;
     vertical-align: bottom;}
 #forums .forum_signature td > div {
-    opacity: .65;
-	border-top: 1px solid var(--c-table-brdr);
-    margin: 0 10px;
-    padding: 6px 3px;
+    opacity: .7;
+	border-top: 1px solid var(--c-border1);
+    margin: 0;
+    padding: 5px 0 2px 3px;
     max-height: 75px;
     overflow-y: auto;
     overflow-x: hidden;}
@@ -5696,39 +5704,39 @@ form#drag_drop_collage_form .drag_drop_save ~.drag_drop_save,
 .forum_post tr.likes,
 .thin.torrent_history table.border:not(#th_search) tr:not(.colhead):last-child,
 .torrent_details tr.pad div[id^=history] tr:not(.colhead):last-child {
-	border-top: 1px solid var(--c-table-brdr);
-    background-color: var(--c-tgroup);}
+	/*border-top: 1px solid var(--c-table-brdr);
+    background-color: var(--c-tgroup);*/}
 
 form#drag_drop_collage_form .drag_drop_save:first-child {
-	border-bottom: 1px solid var(--c-table-brdr);
-    background-color: var(--c-tgroup);}
+	/*border-bottom: 1px solid var(--c-table-brdr);
+    background-color: var(--c-tgroup);*/}
 
 #torrents #wrapper .torrent_details tr.pad div[id^=history] tr:not(.colhead):last-child {
-	border-top: 1px solid var(--c-table-brdr);
-    background-color: var(--c-tgroup)!important;}
+	/*border-top: 1px solid var(--c-table-brdr);
+    background-color: var(--c-tgroup)!important;*/}
 
 #inbox #searchbox +form#messageform >table {
-    border-top: 1px solid var(--c-table-brdr);
-    border-bottom: 1px solid var(--c-table-brdr);}
+    /*border-top: 1px solid var(--c-table-brdr);
+    border-bottom: 1px solid var(--c-table-brdr);*/}
 
 #reports .thin>table >tbody >.colhead +tr:last-child >td:first-child {
     text-align: center;
-    background-color: var(--c-tgroup);}
+    /*background-color: var(--c-tgroup);*/}
 
 .forum_post tr.likes >td:first-child a {
-    width: 22px;
+    /*width: 22px;
     height: 18px;
     margin: 5px;
-    display: inline-block;}
+    display: inline-block;*/}
 
 #reportsv2 #dynamic_form >table.border:before,
 #reports .thin >h3,
 #reportsv2 #report_table >h3,
 #forums .linkbox.linkbox_bottom +br +h3 {
-    width: calc(100% - 2px);
-    margin: 1px auto 0 auto;
+    width: 100%;
+    margin: 0 auto;
     position: relative;
-    z-index: 9;}
+    z-index: 9;} /*** mark 8 ***/
 #inbox .box.vertical_space +h2 +form,
 #inbox #messageform +h2 +form,
 #inbox h2 +#messageform,
@@ -6493,7 +6501,7 @@ input[type="radio"]:active {
 #gazelleview table.gazelleinfo:before,
 .collections_art_display:before,
 #requests .main_column >table:first-child:before { /* also pseudo head */
-    width: calc(100% - 20px);
+    /*width: calc(100% - 20px);
     position: absolute;
     top: -1px;
     left: -1px;
@@ -6505,14 +6513,14 @@ input[type="radio"]:active {
     background: var(--p-head-grdnt);
     border-top: 1px solid var(--c-main-brdr);
     border-right: 1px solid var(--c-main-brdr);
-    border-left: 1px solid var(--c-main-brdr);}
+    border-left: 1px solid var(--c-main-brdr);*/}
 
 #requests .main_column >table:first-child:before { /* also pseudo head */
-    content: 'Details';}
+    /*content: 'Details';*/}
 #wrapper .collections_art_display:before {
-    content: 'Collections';}
+    /*content: 'Collections';*/}
 #gazelleview table.gazelleinfo:before {
-    content: 'Info';}
+    /*content: 'Info';*/}
 
 #gazelleview table.gazelleinfo,
 .collections_art_display,
@@ -6522,23 +6530,23 @@ input[type="radio"]:active {
 #gazelleview table.gazelleinfo:after,
 .collections_art_display:after,
 #requests .main_column >table:first-child:after {
-    content: '';
+    /*content: '';
     width: calc(100% + 2px);
     position: absolute;
     bottom: -1px;
     left: -1px;
     height: 0;
-    border-bottom: 1px solid var(--c-main-brdr);}
+    border-bottom: 1px solid var(--c-main-brdr);*/}
 #gazelleview table.gazelleinfo >tbody:after,
 .collections_art_display >tbody:after,
 #requests .main_column >table:first-child >tbody:after {
-    content: '';
+    /*content: '';
     position: absolute;
     top: 0;
     right: -1px;
     width: 0;
     border-right: 1px solid var(--c-main-brdr);
-    height: 100%;}
+    height: 100%;*/}
 
 /** /Chromium table border rendering bug workaround **/
 
@@ -7029,6 +7037,8 @@ td.center.cats_col {
     line-height: 26px;}
 .thin.torrent_history >form#torrent_history_search table#th_search >tbody >tr:last-child >td.label {
     padding-top: 10px;}
+
+#wrapper .box_albumart,
 
 #staffpm #inbox,
 #torrents #content >#newlink td,
