@@ -912,6 +912,8 @@ div#fight_skill_points_assign >table,
 
 #tools #content >.header +.thin:last-child,
 
+#reportsv2 #report_table >table,
+
 #tools #content >p,
 #better .thin >div,
 #better .thin >table,
@@ -987,7 +989,7 @@ div#fight_skill_points_assign >table,
     background: var(--p-head-grdnt);
     font-size: var(--p-head);
     line-height: 1em;
-    padding: 11px 10px 10px 10px;}
+    padding: 11px 10px 9px 10px;}
 #artist .sidebar >.box:first-child .head,
 .box_albumart .head {
     display: none;}
@@ -1847,7 +1849,7 @@ input[disabled] {
     position: relative;
 /*    left: 0;
     top: 0;*/
-    padding: 9px 10px;
+    padding: 8px 10px 6px 10px;
     width: calc(100% - 20px);
     height: var(--p-head);}
 #bookmarks td#sorting_head:hover:before,
@@ -3141,7 +3143,7 @@ select {
     border-radius: 3px;
     border: 1px solid var(--c-border1);
     background-color: var(--c-i-bcg);
-    height: 26px;
+    height: 24px;
     color: unset;
     font-size: 13px;
     font-family: Lato, Sans-Serif;
@@ -3189,7 +3191,7 @@ select:focus {
 
 .select2-container .select2-selection--single,
 select {
-    height: 24px;}
+    height: 22px;}
 .select2-container--default .select2-results__group,
 .select2-container--default .select2-selection--single .select2-selection__rendered,
 .select2-container .select2-selection--single {
@@ -3750,7 +3752,7 @@ body:not(#upload) #artist_tr + tr td.label,
 #request_form >strong ~#new_uploaded,
 #request_form >strong ~#new_ratio,
 #request_form >strong ~#new_gold {
-    line-height: 26px;
+    line-height: 24px;
     display: inline-block;
     margin-top: 2px;}
 #request_form >strong ~#new_uploaded +#button,
@@ -4121,7 +4123,7 @@ li:not(.suggested_similar) .similar_votes >span {
     font-size: 16px;
     padding: 0 10px;
     font-weight: 600;
-    line-height: 26px;}
+    line-height: 24px;}
 /* .similar:before,
 .similar:after {
     position: absolute;
@@ -5380,7 +5382,7 @@ input#file[disabled] {
 input#file {
     margin: 3px 0;}
 /* #upload */ #reviews_table p {
-    line-height: 26px;
+    line-height: 24px;
     margin: 0 !important;
     text-align: right;}
 #upload #reviews_table tr:last-child td {
@@ -6067,23 +6069,26 @@ input[type="button"][value="Hide"]:hover,
 
 input[type="checkbox"],
 input[type="radio"] {
+    margin-top: 2px;
+    border-radius: 2px;
     position: relative;
     display: inline-block;
-    padding: 6px 6px 5px 5px;
+    padding: 6px;
     border: 1px solid;
-    background-color: var(--c-input);
+    /*background-color: var(--c-input);
     -webkit-box-shadow: var(--p-input-shdw);
-    box-shadow: var(--p-input-shdw);
+    box-shadow: var(--p-input-shdw);*/
+    background-color: var(--c-i-bcg);
     -webkit-appearance: none;}
 input[type="checkbox"] {
-    border-color: var(--c-input-brdr);}
+    border-color: var(--c-brdr2);}
 input[type="radio"] {
-    border-color: var(--c-sticky-id-brdr);}
+    border-color: var(--c-brdr2);}
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
     /* background-color: var(--c-body); */
-    -webkit-box-shadow: var(--p-checked-shdw);
-    box-shadow: var(--p-checked-shdw);}
+    /*-webkit-box-shadow: var(--p-checked-shdw);
+    box-shadow: var(--p-checked-shdw);*/}
 input[type="radio"]:checked:after,
 input[type="radio"] {
     border-radius: 50%;}
@@ -6091,25 +6096,26 @@ input[type="radio"]:checked:after,
 input[type="checkbox"]:checked:after {
     content: '';
     position: absolute;
-    background: var(--c-txt);}
+    background: var(--c-txt3);}
 input[type="radio"]:checked:after {
     top: 3px;
     left: 3px;
-    width: 5px;
-    height: 5px;}
+    width: 6px;
+    height: 6px;}
 input[type="checkbox"]:checked:after {
+    border-radius: 1px;
     top: 2px;
     left: 2px;
-    width: 7px;
-    height: 7px;}
+    width: 8px;
+    height: 8px;}
 input[type="checkbox"]:hover,
 input[type="radio"]:hover {
-    border-color: var(--c-b1);
-    background-color: var(--c-input-focus);}
+    /*border-color: var(--c-b1);*/
+    background-color: var(--c-i-focus);}
 input[type="checkbox"]:active,
 input[type="radio"]:active {
-    border-color: var(--c-b1);
-    background-color: var(--c-b3);}
+    /*border-color: var(--c-b1);
+    background-color: var(--c-b3);*/}
 
 #searchforum >div,
 #searchthread >div {
@@ -6200,7 +6206,7 @@ input[type="radio"]:active {
 #forums #threadpoll {
     width: 100%;
     padding: 10px 20px;
-    background-color: var(--c-tgroup);}
+    /*background-color: var(--c-tgroup);*/}
 #collections .sidebar >h3 ~.box.pad,
 #threadpoll #poll_results ul#poll_options {
     padding: 0;
@@ -6235,12 +6241,12 @@ input[type="radio"]:active {
     image-rendering: pixelated;
     -ms-interpolation-mode: nearest-neighbor;}
 .sidebar img.pixelart {
-    width: 278px;}
+    width: 280px;}
 
 #inbox #searchbox label,
 #inbox #searchbox input {
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     line-height: var(--p-lh);
     vertical-align: middle;}
 #torrents #content>script:first-child+h2+form #freerow td:last-child>input:not(:first-child),
@@ -6252,7 +6258,7 @@ input[type="radio"]:active {
 #inbox .box.vertical_space +h2 +form>.box.pad,
 #inbox #messageform +h2 +form >.box.pad,
 #inbox h2 +#messageform >.box.pad {
-    padding: 46px 10px 10px 10px;
+    /*padding: 46px 10px 10px 10px;*/
     position: relative;}
 #collections .thin >h2:first-child +form:last-child:before, /* edit description page */
 #gazelles .thin >h2:first-child +.box.pad:before,
@@ -6296,7 +6302,7 @@ input[type="radio"]:active {
 #friends #content .search_form:before,
 #torrents #content >#newlink:before,
 #users_reviews >h2 +.box.pad:before {
-    display: block;
+    /*display: block;
     text-align: left;
     width: 100%;
     margin: -10px -10px 10px -10px;
@@ -6306,9 +6312,9 @@ input[type="radio"]:active {
     line-height: var(--p-head);
     background: var(--p-head-grdnt);
     font-weight: 600;
-    content: 'Search';}
+    content: 'Search';*/}
 #wrapper .permissions:before {
-    content: 'Toolbox';}
+    /*content: 'Toolbox';*/}
 #tools .thin >.box.pad:first-child:before {
     content: 'Chart';}
 /*#wrapper #users_reviews >.flextable:before {
@@ -6317,29 +6323,29 @@ input[type="radio"]:active {
 #collections .thin >h2:first-child +form:last-child:before, /* edit description page */
 #torrents #content >#newlink:before,
 #torrents #wrapper #content>script:first-child+h2+form:before {
-    content: 'Form';}
+    /*content: 'Form';*/}
 #forums #wrapper #newthreadpreview +.box.pad:before {
-    content: 'Create a new thread';}
+    /*content: 'Create a new thread';*/}
 #user #wrapper .invitetree.pad:before {
-    content: 'Invite Tree';}
+    /*content: 'Invite Tree';*/}
 #tools #content >p:before,
 #better #wrapper #content >h2 +p:nth-child(2):before,
 #user #wrapper .thin >.header:first-child +.box.pad:before {
-    content: 'Info';}
+    /*content: 'Info';*/}
 #user #wrapper .thin >.header:first-child +.box.pad +.box.pad:before {
-    content: 'Send invite';}
+    /*content: 'Send invite';*/}
 #inbox .thin[xmlns] >#messageform:before {
-    margin: 0;
+    /*margin: 0;
     width: calc(100% - 20px);
-    content: 'New message';}
+    content: 'New message';*/}
 #wrapper #crafting_recipes:before {
-    margin: 0;
-    content: 'Crafting Recipes';}
+    /*margin: 0;
+    content: 'Crafting Recipes';*/}
 /* .thin.torrent_history >form#torrent_history_search:before {
     content: 'Search by Torrent Name';} */
 .box.pad.box_buffs_info:before,
 .box.pad.box_freeleech_info:before {
-    content: 'Info';}
+    /*content: 'Info';*/}
 #user .thin >h2:first-child +.center input[type="text"] {
     margin: 0 !important;
     width: calc(100% - 105px) !important;}
@@ -6355,15 +6361,15 @@ input[type="radio"]:active {
 #inbox .box.vertical_space +h2,
 #inbox #messageform +h2,
 #inbox .box.vertical_space +h2 {
-    position: relative;
+    /*position: relative;
     margin: 1px auto 0 auto;
-    width: calc(100% - 22px);}
+    width: calc(100% - 22px);*/}
 #inbox #messageform #preview {
     padding: 10px;
-    margin: 0 0 15px 0;
-	border: 1px solid var(--c-table-brdr);
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    margin: 0 0 12px 0;
+	/*border: 1px solid var(--c-table-brdr);*/
+    -webkit-box-shadow: none;
+    box-shadow: none;}
 #inbox .box.vertical_space +h2 +form >.box.pad tr:not(:last-child),
 #inbox #messageform +h2 +form >.box.pad tr:not(:last-child) {
     width: calc(100% - 180px);}
@@ -6391,7 +6397,7 @@ input[type="radio"]:active {
 
 #user .thin >.header:first-child +.box.pad +.box.pad table.border td {
     padding: 0;
-    line-height: 26px;}
+    line-height: 24px;}
 
 #reportsv2 #dynamic_form >table.border {
     position: relative;
@@ -6400,11 +6406,11 @@ input[type="radio"]:active {
     box-shadow: var(--p-header-shdw);
     margin-bottom: 36px;}
 #reportsv2 #dynamic_form >table.border:before {
-    content: 'Details';
+    /*content: 'Details';
     position: absolute;
-    margin: 0;}
+    margin: 0;*/}
 #reportsv2 #dynamic_form >table.border tr:first-child td {
-    padding-top: 47px;}
+    /*padding-top: 47px;*/}
 /* #upload */ #reviews_table p:first-child {
     margin-bottom: 5px !important;}
 #reportsv2 #dynamic_form >ul:last-of-type {
@@ -6429,13 +6435,15 @@ input[type="radio"]:active {
     position: relative;}
 #calendar h2 input#monthPicker,
 #reportsv2 #report_table >table td {
-    padding: 0;
+    /*padding: 0;
     font-size: 0;
-    line-height: 0;}
+    line-height: 0;*/}
+#reportsv2 #report_table >table td.label {
+    width: 90px;}
 #reportsv2 select#type {
-    position: absolute;
+    /*position: absolute;
     top: 21px;
-    right: 10px;}
+    right: 10px;*/}
 
 #torrents .center.thin >.box.pad #reviews_table tr td:first-child {
     vertical-align: text-top;
@@ -6446,7 +6454,7 @@ input[type="radio"]:active {
     margin: 0;
     padding: 0;
     width: 100%;
-    font-size: 14px;}
+    font-size: 13px;}
 #torrents .torrent_edit td.label,
 #inbox #messageform #quickpost .comp td:first-child {
     vertical-align: top;
@@ -6454,14 +6462,14 @@ input[type="radio"]:active {
     width: 80px;}
 .filter_torrents.advanced .submit,
 #inbox #messageform #quickpost .comp td:first-child h3 {
-    line-height: 26px;}
+    line-height: 24px;}
 #inbox #messageform #quickpost .comp td {
     padding: 5px;}
 #inbox h2 +#messageform >.box.pad textarea#quickpost {
     margin: 10px auto;}
 #inbox tr.unreadpm td:first-child input[type="checkbox"] {
     z-index: 2;
-    margin: 3px 3px 3px 2px;}
+    margin: 2px 2px 3px 2px;}
 
 .profile #community_stats:not([style="display: none;"]) {
     display: flex !important;}
@@ -6481,8 +6489,8 @@ input[type="radio"]:active {
     font-size: 13px;
     line-height: var(--p-lh);}
 .profile #community_stats li.comm_stats_head {
-    border-bottom: 1px solid var(--c-table-brdr);
-    font-size: 15px;
+    /*border-bottom: 1px solid var(--c-table-brdr);*/
+    font-size: 14px;
     line-height: 1em;
     padding-bottom: 3px;
     margin-bottom: 3px;
@@ -6492,7 +6500,7 @@ input[type="radio"]:active {
 
 /** Chromium table border rendering bug workaround **/
 #forums .forum_post .avatar >div:before {
-    content: '';
+    /*content: '';
     position: absolute;
     z-index: 0;
     width: 100%;
@@ -6500,16 +6508,16 @@ input[type="radio"]:active {
     border-left: 1px solid var(--c-main-brdr);
     border-bottom: 1px solid var(--c-table-brdr);
     top: 0;
-    left: -1px;}
+    left: -1px;*/}
 
 /* table.forum_index, -unread stripe is getting cut NOW?*/
 #reportsv2 #dynamic_form >table.border {
-    border-collapse: inherit;
-    border-spacing: 0;}
+    /*border-collapse: inherit;
+    border-spacing: 0;*/}
 #reportsv2 #dynamic_form >table.border:before {
-    top: 0;
+    /*top: 0;
     left: 0;
-    width: 100%;}
+    width: 100%;*/}
 
 /* #requests .main_column >table:first-child {
     width: calc(100% - 1px);} */
@@ -6567,7 +6575,7 @@ input[type="radio"]:active {
 /** /Chromium table border rendering bug workaround **/
 
 /** horrible acrobatics because of lack of containers **/
-#forums .forum_list .forum_index .colhead  {
+#forums .forum_list .forum_index .colhead  { /*** mark 10 ***/
     background: var(--p-subcolhead);}
 #forums .forum_list .forum_index .colhead td {
     font-weight: normal;
@@ -7050,7 +7058,7 @@ td.center.cats_col {
 
 .thin.torrent_history >form#torrent_history_search td.label {
     width: 163px;
-    line-height: 26px;}
+    line-height: 24px;}
 .thin.torrent_history >form#torrent_history_search table#th_search >tbody >tr:last-child >td.label {
     padding-top: 10px;}
 
@@ -7148,7 +7156,7 @@ input[class="date_picker"] {
 #forums .forums_search .search_form input[class="date_picker"] {
     margin-right: 5px;}
 
-.xdsoft_datetimepicker {
+/*.xdsoft_datetimepicker {
     background-color: var(--c-box);
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);
@@ -7222,7 +7230,7 @@ input[class="date_picker"] {
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
     transform: rotate(-90deg);}
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
-    overflow: auto !important;}
+    overflow: auto !important;}*/
 
 #bookmarks .sidebar .pad {
     padding: 10px 0 0 0 !important;}
@@ -7540,7 +7548,7 @@ table.adventure_table .colhead td:not(:first-child) {
     margin: 0;
     font-weight: normal;
     font-size: 14px;
-    line-height: 26px;}
+    line-height: 24px;}
 
 th#check_all span,
 #user #sessions_table .colhead td:last-child,
@@ -7651,7 +7659,7 @@ td >img[title="Gold"] {
 #searchthread td {
     display: block;
     padding: 0;
-    line-height: 26px;}
+    line-height: 24px;}
 #searchforum td:nth-child(2),
 #searchthread td:nth-child(2) {
     width: 100%;
@@ -8843,7 +8851,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
     padding:0;}
 #shop_search tbody:not(#advanced_search) td.label {
     width: 71px;
-    line-height: 26px;
+    line-height: 24px;
     padding-right: 5px;}
 #shop_search tbody:not(#advanced_search) input[type="submit"] {
     vertical-align: bottom;}
@@ -8852,7 +8860,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
 .inventory #shop_search tbody#advanced_search tr:first-child td:last-child {
     max-width: 230px;}
 #shop_search tbody#advanced_search tr:first-child td:nth-child(2) {
-    line-height: 26px;
+    line-height: 24px;
     vertical-align: top;}
 
 .inventory #content li.no_items,
@@ -10118,7 +10126,7 @@ h2 span.secondary_class {
 ******************BLOG********************
 *****************************************/
 #blog .head {
-    font-size: 14px;
+    font-size: 13px;
     line-height: var(--p-head);
     display: flex;
     flex-flow: row wrap;}
@@ -10797,7 +10805,7 @@ td .log_green {
 #adventureclub form[name="realms_search"] td {
     padding: 0;}
 #adventureclub form[name="realms_search"] .flleft {
-    line-height: 26px;
+    line-height: 24px;
     margin: 0 10px 0 5px;}
 
 #adventureclub table#attacks_search tbody:first-child td,
@@ -10809,7 +10817,7 @@ td .log_green {
     font-weight: normal;}
 #adventureclub table#attacks_search tbody:first-child td.label,
 #adventureclub table#monsters_search tbody:first-child td.label {
-    line-height: 26px;}
+    line-height: 24px;}
 #adventureclub table#monsters_search tbody:first-child input[type="submit"] {
     vertical-align: bottom;}
 #adventureclub tbody#advanced_search td.label.label_right h3 {
@@ -10842,7 +10850,7 @@ td .log_green {
     width: auto;}
 #adventureclub #adventure_search table#attacks_search tr:nth-child(2) td:not(.label),
 #adventureclub #adventure_search table#monsters_search tr:nth-child(2) td:not(.label) {
-    line-height: 26px;}
+    line-height: 24px;}
 #adventureclub #adventure_search select +input[type="number"] {
     margin-left: 5px;}
 #adventureclub #adventure_search table#monsters_search td.label:not(:first-child) br {
