@@ -310,7 +310,7 @@ ul {
     margin: 0;
     padding: 0 0 0 30px;}
 
-#header,
+/*#header,
 #menu ul,
 #menu ul li,
 #searchbars ul,
@@ -322,18 +322,18 @@ ul {
 #userinfo_username .sub,
 #nav_useredit,
 #nav_logout,
-#nav_donate,
+#nav_donate,*/
 .sidebar ul,
-#userinfo_stats li,
+/*#userinfo_stats li,*/
 .sidebar .head li,
 .sidebar #polcont .pad,
 #dailygazelle {
     padding:0;}
-#menu ul,
+/*#menu ul,
 #menu ul li a,
 #userinfo_minor,
 #userinfo_stats,
-#userinfo_username,
+#userinfo_username,*/
 .sidebar .head ul,
 #dailygazelle .colhead_dark {
     margin:0;}
@@ -2145,10 +2145,10 @@ table.bbcode_table td,
 #stats_leeching,
 #stats_seeding,
 #stats_share_score {
-    display: flex;
+    /*display: flex;
     justify-content: left;
     position: relative;
-    overflow: hidden;}
+    overflow: hidden;*/}
 
     #header #announcement {
         top: unset;         /* holidayeffects garbage */
@@ -2169,7 +2169,7 @@ table.bbcode_table td,
 #nav_donate a,
 #nav_logout a,
 #nav_useredit a {
-    display: block;
+    /*display: block;
     width: 20px;
     height: 20px;
     -webkit-mask-position: center;
@@ -2178,15 +2178,15 @@ table.bbcode_table td,
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: 20px 20px;
-    background-color: var(--c-anchor);}
+    background-color: var(--c-anchor);*/}
 #nav_useredit a {
-    -webkit-mask-image: url('icons/nav/useredit.svg');
-    mask-image: url('icons/nav/useredit.svg');}
+    /*-webkit-mask-image: url('icons/nav/useredit.svg');
+    mask-image: url('icons/nav/useredit.svg');*/}
 #nav_logout a {
-    -webkit-mask-image: url('icons/nav/logout.svg');
-    mask-image: url('icons/nav/logout.svg');}
+    /*-webkit-mask-image: url('icons/nav/logout.svg');
+    mask-image: url('icons/nav/logout.svg');*/}
 #wrapper #nav_donate a {
-    position: absolute;
+    /*position: absolute;
     top: 0;
     left: 0;
     width: 24px;
@@ -2194,15 +2194,15 @@ table.bbcode_table td,
     -webkit-mask-size: auto 20px;
     -webkit-mask-image: url('icons/nav/donate.svg');
     mask-size: auto 20px;
-    mask-image: url('icons/nav/donate.svg');}
+    mask-image: url('icons/nav/donate.svg');*/}
 
 #nav_logout {
-    order: -3;}
+    /*order: -3;*/}
 #nav_donate {
-    position: relative;
-    order: -2;}
+    /*position: relative;
+    order: -2;*/}
 #nav_useredit {
-    order: -1;}
+    /*order: -1;*/}
 
 #header {
     z-index: 99 !important; /* !important to override holidayeffects.css */

@@ -267,6 +267,7 @@ div#logo {
 #userinfo_stats .stat {
     float: right;}
 #userinfo_stats li {
+    padding: 0;
     margin-top: 2px;}
 #userinfo_stats li:first-child {
     margin-top: 0;}
@@ -353,7 +354,8 @@ div#logo {
     /* display: block; */}
 #userinfo {
     font-family: Whitney, Sans-Serif;
-    font-size: 10pt;
+    /*font-size: 10pt;*/
+    font-size: 14px;
     display: table;
     margin-right: auto;}
 #header >#searchbars {
