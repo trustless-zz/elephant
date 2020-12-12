@@ -2061,9 +2061,9 @@ table#snatchesrow img,
 /*#collections #coverart.box li a,
 #bookmarks #coverart */.collage_images li a,
 .sidebar .box.box_image_coverart img {
-    -webkit-box-shadow: var(--p-header-shdw);
+    /*-webkit-box-shadow: var(--p-header-shdw);
     box-shadow: var(--p-header-shdw);
-    border: 3px solid var(--c-b4);}
+    border: 3px solid var(--c-b4);*/}
 
 #user .box.box_items #itemsdiv td >div:hover,
 .sidebar .box.box_image_coverart img:hover,
@@ -2077,7 +2077,7 @@ table#likesrow img:hover,
 /*#collections #coverart.box li a:hover,
 #bookmarks #coverart */.collage_images li a:hover,
 .similar img:hover {
-    border-color: var(--c-b1);
+    /*border-color: var(--c-b1);*/
     -webkit-box-shadow: none;
     box-shadow: none;}
 
@@ -3483,7 +3483,7 @@ table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"]
     /*margin-top: 0;
     line-height: 26px;*/}
 .box_tags .head {
-    /*margin-bottom: 10px;*/}
+    margin-bottom: 10px;}
 .box_tags .stats.nobullet li {
     /*margin-bottom: 2px;*/}
 .box_tags .stats.nobullet li >a {
@@ -3814,6 +3814,7 @@ body:not(#upload) #artist_tr + tr td.label,
     padding-bottom: 0;}
 
 .linkbox {
+    font-family: Whitney, Sans-Serif;
     margin-bottom: 11px;
     padding: 5px;
     text-align: center;
@@ -4237,13 +4238,13 @@ li:not(.suggested_similar) .similar_votes >span {
     right: 0;}
 
 .box_gold #box_gold_scrollbar tr:not(.colhead) td.label {
-    background-color: var(--c-sb1);}
+    /*background-color: var(--c-sb1);*/}
 #users_reviews .head,
 #friends .forum_post.vertical_margin .colhead,
 #collections .sidebar .box.box_comment .head,
 #inbox .box.vertical_space .head,
 .forum_post .colhead_dark {
-    background: var(--p-post-colhead-bcg);}
+    background: var(--p-head-grdnt);}
 #calendar .calendar-row.calendar-heading,
 #top10 .thin >.linkbox ~div:not(.center) >table.border .colhead,
 #artist .main_column table .colhead,
@@ -4270,16 +4271,27 @@ li:not(.suggested_similar) .similar_votes >span {
 #tools .thin >#recommended >form#torrent_form .colhead,
 #tools #content >.header +table .colhead,
 #tools #mastergroups table .colhead {
-    background: var(--p-subcolhead);}
+    /*background: var(--p-subcolhead);*/}
+#artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead,
+#artist .main_column_bg .main_column .box #requests tbody .colhead_dark,
+#user .box_gold td.label,
+#user .thin .sidebar .box.box_gold #box_gold_scrollbar tbody .colhead td,
+#user .box.box_requests #requests table.border tbody,
+#torrents #requests #requests_list >tbody >tr:first-child >td,
+/*.colhead_dark,*/
+.torrent_edit #upload_table #releaseinfo td.label,
+#user_fight_attacks .label {
+    background-color: var(--c-label);}
+
 #users_reviews .head,
 #friends .forum_post.vertical_margin .colhead,
 #collections .sidebar .box.box_comment .head,
 #inbox .box.vertical_space .head,
 .forum_post .colhead_dark td {
     position: relative;
-    font-size: 14px;
-    line-height: 19px;
-    padding: 6px 5px 7px 5px;}
+    font-size: 13px;
+    line-height: 18px;
+    padding: 5px;}
 #calendar .calendar-row.calendar-heading,
 #user .thin >.header:first-child ~h3 +.box.pad:last-child .colhead td,
 #upload #content >div[style="margin:0px auto;width:700px"] .colhead td,
@@ -4307,19 +4319,19 @@ li:not(.suggested_similar) .similar_votes >span {
 #tools #mastergroups table .colhead th {
     font-weight: normal;
     position: relative;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 8px 5px;}
+    font-size: 15px;
+    line-height: 1em;
+    /*padding: 8px 5px;*/}
 #top10 #wrapper .thin.top10_torrents    >.linkbox ~div:not(.center) >table.border .colhead td,
 #top10 #wrapper .thin.top10_games       >.linkbox ~div:not(.center) >table.border .colhead td {
     padding: 7px 5px;}
 
 #searchforum,
 #searchthread,
-#collections .sidebar .box.box_comment .head a.username,
+#collections .sidebar .box.box_comment .head a,
 .box.box_coltags .pad li a {
-    font-size: 14px;
-    line-height: 19px;}
+    font-size: 13px;
+    line-height: 18px;}
 
 .forum_post .colhead_dark div[style="float: right;"] input[type="button"] {
     margin: -3px 0 0 5px;
@@ -5427,6 +5439,7 @@ input#file {
 	border-bottom: 1px solid var(--c-brdr1);}
 #forums td.body {
     padding: 10px 10px 25px 10px;}
+#collections .sidebar .box.box_comment .head,
 .forumstat,
 #forums h4,
 #forums td.body,
@@ -7896,12 +7909,16 @@ span.size5 img {
     top: 0;
     bottom: 0;
     left: 0;}
+.hovereffect .overlay:hover h2 {
+    outline-color: var(--c-anchor-hvr);}
 .hovereffect h2 {
+    outline: 2px solid transparent;
+    outline-offset: -2px;
     cursor: pointer;
     font-weight: 600;
     text-align: left;
     position: relative;
-    font-size: 19px;
+    font-size: 15px;
     line-height: var(--p-lh);
     height: 100%;
     width: 100%;
@@ -7916,13 +7933,15 @@ span.size5 img {
     opacity: 1;
     visibility:visible}
 .hovereffect h2 div {
-    font-size: 12px;
+    font-size: 11px;
+    font-style: italic;
     line-height: var(--p-lh);}
 .hovereffect h2 >div {
-    text-align: right;
+    font-weight: normal;
+    /*text-align: right;
     position: absolute;
     right: 5px;
-    bottom: 5px;}
+    bottom: 5px;*/}
 .overlay div {
     padding-top: 5px;}
 .overlay span {
@@ -7967,7 +7986,7 @@ span.size5 img {
     flex-flow: row wrap;
     justify-content: space-between;}
 .collections_art_display tbody {
-    margin: 46px 10px 10px 10px;
+    margin: 10px;
     display: block;}
 .collections_art_display tr:not(:first-child) td {
     margin-top: 10px;}
@@ -7987,9 +8006,12 @@ span.size5 img {
 
 /*#bookmarks #coverart */.collage_images a/*,
 #collections #coverart.box a*/ {
-    display: block;
+    padding: 500px;
+    margin: -500px;
+    display: inline-block;
+    /*display: block;
     height: 100%;
-    width: 100%;}
+    width: 100%;*/}
 /*#bookmarks #coverart */.collage_images a div/*,
 #collections #coverart.box a div*/ {
     width: 100% !important;
@@ -7997,19 +8019,26 @@ span.size5 img {
     text-align: center;}
 /*#bookmarks #coverart */.collage_images li/*,
 #collections #coverart.box li*/ {
-    padding: 0;
-    margin: 5px 10px 5px 0;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: calc(20% - 10px);
-    align-self: center;}
+    padding: 5px;
+    margin: -1px 0 0 -1px;
+    border: 1px solid var(--c-brdr1);
+    /*height: -moz-fit-content;
+    height: fit-content;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(20% + 1px);
+    overflow: hidden;
+    /*align-self: center;*/}
 /*#bookmarks #coverart */.collage_images:not(.hidden)/*,
 #collections #coverart.box >ul:not(.hidden)*/ {
     display: flex;
     flex-flow: wrap;
     width: calc(100% + 1px);
-    padding: 5px 0 5px 10px;
+    padding: 0;
     list-style: none;}
+.collage_images li a:hover {
+    background-color: var(--c-anchor-hvr);}
 /*#collections #coverart.box img,
 #bookmarks #coverart */.collage_images img,
 #css_gallery .preview_image {
@@ -8044,7 +8073,7 @@ span.size5 img {
 #tools #content >table[style="width: 600px;"] td a,
 #collections .sidebar .box_addtorrent .subhead a {
     line-height: var(--p-lh);
-    font-size: 14px;
+    font-size: 13px;
     /* cursor: default;
     background-color: transparent; */}
 #collections .sidebar .box_addtorrent input[name="url"] {
@@ -8064,7 +8093,7 @@ span.size5 img {
 #wiki .sidebar >.box >.pad {
     padding: 10px 0 0 0;}
 #wiki .sidebar .box_info.pad:before {
-    content: 'Info';
+    /*content: 'Info';
     font-size: var(--p-head);
     height: var(--p-head);
     line-height: var(--p-head);
@@ -8073,9 +8102,9 @@ span.size5 img {
     display: block;
     padding: 9px 10px;
     margin: -10px -10px 0 -10px;
-    font-weight: 600;}
+    font-weight: 600;*/}
 #wiki .box.wiki_article:before {
-    content: 'Article';
+    /*content: 'Article';
     font-size: var(--p-head);
     line-height: var(--p-head);
     height: var(--p-head);
@@ -8083,7 +8112,7 @@ span.size5 img {
     display: block;
     font-weight: 600;
     padding: 9px 10px;
-    background: var(--p-head-grdnt);}
+    background: var(--p-head-grdnt);*/}
 
 
 /****************************************/
@@ -8112,7 +8141,7 @@ span.size5 img {
 .wiki_index span.size6 strong,
 .wiki_index span.size5 strong,
 .wiki_index span.size4 strong {
-	border-bottom: 1px solid var(--c-table-brdr);}
+	border-bottom: 1px solid var(--c-brdr1);}
 /* #wiki .postlist {
 	margin: 0;} */
 #wiki.wiki_index .wiki_article .postlist {
@@ -8128,7 +8157,7 @@ span.size5 img {
 #wiki .center.thin >.box.pad {
     text-align: left;}
 #wiki .center.thin >.box.pad:before {
-    content: 'New article';
+    /*content: 'New article';
     width: 100%;
     height: var(--p-head);
     font-size: var(--p-head);
@@ -8137,7 +8166,7 @@ span.size5 img {
     display: block;
     padding: 9px 10px;
     margin: -10px -10px 0 -10px;
-    font-weight: 600;}
+    font-weight: 600;*/}
 
 /* disabling 'fancy' scrollbars */
 .ps-scrollbar-y-rail,
@@ -8153,24 +8182,24 @@ span.size5 img {
     margin-left: -10px;}
 #user .box.box_gold #box_gold_scrollbar tr:not(.colhead) td {
     padding: 5px;}
-#user .box.box_gold #box_gold_scrollbar tr:not(.colhead) td:not(.label) {
-	border: 1px solid var(--c-table-brdr);}
+#user .box.box_gold #box_gold_scrollbar td {
+	border: 1px solid var(--c-brdr1);}
 #user #wrapper .box.box_gold #box_gold_scrollbar .colhead +tr td {
-    border-top: none;}
+    /*border-top: none;*/}
 #user #wrapper .box.box_gold #box_gold_scrollbar tr:last-child td {
-    border-bottom: none;}
+    /*border-bottom: none;*/}
 #user #wrapper .box.box_gold #box_gold_scrollbar td:nth-child(2) {
-    border-left: none;}
-#better .torrent_table tr.torrent.torrent_row td.center.collicon,
-#user #wrapper .box.box_gold #box_gold_scrollbar td:last-child {
+    /*border-left: none;*/}
+#better .torrent_table tr.torrent.torrent_row td.center.collicon/*,
+#user #wrapper .box.box_gold #box_gold_scrollbar td:last-child*/ {
     border-right: none;}
 #user #wrapper .box.box_gold #box_gold_scrollbar td.label {
-    font-size: 16px;
-    line-height: 16px;}
+    font-size: 15px;
+    line-height: 1em;}
 #seedtime_tokens #tokens_breakdown tr:not(.colhead) td:not(.label):hover,
 #user .box.box_gold #box_gold_scrollbar tr:not(.colhead) td:not(.label):hover,
 #achievements tr:not(.colhead):not(:last-child) td:not(.achlabel):hover {
-    background-color: var(--c-row-hvr);}
+    /*background-color: var(--c-row-hvr);*/}
 
 /*** User Info Box ***/
 .profile .box_stats .label {
@@ -8196,7 +8225,8 @@ span.size5 img {
     margin-bottom: 10px;}
 
 .profile .box_stats ul#small_stats {
-	order: 99;}
+    margin: 10px 0 -10px 0;
+	order: -1;}
 
 .profile .box_stats #hnrs .label {
 	display: inline-block;
@@ -8212,7 +8242,7 @@ span.size5 img {
 	color: var(--c-off);}
 
 .profile .box_stats #hnrs a.warn {
-	color: var(--c-yellow);}
+	color: var(--c-warn);}
 
 .profile .box_stats #hnrs a.good {
 	color: var(--c-on);}
@@ -8246,7 +8276,7 @@ span.size5 img {
 
 .profile .box_stats #last_seen {
     text-align: left !important;
-	color: var(--c-text-s);
+	color: var(--c-txt3);
 	opacity: 0.9;
 	margin-top: -10px;
     flex: 0 0 100%;}
@@ -8338,12 +8368,16 @@ span.size5 img {
     background-position: left center;}
 .profile .box_stats #share_score .stat:before,
 .profile .box_stats #ratio .stat:before {
-    content: '';
+    /*content: '';
     width: 16px;
     height: 16px;
     position: absolute;
     left: 0;
-    top: 2px;}
+    top: 2px;*/}
+.profile .box_stats #share_score .stat {
+    background: url("https://gazellegames.net/static/styles/game_room/images/icons/share_score.png") no-repeat left center;}
+.profile .box_stats #ratio .stat {
+    background: url("https://gazellegames.net/static/styles/game_room/images/icons/ratio.png") no-repeat left center;}
 .profile .box_stats #upload .stat {
 	background: url("https://gazellegames.net/static/styles/game_room/images/icons/sword_upload.png") no-repeat left center;}
 .profile .box_stats #download .stat {
@@ -8360,6 +8394,7 @@ span.size5 img {
 .profile .box_stats #clan .stat:after {
 	content: ' Clan';}
 
+.profile .box.box_stats .head           {order: -9;}
 .profile .box_stats li#hnrs 			{order: 1;}
 .profile .box_stats li#profile_views 	{order: 2;}
 .profile .box_stats li#online_status 	{order: 3;}
@@ -8381,6 +8416,9 @@ span.size5 img {
 .box.pad.box_add_freeleech #groupid_input {
     width: calc(100% - 216px);}
 
+.profile .box_links ul li {
+    font-size: 15px;}
+
 /*revisit*/
 #color_leeching,
 #color_leeching .torrent_info_tags,
@@ -8393,6 +8431,7 @@ span.size5 img {
 #color_uploaded,
 #color_uploaded .torrent_info_tags,
 #color_uploaded a {
+    text-shadow: var(--p-upload);
 	color: var(--c-upload);}
 #color_snatched,
 #color_snatched .torrent_info_tags,
@@ -8404,14 +8443,34 @@ span.size5 img {
 	color: var(--c-download);}
 #wrapper .personal_freeleech_label,
 #wrapper .freeleech_label {
+    text-shadow: var(--p-fl);
     color: var(--c-fl);}
-#torrents .torrent_notifications .noticon+td >.trumpable_label,
 .linkbox a[onclick^="show_reported("],
 #wrapper .reported_label,
-#wrapper .trumpable_label,
-#wrapper #reported_tag,
-#wrapper #trumpable_tag {
+#wrapper #reported_tag {
+    text-shadow: 0 0 7px;
     color: var(--c-red);}
+
+#torrents .torrent_notifications .noticon+td >.trumpable_label,
+#wrapper #trumpable_tag,
+#wrapper .trumpable_label,
+#color_trumpable,
+strong#trumpable_tag,
+strong.trumpable_label {
+    text-shadow: 0 0 7px;
+    color: var(--c-trump);}
+
+#color_personal_freeleech,
+strong.personal_freeleech_label,
+#color_partial_freeleech,
+strong.partial_freeleech_label {
+    text-shadow: 0 0 7px;}
+
+#color_neutralleech,
+strong.neutralleech_label {
+    text-shadow: 0 0 7px;}
+.thin.torrent_history tr.owner a[title="View Torrent"] {
+    color: var(--c-owner);}
 
 #color_leeching:hover,
 #color_leeching:hover .torrent_info_tags,
@@ -8453,24 +8512,24 @@ tr.unreadpm td:first-child:after,
 #color_uploaded:before,
 #color_snatched:before,
 #color_downloaded:before {
-    content: '';
+    /*content: '';
     height: 100%;
     width: 2px;
     position: absolute;
     top: 0;
-    left: 0;}
+    left: 0;*/}
 #color_leeching:before,
 #color_seeding:before,
 #color_uploaded:before,
 #color_snatched:before,
 #color_downloaded:before {
-    opacity: .8;}
+    /*opacity: .8;*/}
 tr:hover #color_leeching:before,
 tr:hover #color_seeding:before,
 tr:hover #color_uploaded:before,
 tr:hover #color_snatched:before,
 tr:hover #color_downloaded:before {
-    opacity: 1;}
+    /*opacity: 1;*/}
 #requests #requests_list .sticky >td:first-child:after,
 .torrent_table .sticky td.center:first-child:after,
 td.unread:after,
@@ -8478,12 +8537,12 @@ td.unread_sticky:after,
 td.unread_locked:after,
 td.unread_locked_sticky:after,
 tr.unreadpm td:first-child:after {
-    background-color: var(--c-unread-s);}
-#color_leeching:before      {background-color: var(--c-leech);}
-#color_seeding:before       {background-color: var(--c-seed);}
-#color_uploaded:before      {background-color: var(--c-upload);}
-#color_snatched:before      {background-color: var(--c-snatch);}
-#color_downloaded:before    {background-color: var(--c-download);}
+    /*background-color: var(--c-unread-s);*/}
+#color_leeching:before      {/*background-color: var(--c-leech);*/}
+#color_seeding:before       {/*background-color: var(--c-seed);*/}
+#color_uploaded:before      {/*background-color: var(--c-upload);*/}
+#color_snatched:before      {/*background-color: var(--c-snatch);*/}
+#color_downloaded:before    {/*background-color: var(--c-download);*/}
 table#uploaded_table td.center.cats_col +td >span:before,
 table#seeding_table td.center.cats_col +td >span:before,
 table#leeching_table td.center.cats_col +td >span:before,
@@ -8493,7 +8552,7 @@ table#seeding_not_snatched_table td.center.cats_col +td >span:before,
 table#downloaded_table td.center.cats_col +td >span:before {
     content: none;}
 
-
+/*** mark 12 ***/
 /*****************************************************
 ******************* ALL ITEM PAGES *******************
 *****************************************************/
@@ -10327,6 +10386,19 @@ td .log_red {
      color: var(--c-red);}
 td .log_green {
      color: var(--c-on);}
+
+
+
+
+
+
+.username {
+    font-style: italic;
+    font-weight: normal;}
+
+
+
+
 
 /*****************************************
 ****************FRIENDS*******************

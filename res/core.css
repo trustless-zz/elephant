@@ -27,6 +27,24 @@
     --c-rowb:                               #f0f0f0;
     --c-tow-hvr:                            #e6e6e6;
     --c-unread:                             #68c077;
+    --c-hovereffect:                        rgba(255,255,255,0.75);
+    --c-label:                              #b4c1c9;
+    --c-on:                                 #43bc56;
+    --c-off:                                #CF0024;
+    --c-warn:                               #b49629;
+    
+    --c-leech:                              #e03854;
+    --c-seed:                               #418b00;
+    --c-upload:                             #DC9202;
+    --p-upload:                             0 0 2px #FCC201;
+    --c-snatch:                             #914154;
+    --c-download:                           #914154;
+    --c-fl:                                 #6441a5;
+    --p-fl:                                 0 0 7px rgba(218, 120, 252, 0.7);
+    --c-red:                                #ff0000;
+    --c-trump:                              #BC2839;
+    --c-owner:                              #64ae00;
+    
     
     
     --p-btn-bcg:                            #255c7c;
