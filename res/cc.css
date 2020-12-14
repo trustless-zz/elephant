@@ -8562,14 +8562,26 @@ table#downloaded_table td.center.cats_col +td >span:before {
 	width: 222px;
 	float: left;
 	text-align: left;
-    margin: 0 15px 15px 0;}
+    margin: 0 20px 20px 0;}
 #wrapper .inventory #items_navigation,
 #shop .items_shop #items_navigation {
-    margin: 0 0 15px 0;}
+    margin: 0 0 25px 0;}
 
 #wrapper #items_list li.item_li:hover {
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    -webkit-box-shadow: none;
+    box-shadow: none;}
+
+#items_navigation h3 {
+    margin: -10px -10px 10px -10px;
+    display: block;
+    text-align: center;
+    font-family: Adelle, Times New Roman;
+    line-height: 1em;
+    padding: 11px 10px 9px 10px;
+    font-weight: normal;
+    font-size: 16px; 
+    line-height: 1em;
+    background: var(--p-head-grdnt);}
 
 #items_navigation ul {
 	margin-bottom: 0;
@@ -8586,9 +8598,9 @@ table#downloaded_table td.center.cats_col +td >span:before {
 
 
 #items_navigation li#selected a {
-    font-weight: 600;
-    color: var(--c-low);
-    box-shadow: inset var(--p-selected);}
+    font-weight: bold;
+    /*color: var(--c-low);
+    box-shadow: inset var(--p-selected);*/}
 
 #items_navigation ul ul li {
 	margin-left: 6px;}
@@ -8637,7 +8649,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
 #backpack #items-wrapper {
     margin-top: 0;
     text-align: center;
-    height: calc(100% - 36px);
+    height: calc(100% - 41px);
     width: 100%;
     float: left;
     padding: 10px 0 0 10px;
@@ -8665,35 +8677,35 @@ table#downloaded_table td.center.cats_col +td >span:before {
     -webkit-border-radius: 0;
     border-radius: 0;
     -webkit-transition:
-        border-color .1s linear,
+        /*border-color .1s linear,*/
         box-shadow .1s  linear;
     -o-transition:
-        border-color .1s linear,
+        /*border-color .1s linear,*/
         box-shadow .1s  linear;
     transition: 
-        border-color .1s linear,
+        /*border-color .1s linear,*/
         box-shadow .1s  linear;
     list-style-type: none;
     margin: 0 10px 10px 0;
     float: left;
-    width: 100px;
-    height: 100px;
+    width: 106px;
+    height: 106px;
     overflow: hidden;
-    background-color: var(--c-edition);
+    background-color: var(--c-itm-bcg);
     text-align: center;
     position: relative;
-    font-weight: 600;
-    color: var(--c-txt);
-    border: 3px solid var(--c-main-brdr);
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    font-weight: bold;
+    color: var(--c-txt1);
+    border: none;
+    -webkit-box-shadow: var(--p-itm-shdw);
+    box-shadow: var(--p-itm-shdw);}
 #wrapper #trading_panel .item:hover,
 #crafting_panel .item:hover,
 #equipment .item:hover,
 #backpack .item:hover {
     -webkit-box-shadow: none;
     box-shadow: none;
-    border-color: var(--c-b3);}
+    /*border-color: var(--c-b3);*/}
 
 #crafting_panel .item h3,
 #equipment .item h3,
@@ -8701,11 +8713,11 @@ table#downloaded_table td.center.cats_col +td >span:before {
 #backpack .item h3 {
     margin: unset;
     margin-block-end: 1em;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1em;
 	position: absolute;
 	bottom: 2px;
-	width: 100px;}
+	width: 106px;}
 
 #crafting_panel .item.used,
 #equipment .item.used,
@@ -8727,8 +8739,8 @@ table#downloaded_table td.center.cats_col +td >span:before {
 #equipment .item img,
 #wrapper #trading_panel .item img,
 #backpack .item img {
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 106px;
+	max-height: 106px;
 	padding: 3px;}
 
 /* #crafting_panel .item img.equipment_level,
@@ -8810,7 +8822,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
     content: '10+';
     width: 31px;
     color: var(--c-r10);
-    text-shadow: 0 0 1px var(--c-r99);}
+    text-shadow: 0 0 1px var(--c-r10);}
 /* /ONLY needed to make item levels visible again */
 
 
@@ -8880,7 +8892,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
 
 /* user settings save button */
 #user form#userform td.right[colspan="2"] {
-    position: sticky;
+    /*position: sticky;
     bottom: 0;
     padding: 10px;
     display: block;
@@ -8896,10 +8908,10 @@ table#downloaded_table td.center.cats_col +td >span:before {
             0deg,
             var(--c-tgroup) 0%,
             transparent 100%);
-    text-align: center;}
+    text-align: center;*/}
 
 
-
+/*** mark 13 ***/
 /**********************************************
 ******************SHOP*************************
 **********************************************/
@@ -8952,7 +8964,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
 /*** Shop Items ***/
 #items_list {
 	margin: 0 0 0 5px;
-	width: calc(100% - 227px);
+	width: calc(100% - 232px);
 	padding: 0;
 	float: right;
 	display: block;
@@ -8971,9 +8983,9 @@ table#downloaded_table td.center.cats_col +td >span:before {
 	height: 370px;
 	-webkit-box-shadow: var(--p-main-shdw);
 	box-shadow: var(--p-main-shdw);
-    border: 1px solid var(--c-main-brdr);}
+    /*border: 1px solid var(--c-main-brdr);*/}
 #shop li.item_li.no_access {
-    background-color: var(--c-edition);}
+    background-color: var(--c-slot);}
 
 #shop #stock_info,
 #shop h4,
@@ -9582,12 +9594,12 @@ body#user.inventory {}
 
 .inventory .item_image_div {
     margin-top: 50px;
-	height: 100px;
-	width: 100px;
+	height: 106px;
+	width: 106px;
     margin-left: 10px;
 	float: left;}
 .inventory .item_center.item_image {
-	width: 100px;
+	width: 106px;
 	height: auto;
 	max-height: 150px;
 	/*margin-left: 10px;*/
@@ -11175,7 +11187,7 @@ pre >code.hljs[class$=" hljs"]:after {
     position: absolute;
     content: '';
     width: 100%;
-    height: 36px;
+    height: 41px;
     top: 0;
     left: 0;
     background: var(--p-head-grdnt);}
@@ -11183,15 +11195,16 @@ pre >code.hljs[class$=" hljs"]:after {
 #wrapper #trading_panel #items >span,
 #equipment #items_inner >span,
 #crafting_panel #items >span {
+    font-family: Adelle, Times New Roman;
     font-size: var(--p-head);
-    line-height: 36px;
-    font-weight: 600;}
+    line-height: 41px;
+    font-weight: normal;}
 #backpack #items >input,
 #wrapper #trading_panel #items >input,
 #equipment #items_inner >input,
 #crafting_panel #items >input {
-    width: calc(100% - 105px);
-    top: -2px;}
+    width: calc(100% - 100px);
+    top: -1.5px;}
 
 /*** Crafting Panel (the panel with all your staff) ***/
 #backpack #slots_panel,
@@ -11212,18 +11225,19 @@ pre >code.hljs[class$=" hljs"]:after {
 /* The combining panel */
 #crafting_panel #slots_panel {
 	height: 426px;
-	width: 525px;
-	margin-bottom: 15px;}
+	width: 515px;
+	margin-bottom: 25px;}
 #equipment #equip_panel:before,
 #crafting_panel #slots_panel:before {
-    text-align: left;
+    font-family: Adelle, Times New Roman;
+    text-align: center;
     content: 'Crafting Table';
-    font-weight: 600;
+    font-weight: normal;
     background: var(--p-head-grdnt);
     font-size: var(--p-head);
-    line-height: var(--p-head);
-    height: var(--p-head);
-    padding: 9px 10px;
+    line-height: 1em;
+    height: 1em;
+    padding: 11px 10px 9px 10px;
     display: block;}
 #wrapper #equipment #equip_panel:before {
     content: 'Equipment Panel';}
@@ -11251,8 +11265,8 @@ pre >code.hljs[class$=" hljs"]:after {
 #wrapper #backpack .itemslot,
 #equipment .itemslot,
 #crafting_panel .itemslot {
-    border-color: var(--c-table-brdr);
-    background-color: var(--c-tgroup);}
+    /*border-color: var(--c-table-brdr);*/
+    background-color: var(--c-slot);}
 #crafting_panel .itemslot#slot_0 {margin: 10px  0 0 10px;}
 #crafting_panel .itemslot#slot_1 {margin: 10px  0 0 136px;}
 #crafting_panel .itemslot#slot_2 {margin: 10px  0 0 262px;}
@@ -11263,9 +11277,9 @@ pre >code.hljs[class$=" hljs"]:after {
 #crafting_panel .itemslot#slot_7 {margin: 262px 0 0 136px;}
 #crafting_panel .itemslot#slot_8 {margin: 262px 0 0 262px;}
 #crafting_panel .itemslot#CraftingResult {
-    margin: 136px 0 0 397px;
-    border-color: var(--c-main-brdr);
-    background-color: var(--c-input-obj);}
+    margin: 136px 0 0 391px;
+    /*border-color: var(--c-main-brdr);*/
+    background-color: var(--c-craft-result);}
 
 #wrapper .item .item_count {
     border: 1px solid var(--c-table-brdr);
@@ -11350,7 +11364,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     margin: 0;
     padding: 10px 0 10px 10px;
     overflow-y: scroll !important;
-    height: calc(100% - 36px);
+    height: calc(100% - 41px);
 	margin-top: 0;
 	text-align: center;
 	width: 100%;}
@@ -11521,7 +11535,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 .ui-state-highlight,
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
-    background: var(--c-high) !important;}
+    background: var(--c-box) !important;}
 
 #equipment #purchase {
 	margin-top: 35px;}
@@ -11951,14 +11965,15 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #backpack #slots_header img {
     display: none;}
 #backpack #slots_header span {
-    font-size: var(--p-head);
-    line-height: var(--p-head);
-    height: var(--p-head);
+    font-family: Adelle, Times New Roman;
+    font-size: 16px;
+    line-height: 1em;
+    height: 15px;
     display: block;
-    text-align: left;
+    text-align: center;
     position: relative;
-    padding: 9px 10px;
-    font-weight: 600;}
+    padding: 11px 10px 9px 10px;
+    font-weight: normal;}
 
 #backpack .ui-widget-content {background: none;}
 #wrapper #backpack .itemslot {
