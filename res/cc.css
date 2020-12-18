@@ -422,8 +422,8 @@ td, th, tr {
 
 td.label {
     text-align: right;
-    /*vertical-align: top;
-    padding: 8px 5px 9px 5px;*/}
+    vertical-align: top;
+    padding: 8px 5px 9px 5px;}
 td >select {
     margin: 1px 0;}
 td >input#file {
@@ -1781,10 +1781,10 @@ input[disabled] {
 .box.news_post .head .newsdate,
 .box.news_post .head .time {
     font-style: italic;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 15px;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 16px;}
 #bookmarks td#sorting_head a,
 #forums .thin >.box.thin.clear .head.colhead_dark a,
@@ -8938,7 +8938,8 @@ table#downloaded_table td.center.cats_col +td >span:before {
 #shop_search tbody:not(#advanced_search) input[type="submit"] {
     vertical-align: bottom;}
 #shop_search tbody#advanced_search tr:first-child td:last-child {
-    max-width: 325px;}
+    max-width: 285px;
+    /*max-width: 325px;*/}
 .inventory #shop_search tbody#advanced_search tr:first-child td:last-child {
     max-width: 230px;}
 #shop_search tbody#advanced_search tr:first-child td:nth-child(2) {
@@ -8963,8 +8964,8 @@ table#downloaded_table td.center.cats_col +td >span:before {
 
 /*** Shop Items ***/
 #items_list {
-	margin: 0 0 0 5px;
-	width: calc(100% - 232px);
+	margin: 0;
+	width: calc(100% - 222px);
 	padding: 0;
 	float: right;
 	display: block;
@@ -8976,8 +8977,8 @@ table#downloaded_table td.center.cats_col +td >span:before {
 	position: relative;
 	list-style: none;
 	background: var(--c-box);
-	margin: 0 0 10px 10px;
-	width: calc(25% - 10px);
+	margin: 0 0 20px 20px;
+	width: calc(25% - 20px);
 	padding: 0;
 	float: left;
 	height: 370px;
@@ -8985,7 +8986,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
 	box-shadow: var(--p-main-shdw);
     /*border: 1px solid var(--c-main-brdr);*/}
 #shop li.item_li.no_access {
-    background-color: var(--c-slot);}
+    /*background-color: var(--c-slot);*/}
 
 #shop #stock_info,
 #shop h4,
@@ -9231,18 +9232,18 @@ h3 a[href^="user.php?action=notify_delete&"] {
 
 .inventory .item_li.featured:before,
 #shop .item_li.featured:before {
-    z-index: 99;
+    /*z-index: 99;
     content: '';
     width: 18px;
     height: 18px;
     position: absolute;
     top: 7px;
-    left: 5px;
+    left: 5px;*/
 /*    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;*/}
 #shop li.item_li.owned:after {
-    content: '✔';
+    /*content: '✔';
     font-size: 13px;
     line-height: 14px;
     top: 7px;
@@ -9253,15 +9254,15 @@ h3 a[href^="user.php?action=notify_delete&"] {
     height: 14px;
     border-radius: 50%;
     color: var(--c-text-s);
-    border: 2px solid var(--c-text-s);}
+    border: 2px solid var(--c-text-s);*/}
 #shop li.item_li.owned:hover:after {
-    color: var(--c-low);
-    border-color: var(--c-low);}
+    /*color: var(--c-low);
+    border-color: var(--c-low);*/}
 
 #shop li.featured {
-    border-color: var(--c-input-brdr);
+    /*border-color: var(--c-input-brdr);*/
 	display: block;
-	width: calc(50% - 10px);}
+	width: calc(50% - 20px);}
 
 #shop .featured  {
 	visibility: visible;
@@ -9333,7 +9334,7 @@ li.item_li #clickable .item_description img {
     bottom: calc(50% - 17px); /* 28px */
     top: unset;}
 #shop li.item_li.nostock #clickable .item_description:before {
-    opacity: .7;
+    /*opacity: .7;
     content: 'OUT OF STOCK';
     font-size: 18px;
     line-height: 18px;
@@ -9345,47 +9346,84 @@ li.item_li #clickable .item_description img {
     top: 0;
     left: 0;
     width: 100%;
-    text-align: center;}
+    text-align: center;*/}
 #shop li.item_li.nostock:hover #clickable .item_description:before {
-    opacity: 1;}
+    /*opacity: 1;*/}
 #shop li.item_li.nostock input[value="Buy & Use"],
 #shop li.item_li.nostock input[value="Buy & Store"] {
     opacity: .5;
     pointer-events: none;}
 
+#shop li.item_li.nostock #clickable .item_description,
+#shop li.item_li.featured.nostock #clickable .item_description {
+    content: '';
+    background-color: green;
+    opacity: .5;
+    position: absolute;
+    top: 50px;
+    font-size: 0;
+    line-height: 0;
+    height: 245px;
+    left: 17px;
+    max-height: unset;
+    bottom: unset;
+    width: calc(100% - 34px);}
+
 #shop li.item_li.no_access #clickable .item_description {
     overflow: visible;}
 #shop li.item_li.no_access #clickable .item_description:after {
-    opacity: 0;
-    content: 'requirements not met';
+    /*opacity: 0;*/
+    /*content: 'requirements not met';
     font-size: 16px;
-    line-height: 16px;
-    font-weight: 600;
-    color: var(--c-low);
-    background-color: var(--c-edition);
-    padding: 8px 0;
+    line-height: 16px;*//*
+    font-weight: 600;*/
+    /*color: var(--c-box);
+    background-color: var(--c-red);
+    padding: 4px 0 5px 0;
     position: absolute;
     bottom: -32px;
     left: 0;
     width: 100%;
-    text-align: center;}
+    text-align: center;*/}
 #shop li.item_li.no_access.featured .item_description:after {
-    opacity: 0;
-    content: 'requirements not met';
+    /*opacity: 0;*/
+    /*content: 'requirements not met';
     font-size: 17px;
     line-height: 17px;
     font-weight: 600;
-    color: var(--c-low);
-    background-color: var(--c-edition);
-    padding: 8px 0;
+    color: var(--c-box);
+    background-color: var(--c-red);
+    padding: 4px 0 5px 0;
     position: absolute;
-    bottom: 40px;
+    bottom: 49px;
     left: 0;
     width: 100%;
-    text-align: center;}
+    text-align: center;*/}
 #shop li.item_li.no_access.featured:hover .item_description:after,
 #shop li.item_li.no_access #clickable:hover .item_description:after {
-    opacity: 1;}
+    /*opacity: 1;*/}
+
+.thin:not(.others_inventory) .hide_req:before, .thin:not(.others_inventory) .no_access:before {
+    content: 'Requirements not met';
+    background-color: var(--c-red);
+    color: var(--c-box);
+    font-family: Whitney, Sans-Serif;
+    font-size: 16px;
+    line-height: 1em;
+    padding: 1px 0;
+    width: 100%;
+    text-align: center;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;}
+
+#shop li.new {
+    background: var(--c-box) url('icon/temp_new.png') top left no-repeat !important;}
+#shop .featured {
+    background: var(--c-box) url('../icon/temp_featured.png') top left no-repeat !important;}
+#shop .owned {
+    background: var(--c-box) url('../icon/temp_owned.png') top left no-repeat !important;}
 
 #shop li.item_li.nostock .submit_section {
 	margin-top: -78px;}
