@@ -3141,7 +3141,7 @@ input[type="url"],
 select {
     outline: none;
     border-radius: 3px;
-    border: 1px solid var(--c-border1);
+    border: 1px solid var(--c-input-brdr);
     background-color: var(--c-i-bcg);
     height: 24px;
     color: unset;
@@ -5709,7 +5709,7 @@ h2 marquee {
     vertical-align: bottom;}
 #forums .forum_signature td > div {
     opacity: .7;
-	border-top: 1px solid var(--c-border1);
+	border-top: 1px solid var(--c-brdr3);
     margin: 0;
     padding: 5px 0 2px 3px;
     max-height: 75px;
@@ -6092,11 +6092,11 @@ input[type="radio"] {
     -webkit-box-shadow: var(--p-input-shdw);
     box-shadow: var(--p-input-shdw);*/
     background-color: var(--c-i-bcg);
-    -webkit-appearance: none;}
+    -webkit-appearance: none;/*}
 input[type="checkbox"] {
-    border-color: var(--c-brdr2);}
-input[type="radio"] {
-    border-color: var(--c-brdr2);}
+    border-color: var(--c-input-brdr);}
+input[type="radio"] {*/
+    border-color: var(--c-radio-brdr);}
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
     /* background-color: var(--c-body); */

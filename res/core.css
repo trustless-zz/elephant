@@ -1,6 +1,5 @@
 ﻿:root {
     --c-s-focus:                            #007eff;
-    --c-border1:                            #e5e5e5;
     --c-i-focus:                            #fafafa;
     --c-i-bcg:                              #f0f0f0;
     --c-txt1:                               #000000;
@@ -17,8 +16,11 @@
     --p-head-grdnt:                         #94a6b1;
     --c-tags:                               #2a4f65;
     --c-rating-hvr:                         rgba(255, 255, 255, .2);
+    --c-brdr3:                              #e5e5e5;
     --c-brdr1:                              #DBDBDB;
     --c-brdr2:                              #aaaaaa;
+    --c-input-brdr:                         #d2d2d2;
+    --c-radio-brdr:                         #c3c3c3;
     --c-bbbutt-bcg:                         #EEEEEE;
     --c-bbbutt-brdr:                        #aaaaaa;
     --c-txtarea-brdr:                       #aaaaaa;
