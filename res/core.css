@@ -423,6 +423,7 @@ select {
     text-align: center;
     color: var(--c-txt2);
     background-color: var(--c-i-focus);
+    border-color: var(--c-brdr3);
     font-size: 13px;
     height: 24px;
     line-height: 22px;
