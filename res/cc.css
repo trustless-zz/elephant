@@ -3390,41 +3390,41 @@ table#otherop.hidden ~table.otheroptoggle a,
     border-radius: 3px;}
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button span {
     line-height: 14px !important;}
-#artist #torrent_table .group_torrent td[colspan="2"],
-#torrents .group_torrent td:not(.edition_info):first-child,
+/*#artist #torrent_table .group_torrent td[colspan="2"],*/
+/*#torrents .group_torrent td:not(.edition_info):first-child,*/
 #torrents #requests.request_table .colhead a,
-#newthreadform #newthreadtext #answer_block,
-#image_block,
-.box_tags .stats.nobullet div a,
-a[href^="javascript:IndexVote("] strong,
-a[href^="javascript:Vote("] strong,
-#requests table.border td.nobr:nth-child(2) strong,
+/*#newthreadform #newthreadtext #answer_block,*/
+/*#image_block,*/
+/*.box_tags .stats.nobullet div a,*/
+/*a[href^="javascript:IndexVote("] strong,
+a[href^="javascript:Vote("] strong,*/
+/*#requests table.border td.nobr:nth-child(2) strong,
 .forum_post tr.likes >td:first-child,
-tr.likes td[id^="likers_"] >strong,
+tr.likes td[id^="likers_"] >strong,*/
 #inbox #searchbox,
 #bookmarks #torrent_table .colhead_dark td[width="70%"] /* hiding nonfunctional anchor */,
-#bookmarks #torrent_table td[colspan="3"],
-#collections #torrent_table td[colspan="3"],
-#collections .collections .sidebar .box.box_comment .head,
-#uploaded_table             tr:not(.colhead) td:nth-child(2),
+/*#bookmarks #torrent_table td[colspan="3"],
+#collections #torrent_table td[colspan="3"],*/
+/*#collections .collections .sidebar .box.box_comment .head,*/
+/*#uploaded_table             tr:not(.colhead) td:nth-child(2),
 #seeding_table              tr:not(.colhead) td:nth-child(2),
 #leeching_table             tr:not(.colhead) td:nth-child(2),
 #snatched_table             tr:not(.colhead) td:nth-child(2),
 #snatched_not_seeding_table tr:not(.colhead) td:nth-child(2),
 #seeding_not_snatched_table tr:not(.colhead) td:nth-child(2),
 #downloaded_table           tr:not(.colhead) td:nth-child(2),
-#extlink_table              tr:not(.colhead) td:nth-child(2),
-#friends a[onclick^="edit"],
-#deletereview,
-.box.box_coltags .pad li,
+#extlink_table              tr:not(.colhead) td:nth-child(2),*/
+/*#friends a[onclick^="edit"],
+#deletereview,*/
+/*.box.box_coltags .pad li,*/
 #tools #content >span +form[action="tools.php"]:nth-child(2),
 #better .thin >.center:first-child td,
-#better .thin >table a[href^="torrents.php?action=download&id="],
-#wrapper table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"],
-h3 a[href^="user.php?action=notify_delete&"],
-#better table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2),
+/*#better .thin >table a[href^="torrents.php?action=download&id="],
+#wrapper table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"],*/
+/*h3 a[href^="user.php?action=notify_delete&"],*/
+/*#better table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2)*/,
 #tools #content >table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2),
-.box.box_coltags .head span[title="Add Tags"] a,
+/*.box.box_coltags .head span[title="Add Tags"] a,*/
 .month-picker-year-table .month-picker-title,
 /* image container size correction */
 #staffpm #inbox >form#messageform >table td[width="10"],
@@ -3451,7 +3451,7 @@ h2#username span#tip_user,
 .box.box_likes.box_torrents span.likes_icon.flright,
 .avatar >div,
 .collage_images,
-.torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"],
+/*.torrent_table tr.pad td >.linkbox a[href*="action=torrentrevert"],*/
 #torrent_table .group/*.discog*/ td span[style="float:right;"] /* bookmark icon */
 /* /image container size correction */ {
     font-size: 0;
@@ -3463,8 +3463,8 @@ h2#username span#tip_user,
     vertical-align: text-bottom;}
 #friends a[onclick^="edit"],
 #better .thin >table a[href^="torrents.php?action=download&id="] {
-    display: inline-block;
-    vertical-align: text-bottom;}
+    /*display: inline-block;
+    vertical-align: text-bottom;*/}
 table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"] {
     display: inline-block;
     vertical-align: bottom;}
@@ -3735,7 +3735,7 @@ body:not(#upload) #artist_tr + tr td.label,
 #better .thin >.center:first-child input[type="text"],
 #user .thin >.header:first-child +.box.pad +.box.pad table.border input[type="text"] {
     width: calc(100% - 72px);}
-#image_block >a,
+/*#image_block >a,*/
 #better .thin >.center:first-child input[type="submit"],
 #better form#torrentid_input input[type="submit"],
 #torrents .center.thin >.box.pad form input[name="image"] +input[type="button"],
@@ -5223,7 +5223,7 @@ form[name="filter"] h3,
     top: 1px;
     position: relative;*/} /*** mark 7 ***/
 
-#newthreadform #newthreadtext #answer_block a,
+/*#newthreadform #newthreadtext #answer_block a,*/
 /*#image_block a,*/
 #upload input[type="submit"],
 #upload input[type="button"],
@@ -5356,8 +5356,8 @@ input[name="year"],
 .box.pad >p:last-child {
     margin-bottom: 0;}
 #collections .sidebar .box_addtorrent input[value="+"],
-#newthreadform #newthreadtext #answer_block a,
-#image_block a,
+/*#newthreadform #newthreadtext #answer_block a,*/
+/*#image_block a,*/
 #torrents .center.thin >.box.pad form input[value="PTPImg It"],
 #upload input[type="button"],
 #upload input[type="submit"] {
@@ -5804,7 +5804,7 @@ tr.likes td[id^="likers_"] >strong {
 .sidebar #polcont .pad li:not(.graph):not(:first-child),
 #torrents #content>script:first-child+h2+form #freerow p,
 #upload p.min_padding,
-tr.likes td[id^="likers_"] >strong:nth-of-type(2),
+/*tr.likes td[id^="likers_"] >strong:nth-of-type(2),*/
 #rules .thin >form.search_form span#Index,
 #gazelles .thin >h2:first-child +.box.pad table td[colspan="4"],
 #adventureclub table#monsters_search span.info {
@@ -6599,7 +6599,7 @@ input[type="radio"]:active {
 
 #tools #content >.header h2, /* OS and Browser Usage */
 #tools .thin >#recommended >form#torrent_form >h2,
-#torrents .center.thin >h2,
+/*#torrents .center.thin >h2,*/
 #donate span.donation_info_title h3,
 #forums .forum_list h3 {
     position: relative;
@@ -7059,11 +7059,11 @@ td.center.cats_col {
 #bookmarks #torrent_table .colhead_dark td:nth-child(n+4),
 #collections #torrent_table >tbody >tr.colhead >td:nth-child(n+4) {
     width: 18px;}
-.month-picker-year-table .month-picker-title .ui-button-text,
+/*.month-picker-year-table .month-picker-title .ui-button-text,*/
 #collections #torrent_table .colhead td[width="70%"] strong,
 #bookmarks #torrent_table .colhead_dark td[width="70%"] strong {
-    /*font-size: var(--p-head);
-    line-height: var(--p-head);*/}
+    font-size: 16px;
+    line-height: 1em;}
 #torrent_table .group.discog td[colspan="5"] >span +br { /* bookmarks */
     clear: both;
     line-height: 20px;}
@@ -7295,8 +7295,8 @@ input[class="date_picker"] {
 #user .thin >h2 ~form[method="post"] >input[value="notify_handle"]:first-child ~table input[type="text"]:not(:first-child),
 #user .thin >h2 ~form[method="post"] >input[value="notify_handle"]:first-child ~table input[type="button"]:not(:first-child),
 #collections table#new_collage input#art +input[type="button"],
-table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"],
-.box.box_coltags .pad li a:nth-child(n+2) {
+table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"]/*,
+.box.box_coltags .pad li a:nth-child(n+2)*/ {
     margin-left: 5px;}
 #user .thin >h2 ~form[method="post"] >input[value="notify_handle"]:first-child ~table input[name="toyear"] {
     margin-left: 0 !important;}
