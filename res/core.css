@@ -36,6 +36,7 @@
     --c-craft-result:                       #ebebeb;
     --c-itm-bcg:                            #f0f0f0;
     --p-itm-shdw:                           3px 3px 8px rgba(0,0,0,0.7);
+    --c-item-desc:                          rgb(255 255 255 / .85);
     
     --c-leech:                              #e03854;
     --c-seed:                               #418b00;
@@ -78,6 +79,14 @@
     --p-expand-act:                         var(--c-anchor-hvr);
     --p-head:                               21px;
     --p-main-shdw:                          0 0 25px var(--c-main-shdw);
+    
+    
+    --c-type-0:                         rgba(116,   56,     66,     .17);
+    --c-type-1:                         rgba(58,    77,     115,    .17);
+    --c-type-2:                         rgba(70,    114,    59,     .17);
+    --c-type-3:                         rgba(115,   118,    0,      .17);
+    --c-type-4:                         rgba(84,    84,     84,     .17);
+    --c-type-5:                         rgba(0,     92,     119,    .17);
 }
 
 @font-face {
