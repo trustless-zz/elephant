@@ -557,7 +557,7 @@ tr.unreadpm td:first-child:after {
 
 #searchbars input:focus {
     text-align: left;
-    -webkit-box-shadow: 0 0 52px var(--c-s-focus);
+    -webkit-box-shadow: 0 0 5px var(--c-s-focus);
     box-shadow: 0 0 5px var(--c-s-focus);}
 
 .autocomplete_list {
@@ -3402,7 +3402,7 @@ a[href^="javascript:Vote("] strong,*/
 .forum_post tr.likes >td:first-child,
 tr.likes td[id^="likers_"] >strong,*/
 #inbox #searchbox,
-#bookmarks #torrent_table .colhead_dark td[width="70%"] /* hiding nonfunctional anchor */,
+#bookmarks #torrent_table .colhead_dark td[width="70%"]/* hiding nonfunctional anchor */,
 /*#bookmarks #torrent_table td[colspan="3"],
 #collections #torrent_table td[colspan="3"],*/
 /*#collections .collections .sidebar .box.box_comment .head,*/
@@ -3422,7 +3422,7 @@ tr.likes td[id^="likers_"] >strong,*/
 /*#better .thin >table a[href^="torrents.php?action=download&id="],
 #wrapper table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"],*/
 /*h3 a[href^="user.php?action=notify_delete&"],*/
-/*#better table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2)*/,
+/*#better table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2),*/
 #tools #content >table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2),
 /*.box.box_coltags .head span[title="Add Tags"] a,*/
 .month-picker-year-table .month-picker-title,
@@ -3923,8 +3923,8 @@ body:not(#upload) #artist_tr + tr td.label,
     border-top: 0;}
 .screenshots a:not(:nth-child(4n+1)) {
     border-left: 0;}
-#css_gallery .preview_wrapper:nth-child(4n),
-/*.screenshots a:nth-child(4n)*/ {
+#css_gallery .preview_wrapper:nth-child(4n)/*,
+.screenshots a:nth-child(4n)*/ {
     margin-right: 0;}
 #css_gallery .preview_image,
 .screenshots img {
@@ -8928,7 +8928,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
     width: calc(100% - 425px);}
 
 #shop_search td.label strong {
-    font-weight: normal;}
+    /*font-weight: normal;*/}
 #shop_search tbody:not(#advanced_search) td {
     padding:0;}
 #shop_search tbody:not(#advanced_search) td.label {
