@@ -19,6 +19,7 @@
     --c-brdr3:                              #e5e5e5;
     --c-brdr1:                              #DBDBDB;
     --c-brdr2:                              #aaaaaa;
+    --c-brdr4:                              #000000;
     --c-input-brdr:                         #d2d2d2;
     --c-radio-brdr:                         #c3c3c3;
     --c-bbbutt-bcg:                         #EEEEEE;
@@ -231,16 +232,24 @@ div[id^="ghost"] {
 
 
 
-div#logo {
+#logo {
+    background-image: url('../logo/Logo_Background_CMYKlike_SVG_final.svg');
     display: block;
     height: 164px;
     width: 164px;
     /* display: none; */
-    background: white;
+    /*background: white;*/
     position: relative;
     /* left: -184px; */
+    /*border-radius: 50%;*/
     margin: 15px 20px 0 -204px;
     order: -9;}
+#logo a {
+    background-image: url('../logo/Logo_Text_CMYKlike_SVG_final.svg');
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 #header {
     /*max-width: 1300px;
     width: 100%;*/
@@ -252,7 +261,7 @@ div#logo {
     padding: 15px 0 10px 204px;
     box-sizing: border-box;
     border-left: 1px solid transparent;
-    left: calc(-184px /2);
+    left: calc(-184px / 2);
     width: calc(100% - 204px);
     max-width: 1484px;}
 #header:before {
@@ -260,7 +269,7 @@ div#logo {
     display: block;
     width: 1px;
     height: auto;
-    background-color: red;
+    background-color: var(--c-brdr2);
     order: -8;
     margin-right: 20px;
     margin-bottom: -5px;}

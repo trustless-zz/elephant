@@ -9014,11 +9014,11 @@ table#downloaded_table td.center.cats_col +td >span:before {
 	margin: 0;
 	/* line-height: 1.2em; */
 	max-height: 38px;
-    width: calc(100% - 36px);
+    width: calc(100% - 40px);
 	position: absolute;
 	top: 0;
 	left: 0;
-    padding: 5px 18px;
+    padding: 5px 20px;
 	/* box-sizing: border-box; */
 	font-weight: 600;
 	/*background: var(--p-post-colhead-bcg)*/;}
@@ -9059,6 +9059,9 @@ table#downloaded_table td.center.cats_col +td >span:before {
 #shop #clickable {*/
 	width: calc(100% - 34px);
 	margin: 48px auto 0;}
+
+#clickable:not(.overlay):hover >h3 {
+    color: var(--c-anchor-hvr);}
 
 /*#shop li.item_type_0.featured #clickable:before,*/
 #crafting_recipes li.item_type_0,
@@ -9512,7 +9515,7 @@ li.item_li #clickable .item_description img {
     font-weight: 600;
 	width: 100%;
     padding-left: 5px;
-	border-bottom: 1px solid var(--c-table-brdr);}
+	border-bottom: 1px solid var(--c-brdr2);}
 
 .more_info p:last-of-type {
     margin-bottom: 0;}
@@ -9554,14 +9557,15 @@ li.item_li #clickable .item_description img {
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default,
 .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
-    background: var(--c-box);
+    /*background: var(--c-box);
 	border: 1px solid var(--c-table-brdr);
-	color: var(--c-anchor);}
+	color: var(--c-anchor);*/}
 
 .ui-widget-header >.ui-dialog-title {
     display: block;
     font-size: var(--p-head);
     line-height: var(--p-head);
+    text-align: center;
     margin: 0;
     float: unset;}
 .ui-dialog .ui-dialog-content {
@@ -9584,7 +9588,7 @@ li.item_li #clickable .item_description img {
 .freeleech_shop_main,
 .global_buffs_shop_main {
 	margin: 0;
-	width: calc(100% - 237px);
+	width: calc(100% - 242px);
 	padding: 0;
 	float: right;
 	display: block;
@@ -9607,8 +9611,8 @@ li.item_li #clickable .item_description img {
 #running_freeleech td.center.cats_col +td >strong {
     font-weight: normal;}
 #running_freeleech td.center.cats_col +td >strong >a {
-    font-size: 15px;
-    line-height: var(--p-lh);}
+    /*font-size: 15px;
+    line-height: var(--p-lh);*/}
 
 #running_freeleech .time {
     min-width: -moz-max-content;
@@ -9641,7 +9645,7 @@ body#user.inventory {}
 /***Inventory Items***/
 
 .inventory #items_list {
-	width: calc(100% - 227px);
+	width: calc(100% - 222px);
 	padding: 0;
 	float: right;
 	display: flex;
@@ -9651,8 +9655,8 @@ body#user.inventory {}
 .inventory #content li.item_li {
     position: relative;
 	list-style: none;
-	margin: 0 0 10px 10px;
-	width: calc(50% - 10px);
+	margin: 0 0 20px 20px;
+	width: calc(50% - 20px);
 	min-height: 200px;
 	padding: 0;
 	float: left;
@@ -9660,16 +9664,16 @@ body#user.inventory {}
     background-color: var(--c-box);
 	-webkit-box-shadow: var(--p-main-shdw);
 	box-shadow: var(--p-main-shdw);
-    border: 1px solid var(--c-main-brdr);}
+    /*border: 1px solid var(--c-main-brdr);*/}
 
 .inventory .item_image_div {
-    margin-top: 50px;
-	height: 106px;
-	width: 106px;
+    margin-top: 48px;
+	height: 100px;
+	width: 100px;
     margin-left: 10px;
 	float: left;}
 .inventory .item_center.item_image {
-	width: 106px;
+	width: 100px;
 	height: auto;
 	max-height: 150px;
 	/*margin-left: 10px;*/
@@ -9712,9 +9716,9 @@ body#user.inventory {}
 	display: none;}
 
 .inventory .bottom_linkbox {
-    width: calc(100% - 237px);
+    width: calc(100% - 242px);
 	clear: both;
-	margin-left: 237px;}
+	margin-left: 242px;}
 
 .inventory .trash_icon {
     cursor: pointer;
@@ -9729,9 +9733,9 @@ body#user.inventory {}
     background: var(--c-box);
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);
-    border: 1px solid var(--c-main-brdr);
+    /*border: 1px solid var(--c-main-brdr);*/
     display: block;
-    width: calc(100% - 237px);
+    width: calc(100% - 242px);
     float: right;
     padding: 10px;
     top: 0;
@@ -9744,10 +9748,11 @@ body#user.inventory {}
     text-align: left;
     width: 100%;
     font-weight: 600;
+    font-family: Adelle, Times New Roman;
     background: var(--p-head-grdnt);
     font-size: var(--p-head) !important;
     line-height: var(--p-head);
-    padding: 9px 10px;
+    padding: 11px 10px 9px 10px;
     margin: -10px -10px 10px -10px;}
 
 .inventory .spoilerbox {
@@ -9776,7 +9781,7 @@ body#user.inventory {}
     line-height: var(--p-lh);}
 
 .book span.size7 {
-	border-bottom: 2px solid var(--c-table-brdr);
+	border-bottom: 2px solid var(--c-brdr4);
 	width: 100%;
 	display: block;}
 
@@ -9784,7 +9789,7 @@ body#user.inventory {}
 
 .page_break {
 	margin-bottom: 20px;
-	border-top: 1px solid var(--c-table-brdr);
+	border-top: 1px solid var(--c-box);
 	display: block;
 	width: 100%;}
 
@@ -9808,7 +9813,7 @@ body#user.inventory {}
     padding-bottom: 53px;}
 
 .alertable {
-    border: 1px solid var(--c-main-brdr);
+    /*border: 1px solid var(--c-main-brdr);*/
     color: var(--c-txt);
     background-color: var(--c-box);
     border-radius: 0;
@@ -9888,7 +9893,7 @@ body#user.inventory {}
     width: auto;
     height: 100%;}*/
 
-
+/*** mark 15 ***/
 /*** Image Gallery ***/
 .gallery {
     font-size: 0;
