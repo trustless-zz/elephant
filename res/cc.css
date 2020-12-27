@@ -6616,9 +6616,7 @@ input[type="radio"]:active {
     left: 0;
     margin: 0 auto;}
 
-#forums .forum_list h3 {
-    margin: 
-}
+#forums .forum_list h3 {}
 
 #tools #content >.header +table,
 #tools .thin >#recommended >form#torrent_form >h2 +table,
