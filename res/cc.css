@@ -1357,6 +1357,7 @@ a#tag_show\/hide,
 .event_li.tooltip,
 
 .users_review +[data-readmore-toggle]:before,
+#achievements img,
 
 #wrapper .personal_freeleech_label,
 #wrapper .freeleech_label,
@@ -2319,20 +2320,20 @@ a .error_message:hover {
     border-right-width: 10px;
     border-left-width: 10px;}
 #index #clans a:hover {
-    border-color: var(--c-b1);}
+    /*border-color: var(--c-b1);*/}
 #index #clans a:hover .large_progress_bar { 
-    background-color: var(--c-b3);}
+    /*background-color: var(--c-b3);*/}
 #index #clans a:active .large_progress_bar {
-    background-color: var(--c-b1);}
+    /*background-color: var(--c-b1);*/}
 .large_progress_bar,
 #progress_bar {
-    -webkit-box-shadow: inset var(--p-graph-sh);
-    box-shadow: inset var(--p-graph-sh);
-    height: 14px;
+    /*-webkit-box-shadow: inset var(--p-graph-sh);
+    box-shadow: inset var(--p-graph-sh);*/
+    height: 11px;
     display: flex;
     justify-content: space-between;
-    padding: 3px;
-    background-color: var(--c-edition);
+    padding: 5px;
+    background: var(--c-lp-bcg);
 	position: relative;}
 #share_score .large_progress_bar { /* fix #2 */
     -webkit-box-shadow: unset;
@@ -4288,6 +4289,7 @@ li:not(.suggested_similar) .similar_votes >span {
 #collections .sidebar .box.box_comment .head,
 #inbox .box.vertical_space .head,
 .forum_post .colhead_dark td {
+    text-align: left;
     position: relative;
     font-size: 13px;
     line-height: 18px;
@@ -5174,18 +5176,19 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 form[name="filter"] h3,
 #request_comments #reply_box h3,
 #forums .linkbox.linkbox_bottom +br +h3 {
-    /*text-align: left;
     width: 100%;
-    font-weight: 600;
+    font-weight: normal;
+    text-align: center;
     background: var(--p-head-grdnt);
+    font-family: Adelle, Times New Roman;
     font-size: var(--p-head) !important;
     line-height: var(--p-head);
-    padding: 9px 10px;
-    margin: -10px -10px 10px -10px;*/}
+    padding: 11px 10px 9px 10px;
+    margin: -10px -10px 10px -10px;}
 #staffpm .box.vertical_space ~h3 {
-    /*margin: 15px 0 0 0;*/}
+    margin: 25px 0 0 0;}
 #staff .thin >.box.pad >h3:first-of-type {
-    /*margin: -10px -10px 0 -10px;*/}
+    margin: -10px -10px 0 -10px;}
 #tools #mastergroups >h2,
 #allreviews >h1,
 #wrapper #gazelleview #titlerow p,
@@ -5195,33 +5198,33 @@ form[name="filter"] h3,
 #top10 .thin >.linkbox ~div:not(.center) >h3,
 #wrapper .gazelles_art_display:before,
 #collections .thin >#reply_box >h3 {
-    /*margin: 0;
-    width: calc(100% - 20px);*/}
+    margin: 0;
+    width: calc(100% - 20px);}
 #staff .thin >.box.pad >h3:first-of-type ~h3 {
-    /*font-weight: 600;
-    margin: 10px 0 8px 5px;*/}
+    font-weight: normal;
+    margin: 10px 0 8px 5px;}
 #wrapper #gazelleview #titlerow p:empty {
     height: 18px;}
 #calendar #content >h2,
 #torrents .torrent_edit >.thin >h2,
 #user .thin >.header:first-child ~h3 {
-    /*margin: 0;
+    margin: 0;
     position: relative;
-    top: 1px;
-    left: 1px;
-    width: calc(100% - 22px);*/}
+    /*top: 1px;
+    left: 1px;*/
+    width: calc(100% - 20px);}
 #artist .center.thin >h2 +.box.pad,
 #torrents .torrent_edit >.thin:first-of-type ~.thin >form,
 #user .thin >.header:first-child ~h3 +.box.pad:last-child {
-    /*margin-top: -36px;
-    padding-top: 46px;*/}
+    margin-top: -41px;
+    padding-top: 51px;}
 
 #artist .center.thin >h2 {
-    /*margin: 0;
-    width: calc(100% - 22px);
-    left: 1px;
-    top: 1px;
-    position: relative;*/} /*** mark 7 ***/
+    margin: 0;
+    width: calc(100% - 20px);
+    /*left: 1px;
+    top: 1px;*/
+    position: relative;} /*** mark 7 ***/
 
 /*#newthreadform #newthreadtext #answer_block a,*/
 /*#image_block a,*/
@@ -5765,7 +5768,7 @@ form#drag_drop_collage_form .drag_drop_save:first-child {
 #reports .thin >.box.pad,
 #forums #reply_box,
 #reportsv2 #report_table >.box.pad {
-    /*margin-top: -37px;*/}
+    margin-top: -41px;}
 #reportsv2 #report_table >.box.pad,
 #reports .thin >.box.pad:first-of-type,
 #requests .main_column >table:first-child tr:first-child td,
@@ -5775,7 +5778,7 @@ form#drag_drop_collage_form .drag_drop_save:first-child {
 #user .thin >h2 ~form[method="post"],
 #staffpm .box.vertical_space ~h3 +.box.pad,
 #gazelleview table.gazelleinfo tr:first-child td {
-    /*padding-top: 46px;*/}
+    padding-top: 51px;}
 #gazelles .thin >h2:first-child +.box.pad table,
 #wiki .center.thin >.box.pad input[type="text"],
 #wiki .center.thin >.box.pad textarea,
@@ -6602,15 +6605,16 @@ input[type="radio"]:active {
 /*#torrents .center.thin >h2,*/
 #donate span.donation_info_title h3,
 #forums .forum_list h3 {
+    font-family: Adelle, Times New Roman;
     position: relative;
-    text-align: left;
-    width: calc(100% - 22px);
-    font-weight: 600;
+    text-align: center;
+    width: calc(100% - 20px);
+    font-weight: normal;
     background: var(--p-head-grdnt);
     font-size: var(--p-head) !important;
     line-height: var(--p-head);
-    padding: 9px 10px;
-    top: 1px;
+    padding: 11px 10px 9px 10px;
+    top: 0;
     left: 0;
     margin: 0 auto;}
 
@@ -7370,7 +7374,7 @@ table[style="width: 600px;"] td:nth-child(2) a[href^="torrents.php?action=edit"]
 #better .thin >h3#general +.box.pad,
 #rules .thin >.box.pad,
 #chat .thin >.box.pad {
-    /*padding: 46px 10px 10px 10px !important;*/}
+    padding: 10px !important;}
 #rules .thin >h2.center:first-child,
 #better .thin >h3,
 #rules .thin >h3,
@@ -7401,14 +7405,14 @@ ul.poll,
     padding: 4px 0;}
 
 #rules .thin > .before_rules:before {
-    content: 'Contents';
+    /*content: 'Contents';
     font-size: var(--p-head);
     height: var(--p-head);
     line-height: var(--p-head);
     padding: 9px 10px;
     display: block;
     background: var(--p-head-grdnt);
-    font-weight: 600;}
+    font-weight: 600;*/}
 
 #index .sidebar abbr {
     cursor: help;}
@@ -7502,7 +7506,7 @@ table.adventure_table .colhead td:not(:first-child) {
     width: calc(100% + 20px);}
 #tools #content >span +form[action="tools.php"]:nth-child(2):before,
 #torrents .thin >h2:first-child +.center:before {
-    content: 'Filter';
+    /*content: 'Filter';
     text-align: left;
     font-size: var(--p-head);
     font-weight: 600;
@@ -7511,7 +7515,7 @@ table.adventure_table .colhead td:not(:first-child) {
     background: var(--p-head-grdnt);
     display: block;
     padding: 9px 10px;
-    margin: -10px -10px 10px -10px;}
+    margin: -10px -10px 10px -10px;*/}
 #torrents .thin >h2:first-child +.center table.cat_list {
     float: left;
     width: auto;
@@ -7523,7 +7527,7 @@ table.adventure_table .colhead td:not(:first-child) {
     text-align: center;
     font-weight: bold;}
 #collections script +.thin >form:first-child:before {
-    content: 'New collection';
+    /*content: 'New collection';
     font-size: var(--p-head);
     line-height: var(--p-head);
     height: var(--p-head);
@@ -7532,9 +7536,9 @@ table.adventure_table .colhead td:not(:first-child) {
     background: var(--p-head-grdnt);
     display: block;
     margin: -10px -10px 10px -10px;
-    font-weight: 600;}
+    font-weight: 600;*/}
 #staffpm #compose:before {   
-    content: 'Compose';
+    /*content: 'Compose';
     font-size: var(--p-head);
     line-height: var(--p-head);
     height: var(--p-head);
@@ -7543,7 +7547,7 @@ table.adventure_table .colhead td:not(:first-child) {
     background: var(--p-head-grdnt);
     display: block;
     margin: -10px -10px 10px -10px;
-    font-weight: 600;} 
+    font-weight: 600;*/} 
 #staffpm #inbox >form#messageform >table tr:first-child td {
     padding-top: 44px;}
 #staffpm #inbox >form#messageform >table tr:first-child td input[type="checkbox"] {
@@ -7556,11 +7560,11 @@ table.adventure_table .colhead td:not(:first-child) {
     left: 1px;
     top: 1px;}
 #staffpm .box.vertical_space ~h3 {
-    margin: 15px 0 -36px 0;
+    margin: 15px 0 -41px 0;
     position: relative;
-    width: calc(100% - 22px);
-    left: 1px;
-    top: 1px;}
+    width: calc(100% - 20px);
+    /*left: 1px;
+    top: 1px;*/}
 #staffpm #compose table.comp td:first-child {
     text-align: right; 
     width: 60px;}
@@ -7607,7 +7611,7 @@ table#likesrow a {
     display: inline;}*/
 
 #user .thin >h2:first-child +.box.pad:nth-last-of-type(2):before {
-    content: 'Info';
+    /*content: 'Info';
     text-align: left;
     display: block;
     margin: -10px -10px 10px -10px;
@@ -7620,7 +7624,7 @@ table#likesrow a {
     font-size: var(--p-head);
     font-weight: 600;
     line-height: var(--p-head);
-    background: var(--p-head-grdnt);}
+    background: var(--p-head-grdnt);*/}
 #todo .thin >form tr:not(.colhead):not(:last-child) td:first-child {
     text-align: right;
     width: 100px;}
@@ -10117,17 +10121,26 @@ body#user.inventory {}
 #tools #mastergroups #searchgroups input[type="text"] {
     width: calc(100% - 191px);}
 
+#tools #addgroup {
+    position: relative;}
+
 #tools #addgroup span[style="float: right;"]:before {
     content: '(';}
 #tools #addgroup span[style="float: right;"]:after {
     content: ')';}
 #tools #mastergroups >span[style="float: right"] h3,
 #tools #addgroup span[style="float: right;"] {
-    font-weight: 600;
+    font-weight: normal;
+    text-align: center;
+    font-family: Adelle, Times New Roman;
     font-size: var(--p-head) !important;
     line-height: var(--p-head);
-    padding: 9px 10px;
+    padding: 11px 10px 9px 10px;
     margin: -10px -10px 0 -10px;}
+#tools #addgroup span[style="float: right;"] {
+    position: absolute;
+    top: 10px;
+    right: 10px;}
 #tools #wrapper #mastergroups >span[style="float: right"] h3 {
     margin: 0;}
 
@@ -10135,16 +10148,17 @@ body#user.inventory {}
     position: absolute;
     top: 0;
     right: 0;
-    font-weight: 600;
+    font-weight: normal;
+    font-family: Adelle, Times New Roman;
     font-size: var(--p-head) !important;
     line-height: var(--p-head);
-    padding: 9px 10px;}
+    padding: 11px 10px 9px 10px;}
 
 /*** Staff PMs ***/
 
 #torrents #content .notchecked:before,
 #torrents #content .checked:before {
-    content: '';
+    /*content: '';
     font-size: 15px;
     line-height: 18px;
     top: 0;
@@ -10153,19 +10167,29 @@ body#user.inventory {}
     text-align: center;
     width: 18px;
     height: 18px;
-    border-radius: 50%;}
+    border-radius: 50%;*/}
 #torrents #content .notchecked:before {
-    color: var(--c-off);
-    border: 2px solid var(--c-off);}
+    /*color: var(--c-off);
+    border: 2px solid var(--c-off);*/}
 #torrents #content .checked:before {
-    content: '✔';
+    /*content: '✔';
     color: var(--c-on);
-    border: 2px solid var(--c-on);}
+    border: 2px solid var(--c-on);*/}
 #torrents #content .notchecked,
 #torrents #content .checked {
-    position: relative;
+    /*position: relative;
     width: 22px;
-    height: 22px;}
+    height: 22px;*/}
+#torrents #content .checked {
+	background:url('../icon/checkmark.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	/*float: center;*/}
+#torrents #content .notchecked {
+	background:url('../icon/crossn.png') no-repeat;
+	width: 20px;
+	height: 20px;
+	/*float: center;*/}
 
 
 /*** TM Stats ***/
@@ -10287,13 +10311,13 @@ h2 span.secondary_class {
 ******************BLOG********************
 *****************************************/
 #blog .head {
-    font-size: 13px;
-    line-height: var(--p-head);
+    font-size: 12px;
+    line-height: 1em;
     display: flex;
     flex-flow: row wrap;}
 #blog .head strong {
     font-size: var(--p-head);
-    margin-right: 5px;
+    /*margin-right: 5px;*/
     line-height: var(--p-head);}
 #blog .head span.time {
     margin-left: auto;
@@ -10370,15 +10394,16 @@ h2 span.secondary_class {
 
 #bookmarks .stats li:nth-of-type(1) {
      overflow-x: hidden;
-     text-indent: -104px;}
+     text-indent: -87px;}
 #bookmarks .stats li:nth-of-type(1):after {
      content: " Torrents";}
 #bookmarks .stats li:nth-of-type(2) {
      overflow-x: hidden;
-     text-indent: -69px;}
+     text-indent: -58px;}
 #bookmarks .stats li:nth-of-type(2):after {
      content: " Platforms";} 
 
+/*** mark 17 ***/
 /*****************************************
 *************GAZELLE VIEWER***************
 *****************************************/
@@ -10570,13 +10595,19 @@ td .log_green {
     line-height: 1em;}
 #achievements td.achlabel span.bold,
 #achievements .colhead td {
-    font-size: 18px;}
+    background: var(--c-box);
+    font-size: 16px;}
 #achievements .colhead .bold,
 #achievements td.achlabel .bold {
-    font-weight: 600;}
+    font-weight: 700;}
+#achievements img:hover {
+    opacity: 1 !important;}
 
 #achievements .colhead span.italic {
     line-height: var(--p-lh);}
+
+#achievements tr:not(.colhead) {
+    border-top: 1px solid var(--c-brdr1);}
 
 #achievements .spacer {
     display: none;}
@@ -10586,9 +10617,9 @@ td .log_green {
     text-align: center;}
 
 #achievements td.achlabel {
-    background-color: var(--c-sb1);
-    text-align: left;
-    padding-left: 10px;}
+    /*background-color: var(--c-sb1);*/
+    text-align: right;
+    /*padding-left: 10px;*/}
 
 #achievements td .italic {
 	font-size: 11px;
@@ -10599,13 +10630,13 @@ td .log_green {
 
 #seedtime_tokens #tokens_breakdown,
 #achievements {
-    top: 37px;
-    width: calc(100% - 2px);
+    /*top: 37px;
+    width: calc(100% - 2px);*/
     margin: 0 auto 25px auto;
 	position: relative;}
 #seedtime_tokens #tokens_breakdown:before,
 #achievements:before {
-    z-index: 0;
+    /*z-index: 0;
     content: 'Achievements';
     padding: 9px 10px;
     font-size: var(--p-head);
@@ -10617,12 +10648,12 @@ td .log_green {
     background: var(--p-head-grdnt);
     position: absolute;
     left: 0;
-    top: -36px;}
+    top: -36px;*/}
 #wrapper #seedtime_tokens #tokens_breakdown:before {
-    content: 'Breakdown';}
+    /*content: 'Breakdown';*/}
 #seedtime_tokens #tokens_breakdown:after,
 #achievements:after {
-    content: '';
+    /*content: '';
     position: absolute;
     width: 100%;
     top: -37px;
@@ -10632,15 +10663,15 @@ td .log_green {
     background-color: var(--c-box);
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);
-    border: 1px solid var(--c-main-brdr);}
+    border: 1px solid var(--c-main-brdr);*/}
 
 #achievements tr:not(.colhead) td {
 	border-bottom: 1px solid var(--c-table-brdr);}
 #wrapper #achievements tr:last-child td {
-    font-size: 11px !important;
+    font-size: 10px !important;
     padding-left: 10px;
-    border: none;
-	border-top: 1px solid var(--c-table-brdr);}
+    /*border: none;
+	border-top: 1px solid var(--c-table-brdr);*/}
 
 #user #content >#progress_bar ~.flleft.linkbox {
     text-align: left;}
@@ -10650,11 +10681,13 @@ td .log_green {
 /* presudo element galore */
 #seedtime_tokens >.large_progress_bar,
 #user #content >#progress_bar {
-    margin: 57px 11px 11px 11px;
-    position: relative;}
+    -webkit-box-shadow: var(--p-main-shdw);
+    box-shadow: var(--p-main-shdw);
+    /*margin: 57px 11px 11px 11px;*/
+    /*position: relative;*/}
 #seedtime_tokens >.large_progress_bar:before,
 #user #content >#progress_bar:before {
-    content: '';
+    /*content: '';
     position: absolute;
     width: calc(100% + 20px);
     height: calc(100% + 104px);
@@ -10664,9 +10697,9 @@ td .log_green {
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);
     border: 1px solid var(--c-main-brdr);
-    z-index: -1;}
+    z-index: -1;*/}
 #user #content >#progress_bar:after {
-    content: 'User class progress';
+    /*content: 'User class progress';
     position: absolute;
     text-align: left;
     padding: 9px 10px;
@@ -10678,12 +10711,12 @@ td .log_green {
     font-weight: 600;
     z-index: 1;
     width: 100%;
-    background: var(--p-head-grdnt);}
+    background: var(--p-head-grdnt);*/}
 #seedtime_tokens >.linkbox,
 #user #content >#progress_bar ~.linkbox {
-    margin: 0 10px 25px 10px;
+    margin: 10px 10px 25px 10px;
     padding: 0;
-    font-size: 14px;
+    font-size: 13px;
     line-height: var(--p-lh);}
 
 
@@ -10712,6 +10745,8 @@ td .log_green {
     margin-bottom: 30px;}
 #user #seedtime_tokens,
 #user #achievements {
+    -webkit-box-shadow: var(--p-main-shdw);
+    box-shadow: var(--p-main-shdw);
     margin-bottom: 83px;}
 
 
@@ -12184,8 +12219,8 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     padding: 10px 0;
     color: var(--c-text-s);}
 #calendar .calendar {
-    margin-top: -36px;
-    padding: 46px 10px 10px 10px;}
+    /*margin-top: -36px;
+    padding: 46px 10px 10px 10px;*/}
 #wrapper .calendar-day {
     font-size: 14px;
     background-color: var(--c-trowb);
