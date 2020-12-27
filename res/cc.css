@@ -2730,7 +2730,7 @@ th[aria-disabled="false"]:active,
     content: '';
     position: absolute;
     left: -10px;
-    top: -315px;
+    top: -325px;
     width: 50px;
     height: 600px;}
 .torrent_table .show_torrents_link:after {
@@ -9967,12 +9967,12 @@ body#user.inventory {}
 	border: 1px solid red;
 	margin: 0;}*/
 .gallery_small_slot a {
-    outline: 0 solid var(--c-sticky-id-brdr);
+    /*outline: 0;*/
 	display: inline-block;
 	max-height: 80px;
 	margin: 4px;
 	overflow: hidden;
-    border: 3px solid var(--c-main-brdr);
+    border: 3px solid transparent;
     width: auto;}
 
 .large_row .gallery_small_slot a {
@@ -9981,10 +9981,10 @@ body#user.inventory {}
 	margin: 2px;}
 
 .gallery_row .selected a {
-    outline-width: 1px;
-	border-color: var(--c-sticky-id-brdr);}
+    /*outline-width: 1px;*/
+	border-color: var(--c-brdr2);}
 #wrapper .gallery_row a:hover {
-    outline-color: var(--c-b3);}
+    /*outline-color: var(--c-b3);*/}
 
 .forum_post .gallery_row {
     display: flex;
@@ -10030,11 +10030,12 @@ body#user.inventory {}
 	appearance: none;
 	border: none;
 	width: 130px;
-	height: 14px;}
+	height: 11px;
+    vertical-align: initial;}
 .box_fights_stats .stat_bar progress::-webkit-progress-bar {
-	background-color: var(--c-tor-row-hvr);
-    -webkit-box-shadow: inset var(--p-graph-sh);
-    box-shadow: inset var(--p-graph-sh);}
+	background-color: var(--p-prog-b);
+    /*-webkit-box-shadow: inset var(--p-graph-sh);
+    box-shadow: inset var(--p-graph-sh);*/}
 
 .box_fights_stats .stat_bar progress::-webkit-progress-value {}
 .box_fights_stats .stat_bar progress::-moz-progress-bar {}
@@ -10042,9 +10043,11 @@ body#user.inventory {}
 .box_fights_stats .stat_bar progress.experience_bar {
 	color: var(--c-gold);}
 .box_fights_stats .stat_bar progress.experience_bar::-webkit-progress-value{
-	background: linear-gradient(0deg, var(--c-gold) 0%, var(--c-o-gold) 55%, var(--c-o-gold) 80%, var(--c-gold) 100%);}
+    background: var(--c-gold);
+	/*background: linear-gradient(0deg, var(--c-gold) 0%, var(--c-o-gold) 55%, var(--c-o-gold) 80%, var(--c-gold) 100%);*/}
 .box_fights_stats .stat_bar progress.experience_bar::-moz-progress-bar {
-	background: linear-gradient(0deg, var(--c-gold) 0%, var(--c-o-gold) 55%, var(--c-o-gold) 80%, var(--c-gold) 100%);}
+    background: var(--c-gold);
+	/*background: linear-gradient(0deg, var(--c-gold) 0%, var(--c-o-gold) 55%, var(--c-o-gold) 80%, var(--c-gold) 100%);*/}
 
 .box_fights_stats .stat_bar progress.health_bar {
 	color: var(--c-red);}
@@ -10079,7 +10082,7 @@ body#user.inventory {}
     font-size: 16px;
     line-height: 1em;
     font-weight: 600;
-    border-bottom: 1px solid var(--c-table-brdr);
+    border-bottom: 1px solid var(--c-brdr2);
     width: 100%;
     padding: 0 0 3px 8px;
     margin: 0;}
@@ -10092,10 +10095,11 @@ body#user.inventory {}
 #tools .thin >#recommended >div:not(.sidebar),
 #tools .thin >#recommended >form {
     float: left;
-    width: calc(100% - 315px);}
+    width: calc(100% - 325px);}
 #tools #recommended .sidebar {
     float: right !important;}
 
+/*** mark 16 ***/
 #tools #slides .slides_container ul a {
     margin: 0 auto;
     max-width: calc(100% - 18px);

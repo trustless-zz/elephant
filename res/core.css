@@ -40,6 +40,7 @@
     --c-itm-bcg:                            #f0f0f0;
     --p-itm-shdw:                           2px 2px 6px rgba(0,0,0,0.65);
     --c-item-desc:                          rgb(255 255 255 / .85);
+    --c-gold:                               gold;
     
     --c-leech:                              #e03854;
     --c-seed:                               #418b00;
@@ -384,7 +385,7 @@ div[id^="ghost"] {
     display: table;
     font-family: Adelle, Times New Roman;
     /* font-size: 0; */
-    /*width: 100%;*/
+    width: 100%;
     /*line-height: 1em;*/
     padding-left: 15px;
     font-size: 21px;/*}
