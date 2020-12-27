@@ -5494,8 +5494,8 @@ div.breadcrumbs,
 #forums .forum_mythreads tr span[style="float:right;"],
 #forums .last_poster,
 #index #freeleech .group_torrent>a {
-    font-size: 13px;
-    line-height: 20px;}
+    /*font-size: 13px;
+    line-height: 20px;*/}
 #forums .forum_index tr:not(.colhead) td:first-child,
 #forums .forum_mythreads tr:not(.colhead) td:first-child,
 #forums .forum_editsubs tr:not(.colhead) td:first-child,
@@ -5503,7 +5503,7 @@ div.breadcrumbs,
     /*background-size: 19px 18px;*/
     width: 18px;
     height: 100%; /* trying to fix a weird height bug(?) */
-    max-height: calc(15px * var(--p-lh));} /* =line-height */
+    max-height: calc(1em * var(--p-lh));} /* =line-height */
 #forums .forum_index .colhead td:nth-child(1),
 #forums .forum_mythreads .colhead td:nth-child(1),
 #forums .forum_editsubs .colhead td:nth-child(1),
@@ -5516,11 +5516,9 @@ div.breadcrumbs,
 #forums .forum_mythreads tr:not(.colhead) td,
 #forums .forum_index tr:not(.colhead) td,
 #inbox .thin >.box.pad #messageform tr:not(.colhead) td:nth-child(2) {
-    font-size: 15px;
-    /* padding-top: 6px;
-    padding-bottom: 6px; */
+    /*font-size: 15px;
     padding-top: 7px;
-    padding-bottom: 7px;}
+    padding-bottom: 7px;*/}
 
 #shop .colhead:only-child, /* for empty existing_freeleech_pots etc. */
 #gazelleview #torrent_comments >h1:first-child,
@@ -5758,10 +5756,10 @@ form#drag_drop_collage_form .drag_drop_save:first-child {
 #reports .thin >h3,
 #reportsv2 #report_table >h3,
 #forums .linkbox.linkbox_bottom +br +h3 {
-    /*width: 100%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: 9;*/} /*** mark 8 ***/
+    z-index: 9;} /*** mark 8 ***/
 #inbox .box.vertical_space +h2 +form,
 #inbox #messageform +h2 +form,
 #inbox h2 +#messageform,
@@ -6603,8 +6601,8 @@ input[type="radio"]:active {
 #tools #content >.header h2, /* OS and Browser Usage */
 #tools .thin >#recommended >form#torrent_form >h2,
 /*#torrents .center.thin >h2,*/
-#donate span.donation_info_title h3,
-#forums .forum_list h3 {
+#donate span.donation_info_title h3/*,
+#forums .forum_list h3*/ {
     font-family: Adelle, Times New Roman;
     position: relative;
     text-align: center;
@@ -6617,6 +6615,10 @@ input[type="radio"]:active {
     top: 0;
     left: 0;
     margin: 0 auto;}
+
+#forums .forum_list h3 {
+    margin: 
+}
 
 #tools #content >.header +table,
 #tools .thin >#recommended >form#torrent_form >h2 +table,
