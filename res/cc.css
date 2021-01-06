@@ -4052,7 +4052,7 @@ strong.mature +strong +br,
 .forum_post .colhead_dark div[style="float: right;"] >a:nth-child(2),
 #newthreadpreview .forum_post .colhead_dark #barpreview a:nth-child(2)
 /* /forum post 'back to top' button */ {
-    display: none;}
+    /*display: none;*/}
 
 .similar {
     position: relative;
@@ -4341,12 +4341,12 @@ li:not(.suggested_similar) .similar_votes >span {
 
 .forum_post .colhead_dark {
     overflow: hidden;}
-/*#quickreplypreview .colhead_dark span[style="float:left;"],
+#quickreplypreview .colhead_dark span[style="float:left;"],
 .forum_post .colhead_dark div[style="float: left;"],
 .forum_post .colhead_dark div[style="float:left;"],
 #newthreadpreview .forum_post .colhead_dark span[style="float: left;"] {
-    width: calc(100% - 40px);
-    text-align: left;}*/
+    width: calc(100% - 68px);
+    text-align: left;}
 #tools #mastergroups #searchgroups input[type="submit"],
 #tools #addgroup input[type="submit"],
 #user input#TitlePreview,
@@ -4366,11 +4366,14 @@ li:not(.suggested_similar) .similar_votes >span {
 #collections .sidebar .box.box_addtorrent .pad.add_torrent input[type="submit"],
 #torrents .center.thin >.box.pad form input[value="PTPImg It"] {
     vertical-align: bottom;}
-/*#quickreplypreview .colhead_dark #barpreview >a:nth-child(2),
+#quickreplypreview .colhead_dark #barpreview >a:nth-child(2),
 .forum_post .colhead_dark div[style="float: right;"] >a:nth-child(2),
 #newthreadpreview .forum_post .colhead_dark #barpreview a:nth-child(2) {
-    font-size: 20px;
-    line-height: 0;}*/
+    line-height: 1em;
+    font-size: 15px;
+    vertical-align: top;
+    /*font-size: 20px;
+    line-height: 0;*/}
 
 .thin.torrent_history >form#torrent_history_search input#search_query {
     width: calc(100% - 393px);}
@@ -5521,9 +5524,9 @@ div.breadcrumbs,
     padding-bottom: 7px;*/}
 
 #shop .colhead:only-child, /* for empty existing_freeleech_pots etc. */
-#gazelleview #torrent_comments >h1:first-child,
+#gazelleview #torrent_comments >h1:first-child/*,
 .avatar .forumstat >strong:first-child,
-.avatar .forumstat >br:first-of-type {
+.avatar .forumstat >br:first-of-type*/ {
     display: none;}
 
 
@@ -5544,7 +5547,11 @@ div.breadcrumbs,
     margin-bottom: 10px;}
 
 
-.avatar .forumstat {
+/*.avatar */.forumstat {
+    text-align: left;
+    margin: 2px 0;
+    padding: 5px;
+    font-size: 12px;
     /*opacity: 0;
     width: max-content;
     position: absolute;
@@ -5566,6 +5573,8 @@ div.breadcrumbs,
         -5px -5px,
         -5px -5px,
         -5px -5px);*/}
+.forumstat strong {
+    font-size: 15px;}
 .avatar:hover .forumstat {
     /*opacity: 1;
     -webkit-clip-path: polygon(
@@ -5717,7 +5726,7 @@ h2 marquee {
     overflow-y: auto;
     overflow-x: hidden;}
 #forums .forum_signature td > div:hover {
-    opacity: 1;}
+    /*opacity: 1;*/}
 #slides >ul.nobullet,
 #users_reviews .review_date,
 form#drag_drop_collage_form .drag_drop_save ~.drag_drop_save,
@@ -6248,6 +6257,11 @@ input[type="radio"]:active {
 
 .avatar {
     min-width: 150px;}
+td.avatar {
+    padding: 0;
+    border-right: 1px solid var(--c-brdr3);}
+tr.likes >td {
+    border-top: 1px solid var(--c-brdr3);}
 .avatar.pixelart {
     image-rendering: -moz-crisp-edges;
     image-rendering: -o-crisp-edges;
@@ -10452,7 +10466,7 @@ h2 span.secondary_class {
     top: calc(50% - 22px);}
 .gazelle_art[style*="Maybe that link was bad or missing_thumb."]:after {
     content: 'Maybe that link was bad or missing thumb.';
-    color: var(--c-txt);
+    color: var(--c-txt1);
     font-size: 14px;
     line-height: 14px;
     top: calc(50% + 8px);

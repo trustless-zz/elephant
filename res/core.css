@@ -42,6 +42,8 @@
     --c-item-desc:                          rgb(255 255 255 / .85);
     --c-lp-bcg:                             #6D7E88;
     --c-gold:                               gold;
+    --c-blue:                               blue;
+    --c-red:                                #ff0000;
     
     --c-leech:                              #e03854;
     --c-seed:                               #418b00;
@@ -51,7 +53,6 @@
     --c-download:                           #914154;
     --c-fl:                                 #6441a5;
     --p-fl:                                 0 0 7px rgba(218, 120, 252, 0.7);
-    --c-red:                                #ff0000;
     --c-trump:                              #BC2839;
     --c-owner:                              #64ae00;
     
@@ -244,7 +245,7 @@ div[id^="ghost"] {
     position: relative;
     /* left: -184px; */
     /*border-radius: 50%;*/
-    margin: 15px 20px 0 -204px;
+    margin: 15px 20px 0 -205px;
     order: -9;}
 #logo a {
     background-image: url('../logo/Logo_Text_CMYKlike_SVG_final.svg');
@@ -386,7 +387,7 @@ div[id^="ghost"] {
     display: table;
     font-family: Adelle, Times New Roman;
     /* font-size: 0; */
-    width: 100%;
+    /*width: 100%;*/ /*- moz only?*/ 
     /*line-height: 1em;*/
     padding-left: 15px;
     font-size: 21px;/*}
