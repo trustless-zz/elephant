@@ -4345,7 +4345,7 @@ li:not(.suggested_similar) .similar_votes >span {
 .forum_post .colhead_dark div[style="float: left;"],
 .forum_post .colhead_dark div[style="float:left;"],
 #newthreadpreview .forum_post .colhead_dark span[style="float: left;"] {
-    width: calc(100% - 68px);
+    width: calc(100% - 71px);
     text-align: left;}
 #tools #mastergroups #searchgroups input[type="submit"],
 #tools #addgroup input[type="submit"],
@@ -4372,6 +4372,7 @@ li:not(.suggested_similar) .similar_votes >span {
     line-height: 1em;
     font-size: 15px;
     vertical-align: top;
+    margin-right: 3px;
     /*font-size: 20px;
     line-height: 0;*/}
 
