@@ -4046,8 +4046,16 @@ input[type="button"] {
 	background-color: transparent;
 	border-color: transparent;}
 
+#wrapper #content table.bbcode_table img,
 .inventory .spoilerbox img {
 	max-width: 100% !important;}
+
+#wrapper div[style*="text-align:center;"] table.bbcode_table td {
+    text-align: center;}
+#wrapper div[style*="text-align:right;"] table.bbcode_table td {
+    text-align: right;}
+#wrapper div[style*="text-align:left;"] table.bbcode_table td {
+    text-align: left;}
 
 /***Books***/
 .book {
