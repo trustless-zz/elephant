@@ -2152,9 +2152,10 @@ table.bbcode_table td,
     overflow: hidden;*/}
 
 #header #announcement {
+    font-family: Whitney, Sans-Serif;
     top: unset;         /* holidayeffects garbage */
-    font-size: 13px;    /* holidayeffects garbage */
-    line-height: 17px;
+    font-size: 14px;    /* holidayeffects garbage */
+    line-height: 18px;
     text-align: center;
     padding: 5px;
     background: var(--p-head-grdnt);
@@ -2282,12 +2283,13 @@ table.bbcode_table td,
 
 .save_message,
 .error_message {
+    font-family: Whitney, Sans-Serif;
     width: calc(100% - 10px);
     padding: 5px;
     text-align: center;
     position: relative;
-    font-size: 13px;
-    line-height: 17px;
+    font-size: 14px;
+    line-height: 18px;
     top: -25px;
     /*-webkit-box-shadow: var(--p-header-shdw);
     box-shadow: var(--p-header-shdw);
@@ -2307,7 +2309,7 @@ table.bbcode_table td,
     display: block;
     background: var(--p-head-grdnt);}
 .error_message {
-    color: var(--c-low);
+    color: var(--c-txt1);
     background-color: var(--c-red);}
 a .error_message:hover {
     color: var(--c-anchor-hvr);
