@@ -408,7 +408,8 @@ div[id^="ghost"] {
     max-width: calc(100% - 235px - 190px);
     position: absolute;
     right: 0;
-    bottom: 15px;}
+    top: 172px;
+    /*bottom: 15px;*/}
 
 
 

@@ -2151,19 +2151,20 @@ table.bbcode_table td,
     position: relative;
     overflow: hidden;*/}
 
-    #header #announcement {
-        top: unset;         /* holidayeffects garbage */
-        font-size: 13px;    /* holidayeffects garbage */
-        text-align: center;
-        padding: 5px;
-        background: var(--p-head-grdnt);
-        width: 100%;
-        order: 99;}
-    #header #userinfo_username {
-        /*display: flex;
-        font-size: 15px;
-        line-height: var(--p-lh);
-        z-index: 99;*/}
+#header #announcement {
+    top: unset;         /* holidayeffects garbage */
+    font-size: 13px;    /* holidayeffects garbage */
+    text-align: center;
+    padding: 5px;
+    background: var(--p-head-grdnt);
+    margin-left: -21px;
+    width: calc(100% + 21px);
+    order: 99;}
+#header #userinfo_username {
+    /*display: flex;
+    font-size: 15px;
+    line-height: var(--p-lh);
+    z-index: 99;*/}
 #header #userinfo_username #nav_userinfo a {
     /*font-size: 18px;*/}
 
@@ -9782,6 +9783,9 @@ body#user.inventory {}
 #wrapper #content table.bbcode_table img,
 .inventory .item_description img {
     max-width: 100% !important;}
+table.bbcode_table td {
+    word-break: break-word;}
+
 
 /*** Books ***/
 .book_dialog {}
@@ -10549,7 +10553,7 @@ td .log_green {
      text-align:left;}
 #friends td.col_avatar.avatar +td[valign="top"] {
     width: 100%;
-    height: 127px;/* increasing initial height of comment field */} 
+    height: 127px;/* increasing initial height of the comment field */} 
 #friends .colhead span.time {
     margin-right: 3px;}
 
