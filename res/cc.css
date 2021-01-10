@@ -2154,11 +2154,15 @@ table.bbcode_table td,
 #header #announcement {
     top: unset;         /* holidayeffects garbage */
     font-size: 13px;    /* holidayeffects garbage */
+    line-height: 17px;
     text-align: center;
     padding: 5px;
     background: var(--p-head-grdnt);
     margin-left: -21px;
     width: calc(100% + 21px);
+    position: relative;
+    bottom: -5px;
+    margin-top: 10px;
     order: 99;}
 #header #userinfo_username {
     /*display: flex;
@@ -2278,12 +2282,14 @@ table.bbcode_table td,
 
 .save_message,
 .error_message {
-    width: calc(100% - 12px);
+    width: calc(100% - 10px);
     padding: 5px;
     text-align: center;
     position: relative;
-    top: -20px;
-    -webkit-box-shadow: var(--p-header-shdw);
+    font-size: 13px;
+    line-height: 17px;
+    top: -25px;
+    /*-webkit-box-shadow: var(--p-header-shdw);
     box-shadow: var(--p-header-shdw);
     border: 1px solid var(--c-main-brdr);
     border-top: 0;
@@ -2296,16 +2302,16 @@ table.bbcode_table td,
         -10px 0,
         calc(100% + 10px) 0,
         calc(100% + 10px) calc(100% + 10px),
-        -10px calc(100% + 10px));} /* shadow cut off */
+        -10px calc(100% + 10px));*/} /* shadow cut off */
 .save_message {
     display: block;
     background: var(--p-head-grdnt);}
 .error_message {
     color: var(--c-low);
-    background-color: var(--c-em-bcg);}
+    background-color: var(--c-red);}
 a .error_message:hover {
-    color: var(--c-high-t);
-    background-color: var(--c-em-hvr);}
+    color: var(--c-anchor-hvr);
+    background-color: var(--c-txt1);}
 
 
 #index #clans {
