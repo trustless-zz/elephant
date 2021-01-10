@@ -259,7 +259,7 @@ div[id^="ghost"] {
     margin: 0 auto 20px auto;
     /*background: #ff000010;*/
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     position: relative;
     padding: 15px 0 10px 204px;
     box-sizing: border-box;
