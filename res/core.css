@@ -400,6 +400,7 @@ div[id^="ghost"] {
     /*max-width: 900px;*/
     max-width: calc(100vw - 560px);
     min-width: 0;
+    width: 900px;
     position: absolute;
     right: 0;
     top: 15px;}
