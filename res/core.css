@@ -224,6 +224,8 @@ div[id^="ghost"] {
         margin-left: 15px;
         left: 0;
         width: calc(100% - 30px);}
+    #wrapper #header #announcement {
+        margin-left: -204px;}
 }
 @media (min-width: 801px) {
 .sidebar {
@@ -360,6 +362,8 @@ div[id^="ghost"] {
 
 #menu ul {
     display: flex;
+    width: 100%;
+    min-width: 0;
     flex-flow: row;
     justify-content: space-between;}
 
@@ -382,18 +386,23 @@ div[id^="ghost"] {
     background: #00ff2b10;}*/
 
 #menu {
-    flex: 1 0 auto;
-    margin-left: auto;
+    /*flex: 1 0 auto;
+    margin-left: auto;*/
     display: table;
     font-family: Adelle, Times New Roman;
     /* font-size: 0; */
     /*width: 100%;*/ /*- moz only?*/ 
     /*line-height: 1em;*/
-    padding-left: 15px;
+    /*padding-left: 15px;*/
     font-size: 21px;/*}
 #wrapper #userinfo_minor,
 #wrapper #menu {*/
-    max-width: 900px}
+    /*max-width: 900px;*/
+    max-width: calc(100vw - 560px);
+    min-width: 0;
+    position: absolute;
+    right: 0;
+    top: 15px;}
 #menu ul {
     /* font-size: 21px; */
     /* display: block; */}

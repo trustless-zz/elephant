@@ -990,6 +990,7 @@ div#fight_skill_points_assign >table,
     font-size: var(--p-head);
     line-height: 1em;
     padding: 11px 10px 9px 10px;}
+#header #nav_index,
 #artist .sidebar >.box:first-child .head,
 .box_albumart .head {
     display: none;}
@@ -2160,7 +2161,7 @@ table.bbcode_table td,
     padding: 5px;
     background: var(--p-head-grdnt);
     margin-left: -21px;
-    width: calc(100% + 21px);
+    width: 100vw;
     position: relative;
     bottom: -5px;
     margin-top: 10px;
