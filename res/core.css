@@ -219,13 +219,14 @@ div[id^="ghost"] {
     display:none;}
 
 
-@media (max-width: 1699px) {
+@media (max-width: 1713px) {
     #wrapper #header {
         margin-left: 15px;
         left: 0;
-        width: calc(100% - 30px);}
+        max-width: calc(100% - 7.5px - (50vw - 650px));
+        /*width: calc(100% - 30px);*/}
     #wrapper #header #announcement {
-        margin-left: -204px;}
+        margin-left: calc(-207px + (50vw - 650px));}
 }
 @media (min-width: 801px) {
 .sidebar {
@@ -244,11 +245,12 @@ div[id^="ghost"] {
     width: 164px;
     /* display: none; */
     /*background: white;*/
-    position: relative;
-    /* left: -184px; */
+    position: absolute;
+    top: 30px;
+    left: 0;
     /*border-radius: 50%;*/
-    margin: 15px 20px 0 -205px;
-    order: -9;}
+    /*margin: 15px 20px 0 -205px;
+    order: -9;*/}
 #logo a {
     background-image: url('../logo/Logo_Text_CMYKlike_SVG_final.svg');
     display: block;
@@ -263,11 +265,11 @@ div[id^="ghost"] {
     display: flex;
     flex-flow: row wrap;
     position: relative;
-    padding: 15px 0 10px 204px;
+    padding: 15px 0 10px 184px;
     box-sizing: border-box;
-    border-left: 1px solid transparent;
+    /*border-left: 1px solid transparent;*/
     left: calc(-184px / 2);
-    width: calc(100% - 204px);
+    /*width: calc(100% - 204px);*/
     max-width: 1484px;}
 #header:before {
     content: '';

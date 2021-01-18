@@ -2160,8 +2160,8 @@ table.bbcode_table td,
     text-align: center;
     padding: 5px;
     background: var(--p-head-grdnt);
-    margin-left: -21px;
-    width: 100vw;
+    /*margin-left: -21px;*/
+    width: 100%;
     position: relative;
     bottom: -5px;
     margin-top: 10px;

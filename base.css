@@ -279,8 +279,10 @@ overflow: unset;}
 
 #userinfo_stats {
 	width: 170px;
-	font-size: 10pt;
-}
+	font-size: 10pt;}
+#userinfo_stats >li {
+    width: 170px;
+    display: block;}
 
 #userinfo_stats li {
 	list-style: none;
@@ -294,14 +296,6 @@ overflow: unset;}
 #userinfo_stats li .stat {
 	text-align: right;
 	float: right;
-}
-
-#stats_ratio {
-	position: absolute;
-	top: 57px;
-	float: left;
-	display: block;
-	width: 170px;
 }
 
 #stats_ratio .r20 {
@@ -361,19 +355,6 @@ overflow: unset;}
     top: -11px;
     margin-bottom: -11px;}
 
-#connectable {
-	position: absolute;
-	top: 114px;
-	float: left;
-	display: block;
-	width: 170px;}
-
-#online_irc {
-	position: absolute;
-	top: 133px;
-	float: left;
-	display: block;
-	width: 170px;}
 
 
 #searchbars {
@@ -2820,13 +2801,6 @@ img.avatar {
     list-style: outside;
 }
 
-#stats_hnr {
-    position: absolute;
-    top: 95px;
-    float: left;
-    display: block;
-    width: 170px;
-}
 
 .similar_div .head .flright {
     /* margin-top: -26px; */
@@ -2894,13 +2868,6 @@ span.user_title {
     height: 100px;
     filter: none;}
 
-#stats_share_score {
-    width: 170px;
-    position: absolute;
-    top: 76px;
-    float: left;
-    display: block;
-}
 
 .global_buffs>div {
     min-width: 80px;
@@ -6959,42 +6926,9 @@ textarea {
     text-align: left;
     padding-left: 15px;}
 
-#userinfo_stats .my_buffer {
-    position: relative;
-    width: 100%;
-    top: 19px;
-    left: -4px;
-    padding: 5px;
-    opacity: 0;
-    -webkit-transition: all .15s linear;
-    -o-transition: all .15s linear;
-    transition: all .15s linear;
-    -webkit-clip-path: polygon(
-        -10px -10px,
-        calc(100% + 10px) -10px,
-        calc(100% + 10px) -10px,
-        -10px -10px);
-    clip-path: polygon(
-        -10px -10px,
-        calc(100% + 10px) -10px,
-        calc(100% + 10px) -10px,
-        -10px -10px);}
 #userinfo_stats .my_buffer >span {
     margin: 0 !important;}
 
-#userinfo_stats #stats_ratio:hover ~.my_buffer,
-#userinfo_stats .my_buffer:hover {
-    opacity: 1;
-    -webkit-clip-path: polygon(
-        -10px -10px,
-        calc(100% + 10px) -10px,
-        calc(100% + 10px) calc(100% + 10px),
-        -10px calc(100% + 10px));
-    clip-path: polygon(
-        -10px -10px,
-        calc(100% + 10px) -10px,
-        calc(100% + 10px) calc(100% + 10px),
-        -10px calc(100% + 10px));}
 
 #torrents #torrent_comments #reply_box .box.pad {
     padding: 0;}
@@ -7754,7 +7688,47 @@ table.event_form_table td.label.small_label[colspan="4"] {
 
 
 
+@media (min-width: 801px) {
+    #stats_seeding      {order:-8;}
+    #stats_leeching     {order:-7;}
+    #stats_gold         {order:-6;}
+    #stats_ratio        {order:-5;}
+    #stats_share_score  {order:-4;}
+    #connectable        {order:-3;}
+    #stats_hnr          {order:-2;}
+    #online_irc         {order:-1;}
 
+    #userinfo_stats {
+        display: flex;
+        flex-flow: column;
+        width: 170px;
+        font-size: 10pt;
+        transition: all .1s linear;
+        clip-path: polygon(
+            0 0,
+            calc(100% + 2px) 0,
+            calc(100% + 2px) 152px,
+            0 152px);
+        z-index: 98;}
+    #userinfo_stats:hover {
+        clip-path: polygon(
+            0 0,
+            calc(100% + 3px) 0,
+            calc(100% + 3px) calc(100% + 3px),
+            0 calc(100% + 3px));}
+    #userinfo_stats >li {
+        z-index: 2;
+        position: relative;}
+    #userinfo_stats:before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        width: calc(100% - 10px);
+        height: calc(100% - 152px);
+        padding: 0 2px;
+        bottom: 0;
+        right: -3px;}    
+}
 /* widescreen */
 @media (min-width: 801px) and (max-width: 1279px) {
 #header {
@@ -8043,7 +8017,8 @@ a >.error_message {
     margin-right: 28px;}
 #searchbars {
     margin-left: 274px;}
-#userinfo_stats, #stats_ratio, #stats_share_score, #stats_hnr, #connectable, #online_irc {
+#userinfo_stats,
+#userinfo_stats >li {
     width: 210px;}
 }
 
@@ -8058,7 +8033,8 @@ a >.error_message {
 @media screen and (min-width: 1320px) and (max-width: 1699px) {
 #searchbars {
     margin-left: 314px;}
-#userinfo_stats, #stats_ratio, #stats_share_score, #stats_hnr, #connectable, #online_irc {
+#userinfo_stats,
+#userinfo_stats >li {
     width: 200px;}
 #userinfo_minor li {
     margin-right: 16px;}

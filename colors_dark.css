@@ -76,7 +76,7 @@ select:hover {
     background: none;}
 
 #crafting_recipes,
-#userinfo_stats .my_buffer,
+#userinfo_stats:before,
 #torrents #torrentsbrowsecomplete,
 #torrents #torrentsbrowsecomplete li:nth-child(even),
 .autocomplete_list li:nth-child(even),
