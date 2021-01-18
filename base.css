@@ -7694,8 +7694,8 @@ table.event_form_table td.label.small_label[colspan="4"] {
     #stats_gold         {order:-6;}
     #stats_ratio        {order:-5;}
     #stats_share_score  {order:-4;}
-    #connectable        {order:-3;}
-    #stats_hnr          {order:-2;}
+    #stats_hnr          {order:-3;}
+    #connectable        {order:-2;}
     #online_irc         {order:-1;}
 
     #userinfo_stats {
