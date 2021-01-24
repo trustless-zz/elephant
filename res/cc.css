@@ -6297,7 +6297,7 @@ tr.likes >td {
 #inbox .box.vertical_space +h2 +form>.box.pad,
 #inbox #messageform +h2 +form >.box.pad,
 #inbox h2 +#messageform >.box.pad {
-    /*padding: 46px 10px 10px 10px;*/
+    padding: 51px 10px 10px 10px;
     position: relative;}
 #collections .thin >h2:first-child +form:last-child:before, /* edit description page */
 #gazelles .thin >h2:first-child +.box.pad:before,
@@ -6400,9 +6400,9 @@ tr.likes >td {
 #inbox .box.vertical_space +h2,
 #inbox #messageform +h2,
 #inbox .box.vertical_space +h2 {
-    /*position: relative;
-    margin: 1px auto 0 auto;
-    width: calc(100% - 22px);*/}
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 20px);}
 #inbox #messageform #preview {
     padding: 10px;
     margin: 0 0 12px 0;
@@ -9774,9 +9774,9 @@ body#user.inventory {}
 
 .inventory .save_message span {
     display: block;
-    text-align: left;
+    text-align: center;
     width: 100%;
-    font-weight: 600;
+    /*font-weight: 600;*/
     font-family: Adelle, Times New Roman;
     background: var(--p-head-grdnt);
     font-size: var(--p-head) !important;

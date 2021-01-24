@@ -226,7 +226,15 @@ div[id^="ghost"] {
         max-width: calc(100% - 7.5px - (50vw - 650px));
         /*width: calc(100% - 30px);*/}
     #wrapper #header #announcement {
-        margin-left: calc(-207px + (50vw - 650px));}
+        margin-left: calc((50vw - 650px) - 206.5px);
+        width: calc(100% - ((50vw - 650px) - 206.5px));}
+}
+@media (max-width: 1345px) {
+    #wrapper #header {
+        margin-right: 15px;
+        max-width: calc(100% - 7.5px - 15px - (50vw - 50%));}
+    #wrapper #header #announcement {
+        margin-left: calc((-50vw + 50%) - 69.5px);}
 }
 @media (min-width: 801px) {
 .sidebar {
