@@ -926,6 +926,11 @@ div#fight_skill_points_assign >table,
 
 #reportsv2 #report_table >table,
 
+.thin#user_fight_attacks table.border,
+
+#user #seedtime_tokens #tokens_breakdown,
+#user #achievements,
+
 #tools #content >p,
 #better .thin >div,
 #better .thin >table,
@@ -3285,7 +3290,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    color: var(--c-txt);
+    color: var(--c-txt1);
     padding: 0 20px 0 4px;}
 select,
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
@@ -3308,7 +3313,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .select2-results__option:nth-child(odd),
 select >option:nth-child(odd) {
-    background-color: var(--c-input-obj);}
+    background-color: var(--c-rowb);}
 textarea:hover,
 textarea:focus,
 #wrapper #trading_panel .message_box textarea:hover,
@@ -4874,7 +4879,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
     width: -moz-fit-content;
     width: fit-content;
     display: block;
-    font-size: .7em;
+    font-size: 11px;
     font-style: italic;
     line-height: var(--p-lh);
     /*color: var(--c-text2);*/}
@@ -4938,10 +4943,10 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #collections table#new_collage input#art ~input {
     margin-bottom: 2px;}
 .requests_outer_table >tbody >tr >td:nth-child(1) {
-    width: 70% !important;}
+    width: 75% !important;}
 #requests_donate {
     vertical-align: top;
-	border-left: 1px solid var(--c-table-brdr);}
+	border-left: 1px solid var(--c-brdr1);}
 #torrents .thin >h2:first-child +.center td.label,
 #upload td.label,
 .filter_torrents td.label,
@@ -5189,8 +5194,8 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
 #collections .thin >#reply_box >h3,
 #user .thin >.header:first-child ~h3,
 #wrapper #trading_panel .message_box .label:first-of-type,
-#seedtime_tokens >h3,
-.thin#user_fight_attacks >.box.pad >h3,
+/*#seedtime_tokens >h3,*/
+/*.thin#user_fight_attacks >.box.pad >h3,*/
 #gazelleview #titlerow p,
 #items_navigation h3,
 #wrapper #searchthread h3,
@@ -6201,7 +6206,7 @@ input[type="radio"]:active {
 #wrapper #searchthread table,
 #wrapper #searchforum table,
 .thin#user_fight_attacks >.box.pad,
-.thin#user_fight_attacks table.border,
+/*.thin#user_fight_attacks table.border,*/
 #collections .thin >#reply_box >.box.pad {
     background: none;
     border: none;
@@ -10810,8 +10815,8 @@ td .log_green {
     margin-bottom: 30px;}
 #user #seedtime_tokens,
 #user #achievements {
-    -webkit-box-shadow: var(--p-main-shdw);
-    box-shadow: var(--p-main-shdw);
+    /*-webkit-box-shadow: var(--p-main-shdw);
+    box-shadow: var(--p-main-shdw);*/
     margin-bottom: 83px;}
 
 
@@ -10875,15 +10880,16 @@ td .log_green {
 #share_score_breakdown .colhead td:nth-child(2) {
     text-indent: -160px;
     overflow: visible;
-    font-weight: 600;}
+    /*font-weight: 600;*/}
 
 #share_score_breakdown tr:not(:first-child):not(:last-child) {
-	border-bottom: 1px solid var(--c-table-brdr);}
+	border-bottom: 1px solid var(--c-brdr1);}
 
 
 .large_progress_bar > span {
 	display: block;
 	height: 100%;
+    line-height: 21px;
 	position: absolute;
 	top: 0;}
 
@@ -10940,7 +10946,7 @@ td .log_green {
 .large_progress_bar .main_section {
     z-index: 3;
     left: 0;
-	border-right: 2px solid var(--c-on);
+	border-right: 2px solid var(--c-box);
     /*-webkit-clip-path: polygon(
             calc(100% - 2px)    0,
             100%                0,
@@ -11017,11 +11023,12 @@ td .log_green {
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);}
 #share_score .large_progress_bar .bonus_section,
-/*#share_score .large_progress_bar .main_section,*/
+#share_score .large_progress_bar .main_section,
 #share_score .points,
 #share_score .large_progress_bar .five_marker,
 #share_score .large_progress_bar .fifteen_marker {
-    top: 2px;}
+    /*line-height: 21px;*/
+    /*top: 2px;*/}
 
 
 
@@ -11032,28 +11039,28 @@ td .log_green {
 #wrapper .thin#user_fight_attacks table.border {
     position: relative;
     z-index: 0;
-    width: calc(100% - 2px);
-    margin: 0 auto 17px auto;}
+    width: 100%;
+    margin: 0 auto 25px auto;}
 .thin#user_fight_attacks table.border:before {
-    content: '';
+    /*content: '';
     position: absolute;
     width: 100%;
-    height: calc(100% + 36px);
-    left: -1px;
-    bottom: -1px;
+    height: calc(100% + 41px);
+    left: 0;
+    bottom: 0;
     z-index: -1;
     background-color: var(--c-box);
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);
-    border: 1px solid var(--c-main-brdr);}
+    border: 1px solid var(--c-main-brdr);*/}
 #wrapper .thin#user_fight_attacks >.box.pad >h3 {
-    width: calc(100% - 22px);
+    /*width: calc(100% - 20px);
     margin: 0 auto;
     position: relative;
-    z-index: 1;}
+    z-index: 1;*/}
 .thin#user_fight_attacks td.label {
     padding: 5px 10px;
-    background-color: var(--c-edition);
+    /*background-color: var(--c-edition);*/
     text-align: left;}
 /***/
 
@@ -11135,8 +11142,8 @@ td .log_green {
 #wrapper .select2-container--default .select2-selection--multiple .select2-selection__rendered li {
     padding: 0;}
 #wrapper #content .select2-container--default .select2-selection--multiple {
-    border-radius: 0;
-    min-height: 26px;
+    /*border-radius: 0;*/
+    min-height: 24px;
     /*height: unset;*/}
 #wrapper .select2-container .select2-selection--multiple {
     min-height: unset;}
@@ -11144,10 +11151,12 @@ td .log_green {
     height: 24px;}
 #wrapper .select2-container--default .select2-selection--multiple .select2-selection__choice {
     padding: 0 5px 1px 5px !important;
-    color: var(--c-text-s);
+    color: var(--c-txt1);
     margin: 1px 4px 1px 0;
-    background-color: var(--c-edition);
-    border: 1px solid var(--c-main-brdr);
+    font-size: 14px;
+    line-height: 17px;
+    background-color: var(--c-i-bcg);
+    border: 1px solid var(--c-input-brdr);
     padding: 1px 3px 2px 3px;}
 .box_recommend_to_friend .body >.select2 {
     margin: 8px 9px 0 0;
@@ -11161,9 +11170,9 @@ td .log_green {
     display: flex;
     flex-flow: row wrap;}
 #wrapper .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
-    color: var(--c-text-s);}
+    color: var(--c-txt2);}
 #wrapper .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-    color: var(--c-low);}
+    color: var(--c-txt1);}
 .select2-results__option,
 option {
     /*height: 24px;*/
@@ -11171,10 +11180,10 @@ option {
     min-height: unset;
     /*padding: 0px 2px;*/}
 .select2-results__option {
-    color: var(--c-txt);}
+    color: var(--c-txt1);}
 .select2-results__option:hover {
-    color: var(--c-low) !important;
-    background-color: var(--c-tgroup) !important;}
+    color: var(--c-txt1) !important;
+    background-color: var(--c-row-hvr) !important;}
 #adventureclub table#monsters_search td.tooltip {
     text-align: right;}
 #adventureclub table#monsters_search #advanced_search tr:last-child td {
@@ -11185,8 +11194,8 @@ table.adventure_table h3 {
     width: unset;}
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    color: var(--c-low);
-    background-color: var(--c-tor-row-hvr);}
+    color: var(--c-txt1);
+    background-color: var(--c-row-hvr);}
 /***/
 
 
@@ -11223,25 +11232,25 @@ table.adventure_table h3 {
 
 
 
-
+/*** mark 19 ***/
 /****************************************************
 ************ Long Term Seeding Tokens ***************
 ****************************************************/
 #seedtime_tokens #tokens_breakdown td.label {
     text-align: left;
-    background-color: var(--c-sb1);}
+    background-color: var(--c-label);}
 #wrapper #seedtime_tokens >h3 {
-    margin: 0 auto -47px auto;
-    width: calc(100% - 22px);}
+    /*margin: 0 auto -47px auto;
+    width: calc(100% - 22px);*/}
 #wrapper #seedtime_tokens >.large_progress_bar:before {
-    height: calc(100% + 86px);
-    bottom: -41px;}
+    /*height: calc(100% + 86px);
+    bottom: -41px;*/}
 #wrapper #seedtime_tokens >h3:first-child {
-    margin-top: 13px;}
+    /*margin-top: 13px;*/}
 #wrapper #seedtime_tokens >.linkbox {
     margin: 0 0 27px 0;}
 #seedtime_tokens #tokens_breakdown td:last-child {
-	border-left: 1px solid var(--c-table-brdr);}
+	border-left: 1px solid var(--c-brdr1);}
 
 
 #wrapper .large_progress_bar .last_drop {
@@ -11279,11 +11288,11 @@ pre >code.hljs:before {
 pre >code.hljs:before {
     content: '';
     width: 100%;
-    background: 
-        var(--c-tor-row-hvr) 
-        linear-gradient(155deg,var(--c-tor-row-hvr),var(--c-edition));}
+    background: var(--c-label);
+        /*var(--c-tor-row-hvr) 
+        linear-gradient(155deg,var(--c-tor-row-hvr),var(--c-edition));*/}
 pre >code.hljs:after {
-    color: var(--c-txt);
+    color: var(--c-txt1);
     content: 'code';
     width: auto;
     text-indent: 5px;}
@@ -11348,6 +11357,8 @@ pre >code.hljs[class$=" hljs"]:after {
 /*** /codeblock ***/
 
 
+
+/*** mark 20 ***/
 
 /***************************************
 ************ Crafting Panel ************
@@ -11460,10 +11471,16 @@ pre >code.hljs[class$=" hljs"]:after {
     background-color: var(--c-craft-result);}
 
 #wrapper .item .item_count {
-    border: 1px solid var(--c-table-brdr);
-    background-color: var(--c-tgroup);
+    /*border: 1px solid var(--c-table-brdr);*/
+    /*background-color: var(--c-tgroup);*/
     padding: 0 2px;
-    color: var(--c-txt);
+    color: var(--c-txt1);
+    text-shadow: 
+        -1px -1px 0 var(--c-box),
+        1px -1px 0 var(--c-box), 
+        -1px 1px 0 var(--c-box),
+        1px 1px 0 var(--c-box),
+        0 0 6px var(--c-box);
     position: absolute;
     top: 2px;
     right: 2px;
@@ -11475,7 +11492,7 @@ pre >code.hljs[class$=" hljs"]:after {
         -1px 1px 0 var(--c-edition),
         1px 1px 0 var(--c-edition);*/}
 #wrapper .item:hover .item_count {
-    background-color: var(--c-box);}
+    /*background-color: var(--c-box);*/}
 
 /**
 GGn trade item count editor -- not a userscript anymore
@@ -12147,9 +12164,9 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     display: none;}
 #backpack #slots_header span {
     font-family: Adelle, Times New Roman;
-    font-size: 16px;
+    font-size: 21px;
     line-height: 1em;
-    height: 15px;
+    height: 1em;
     display: block;
     text-align: center;
     position: relative;
@@ -12173,8 +12190,8 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	top: -6px;
 	padding: 2px;
     font-weight: 600;
-	background: var(--c-input-obj);
-	outline: 1px solid var(--c-sticky-id-brdr);}
+	background: var(--c-box);
+	/*outline: 1px solid var(--c-sticky-id-brdr);*/}
 
 #backpack .itemslot .item {
 	height: 100%;
@@ -12186,8 +12203,10 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #backpack button {
     z-index: 9;
     float: right;
-    margin: 5px;
+    margin: 8.5px 5px;
     position: relative;}
+#equip_panel input#unequip_all {
+    margin: 4px 3px;}
 
 
 
@@ -12644,9 +12663,9 @@ div#fight_skill_points_assign >table {
 	color: var(--c-txt);}
 
 #fight_skill_points_assign tr.skill_tr:not(:nth-last-child(2)){
-	border-bottom: 1px solid var(--c-table-brdr);}
+	border-bottom: 1px solid var(--c-brdr1);}
 #fight_skill_points_assign tr.submit_section {
-	border-top: 1px solid var(--c-table-brdr);
+	border-top: 1px solid var(--c-brdr1);
     background-color: var(--c-tgroup);}
 #fight_skill_points_assign tr.submit_section span {
     font-size: 16px;
@@ -12680,7 +12699,7 @@ div#fight_skill_points_assign >table {
     margin: 10px;}
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonpane {
     background-color: unset;
-    border-top: 1px solid var(--c-table-brdr);
+    /*border-top: 1px solid var(--c-table-brdr);*/
     padding: 0;
     margin: 0;}
 
@@ -12716,7 +12735,7 @@ div#fight_skill_points_assign >table {
     margin: 5px;}
 .review_cell .flextable-cell:last-child {
     width: 100%;
-    padding: 6px 10px 6px 5px;}
+    padding: 10px 10px 25px 10px;}
 #users_reviews .review_cell .flextable {
     display: flex;
     margin: 0;
@@ -12772,7 +12791,7 @@ div#fight_skill_points_assign >table {
 	max-width: 100% !important; }*/
 #users_reviews blockquote.review {
 	width: 100%;
-	margin-left: 0;
+	margin: 0;
 	box-sizing: border-box;}
 
 #users_reviews .game_info {
@@ -12833,9 +12852,9 @@ div#fight_skill_points_assign >table {
 #wrapper .users_review +[data-readmore-toggle]:hover:before {
     background-position: 0 0;}
 .userreviews tr:nth-child(odd) .users_review +[data-readmore-toggle]:before {
-    background: linear-gradient(180deg, var(--c-b00), var(--c-box))}
+    background: linear-gradient(180deg, transparent, var(--c-box))}
 .userreviews tr:nth-child(even) .users_review +[data-readmore-toggle]:before {
-    background: linear-gradient(180deg, var(--c-b00), var(--c-trowb))}
+    background: linear-gradient(180deg, transparent, var(--c-rowb))}
 .users_review[data-readmore] {
     padding-bottom: 0;}
 .users_review[data-readmore][aria-expanded="true"] {
