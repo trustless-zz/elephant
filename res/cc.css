@@ -11386,14 +11386,16 @@ pre >code.hljs[class$=" hljs"]:after {
 #crafting_panel #items >span {
     font-family: Adelle, Times New Roman;
     font-size: var(--p-head);
-    line-height: 41px;
-    font-weight: normal;}
+    line-height: 1em;
+    font-weight: normal;
+    margin: 11px 0 9px 0;
+    display: inline-block;}
 #backpack #items >input,
 #wrapper #trading_panel #items >input,
 #equipment #items_inner >input,
 #crafting_panel #items >input {
     width: calc(100% - 100px);
-    top: -1.5px;}
+    top: -2px;}
 
 /*** Crafting Panel (the panel with all your staff) ***/
 #backpack #slots_panel,
@@ -11500,20 +11502,21 @@ https://gazellegames.net/forums.php?action=viewthread&threadid=20638&postid=1478
 https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 **/
 .trading input.item_count {
+    text-shadow: unset !important;
     width: calc(5ch + 6px) !important;
     border: 1px solid var(--c-input-brdr) !important;
-    background-color: var(--c-input) !important;
+    background-color: var(--c-i-bcg) !important;
     -webkit-box-shadow: var(--p-input-shdw);
     box-shadow: var(--p-input-shdw);
     font-weight: 600 !important;
 	font-family: OpenSans, Sans-Serif;
     z-index: 8;}
 .trading input.item_count:hover {
-    background-color: var(--c-input-focus) !important;}
+    background-color: var(--c-i-focus) !important;}
 .trading input.item_count:focus {
-    background-color: var(--c-input-focus) !important;
-    color: var(--c-low);
-    border-color: var(--c-b1) !important;
+    background-color: var(--c-i-focus) !important;
+    color: var(--c-txt1);
+    /*border-color: var(--c-b1) !important;*/
     outline: 0;}
 /**
 /GGn trade item count editor
@@ -11598,7 +11601,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	width: calc(100% - 40px);
 	z-index: 1;}
 #crafting_recipes li.item_li:hover h3 {
-    color: var(--c-low);}
+    color: var(--c-txt1);}
 
 #crafting_recipes .item_image_div {
 	height: 150px;
@@ -11652,7 +11655,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     left: 0;
     top: 6px;
     line-height: 1em;
-    color: var(--c-text-s);
+    color: var(--c-txt3);
     width: 100%;}
 #equipment .itemslot#slot_1:before {
     content: 'Helmet';}
@@ -11753,11 +11756,11 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	position: absolute;}
 
 #equipment .itemslot.inactive {
-	background: var(--c-body);}
+	background: var(--c-rowb);}
 
 #backpack .itemslot .item:hover,
 #equipment .itemslot .item:hover {
-    border-color: var(--c-b3);}
+    /*border-color: var(--c-b3);*/}
 
 #equipment .itemslot .item img {}
 
@@ -11777,7 +11780,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #equipment .item.highlight {
 	-webkit-box-shadow: 0 0 4px var(--c-on);
     box-shadow: 0 0 4px var(--c-on);
-	border-color: var(--c-sticky-id-brdr);}
+	/*border-color: var(--c-sticky-id-brdr);*/}
 
 #equipment #avatar_preview {
     text-align: center;
@@ -11803,7 +11806,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 
 
 
-
+/*** mark 21 ***/
 /*gr trade*/
 /**********************************************
 ****************TRADING************************
@@ -11814,7 +11817,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 /*** Linkbox ***/
 #wrapper #trading_panel .linkbox {
     font-size: inherit;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
     padding: 6px;
 	width: 100%;
 	text-align: left;}
@@ -11823,7 +11826,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #wrapper #trading_panel #items {
 	width: 399px;
 	float: left;
-	margin: 0 15px 15px 0;
+	margin: 0 20px 20px 0;
 	height: 546px;
 	text-align: center;
 	overflow: hidden;
@@ -11838,7 +11841,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #wrapper #trading_panel .trade_table#other_trade_table {
 	float: right;}
 #wrapper #content #trading_panel #my_trade_table {
-    margin-right: 15px;}
+    margin-right: 20px;}
 
 
 /*** Trade tables ***/
@@ -11849,14 +11852,15 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     border: none;
     width: calc(100% - 20px);
     margin: 0;
-    padding: 9px 10px;
+    padding: 11px 10px 9px 10px;
     height: var(--p-head);
     font-size: var(--p-head);
     line-height: var(--p-head);
-    color: var(--c-txt);
-    font-weight: 600;
+    color: var(--c-txt1);
+    font-weight: normal;
     background: var(--p-head-grdnt);
-    text-align: left;
+    text-align: center;
+    font-family: Adelle, Times New Roman;
     -webkit-box-shadow: none;
     box-shadow: none;}
 
@@ -11869,11 +11873,11 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	font-size: 14px;
 	word-break: break-word;
 	line-height: 80px;
-	background-color: var(--c-edition);
-	border: 1px solid var(--c-table-brdr);
+	background-color: var(--c-blqt-bcg);
+	border: 1px solid var(--c-blqt);
 	border-radius: 0;
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    -webkit-box-shadow: unset;
+    box-shadow: unset;}
 
 #wrapper #trading_panel .trade_table .notice span {
 	display: inline-block;
@@ -11881,7 +11885,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	line-height: normal;}
 
 /* Buttons */
-#wrapper #content #trading_panel button {
+#wrapper #content #trading_panel >button {
 	cursor: pointer;
 	height: 45px;
 	width: 150px;
@@ -11926,7 +11930,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 
 /* Gold trade boxes */
 #wrapper #trading_panel div.gold_trade {
-    background: var(--p-subcolhead);
+    /*background: var(--p-subcolhead);*/
 	height: 42px;
 	width: 100%;
 	margin: 0;
@@ -11935,7 +11939,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #wrapper #trading_panel .gold_trade .gold_trade_max {
     position: absolute;
     width: 90px;
-    top: 36px;
+    top: 41px;
     margin: 2px 0;
     right: 85px;
 	display: block;
