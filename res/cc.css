@@ -293,6 +293,8 @@ input[type="search"],
 #friends #content .search_form input[type="text"],
 #users_reviews >h2 +.box.pad input[type="text"],
 
+input.weblinks,
+
 #torrents #content >script ~form #torrent_link input[name="internallink"],
 #tools .thin >#recommended >.head.colhead_dark:first-child +form.pad input[type="text"] {
     width: 100%;}
@@ -3468,10 +3470,10 @@ tr.likes td[id^="likers_"] >strong,*/
 table#uploadsrow/* td*/,
 table#likesrow/* td*/,
 table#snatchesrow/* td*/,
-#artist .sidebar >.box:first-child >div:last-child,
+/*#artist .sidebar >.box:first-child >div:last-child,
 .box.box_albumart p,
 .box_image_coverart div[align="center"],
-.box_image_avatar div:last-child,
+.box_image_avatar div:last-child,*/
 /*.username_badges,*/
 .username_badges >a,
 h2 a[href^="feeds.php?"],
@@ -3486,7 +3488,18 @@ h2#username span#tip_user,
 #torrent_table .group/*.discog*/ td span[style="float:right;"] /* bookmark icon */
 /* /image container size correction */ {
     font-size: 0;
-    line-height: 0;} /*** mark 4 ***/
+    line-height: 0;} 
+
+#artist .sidebar >.box:first-child >div:last-child,
+.box.box_albumart p,
+.box_image_coverart div[align="center"],
+.box_image_avatar div:last-child {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: center;}
+
+/*** mark 4 ***/
 /*span.username_badges {
     display: inline-block;
     vertical-align: text-bottom;}*/
@@ -4551,11 +4564,15 @@ h2 .username_badges {
     height: 100%;
     /*padding-top: 100%;*/}
 
+.pad.add_tags .field_div,
 .sidebar .box_freeleech form {
     display: flex;
     flex-flow: row;
-    justify-content: space-between;
+    justify-content: space-between;}
+.pad.add_tags .field_div input[type="text"],
+.sidebar .box_freeleech form {
     margin-top: 8px;}
+
 .sidebar .box_freeleech form input[type="number"] {
     width: calc(100% - 58px);}
 

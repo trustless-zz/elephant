@@ -1027,6 +1027,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .amstradcpc,
 .android,
 .applebandaipippin,
+.appleii,
 .apps,
 .atari2600,
 .atari5200,
@@ -1168,6 +1169,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url(icon/svg/android.svg);}
 .applebandaipippin {
     background: url(icon/svg/applebandaipippin.svg);}
+.appleii {
+    background: url(icon/svg/appleii.svg);}
 .apps {
     background: url();}
 .atari2600 {
