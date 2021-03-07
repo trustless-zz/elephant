@@ -3552,7 +3552,7 @@ a[href^="javascript:Vote("] strong:before,
 button:hover,
 #wrapper a[onclick="BBCode.spoiler(this);"]:hover,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button:hover,
-#wrapper #trading_panel button:hover,
+#wrapper #content #trading_panel button:hover,
 .alertable button:hover,
 input[type=button]:hover,
 input[type=submit]:hover/*,
@@ -3575,7 +3575,7 @@ a[href^="javascript:Vote("] strong:hover,
 button:active,
 #wrapper a[onclick="BBCode.spoiler(this);"]:active,
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button:active,
-#wrapper #trading_panel button:active,
+#wrapper #content #trading_panel button:active,
 .alertable button:active,
 input[type=button]:active,
 input[type=submit]:active/*,
@@ -11850,9 +11850,12 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     padding: unset;}
 #wrapper #content #trading_panel .trade_table {
     height: 537px;
+    top: 100px;
+    margin-bottom: 50px;
     position: relative;
     display: flex;
     flex-flow: column;
+    overflow: visible;
     background-image: unset;}
 #wrapper #trading_panel .linkbox #how_to,
 #wrapper #trading_panel .trade_table#other_trade_table {
@@ -11919,21 +11922,21 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #wrapper #trading_panel button:focus {
 	outline: unset;}
 
-#wrapper #content #trading_panel button#cancel_trade {
+#wrapper #trading_panel button#cancel_trade {
     margin: 0 0 12px 10px;
 	float: left;
-    color: var(--c-off);
-	background-color: inherit;}
+    color: var(--c-off);}
+#wrapper #content #trading_panel button {
+	background-color: var(--p-btn-bcg);}
 
 #wrapper #trading_panel button#propose_trade {
 	clear: both;
-	margin: 5px 0 25px 10px;
-	background-color: inherit;}
+    margin: 5px 0 25px 10px;}
 
-#wrapper #content button#accept_trade {
+#wrapper button#accept_trade {
     color: var(--c-on);
 	margin: 5px 0 25px 10px;
-	background-color: inherit;}
+	background-color: var(--p-btn-bcg);}
 
 #wrapper #content #trading_panel button:disabled {
     opacity: 1;
@@ -11947,52 +11950,64 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 
 /* Gold trade boxes */
 #wrapper #trading_panel div.gold_trade {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: var(--c-box);
+    box-shadow: var(--p-main-shdw);
+    position: absolute;
+    top: -100px;
     /*background: var(--p-subcolhead);*/
-	height: 42px;
+	height: 80px;
 	width: 100%;
 	margin: 0;
 	text-align: center;}
 
 #wrapper #trading_panel .gold_trade .gold_trade_max {
-    position: absolute;
-    width: 90px;
-    top: 41px;
-    margin: 2px 0;
-    right: 85px;
-	display: block;
-	font-weight: 600;}
+    width: 100%;
+    margin: 5px 0 0 0;
+    line-height: 1em;
+    height: 1em;
+    display: block;
+    font-weight: bold;}
 
 #wrapper #trading_panel .gold_trade .gold_trade_box {
-    margin: 0;
-	width: calc(100% - 175px);
-    height: 42px;
-	float: left;
+    display: flex;
+    flex-flow: row;
+    margin: 0 5px;
+	width: calc(100% - 44px);
+    height: auto;
+	float: unset;
 	border: none;
 	border-radius: 0;}
 
+#wrapper #trading_panel #other_gold_trade .gold_trade_box {
+    width: 100%;
+    justify-content: center;}
+
 #wrapper #trading_panel .trade_table#other_trade_table .gold_trade_box .gold_trade_box_left {
-    margin: 8px 5px 8px 10px;
+    margin: auto 5px;
     width: 26px;
     height: 26px;}
 #wrapper #trading_panel .trade_table#other_trade_table .gold_trade_box .gold_trade_box_right {
-    width: calc(100% - 41px);
+    margin: auto 0;
+    width: auto;
+    height: auto;
     text-align: left;
     text-indent: 5px;}
 #wrapper #trading_panel .gold_trade span#other_gold_trade_amount {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 42px;}
+    font-weight: bold;
+    font-size: 2em;}
 #wrapper #trading_panel .trade_table#other_trade_table .gold_trade_box img {
     width: 26px;
     height: 26px;
     padding-left: 26px;}
 
 #wrapper #trading_panel .gold_trade .gold_trade_box_left {
-    margin: 12px 5px 12px 10px;
+    margin: 14px 5px 14px 10px;
 	height: 18px;
 	width: 18px;
 	position: relative;
-	float: left;
+	float: unset;
 	background-color: unset;}
 
 #wrapper #trading_panel .gold_trade .gold_trade_box_left img {
@@ -12004,20 +12019,23 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 
 #wrapper #trading_panel .gold_trade .gold_trade_box_right {
 	height: 100%;
-	width: calc(100% - 33px);
-	float: left;
+	width: 100%;
+	float: unset;
 	background-color: unset;}
 #wrapper #trading_panel .gold_trade input#my_gold_trade_amount {
-    width: 100%;
-    font-weight: 600;
-    text-align: left;}
+    font-size: 2em;
+    box-sizing: content-box;
+    padding: 10px 0;
+    width: calc(100% - 2px);
+    font-weight: bold;
+    text-align: center;}
 
 #wrapper #trading_panel .gold_trade .gold_trade_amount {
 	width: 100%;
-	text-align: left;}
+	text-align: center;}
 
 #wrapper #trading_panel .gold_trade input#my_gold_trade_amount {
-    margin: 8px 0;
+    margin: 0;
 	-moz-appearance: textfield;}
 
 #wrapper #my_gold_trade_amount::-webkit-outer-spin-button,
@@ -12025,14 +12043,14 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	-webkit-appearance: none;}
 
 #wrapper #trading_panel .gold_trade .gold_trade_buttons {
-	width: 70px;
-	float: right;
-    height: 28px;
-    margin: 7px 10px 7px 0;}
+	width: 24px;
+	float: unset;
+    height: auto;
+    margin: 0 5px;}
 #wrapper #trading_panel .gold_trade .gold_trade_buttons a {
-    padding: 1px;
+    /*padding: 1px;
     margin-left: 5px;
-    display: inline-block;}
+    display: inline-block;*/}
 
 #wrapper #trading_panel .gold_trade .gold_trade_buttons img {
     margin: 0;
@@ -12049,8 +12067,8 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     font-size: 24px;
     line-height: 26px;
     font-weight: bold;
-	border-top: 1px solid var(--c-table-brdr);
-    background-color: var(--c-tgroup);}
+	border-top: 1px solid var(--c-brdr1);
+    background-color: var(--c-rowb);}
 
 #wrapper .trade_value .trade_value_gold img {
     vertical-align: bottom;
