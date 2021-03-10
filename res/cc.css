@@ -3458,7 +3458,7 @@ tr.likes td[id^="likers_"] >strong,*/
 /*#better table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2),*/
 #tools #content >table[style="width: 600px;"] tr:not(.colhead) td:nth-child(2),
 /*.box.box_coltags .head span[title="Add Tags"] a,*/
-.month-picker-year-table .month-picker-title,
+/*.month-picker-year-table .month-picker-title,*/
 /* image container size correction */
 #staffpm #inbox >form#messageform >table td[width="10"],
 .screenshots/* a*/,
@@ -5198,7 +5198,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowb,
     padding-bottom: 0;*/}
 
 /** convert ... to head **/
-#calendar #content >h2,
+/*#calendar #content >h2,*/
 .tooltipster-content h2,
 #better .thin >h3,
 #artist .center.thin >h2,
@@ -5268,7 +5268,7 @@ form[name="filter"] h3,
     margin: 10px 0 8px 5px;}
 #wrapper #gazelleview #titlerow p:empty {
     height: 18px;}
-#calendar #content >h2,
+/*#calendar #content >h2,*/
 #torrents .torrent_edit >.thin >h2,
 #user .thin >.header:first-child ~h3 {
     margin: 0;
@@ -5603,6 +5603,7 @@ div.breadcrumbs,
 #expanded_review_box >p:first-child {
     margin: 0;
     text-align: center;}
+#upcoming_calendar >.head.colhead_dark,
 #expanded_review_box #load_edit_review_dialog {
     margin-bottom: 10px;}
 
@@ -6994,10 +6995,10 @@ tr.likes >td {
     background: var(--p-head-grdnt);
     border: none;
     color: var(--c-txt1);
-    border-radius: 0px;
+    border-radius: 0 !important;
     height: var(--p-head);
     font-size: var(--p-head);
-    font-weight: 600;}
+    font-weight: bold;}
 
 .torrent_details tr.pad div[id^=files_] {
     max-height: 2000px;
@@ -7139,7 +7140,7 @@ td.center.cats_col {
 #bookmarks #torrent_table .colhead_dark td:nth-child(n+4),
 #collections #torrent_table >tbody >tr.colhead >td:nth-child(n+4) {
     width: 18px;}
-/*.month-picker-year-table .month-picker-title .ui-button-text,*/
+.month-picker-year-table .month-picker-title .ui-button-text,
 #collections #torrent_table .colhead td[width="70%"] strong,
 #bookmarks #torrent_table .colhead_dark td[width="70%"] strong {
     font-size: 16px;
@@ -7500,7 +7501,7 @@ ul.poll,
 #top10 .group_torrent td:first-child strong,
 #todo .thin >form .colhead td,
 #rules .thin >.before_rules li ul li strong {
-    font-weight: 600;}
+    font-weight: bold;}
 #calendar .calendar-row.calendar-heading strong,
 #collections #torrent_table .colhead strong,
 #rules .thin >.before_rules li ul ul li strong,
@@ -9638,7 +9639,7 @@ li.item_li #clickable .item_description img {
 .ui-widget-header .ui-state-default,
 .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
     /*background: var(--c-box);
-	border: 1px solid var(--c-table-brdr);
+	border: 1px solid var(--c-brdr1);
 	color: var(--c-anchor);*/}
 
 .ui-widget-header >.ui-dialog-title {
@@ -11835,7 +11836,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #wrapper #trading_panel .linkbox {
     font-size: inherit;
     margin: 0 0 5px 0;
-    padding: 6px;
+    padding: 5px;
 	width: 100%;
 	text-align: left;}
 
@@ -11885,14 +11886,14 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     box-shadow: none;}
 
 #wrapper #trading_panel .trade_table .notice {
-    width: calc(100% - 20px);
+    width: calc(100% - 32px);
 	list-style-type: none;
-	margin: 0 0 10px 0;
-	padding: 4px;
-	height: 80px;
+	margin: 0 auto 10px 0;
+	padding: 10px;
+	height: auto;
 	font-size: 14px;
 	word-break: break-word;
-	line-height: 80px;
+	line-height: var(--p-lh);
 	background-color: var(--c-blqt-bcg);
 	border: 1px solid var(--c-blqt);
 	border-radius: 0;
@@ -11902,7 +11903,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #wrapper #trading_panel .trade_table .notice span {
 	display: inline-block;
 	vertical-align: middle;
-	line-height: normal;}
+	line-height: inherit;}
 
 /* Buttons */
 #wrapper #content #trading_panel >button {
@@ -11912,7 +11913,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	float: left;
 	border-radius: 0;
 	font-size: 18px;
-	font-weight: 600;}
+	font-weight: bold;}
 
 #wrapper #content #trading_panel button#cancel_trade[style="visibility: hidden;"] {
     display: none;}
@@ -11940,8 +11941,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 
 #wrapper #content #trading_panel button:disabled {
     opacity: 1;
-    color: var(--c-text-s);
-	filter: grayscale(85%);
+	filter: grayscale(85%) contrast(0.5);
     pointer-events: none;
 	cursor: default;}
 
@@ -12104,7 +12104,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     padding: 8px 0;
     display: block;
     width: 100%;
-    border-top: 1px solid var(--c-table-brdr);
+    border-top: 1px solid var(--c-brdr1);
     font-weight: 600;
     font-size: var(--p-head);
     line-height: var(--p-head);
@@ -12116,13 +12116,13 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     width: 100% !important;}
 
 #wrapper #trading_panel .message_box ul.bbbutt {
-    border: 3px solid var(--c-main-brdr);}
+    border: 2px solid var(--c-bbbutt-brdr);}
 
 #wrapper #trading_panel .message_box #buttons input {
 	background-color: unset;
 	color: inherit;}
 #wrapper #trading_panel .message_box #buttons input:hover {
-    color: var(--c-low);}
+    color: var(--c-txt1);}
 
 #wrapper #trading_panel .message_box #buttons input:disabled {
 	box-shadow: inherit;
@@ -12145,8 +12145,8 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 	margin-top: 15px;
 	padding: 10px;
 	border-radius: 0;
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    /*-webkit-box-shadow: var(--p-header-shdw);
+    box-shadow: var(--p-header-shdw);*/}
 
 /* #wrapper #trading_panel .message_replies .message_reply_other:after,
 #wrapper #trading_panel .message_replies .message_reply_self:before {
@@ -12162,20 +12162,20 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     border: 12px solid;}
 #wrapper #trading_panel .message_replies .message_reply_self:before {
     left: -24px;
-    border-color: transparent var(--c-body) transparent transparent;}
+    border-color: transparent var(--c-brdr1) transparent transparent;}
 #wrapper #trading_panel .message_replies .message_reply_other:after {
     right: -24px;
-    border-color: transparent transparent transparent var(--c-table-brdr);}
+    border-color: transparent transparent transparent var(--c-rowb;);}
 
 #wrapper #trading_panel .message_replies .message_reply_self {
     float: left;
-    border: 1px solid var(--c-body);
-	background-color: var(--c-input-obj);
+    border: 1px solid var(--c-brdr1);
+	/*background-color: var(--c-input-obj);*/
     margin-left: 12px;}
 #wrapper #trading_panel .message_replies .message_reply_other {
-    border: 1px solid var(--c-table-brdr);
+    border: 1px solid var(--c-rowb);
 	float: right;
-	background-color: var(--c-tor-row-hvr);
+	/*background-color: var(--c-tor-row-hvr);*/
     margin-right: 12px;}
 
 
@@ -12194,7 +12194,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #wrapper #backpack #slots_panel {
     float: right;
     margin-right: 0;
-    width: 531px;}
+    width: 521px;}
 
 #backpack #slots_panel ul li {
 	padding: 4px;}
@@ -12203,7 +12203,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     display: none;}
 #backpack #slots_header span {
     font-family: Adelle, Times New Roman;
-    font-size: 21px;
+    font-size: var(--p-head);
     line-height: 1em;
     height: 1em;
     display: block;
@@ -12248,8 +12248,6 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     margin: 4px 3px;}
 
 
-
-
 .ui-widget .month-picker-header {
     padding: 9px 0;
     height: auto;
@@ -12268,25 +12266,25 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 .ui-corner-top,
 .ui-corner-left,
 .ui-corner-tl {
-    border-top-left-radius: 0;}
+    border-top-left-radius: 2px;}
 
 .ui-corner-all,
 .ui-corner-top,
 .ui-corner-right,
 .ui-corner-tr {
-    border-top-right-radius: 0;}
+    border-top-right-radius: 2px;}
 
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-left,
 .ui-corner-bl {
-    border-bottom-left-radius: 0;}
+    border-bottom-left-radius: 2px;}
 
 .ui-corner-all,
 .ui-corner-bottom,
 .ui-corner-right,
 .ui-corner-br {
-    border-bottom-right-radius: 0;}
+    border-bottom-right-radius: 2px;}
 
 .month-picker-header .ui-state-hover,
 .month-picker-header .ui-state-focus {
@@ -12318,6 +12316,8 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 .ui-widget-header a.ui-state-active {
     background-color: unset !important;
     border: unset !important;}
+.month-picker-year-table .month-picker-title {
+    margin: auto;}
 
 
 /* Upcomming Events */
@@ -12325,6 +12325,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 #upcoming_calendar .calendar-day.today:nth-last-child(3) {
     width: calc(100% - 10px);}*/
 
+/*** mark 22 ***/
 #upcoming_calendar {
     padding-bottom: 0;}
 
@@ -12339,26 +12340,28 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     text-align: center;
     line-height: 1em;
     padding: 10px 0;
-    color: var(--c-text-s);}
+    color: var(--c-txt3);}
 #calendar .calendar {
-    /*margin-top: -36px;
-    padding: 46px 10px 10px 10px;*/}
+    /*margin-top: -36px;*/
+    padding: 0 10px 10px 10px;}
 #wrapper .calendar-day {
-    font-size: 14px;
-    background-color: var(--c-trowb);
+        border: 1px solid var(--c-brdr1);
+    /*font-size: 14px;
+    background-color: var(--c-trowb);*/
     display: flex;
     flex-flow: column;
     padding: 0;
     justify-content: center;
     position: relative;}
-#upcoming_calendar .event_li.tooltip:nth-child(odd) {
-    background-color: var(--c-input-obj);}
-#upcoming_calendar .event_li.tooltip:nth-child(even) {
-    background-color: var(--c-tgroup);}
-/*#upcoming_calendar .event_li.tooltip:nth-child(n+1) {
+#upcoming_calendar .event_li[class*="tooltip"]:nth-child(odd) {
+    /*background-color: var(--c-input-obj);*/}
+#upcoming_calendar .event_li[class*="tooltip"]:nth-child(even) {
+    /*background-color: var(--c-tgroup);*/}
+/*#upcoming_calendar .event_li[class*="tooltip"]:nth-child(n+1) {
     border-top: 1px solid var(--c-trowb);}*/
 #upcoming_calendar .calendar-day {
     margin-bottom: 10px;}
+#image_block,
 .calendar .calendar-row {
     width: 100%;
     display: flex;
@@ -12405,7 +12408,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     margin-bottom: 0;}
 .calendar-day span[style="color: white;"] {
     color: var(--c-txt) !important;}
-#wrapper .calendar-day .event_li.tooltip:hover {
+#wrapper .calendar-day .event_li[class*="tooltip"]:hover {
     background-color: var(--c-row-hvr);}
 .tooltipster-content h2 {
     width: calc(100% - 10px);
@@ -12414,12 +12417,12 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     outline: 1px solid var(--c-table-brdr);
     outline-offset: -1px;}*/
 .day-events .event_day {
-    font-weight: 600;}
+    font-weight: bold;}
 #calendar h2 input#monthPicker {
     height: 0;}
 #calendar #MonthPicker_Button_monthPicker {
-    float: left;
-    margin: -2px 6px 0 0;}
+    /*float: left;
+    margin: -2px 6px 0 0;*/}
 
 table.event_form_table td.label.small_label[colspan="4"] {
     text-align: left;}
@@ -12503,16 +12506,22 @@ table.event_form_table td.label.small_label[colspan="4"] {
 .calendar .day-events >.tooltip span {
     position: relative;}
 
-.calendar .event_li.tooltip {
+.calendar .event_li[class*="tooltip"] {
     display: flex;
     flex-flow: column;
     text-align: center;}
 
-#upcoming_calendar .event_li.tooltip {
-    padding: 6px 5px;}
+#upcoming_calendar .event_li[class*="tooltip"] {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    text-align: center;
+    padding: 18px 5px;
+    margin: 0;}
 
 #upcoming_calendar .day-events {
     padding: 0;
+    margin: 0 auto;
     position: relative;
     /*z-index: 2;*/}
 #upcoming_calendar .event_end_time {
@@ -12542,17 +12551,29 @@ table.event_form_table td.label.small_label[colspan="4"] {
     font-size: 3em;}*/
 
 #upcoming_calendar .day-label {
-    font-weight: 600;
-    padding: 5px;
+    margin: 0;
+    padding: 3px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    font-size: 1em;
+    line-height: 1em;
+    z-index: 9;
+    color: inherit;
+    /*font-weight: 600;
+    padding: 5px;*/
     /*margin: -5px -5px 0 -5px;*/
-    font-size: 16px;
+    /*font-size: 16px;
     line-height: 1em;
     text-align: center;
-    background: var(--p-post-colhead-bcg);
+    background: var(--p-post-colhead-bcg);*/
     /*background-color: var(--c-tor-row-hvr);*/}
 /*#upcoming_calendar .calendar-day:hover .day-label {
     background-color: var(--c-edition);}*/
-/*#upcoming_calendar .event_li.tooltip:not(:only-child):hover {
+/*#upcoming_calendar .event_li[class*="tooltip"]:not(:only-child):hover {
     background-color: var(--c-tgroup);}*/
 #upcoming_calendar .calendar-day.today .day-label {
     background: var(--p-subcolhead);}
@@ -13100,6 +13121,7 @@ div#fight_skill_points_assign >table {
     background-color: var(--c-box);
     color: var(--c-txt);}
 /*#wrapper .calendar-day.today,*/
+.month-picker.ui-widget-content,
 .qtip-shadow {
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);}
