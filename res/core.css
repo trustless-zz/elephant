@@ -31,6 +31,7 @@
     --c-txtarea-bcg:                        #f5f5f5;
     --c-rowa:                               #ffffff;
     --c-rowb:                               #f0f0f0;
+    --c-calt:                               #e7e7e7;
     --c-row-hvr:                            #e6e6e6;
     --c-unread:                             #68c077;
     --c-hovereffect:                        rgba(255,255,255,0.85);
@@ -222,6 +223,7 @@ strong,
 a {
     color: var(--c-anchor);
     text-decoration: none;}
+#calendar .calendar .day-number:hover,
 #wrapper a:hover,
 a:hover {
     color: var(--c-anchor-hvr);}

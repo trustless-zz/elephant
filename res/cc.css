@@ -1366,9 +1366,9 @@ a#tag_show\/hide,
 #better .torrent_table tr.torrent.torrent_row,
 
 .calendar-day,
-#calendar .day-events >p:before,
+/*#calendar .day-events >p:before,*/
 /*.calendar .day-events >.tooltip:before,*/
-#calendar .day-number:before,
+/*#calendar .day-number:before,*/
 .xdsoft_time,
 
 .select2-results__option,
@@ -1777,7 +1777,7 @@ input.disabled,
 input[disabled] {
 	cursor: default;
     pointer-events: none;
-    opacity: .5;
+    opacity: .45;
     -webkit-box-shadow: none;
     box-shadow: none;}
 
@@ -10200,6 +10200,7 @@ table.bbcode_table td {
 #tools #mastergroups #searchgroups input[type="text"] {
     width: calc(100% - 191px);}
 
+.box.userreviews_div,
 #tools #addgroup {
     position: relative;}
 
@@ -10223,6 +10224,7 @@ table.bbcode_table td {
 #tools #wrapper #mastergroups >span[style="float: right"] h3 {
     margin: 0;}
 
+.userreviews span#allreviewslink,
 #tools #mastergroups #searchgroups span[style="float: right;"] {
     position: absolute;
     top: 0;
@@ -11291,7 +11293,7 @@ code.hljs {
     color: var(--c-hljs-txt);
     background: var(--c-hljs-bcg);}
 pre >code.hljs {
-    margin: 12px -10px -10px -10px;
+    margin: 12px -20px -10px -20px;
     position: relative;
     overflow: visible;}
 pre >code.hljs:after,
@@ -12342,12 +12344,14 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     padding: 10px 0;
     color: var(--c-txt3);}
 #calendar .calendar {
+    border: none;
     /*margin-top: -36px;*/
     padding: 0 10px 10px 10px;}
 #wrapper .calendar-day {
         border: 1px solid var(--c-brdr1);
     /*font-size: 14px;
     background-color: var(--c-trowb);*/
+    font-size: 13px;
     display: flex;
     flex-flow: column;
     padding: 0;
@@ -12381,7 +12385,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     margin: 0;}
 .calendar .day-events >.tooltip {
     padding: 5px 0;}
-#calendar .day-events >p:before/*,
+/*#calendar .day-events >p:before*//*,
 .calendar .day-events >.tooltip:before*/ {
     background-color: var(--c-row-hvr);
     content: '';
@@ -12408,14 +12412,16 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     margin-bottom: 0;}
 .calendar-day span[style="color: white;"] {
     color: var(--c-txt) !important;}
+#calendar .calendar-day:hover,
 #wrapper .calendar-day .event_li[class*="tooltip"]:hover {
     background-color: var(--c-row-hvr);}
 .tooltipster-content h2 {
     width: calc(100% - 10px);
     margin: -4px -5px;}
-/*.calendar-day.today {
-    outline: 1px solid var(--c-table-brdr);
-    outline-offset: -1px;}*/
+.calendar-day.today {
+    background-color: var(--c-rowb);
+    /*outline: 1px solid var(--c-calt);*/
+    /*outline-offset: -1px;*/}
 .day-events .event_day {
     font-weight: bold;}
 #calendar h2 input#monthPicker {
@@ -12440,13 +12446,15 @@ table.event_form_table td.label.small_label[colspan="4"] {
     display: flex;
     flex-flow: row;
     justify-content: space-between;}
+#calendar .calendar-day:hover {
+    /*background-color: var(--c-rowb);*/}
 
-.calendar .calendar-day,
-.calendar .calendar-day-np {
+#wrapper .calendar .calendar-day,
+#wrapper .calendar .calendar-day-np {
     margin-top: 10px;}
 #calendar .calendar .calendar-day,
 #calendar .calendar .calendar-day-np {
-    min-height: 120px;
+    min-height: 68px;
     height: auto;
     padding: unset;}
 #calendar .calendar .calendar-day-np {
@@ -12458,9 +12466,9 @@ table.event_form_table td.label.small_label[colspan="4"] {
 #wrapper .day-number {
     background: unset;}
 #wrapper .calendar-day-np {
-    background-color: var(--c-tgroup);}
+    background-color: transparent;}
 #calendar .day-number:before {
-    content: '+';
+    /*content: '+';
     position: absolute;
     right: 2px;
     bottom: 0;
@@ -12471,21 +12479,21 @@ table.event_form_table td.label.small_label[colspan="4"] {
     line-height: 0;
     font-weight: 600;
     text-shadow: none;
-    color: var(--c-sticky-id-brdr);}
+    color: var(--c-sticky-id-brdr);*/}
 #calendar .calendar-day.today .day-number {
-    text-shadow: 0 0 3px var(--c-b3);}
+    /*text-shadow: 0 0 3px var(--c-b3);*/}
 #calendar .day-number:hover:before {
-    color: var(--c-txt);}
+    /*color: var(--c-txt);*/}
 
 #calendar .change_month_links a {
     display: inline-block;}
 #calendar .change_month_links {
     position: relative;
     float: right;
-    line-height: 0;
-    font-size: 0;
-    margin-top: -29px;
-    right: 3px;}
+    line-height: 1em;
+    font-size: 20px;
+    margin-top: -28px;
+    right: 5px;}
 #calendar .change_month_links #last_month {
     margin-right: 2px;}
 
@@ -12493,13 +12501,13 @@ table.event_form_table td.label.small_label[colspan="4"] {
     text-decoration-color: var(--c-red);}
 
 .month-picker-header .ui-icon {
-    width: 20px;
+    /*width: 20px;
     height: 30px;
-    margin-top: -15px;}
+    margin-top: -15px;*/}
 .month-picker-header .ui-icon-circle-triangle-e {
-    margin-left: -11px;}
+    /*margin-left: -11px;*/}
 .month-picker-header .ui-icon-circle-triangle-w {
-    margin-left: -9px;}
+    /*margin-left: -9px;*/}
 
 #upcoming_calendar .calendar-day.today,
 #calendar .day-events >p a,
@@ -12516,7 +12524,7 @@ table.event_form_table td.label.small_label[colspan="4"] {
     flex-flow: column;
     position: relative;
     text-align: center;
-    padding: 18px 5px;
+    padding: 20px 5px;
     margin: 0;}
 
 #upcoming_calendar .day-events {
@@ -12525,11 +12533,25 @@ table.event_form_table td.label.small_label[colspan="4"] {
     position: relative;
     /*z-index: 2;*/}
 #upcoming_calendar .event_end_time {
+    margin: 0 auto;
     font-size: 11px;}
 
 /*.calendar-day.today:only-child .day-label,*/
+.calendar-day .day-label,
 #calendar .calendar .day-number {
-    font-weight: normal;
+    margin: 0;
+    padding: 3px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    line-height: 1em;
+    z-index: 2;
+    color: var(--c-txt1);
+    /*font-weight: normal;
     position: absolute;
     top: 0;
     left: 0;
@@ -12541,12 +12563,12 @@ table.event_form_table td.label.small_label[colspan="4"] {
     align-items: center;
     z-index: 1;
     user-select: none;
-    color: var(--c-tor-rowb);}
+    color: var(--c-tor-rowb);*/}
 .calendar .day-number {
     float: unset;
-    margin: unset;
+    /*margin: unset;
     padding: unset;
-    font-size: 8em;}
+    font-size: 8em;*/}
 /*.calendar-day.today:only-child .day-label {
     font-size: 3em;}*/
 
@@ -12576,12 +12598,12 @@ table.event_form_table td.label.small_label[colspan="4"] {
 /*#upcoming_calendar .event_li[class*="tooltip"]:not(:only-child):hover {
     background-color: var(--c-tgroup);}*/
 #upcoming_calendar .calendar-day.today .day-label {
-    background: var(--p-subcolhead);}
+    /*background: var(--p-subcolhead);*/}
 
 #calendar .day-events >p {
     display: flex;
     width: 100%;
-    padding: 0 7px 0 7px;
+    padding: 0 6px;
     /*margin-left: auto;
     margin-right: auto;*/}
 #calendar .day-events a {
@@ -12599,12 +12621,12 @@ table.event_form_table td.label.small_label[colspan="4"] {
 
 /* Ignore Group */
 
-/*#displayname    s,*/
+#displayname    s,
 #display_name   s {
     text-decoration: var(--c-red)  line-through;
     display: inline-block;
     position: relative;}
-/*#displayname    s:before,*/
+#displayname    s:before,
 #display_name   s:before {
     content: '';
     position: absolute;
@@ -12612,7 +12634,7 @@ table.event_form_table td.label.small_label[colspan="4"] {
     right: 0;
     background: var(--c-red);
     z-index: 9;}
-/*#displayname s:before {
+#displayname s:before {
     bottom: calc(50% - 2px);
     height: 2px;}*/
 #display_name s:before {
@@ -12621,18 +12643,19 @@ table.event_form_table td.label.small_label[colspan="4"] {
 
 .torrent_table .ignored td.center:first-child:after,
 .torrent_table .ignored >td:not(:first-child):not(:nth-child(11)) {
-    opacity: .4;}
+    /*opacity: .4;*/}
 .torrent_table .ignored >td:not(:first-child):not(:nth-child(11)) {
-    filter: grayscale(.25);}
+    /*filter: grayscale(.25);*/}
 .torrent_table .ignored:hover td.center:first-child:after,
 .torrent_table .ignored:hover >td:not(:first-child):not(:nth-child(11)) {
-    opacity: 1;}
+    /*opacity: 1;*/}
 .torrent_table .ignored:hover >td:not(:first-child):not(:nth-child(11)) {
-    filter: grayscale(0);}
+    /*filter: grayscale(0);*/}
 #displayname s {
-    text-decoration: unset;}
+    /*text-decoration-color: var(--c-red);*/
+    /*text-decoration: unset;*/}
 .torrent_table .ignored td.center:first-child:after {
-    background-color: var(--c-red);}
+    /*background-color: var(--c-red);*/}
 
 h2 >s >#groupplatform {
     left: unset;}
@@ -12640,14 +12663,14 @@ h2 >s >#groupplatform {
 
 
 .torrent_table .ignored {
-    position: relative;
-    transform: scale(1); /* -chromium hack
+    /*position: relative;
+    transform: scale(1);*/ /* -chromium hack
     https://github.com/w3c/csswg-drafts/issues/1899
     https://bugs.chromium.org/p/chromium/issues/detail?id=417223
     */}
 
 .torrent_table .ignored:after {
-    content: 'IGNORED';
+    /*content: 'IGNORED';
     letter-spacing: 10px;
     position: absolute;
     left: 0;
@@ -12661,17 +12684,17 @@ h2 >s >#groupplatform {
     align-items: center;
     justify-content: center;
     color: var(--c-text-s);
-    opacity: 0;}
+    opacity: 0;*/}
 
 .torrent_table .ignored:hover:after {
-    opacity: .15;}
+    /*opacity: .15;*/}
 
 /* /Ignore Group */
 
 
 
 
-
+/*** mark 23 ***/
 /**********************************************
 ****************SKILL POINTS*******************
 **********************************************/
@@ -12718,15 +12741,15 @@ div#fight_skill_points_assign >table {
 
 #fight_skill_points_assign .points.base_points,
 #fight_skill_points_assign .points.skill_points {
-	color: var(--c-text-s);}
+	color: var(--c-txt2);}
 #fight_skill_points_assign .points.total_points {
-	color: var(--c-txt);}
+	color: var(--c-txt1);}
 
 #fight_skill_points_assign tr.skill_tr:not(:nth-last-child(2)){
 	border-bottom: 1px solid var(--c-brdr1);}
 #fight_skill_points_assign tr.submit_section {
 	border-top: 1px solid var(--c-brdr1);
-    background-color: var(--c-tgroup);}
+    /*background-color: var(--c-tgroup);*/}
 #fight_skill_points_assign tr.submit_section span {
     font-size: 16px;
     vertical-align: middle;
@@ -12754,6 +12777,11 @@ div#fight_skill_points_assign >table {
 
 /*** New Reviews Page ***/
 /*#users_reviews .reviews_table { padding-right: 0; }*/
+
+#wrapper .review_cell img[src="static/common/avatars/default.png"] {
+    /*background: unset;*/
+    margin: unset;
+    border: unset;}
 
 .ui-dialog[aria-describedby="expanded_review_box"] .ui-dialog-buttonset button {
     margin: 10px;}
@@ -12784,9 +12812,14 @@ div#fight_skill_points_assign >table {
     -webkit-box-flex: unset;
     flex-grow: unset;}
 
+.review_cell .flextable-cell:first-child,
+.review_cell .flextable-cell:first-child div {
+    align-self:flex-start;
+    flex-flow: column;
+    display: flex;}
 .review_cell .flextable-cell:first-child {
-    font-size: 0;
-    line-height: 0;
+    /*font-size: 0;
+    line-height: 0;*/
     width: auto;
     padding: 0;}
 .review_cell .flextable-cell .avatar {
@@ -12814,7 +12847,7 @@ div#fight_skill_points_assign >table {
 /*#users_reviews .display_name { flex: 0 0 95%; }
 #users_reviews .delete_review { flex: 1; }*/
 #users_reviews .display_name:not(:last-child) {
-    width: calc(100% - 26px);}
+    width: calc(100% - 20px);}
 
 #users_reviews .review_date .label {
     display: none;}
@@ -12880,7 +12913,7 @@ div#fight_skill_points_assign >table {
     top: 0;
     right: 0;*/
     text-align: right;
-    font-size: 13px;
+    font-size: 12px;
     margin-top: auto;
     /*line-height: 19px;
     padding: 6px 5px 7px 5px;*/
@@ -12922,10 +12955,11 @@ div#fight_skill_points_assign >table {
 #wrapper .users_review[aria-expanded="true"] +[data-readmore-toggle]:before {
     opacity: 0;}
 
-.userreviews tr:last-child:not(:only-child),
+/*.userreviews tr:last-child:not(:only-child),*/
 .users_review +[data-readmore-toggle] {
     background-color: transparent !important;}
 .userreviews tr:last-child:not(:only-child) td {
+    padding: 0;
     text-align: right;}
 
 
@@ -12952,7 +12986,7 @@ div#fight_skill_points_assign >table {
 
 
 /* timeline.css */
-.timeline:not(.timeline--horizontal):before {
+/*.timeline:not(.timeline--horizontal):before {
     background-color: var(--c-body);}
 .timeline__item {
     font-size: 14px;
@@ -13078,7 +13112,7 @@ div#fight_skill_points_assign >table {
     border-bottom: 10px solid transparent;
     border-right: 10px solid var(--c-row-hvr);
     border-left: none;
-    border-top: 10px solid transparent;}
+    border-top: 10px solid transparent;}*/
 /* /timeline.css */
 
 
@@ -13095,19 +13129,19 @@ div#fight_skill_points_assign >table {
     margin: 10px 0 0 0 !important;
     width: 100% !important;}
 #tools textarea#sandbox ~.thin >.forum_post {
-    background-color: var(--c-tgroup);
-    -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);
-    border-color: var(--c-table-brdr);
+    background-color: var(--c-rowb);
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 1px solid var(--c-brdr1);
     margin: 10px 0 0 0;}
 #tools textarea#sandbox ~.thin >.forum_post:before {
-    display: block;
+    /*display: block;
     content: 'Preview';
-    background: var(--p-subcolhead);
+    background: var(--c-label);
     font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    padding: 8px;}
+    font-size: 15px;
+    line-height: 15px;
+    padding: 8px;*/}
 #tools textarea#sandbox ~.thin #preview {
     line-height: var(--p-lh);
     padding: 10px;}
@@ -13117,9 +13151,9 @@ div#fight_skill_points_assign >table {
 
 /** user review pop-up on #user page **/
 .qtip-default {
-    border: 1px solid var(--c-main-brdr);
+    border: 1px solid var(--c-brdr1);
     background-color: var(--c-box);
-    color: var(--c-txt);}
+    color: var(--c-txt1);}
 /*#wrapper .calendar-day.today,*/
 .month-picker.ui-widget-content,
 .qtip-shadow {
@@ -13134,7 +13168,7 @@ div#fight_skill_points_assign >table {
     border: unset !important;
     margin: unset !important;}
 .qtip-default .pad.review {
-    font-size: 14px;
+    font-size: 13px;
     line-height: var(--p-lh);}
 .qtip-default .pad.review p:first-of-type {
     margin-top: 8px;}
@@ -13143,13 +13177,13 @@ div#fight_skill_points_assign >table {
 .qtip .qtip-tip,
 .qtip .qtip-tip .qtip-vml,
 .qtip .qtip-tip canvas {
-    background-color: var(--c-main-brdr) !important;}
+    background-color: var(--c-brdr1) !important;}
 
 
-::-webkit-input-placeholder     {color: var(--c-text2) !important;}
-::-moz-placeholder              {color: var(--c-text2) !important;}
-:-ms-input-placeholder          {color: var(--c-text2) !important;}
-:-moz-placeholder               {color: var(--c-text2) !important;}
+::-webkit-input-placeholder     {color: var(--c-txt2) !important;}
+::-moz-placeholder              {color: var(--c-txt2) !important;}
+:-ms-input-placeholder          {color: var(--c-txt2) !important;}
+:-moz-placeholder               {color: var(--c-txt2) !important;}
 
 /*::-moz-selection {
     text-shadow: none;
@@ -13271,7 +13305,7 @@ https://gazellegames.net/forums.php?action=viewthread&threadid=21141
 table.diff.split_view tbody tr:nth-child(1) td:nth-child(3)::before,
 table.diff.split_view tbody tr:nth-child(1) td:nth-child(1)::before {
     text-decoration: unset;
-    background-color: var(--c-body);
+    background-color: var(--c-rwob);
     margin-right: 5px;
     padding-left: 2px;}
 table.diff.split_view tbody tr:nth-child(1) td:nth-child(1)::before {
@@ -13292,7 +13326,7 @@ table.diff.split_view tr:first-child td {
 #wrapper table.diff .diff-deletedline del,
 #wrapper table.diff .diff-addedline ins {
     padding: 0 2px;
-    color: var(--c-low);}
+    color: var(--c-txt1);}
 /** /split view **/
 
 /** firefox only **/
