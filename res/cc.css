@@ -1,10 +1,253 @@
-﻿/** Get More News - duplicate news bug fix **/
+﻿html {
+    line-height: var(--p-lh);
+    font-size: 13px;
+    scroll-behavior: smooth;}
+
+body {
+    color: var(--c-txt);
+    /*background-size: 121px 38px;*/
+    font-family: Lato, Sans-Serif;
+    margin: 0;
+    min-height: 100%;
+    overflow-wrap: break-word;
+    position: relative;}
+#wrapper {
+    margin: 0 auto;}
+/*#header,*/
+#content,
+#footer {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;}
+
+#header {
+    /*max-width: 1300px; */
+    width: 100%;
+    margin: 0 auto 20px auto;
+    /*background: #ff000010;*/
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    padding: 15px 0 10px 184px;
+    box-sizing: border-box;
+    /*border-left: 1px solid transparent;*/
+    left: calc(-184px / 2);
+    /*width: calc(100% - 204px);*/
+    max-width: 1484px;}
+#header:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: auto;
+    background-color: var(--c-brdr2);
+    order: -8;
+    margin-right: 20px;
+    margin-bottom: -5px;}
+
+#header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background: red; */
+    /* position: absolute; */}
+/*#menu ul li:not(:last-child) {
+    margin-right: 30px;
+    }*/
+
+#wrapper #userinfo_username {
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 8px;}
+#userinfo_username #nav_userinfo {
+    font-size: 0;
+    line-height: 0;}
+#userinfo_username .username_badges {
+    display: none;}
+#nav_userinfo a {
+    font-size: 17px;
+    line-height: 1.3;}
+#userinfo_username li:not(#nav_userinfo) {
+    margin: auto 0 2px 6px;
+    /*line-height: 22.1px;
+    margin-left: 6px;*/}
+
+#userinfo_stats {
+    display: flex;
+    width: 200px;
+    flex-flow: column;
+    /* width: auto; */}
+#userinfo_stats .stat {
+    float: right;}
+#userinfo_stats li {
+    padding: 0;
+    margin-top: 2px;}
+#userinfo_stats li:first-child {
+    margin-top: 0;}
+#userinfo_stats li span[style] {
+    margin: 0 !important;}
+
+#wrapper #userinfo_minor {
+    display: flex;
+    flex-flow: row;
+    position: absolute;
+    right: 0;
+    top: 65px;
+    font-family: Adelle, Times New Roman;
+    font-size: 15px;
+    /*line-height: 1em;*/
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 35px 0 549px;
+    box-sizing: border-box;
+    /*padding-left: 255px;*/
+    /*max-width: calc(900px + 220px + 190px + 50px);*/
+    max-width: calc(900px + 549px - 35px);
+    z-index: 1;}
+#userinfo_minor a {
+    color: var(--c-minor);}
+
+#menu ul {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    flex-flow: row;
+    justify-content: space-between;}
+
+#searchbars ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+    /* display: block; */
+    /* margin-left: auto; */}
+#searchbars >ul >li {
+    width: 127px;}
+
+#userinfo ul {
+    position: relative;
+    z-index: 2;
+    /*background-color: #0001ff10;*/}
+
+div#menu ul {
+    /*background: #00ff2b10;*/}
+
+#menu {
+    /*flex: 1 0 auto;
+    margin-left: auto;*/
+    display: table;
+    font-family: Adelle, Times New Roman;
+    /* font-size: 0; */
+    /*width: 100%;*/ /*- moz only?*/ 
+    /*line-height: 1em;*/
+    /*padding-left: 15px;*/
+    font-size: 21px;/*}
+#wrapper #userinfo_minor,
+#wrapper #menu {*/
+    /*max-width: 900px;*/
+    max-width: calc(100vw - 560px);
+    min-width: 0;
+    width: 900px;
+    position: absolute;
+    right: 0;
+    top: 15px;}
+#menu ul {
+    /* font-size: 21px; */
+    /* display: block; */}
+#userinfo {
+    font-family: Whitney, Sans-Serif;
+    /*font-size: 10pt;*/
+    font-size: 14px;
+    display: table;
+    margin-right: auto;}
+#header >#searchbars {
+    width: 900px;
+    max-width: calc(100% - 235px - 190px);
+    position: absolute;
+    right: 0;
+    top: 172px;
+    /*bottom: 15px;*/}
+
+#searchbars input {
+    /*color: #8a8a8a;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: var(--p-input-shdw);
+    box-shadow: var(--p-input-shdw);*/
+    text-align: center;
+    color: var(--c-txt2);
+    background-color: var(--c-i-focus);
+    border-color: var(--c-brdr3);
+    font-size: 13px;
+    height: 24px;
+    line-height: 22px;
+    /*padding: 0 5px;*/
+    position: relative;
+    width: 100%;}
+#searchbars li:not(:last-child) {
+    margin-right: 10px;}
+
+/*textarea:focus,
+select:focus,
+input:focus,*/
+#searchbars input:focus {
+    /*-webkit-box-shadow: 0 0 52px var(--c-s-focus);
+    box-shadow: 0 0 5px var(--c-s-focus);*/
+    /*color: var(--c-txt1);
+    background-color: var(--c-i-focus);
+    -webkit-box-shadow: 0 0 5px var(--c-s-focus);
+    box-shadow: 0 0 5px var(--c-s-focus);*/}
+
+#stats_seeding {
+    order: 1;}
+#stats_leeching {
+    order: 2;}
+#stats_gold {
+    order: 3;}
+#stats_ratio {
+    order: 4;}
+#userinfo_stats .my_buffer {
+    order: 5;}
+#stats_share_score {
+    order: 6;}
+#stats_hnr {
+    order: 7;}
+#connectable{
+    order: 8;}
+#online_irc {
+    order: 9;}
+
+#index .sidebar {
+    flex-flow: row wrap;
+    /*justify-content: space-between;
+    width: 615px;*/}
+#index .sidebar >div.box {
+    width: 300px;}
+.main_column {
+    width: calc(100% - 325px);}
+
+#bookmarks .linkbox.pager,
+b,
+strong,
+.bold {
+	font-weight: bold;}
+.italic{
+    font-style: italic;}
+
+a {
+    color: var(--c-anchor);
+    text-decoration: none;}
+#calendar .calendar .day-number:hover,
+#wrapper a:hover,
+a:hover {
+    color: var(--c-anchor-hvr);}
+
+
+
+/** Get More News - duplicate news bug fix **/
 #index .box.news_post:empty,
 #index .box.news_post >.head:nth-child(3),
 #index .box.news_post >.head:nth-child(3) +.pad {
     display: none;}
-
-
 
 .clan_stat_totals,
 
@@ -1763,6 +2006,7 @@ img[style^="max-height: 64px; transition: all 0.5s ease-in-out"],
     -webkit-transition: none !important;
     -o-transition: none !important;
     transition: none !important;}
+.center_poll, /* <- Blank - Show the results! */
 .fancybox-button.disabled,
 .fancybox-button:disabled {
     opacity: .5 !important;
@@ -1999,6 +2243,7 @@ table#grouplinks #curlinkedgroup,
     display: block;
     margin: 10px auto 10px auto;}
 
+.center_poll, /* <- Blank - Show the results! */
 .large_progress_bar .main_bar,
 #center_poll {;
     -webkit-box-shadow: var(--p-prog-s);
@@ -2013,6 +2258,7 @@ table#grouplinks #curlinkedgroup,
     padding: 0;}
 .large_progress_bar .main_bar {
     background-image: var(--p-prog-b);}
+.center_poll, /* <- Blank - Show the results! */
 #center_poll {
     background-image: var(--p-prog-c);}
 .sidebar #freeleech_time_left {
@@ -4212,7 +4458,7 @@ li:not(.suggested_similar) .similar_votes >span {
 
 /*#content .sub,*/
 #userinfo_username .sub {
-    -webkit-clip-path: polygon(
+    /*-webkit-clip-path: polygon(
         -10px -10px,
         calc(100% + 10px) -10px,
         calc(100% + 10px) -10px,
@@ -4221,10 +4467,10 @@ li:not(.suggested_similar) .similar_votes >span {
         -10px -10px,
         calc(100% + 10px) -10px,
         calc(100% + 10px) -10px,
-        -10px -10px);}
+        -10px -10px);*/}
 #userinfo_username .sub[style="visibility: visible;"]/*,
 #content .sub[style="visibility: visible;"]*/ {
-    -webkit-clip-path: polygon(
+    /*-webkit-clip-path: polygon(
         -10px -10px,
         calc(100% + 10px) -10px,
         calc(100% + 10px) calc(100% + 10px),
@@ -4233,7 +4479,7 @@ li:not(.suggested_similar) .similar_votes >span {
         -10px -10px,
         calc(100% + 10px) -10px,
         calc(100% + 10px) calc(100% + 10px),
-        -10px calc(100% + 10px));}
+        -10px calc(100% + 10px));*/}
 .sub span {
     width: 100%;
     line-height: 26px;
@@ -6140,7 +6386,7 @@ input[type="button"][value="Hide"],
     padding: 0 !important;*/
     /* cursor: default !important; */}
 .calendar a[style="color: white;"] {
-    color: var(--c-anchor) !important;}
+    color: var(--c-txt1) !important;}
 .calendar a[style="color: white;"]:hover {
     color: var(--c-anchor-hvr) !important;
     background-color: var(--c-anchor-hvr-bcg) !important;}
@@ -9325,6 +9571,14 @@ h3 a[href^="user.php?action=notify_delete&"] {
 .inventory #wrapper #content li.item_li.new h3.center,
 #shop li.new h3.center {
     /*background: var(--p-subcolhead);*/}
+.calendar .calendar-day.today:before {
+    pointer-events: none;
+    content: 'Today';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    font-weight: bold;
+    z-index: 3;}
 
 .inventory .item_li.featured:before,
 #shop .item_li.featured:before {
