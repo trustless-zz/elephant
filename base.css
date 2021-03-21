@@ -271,6 +271,7 @@ overflow: unset;}
 	content: " to the War Effort";
 }*/
 
+#wrapper #content .item.hidden,
 #userinfo_username .username_badges,
 .donateico span {
 	display: none;}
