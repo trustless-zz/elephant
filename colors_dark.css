@@ -108,6 +108,8 @@ table,
 #header #alerts .blend,
 #tools #addgroup,
 #tools #mastergroups,
+#users_medals .medal_info,
+#users_medals .flextable-cell.medal_cell,
 .item img.equipment_level ~h3:before {
     background-color: #1f2023;}
 
@@ -480,6 +482,7 @@ input:focus {
 #bookmarks table#manage_collage_table,
 #bookmarks .thin >table.layout,
 #bookmarks .thin >.center.box.pad,
+#users_medals .flextable-cell.medal_cell,
 #bookmarks table#requests_list {
 	-webkit-box-shadow: 0 0 30px #000;
 	-moz-box-shadow: 0 0 30px #000;
