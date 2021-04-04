@@ -7759,6 +7759,7 @@ table.event_form_table td.label.small_label[colspan="4"] {
     opacity: 1;}
 #users_medals .primary {
     opacity: 1;}
+#users_medals .flextable-cell.medal_cell:empty,
 #users_medals .medal_image_div .drop_shadow,
 #users_medals .flextable-cell.flex-shelf,
 #users_medals .shelf {
