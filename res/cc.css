@@ -362,10 +362,10 @@ tr.unreadpm td:first-child {
 #forums .forum_mythreads        tr:not(.colhead) td:first-child:before,
 #forums .forum_editsubs         tr:not(.colhead) td:first-child:before,
 #forums .forum_subscriptions    tr:not(.colhead) td:first-child:before,
-.torrent_table .show_torrents_link:after,
-#stats_seeding a:before,
-#stats_leeching a:before,
-#stats_share_score a:before {
+    .torrent_table .show_torrents_link:after,
+    #stats_seeding a:before,
+    #stats_leeching a:before,
+    #stats_share_score a:before {
     content: '';
     position: absolute;
     left: 0;
@@ -980,12 +980,24 @@ h2#username span#tip_user img,
 
 img[alt="RSS feed"],
 
+.cats_col >div, 
+.collicon >div, 
+.noticon >div
+
 #wrapper img[src="https://gazellegames.net/static/common/symbols/disabled.png"], /* disabled (Just fine!) */
 img[alt="Banned"],
 img[alt="Warned"] {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;}
+#grouplinks #linkedgroup,
+#grouplinks #curlinkedgroup,
+.cats_col >div, 
+.collicon >div, 
+.noticon >div {
+    display: inline-block;
+    width: 28px;
+    height: 28px;}
 
 .box.box_likes.box_torrents span.likes_icon.flright img,
 img[src="static/common/thumbsup.png"],
@@ -2980,7 +2992,9 @@ table.adventure_table .colhead td {
     cursor: default;
     z-index: 2;
     position: relative;}
-#grouplinks td,
+.torrent_table .show_torrents_link:hover {
+    transform: scaleY(-1);}
+/*#grouplinks td,*/
 #artist #torrent_table .group_torrent >td:not(.edition_info),
 #collections #torrent_table .group_torrent >td:not(.edition_info),
 #bookmarks #torrent_table tr.group_torrent td:not(.edition_info) {
@@ -3059,10 +3073,10 @@ th[aria-disabled="false"]:active,
     width: 50px;
     height: 600px;}
 .torrent_table .show_torrents_link:after {
-    top: calc(50% - 10px);
+    /*top: calc(50% - 10px);
     left: calc(50% - 10px);
     width: 20px;
-    height: 20px;}
+    height: 20px;*/}
 .edition_info {
     height: 15px;
     position: relative;
@@ -3120,6 +3134,9 @@ img[title="Snatches"],
 #requests .main_column >table:first-child img[title="Gold"],
 .forum_post td.body img,
 .box.news_post >.pad img, */
+
+#torrents .group {
+    background-color: var(--c-t-group);}
 
 img,
 .spoilerbox,
@@ -4804,17 +4821,17 @@ h2 .username_badges {
     line-height: 50px;}
 
 #wrapper #grouplinks {
-    background: var(--p-grouplinks);
+    background-color: var(--c-box);
     min-height: 38px;}
 #grouplinks a div {
     opacity: .6;
     filter: grayscale(.4);
-    padding: 3px;
-    margin: -3px;}
+    padding: 0;
+    margin: 0;}
 #grouplinks a div:hover {
     opacity: 1;
     filter: none;
-    background-color: var(--c-anchor-hvr-bcg);}
+    /*background-color: var(--c-anchor-hvr-bcg);*/}
 
 .box_game_ratings >.body {
     display: flex;
@@ -7431,6 +7448,12 @@ tr.likes >td {
 #collections .group.discog td.collicon:nth-child(2),
 td.center.cats_col {
     width: 28px;}
+td.cats_col {
+    min-height: 28px;
+    min-width: 28px;
+    height: auto;
+    width: 28px;
+    padding: 3px;}
 #bookmarks #torrent_table .colhead_dark td:nth-child(n+4),
 #collections #torrent_table >tbody >tr.colhead >td:nth-child(n+4) {
     width: 18px;}
