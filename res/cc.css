@@ -3581,19 +3581,20 @@ input[type="search"]:focus {
     outline: none !important;*/} /*** mark 2 ***/
 
 select {
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none;
+    appearance: none;*/
     color: var(--c-txt1);
-    padding: 0 20px 0 4px;}
+    padding: 0 4px 0 0;
+    /*padding: 0 20px 0 4px;*/}
 select,
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
-    background-position: right 4px center;
+    /*background-position: right 4px center;
     background-repeat: no-repeat;
-    background-size: 12px 12px;}
+    background-size: 12px 12px;*/}
 input[type="number"]::-webkit-inner-spin-button, 
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+    /*-webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-size: 12px 18px;
@@ -3603,7 +3604,7 @@ input[type="number"]::-webkit-outer-spin-button {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 18px;}
+    width: 18px;*/}
 
 .select2-results__option:nth-child(odd),
 select >option:nth-child(odd) {
@@ -8575,6 +8576,9 @@ span.size5 img {
 #achievements tr:not(.colhead):not(:last-child) td:not(.achlabel):hover {
     /*background-color: var(--c-row-hvr);*/}
 
+.sidebar .secondary_classes {
+    margin: 0 auto 0 40px;}
+
 /*** User Info Box ***/
 .profile .box_stats .label {
 	display: none;}
@@ -10593,6 +10597,8 @@ table.bbcode_table td {
 h2 span.secondary_class {
     /*margin-bottom: -3px;*/
     display: inline-block;}
+h2 span.secondary_class:nth-child(n+2) {
+    vertical-align: -3px;}
 #tms_form {
 	margin-top:-15px;}
 #tms h2, #platforms h2 {
@@ -13659,6 +13665,6 @@ table.diff.split_view tr:first-child td {
         background-clip: padding-box;}
     
     select { /* compared to chrome, select is wider on ff */
-        padding: 0 17px 0 0;}
+        /*padding: 0 17px 0 0;*/}
 }
 /** /firefox only **/
