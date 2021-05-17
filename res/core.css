@@ -4,6 +4,7 @@
     --c-i-bcg:                              #f0f0f0;
     --c-txt1:                               #000000;
     --c-txt3:                               #323232;
+    --c-txt4:                               #565656;
     --c-txt2:                               #8a8a8a;
     --c-blackout:                           #000000;
     --c-blackout-show:                      #ffffff;
@@ -11,6 +12,7 @@
     --c-anchor:                             #255c7c;
     --c-blackout-a:                         #255c7c;
     --c-anchor-hvr:                         #e85066;
+    --c-tta:                                #2184BE;
     --c-blqt:                               #aaaaaa;
     --c-blqt-bcg:                           #f5f5f5;
     --c-main-shdw:                          rgba(153, 153, 153, .7);
@@ -29,6 +31,9 @@
     --c-bbbutt-brdr:                        #aaaaaa;
     --c-txtarea-brdr:                       #aaaaaa;
     --c-txtarea-bcg:                        #f5f5f5;
+    --c-tgroup-hvr:                         #f7f7f7;
+    --c-tgroup:                             #ededed;
+    --c-edition:                            #DFDFDF;
     --c-rowa:                               #ffffff;
     --c-rowb:                               #f0f0f0;
     --c-calt:                               #e7e7e7;
@@ -37,6 +42,7 @@
     --c-hovereffect:                        rgba(255,255,255,0.85);
     --c-label:                              #b4c1c9;
     --c-t-group:                            #c9d3d8;
+    --c-t-group-hvr:                        #ced8dd;
     --c-on:                                 #43bc56;
     --c-off:                                #CF0024;
     --c-warn:                               #b49629;
@@ -83,7 +89,7 @@
     --c-r09:                                #74c42e;
     --c-r10:                                #418b00;
     
-    
+    --p-edition-hvr:                        linear-gradient(to top, rgba(232,80,102,0.3) 0%,rgba(42, 79, 101, 0) 100%);
     --p-prog-c:                             linear-gradient(to bottom, #ed5166, #6a5466);
     --p-graph-sh:                           0 1px 2px var(--c-graph-shdw);
     --p-prog-b:                             linear-gradient(to bottom, #a15766, #ed5166, #6a5466);

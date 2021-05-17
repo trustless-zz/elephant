@@ -853,7 +853,7 @@ tr.unreadpm td:first-child:after {
     white-space: nowrap;}
 #torrents #torrentsbrowsecomplete li:nth-child(odd),
 .autocomplete_list li:nth-child(odd) {
-    background-color: var(--c-tgroup);}
+    /*background-color: var(--c-tgroup);*/}
 #torrents #torrentsbrowsecomplete li.highlight,
 #torrents #torrentsbrowsecomplete li:hover,
 .autocomplete_list li.highlight,
@@ -2909,9 +2909,12 @@ li.graph {
 .torrent_table .group.rowb {
     /*background-color: var(--c-tor-rowb);*/}
 .torrent_table tr:not(.colhead):not(.colhead_dark) td {
-	border-top: 1px solid var(--c-table-brdr);
-    color: var(--c-text-s);
+	/*border-top: 1px solid var(--c-table-brdr);*/
+    /*color: var(--c-txt4);*/
     vertical-align: middle;}
+#displayname ~td {
+    text-align: center;
+    /*color: var(--c-txt1);*/}
 .torrent_table tr.pad td {
     color: unset;}
 #artist table#requests tr:not(.colhead):not(.colhead_dark) td,
@@ -2964,8 +2967,19 @@ table.adventure_table .colhead td {
 #artist #torrent_table .group_torrent td[colspan="2"] >a,
 #collections #torrent_table .group_torrent td[colspan="3"] >a,
 #bookmarks #torrent_table td[colspan="3"] >a,
-#torrents .group_torrent td:first-child >a,
-#torrents .torrent_notifications .noticon +td {
+#torrents .group_torrent td:first-child >a/*,
+#torrents .torrent_notifications .noticon +td*/ {
+    color: var(--c-tta);
+    /*font-size: 13px;
+    line-height: 18px;
+    margin-left: 2px;*/}
+.thin.torrent_history >form#torrent_history_search ~table tr:not(.colhead) td:nth-child(2) >a:hover,
+#artist #torrent_table .group_torrent td[colspan="2"] >a:hover,
+#collections #torrent_table .group_torrent td[colspan="3"] >a:hover,
+#bookmarks #torrent_table td[colspan="3"] >a:hover,
+#torrents .group_torrent td:first-child >a:hover/*,
+#torrents .torrent_notifications .noticon +td*/ {
+    color: var(--c-anchor-hvr);
     /*font-size: 13px;
     line-height: 18px;
     margin-left: 2px;*/}
@@ -2987,6 +3001,7 @@ table.adventure_table .colhead td {
     height: 15px;
     width: 15px;}
 .torrent_table .show_torrents_link {
+    transition: none;
     height: 15px;
     width: 15px;
     cursor: default;
@@ -2994,6 +3009,10 @@ table.adventure_table .colhead td {
     position: relative;}
 .torrent_table .show_torrents_link:hover {
     transform: scaleY(-1);}
+.torrent_table .hide_torrents .show_torrents_link {
+    transform: scaleX(-1);}
+.torrent_table .hide_torrents .show_torrents_link:hover {
+    transform: scale(-1);}
 /*#grouplinks td,*/
 #artist #torrent_table .group_torrent >td:not(.edition_info),
 #collections #torrent_table .group_torrent >td:not(.edition_info),
@@ -3004,9 +3023,10 @@ table.adventure_table .colhead td {
 #bookmarks #torrent_table tr.group_torrent td:not(.edition_info):not(:first-child),
 .torrent_details .torrent_table tbody[id*="edition_"] .group_torrent td,
 .torrent_table tr.group_torrent[class*="edition_"] >td {
-    padding: 14px 15px;
-    font-size: 13px;
-    line-height: 18px;}
+    /*padding: 14px 15px;*/
+    padding: 5px;
+    font-size: 11px;
+    line-height: var(--p-lh);}
 #top10 td.center.cats_col +td >span a,
 #artist #torrent_table .group_torrent td[colspan="2"] >span:first-child,
 #collections #torrent_table .group_torrent td[colspan="3"] >span:first-child,
@@ -3019,6 +3039,11 @@ table.adventure_table .colhead td {
     font-size: 0;
     display: inline-block;
     vertical-align: top;*/}
+.group_torrent {
+    font-size: 11px;}
+.group td,
+.group_torrent td {
+    border: 1px solid var(--c-brdr2);}
 #top10 td.center.cats_col +td >span a,
 #artist #torrent_table .group_torrent td[colspan="2"] >span:first-child a,
 #collections #torrent_table .group_torrent td[colspan="3"] >span:first-child aa,
@@ -3078,23 +3103,26 @@ th[aria-disabled="false"]:active,
     width: 20px;
     height: 20px;*/}
 .edition_info {
-    height: 15px;
+    color: var(--c-txt4);
+    height: 12px;
+    padding: 3px;
     position: relative;
     background-color: var(--c-edition);}
 .edition_info +td { /* concealing &nbsp; */
-    height: 15px;
+    padding: 3px;
+    height: 12px;
     position: relative;
     background-color: var(--c-edition);
     font-size: 0;
     line-height: 0;}
 .edition_info strong {
-    font-weight: 600;
+    font-weight: bold;
     position: absolute;
-    max-width: calc(100% - 10px);
+    max-width: calc(100% - 6px);
     left: 0;
     top: 0;
-    line-height: 23px;
-    padding-left: 5px;
+    line-height: 18px;
+    padding-left: 3px;
     cursor: default;}
 .edition_info +td:before,
 .edition_info:before {
@@ -3111,7 +3139,7 @@ th[aria-disabled="false"]:active,
     opacity: 1;}
 .edition_info:active +td:before,
 .edition_info:active:before {
-    background: var(--p-edition-act);}
+    /*background: var(--p-edition-act);*/}
 
 .torrent_table tr.group_torrent {
     background-color: var(--c-tgroup);}
@@ -3137,6 +3165,8 @@ img[title="Snatches"],
 
 #torrents .group {
     background-color: var(--c-t-group);}
+#torrents .group:hover {
+    background-color: var(--c-t-group-hvr);}
 
 img,
 .spoilerbox,
@@ -4117,7 +4147,7 @@ body:not(#upload) #artist_tr + tr td.label,
 #forums #forum_search_cat_list td.forum_cat,
 #platcheckbox td[colspan="5"] {
     padding: 4px 5px !important;
-    background-color: var(--c-edition);}
+    /*background-color: var(--c-edition);*/}
 .filter_torrents.advanced #taglist {
     font-size: 13px;
     width: 65%;
@@ -4560,7 +4590,7 @@ li:not(.suggested_similar) .similar_votes >span {
     position: relative;}
 #header .sub span:nth-child(odd) a,
 .sub span:nth-child(odd) a {
-    background-color: var(--c-tgroup);}
+    /*background-color: var(--c-tgroup);*/}
 .sub span:first-child a {
 	border-top: 1px solid var(--c-table-brdr);}
 .sub span:last-child a {
@@ -5069,6 +5099,9 @@ h3 {
     /* background-color: var(--c-tgroup); */
     /* box-shadow: inset 0 -2px 0 0 var(--c-b3); */}
 
+.torrent_table tr.group_torrent:hover {
+    background-color: var(--c-tgroup-hvr);}
+
 .rowa,
 .row_a,
 #better .torrent_table tr.torrent.torrent_row:nth-child(odd),
@@ -5082,7 +5115,7 @@ form#drag_drop_collage_form table#manage_collage_table .rowa,
 #clan_stats >div:not(.clan_stat_totals) tr:not(.colhead):nth-child(odd),
 #collages tr:not(.colhead):nth-child(odd),
 /*#searchbars input:focus,*/
-.torrent_table tr.group_torrent:hover,
+/*.torrent_table tr.group_torrent:hover,*/
 .userreviews tr:nth-child(odd),
 .requests_outer_table #otherop tr:nth-child(odd),
 #upload #content >div >table[style] tr:not(.colhead):nth-child(odd),
@@ -8710,10 +8743,10 @@ span.size5 img {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: var(--c-edition);
+    /*background-color: var(--c-edition);
     border: 3px solid var(--c-b4);
     -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    box-shadow: var(--p-header-shdw);*/}
 #user .box.box_items #itemsdiv p:first-child {
     color: var(--c-text-s);
     text-align: center;
@@ -9125,7 +9158,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
 #wrapper #trading_panel .item.used {
 	background:
         /*url('https://gazellegames.net/static/styles/game_room/images/shop/itempattern.png') repeat,*/
-        var(--c-edition)
+        /*var(--c-edition)*/
         url('https://gazellegames.net/static/styles/game_room/images/icons/equipment_used.png') 95% 5% no-repeat;}
 
 #crafting_panel .item.broken,
@@ -9133,7 +9166,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
 #wrapper #trading_panel .item.broken {
 	background:
         /*url('https://gazellegames.net/static/styles/game_room/images/shop/itempattern.png') repeat,*/
-        var(--c-edition)
+        /*var(--c-edition)*/
         url('https://gazellegames.net/static/styles/game_room/images/icons/equipment_broken.png') 95% 5% no-repeat;}
 
 #crafting_panel .item img,
@@ -9181,7 +9214,7 @@ table#downloaded_table td.center.cats_col +td >span:before {
     line-height: 18px;
     font-size: 16px;
     font-weight: 700;
-    background-color: var(--c-tgroup);
+    /*background-color: var(--c-tgroup);*/
     width: 20px;
     height: 18px;
     border: 1px solid var(--c-table-brdr);}
