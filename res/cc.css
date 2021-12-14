@@ -346,6 +346,9 @@ td.center.cats_col+td,
 
 /*#calendar #content,*/
 
+#grouplinks,
+#grouplinks +.torrent_table,
+
 .box.box_info span[style="float:right;"],
 .box.box_likes.box_torrents span.likes_icon.flright,
 #forums .forum_index            tr:not(.colhead) td:first-child,
@@ -393,6 +396,7 @@ tr.unreadpm td:first-child {
 
 .box.box_info span[style="float:right;"]/*,
 .box.box_likes.box_torrents span.likes_icon.flright*/ {
+    display: flex;
     margin: -1px 0;}
 
 /*#stats_share_score  a:before,
@@ -1278,9 +1282,22 @@ div#fight_skill_points_assign >table,
     padding: 10px 0 0 0;}
 .sidebar #freeleech li.group_torrent {
     width: auto;
-    white-space: nowrap;
+    flex-flow: row wrap;
+    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;}
+.sidebar #freeleech li.group_torrent .platform {
+    padding: 0 3px;}
+.sidebar #freeleech li.group_torrent .tor_size {
+    padding-right: 3px;
+    order: 8;}
+.sidebar #freeleech li.group_torrent .tor_info {
+    order: 9;}
+.sidebar #freeleech li.group_torrent:after {
+    content: '';
+    width: 100%;
+    height: 0;
+    order: 3;}
 .box {
     font-size: 1em;}
 .head {
@@ -2283,7 +2300,7 @@ table#grouplinks #curlinkedgroup,
 
 .center_poll, /* <- Blank - Show the results! */
 .large_progress_bar .main_bar,
-#center_poll {;
+#center_poll {
     -webkit-box-shadow: var(--p-prog-s);
     box-shadow: var(--p-prog-s);
     display: block;
@@ -2373,6 +2390,9 @@ table#snatchesrow img,
     box-shadow: var(--p-header-shdw);
     border: 3px solid var(--c-b4);*/}
 
+#wrapper #grouplinks,
+#wrapper #grouplinks +.torrent_table,
+
 #user .box.box_items #itemsdiv td >div:hover,
 .sidebar .box.box_image_coverart img:hover,
 table#uploadsrow img:hover,
@@ -2388,6 +2408,18 @@ table#likesrow img:hover,
     /*border-color: var(--c-b1);*/
     -webkit-box-shadow: none;
     box-shadow: none;}
+
+#grouplinks:before,
+#grouplinks +.torrent_table:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-box-shadow: var(--p-main-shdw);
+    box-shadow: var(--p-main-shdw);}
 
 .box.box_tags ul.stats.nobullet div {
     letter-spacing: unset !important;}
@@ -3026,7 +3058,8 @@ table.adventure_table .colhead td {
     /*padding: 14px 15px;*/
     padding: 5px;
     font-size: 11px;
-    line-height: var(--p-lh);}
+    /* line-height: var(--p-lh); */
+    line-height: 12px;}
 #top10 td.center.cats_col +td >span a,
 #artist #torrent_table .group_torrent td[colspan="2"] >span:first-child,
 #collections #torrent_table .group_torrent td[colspan="3"] >span:first-child,
@@ -3050,7 +3083,8 @@ table.adventure_table .colhead td {
 #bookmarks #torrent_table td[colspan="3"] >span:first-child a,
 .torrent_details .group_torrent td:first-child span a,
 .torrent_table td[colspan="4"] >span:first-child a {
-    /* cursor: pointer */;}
+    color: var(--c-d-anchor);
+    /* cursor: pointer ;*/}
 #bookmarks #torrent_table td[colspan="3"] >span:first-child a,
 .torrent_details .group_torrent td:first-child span a,
 .torrent_table td[colspan="4"] >span:first-child >a,
@@ -3188,6 +3222,8 @@ textarea,
 .trailer iframe,
 
 /*div[id^="twitch-embed-"],*/
+
+.screenshots a,
 
 #reports .thin >h3,
 #reportsv2 #report_table >h3,
@@ -3935,7 +3971,7 @@ a[href^="javascript:Vote("] strong:active,
     /*background: var(--p-btn-act);*/}
 
 .filter_torrents .submit {
-    text-align: right;}
+    text-align: center;}
 
 .filter_torrents input.inputtext[name="filelist"],
 .filter_torrents input.inputtext.smaller {
@@ -4249,7 +4285,7 @@ body:not(#upload) #artist_tr + tr td.label,
 .torrent_details .torrent_table >tbody >.colhead_dark td:nth-child(1):before {
     position: absolute;
     content: '';
-    width: 983px; /* can't think of another way */ /*** mark 5 ***/
+    width: 975px; /* can't think of another way */ /*** mark 5 ***/
     height: 100%;
     opacity: 0;
     top: 0;
@@ -4264,7 +4300,7 @@ body:not(#upload) #artist_tr + tr td.label,
 .torrent_details .torrent_table >tbody >.colhead_dark strong,
 .torrent_details .torrent_table >tbody >.colhead_dark img {
     position: absolute;
-    line-height: 36px;
+    line-height: 26px;
     top: 0;
     left: 5px;
     z-index: 2;}
@@ -4272,10 +4308,10 @@ body:not(#upload) #artist_tr + tr td.label,
     left: 10px;}
 .clan_stat_totals h2:first-child +.large_progress_bar,
 .torrent_details .torrent_table >tbody >.colhead_dark img {
-    margin-top: 10px;}
+    margin-top: 5px;}
 
 .torrent_details .torrent_table >tbody >.colhead_dark td {
-    height: var(--p-head);
+    height: 16px;
     position: relative;}
 .torrent_details .torrent_table >tbody >.colhead_dark td:nth-child(1) {
     width: 100%;
@@ -4285,7 +4321,7 @@ body:not(#upload) #artist_tr + tr td.label,
 .torrent_details .torrent_table >tbody >.colhead_dark td:nth-child(3) {
     min-width: 36px;}
 .torrent_details .torrent_table >tbody >.colhead_dark td.sign {
-    min-width: 18px;}
+    min-width: 16px;}
 
 #wiki .thin >.center >form:first-child .label {
     width: 71px;}
@@ -4301,7 +4337,8 @@ body:not(#upload) #artist_tr + tr td.label,
     width: 25%;
     margin: 0;
     padding: 5px;
-    align-self: center;
+    align-self: stretch;
+    display: flex;
     cursor: default;}
 .screenshots a:nth-child(n+5) {
     border-top: 0;}
@@ -4312,6 +4349,7 @@ body:not(#upload) #artist_tr + tr td.label,
     margin-right: 0;}
 #css_gallery .preview_image,
 .screenshots img {
+    margin: auto;
     max-width: 100% !important;
     /*border: 3px solid var(--c-main-brdr);*/} /*** mark 6 ***/
 
@@ -4375,6 +4413,7 @@ body:not(#upload) #artist_tr + tr td.label,
     width: 26.07px;}
 
 .hidden,
+#image_block.hidden,
 input.hidden,
 #wrapper #content .item.hidden, /* grid override */
 .sidebar .addtagsdiv >br,
@@ -4714,6 +4753,8 @@ li:not(.suggested_similar) .similar_votes >span {
     font-size: 15px;
     line-height: 1em;
     /*padding: 8px 5px;*/}
+#torrents #requests.request_table #requests_list tr:first-child td.label {
+    padding: 5px;}
 #top10 #wrapper .thin.top10_torrents    >.linkbox ~div:not(.center) >table.border .colhead td,
 #top10 #wrapper .thin.top10_games       >.linkbox ~div:not(.center) >table.border .colhead td {
     padding: 7px 5px;}
@@ -4851,6 +4892,7 @@ h2 .username_badges {
     line-height: 50px;}
 
 #wrapper #grouplinks {
+    margin-bottom: 0;
     background-color: var(--c-box);
     min-height: 38px;}
 #grouplinks a div {
@@ -5901,6 +5943,10 @@ div.breadcrumbs,
 #forums .forum_mythreads tr span[style="float:right;"],
 #forums .last_poster,
 #index #freeleech .group_torrent>a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    white-space: nowrap;
     /*font-size: 13px;
     line-height: 20px;*/}
 #forums .forum_index tr:not(.colhead) td:first-child,
@@ -6553,6 +6599,7 @@ input[type="radio"]:active {
 #forums .forum_latest >.search.box.pad #forumlist,
 #forums .forum_latest >.search.box.pad #otherop,
 #forums #newthreadtext,
+.sidebar .box.box_contributors img,
 .sidebar .box_badges img,
 .sidebar .box_image_avatar img,
 .sidebar .box_fights_stats img,
@@ -11527,7 +11574,7 @@ td .log_green {
 #wrapper #content .select2-container--default .select2-selection--multiple {
     /*border-radius: 0;*/
     min-height: 24px;
-    /*height: unset;*/}
+    height: unset;}
 #wrapper .select2-container .select2-selection--multiple {
     min-height: unset;}
 #wrapper .select2-container--default .select2-search--inline .select2-search__field {
@@ -11544,6 +11591,7 @@ td .log_green {
 .box_recommend_to_friend .body >.select2 {
     margin: 8px 9px 0 0;
     max-width: 100%;
+    width: 100% !important;
     min-width: calc(100% - 98px);}
 .box_recommend_to_friend .body >input[type="button"] {
     margin: 8px 9px 0 0;}
@@ -11551,7 +11599,7 @@ td .log_green {
     padding-top: 2px;
     width: calc(100% + 9px);
     display: flex;
-    flex-flow: row wrap;}
+    flex-flow: row;}
 #wrapper .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
     color: var(--c-txt2);}
 #wrapper .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
@@ -11632,6 +11680,8 @@ table.adventure_table h3 {
     /*margin-top: 13px;*/}
 #wrapper #seedtime_tokens >.linkbox {
     margin: 0 0 27px 0;}
+#requests_list .requestrows td:nth-child(n+2),
+#torrents #collages tr:not(.colhead) td:nth-child(n+2),
 #seedtime_tokens #tokens_breakdown td:last-child {
 	border-left: 1px solid var(--c-brdr1);}
 
@@ -12530,7 +12580,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     border-color: transparent var(--c-brdr1) transparent transparent;}
 #wrapper #trading_panel .message_replies .message_reply_other:after {
     right: -24px;
-    border-color: transparent transparent transparent var(--c-rowb;);}
+    border-color: transparent transparent transparent var(--c-rowb);}
 
 #wrapper #trading_panel .message_replies .message_reply_self {
     float: left;
@@ -12749,7 +12799,8 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
 .calendar .day-events >.tooltip {
     padding: 5px 0;}
 /*#calendar .day-events >p:before*//*,
-.calendar .day-events >.tooltip:before*/ {
+.calendar .day-events >.tooltip:before*/ 
+/* {
     background-color: var(--c-row-hvr);
     content: '';
     position: absolute;
@@ -12757,7 +12808,7 @@ https://greasyfork.org/en/scripts/392904-ggn-trade-item-count-editor
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;}
+    opacity: 0;} */
 #calendar .day-events >p:hover:before,
 .calendar .day-events >.tooltip:hover:before {
     opacity: .65;}
