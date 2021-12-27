@@ -1171,8 +1171,11 @@ a:hover span,
 .item img.equipment_level[src$="level9.png"] ~h3:before,
 .r09 {color: #fa0;}
 .item img.equipment_level[src$="level10.png"] ~h3:before,
+.item img.equipment_level[src$="level11.png"] ~h3:before,
+.item img.equipment_level[src$="level12.png"] ~h3:before,
 .r10 {color: #418b00;}
 .item img.equipment_level[src$="level10plus.png"] ~h3:before,
+.item img.equipment_level[src$="level12plus.png"] ~h3:before,
 .r20,
 .r50,
 .r99 {color: #418b00; text-shadow: 0 0 2px #7eff2e80;}

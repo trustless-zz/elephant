@@ -1885,10 +1885,9 @@ td.cats_col {
 	border-left: 0;
 }
 
-#requests .thin > table tr td .tags {
-/*	float: left;
-*/;
-}
+/*#requests .thin > table tr td .tags {
+	float: left;
+}*/
 
 #requests .thin > table tr td:nth-child(4), #requests .thin > table tr td:nth-child(4) strong {
 	font-weight: normal !important;
@@ -6182,6 +6181,15 @@ table#weblinks_edit input.weblinks {
 .item img.equipment_level[src$="level10plus.png"] ~h3:before {
     width: 30px;
     content: '10+';}
+.item img.equipment_level[src$="level11.png"] ~h3:before {
+    width: 22px;
+    content: '11';}
+.item img.equipment_level[src$="level12.png"] ~h3:before,/* {
+    width: 22px;
+    content: '12';}*/
+.item img.equipment_level[src$="level12plus.png"] ~h3:before {
+    width: 30px;
+    content: '12+';}
 /* /ONLY needed to make item levels visible again */
 #wrapper #content .item img.equipment_level {
     display: none;}
