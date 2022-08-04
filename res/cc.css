@@ -2369,11 +2369,17 @@ table#uploadsrow img,
 table#likesrow img,
 table#snatchesrow img,
 #recommended #vanityhouse img {
-    width: 100%;
+    /* width: 100%;
     height: auto;
     border: 3px solid var(--c-b4);
     -webkit-box-shadow: var(--p-header-shdw);
-    box-shadow: var(--p-header-shdw);}
+    box-shadow: var(--p-header-shdw); */
+    width: calc(100% - 10px);
+    height: auto;
+    padding: 5px;
+    align-self: center;
+    margin: auto;
+    }
 #recommended #vanityhouse a:first-child {
     display: block;
     font-size: 0;
@@ -2420,6 +2426,16 @@ table#likesrow img:hover,
     z-index: -1;
     -webkit-box-shadow: var(--p-main-shdw);
     box-shadow: var(--p-main-shdw);}
+
+#artist .main_column #torrent_table[class="torrent_table grouping"] tbody .colhead td:last-child  {
+    border-right: 1px solid var(--c-label);}
+/* #user .box_gold td.label, */
+#user .thin .sidebar .box.box_gold #box_gold_scrollbar tbody .colhead td:last-child,
+/* #user .box.box_requests #requests table.border tbody, */
+#torrents #requests #requests_list >tbody >tr:first-child >td:last-child,
+.thin.collections table#torrent_table tr.colhead td:last-child,
+#grouplinks +.torrent_table >tbody >.colhead_dark td:last-child {
+    border-right: 1px solid var(--p-head-grdnt);}
 
 .box.box_tags ul.stats.nobullet div {
     letter-spacing: unset !important;}
@@ -3197,8 +3213,12 @@ img[title="Snatches"],
 .forum_post td.body img,
 .box.news_post >.pad img, */
 
+#artist #torrent_table tr.group,
+#torrent_table .group.discog,
 #torrents .group {
     background-color: var(--c-t-group);}
+#artist #torrent_table tr.group:hover,
+#torrent_table .group.discog:hover,
 #torrents .group:hover {
     background-color: var(--c-t-group-hvr);}
 
@@ -5752,7 +5772,9 @@ input#remaster_year,
 input#year,
 input[name="year"],
 .requests_outer_table input[name="year"] {
-    width: 45px;}
+    width: 46px;}
+input[name="year"][type="number"] {
+    width: 65px;}
 .thin >#request_form input[name="image"] {
     width: calc(100% - 95px);
     margin-right: 5px;}
@@ -5800,6 +5822,10 @@ input[name="year"],
 /* #upload #reviews_table */ input#meta {
     width: 35px;
     margin-bottom: 5px;}
+input#gamespotscore[type="number"],
+input#ignscore[type="number"],
+input#meta[type="number"] {
+    width: 55px;}
 .box_image_avatar .head {
     margin-bottom: 10px;}
 .box.pad >p:first-child,
@@ -5831,12 +5857,20 @@ input[name="year"],
     margin-bottom: 2px !important;}
 #image_block input[type="url"],
 #image_block input[type="text"] {
-    width: calc(100% - 160px) !important;}
+    width: 100% !important;}
 #image_block ~div input[type="submit"],
 #newthreadform #newthreadtext #answer_block br +input/*,
 #upload td#image_block input[type="text"]:not(#screen0),
 #torrents .center.thin >.box.pad #image_block >span:not(first-child) input[type="text"]*/ {
     margin-top: 8px;}
+#image_block >span {
+    width: 100%;
+    display: flex;
+    flex-flow: row;}
+#image_block >span:first-of-type {
+    order: -2;
+    width: calc(100% - 45px);
+    margin-right: 10px;}
 #user h2 +form#userform td.label,
 #upload td.label {
     /*background-color: var(--c-tgroup);*/}
@@ -5943,7 +5977,7 @@ div.breadcrumbs,
 #forums .forum_mythreads tr span[style="float:right;"],
 #forums .last_poster,
 #index #freeleech .group_torrent>a {
-    overflow: hidden;
+    /* overflow: hidden; */
     text-overflow: ellipsis;
     flex: 1;
     white-space: nowrap;
@@ -7028,6 +7062,8 @@ tr.likes >td {
 #gazelleview table.gazelleinfo:before {
     /*content: 'Info';*/}
 
+.forum_index td,
+
 #gazelleview table.gazelleinfo,
 .collections_art_display,
 #requests .main_column >table:first-child {
@@ -8068,21 +8104,33 @@ table#uploadsrow tbody,
 table#snatchesrow tbody,
 table#likesrow tbody {
     display: block;
-    padding: 5px;}
+    /* padding: 5px; */
+    }
 table#uploadsrow td,
 table#snatchesrow td,
 table#likesrow td {
-    padding: 0;
-    margin: 5px;
+    /* padding: 0;
+    margin: 0;
     display: block;
     width: 100%;
     height: auto;
     text-align: center;
-    align-self: center;}
-/*table#uploadsrow a,
+    align-self: center; */
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    }
+table#uploadsrow a,
 table#snatchesrow a,
 table#likesrow a {
-    display: inline;}*/
+    background-color: red;
+    display: grid;
+    width: 100%;
+    height: 100%;}
 
 #user .thin >h2:first-child +.box.pad:nth-last-of-type(2):before {
     /*content: 'Info';
@@ -9032,6 +9080,32 @@ table#snatched_not_seeding_table td.center.cats_col +td >span:before,
 table#seeding_not_snatched_table td.center.cats_col +td >span:before,
 table#downloaded_table td.center.cats_col +td >span:before {
     content: none;}
+
+
+td.unread,
+td.unread_sticky,
+td.unread_locked,
+td.unread_locked_sticky,
+td.read,
+td.read_sticky,
+td.read_locked,
+td.read_locked_sticky {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width:18px;
+    height:18px;}
+.last_read {
+    transition: none !important;
+    width: 15px !important;
+    height: 13px !important;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    margin-left: 5px;}
+.last_read:hover,
+.prev:hover, .next:hover,
+.show_torrents a:hover,
+img[src="static//styles/game_room/images/go_last_read.png"]:hover {
+    transform: scaleY(-1);}
 
 /*** mark 12 ***/
 /*****************************************************

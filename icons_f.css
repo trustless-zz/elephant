@@ -202,3 +202,32 @@ img[alt="Warned"] {
 img[alt="RSS feed"] {
     background-image: url('icon/svg/rss.svg');}
 
+
+#forums #content .thin td.unread{
+    background-image: url(icon/balloon-unread.png);}
+#forums #content .thin td.unread_sticky {
+    background-image:url(icon/sticky-unread.png);}
+#forums #content .thin td.unread_locked {
+    background-image:url(icon/lock-unread.png);}
+#forums #content .thin td.unread_locked_sticky {
+    background-image: url(icon/lock-sticky-unread.png);}
+.last_read,
+.show_torrents a,
+.hide_torrents a {
+    background-image: url(arrow30x26.png);}
+
+
+
+
+
+#forums #content .thin td.read {
+	background-image:url("icon/balloon.png");}
+#forums #content .thin td.read_sticky {
+    background-image: url(icon/sticky.png);}
+#forums #content .thin td.unread_sticky {}
+#forums #content .thin td.read_locked {
+    background-image:url(icon/lock.png);}
+#forums #content .thin td.unread_locked {}
+#forums #content .thin td.read_locked_sticky {
+    background-image:url(icon/lock-sticky.png);}
+#forums #content .thin td.unread_locked_sticky {}
