@@ -241,9 +241,14 @@ overflow: unset;}
 
 #userinfo_minor {
 	font-family: adelle, sans-serif;
-	margin-left: 733px;
+	margin-left: 686px;
 	font-size: 11pt;
-	top: 72px;}
+	top: 72px;
+    width: 793px;
+    text-align: center;
+    padding: 0;}
+#userinfo_minor li:last-child {
+    margin-right: 0 }
 
 #userinfo_minor li {
 	margin-right: 10px;}
@@ -8075,16 +8080,22 @@ a >.error_message {
     height: 188px;
     margin-left: 49px;}
 #menu {
-    margin-left: 412px;}
+    margin-left: 438px;
+    width: 862px;}
+#menu ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;}
 #menu ul li {
-    margin-right: 20px;}
+    margin-right: 0;}
 #userinfo_username {
     margin-left: 347px;}
 #userinfo_stats {
     top: 53px;
     margin-left: 345px;}
 #userinfo_minor {
-    margin-left: 797px;}
+    margin-left: 718px;
+    width: 862px;}
 }
 
 @media screen and (min-width: 1700px) {
@@ -8107,7 +8118,8 @@ a >.error_message {
 #userinfo_minor li {
     margin-right: 22px;}
 #userinfo_minor {
-    margin-left: 741px;}
+    margin-left: 678px;
+    width: 901px;}
 #searchbars ul li form input{
     margin-right: 28px;}
 #searchbars {
@@ -8123,7 +8135,8 @@ a >.error_message {
 #menu ul li{
     margin-right: 22px;}
 #userinfo_minor {
-    margin-left: 787px;}
+    margin-left: 723px;
+    width: 855px;}
 }
 @media screen and (min-width: 1320px) and (max-width: 1699px) {
 #searchbars {
