@@ -1117,6 +1117,7 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
 .playstation2,
 .playstation3,
 .playstation4,
+.playstation5,
 .playstationportable,
 .playstationvita,
 .pokemonmini,
@@ -1321,6 +1322,8 @@ tr[class^="group group_"] >td.center.cats_col >div, tr[class^="group_torrent"] >
     background: url(icon/svg/playstation3.svg);}
 .playstation4 {
     background: url(icon/svg/playstation4.svg);}
+.playstation5 {
+    background: url(icon/svg/playstation5.svg);}
 .playstationportable {
     background: url(icon/svg/playstationportable.svg);}
 .playstationvita {
