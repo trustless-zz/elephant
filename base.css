@@ -2601,7 +2601,7 @@ span.size5 img {
 
 /*Web Links - adds images and formatting*/
 tr.participated >td:nth-child(2):before,
-.EpicGames, .Nintendo, .Bandcamp, .Discogs, .MusicBrainz, .VGMdb, .GamesWebsite, .Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .Giantbomb, .GOG, .GooglePlay, .HowLongToBeat, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .Oculus, .VNDB, .Wikipedia, .XboxStore, .PCGamingWiki, .Goodreads {
+.EpicGames, .Nintendo, .Bandcamp, .Discogs, .MusicBrainz, .VGMdb, .GamesWebsite, .Amazon, .BoardGameGeek, .Desura, .DriveThruRPG, .GameFAQs, .Giantbomb, .GOG, .GooglePlay, .HowLongToBeat, .HumbleBundle, .Itch, .iTunes, .MobyGames, .NexusMods, .Origin, .Ouya, .PSN, .RPGGeek, .RPGnet, .Steam, .Oculus, .VNDB, .Wikipedia, .XboxStore, .PCGamingWiki, .Goodreads, .GooglePlayBooks {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;}
@@ -2669,6 +2669,8 @@ tr.participated >td:nth-child(2):before,
     background-image: url("weblinks/svg/PCGamingWiki.svg");}
 .Goodreads {
     background-image: url("weblinks/svg/Goodreads.svg");}
+.GooglePlayBooks {
+    background-image: url("weblinks/svg/GooglePlayBooks.svg");}
 
 .weblinks {
     width: 50px;
